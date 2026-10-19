@@ -19,7 +19,7 @@ export PYTHONUNBUFFERED=1
 
 uso() {
   cat >&2 <<USO
-Uso: ./run.sh <ejemplo> [subcomando]
+Uso: ./run.sh <ejemplo> [subcomando o argumentos]
 
 Sin API key (la primera vez descargan el modelo de embeddings; después corren sin red):
   1            Retrieval con FAISS y scores engañosos (Ej. 1 C-D)
@@ -33,7 +33,7 @@ Con GOOGLE_API_KEY (llaman a Gemini):
   1f           RAG semántico vs. BM25 con una paráfrasis (Ej. 1 F)
   4a           Self-note: el modelo anota el contexto antes de responder (Ej. 4 A)
   4b           GraphRAG con síntesis de Gemini, con 3 y 5 saltos (Ej. 4 B)
-  agentic      Agentic RAG: el agente elige herramientas, el código fija los topes
+  agentic      Agentic RAG: el agente elige herramientas, el código fija los topes (acepta --repeticiones N)
   memoria      Memoria de sesión y de largo plazo con ADK (Ej. 2 A-C)
   2d           El agente escribe en session.state con una tool (Ej. 2 D)
   faiss  [reset|guardar|recordar|todo]   Memoria de largo plazo local (FAISS + SQLite); por defecto: todo
@@ -69,7 +69,7 @@ ejemplo() {
     1f)         necesita_key; correr ejercicio_1f_rag_vs_bm25.py ;;
     4a)         necesita_key; correr ejercicio_4a_self_note.py ;;
     4b)         necesita_key; correr ejercicio_4b_graphrag_gemini.py ;;
-    agentic)    necesita_key; correr agentic_rag.py ;;
+    agentic)    necesita_key; correr agentic_rag.py "${@:2}" ;;
     memoria)    necesita_key; correr memoria_adk.py ;;
     2d)         necesita_key; correr ejercicio_2d_estado_registrar_dato.py ;;
     faiss)      necesita_key; correr memoria_faiss.py "${2:-todo}" ;;
@@ -87,7 +87,7 @@ case "${1:-}" in
     necesita_key
     for e in 1 2 graph graph-adk2 1e 1f 4a 4b agentic memoria 2d faiss bank; do ejemplo "$e"; done
     ;;
-  *) ejemplo "$1" "${2:-}" ;;
+  *) ejemplo "$@" ;;
 esac
 
 if [ "${#FALLARON[@]}" -gt 0 ]; then

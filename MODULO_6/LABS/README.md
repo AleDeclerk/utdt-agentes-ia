@@ -44,7 +44,11 @@ Solo hace falta para los ejemplos marcados «sí».
 ```
 
 Crea el `.venv`, instala `requirements.txt` y, si no existe `.env`, lo crea a partir de `.env.example`.
-Necesita Python de 3.10 a 3.13 (se probó con 3.12) y bash (Linux, macOS o WSL).
+Necesita Python de 3.10 a 3.13 y bash. Se probó en **Linux con Python 3.12**. En otros sistemas:
+
+- **macOS:** PyTorch 2.14 solo publica paquetes para Apple Silicon con macOS 14 o superior; en un Mac con Intel
+  (o con un macOS anterior) `setup.sh` no va a poder instalarlo. No se probó en macOS.
+- **Windows:** usá WSL (`setup.sh` y `run.sh` son bash).
 
 - **Espacio:** el entorno ocupa alrededor de 1,6 GB. En Linux, `setup.sh` instala antes la versión CPU de
   PyTorch; la de PyPI trae CUDA y pesa varios GB.
@@ -74,7 +78,7 @@ No compartas ni subas a ningún repo el archivo `.env`.
 ./run.sh 1f           # RAG semántico vs. BM25 con una paráfrasis
 ./run.sh 4a           # self-note
 ./run.sh 4b           # GraphRAG con síntesis de Gemini
-./run.sh agentic      # Agentic RAG
+./run.sh agentic      # Agentic RAG (con --repeticiones 1 hace menos llamadas)
 ./run.sh memoria      # memoria de sesión y de largo plazo
 ./run.sh 2d           # el agente escribe en session.state
 ./run.sh faiss        # memoria FAISS + SQLite (guarda y recuerda en dos procesos)
@@ -143,7 +147,7 @@ resultado de la demo, no un error del programa.
 - La API key gratuita tiene un límite de *requests* por minuto y por día. Si ves un error de cuota (429), los
   scripts reintentan solos con espera; si persiste, esperá un minuto y volvé a correr.
 - `./run.sh all` hace muchas llamadas. Con la capa gratuita conviene correr los ejemplos de a uno, y
-  `python agentic_rag.py --repeticiones 1` (con el `.venv` activado) reduce las llamadas de Agentic RAG.
+  `./run.sh agentic --repeticiones 1` reduce las llamadas de Agentic RAG.
 - Para probar otro modelo, descomentá `DEMO_MODEL` en `.env`.
 
 ## Problemas frecuentes
@@ -154,6 +158,7 @@ resultado de la demo, no un error del programa.
 | `Este ejemplo llama a Gemini y falta la API key.` | `.env` no tiene `GOOGLE_API_KEY` (o sigue con `tu-api-key`). |
 | `OSError: We couldn't connect to 'https://huggingface.co'` | El modelo de embeddings todavía no se descargó y no hay red: conectate y corré `./run.sh 1`. |
 | `Hace falta Python entre 3.10 y 3.13` | Instalá Python 3.12 y volvé a correr `./setup.sh`. |
+| `No matching distribution found for torch==2.14.0` | Tu sistema no tiene paquete de esa versión de PyTorch (Mac con Intel o macOS anterior a 14). Usá Linux o WSL. |
 | `Permission denied` al correr `./setup.sh` | `chmod +x setup.sh run.sh`. |
 | Un `Traceback` con `Failed to preload memory` en `./run.sh faiss` | Es lo esperado: la verificación [5] rompe `search_memory` a propósito para comprobar que `PreloadMemoryTool` no propaga el error, y ADK lo registra en el log. |
 | `recordar` falla en `faiss` o `bank` | Necesita que `guardar` haya corrido antes y, en `bank`, que no se haya ejercido ya el derecho al olvido. `todo` (el valor por defecto) empieza con `reset` y no tiene ese problema. |

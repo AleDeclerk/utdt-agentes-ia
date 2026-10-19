@@ -4,7 +4,13 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# Python: se probó con 3.12; sirve de 3.10 a 3.13 (con 3.14 no hay wheels de algunas dependencias).
+# Mac con Intel: PyTorch 2.14 no publica paquetes para esa plataforma, así que la instalación fallaría más adelante.
+if [ "$(uname -s)" = "Darwin" ] && [ "$(uname -m)" = "x86_64" ]; then
+  echo "PyTorch 2.14 no tiene paquete para Mac con procesador Intel. Usá Linux o WSL." >&2
+  exit 1
+fi
+
+# Python: se probó con 3.12; las dependencias publican paquetes de 3.10 a 3.13 (con 3.14 falta numpy 2.2.6).
 PY=""
 for c in python3.12 python3.11 python3.13 python3.10 python3; do
   if command -v "$c" >/dev/null 2>&1 \

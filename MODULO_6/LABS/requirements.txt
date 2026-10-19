@@ -5,7 +5,8 @@
 #   python3.12 -m venv .venv && source .venv/bin/activate
 #   pip install -r requirements.txt
 #
-# Probado con Python 3.12 (sirve de 3.10 a 3.13).
+# Probado en Linux con Python 3.12. Las dependencias publican paquetes para Python 3.10 a 3.13;
+# en macOS, PyTorch 2.14 solo los publica para Apple Silicon con macOS 14 o superior.
 # Autenticación: API key de Google AI Studio en la variable GOOGLE_API_KEY
 # (archivo .env). Solo la usan los ejemplos que llaman a Gemini.
 # =====================================================================
