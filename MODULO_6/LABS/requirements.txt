@@ -1,0 +1,33 @@
+# =====================================================================
+# Labs Módulo 6 — Conocimiento y memoria · Arquitectura de Agentes IA · UTDT 2026
+#
+# Instalación: ./setup.sh (ver README.md), o manualmente:
+#   python3.12 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# Probado con Python 3.12 (sirve de 3.10 a 3.13).
+# Autenticación: API key de Google AI Studio en la variable GOOGLE_API_KEY
+# (archivo .env). Solo la usan los ejemplos que llaman a Gemini.
+# =====================================================================
+
+# ---- Agentes: ADK 2 y el SDK de Gemini --------------------------------
+# google-adk 2.10.0 exige google-genai>=2.19,<3; se probó con 2.28.0.
+google-adk==2.10.0
+google-genai==2.28.0
+python-dotenv==1.2.3
+# Para correr el código asíncrono también en un notebook (memoria_adk.py).
+nest-asyncio==1.6.0
+
+# ---- Retrieval: embeddings locales, FAISS y BM25 ----------------------
+# Los embeddings se calculan en tu máquina (CPU), sin llamar a ninguna API.
+# En Linux, setup.sh instala antes la versión CPU de torch (la de PyPI trae CUDA y pesa varios GB).
+torch==2.14.0
+sentence-transformers==5.2.3
+faiss-cpu==1.14.3
+rank-bm25==0.2.2
+numpy==2.2.6
+
+# ---- Memoria persistente: sesiones en SQLite --------------------------
+# DatabaseSessionService (memoria_faiss.py y memory_bank.py). aiosqlite ya viene con google-adk.
+sqlalchemy[asyncio]==2.1.1
+greenlet==3.5.6
