@@ -5,6 +5,7 @@
 - [Módulo 4 — Labs de MCP con `adk web`](MODULO_4/labs_MCP/)
 - [Módulo 5 — Ejemplos completos de orquestación con ADK 2.0](MODULO_5/LABS/)
 - [Módulo 6 — Labs de RAG, GraphRAG y memoria con ADK](MODULO_6/LABS/)
+- [Módulo 7 — Labs de few-shot dinámico, Reflexion y ExpeL con ADK](MODULO_7/LABS/)
 - [Recursos de aprendizaje](recursos_aprendizaje/)
 - [Pre-curso](https://matiaszabal.github.io/utdt-slides/pre-curso/)
 

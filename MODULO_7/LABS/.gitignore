@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Lo que las demos generan al correr (cada alumno arma el suyo)
+banco_casos.json
+memoria_reflexiones.json
+reglas_expel.json
+reglas_expel_caso.json
+few_shot_resultados.json
+ejemplos_dinamicos_resultados.json
+reflexion_resultados.json
+expel_resultados.json
+expel_caso_resultados.json
+costo_acumulado.json

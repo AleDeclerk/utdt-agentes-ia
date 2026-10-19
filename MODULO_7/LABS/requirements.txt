@@ -1,0 +1,14 @@
+# =====================================================================
+# Labs Módulo 7 — Aprendizaje no paramétrico (few-shot dinámico, Reflexion, ExpeL)
+# Arquitectura de Agentes IA · UTDT 2026
+#
+# Instalación: python3 -m venv .venv && source .venv/bin/activate
+#              pip install -r requirements.txt
+#
+# Se probó con Python 3.14 en Linux; numpy 2.5.4 exige Python 3.12 o superior.
+# Autenticación: API key de Google AI Studio en la variable GOOGLE_API_KEY (archivo .env).
+# =====================================================================
+google-adk==2.11.0
+google-genai==2.29.0
+python-dotenv==1.2.4
+numpy==2.5.4
