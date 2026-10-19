@@ -1,0 +1,26 @@
+# Neo4j 2026.09.0 Community para la demo de talento (GraphRAG). Imagen oficial de Neo4j: no hay ninguna imagen propia.
+# Solo accesible desde tu máquina (127.0.0.1). Puertos 7475 (navegador) y 7688 (bolt), distintos de los habituales
+# (7474/7687) para no chocar con otro Neo4j que ya tengas; se cambian con TALENT_HTTP_PORT y TALENT_BOLT_PORT en .env.
+# Uso:  ./run.sh up   |   ./run.sh down  (conserva los datos)   |   ./run.sh reset  (los borra)
+name: demotalent_neo4j
+services:
+  neo4j:
+    image: neo4j:2026.09.0-community
+    container_name: neo4j-demotalent
+    ports:
+      - "127.0.0.1:${TALENT_HTTP_PORT:-7475}:7474"   # navegador: http://localhost:7475
+      - "127.0.0.1:${TALENT_BOLT_PORT:-7688}:7687"   # bolt
+    environment:
+      NEO4J_AUTH: "neo4j/${TALENT_NEO4J_PASSWORD:-demo-talent-local}"
+      NEO4J_server_memory_heap_max__size: "1G"
+      # GDS (Leiden) y APOC (apoc.periodic.iterate) vienen incluidos en la imagen: se activan sin descargas.
+      NEO4J_PLUGINS: '["graph-data-science","apoc"]'
+    volumes:
+      - neo4j_demotalent_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p '${TALENT_NEO4J_PASSWORD:-demo-talent-local}' 'RETURN 1' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  neo4j_demotalent_data:
