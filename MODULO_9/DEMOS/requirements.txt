@@ -1,0 +1,12 @@
+# Módulo 9 · Demos — dependencias fijadas.
+# Instalación (Python 3.12, la versión con la que se probó):
+#   python3.12 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# El extra [eval] trae rouge-score, pandas y las dependencias del evaluador
+# de ADK. Se fija la versión exacta: las métricas de evaluación cambiaron
+# entre 2.10 y 2.12 (p. ej. una métrica de eficiencia con umbral ahora lanza
+# ValueError).
+google-adk[eval]==2.12.0
+python-dotenv
+pytest
