@@ -1,0 +1,10 @@
+# Control negativo de los jueces del veredicto. Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# Comando: python demo_con_adk_evals/control_negativo.py
+
+ítem                    debería               hallucinations  rubric_based_final_res
+fiel_reembolso          aprobar                 1.00 aprueba            1.00 aprueba
+comprobante_inventado   desaprobar           0.50 DESAPRUEBA         0.00 DESAPRUEBA
+accion_inventada        desaprobar           0.00 DESAPRUEBA         0.00 DESAPRUEBA
+
+Si los dos jueces aprueban los ítems que deberían desaprobar, el veredicto no vale nada.
+[juez] muestras del juez de rúbricas=9  parseadas=2  rescatadas=7  descartadas=0  vacías=0

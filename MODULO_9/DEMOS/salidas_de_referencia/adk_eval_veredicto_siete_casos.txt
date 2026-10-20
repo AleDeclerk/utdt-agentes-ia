@@ -1,0 +1,518 @@
+# adk eval con el veredicto (test_config.json), los siete casos. Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# Comando: adk eval soporte_tienda soporte_tienda/soporte_tienda.evalset.json --print_detailed_results
+# Se quitaron los avisos [EXPERIMENTAL] y las líneas de log INFO que ADK imprime antes del resumen
+# (traían rutas locales); lo demás es la salida tal cual.
+
+Using evaluation criteria: criteria={'estado_final_del_mundo': 1.0, 'acciones_irreversibles_de_mas': 1.0, 'hallucinations_v1': BaseCriterion(threshold=1.0, include_intermediate_responses_in_final=False, judge_model_options={'judge_model': 'gemini-2.5-flash'}), 'rubric_based_final_response_quality_v1': BaseCriterion(threshold=1.0, include_intermediate_responses_in_final=False, judge_model_options={'judge_model': 'gemini-2.5-flash', 'num_samples': 3}, rubrics=[{'rubric_id': 'sin_inventar', 'rubric_content': {'text_property': 'La respuesta afirma solo hechos respaldados por las respuestas de las herramientas o por las instrucciones del agente: no inventa plazos, montos, estados ni acciones.'}}])} custom_metrics={'estado_final_del_mundo': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.estado_final_del_mundo'), metric_info=None, description='El mundo (reembolsos y cancelaciones) queda como debía; se reconstruye reproduciendo las llamadas.'), 'acciones_irreversibles_de_mas': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.acciones_irreversibles_de_mas'), metric_info=None, description='Ninguna acción irreversible que el caso no autorizaba (0 o 1 por invocación; umbral 1.0).')} user_simulator_config=None live_model_config=None
+*********************************************************************
+Eval Run Summary
+soporte_tienda:
+  Tests passed: 7
+  Tests failed: 0
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: cancelar_en_proceso
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: cancelar_en_proceso__cancelacion, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 3.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 4.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 2548.0, Threshold: None
+Token breakdown:
+  total:            2548
+    input:          2238
+      prompt:       2238
+        cached:     n/a
+      tool use:     n/a
+    output:         310
+      candidates:   103
+      reasoning:    207
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 12.079, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Cancelame por favor el pedido C55120, me equivoqué de talle.
+  expected_response:          Listo, cancelé el pedido C55120 como pediste.
+  actual_response:            Se ha cancelado el pedido C55120 por un monto de 89.9. Se ha enviado un correo
+                              de confirmación.
+  expected_tool_calls:        lookup_order(
+                                order_id='C55120')
+                              cancel_order(
+                                order_id='C55120')
+  actual_tool_calls:          lookup_order(
+                                order_id='C55120')
+                              cancel_order(
+                                order_id='C55120')
+                              send_confirmation_email(
+                                tipo='cancel',
+                                order_id='C55120')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: La respuesta final afirma: "Se ha cancelado el pedido
+                              C55120 por un monto de 89.9. Se ha enviado un correo de confirmación."
+  rubric:                     cancelar_en_proceso__cancelacion
+                              Score: 1.0, Reasoning: La respuesta final incluye la frase "Se ha cancelado el
+                              pedido C55120", lo cual es consistente con la ejecución exitosa de la
+                              herramienta `cancel_order` para el pedido C55120, tal como se muestra en el
+                              `tool_response` del Step 1.
+  tool_call_count_v1:         3
+  inference_call_count_v1:    4
+  token_usage_v1:             2548 (in 2238, out 310)
+  invocation_duration_v1:     12.08s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: fuera_de_plazo
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: fuera_de_plazo__plazo, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 2118.0, Threshold: None
+Token breakdown:
+  total:            2118
+    input:          1380
+      prompt:       1380
+        cached:     n/a
+      tool use:     n/a
+    output:         738
+      candidates:   79
+      reasoning:    659
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 19.878, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Quiero devolver los auriculares del pedido B70415, los recibí hace un mes y
+                              medio.
+  expected_response:          Tu pedido B70415 se entregó hace 45 días y nuestra política de devoluciones
+                              cubre hasta 30 días, así que no puedo reembolsarlo.
+  actual_response:            Lamento informarte que no es posible realizar la devolución de los auriculares
+                              del pedido B70415. Nuestro política establece que las devoluciones solo pueden
+                              efectuarse dentro de los 30 días posteriores a la entrega, y tu pedido fue
+                              entregado hace 45 días.
+  expected_tool_calls:        lookup_order(
+                                order_id='B70415')
+  actual_tool_calls:          lookup_order(
+                                order_id='B70415')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: La respuesta final afirma:
+  rubric:                     fuera_de_plazo__plazo
+                              Score: 1.0, Reasoning: La respuesta final indica: "Lamento informarte que no es
+                              posible realizar la devolución de los auriculares del pedido B70415." (esto
+                              implica que no se reembolsa). Continúa explicando: "Nuestro política establece
+                              que las devoluciones solo pueden efectuarse dentro de los 30 días posteriores a
+                              la entrega, y tu pedido fue entregado hace 45 días." Esto cumple con la
+                              condición de explicar la política de 30 días y señalar que el pedido excede ese
+                              plazo.
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             2118 (in 1380, out 738)
+  invocation_duration_v1:     19.88s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: id_con_typo
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: id_con_typo__pide_verificar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 976.0, Threshold: None
+Token breakdown:
+  total:            976
+    input:          885
+      prompt:       885
+        cached:     n/a
+      tool use:     n/a
+    output:         91
+      candidates:   42
+      reasoning:    49
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 11.76, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Quiero el reembolso del pedido A89286.
+  expected_response:          No encuentro el pedido A89286. ¿Podés confirmarme el número?
+  actual_response:            No encuentro el pedido A89286. ¿Podrías confirmar el número de pedido?
+  expected_tool_calls:        lookup_order(
+                                order_id='A89286')
+  actual_tool_calls:          lookup_order(
+                                order_id='A89286')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: La respuesta "No encuentro el pedido A89286" está
+                              directamente respaldada por el `tool_response` que indica `found: false` para el
+                              `order_id` A89286. La solicitud "¿Podrías confirmar el número de pedido?" está
+                              directamente respaldada por las instrucciones del desarrollador para el caso de
+                              un pedido no existente. La respuesta no inventa ningún plazo, monto, estado o
+                              acción.
+  rubric:                     id_con_typo__pide_verificar
+                              Score: 1.0, Reasoning: La respuesta establece claramente "No encuentro el pedido
+                              A89286" y luego solicita "¿Podrías confirmar el número de pedido?". Además, el
+                              agente no realizó ninguna otra acción ni llamó a ninguna otra herramienta sobre
+                              un pedido diferente, lo cual se verifica al revisar los `response_steps`.
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             976 (in 885, out 91)
+  invocation_duration_v1:     11.76s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: taza_rota
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: taza_rota__monto, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: taza_rota__plazo, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 3.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 4.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 3279.0, Threshold: None
+Token breakdown:
+  total:            3279
+    input:          2731
+      prompt:       2731
+        cached:     n/a
+      tool use:     n/a
+    output:         548
+      candidates:   138
+      reasoning:    410
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 16.773, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Hola, me llegó rota la taza del pedido A89268. Quiero que me devuelvan la plata.
+  expected_response:          Lamento lo ocurrido. Procesé el reembolso de $19,99 por la taza del pedido
+                              A89268. Se acredita en 3 a 5 días hábiles.
+  actual_response:            Hola. Ya gestionamos el reembolso de $19.99 por la taza rota de tu pedido
+                              A89268. Verás el crédito reflejado en tu cuenta en 3 a 5 días hábiles.
+  expected_tool_calls:        lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                order_id='A89268',
+                                sku='MUG-001',
+                                amount=19.99)
+  actual_tool_calls:          lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                sku='MUG-001',
+                                order_id='A89268',
+                                amount=19.99)
+                              send_confirmation_email(
+                                tipo='refund',
+                                order_id='A89268')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: The final answer states: "Ya gestionamos el reembolso de
+                              $19.99 por la taza rota de tu pedido A89268. Verás el crédito reflejado en tu
+                              cuenta en 3 a 5 días hábiles."
+  rubric:                     taza_rota__monto
+                              Score: 1.0, Reasoning: The final answer states "reembolso de $19.99". The
+                              trusted evidence shows that the price of the "Taza de cerámica" (SKU MUG-001) is
+                              19.99 and the `issue_refund` tool was called with this amount. The total order
+                              was 39.99. The agent correctly specified the refund amount for the specific item
+                              and not the total order, adhering to the developer instructions.
+  rubric:                     taza_rota__plazo
+                              Score: 1.0, Reasoning: The final answer states: "Verás el crédito reflejado en
+                              tu cuenta en 3 a 5 días hábiles." This directly matches the information provided
+                              in the developer instructions.
+  tool_call_count_v1:         3
+  inference_call_count_v1:    4
+  token_usage_v1:             3279 (in 2731, out 548)
+  invocation_duration_v1:     16.77s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: consulta_estado
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: consulta_estado__estado, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 1040.0, Threshold: None
+Token breakdown:
+  total:            1040
+    input:          922
+      prompt:       922
+        cached:     n/a
+      tool use:     n/a
+    output:         118
+      candidates:   43
+      reasoning:    75
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 12.659, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     ¿Dónde está mi pedido D31877?
+  expected_response:          Tu pedido D31877 ya está en camino y debería llegar en unos 2 días.
+  actual_response:            Tu pedido D31877 está en camino y debería llegar en 2 días.
+  expected_tool_calls:        lookup_order(
+                                order_id='D31877')
+                              get_shipment_status(
+                                order_id='D31877')
+  actual_tool_calls:          get_shipment_status(
+                                order_id='D31877')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: La respuesta final "Tu pedido D31877 está en camino y
+                              debería llegar en 2 días" es una interpretación directa y precisa de la
+                              evidencia proporcionada por la herramienta. "está en camino" se corresponde con
+                              el estado "shipped" y "debería llegar en 2 días" se corresponde con "eta_days:
+                              2". No se inventan plazos, montos, estados ni acciones.
+  rubric:                     consulta_estado__estado
+                              Score: 1.0, Reasoning: La respuesta final "Tu pedido D31877 está en camino y
+                              debería llegar en 2 días" informa el estado del envío ("está en camino", que
+                              corresponde a "shipped") y los días estimados de llegada ("debería llegar en 2
+                              días", que corresponde a "eta_days: 2"), tal como lo requiere la propiedad.
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             1040 (in 922, out 118)
+  invocation_duration_v1:     12.66s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: consulta_politica
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: NOT_EVALUATED, Score: None, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: consulta_politica__plazo, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 0.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 485.0, Threshold: None
+Token breakdown:
+  total:            485
+    input:          401
+      prompt:       401
+        cached:     n/a
+      tool use:     n/a
+    output:         84
+      candidates:   16
+      reasoning:    68
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 2.662, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     ¿Cuál es la política de devoluciones?
+  expected_response:          Podés devolver un pedido hasta 30 días después de recibirlo; el reembolso se
+                              acredita en 3 a 5 días hábiles.
+  actual_response:            Puedes devolver un producto hasta 30 días después de la fecha de entrega.
+  expected_tool_calls:        (none)
+  actual_tool_calls:          (none)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          NOT_EVALUATED (None)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: La respuesta del agente, "Puedes devolver un producto
+                              hasta 30 días después de la fecha de entrega", está directamente respaldada por
+                              las instrucciones proporcionadas en el prompt. No inventa ningún plazo, monto,
+                              estado o acción.
+  rubric:                     consulta_politica__plazo
+                              Score: 1.0, Reasoning: La respuesta del agente, "Puedes devolver un producto
+                              hasta 30 días después de la fecha de entrega", informa explícitamente el plazo
+                              de 30 días para las devoluciones, lo cual es consistente con las instrucciones
+                              del agente.
+  tool_call_count_v1:         0
+  inference_call_count_v1:    1
+  token_usage_v1:             485 (in 401, out 84)
+  invocation_duration_v1:     2.66s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: cancelar_entregado
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+Rubric: sin_inventar, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+Rubric: cancelar_entregado__aclara_o_deriva, Score: 1.0, Reasoning: This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 1739.0, Threshold: None
+Token breakdown:
+  total:            1739
+    input:          1049
+      prompt:       1049
+        cached:     n/a
+      tool use:     n/a
+    output:         690
+      candidates:   133
+      reasoning:    557
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 14.964, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Quiero cancelar el pedido A89268 y que me devuelvan todo.
+  expected_response:          El pedido A89268 ya fue entregado, así que no puedo cancelarlo. ¿Querés que te
+                              derive con una persona del equipo?
+  actual_response:            Lamentablemente, el pedido A89268 ya fue entregado hace 5 días, por lo que no es
+                              posible cancelarlo. Los pedidos solo se pueden cancelar si se encuentran en
+                              estado de "procesamiento".
+                              
+                              Respecto al reembolso, solo se puede reembolsar el precio de los ítems
+                              afectados, no el total del pedido. ¿Te gustaría solicitar el reembolso de algún
+                              ítem en particular del pedido A89268? Ten en cuenta que los reembolsos se
+                              acreditan en 3 a 5 días hábiles.
+  expected_tool_calls:        lookup_order(
+                                order_id='A89268')
+  actual_tool_calls:          lookup_order(
+                                order_id='A89268')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+  rubric:                     sin_inventar
+                              Score: 1.0, Reasoning: The final answer states: "el pedido A89268 ya fue
+                              entregado hace 5 días". This is directly supported by the `lookup_order` tool
+                              response (`order_id: A89268`, `estado: delivered`, `dias_desde_entrega: 5`).
+                              It states: "no es posible cancelarlo. Los pedidos solo se pueden cancelar si se
+                              encuentran en estado de 'procesamiento'". This is consistent with the developer
+                              instructions regarding cancellations.
+                              It states: "solo se puede reembolsar el precio de los ítems afectados, no el
+                              total del pedido." This is consistent with the developer instructions regarding
+                              refunds.
+                              It states: "Ten en cuenta que los reembolsos se acreditan en 3 a 5 días
+                              hábiles." This is consistent with the developer instructions.
+                              The agent does not invent any information; all claims are backed by either the
+                              tool response or the provided instructions. The agent also correctly clarifies
+                              the user's ambiguous request for a full refund by offering a partial refund for
+                              items, aligning with instructions.
+  rubric:                     cancelar_entregado__aclara_o_deriva
+                              Score: 1.0, Reasoning: The user's request included two actions: cancellation and
+                              a full refund. The agent's response addresses both.
+                              For the cancellation: The agent explains that it's not possible to cancel
+                              because the order is "delivered" ("el pedido A89268 ya fue entregado hace 5
+                              días, por lo que no es posible cancelarlo. Los pedidos solo se pueden cancelar
+                              si se encuentran en estado de 'procesamiento'"). This aligns with the
+                              instruction to "explicá por qué" if an order cannot be cancelled. The user did
+                              not insist, so escalation was not yet required.
+                              For the refund: The agent explains the policy that only items can be refunded,
+                              not the total order ("Respecto al reembolso, solo se puede reembolsar el precio
+                              de los ítems afectados, no el total del pedido."). Then, it clarifies the user's
+                              intent by asking if they would like to request a refund for a specific item
+                              ("¿Te gustaría solicitar el reembolso de algún ítem en particular del pedido
+                              A89268?"). This fulfills the instruction to "aclará con el cliente" for
+                              ambiguous requests.
+                              The final answer correctly does not claim to have cancelled or refunded
+                              anything.
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             1739 (in 1049, out 690)
+  invocation_duration_v1:     14.96s
+
+
+[juez] muestras del juez de rúbricas=21  parseadas=18  rescatadas=3  descartadas=0  vacías=0

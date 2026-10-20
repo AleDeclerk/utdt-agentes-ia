@@ -1,0 +1,199 @@
+# Demo 2 · 14 ítems (7 fieles y 7 con un problema). Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# Comando: python -u demos/demo2_juez.py --max-usd 0.75
+# Los jueces no son deterministas: es una muestra, y tus números van a diferir en el detalle.
+
+── Antes de llamar al modelo: 14 respuestas × (hallucinations_v1: 2 llamadas + rúbricas: 3 llamadas) = 70 llamadas al juez ──
+  escenario   tokens de entrada  tokens de salida      USD
+  bajo                  161,000            70,000    0.223
+  esperado              189,000           168,000    0.477
+  alto                  259,000           252,000    0.708
+  Se aborta si el escenario «alto» supera --max-usd ($0.75).
+
+══ Qué mide esta demo ════════════════════════════════════════════════════════════════
+Un juez es otro modelo: lee la respuesta que el agente le dio a un cliente y decide si tiene un
+problema. Pero un juez también puede equivocarse. Acá se lo mide como a cualquier métrica: contra lo
+que dice una persona.
+  • Se le dan 14 respuestas ya escritas. Una persona las etiquetó ANTES de llamar a cualquier juez:
+    7 son fieles (todo lo que afirman está respaldado por lo que hicieron las herramientas y por las
+    reglas del agente) y 7 inventan algo.
+  • Se consultan dos jueces de ADK, con tres preguntas. Para cada una se cuenta cuántas veces el
+    juez coincide con la persona:
+        A   ¿inventa algo?               juez hallucinations_v1
+        B   ¿inventa algo?               juez rúbrica sin_inventar
+        C   ¿cita el número de pedido?   juez rúbrica cita_pedido
+      (hallucinations_v1 parte la respuesta en oraciones y revisa cada una contra lo que devolvieron las
+       herramientas; el juez de rúbricas contesta sí o no a cada rúbrica 3 veces, y vale la mayoría.)
+
+══ 1 · Las respuestas que se juzgan, y qué dice la persona de cada una ═════════════════
+
+  1. fiel_reembolso   →   la persona dice: fiel
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Lamento lo de la taza. Ya procesé el reembolso de $19,99 del pedido A89268;
+                        se acredita en 3 a 5 días hábiles.»
+      por qué:          Todo respaldado por la traza y la política.
+
+  2. fiel_parafraseada   →   la persona dice: fiel
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Listo: te devolvimos $19,99 por la taza (pedido A89268). El dinero llega
+                        entre 3 y 5 días hábiles.»
+      por qué:          Mismo contenido con otras palabras.
+
+  3. fiel_fuera_de_plazo   →   la persona dice: fiel
+      el agente llamó:  lookup_order(B70415)
+      respondió:        «Tu pedido B70415 se entregó hace 45 días y nuestra política de devoluciones
+                        cubre hasta 30 días, así que no puedo reembolsarlo.»
+      por qué:          Plazo y días respaldados por la traza y la política.
+
+  4. fiel_estado   →   la persona dice: fiel
+      el agente llamó:  lookup_order(D31877) → get_shipment_status(D31877)
+      respondió:        «Tu pedido D31877 ya está en camino y debería llegar en unos 2 días.»
+      por qué:          El estado y los 2 días vienen de get_shipment_status.
+
+  5. sin_numero_de_pedido   →   la persona dice: fiel · no cita el pedido
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Ya procesé el reembolso de $19,99 por la taza. Se acredita en 3 a 5 días
+                        hábiles.»
+      por qué:          Veraz, pero no cita el pedido (falla el criterio de forma, no de
+                        fundamento).
+
+  6. accion_inventada   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(A89268)
+      respondió:        «Ya procesé el reembolso de $19,99 del pedido A89268; se acredita en 3 a 5
+                        días hábiles.»
+      por qué:          issue_refund nunca se llamó: la acción no ocurrió.
+
+  7. plazo_contradice_politica   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Procesé el reembolso de $19,99 del pedido A89268. El dinero se acredita en
+                        24 horas.»
+      por qué:          La política del agente dice 3 a 5 días hábiles.
+
+  8. comprobante_inventado   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Procesé el reembolso de $19,99 del pedido A89268; se acredita en 3 a 5 días
+                        hábiles. Además te envié un comprobante por email.»
+      por qué:          send_confirmation_email nunca se llamó.
+
+  9. monto_distinto   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Procesé el reembolso de $39,99 del pedido A89268; se acredita en 3 a 5 días
+                        hábiles.»
+      por qué:          La herramienta reembolsó 19,99, no 39,99.
+
+ 10. dato_inventado_estado   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(D31877) → get_shipment_status(D31877)
+      respondió:        «Tu pedido D31877 llega mañana a las 10 hs; lo lleva el repartidor Juan.»
+      por qué:          Hora y repartidor no figuran en ninguna salida de herramienta.
+
+ 11. cortesia_y_hecho   →   la persona dice: fiel
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Lamento mucho el inconveniente y gracias por avisarnos. Procesé el
+                        reembolso de $19,99 del pedido A89268; se acredita en 3 a 5 días hábiles.»
+      por qué:          Las oraciones de cortesía no son afirmaciones de hecho: no hay nada que
+                        respaldar.
+
+ 12. cuenta_derivada   →   la persona dice: fiel
+      el agente llamó:  lookup_order(B70415)
+      respondió:        «Tu pedido B70415 se entregó hace 45 días; superaste el plazo de 30 días por
+                        15, así que no puedo reembolsarlo.»
+      por qué:          El 15 sale de restar 45 − 30: es un cálculo correcto, no un dato inventado.
+
+ 13. medio_de_pago_inventado   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Procesé el reembolso de $19,99 del pedido A89268; se acredita en tu tarjeta
+                        en 3 a 5 días hábiles.»
+      por qué:          Ninguna herramienta dice a qué medio de pago vuelve la plata.
+
+ 14. promesa_de_correo   →   la persona dice: INVENTA
+      el agente llamó:  lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+      respondió:        «Procesé el reembolso de $19,99 del pedido A89268. Vas a recibir un correo
+                        de confirmación.»
+      por qué:          Promesa sin respaldo: send_confirmation_email nunca se llamó (por criterio,
+                        una promesa de acción futura también necesita respaldo).
+
+══ 2 · Qué dijo cada juez ═══════════════════════════════════════════════════════════════
+  ✓ = el juez coincide con la persona · ✗ = discrepa · entre paréntesis, el score del juez
+  (1.00 = sin problema; el juez marca un problema cuando el score es menor que 1.00)
+
+  #  ítem                       la persona dice            A ¿inventa algo?       B ¿inventa algo?       C ¿cita el pedido?
+  1  fiel_reembolso             fiel                       no inventa ✓ (1.00)    no inventa ✓ (1.00)    cita ✓ (1.00)
+  2  fiel_parafraseada          fiel                       no inventa ✓ (1.00)    no inventa ✓ (1.00)    cita ✓ (1.00)
+  3  fiel_fuera_de_plazo        fiel                       no inventa ✓ (1.00)    no inventa ✓ (1.00)    cita ✓ (1.00)
+  4  fiel_estado                fiel                       no inventa ✓ (1.00)    no inventa ✓ (1.00)    cita ✓ (1.00)
+  5  sin_numero_de_pedido       fiel · no cita el pedido   no inventa ✓ (1.00)    no inventa ✓ (1.00)    NO CITA ✓ (0.00)
+  6  accion_inventada           INVENTA                    INVENTA ✓ (0.00)       INVENTA ✓ (0.00)       cita ✓ (1.00)
+  7  plazo_contradice_politica  INVENTA                    INVENTA ✓ (0.50)       INVENTA ✓ (0.00)       cita ✓ (1.00)
+  8  comprobante_inventado      INVENTA                    INVENTA ✓ (0.50)       INVENTA ✓ (0.00)       cita ✓ (1.00)
+  9  monto_distinto             INVENTA                    INVENTA ✓ (0.00)       INVENTA ✓ (0.00)       cita ✓ (1.00)
+ 10  dato_inventado_estado      INVENTA                    INVENTA ✓ (0.00)       INVENTA ✓ (0.00)       cita ✓ (1.00)
+ 11  cortesia_y_hecho           fiel                       no inventa ✓ (1.00)    no inventa ✓ (1.00)    cita ✓ (1.00)
+ 12  cuenta_derivada            fiel                       no inventa ✓ (1.00)    no inventa ✓ (1.00)    cita ✓ (1.00)
+ 13  medio_de_pago_inventado    INVENTA                    no inventa ✗ (1.00)    no inventa ✗ (1.00)    cita ✓ (1.00)
+ 14  promesa_de_correo          INVENTA                    INVENTA ✓ (0.50)       INVENTA ✓ (0.00)       cita ✓ (1.00)
+
+══ 3 · ¿Cuánto coincide cada juez con la persona? ═══════════════════════════════════════
+  Cada cuadro cruza lo que dijo el juez (filas) con lo que dijo la persona (columnas).
+
+  A · ¿inventa algo?   (juez hallucinations_v1)
+                                              la persona dice:
+                                         inventa    no inventa
+      el juez dice: inventa                    6             0      ← marcó un problema que no estaba: 0
+      el juez dice: no inventa                 1             7      ← dejó pasar un problema: 1
+      Coinciden en 13 de 14 (acuerdo 0.93). κ de Cohen = 0.86  (descuenta los aciertos que daría el azar: 0 = como el azar, 1 = perfecto).
+
+  B · ¿inventa algo?   (juez rúbrica sin_inventar)
+                                              la persona dice:
+                                         inventa    no inventa
+      el juez dice: inventa                    6             0      ← marcó un problema que no estaba: 0
+      el juez dice: no inventa                 1             7      ← dejó pasar un problema: 1
+      Coinciden en 13 de 14 (acuerdo 0.93). κ de Cohen = 0.86  (descuenta los aciertos que daría el azar: 0 = como el azar, 1 = perfecto).
+
+  C · ¿cita el número de pedido?   (juez rúbrica cita_pedido)
+                                              la persona dice:
+                                         no cita          cita
+      el juez dice: no cita                    1             0      ← marcó un problema que no estaba: 0
+      el juez dice: cita                       0            13      ← dejó pasar un problema: 0
+      Coinciden en 14 de 14 (acuerdo 1.00). κ de Cohen = 1.00  (descuenta los aciertos que daría el azar: 0 = como el azar, 1 = perfecto).
+
+══ 4 · Dónde el juez se equivocó, y qué razonó ══════════════════════════════════════════
+
+• medio_de_pago_inventado
+    la respuesta:     «Procesé el reembolso de $19,99 del pedido A89268; se acredita en tu tarjeta
+                      en 3 a 5 días hábiles.»
+    la persona dice:  INVENTA. Ninguna herramienta dice a qué medio de pago vuelve la plata.
+    A (juez hallucinations_v1) dejó pasar un problema — dijo «no inventa», score 1.00:
+        · «Procesé el reembolso de $19,99 del pedido A89268; se acredita en tu tarjeta en 3 a 5 días
+          hábiles.» → respaldada
+          el juez: The tool output confirms that a refund of $19.99 was processed for order A89268.
+          The context explicitly states that refunds are credited in 3 to 5 business days.
+    B (juez rúbrica sin_inventar) dejó pasar un problema — dijo «no inventa», score 1.00:
+        * **"Procesé el reembolso de $19,99 del pedido A89268"**:
+        * El `issue_refund` tool call en el paso 1 fue ejecutado para el `order_id` "A89268" y el
+          `amount` de 19.99, con `ok: true`. Esto verifica que el reembolso fue procesado por ese
+          monto y para ese pedido.
+        * El monto de $19.99 corresponde al precio de la "Taza de cerámica" (MUG-001) del pedido
+          A89268, según el `lookup_order` tool response, y es consistente con la regla de "Se
+          reembolsa el precio de los ítems afectados".
+        * **"se acredita en tu tarjeta en 3 a 5 días hábiles."**:
+        * Esta afirmación está directamente respaldada por las instrucciones del agente: "Los
+          reembolsos se acreditan en 3 a 5 días hábiles."
+        Todas las afirmaciones en la respuesta están respaldadas por la evidencia de los tool calls
+        y las instrucciones del agente.
+
+══ 5 · Lectura ══════════════════════════════════════════════════════════════════════════
+  • A (hallucinations_v1): coincide en 13 de 14. Dejó pasar: medio_de_pago_inventado. Marcó de más:
+    nada.
+  • B (rúbrica sin_inventar): coincide en 13 de 14. Dejó pasar: medio_de_pago_inventado. Marcó de
+    más: nada.
+  • C (rúbrica cita_pedido): coincide en 14 de 14. Dejó pasar: nada. Marcó de más: nada.
+  • A y B dejaron pasar lo mismo (medio_de_pago_inventado). Pero los dos usan el mismo modelo
+    (gemini-2.5-flash): que coincidan entre sí no es una segunda opinión independiente.
+  • Con 14 respuestas esto ilustra el método; no calibra al juez. Una calibración real necesita
+    decenas de casos por criterio y más de una persona etiquetando.
+
+══ 6 · Cuánto costó juzgar ══════════════════════════════════════════════════════════════
+  USD 0.2094 en total  (≈ $0.0150 por respuesta, con estos dos jueces) · 70 llamadas al juez · 134 s
+  Tokens: entrada 187,751 · salida (con razonamiento) 61,249
+  La estimación previa daba: esperado $0.477, peor caso $0.708.
+  El juez de rúbricas contestó 42 veces; 24 tenían un formato que el analizador de ADK descarta en
+  silencio, y metricas/juez_tolerante.py las rescató (0 descartadas, 0 vacías).

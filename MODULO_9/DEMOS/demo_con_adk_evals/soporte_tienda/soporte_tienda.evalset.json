@@ -1,0 +1,428 @@
+{
+  "eval_set_id": "soporte_tienda",
+  "name": "Soporte de la tienda · módulo 9",
+  "description": "Los siete casos de entorno/corpus.py, en el formato de ADK.",
+  "eval_cases": [
+    {
+      "evalId": "taza_rota",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "Hola, me llegó rota la taza del pedido A89268. Quiero que me devuelvan la plata."
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "Lamento lo ocurrido. Procesé el reembolso de $19,99 por la taza del pedido A89268. Se acredita en 3 a 5 días hábiles."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [
+              {
+                "args": {
+                  "order_id": "A89268"
+                },
+                "name": "lookup_order"
+              },
+              {
+                "args": {
+                  "order_id": "A89268",
+                  "sku": "MUG-001",
+                  "amount": 19.99
+                },
+                "name": "issue_refund"
+              }
+            ],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "taza_rota__monto",
+          "rubricContent": {
+            "textProperty": "Informa que se reembolsó el precio de la taza (19,99) y no el total del pedido (39,99)."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        },
+        {
+          "rubricId": "taza_rota__plazo",
+          "rubricContent": {
+            "textProperty": "Informa que el reembolso se acredita en 3 a 5 días hábiles."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [
+          [
+            "A89268",
+            "MUG-001",
+            19.99
+          ]
+        ],
+        "cancelados": []
+      }
+    },
+    {
+      "evalId": "fuera_de_plazo",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "Quiero devolver los auriculares del pedido B70415, los recibí hace un mes y medio."
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "Tu pedido B70415 se entregó hace 45 días y nuestra política de devoluciones cubre hasta 30 días, así que no puedo reembolsarlo."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [
+              {
+                "args": {
+                  "order_id": "B70415"
+                },
+                "name": "lookup_order"
+              }
+            ],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "fuera_de_plazo__plazo",
+          "rubricContent": {
+            "textProperty": "Explica que el pedido está fuera del plazo de 30 días y que por eso no se reembolsa."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [],
+        "cancelados": []
+      }
+    },
+    {
+      "evalId": "cancelar_en_proceso",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "Cancelame por favor el pedido C55120, me equivoqué de talle."
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "Listo, cancelé el pedido C55120 como pediste."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [
+              {
+                "args": {
+                  "order_id": "C55120"
+                },
+                "name": "lookup_order"
+              },
+              {
+                "args": {
+                  "order_id": "C55120"
+                },
+                "name": "cancel_order"
+              }
+            ],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "cancelar_en_proceso__cancelacion",
+          "rubricContent": {
+            "textProperty": "Confirma la cancelación del pedido C55120."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [],
+        "cancelados": [
+          "C55120"
+        ]
+      }
+    },
+    {
+      "evalId": "cancelar_entregado",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "Quiero cancelar el pedido A89268 y que me devuelvan todo."
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "El pedido A89268 ya fue entregado, así que no puedo cancelarlo. ¿Querés que te derive con una persona del equipo?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [
+              {
+                "args": {
+                  "order_id": "A89268"
+                },
+                "name": "lookup_order"
+              }
+            ],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "cancelar_entregado__aclara_o_deriva",
+          "rubricContent": {
+            "textProperty": "Aclara la intención del cliente o lo deriva con una persona del equipo, y no dice que canceló ni que reembolsó."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [],
+        "cancelados": []
+      }
+    },
+    {
+      "evalId": "consulta_estado",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "¿Dónde está mi pedido D31877?"
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "Tu pedido D31877 ya está en camino y debería llegar en unos 2 días."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [
+              {
+                "args": {
+                  "order_id": "D31877"
+                },
+                "name": "lookup_order"
+              },
+              {
+                "args": {
+                  "order_id": "D31877"
+                },
+                "name": "get_shipment_status"
+              }
+            ],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "consulta_estado__estado",
+          "rubricContent": {
+            "textProperty": "Informa dónde está el pedido D31877: el estado del envío y los días estimados de llegada."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [],
+        "cancelados": []
+      }
+    },
+    {
+      "evalId": "id_con_typo",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "Quiero el reembolso del pedido A89286."
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "No encuentro el pedido A89286. ¿Podés confirmarme el número?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [
+              {
+                "args": {
+                  "order_id": "A89286"
+                },
+                "name": "lookup_order"
+              }
+            ],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "id_con_typo__pide_verificar",
+          "rubricContent": {
+            "textProperty": "Dice que no encontró el pedido y pide verificar o confirmar el número, sin actuar sobre otro pedido."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [],
+        "cancelados": []
+      }
+    },
+    {
+      "evalId": "consulta_politica",
+      "conversation": [
+        {
+          "invocationId": "turno-1",
+          "userContent": {
+            "parts": [
+              {
+                "text": "¿Cuál es la política de devoluciones?"
+              }
+            ],
+            "role": "user"
+          },
+          "finalResponse": {
+            "parts": [
+              {
+                "text": "Podés devolver un pedido hasta 30 días después de recibirlo; el reembolso se acredita en 3 a 5 días hábiles."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediateData": {
+            "toolUses": [],
+            "toolResponses": [],
+            "intermediateResponses": []
+          },
+          "creationTimestamp": 0.0
+        }
+      ],
+      "sessionInput": {
+        "appName": "soporte_tienda",
+        "userId": "alumno",
+        "state": {}
+      },
+      "creationTimestamp": 0.0,
+      "rubrics": [
+        {
+          "rubricId": "consulta_politica__plazo",
+          "rubricContent": {
+            "textProperty": "Informa el plazo de 30 días para las devoluciones."
+          },
+          "type": "FINAL_RESPONSE_QUALITY"
+        }
+      ],
+      "finalSessionState": {
+        "reembolsos": [],
+        "cancelados": []
+      }
+    }
+  ],
+  "creation_timestamp": 0.0
+}

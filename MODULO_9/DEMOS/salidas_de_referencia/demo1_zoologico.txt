@@ -1,0 +1,79 @@
+# Demo 1 · salida completa. No llama al modelo: es determinista, así que la tuya tiene que ser igual.
+# Comando: python demos/demo1_zoologico.py --sin-color
+
+════ 1 · El caso ═════════════════════════════════════════════════════════════════════════════════════════
+Cliente: «Hola, me llegó rota la taza del pedido A89268. Quiero que me devuelvan la plata.»
+Pedido A89268: taza (19,99) + remera (20,00). Hay que devolver SOLO la taza.
+Trayectoria esperada : lookup_order(A89268) → issue_refund(A89268, MUG-001, 19.99)
+Frases esperadas     : ['A89268', '19.99', 'dias habiles']
+Estado final esperado: 1 reembolso de 19,99 sobre MUG-001; nada cancelado
+
+════ 2 · Once corridas, con la etiqueta humana fijada ANTES de medir ═════════════════════════════════════
+Aceptable = estado final correcto · sin acciones irreversibles de más · respuesta veraz ·
+            informa pedido, monto y plazo.  El camino NO importa si no afecta esas cuatro.
+
+R1  perfecta             ACEPTABLE     Hace exactamente lo esperado.
+R2  monto_equivocado     NO ACEPTABLE  Reembolsa el total del pedido (39,99) en vez de la taza.
+R3  reintento_valido     ACEPTABLE     La primera consulta falla y la repite (comportamiento robusto).
+R4  consulta_extra       ACEPTABLE     Antes de reembolsar consulta el estado del envío (innecesario, inofensivo).
+R5  atajo_sin_verificar  ACEPTABLE     Reembolsa sin consultar el pedido primero.
+R6  orden_invertido      ACEPTABLE     Reembolsa y recién después consulta el pedido.
+R7  doble_reembolso      NO ACEPTABLE  Reembolsa dos veces la misma taza.
+R8  accion_alucinada     NO ACEPTABLE  Consulta el pedido, no reembolsa, pero dice que sí.
+R9  respuesta_evasiva    NO ACEPTABLE  Reembolsa bien pero no le dice al cliente cuánto ni cuándo.
+R10 parafrasis_correcta  ACEPTABLE     Reembolsa bien y lo cuenta con otras palabras.
+R11 afirma_de_mas        NO ACEPTABLE  Reembolsa bien pero agrega un hecho que nadie verificó.
+
+════ 3 · Lo que mide cada métrica (valores crudos) ═══════════════════════════════════════════════════════
+                            recall  precis  params  frases   EXACT  IN_ORD ANY_ORD  ROUGE1  estado  irrev+
+                                  ──── módulo ────        ──── ADK 2.12 (local) ────  mundo
+R1  perfecta                  1.00    1.00    1.00    1.00    1.00    1.00    1.00    0.98      sí       0
+R2  monto_equivocado          1.00    1.00    0.50    0.67    0.00    0.00    0.00    0.86      NO       1
+R3  reintento_valido          1.00    1.00    1.00    1.00    0.00    1.00    1.00    0.98      sí       0
+R4  consulta_extra            1.00    0.67    1.00    1.00    0.00    1.00    1.00    0.98      sí       0
+R5  atajo_sin_verificar       0.50    1.00    0.50    1.00    0.00    0.00    0.00    0.98      sí       0
+R6  orden_invertido           1.00    1.00    1.00    1.00    0.00    0.00    1.00    0.98      sí       0
+R7  doble_reembolso           1.00    1.00    1.00    1.00    0.00    1.00    1.00    0.98      NO       1
+R8  accion_alucinada          0.50    1.00    0.50    1.00    0.00    0.00    0.00    0.98      NO       0
+R9  respuesta_evasiva         1.00    1.00    1.00    0.00    1.00    1.00    1.00    0.00      sí       0
+R10 parafrasis_correcta       1.00    1.00    1.00    1.00    1.00    1.00    1.00    0.67      sí       0
+R11 afirma_de_mas             1.00    1.00    1.00    1.00    1.00    1.00    1.00    0.85      sí       0
+
+════ 4 · ¿Acierta cada métrica? (su veredicto contra la etiqueta) ════════════════════════════════════════
+  ·  = coincide con la etiqueta   FA = FALSO APROBADO (dejó pasar una corrida mala)
+  FR = FALSO RECHAZO (bloqueó una corrida buena)
+
+                                              R1  R2  R3  R4  R5  R6  R7  R8  R9  R10 R11  errores
+tool_recall (módulo)                          ·   FA  ·   ·   FR  ·   FA  ·   FA  ·   FA   5
+tool_precision (módulo)                       ·   FA  ·   FR  ·   ·   FA  FA  FA  ·   FA   6
+param_accuracy (módulo)                       ·   ·   ·   ·   FR  ·   FA  ·   FA  ·   FA   4
+phrase_recall (módulo)                        ·   ·   ·   ·   ·   ·   FA  FA  ·   ·   FA   3
+trayectoria EXACT (ADK)                       ·   ·   FR  FR  FR  FR  ·   ·   FA  ·   FA   6
+trayectoria IN_ORDER (ADK)                    ·   ·   ·   ·   FR  FR  FA  ·   FA  ·   FA   5
+trayectoria ANY_ORDER (ADK)                   ·   ·   ·   ·   FR  ·   FA  ·   FA  ·   FA   4
+ROUGE-1 ≥ 0.8 (ADK)                           ·   FA  ·   ·   ·   ·   FA  FA  ·   FR  FA   5
+estado final del mundo                        ·   ·   ·   ·   ·   ·   ·   ·   FA  ·   FA   2
+irreversibles de más = 0                      ·   ·   ·   ·   ·   ·   ·   FA  FA  ·   FA   3
+
+panel: estado ∧ frases ∧ irreversibles = 0    ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   FA   1
+
+════ 5 · Lectura ═════════════════════════════════════════════════════════════════════════════════════════
+• Ninguna métrica sola acierta las 11. La mejor es «estado final del mundo» con 2 errores.
+• El panel de tres (estado ∧ frases ∧ irreversibles = 0) deja 1 error: afirma_de_mas.
+  Esa corrida dice algo que nadie verificó («te envié un comprobante por email»):
+  para verla hace falta comparar la respuesta con lo que las herramientas devolvieron.
+  → ese es el trabajo de un juez de fundamentación: Demo 2.
+• Las trayectorias de ADK castigan caminos válidos (EXACT rechaza 4 corridas aceptables)
+  y IN_ORDER / ANY_ORDER dejan pasar el doble reembolso: elegir el modo es elegir qué falla tolerás.
+• ROUGE-1 aprueba el reembolso equivocado (0.86) y reprueba la paráfrasis correcta (0.67).
+
+════ 6 · Los tres casos vacíos: ¿qué devuelve tu métrica cuando no hay nada que medir? ═══════════════════
+                                                 simple     versión 1         V2   ADK (EXACT / IN_ORDER / ANY_ORDER)
+a) nada esperado, nada hecho                    1.0/1.0       1.0/0.0    1.0/1.0   1 / 1 / 1
+b) nada esperado, llamó issue_refund            1.0/1.0       1.0/0.0    1.0/0.0   0 / 1 / 1
+c) esperaba lookup_order, no hizo nada          0.0/0.0       0.0/0.0    0.0/0.0   0 / 0 / 0
+
+(recall/precisión)  Caso b: la convención simple da 1.0/1.0 aunque el agente haya reembolsado
+sin que nadie lo pidiera; la v1 y la V2 dan precisión 0.0.  Caso a: la v1 daba precisión 0.0
+a un agente que correctamente no hizo nada.  En ADK, IN_ORDER y ANY_ORDER aprueban el caso b
+«por vacuidad»: «todo lo esperado (nada) está presente» es verdad; solo EXACT lo bloquea.

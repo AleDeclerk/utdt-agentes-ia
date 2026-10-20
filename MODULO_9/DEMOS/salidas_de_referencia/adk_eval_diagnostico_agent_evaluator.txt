@@ -1,0 +1,109 @@
+# AgentEvaluator.evaluate (num_runs=2) sobre los siete casos, con la configuración de diagnóstico. Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# En esa corrida el diagnóstico estaba guardado como test_config.json; hoy es test_config_diagnostico.json y solo se corre
+# con `adk eval --config_file_path` (AgentEvaluator usa el test_config.json que está junto al conjunto de casos).
+# Salida recortada: la completa pesa ~550 KB (una tabla por invocación y los avisos de ADK). Quedan
+# los 84 resúmenes por métrica (7 casos × 12 métricas; cada puntaje es la MEDIA de las 2 corridas del caso, en el
+# orden en que ADK los imprimió) y el mensaje final de la prueba.
+# token_usage_v1 por caso (media de las 2 corridas): 1491, 1034.5, 1076, 3091, 542.5, 2825.5, 2046.5
+# → 24,214 tokens en total entre las 14 corridas.
+
+Summary: `EvalStatus.PASSED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.40338908450704225`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `2.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `1491.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `5.4645`.
+Summary: `EvalStatus.FAILED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `0.0`.
+Summary: `EvalStatus.PASSED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.846153846153846`.
+Summary: `EvalStatus.FAILED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `0.5`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `0.5`.
+Summary: `EvalStatus.PASSED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `2.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `1034.5`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `3.894`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.6376811594202898`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `0.5`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `2.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `1076.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `4.1635`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.5168405365126677`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `0.6666666666666666`.
+Summary: `EvalStatus.PASSED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `3.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `4.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `3091.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `8.422`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.417910447761194`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `0.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `542.5`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `2.8114999999999997`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.18218623481781376`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `0.6666666666666666`.
+Summary: `EvalStatus.PASSED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `3.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `4.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `2825.5`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `16.133000000000003`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_trajectory_avg_score`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.FAILED` for Metric: `response_match_score`. Expected threshold: `0.8`, actual value: `0.3504439511653718`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `tool_precision`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `param_accuracy`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `phrase_recall`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `2.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `2046.5`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `9.1395`.
+
+    AssertionError: Following are all the test failures.
+    response_match_score for soporte_tienda Failed. Expected 0.8, but got 0.40338908450704225.
+    tool_trajectory_avg_score for soporte_tienda Failed. Expected 1.0, but got 0.0.
+    tool_recall for soporte_tienda Failed. Expected 1.0, but got 0.5.
+    param_accuracy for soporte_tienda Failed. Expected 1.0, but got 0.5.
+    response_match_score for soporte_tienda Failed. Expected 0.8, but got 0.6376811594202898.
+    phrase_recall for soporte_tienda Failed. Expected 1.0, but got 0.5.
+    response_match_score for soporte_tienda Failed. Expected 0.8, but got 0.5168405365126677.
+    tool_precision for soporte_tienda Failed. Expected 1.0, but got 0.6666666666666666.
+    response_match_score for soporte_tienda Failed. Expected 0.8, but got 0.417910447761194.
+    response_match_score for soporte_tienda Failed. Expected 0.8, but got 0.18218623481781376.
+    tool_precision for soporte_tienda Failed. Expected 1.0, but got 0.6666666666666666.
+    response_match_score for soporte_tienda Failed. Expected 0.8, but got 0.3504439511653718.
+
+1 failed, 30 warnings in 44.28s

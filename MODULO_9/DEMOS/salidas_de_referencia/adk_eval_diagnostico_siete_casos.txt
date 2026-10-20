@@ -1,0 +1,481 @@
+# adk eval con el diagnóstico estricto (test_config_diagnostico.json), los siete casos. Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# Comando: adk eval soporte_tienda soporte_tienda/soporte_tienda.evalset.json --config_file_path soporte_tienda/test_config_diagnostico.json --print_detailed_results
+# Se quitaron los avisos [EXPERIMENTAL] y las líneas de log INFO que ADK imprime antes del resumen
+# (traían rutas locales); lo demás es la salida tal cual.
+
+Using evaluation criteria: criteria={'tool_trajectory_avg_score': BaseCriterion(threshold=1.0, include_intermediate_responses_in_final=False, match_type='IN_ORDER'), 'response_match_score': 0.8, 'tool_recall': 1.0, 'tool_precision': 1.0, 'param_accuracy': 1.0, 'phrase_recall': 1.0, 'estado_final_del_mundo': 1.0, 'acciones_irreversibles_de_mas': 1.0} custom_metrics={'tool_recall': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.tool_recall'), metric_info=None, description='De las herramientas esperadas, cuántas llamó el agente (por nombre).'), 'tool_precision': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.tool_precision'), metric_info=None, description='De las herramientas llamadas, cuántas eran necesarias (por nombre).'), 'param_accuracy': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.param_accuracy'), metric_info=None, description='De las llamadas esperadas, cuántas se cumplieron con herramienta y parámetros exactos.'), 'phrase_recall': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.phrase_recall'), metric_info=None, description='De las frases que la respuesta debía contener, cuántas están.'), 'estado_final_del_mundo': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.estado_final_del_mundo'), metric_info=None, description='El mundo (reembolsos y cancelaciones) queda como debía; se reconstruye reproduciendo las llamadas.'), 'acciones_irreversibles_de_mas': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.acciones_irreversibles_de_mas'), metric_info=None, description='Ninguna acción irreversible que el caso no autorizaba (0 o 1 por invocación; umbral 1.0).')} user_simulator_config=None live_model_config=None
+*********************************************************************
+Eval Run Summary
+soporte_tienda:
+  Tests passed: 0
+  Tests failed: 7
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: fuera_de_plazo
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.3870967741935483, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 1399.0, Threshold: None
+Token breakdown:
+  total:            1399
+    input:          1053
+      prompt:       1053
+        cached:     n/a
+      tool use:     n/a
+    output:         346
+      candidates:   78
+      reasoning:    268
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 6.785, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Quiero devolver los auriculares del pedido B70415, los recibí hace un mes y
+                              medio.
+  expected_response:          Tu pedido B70415 se entregó hace 45 días y nuestra política de devoluciones
+                              cubre hasta 30 días, así que no puedo reembolsarlo.
+  actual_response:            Hola. El pedido B70415 fue entregado hace 45 días. Nuestra política de
+                              devoluciones establece un plazo máximo de 30 días desde la entrega para poder
+                              realizar un reembolso. Por lo tanto, no es posible procesar la devolución de los
+                              auriculares.
+  expected_tool_calls:        lookup_order(
+                                order_id='B70415')
+  actual_tool_calls:          lookup_order(
+                                order_id='B70415')
+  tool_trajectory_avg_score:  PASSED (1.0)
+  response_match_score:       FAILED (0.3870967741935483)
+  tool_recall:                PASSED (1.0)
+  tool_precision:             PASSED (1.0)
+  param_accuracy:             PASSED (1.0)
+  phrase_recall:              PASSED (1.0)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             1399 (in 1053, out 346)
+  invocation_duration_v1:     6.79s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: id_con_typo
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.5714285714285715, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: FAILED, Score: 0.5, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 1295.0, Threshold: None
+Token breakdown:
+  total:            1295
+    input:          1044
+      prompt:       1044
+        cached:     n/a
+      tool use:     n/a
+    output:         251
+      candidates:   43
+      reasoning:    208
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 4.806, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Quiero el reembolso del pedido A89286.
+  expected_response:          No encuentro el pedido A89286. ¿Podés confirmarme el número?
+  actual_response:            El pedido A89286 no se encuentra. ¿Podrías verificar el número de pedido?
+  expected_tool_calls:        lookup_order(
+                                order_id='A89286')
+  actual_tool_calls:          lookup_order(
+                                order_id='A89286')
+  tool_trajectory_avg_score:  PASSED (1.0)
+  response_match_score:       FAILED (0.5714285714285715)
+  tool_recall:                PASSED (1.0)
+  tool_precision:             PASSED (1.0)
+  param_accuracy:             PASSED (1.0)
+  phrase_recall:              FAILED (0.5)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             1295 (in 1044, out 251)
+  invocation_duration_v1:     4.81s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: consulta_politica
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.10526315789473685, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: FAILED, Score: 0.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 0.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 526.0, Threshold: None
+Token breakdown:
+  total:            526
+    input:          401
+      prompt:       401
+        cached:     n/a
+      tool use:     n/a
+    output:         125
+      candidates:   53
+      reasoning:    72
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 3.783, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     ¿Cuál es la política de devoluciones?
+  expected_response:          Podés devolver un pedido hasta 30 días después de recibirlo; el reembolso se
+                              acredita en 3 a 5 días hábiles.
+  actual_response:            Como agente de soporte, no tengo acceso a la política de devoluciones
+                              directamente. Te sugiero que consultes la sección de "Preguntas Frecuentes" o
+                              "Términos y Condiciones" en la página web de la tienda para obtener esa
+                              información.
+  expected_tool_calls:        (none)
+  actual_tool_calls:          (none)
+  tool_trajectory_avg_score:  PASSED (1.0)
+  response_match_score:       FAILED (0.10526315789473685)
+  tool_recall:                PASSED (1.0)
+  tool_precision:             PASSED (1.0)
+  param_accuracy:             PASSED (1.0)
+  phrase_recall:              FAILED (0.0)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         0
+  inference_call_count_v1:    1
+  token_usage_v1:             526 (in 401, out 125)
+  invocation_duration_v1:     3.78s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: cancelar_entregado
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: FAILED, Score: 0.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.2558139534883721, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: FAILED, Score: 0.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: FAILED, Score: 0.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: FAILED, Score: 0.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: FAILED, Score: 0.5, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 0.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 893.0, Threshold: None
+Token breakdown:
+  total:            893
+    input:          411
+      prompt:       411
+        cached:     n/a
+      tool use:     n/a
+    output:         482
+      candidates:   89
+      reasoning:    393
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 6.548, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Quiero cancelar el pedido A89268 y que me devuelvan todo.
+  expected_response:          El pedido A89268 ya fue entregado, así que no puedo cancelarlo. ¿Querés que te
+                              derive con una persona del equipo?
+  actual_response:            Para poder ayudarte con tu pedido A89268, necesito una aclaración. Mencionas que
+                              quieres cancelarlo y también que se te devuelva todo.
+                              
+                              ¿Estás buscando cancelar el pedido por completo o prefieres solicitar un
+                              reembolso por algún artículo específico? Ten en cuenta que la cancelación solo
+                              es posible si el pedido aún está en procesamiento y los reembolsos se aplican a
+                              ítems individuales, no al total del pedido.
+  expected_tool_calls:        lookup_order(
+                                order_id='A89268')
+  actual_tool_calls:          (none)
+  tool_trajectory_avg_score:  FAILED (0.0)
+  response_match_score:       FAILED (0.2558139534883721)
+  tool_recall:                FAILED (0.0)
+  tool_precision:             FAILED (0.0)
+  param_accuracy:             FAILED (0.0)
+  phrase_recall:              FAILED (0.5)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         0
+  inference_call_count_v1:    1
+  token_usage_v1:             893 (in 411, out 482)
+  invocation_duration_v1:     6.55s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: taza_rota
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.5531914893617021, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: FAILED, Score: 0.6666666666666666, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 3.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 4.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 3289.0, Threshold: None
+Token breakdown:
+  total:            3289
+    input:          2757
+      prompt:       2757
+        cached:     n/a
+      tool use:     n/a
+    output:         532
+      candidates:   131
+      reasoning:    401
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 8.415, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Hola, me llegó rota la taza del pedido A89268. Quiero que me devuelvan la plata.
+  expected_response:          Lamento lo ocurrido. Procesé el reembolso de $19,99 por la taza del pedido
+                              A89268. Se acredita en 3 a 5 días hábiles.
+  actual_response:            Tu reembolso de $19.99 para el pedido A89268 ha sido procesado. Verás el crédito
+                              en tu cuenta en 3 a 5 días hábiles.
+  expected_tool_calls:        lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                order_id='A89268',
+                                sku='MUG-001',
+                                amount=19.99)
+  actual_tool_calls:          lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                sku='MUG-001',
+                                order_id='A89268',
+                                amount=19.99)
+                              send_confirmation_email(
+                                order_id='A89268',
+                                tipo='refund')
+  tool_trajectory_avg_score:  PASSED (1.0)
+  response_match_score:       FAILED (0.5531914893617021)
+  tool_recall:                PASSED (1.0)
+  tool_precision:             FAILED (0.6666666666666666)
+  param_accuracy:             PASSED (1.0)
+  phrase_recall:              PASSED (1.0)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         3
+  inference_call_count_v1:    4
+  token_usage_v1:             3289 (in 2757, out 532)
+  invocation_duration_v1:     8.41s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: consulta_estado
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: FAILED, Score: 0.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: PASSED, Score: 0.923076923076923, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: FAILED, Score: 0.5, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: FAILED, Score: 0.5, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 1.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 2.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 1022.0, Threshold: None
+Token breakdown:
+  total:            1022
+    input:          879
+      prompt:       879
+        cached:     n/a
+      tool use:     n/a
+    output:         143
+      candidates:   43
+      reasoning:    100
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 5.118, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     ¿Dónde está mi pedido D31877?
+  expected_response:          Tu pedido D31877 ya está en camino y debería llegar en unos 2 días.
+  actual_response:            Tu pedido D31877 está en camino y debería llegar en 2 días.
+  expected_tool_calls:        lookup_order(
+                                order_id='D31877')
+                              get_shipment_status(
+                                order_id='D31877')
+  actual_tool_calls:          get_shipment_status(
+                                order_id='D31877')
+  tool_trajectory_avg_score:  FAILED (0.0)
+  response_match_score:       PASSED (0.923076923076923)
+  tool_recall:                FAILED (0.5)
+  tool_precision:             PASSED (1.0)
+  param_accuracy:             FAILED (0.5)
+  phrase_recall:              PASSED (1.0)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         1
+  inference_call_count_v1:    2
+  token_usage_v1:             1022 (in 879, out 143)
+  invocation_duration_v1:     5.12s
+
+
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: cancelar_en_proceso
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.12903225806451613, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: FAILED, Score: 0.6666666666666666, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 3.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 4.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 2806.0, Threshold: None
+Token breakdown:
+  total:            2806
+    input:          2333
+      prompt:       2333
+        cached:     485
+      tool use:     n/a
+    output:         473
+      candidates:   108
+      reasoning:    365
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 9.222, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Cancelame por favor el pedido C55120, me equivoqué de talle.
+  expected_response:          Listo, cancelé el pedido C55120 como pediste.
+  actual_response:            Tu pedido C55120 por un total de 89.9 ha sido cancelado con éxito. Se ha enviado
+                              un correo de confirmación a tu dirección.
+  expected_tool_calls:        lookup_order(
+                                order_id='C55120')
+                              cancel_order(
+                                order_id='C55120')
+  actual_tool_calls:          lookup_order(
+                                order_id='C55120')
+                              cancel_order(
+                                order_id='C55120')
+                              send_confirmation_email(
+                                order_id='C55120',
+                                tipo='cancel')
+  tool_trajectory_avg_score:  PASSED (1.0)
+  response_match_score:       FAILED (0.12903225806451613)
+  tool_recall:                PASSED (1.0)
+  tool_precision:             FAILED (0.6666666666666666)
+  param_accuracy:             PASSED (1.0)
+  phrase_recall:              PASSED (1.0)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         3
+  inference_call_count_v1:    4
+  token_usage_v1:             2806 (in 2333, out 473)
+  invocation_duration_v1:     9.22s
+
+

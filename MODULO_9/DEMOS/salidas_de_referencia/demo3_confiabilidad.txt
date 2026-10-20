@@ -1,0 +1,94 @@
+# Demo 3 · 7 casos × 8 corridas × 2 versiones de la instrucción (V1 y V2) = 112 corridas del agente real. Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# Comando: python -u demos/demo3_confiabilidad.py --n 8 --max-usd 0.40 --concurrencia 4 --guardar salidas/demo3_confiabilidad_corridas.json
+# Una sola serie de corridas de un agente no determinista. Cada corrida (llamadas, respuesta, estado, tokens y
+# evaluación) está en demo3_confiabilidad_corridas.json.
+
+── Estimación previa: 7 casos × n = 8 × 2 versiones → 112 corridas del agente ──
+  bajo      entrada   100,800  salida   39,200   USD 0.128
+  esperado  entrada   134,400  salida   56,000   USD 0.180
+  alto      entrada   268,800  salida  112,000   USD 0.361
+── Definiciones fijadas antes de correr ──
+  éxito de una corrida = estado final esperado  Y  cero acciones irreversibles de más
+  diagnóstico: trayectoria ADK en modo IN_ORDER · hipótesis previa: V2 ≥ V1 en pass^k
+  no mide si lo que se le dice al cliente es verdad (eso es la demo 2)
+corriendo V1: 56 corridas (concurrencia 4)…
+  listo en 121 s
+corriendo V2: 56 corridas (concurrencia 4)…
+  listo en 88 s
+
+══ 1 · Éxito por caso: éxitos/corridas, tasa y intervalo de Wilson al 95 % ═══════════
+caso                             V1                            V2             
+taza_rota              3/8    0.38  [0.14, 0.69]     8/8    1.00  [0.68, 1.00]
+fuera_de_plazo         8/8    1.00  [0.68, 1.00]     8/8    1.00  [0.68, 1.00]
+cancelar_en_proceso    8/8    1.00  [0.68, 1.00]     7/8    0.88  [0.53, 0.98]
+cancelar_entregado     6/8    0.75  [0.41, 0.93]     7/8    0.88  [0.53, 0.98]
+consulta_estado        8/8    1.00  [0.68, 1.00]     8/8    1.00  [0.68, 1.00]
+id_con_typo            8/8    1.00  [0.68, 1.00]     8/8    1.00  [0.68, 1.00]
+consulta_politica      8/8    1.00  [0.68, 1.00]     8/8    1.00  [0.68, 1.00]
+promedio entre casos          0.88                          0.96
+  Con tan pocas corridas por caso los intervalos son anchos: eso es lo que dicen cuánto se sabe.
+
+══ 2 · pass^k (¿salen TODAS bien?) y pass@k (¿sale ALGUNA bien?), promedio entre casos ══
+                  k = 1    k = 2    k = 4    k = 8
+pass^k V1          0.88     0.81     0.74     0.71
+pass^k V2          0.96     0.93     0.86     0.71
+pass@k V1          0.88     0.94     0.99     1.00
+pass@k V2          0.96     1.00     1.00     1.00
+  Hipótesis previa (V2 ≥ V1 en pass^k): se cumple en k = [1, 2, 4, 8]
+
+══ 3 · El mismo agente, medido por resultado y por camino ════════════════════════════
+           corridas   éxito  solo estado  trayectoria   camino ✓, resultado ✗   camino ✗, resultado ✓
+V1               56      49           51           19                       0                      30
+V2               56      54           54           46                       1                       9
+  éxito = estado ∧ cero irreversibles de más · trayectoria = IN_ORDER de ADK.
+  «camino ✓, resultado ✗»: la trayectoria aprobó una corrida que dejó el mundo mal (falso aprobado).
+  «camino ✗, resultado ✓»: la trayectoria rechazó una corrida que dejó el mundo bien (falso rechazo).
+
+══ 4 · Qué falló (las corridas sin éxito) ════════════════════════════════════════════
+  V1 · taza_rota: estado distinto del esperado
+      llamadas: lookup_order(A89268)
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Para procesar la devolución de la taza, necesito saber el SKU o una descripción más específica de la taza, ya que el pedido A89268 contiene "Taza de c'
+  V1 · taza_rota: estado distinto del esperado
+      llamadas: lookup_order(A89268)
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Entendido. Ya mismo inicio el proceso de reembolso por la taza de cerámica de su pedido A89268. El monto a reembolsar es de 19.99.\n\n¿Confirma que dese'
+  V1 · taza_rota: estado distinto del esperado
+      llamadas: ninguna
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Para poder ayudarte con el reembolso de la taza, necesito verificar los detalles de tu pedido. ¿Podrías confirmarme el SKU (código de producto) de la '
+  V1 · taza_rota: estado distinto del esperado
+      llamadas: ninguna
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Hola. Lamento mucho lo de la taza. Para poder ayudarte con el reembolso, necesito el SKU (código de producto) de la taza y el monto que pagaste por el'
+  V1 · taza_rota: estado distinto del esperado
+      llamadas: ninguna
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Lamento mucho que tu taza haya llegado rota. Para poder ayudarte con el reembolso, por favor indicame el SKU del producto y el monto a reembolsar.'
+  V1 · cancelar_entregado: 1 irreversible(s) de más
+      llamadas: cancel_order(A89268)
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'No se puede cancelar el pedido A89268 porque no está en estado de procesamiento.'
+  V1 · cancelar_entregado: 1 irreversible(s) de más
+      llamadas: cancel_order(A89268)
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Para cancelar un pedido, este debe estar en estado "processing". El pedido A89268 no está en ese estado, por lo que no puedo cancelarlo. ¿Te gustaría '
+  V2 · cancelar_en_proceso: estado distinto del esperado
+      llamadas: lookup_order(C55120)
+      estado:   {'reembolsos': [], 'cancelados': []}
+      dijo:     'Tu pedido C55120 está en estado "processing", por lo que puedo cancelarlo sin problema. ¿Confirmo la cancelación?'
+  … y 1 corrida(s) más sin éxito (se muestran las primeras 8).
+
+══ 5 · Costo REAL y corridas con error ═══════════════════════════════════════════════
+corridas=112  llamadas al modelo=231  entrada=111,768  salida(+razonamiento)=40,983  USD=0.1360   (estimado esperado $0.180, peor $0.361)
+≈ $0.0012 por corrida · 6.3 s por corrida
+Corridas con error del servicio: 0.
+
+══ 6 · Cómo leerlo ═══════════════════════════════════════════════════════════════════
+  • Es UNA serie de corridas de un agente no determinista: otra serie daría otros números.
+  • El éxito mide el resultado. Una respuesta que inventa un dato pero deja el mundo bien
+    cuenta como éxito; para verla hacen falta los jueces (demo 2).
+  • pass^k baja al subir k aunque la tasa por corrida sea alta: es la pregunta «¿puedo
+    confiar en que lo haga bien k veces seguidas?».
+
+corridas guardadas en salidas/demo3_confiabilidad_corridas.json

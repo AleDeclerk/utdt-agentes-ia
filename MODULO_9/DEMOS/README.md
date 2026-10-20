@@ -1,12 +1,13 @@
 # Módulo 9 — Validación y medición de agentes · Demos
 
-Tres demostraciones del módulo, para correr en tu máquina con una API key gratuita de Google AI Studio. Las tres giran alrededor de un mismo agente: el de soporte de una tienda online (una tienda **simulada en memoria**, con seis herramientas, entre ellas `lookup_order` e `issue_refund`). Sobre ese agente se mide, de tres maneras distintas, si hizo lo que debía:
+Tres demostraciones del módulo y una cuarta que recorre el flujo completo de evaluación de ADK, para correr en tu máquina con una API key gratuita de Google AI Studio. Todas giran alrededor de un mismo agente: el de soporte de una tienda online (una tienda **simulada en memoria**, con seis herramientas, entre ellas `lookup_order` e `issue_refund`). Sobre ese agente se mide, de tres maneras distintas, si hizo lo que debía:
 
 | Demostración | Pregunta | Qué usa | Cuesta |
 |---|---|---|---|
 | **Demo 1** · `demos/demo1_zoologico.py` | ¿Qué métrica ve qué falla? | Once corridas ya escritas del mismo pedido y todas las métricas del módulo | $0: no llama al modelo |
 | **Demo 2** · `demos/demo2_juez.py` | ¿Y quién evalúa al juez? | Los dos jueces de ADK sobre catorce respuestas ya escritas, contra etiquetas humanas | USD 0,21 a precio de lista en la corrida de referencia |
 | **Demo 3** · `demos/demo3_confiabilidad.py` | ¿Cuántas veces sale bien? | El agente real sobre los 7 casos, n veces cada uno, con dos versiones de su instrucción (V1 y V2): tasa con intervalo de Wilson, pass@k y pass^k | USD 0,14 a precio de lista con n = 8 |
+| **Demo con el marco de ADK** · `demo_con_adk_evals/` | ¿Cómo se ve el flujo completo de ADK? | `EvalSet`, `EvalConfig`, `adk eval`, `AgentEvaluator`, métricas propias y jueces, con el agente real (tiene su propio [README](demo_con_adk_evals/README.md)) | del orden de USD 0,25 por corrida de los siete casos |
 
 La **guía de las demostraciones** ([`guia_demos.md`](guia_demos.md)) explica cada una en detalle: qué corre, cómo leer la salida bloque por bloque y qué tiene que quedar claro. Empezá por su sección 1, que distingue el corpus, el zoológico y los ítems del juez: se parecen y no son lo mismo.
 
@@ -51,6 +52,7 @@ python demos/demo3_confiabilidad.py --dry-run         # Demo 3: ídem
 | `python demos/demo2_juez.py --comparar-razonamiento --max-usd 0.90` | Repite todo con el razonamiento del juez apagado | el tope previo ronda los USD 0,85 |
 | `python -u demos/demo3_confiabilidad.py --n 8 --max-usd 0.60` | Demo 3 completa: 7 casos × 8 corridas × 2 versiones = 112 corridas del agente, sin jueces. Imprime la estimación antes y aborta si el peor escenario supera el tope | USD 0,136 en la corrida de referencia (estimación previa: 0,13 / 0,18 / 0,36 en bajo / esperado / alto) |
 | `python -u demos/demo3_confiabilidad.py --solo taza_rota --n 1` | Prueba barata de la Demo 3 | centavos |
+| `adk eval` y `AgentEvaluator`, desde `demo_con_adk_evals/` (comandos en su README) | El agente real y los jueces de ADK sobre los siete casos | ≈ USD 0,25 por corrida de los siete casos (estimado: ADK no informa los tokens de los jueces) |
 
 El precio usado en las estimaciones (Gemini 2.5 Flash: USD 0,30 por millón de tokens de entrada y USD 2,50 por millón de salida) está en `metricas/costo.py`. Las estimaciones son eso: estimaciones; el costo real de los jueces se mide con el contador de tokens y se imprime al final. ADK no informa el costo de los jueces por su cuenta.
 
@@ -75,10 +77,14 @@ DEMOS/
 │   ├── costo.py              estimador de costo y contador de tokens reales
 │   └── juez_tolerante.py     parser que rescata muestras del juez de rúbricas que ADK descarta
 ├── demos/                    Demo 1, Demo 2 y Demo 3
+├── demo_con_adk_evals/       el flujo completo de ADK (tiene su propio README)
+├── salidas_de_referencia/    la salida de una corrida de cada demo, para comparar con la tuya
 └── tests/                    pruebas: entorno, métricas, zoológico, ítems del juez, confiabilidad
 ```
 
 `conftest.py` agrega esta carpeta al `sys.path` para que las pruebas importen `metricas` y `entorno` sin instalar nada.
+
+`salidas_de_referencia/` trae la salida de una corrida de cada demo (Gemini 2.5 Flash, ADK 2.12.0), con un encabezado que dice el comando. Las de `adk eval` vienen sin los avisos `[EXPERIMENTAL]` y las líneas `INFO` que ADK imprime antes del resumen. La carpeta `salidas/` (sin `_de_referencia`) es donde guardan las tuyas, y git la ignora.
 
 ## Resultados de referencia
 

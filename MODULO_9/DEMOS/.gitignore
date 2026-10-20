@@ -7,3 +7,6 @@ __pycache__/
 
 # Lo que las demos guardan cuando se les pide (por ejemplo, --guardar salidas/corridas.json)
 salidas/
+
+# Lo que `adk eval` guarda al correr (demo_con_adk_evals/)
+.adk/

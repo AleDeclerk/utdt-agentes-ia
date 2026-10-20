@@ -2,15 +2,15 @@
 
 Esta guía explica, para cada demostración, **qué corre**, **cómo leer lo que imprime** y **qué tiene que quedar claro** al terminar. Cada demostración empieza con una **consigna**: un párrafo que dice qué vas a hacer y qué pregunta contesta.
 
-Los comandos se corren desde la carpeta `DEMOS/`, con el entorno virtual activado (ver la sección 2). Los extractos de salida que se muestran son de **una corrida de referencia** y se copiaron tal cual; si una cifra de una demostración que llama al modelo no coincide con la tuya, es lo esperable (ver la sección 2).
+Los comandos se corren desde la carpeta `DEMOS/`, con el entorno virtual activado (ver la sección 2). Los extractos de salida que se muestran son de **una corrida de referencia** y se copiaron tal cual (las salidas completas están en `salidas_de_referencia/`); si una cifra de una demostración que llama al modelo no coincide con la tuya, es lo esperable (ver la sección 2).
 
-| | Demo 1 | Demo 2 | Demo 3 |
-|---|---|---|---|
-| **Pregunta** | ¿Qué métrica ve qué falla? | ¿Y quién evalúa al juez? | ¿Cuántas veces sale bien? |
-| **Qué corre** | 11 corridas escritas a mano, medidas con todas las métricas | 14 respuestas escritas a mano, juzgadas por 2 jueces de ADK | El agente real, 7 casos × n × 2 instrucciones |
-| **Llama al modelo** | No | Sí (los jueces) | Sí (el agente) |
-| **Costo en la corrida de referencia** | $0 | USD 0,21 | USD 0,14 con n = 8 |
-| **Comando** | `demos/demo1_zoologico.py` | `demos/demo2_juez.py` | `demos/demo3_confiabilidad.py` |
+| | Demo 1 | Demo 2 | Demo 3 | Demo con el marco de ADK |
+|---|---|---|---|---|
+| **Pregunta** | ¿Qué métrica ve qué falla? | ¿Y quién evalúa al juez? | ¿Cuántas veces sale bien? | ¿Cómo se ve el flujo completo de ADK? |
+| **Qué corre** | 11 corridas escritas a mano, medidas con todas las métricas | 14 respuestas escritas a mano, juzgadas por 2 jueces de ADK | El agente real, 7 casos × n × 2 instrucciones | El agente real sobre los 7 casos, con `adk eval` |
+| **Llama al modelo** | No | Sí (los jueces) | Sí (el agente) | Sí (agente y jueces) |
+| **Costo en la corrida de referencia** | $0 | USD 0,21 | USD 0,14 con n = 8 | del orden de USD 0,25 por pasada con jueces |
+| **Comando** | `demos/demo1_zoologico.py` | `demos/demo2_juez.py` | `demos/demo3_confiabilidad.py` | `adk eval` en `demo_con_adk_evals/` |
 
 El costo es a **precio de lista**. Con la capa gratuita de Google AI Studio no se paga, pero se consume cuota (ver la sección 2).
 
@@ -28,7 +28,7 @@ En las demostraciones aparecen **tres conjuntos de ejemplos** que se parecen y n
 | **Qué se mide con él** | **al agente** | **a las métricas** | **al juez** |
 | **Qué trae cada uno** | mensaje del cliente, llamadas esperadas, frases esperadas y estado final esperado | las llamadas que hizo, lo que respondió y una etiqueta humana: aceptable o no | la respuesta, las herramientas llamadas, y dos etiquetas humanas: ¿inventa algo? y ¿cita el pedido? |
 | **Dónde está** | `entorno/corpus.py` (`CORPUS`) | `entorno/zoologico.py` (`CORRIDAS`) | `entorno/juez_items.py` (`ITEMS`) |
-| **Lo usa** | Demo 3 | Demo 1 | Demo 2 |
+| **Lo usa** | Demo 3 y demo con el marco de ADK | Demo 1 | Demo 2 |
 | **Cuesta** | corre el modelo | $0 | cuesta lo que cuestan los jueces |
 
 **Una regla para no confundirse:** los *casos* son pedidos distintos; las *corridas R* son el mismo pedido con distinta conducta; los *ítems* son respuestas ya escritas. Un caso se nombra por su id; «R2» es siempre una corrida del zoológico.
@@ -81,7 +81,7 @@ Una persona etiquetó cada corrida como aceptable o no **antes de calcular ningu
                     [_LOOK, _REF], "Listo, ya está resuelto.", False,
                     "Falla la condición 4: no informa pedido, monto ni plazo."),
 ```
-La primera lista, entre corchetes, son las llamadas que hizo (`_LOOK` es la consulta del pedido A89268 y `_REF`, el reembolso correcto de la taza); la cadena que sigue es lo que le respondió al cliente; `False` es la etiqueta (no aceptable) y el último texto, el motivo. La salida de la Demo 1 muestra las etiquetas y los números de cada corrida, pero **no** el texto de las respuestas: para leerlas hay que abrir `entorno/zoologico.py`.
+La primera lista, entre corchetes, son las llamadas que hizo (`_LOOK` es la consulta del pedido A89268 y `_REF`, el reembolso correcto de la taza); la cadena que sigue es lo que le respondió al cliente; `False` es la etiqueta (no aceptable) y el último texto, el motivo. La salida de la Demo 1 (`salidas_de_referencia/demo1_zoologico.txt`) muestra las etiquetas y los números de cada corrida, pero **no** el texto de las respuestas: para leerlas hay que abrir `entorno/zoologico.py`.
 
 ### 1.3 Los ítems del juez
 
@@ -140,7 +140,7 @@ cp .env.example .env                       # y pegar tu API key de Google AI Stu
 .venv/bin/python demos/demo1_zoologico.py --sin-color  # para guardar la salida en un archivo
 ```
 
-Cuesta $0 y tarda un segundo.
+Cuesta $0 y tarda un segundo. La salida completa de referencia es `salidas_de_referencia/demo1_zoologico.txt`; como la demo es determinista, la tuya tiene que ser igual.
 
 ### Cómo leer la salida
 
@@ -276,7 +276,7 @@ En la corrida de referencia costó unos USD 0,21 a precio de lista (dos corridas
 
 ### Cómo leer la salida
 
-Los extractos son de una corrida de referencia. La salida empieza con la estimación y un bloque de introducción, y sigue con seis bloques.
+La salida completa de la corrida de referencia es `salidas_de_referencia/demo2_juez.txt` y los extractos son de ahí. Empieza con la estimación y un bloque de introducción, y sigue con seis bloques.
 
 **Antes de llamar al modelo.** La estimación de costo en tres escenarios:
 
@@ -445,11 +445,11 @@ Las corridas que terminan en error del servicio (cuota, red) **no son fallas del
     --guardar salidas/demo3_confiabilidad_corridas.json                          # la corrida completa
 ```
 
-En la corrida de referencia costó USD 0,136 a precio de lista y tardó unos tres minutos y medio con `--concurrencia 4` (121 s para V1 y 88 s para V2); con la concurrencia por defecto, 2, tarda más. La estimación previa fue 0,13 / 0,18 / 0,36 (bajo / esperado / alto). `--guardar` escribe cada corrida —llamadas, respuesta, estado, tokens y evaluación— en un JSON (crea la carpeta si no existe), útil para auditar las que fallaron. Conviene usar `python -u` para ver el avance cuando se redirige la salida.
+En la corrida de referencia costó USD 0,136 a precio de lista y tardó unos tres minutos y medio con `--concurrencia 4` (121 s para V1 y 88 s para V2); con la concurrencia por defecto, 2, tarda más. La estimación previa fue 0,13 / 0,18 / 0,36 (bajo / esperado / alto). `--guardar` escribe cada corrida —llamadas, respuesta, estado, tokens y evaluación— en un JSON (crea la carpeta si no existe), útil para auditar las que fallaron; el de la corrida de referencia está en `salidas_de_referencia/demo3_confiabilidad_corridas.json`. Conviene usar `python -u` para ver el avance cuando se redirige la salida.
 
 ### Cómo leer la salida
 
-Los extractos son de una corrida de referencia. La salida empieza con la estimación y las definiciones fijadas antes de correr, y sigue con seis bloques.
+La salida completa de la corrida de referencia es `salidas_de_referencia/demo3_confiabilidad.txt` y los extractos son de ahí. Empieza con la estimación y las definiciones fijadas antes de correr, y sigue con seis bloques.
 
 **Bloque 1 · Éxito por caso.** Para cada caso y cada versión: éxitos/corridas, la tasa, y el **intervalo de Wilson al 95 %** entre corchetes. El intervalo dice cuánto se sabe de esa tasa.
 
@@ -522,7 +522,192 @@ Es **una sola serie de corridas de un agente no determinista**: otra serie da ot
 
 ---
 
-## 6. Las pruebas ($0)
+## 6. Demo con el marco de evaluación de ADK
+
+> **Consigna.** Las demostraciones 1, 2 y 3 usan *piezas* de ADK llamadas desde Python. Ahora vamos a recorrer **el flujo completo de evaluación de ADK**: los siete casos del corpus escritos como un `EvalSet`, una configuración `EvalConfig` con las métricas y sus umbrales, y el comando `adk eval`, que corre el agente real sobre cada caso y devuelve **un veredicto por métrica y por caso**. Enchufamos además nuestras métricas propias y los jueces de ADK. Hay **dos configuraciones**: una de *veredicto* (¿el agente hizo lo que debía y dijo la verdad?) y una de *diagnóstico* (¿qué camino siguió y cuánto se parece el texto a una referencia?).
+
+### Qué corre
+
+Está en `demo_con_adk_evals/`. No copia nada del resto: importa el mismo agente (`entorno/tienda.py`) y los mismos siete casos (`entorno/corpus.py`).
+
+| Paso del flujo | Dónde está |
+|---|---|
+| 1 · **Caso** (`EvalSet` / `EvalCase`) | `soporte_tienda/soporte_tienda.evalset.json`, generado por `generar_evalset.py` desde el corpus |
+| 2 · **Inferencia** (`Invocation`) | ADK corre `soporte_tienda/agent.py` sobre cada caso y registra lo que pasó |
+| 3 · **Métricas** (`EvalConfig`) | `soporte_tienda/test_config.json` y `test_config_diagnostico.json`, más `metricas_propias.py` |
+| 4 · **Veredicto** | un estado por métrica y por caso, en la consola |
+| 5 · **Resultados** | la consola, `.adk/eval_history/*.evalset_result.json` y la pestaña Eval de `adk web` |
+
+**Las dos configuraciones:**
+
+| | `test_config.json` — **el veredicto** | `test_config_diagnostico.json` |
+|---|---|---|
+| **Pregunta** | ¿El agente hizo lo que debía y dijo la verdad? | ¿Qué camino siguió y cuánto se parece el texto? |
+| **Métricas** | `estado_final_del_mundo` y `acciones_irreversibles_de_mas` (propias), `hallucinations_v1` y el juez de rúbricas | trayectoria `IN_ORDER`, ROUGE-1, `tool_recall`, `tool_precision`, `param_accuracy`, `phrase_recall` y las dos de resultado |
+| **Decide** | el resultado | nada: se mira |
+
+El veredicto mide **resultado** (el mundo, las acciones irreversibles, la verdad de lo que se le dice al cliente); la forma y el camino se miran en el diagnóstico. La primera versión de la demo usaba solo la configuración estricta como veredicto y los siete casos dieron FAILED; era una falla de diseño, no del agente. **El veredicto nuevo se definió después de ver esos resultados**, y por eso se conservan las dos configuraciones: cuando un criterio se rediseña después de mirar los resultados, hay que declararlo.
+
+### Cómo se corre
+
+```bash
+cd demo_con_adk_evals                  # `adk eval` se corre desde esta carpeta
+adk eval soporte_tienda soporte_tienda/soporte_tienda.evalset.json:taza_rota --print_detailed_results
+adk eval soporte_tienda soporte_tienda/soporte_tienda.evalset.json --print_detailed_results
+adk eval soporte_tienda soporte_tienda/soporte_tienda.evalset.json \
+    --config_file_path soporte_tienda/test_config_diagnostico.json --print_detailed_results
+cd ..                                  # de vuelta en DEMOS/
+
+.venv/bin/python demo_con_adk_evals/control_negativo.py
+NUM_RUNS=1 .venv/bin/python -m pytest demo_con_adk_evals/evaluar_con_pytest.py -s -q   # AgentEvaluator
+adk web demo_con_adk_evals             # abre la interfaz; el servidor lista el conjunto (pestaña Eval)
+```
+
+- **El nombre del agente va sin barra final** (`soporte_tienda`, no `soporte_tienda/`): con la barra, `adk eval` queda con un nombre de aplicación vacío.
+- **`:taza_rota`** al final del archivo elige un caso (`:caso1,caso2` elige varios).
+- **Sin `--config_file_path`**, `adk eval` usa el `test_config.json` que está junto al conjunto de casos.
+- **Costos orientativos**, a precio de lista (estimados; ADK no informa los tokens de los jueces): un caso con el veredicto, unos USD 0,04; los siete, unos USD 0,25; el diagnóstico de los siete, unos USD 0,01 (no usa jueces); el control negativo, unos USD 0,05; `pytest` con `num_runs=2`, del orden de USD 0,5.
+- **Si tu key no accede a `gemini-2.5-flash`**, hay que cambiar el modelo en dos lugares: `MODEL_NAME` en `.env` (lo usa el agente) y `"judge_model"` en `soporte_tienda/test_config.json` (aparece dos veces, una por juez). El diagnóstico no usa jueces. `MODEL_NAME` no llega a los jueces de estos JSON.
+- **El archivo `evaluar_con_pytest.py` no se llama `test_*.py` a propósito**, para que `pytest` desde `DEMOS/` no lo recoja y no gaste en la suite de $0.
+
+### Cómo leer la salida de `adk eval`
+
+La salida real arranca con **mucho ruido**: avisos `UserWarning [EXPERIMENTAL]` y líneas `INFO` por cada llamada al modelo. Se pueden ignorar. Lo útil empieza en **`Eval Run Summary`**. Los archivos de `salidas_de_referencia/` ya vienen sin ese ruido.
+
+**El resumen y el veredicto por métrica** (un caso, configuración de veredicto):
+
+```text
+Eval Run Summary
+soporte_tienda:
+  Tests passed: 1
+  Tests failed: 0
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: taza_rota
+Overall Eval Status: PASSED
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: hallucinations_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: rubric_based_final_response_quality_v1, Status: PASSED, Score: 1.0, Threshold: 1.0
+Rubric Scores:
+[…]
+---------------------------------------------------------------------
+```
+- **`Tests passed / Tests failed`** cuenta casos, no métricas.
+- **`Overall Eval Status`** es el veredicto del caso: PASSED solo si pasaron **todas** las métricas con umbral.
+- **Cada línea `Metric:`** muestra el estado, el puntaje y el umbral. Los estados son **PASSED** (cumple el umbral), **FAILED** (no lo cumple), **NOT_EVALUATED** (la métrica no produjo puntaje: por ejemplo, un juez que no devolvió un resultado utilizable, o una métrica propia que no se pudo importar) e **INFORMATIONAL** (no tiene umbral, solo informa: cantidad de llamadas, tokens, duración).
+- **El «Reasoning» que acompaña a cada rúbrica en este resumen no es el razonamiento real**: es un texto genérico («aggregated score…»). El razonamiento del juez está más abajo, dentro de cada invocación.
+
+**El detalle de cada invocación** (`Invocation Details`): lo que se esperaba contra lo que pasó.
+
+```text
+Invocation 1 of 1
+  prompt:                     Hola, me llegó rota la taza del pedido A89268. Quiero que me devuelvan la plata.
+  expected_response:          Lamento lo ocurrido. Procesé el reembolso de $19,99 por la taza del pedido
+                              A89268. Se acredita en 3 a 5 días hábiles.
+  actual_response:            Hola. Ya hemos procesado el reembolso de 19.99 por la taza rota del pedido
+                              A89268. Verás el monto acreditado en tu cuenta en 3 a 5 días hábiles. Te
+                              enviamos un mail de confirmación.
+  expected_tool_calls:        lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                order_id='A89268',
+                                sku='MUG-001',
+                                amount=19.99)
+  actual_tool_calls:          lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                order_id='A89268',
+                                amount=19.99,
+                                sku='MUG-001')
+                              send_confirmation_email(
+                                order_id='A89268',
+                                tipo='refund')
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  hallucinations_v1:          PASSED (1.0)
+  rubric_based_final_response_quality_v1: PASSED (1.0)
+```
+Se leen de a pares: `expected_tool_calls` contra `actual_tool_calls`, y `expected_response` contra `actual_response`. En este caso el agente hizo además un `send_confirmation_email`, que no estaba esperado; el veredicto lo tolera porque el mundo quedó bien y no hubo acciones irreversibles de más.
+
+**La misma corrida con el diagnóstico estricto.** Con la otra configuración el mismo tipo de caso puede dar FAILED aunque el mundo haya quedado bien:
+
+```text
+Eval Run Summary
+soporte_tienda:
+  Tests passed: 0
+  Tests failed: 1
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: taza_rota
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.5862068965517241, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: FAILED, Score: 0.6666666666666666, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+```
+Acá el mundo quedó bien (`estado_final_del_mundo` PASSED) y el caso figura FAILED por la forma: ROUGE-1 en 0,59 contra un umbral de 0,8, y `tool_precision` en 0,67 por la llamada de más.
+
+**`AgentEvaluator` desde `pytest`.** Hace lo mismo, con `num_runs` repeticiones por caso. Para cada métrica junta todos los puntajes y compara la media con el umbral. No calcula pass^k ni intervalos. La salida es corta:
+
+```text
+Summary: `EvalStatus.PASSED` for Metric: `estado_final_del_mundo`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `acciones_irreversibles_de_mas`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `hallucinations_v1`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.PASSED` for Metric: `rubric_based_final_response_quality_v1`. Expected threshold: `1.0`, actual value: `1.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `tool_call_count_v1`. Expected threshold: `None`, actual value: `3.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `inference_call_count_v1`. Expected threshold: `None`, actual value: `4.0`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `token_usage_v1`. Expected threshold: `None`, actual value: `3353.5`.
+Summary: `EvalStatus.INFORMATIONAL` for Metric: `invocation_duration_v1`. Expected threshold: `None`, actual value: `7.8975`.
+AgentEvaluator: la prueba PASÓ
+[juez] muestras del juez de rúbricas=6  parseadas=3  rescatadas=3  descartadas=0  vacías=0
+```
+**El control negativo.** ¿Los dos jueces del veredicto marcan respuestas malas conocidas? Se les pasa una respuesta fiel y dos que inventan algo, y se mira que aprueben la primera y desaprueben las otras. Con tres ítems no calibra nada (la calibración es la Demo 2): solo detecta un juez que aprueba todo.
+
+```text
+ítem                    debería               hallucinations  rubric_based_final_res
+fiel_reembolso          aprobar                 1.00 aprueba            1.00 aprueba
+comprobante_inventado   desaprobar           0.50 DESAPRUEBA         0.00 DESAPRUEBA
+accion_inventada        desaprobar           0.00 DESAPRUEBA         0.00 DESAPRUEBA
+
+Si los dos jueces aprueban los ítems que deberían desaprobar, el veredicto no vale nada.
+[juez] muestras del juez de rúbricas=9  parseadas=2  rescatadas=7  descartadas=0  vacías=0
+```
+### Qué resultados dio
+
+- **Veredicto, siete casos: 7 de 7 PASSED.** El mundo quedó bien, no hubo acciones irreversibles de más y los dos jueces aprobaron todo (`hallucinations_v1` quedó NOT_EVALUATED en `consulta_politica`: el juez no produjo puntaje para esa respuesta). Salida en `salidas_de_referencia/adk_eval_veredicto_siete_casos.txt`.
+- **Diagnóstico estricto, siete casos: los siete FAILED**, con el mundo bien en los siete. Lo que desaprueba es la forma: ROUGE-1 rechaza 6 de 7 respuestas y `tool_precision` cuenta como llamada de más un `send_confirmation_email` inofensivo. Salida en `salidas_de_referencia/adk_eval_diagnostico_siete_casos.txt`.
+
+### Qué tiene que quedar claro
+
+- **Que la demo dé 7/7 PASSED no significa que el agente sea perfecto.** Es una sola muestra de un agente no determinista, y un juez es otro modelo.
+- **Las dos configuraciones corrieron sobre muestras distintas del agente**, porque `adk eval` vuelve a hacer la inferencia cada vez. No se pueden comparar caso a caso.
+- **Qué se mide es una decisión.** En `consulta_estado` el agente fue directo a `get_shipment_status` sin `lookup_order`: el diagnóstico lo desaprueba por trayectoria y el veredicto lo aprueba porque lo que le dijo al cliente es cierto.
+- **Lo que ADK no trae**: el formato de caso tiene un campo para el estado final de la sesión, pero ninguna métrica lo compara; por eso `estado_final_del_mundo` es código propio.
+- **Si una métrica propia no se importa, queda NOT_EVALUATED** y solo aparece un ERROR en el log. `adk eval` carga el agente con el nombre de módulo `agent`, así que `metricas_propias.py` tiene que estar en la raíz de la carpeta de la demo y en el `sys.path`.
+
+**No incluye** simuladores de usuario, y no se probó correr las evaluaciones desde la interfaz de `adk web` (solo se comprobó que lista el conjunto y los siete casos).
+
+---
+
+## 7. Las pruebas ($0)
 
 Las pruebas no llaman al modelo y fijan lo que afirma esta guía:
 
@@ -540,7 +725,7 @@ Las pruebas no llaman al modelo y fijan lo que afirma esta guía:
 
 ---
 
-## 7. Si algo falla
+## 8. Si algo falla
 
 | Síntoma | Causa probable | Qué hacer |
 |---|---|---|
@@ -552,13 +737,18 @@ Las pruebas no llaman al modelo y fijan lo que afirma esta guía:
 | Demo 3: «Todas las corridas terminaron en error del servicio» | Key inválida, modelo no disponible o cuota agotada | Leer el error que imprime debajo y aplicar la fila que corresponda |
 | Demo 2: `ABORTADO: el peor escenario supera --max-usd` | Tope menor que el peor escenario (0,708) | `--max-usd 0.75`, o `--max-usd 0.90` con `--comparar-razonamiento` |
 | La salida redirigida a un archivo queda vacía hasta el final | Python guarda la salida en un buffer | Correr con `python -u` |
+| `adk eval` termina en FAILED y no imprime ninguna línea `Metric:` | La key es inválida o no hay cuota: `adk eval` no corta con un mensaje claro | Buscar `API key not valid` o `429` en el log y revisar `.env` (la Demo 3 con `--solo taza_rota --n 1` sí corta con un mensaje claro) |
+| `adk eval` informa NOT_EVALUATED y un ERROR en el log | Una métrica propia no se pudo importar, o un juez no dio puntaje | Ver la sección 6 y el README de `demo_con_adk_evals/` |
+| `adk eval` no encuentra el agente | Barra final en el nombre, o carpeta equivocada | `adk eval soporte_tienda …`, sin barra, desde `demo_con_adk_evals/` |
 | Una celda dice «sin score» (Demo 2) | El juez no devolvió un resultado utilizable | Repetir ese ítem con `--solo`; el bloque 4 imprime el motivo que informó ADK |
 
 ---
 
-## 8. Qué guarda cada demo
+## 9. Qué guarda cada demo
 
-Las demos imprimen en la terminal y no escriben archivos por su cuenta:
+Las demos 1, 2 y 3 imprimen en la terminal y no escriben archivos por su cuenta:
 
 - **Demo 1 y Demo 2:** para conservar la salida, redirigila (`python -u demos/demo2_juez.py > salida_demo2.txt`; la Demo 1, con `--sin-color`).
 - **Demo 3:** `--guardar RUTA.json` guarda cada corrida con su evaluación. La carpeta `salidas/` está ignorada por git, así que es un buen lugar.
+- **`adk eval`:** cada corrida escribe su resultado en `demo_con_adk_evals/soporte_tienda/.adk/eval_history/` (también ignorada por git).
+- **Salidas de referencia:** `salidas_de_referencia/` trae una corrida de cada demo para comparar con la tuya.

@@ -1,0 +1,87 @@
+# adk eval con el diagnóstico estricto (test_config_diagnostico.json), un caso. Corrida de referencia con Gemini 2.5 Flash y ADK 2.12.0.
+# Comando: adk eval soporte_tienda soporte_tienda/soporte_tienda.evalset.json:taza_rota --config_file_path soporte_tienda/test_config_diagnostico.json --print_detailed_results
+# Se quitaron los avisos [EXPERIMENTAL] y las líneas de log INFO que ADK imprime antes del resumen
+# (traían rutas locales); lo demás es la salida tal cual.
+
+Using evaluation criteria: criteria={'tool_trajectory_avg_score': BaseCriterion(threshold=1.0, include_intermediate_responses_in_final=False, match_type='IN_ORDER'), 'response_match_score': 0.8, 'tool_recall': 1.0, 'tool_precision': 1.0, 'param_accuracy': 1.0, 'phrase_recall': 1.0, 'estado_final_del_mundo': 1.0, 'acciones_irreversibles_de_mas': 1.0} custom_metrics={'tool_recall': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.tool_recall'), metric_info=None, description='De las herramientas esperadas, cuántas llamó el agente (por nombre).'), 'tool_precision': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.tool_precision'), metric_info=None, description='De las herramientas llamadas, cuántas eran necesarias (por nombre).'), 'param_accuracy': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.param_accuracy'), metric_info=None, description='De las llamadas esperadas, cuántas se cumplieron con herramienta y parámetros exactos.'), 'phrase_recall': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.phrase_recall'), metric_info=None, description='De las frases que la respuesta debía contener, cuántas están.'), 'estado_final_del_mundo': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.estado_final_del_mundo'), metric_info=None, description='El mundo (reembolsos y cancelaciones) queda como debía; se reconstruye reproduciendo las llamadas.'), 'acciones_irreversibles_de_mas': CustomMetricConfig(code_config=CodeConfig(name='metricas_propias.acciones_irreversibles_de_mas'), metric_info=None, description='Ninguna acción irreversible que el caso no autorizaba (0 o 1 por invocación; umbral 1.0).')} user_simulator_config=None live_model_config=None
+*********************************************************************
+Eval Run Summary
+soporte_tienda:
+  Tests passed: 0
+  Tests failed: 1
+********************************************************************
+Eval Set Id: soporte_tienda
+Eval Id: taza_rota
+Overall Eval Status: FAILED
+---------------------------------------------------------------------
+Metric: tool_trajectory_avg_score, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: response_match_score, Status: FAILED, Score: 0.5862068965517241, Threshold: 0.8
+---------------------------------------------------------------------
+Metric: tool_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_precision, Status: FAILED, Score: 0.6666666666666666, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: param_accuracy, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: phrase_recall, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: estado_final_del_mundo, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: acciones_irreversibles_de_mas, Status: PASSED, Score: 1.0, Threshold: 1.0
+---------------------------------------------------------------------
+Metric: tool_call_count_v1, Status: INFORMATIONAL, Score: 3.0, Threshold: None
+---------------------------------------------------------------------
+Metric: inference_call_count_v1, Status: INFORMATIONAL, Score: 4.0, Threshold: None
+---------------------------------------------------------------------
+Metric: token_usage_v1, Status: INFORMATIONAL, Score: 3760.0, Threshold: None
+Token breakdown:
+  total:            3760
+    input:          3060
+      prompt:       3060
+        cached:     n/a
+      tool use:     n/a
+    output:         700
+      candidates:   148
+      reasoning:    552
+---------------------------------------------------------------------
+Metric: invocation_duration_v1, Status: INFORMATIONAL, Score: 8.835, Threshold: None
+---------------------------------------------------------------------
+Invocation Details:
+
+Invocation 1 of 1
+  prompt:                     Hola, me llegó rota la taza del pedido A89268. Quiero que me devuelvan la plata.
+  expected_response:          Lamento lo ocurrido. Procesé el reembolso de $19,99 por la taza del pedido
+                              A89268. Se acredita en 3 a 5 días hábiles.
+  actual_response:            ¡Hola! Ya hemos procesado el reembolso de 19.99 por la taza rota del pedido
+                              A89268. Verás el monto reflejado en tu cuenta en los próximos 3 a 5 días
+                              hábiles. ¡Gracias por tu paciencia!
+  expected_tool_calls:        lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                order_id='A89268',
+                                sku='MUG-001',
+                                amount=19.99)
+  actual_tool_calls:          lookup_order(
+                                order_id='A89268')
+                              issue_refund(
+                                amount=19.99,
+                                order_id='A89268',
+                                sku='MUG-001')
+                              send_confirmation_email(
+                                order_id='A89268',
+                                tipo='refund')
+  tool_trajectory_avg_score:  PASSED (1.0)
+  response_match_score:       FAILED (0.5862068965517241)
+  tool_recall:                PASSED (1.0)
+  tool_precision:             FAILED (0.6666666666666666)
+  param_accuracy:             PASSED (1.0)
+  phrase_recall:              PASSED (1.0)
+  estado_final_del_mundo:     PASSED (1.0)
+  acciones_irreversibles_de_mas: PASSED (1.0)
+  tool_call_count_v1:         3
+  inference_call_count_v1:    4
+  token_usage_v1:             3760 (in 3060, out 700)
+  invocation_duration_v1:     8.84s
+
+
