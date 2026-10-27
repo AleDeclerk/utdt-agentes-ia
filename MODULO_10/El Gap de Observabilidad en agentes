@@ -1,0 +1,23 @@
+El informe de la *Partnership on AI* evalúa la madurez de observabilidad y seguridad en cuatro frameworks de agentes dominantes (**OpenAI Agents SDK, Claude Agent SDK, LangGraph y CrewAI**) frente a seis vectores críticos de control: detección de acciones no autorizadas, fallas en la supervisión humana, deriva comportamental (*behavioral drift*) y auditabilidad.
+
+### 1. Diagnóstico de Telemetría: El bache entre "Qué" y "Cómo"
+
+El estudio demuestra que los frameworks emiten de forma fragmentada e inconsistente telemetría de auditoría, dividiendo el problema de observabilidad en dos capas arquitectónicas:
+
+* **Capa de Ejecución ("What an agent did"):**
+* *Señales evaluadas:* Identidad persistente del agente, transiciones en modos de permisos, modificaciones en la persistencia/memoria y registros de intervención humana (*human-in-the-loop*).
+* *Estado:* Solucionable a nivel de framework mediante la extensión y adopción estandarizada de especificaciones de **OpenTelemetry (OTel)**.
+
+
+* **Capa Cognitiva ("How an agent reached its decision"):**
+* *Señales evaluadas:* Trazas de razonamiento en cadena (*Chain-of-Thought*) y probabilidades logarítmicas a nivel de token (*token-level log probabilities*).
+* *Estado:* Bloqueado a nivel de proveedor de modelo (LLM foundation APIs), requiriendo investigación criptográfica y de instrumentación previa a cualquier intento de estandarización formal.
+
+
+
+### 2. Mandatos de Gobernanza y Mitigación de Riesgos
+
+* **Criterios de Adquisición Tecnológica (Enterprise Procurement):** Las organizaciones deben exigir especificaciones estrictas de telemetría y exportación de estado como métrica no negociable al seleccionar frameworks de agentes para entornos de producción.
+* **Marco Regulatorio:** Los organismos de control deben exigir capacidades de auditoría de caja blanca y outputs de observabilidad deterministas para cualquier despliegue de sistemas agénticos en dominios de alto riesgo.
+
+---
