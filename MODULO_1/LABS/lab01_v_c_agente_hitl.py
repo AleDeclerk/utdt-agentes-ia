@@ -145,7 +145,7 @@ def bloquear_tarjeta(tarjeta_id: str) -> dict:
 
 agente_fraude = Agent(
     name="agente_fraude_tarjetas",
-    model="gemini-2.5-flash",
+    model="gemini-3.8-flash",
     instruction="""Sos un agente de atención de reclamos de tarjetas de crédito
 de un banco argentino.
 

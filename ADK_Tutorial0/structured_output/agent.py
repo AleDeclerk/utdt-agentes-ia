@@ -50,7 +50,7 @@ Focus on the main problem.
 # en el estado compartido de la sesión, con esa clave.
 problem_analyzer_agent = LlmAgent(
     name="ProblemAnalyzerAgent",
-    model="gemini-2.5-flash",
+    model="gemini-3.5-flash-lite",
     instruction=problem_analyzer_instructions,
     output_schema=ProblemAnalysis,
     output_key="problem_analysis_result",
@@ -79,7 +79,7 @@ Based on the provided input {problem_analysis_result} generate the following in 
 # de datos tipados en vez de texto libre.
 advice_generator_agent = LlmAgent(
     name="AdviceGeneratorAgent",
-    model="gemini-2.5-flash",
+    model="gemini-3.5-flash-lite",
     instruction=advice_generator_instructions,
     input_schema=ProblemAnalysis,
     output_schema=ConsultationResp,

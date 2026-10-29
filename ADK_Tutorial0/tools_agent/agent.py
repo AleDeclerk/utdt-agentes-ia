@@ -43,7 +43,7 @@ root_agent = Agent(
     name="tools_agent",
     description="A tool-using agent that can fetch the current date/time and random user data.",
     tools=[get_current_date_and_time, get_randomuser_from_ramdomuserme],
-    model="gemini-2.5-flash",
+    model="gemini-3.8-flash",
     instruction="""
   You are a helpful assistant that can use the following tools:
   - get_current_date_and_time: Returns the current date and time.

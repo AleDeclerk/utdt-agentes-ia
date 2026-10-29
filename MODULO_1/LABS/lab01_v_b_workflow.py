@@ -51,7 +51,7 @@ class ClasificacionReclamo(BaseModel):
 
 clasificador_agente = Agent(
     name="clasificador_reclamos",
-    model="gemini-2.5-flash",
+    model="gemini-3.8-flash",
     instruction="""Clasificás reclamos de clientes de tarjeta de crédito de un banco argentino.
 
 Categoría: "desconocimiento_consumo" (el cliente no reconoce uno o más
