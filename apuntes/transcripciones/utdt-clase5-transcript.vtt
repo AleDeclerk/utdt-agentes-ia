@@ -1,0 +1,5208 @@
+WEBVTT
+
+1
+00:00:02.402 --> 00:00:04.502
+Carlos Miguez: Hola. Buenas noches. Buenas tardes, perdón.
+
+
+2
+00:00:05.192 --> 00:00:06.771
+Matias Z: ¿qué tal buenas tardes?
+
+
+3
+00:00:53.422 --> 00:00:54.362
+Javier Carral: Buenas.
+
+
+4
+00:00:56.872 --> 00:00:58.392
+Matias Z: Hola, ¿cómo va.
+
+
+5
+00:01:27.922 --> 00:01:28.672
+Victor Favazza: Buenas.
+
+
+6
+00:01:31.162 --> 00:01:32.532
+Matias Z: Hola. ¿qué tal victor? ¿cómo te va.
+
+
+7
+00:01:32.532 --> 00:01:33.052
+Victor Favazza: Gracias.
+
+
+8
+00:01:35.342 --> 00:01:36.042
+Matias Z: Mhm.
+
+
+9
+00:02:09.332 --> 00:02:14.502
+Matias Z: Bueno, somos 16 Okay.
+
+
+10
+00:02:20.072 --> 00:02:25.842
+Matias Z: alguna consulta rápida que quieran hacer antes de empezar la clase, sino como siempre dejamos un espacio al final.
+
+
+11
+00:02:49.822 --> 00:02:50.572
+Matias Z: Okay.
+
+
+12
+00:02:52.782 --> 00:02:57.222
+Matias Z: Diecinueve estamos bien. Entonces están viendo la pantalla que comparto.
+
+
+13
+00:02:58.142 --> 00:02:59.102
+Matias Z: Genial.
+
+
+14
+00:03:00.102 --> 00:03:03.271
+Matias Z: Vamos a poner una vista para poder darle la cara a todos.
+
+
+15
+00:03:06.332 --> 00:03:07.882
+Matias Z: Excelente.
+
+
+16
+00:03:08.002 --> 00:03:15.301
+Matias Z: Esperamos un minuto más hasta las 18 5 y arrancamos, si les parece bien. Acuérdense de si quieren consultar.
+
+
+17
+00:03:19.442 --> 00:03:20.442
+Matias Z: Es el momento.
+
+
+18
+00:03:59.172 --> 00:04:10.122
+Matias Z: Bien, si no hay dudas, entonces y disculpa mi afonía en
+
+
+19
+00:04:10.862 --> 00:04:18.701
+Matias Z: hoy, le damos comienzo al módulo 5, el módulo donde vamos a empezar a integrar muchas de las piezas móviles que estuvimos viendo hasta ahora.
+
+
+20
+00:04:19.202 --> 00:04:27.292
+Matias Z: Mhm: Yo siempre insisto con la idea de que el aprendizaje de esta disciplina no es lineal.
+
+
+21
+00:04:29.722 --> 00:04:38.632
+Matias Z: En general, se se ven como conceptos aislados y normalmente después empezamos a intentar. Empezamos a a entender un poco cómo se construyen
+
+
+22
+00:04:38.892 --> 00:04:48.371
+Matias Z: nuestras arquitecturas a partir del uso de la integración de la integración de estos componentes. Y lo que vamos a empezar a ver hoy es justamente cómo hacemos para que estos componentes
+
+
+23
+00:04:48.582 --> 00:04:52.882
+Matias Z: colaboren en diferentes este situaciones.
+
+
+24
+00:04:54.302 --> 00:04:56.422
+Matias Z: Tengo
+
+
+25
+00:04:57.922 --> 00:05:06.692
+Matias Z: 3 materiales para mostrarles. Me gustaría priorizar fundamentalmente lo que corresponde al módulo 5 y después lo que hacemos. En todo caso, es
+
+
+26
+00:05:06.772 --> 00:05:21.591
+Matias Z: hablar un poquito de Schev se acuerda que mencionamos ese nuevo tipo de modelo que nos permite hacer cosas que los Lm no nos permiten hacer por lo menos de manera eficiente con cierto emm.
+
+
+27
+00:05:22.742 --> 00:05:31.012
+Matias Z: en cierto cierta cierto ahorro de recursos en términos tanto económicos como de Token como de tiempo.
+
+
+28
+00:05:31.132 --> 00:05:40.691
+Matias Z: ¿y por qué empiezan a ser relevantes a la hora de implementar nuestros nuestros nuevos arquetipos de agentes. Qué son los arquetipos de agentes?
+
+
+29
+00:05:40.912 --> 00:05:48.531
+Matias Z: Bueno, vamos a empezar a hablar un poco de orquestación, que es el tema central del módulo 5.
+
+
+30
+00:05:48.872 --> 00:05:51.002
+Matias Z: Al final, tenemos
+
+
+31
+00:05:51.022 --> 00:06:09.642
+Matias Z: 3 ejemplos concretos donde vamos a combinar estos arquetipos de gente, ya vamos a ver qué son. Y si nos queda tiempo, vamos a ver algo de ser y como ser, podría venir a reemplazar algunos de estos componentes, fundamentalmente cuando las salidas que esperamos necesitan ser tipadas o corresponden a alguna de las
+
+
+32
+00:06:09.702 --> 00:06:14.791
+Matias Z: de los casos de uso que se mencionan normalmente como ruteo, selección de herramientas.
+
+
+33
+00:06:14.942 --> 00:06:19.992
+Matias Z: fundamentalmente porque tienen la gran ventaja de entregarnos
+
+
+34
+00:06:20.182 --> 00:06:28.701
+Matias Z: respuestas con cierto nivel de confianza si la confianza es un tipo de masa de probabilidad que
+
+
+35
+00:06:29.532 --> 00:06:39.662
+Matias Z: se normalizan y que nos permite tener cierto nivel de justamente de certeza sobre la salida de la gente.
+
+
+36
+00:06:39.782 --> 00:06:43.962
+Matias Z: La salida del módulo particular serp tiene.
+
+
+37
+00:06:44.222 --> 00:06:56.721
+Matias Z: como les dije, características muy buenas. Y además, salieron un montón de alternativas open surf. Y yo creo que antes de que termine el curso, vamos a ver muchas más novedades. Así que está bueno que no, nos
+
+
+38
+00:06:57.972 --> 00:07:09.862
+Matias Z: no nos dejemos como estar con ese tema, porque es 1 de los temas que creo que viene a revolucionar un poquito el mundo de las arquitecturas agendas. Pero hoy particularmente vamos a ver.
+
+
+39
+00:07:12.112 --> 00:07:12.892
+Matias Z: Mhm.
+
+
+40
+00:07:13.592 --> 00:07:24.832
+Matias Z: ¿Qué es la orquestación, la orquestación como 3 preguntas fundamentales: ¿Y qué clase de flujos podemos construir a partir de diferentes clases de orquestación?
+
+
+41
+00:07:26.542 --> 00:07:31.882
+Matias Z: Y antes que nada. Somos 25 y 20.
+
+
+42
+00:07:31.912 --> 00:07:51.032
+Matias Z: Agradezco el feedback. No dejen de mandarme emails porque los leo me sirven mucho para ordenar. Me sirven mucho para recalibrar el curso en función de las expectativas. Así que no dejen de escribirme. Creo que tienen email. Si no lo tienen, recuerde que es sabaljáuregui como lo he sido Arroba Gmail. Punto. Com
+
+
+43
+00:07:51.032 --> 00:07:52.072
+Matias Z: Ahí me ponen
+
+
+44
+00:07:52.142 --> 00:08:02.331
+Matias Z: todo lo que consideren que podría mejorar tanto el curso como la dinámica, como los conceptos que estamos viendo en principio, es un curso
+
+
+45
+00:08:02.582 --> 00:08:10.802
+Matias Z: desafiante, También la la audiencia es heterogénea. Entonces siempre buscamos un equilibrio para que todos se lleven algo de valor del curso.
+
+
+46
+00:08:10.982 --> 00:08:19.742
+Matias Z: Dicho esto, 26 participantes, 18 009 les parece bien. Arrancamos qué hace.
+
+
+47
+00:08:20.432 --> 00:08:30.732
+Matias Z: Ok, Entonces tenemos un objetivo preciso para este encuentro particular.
+
+
+48
+00:08:32.042 --> 00:08:35.201
+Matias Z: Vamos a ver qué son los arquetipos de agentes.
+
+
+49
+00:08:37.402 --> 00:08:40.992
+Matias Z: Y y qué significa? Sí, Alguien dijo algo.
+
+
+50
+00:08:42.762 --> 00:08:49.392
+Matias Z: Y qué significa un arquetipo? ¿qué implica ese arquetipo en términos de orquestación de gestión
+
+
+51
+00:08:49.702 --> 00:08:59.251
+Matias Z: del contexto y de cómo se manejan las condiciones de Stop de ese Worldflow.
+
+
+52
+00:08:59.602 --> 00:09:05.671
+Matias Z: Son las 3 preguntas claves de la orquestación. Básicamente, estamos ingresando al mundo de la orquestación en sistema sagentes.
+
+
+53
+00:09:06.782 --> 00:09:08.252
+Matias Z: Vamos a verlo como
+
+
+54
+00:09:08.732 --> 00:09:14.242
+Matias Z: como una pri como un primer catálogo. Si quieren, no primer, como una primer caja de herramientas.
+
+
+55
+00:09:14.392 --> 00:09:17.211
+Matias Z: Mhm no es exhaustiva.
+
+
+56
+00:09:17.502 --> 00:09:22.771
+Matias Z: Definitivamente tienen tienen forma ideal, digamos, Son
+
+
+57
+00:09:23.182 --> 00:09:35.412
+Matias Z: son soluciones que, en principio, después, en la práctica las vamos a ver adaptadas de diferentes maneras. Normalmente van a estar compuestas entre ellas. Nunca las vamos a dar solas. Recibimos un solo problema. Entonces
+
+
+58
+00:09:36.122 --> 00:09:46.242
+Matias Z: no vamos a ver fundamentalmente. No vamos a ver cómo se programan, porque para eso deberíamos ingresar de lleno en las primitivas de K 2 en sus versiones más modernas.
+
+
+59
+00:09:46.402 --> 00:09:54.652
+Matias Z: Pero les voy a dar 2 opciones: o bien que los que están interesados puedan hacer doble clic en eso
+
+
+60
+00:09:55.802 --> 00:10:14.962
+Matias Z: para eso. Tenemos un reporte. Tengo el material suficiente como para dar una clase entera, o si no directamente lo dejamos como decisiones de arquitectura. Y vemos más adelante si están interesados. Vemos una clase de programación de esto. En principio recuerden que en general no programamos nada de esto. Generalmente le pedimos esto a algún asistente. Diría que que con alguna Skill
+
+
+61
+00:10:15.522 --> 00:10:26.512
+Matias Z: traduce nuestros diseños arquitectónicos a Código Mhm Ok, la pregunta, entonces
+
+
+62
+00:10:26.662 --> 00:10:34.702
+Matias Z: que pueden ver ahí el subtítulo que organiza todo este recorrido es básicamente, y
+
+
+63
+00:10:37.352 --> 00:10:43.412
+Matias Z: quién controla la ejecución y qué contexto comparten. Entonces, la pregunta más importante, en términos de empezar.
+
+
+64
+00:10:44.332 --> 00:10:48.191
+Matias Z: integrar diferentes modelos de inteligencia artificial.
+
+
+65
+00:10:49.262 --> 00:10:52.902
+Matias Z: Básicamente es quien decide qué se hace después.
+
+
+66
+00:10:54.592 --> 00:11:02.012
+Matias Z: con qué información se decide y cuándo termina la ejecución? Son las 3 preguntas básicas de la orquestación.
+
+
+67
+00:11:02.682 --> 00:11:05.471
+Matias Z: Los 6 arquetipos que vamos a ver los ven mencionados acá abajo.
+
+
+68
+00:11:07.502 --> 00:11:13.872
+Matias Z: los veo mencionados Acá abajo, Riflex, Riac Planner, executer
+
+
+69
+00:11:14.212 --> 00:11:24.871
+Matias Z: de Compositional Reflection y Deep Brizer seguramente escucharon hablar algunos de ellos, porque normalmente las usamos de un de alguna u otra manera. Hola, Gustavo.
+
+
+70
+00:11:26.402 --> 00:11:32.702
+Matias Z: cómo va. Gracias por todo lo los vemos. Lo vemos, este
+
+
+71
+00:11:34.012 --> 00:11:36.302
+Matias Z: de alguna u otra manera aplicados.
+
+
+72
+00:11:36.571 --> 00:11:40.521
+Matias Z: Sí, ya sea en en nuestros asistentes de de Ia.
+
+
+73
+00:11:40.752 --> 00:11:47.461
+Matias Z: para para desarrollar código, o los vemos aplicados en, por ejemplo, cuando
+
+
+74
+00:11:47.662 --> 00:11:58.912
+Matias Z: cuando estamos desarrollando agentes para Data Science. Sí, en C. C. P Cuando tenés el template para crear agentes de Data Science. Normalmente tenés opciones de elegir alguno de estos
+
+
+75
+00:11:58.952 --> 00:12:12.192
+Matias Z: arquetipos tengan en cuenta de nuevo el nombre. Mismo. Lo dice, son arquetipos. Lo que estamos viendo son modelos ideales a partir de acá tipo justamente gustavo, tipo patrones de diseño, si les parece
+
+
+76
+00:12:12.852 --> 00:12:18.111
+Matias Z: a partir de acá lo que hacemos es adaptarlos al caso de uso al problema de negocio que queremos resolverlo.
+
+
+77
+00:12:19.242 --> 00:12:26.121
+Matias Z: Cada 1 de estos patrones, cada unos arquetipos son respuestas distintas a esta pregunta.
+
+
+78
+00:12:26.582 --> 00:12:29.592
+Matias Z: Básicamente, quien decide el próximo paso, nuestro work flow.
+
+
+79
+00:12:29.902 --> 00:12:33.732
+Matias Z: ¿qué contexto se comparte y cuándo termina la ejecución?
+
+
+80
+00:12:36.392 --> 00:12:44.922
+Matias Z: ¿qué tal vamos a hacer doble clic en estas preguntas, Porque son bastante importantes.
+
+
+81
+00:12:45.562 --> 00:12:49.162
+Matias Z: ¿qué significa que se ejecuta después en la orquestación.
+
+
+82
+00:12:52.272 --> 00:13:07.332
+Matias Z: Este es el control de ejecución. Habrán escuchado el control de ejecución de de de un world en general. Puede ser de determinista puede estar definido por la decisión de un L. L. M. ¿o puede haber una situación híbrida entre 1 u otro.
+
+
+83
+00:13:07.632 --> 00:13:11.952
+Matias Z: Un poco. Hablamos de eso en
+
+
+84
+00:13:12.972 --> 00:13:20.352
+Matias Z: en un extremo, básicamente podríamos definir de manera casi determinista de manera
+
+
+85
+00:13:20.822 --> 00:13:27.622
+Matias Z: estáticas. Tienen el código en función de las aristas y los nodos que definimos para nuestro worklow en código
+
+
+86
+00:13:28.382 --> 00:13:34.632
+Matias Z: y fijar de esta manera de antemano la secuencia y el modelo que se va a ejecutar
+
+
+87
+00:13:34.902 --> 00:13:42.422
+Matias Z: en el otro extremo el mismo modelo, el mismo Lm va a ser justamente el que decida cómo continúa la ejecución
+
+
+88
+00:13:43.182 --> 00:13:56.021
+Matias Z: en cada vuelta, Riach es un poco el caso paradigmático de lo que sería el ejemplo total entregado a un modelo L. L. M para orquestar. No, Riad es justamente ese bucle
+
+
+89
+00:13:56.242 --> 00:14:00.052
+Matias Z: que normalmente utiliza casi todos los asistentes.
+
+
+90
+00:14:00.702 --> 00:14:08.122
+Matias Z: es el menos determinista, es el más flexible y a la vez el que tiene menos predecibilidades y que puede llegar con más costos
+
+
+91
+00:14:08.382 --> 00:14:14.341
+Matias Z: si necesitamos tener ciertos controles de latencia, bueno, probablemente sea el que no nos convenga utilizar.
+
+
+92
+00:14:14.702 --> 00:14:23.431
+Matias Z: Pero bueno, en el medio hay un montón de alternativas. Entonces la idea es un poco ver justamente cómo se com cómo se compone este este espectro, este abanico de posibilidades?
+
+
+93
+00:14:25.302 --> 00:14:34.501
+Matias Z: La segunda pregunta es: ¿qué contexto se comparte entre los diferentes componentes de estos
+
+
+94
+00:14:35.262 --> 00:14:47.282
+Matias Z: de estos modelos o componentes de código que conforman nuestra topología de de de ejecución, Agenda Mhm
+
+
+95
+00:14:51.012 --> 00:14:51.832
+Matias Z: a ver
+
+
+96
+00:14:53.572 --> 00:15:13.581
+Matias Z: Esta pregunta pesa tanto como la primera. Normalmente, cuando pensamos, pensamos en ejecución terminista o ejecución probalista, en realidad pensamos en la orquestación simplemente en términos de flujo de control y, en realidad, la orquestación tiene mucho que ver con la gestión del contexto.
+
+
+97
+00:15:13.752 --> 00:15:18.721
+Matias Z: ¿qué contexto se comparte con los urgentes. ¿qué contexto se devuelve al llamador?
+
+
+98
+00:15:19.542 --> 00:15:21.532
+Matias Z: Sí, Entonces
+
+
+99
+00:15:22.762 --> 00:15:38.782
+Matias Z: esto que menciona muy por arriba, tiene un montón de sutilezas, un montón de matices que vamos a saber en detalle, en particular en A. Dk: Dos: tenemos un montón también de alternativas para ver de qué manera hacemos llamadas surgentes sus agentes especialistas.
+
+
+100
+00:15:39.142 --> 00:15:57.712
+Matias Z: ¿de qué manera podemos compartir contextos sin filtrar informaciones accesible. Básicamente, ahí cada 1 permite como elegir la manera en que llamamos a un especialista a un subagente. Y si ese subagente tiene todo el contexto, nos devuelve el control o continúa hasta terminar.
+
+
+101
+00:15:59.002 --> 00:16:03.861
+Matias Z: Entonces, ¿por qué piensas tanto como la primera.
+
+
+102
+00:16:05.382 --> 00:16:19.371
+Matias Z: de alguna manera determina si el sub agente va a mantener el hilo de la conversación o solamente va a recibir un subconjunto del contexto necesario para la resolución del problema específico en el caso del deep rezar. Vamos a ver claramente.
+
+
+103
+00:16:19.962 --> 00:16:22.892
+Matias Z: Mhm en
+
+
+104
+00:16:23.972 --> 00:16:35.062
+Matias Z: y esto tiene, por supuesto, ventajas y desventajas. En el caso de deep risas. Vamos a ver que separamos ese contexto en un montón de subconjuntos de contextos que le enviamos a los especialistas
+
+
+105
+00:16:36.332 --> 00:16:43.651
+Matias Z: y vamos a ver que, por un lado, evitamos la contaminación del contexto de la gente llamador principal. Por otro lado, evitamos
+
+
+106
+00:16:43.812 --> 00:16:53.552
+Matias Z: consumo de recursos innecesarios a la hora de llamar sus agentes recursivos que hacen investigación sobre una pregunta concreta.
+
+
+107
+00:16:53.882 --> 00:16:54.852
+Matias Z: Entonces.
+
+
+108
+00:16:56.992 --> 00:17:12.971
+Matias Z: como dice en la tercera oración del segundo perfil de esta decisión depende la coherencia, el ruido, el ruido del contexto principal y el costo de Tokens. Esto va a cobrar más sentido cuando veamos un poquito
+
+
+109
+00:17:13.522 --> 00:17:15.031
+Matias Z: en más detalle de los ejemplos.
+
+
+110
+00:17:16.062 --> 00:17:21.521
+Matias Z: Bien. Y la tercer condición o el tercer perfil tiene que ver con la condición de
+
+
+111
+00:17:21.742 --> 00:17:26.182
+Matias Z: stop de esta ejecución en
+
+
+112
+00:17:27.592 --> 00:17:37.472
+Matias Z: que no es trivial. No escribí, no escribía, Le vi evitar bucles infinitos. No es trivial decidir cuándo tenemos toda la información suficiente para que un bucle termine.
+
+
+113
+00:17:37.862 --> 00:17:47.291
+Matias Z: No es trivial decidir cuándo disparamos un trigger para que haya un giro a nivel de Look. Todo esto tiene que ver con el tercer perfil de la orquestación.
+
+
+114
+00:17:47.622 --> 00:17:49.161
+Matias Z: Es la tercer pregunta.
+
+
+115
+00:17:55.702 --> 00:17:56.542
+Matias Z: bien.
+
+
+116
+00:18:02.312 --> 00:18:15.352
+Matias Z: a ver antes de seguir a ver su Esto lo considero como una simplificación pedagógica importante. Parece parecen 3 perfiles independientes. Definitivamente no lo son.
+
+
+117
+00:18:15.582 --> 00:18:24.901
+Matias Z: Claramente tenemos dependencias entre estos 3 tipos de soluciones. Claramente, hay
+
+
+118
+00:18:25.052 --> 00:18:36.142
+Matias Z: algún tipo de de de correlación entre una forma de orquestar quién ejecuta después, con con qué contexto? Entonces nos vamos a.
+
+
+119
+00:18:37.602 --> 00:18:45.772
+Matias Z: Vamos a intentar explicarlo limitándonos a responder 3 preguntas, pero sepan que las 3 preguntas están claramente relacionadas.
+
+
+120
+00:18:45.912 --> 00:18:50.532
+Matias Z: no interrelacional, que es el control de ejecución.
+
+
+121
+00:18:51.272 --> 00:18:52.422
+Matias Z: En
+
+
+122
+00:18:55.862 --> 00:18:58.542
+Matias Z: como en cualquier prom.
+
+
+123
+00:18:59.332 --> 00:19:03.012
+Matias Z: Yo asumo que todos todos más o menos entienden
+
+
+124
+00:19:03.632 --> 00:19:08.802
+Matias Z: de lo que hablo cuando cuando hablo de control de discusión. Pero una vez más, para quedarme tranquilo.
+
+
+125
+00:19:10.972 --> 00:19:17.401
+Matias Z: es como la dimensión que más ordena a los arquetipos de alguna manera.
+
+
+126
+00:19:18.152 --> 00:19:23.341
+Matias Z: cuando el control vive en el código, El flujo.
+
+
+127
+00:19:23.472 --> 00:19:26.732
+Matias Z: por supuesto, es una decisión de diseño.
+
+
+128
+00:19:28.232 --> 00:19:30.251
+Matias Z: Siempre se hacen los mismos pasos.
+
+
+129
+00:19:31.002 --> 00:19:33.372
+Matias Z: El mismo orden. Sí,
+
+
+130
+00:19:33.592 --> 00:19:41.751
+Matias Z: por supuesto, puede haber bifurcaciones en esos work flows, pero depende de los estados de ciertas variables, O sea, hay determinismo.
+
+
+131
+00:19:42.382 --> 00:19:45.341
+Matias Z: Esto no daba previsibilidad. Por un lado.
+
+
+132
+00:19:46.312 --> 00:19:49.471
+Matias Z: nos permite probar cada tramo, o sea, a nivel
+
+
+133
+00:19:49.882 --> 00:19:53.592
+Matias Z: y va evaluaciones, que es 1 de los módulos que le sigue
+
+
+134
+00:19:53.812 --> 00:19:56.742
+Matias Z: a este módulo. Es un poco más fácil.
+
+
+135
+00:19:58.532 --> 00:20:14.252
+Matias Z: Deja una tasa más sencilla de auditar, o sea, en general, todo lo que lleve a construir un workhof determinista nos va a facilitar la auditoría si nosotros dejamos que la decisión
+
+
+136
+00:20:14.692 --> 00:20:34.112
+Matias Z: esté tomada por el Lm. Recuerde que es muy difícil leer las trazas de pensamiento. Los Change of Fox y e incluso creer en esos Change Fox no siempre son representaciones verbales veraces de lo que efectivamente el Ldm estaba intentando realizar.
+
+
+137
+00:20:36.712 --> 00:20:43.322
+Matias Z: El costo es que solo funciona para los casos en el que una persona pudo prever en nuestro problema de negocio.
+
+
+138
+00:20:43.782 --> 00:20:44.622
+Matias Z: ¿sí?
+
+
+139
+00:20:44.802 --> 00:20:47.572
+Matias Z: O sea, eso está en en un extremo del de Tamini.
+
+
+140
+00:20:48.252 --> 00:21:00.141
+Matias Z: cuando el control vive en el modelo. Por otro lado, el flujo básicamente emerge en la ejecución. ¿qué significa esto? El modelo? Mira lo que tiene básicamente de lo que estamos acostumbrados.
+
+
+141
+00:21:01.072 --> 00:21:03.002
+Matias Z: El modelo mira lo que tiene
+
+
+142
+00:21:04.302 --> 00:21:07.051
+Matias Z: en un bucle normalmente de tipo Riad.
+
+
+143
+00:21:07.342 --> 00:21:13.442
+Matias Z: los que usan Cloud Code, o cualquier tipo de asistente que estarán acostumbrados y decide qué es lo que sigue a
+
+
+144
+00:21:14.322 --> 00:21:15.952
+Matias Z: eso lo decía el modelo.
+
+
+145
+00:21:20.782 --> 00:21:30.581
+Matias Z: en este caso, el camino de ejecución va a depender específicamente de lo que se vaya descubriendo a medida que el modelo avance en su razonamiento.
+
+
+146
+00:21:31.062 --> 00:21:37.382
+Matias Z: Sí, por eso es importante esta este interlip de razonar y actuar. No.
+
+
+147
+00:21:38.972 --> 00:21:41.612
+Matias Z: Mhm, Señorita.
+
+
+148
+00:21:42.502 --> 00:21:46.782
+Lucia Etchart: Gracias. Pregunta. No para extenderte, sino
+
+
+149
+00:21:47.332 --> 00:22:04.222
+Lucia Etchart: a mí. A veces me pasa cuando trabajo con Cie con Zemin, con cloud code que yo le le hago una pregunta sobre una tabla de la compañía, por ejemplo, de que usar esta tabla, o sea que estoy dando de alguna manera, anda acá
+
+
+150
+00:22:04.342 --> 00:22:13.471
+Lucia Etchart: y por alguna razón, busca, no encuentra se traba y solito, decide que no sé si es el último recurso, pero es Google Search
+
+
+151
+00:22:14.092 --> 00:22:28.071
+Lucia Etchart: ¿no? Y se pone a buscar en Google Lo que yo le pregunté, y yo lo veo mientras lo hace, y yo ya jamás vas a encontrar acá lo que lo que está buscando digo, se pod yo se podría diseñar algo diferente, o sea, que no sea.
+
+
+152
+00:22:29.402 --> 00:22:30.792
+Matias Z: Efectivamente sí. Sí.
+
+
+153
+00:22:31.142 --> 00:22:33.961
+Matias Z: En la respuesta es sí.
+
+
+154
+00:22:35.692 --> 00:22:38.012
+Matias Z: De hecho, lo vamos a ver en
+
+
+155
+00:22:38.352 --> 00:22:47.252
+Matias Z: el próximo módulo. Si no me equivoco. Tiene que ver con memoria y conocimiento. Y ahí vamos a ver diferentes modelos de rap
+
+
+156
+00:22:48.872 --> 00:22:52.031
+Matias Z: y en los diferentes modelos de radio. Lo que tenés es, Ok.
+
+
+157
+00:22:52.252 --> 00:23:01.961
+Matias Z: Sí, lo que estoy buscando no está dentro de, por ejemplo, mi corpus de documentos con datos no estructurados o no está dentro de mis tablas.
+
+
+158
+00:23:02.652 --> 00:23:06.271
+Matias Z: Si no puedo recuperarlo, hago una búsqueda semántica
+
+
+159
+00:23:06.382 --> 00:23:14.032
+Matias Z: o no pude recuperarlo a partir de mi grafo de conocimiento, puedes hacer un faulkback. Si eres tranquilamente a una búsqueda en Internet.
+
+
+160
+00:23:14.342 --> 00:23:16.982
+Matias Z: En ese caso, lo controlas vos cuando
+
+
+161
+00:23:17.492 --> 00:23:20.901
+Matias Z: tome la determinación de decidir tu ram.
+
+
+162
+00:23:21.022 --> 00:23:28.582
+Matias Z: Mientras tanto, mientras tanto, Claude hace como un poco lo que lo que quiere, de cualquier manera es que es. Sí, quería decir algo.
+
+
+163
+00:23:29.812 --> 00:23:41.852
+Lucia Etchart: Mi mi ideal sería preguntarme a mí. Prefiero que me viste que a veces te preguntan, Ask User, yo te yo te paso el nombre de la tabla macho, pero no, no te pongas a buscar en Google porque no lo vas a encontrar jamás.
+
+
+164
+00:23:41.852 --> 00:23:43.972
+Matias Z: Vamos a llegar a ese punto de.
+
+
+165
+00:23:43.972 --> 00:23:47.991
+Lucia Etchart: ¿a dónde es eso que en qué momento se configura eso.
+
+
+166
+00:23:51.182 --> 00:23:54.301
+Matias Z: En un problema que vamos a llegar a ese punto.
+
+
+167
+00:23:55.052 --> 00:23:57.541
+Matias Z: pero efectivamente sí lo puedes definir
+
+
+168
+00:23:58.632 --> 00:24:05.861
+Matias Z: juntamente el el control híbrido tiene un poco que ver con con eso. No, El modelo decide en momentos acotados.
+
+
+169
+00:24:06.992 --> 00:24:26.141
+Matias Z: y el código impone una suerte de estructura y los límites límites de hasta donde sigue, ¿Hasta dónde no? Cuántas interacciones, Cuántas cuántos hawpes en mi grafo de conocimiento, cuánto consumo en mi en mi algoritmo de Gra de Raw.
+
+
+170
+00:24:27.122 --> 00:24:39.731
+Matias Z: el rango puede ser incluso genético, con lo cual, si efectivamente vamos a ver diferentes modelos a la hora de recuperar información que sean relevantes para construir un contexto más rico para hacer la llamada al al L.
+
+
+171
+00:24:41.762 --> 00:24:42.802
+Matias Z: Bien.
+
+
+172
+00:24:44.402 --> 00:24:53.951
+Matias Z: ¿Qué significa el contexto compartido. ¿qué es lo que viaja entre los diferentes pasos en nuestro en nuestros diferentes arquetipos. De nuevo, los arquetipos son formas de orquestar flujos
+
+
+173
+00:24:54.572 --> 00:24:59.172
+Matias Z: de ejecución de ejecución agenda.
+
+
+174
+00:25:00.412 --> 00:25:05.441
+Matias Z: Este segundo eje es clave y suele subestimarse.
+
+
+175
+00:25:05.672 --> 00:25:06.762
+Matias Z: En
+
+
+176
+00:25:08.302 --> 00:25:16.101
+Matias Z: Básicamente es como sabemos, lo que el modelo tiene delante en el momento de tomar decisiones. Es básicamente lo que el modelo
+
+
+177
+00:25:16.472 --> 00:25:20.002
+Matias Z: y consume como input. Sí,
+
+
+178
+00:25:22.382 --> 00:25:29.502
+Matias Z: si alguna información no se encuentra en la ventana de contexto para el modelo no existe. Recuerden que el modelo es Stateles Stateles.
+
+
+179
+00:25:30.202 --> 00:25:38.721
+Matias Z: Entonces básicamente es importante la gestión del contexto, porque a partir de ahí es lo que lo que vamos a
+
+
+180
+00:25:40.002 --> 00:25:44.472
+Matias Z: lo que vamos a lograr justamente es son 2 cosas: primero, mejorar las métricas
+
+
+181
+00:25:44.662 --> 00:25:47.081
+Matias Z: de nuestro idem, dependiendo de si buscamos
+
+
+182
+00:25:47.562 --> 00:25:52.051
+Matias Z: que yo, de dependiendo del benchmark al cual estemos
+
+
+183
+00:25:52.932 --> 00:26:00.502
+Matias Z: apuntando con nuestro nuestra solución genética. Por un lado, vamos a mejorar las métricas y, por otro lado, vamos a reducir el costo.
+
+
+184
+00:26:00.992 --> 00:26:06.432
+Matias Z: Ahora hay 4 formas de construir 4 formas de compartir, mejor dicho, en
+
+
+185
+00:26:08.272 --> 00:26:10.481
+Matias Z: entre los diferentes pasos que vamos a ir viendo.
+
+
+186
+00:26:12.402 --> 00:26:21.342
+Matias Z: Me refiero a pasos con cómo avanzamos en la ejecución de nuestro work floagéntico? Lo repito por si no, no queda claro
+
+
+187
+00:26:22.002 --> 00:26:32.162
+Matias Z: lo que estamos viendo justamente son topologías o arquetipos o estructuras agénticas donde diferentes componentes colaboran para resolver algún problema.
+
+
+188
+00:26:35.232 --> 00:26:38.862
+Matias Z: Estas 4 formas están mencionadas en slide.
+
+
+189
+00:26:40.482 --> 00:26:43.691
+Matias Z: La primera forma es compartir el historial completo.
+
+
+190
+00:26:44.512 --> 00:26:58.682
+Matias Z: Todo lo que pasó cuando la historia habló de absolutamente todo en adica. Dos: tenemos básicamente en términos de memoria de corto plazo. Tenemos la sesión, o sea, el historial con los eventos.
+
+
+191
+00:26:59.322 --> 00:27:07.312
+Matias Z: las cuales el usuario y la respuesta del modelo llamadas a las funciones, las respuestas de las funciones. Eso es en la lista de eventos.
+
+
+192
+00:27:07.552 --> 00:27:10.961
+Matias Z: También tenemos el Estado que ya vamos a ver cómo se utiliza.
+
+
+193
+00:27:13.152 --> 00:27:20.502
+Matias Z: Pero, bueno, compartir el historial completo tiene sus ventajas y sus desventajas. Por supuesto, esto primero
+
+
+194
+00:27:21.582 --> 00:27:29.931
+Matias Z: y se imaginarán, es una de las características principales de 1 de los arquetipos que ya vamos a ver. Se llama Riad. El arquetipo, y nos da máxima coherencia.
+
+
+195
+00:27:30.202 --> 00:27:37.472
+Matias Z: Es un poco lo que pasa con Cloud Cole. Cuando no nos ponemos pillos a la hora de organizar
+
+
+196
+00:27:38.502 --> 00:27:48.541
+Matias Z: la configuración de cloud code para que no comparta todo el contexto cada vez que se vuelve a llamar a sí mismo, si no vieron que se va llenando el contexto con toda la información previa
+
+
+197
+00:27:49.062 --> 00:27:51.431
+Matias Z: y, como saben.
+
+
+198
+00:27:51.562 --> 00:27:57.521
+Matias Z: más allá de que los modelos nuevos tengan gran capacidad a la hora de introducir contextual. Edén
+
+
+199
+00:27:57.702 --> 00:28:02.261
+Matias Z: saben que hay cierto límite con respecto a la precisión con la cual se
+
+
+200
+00:28:03.052 --> 00:28:10.661
+Matias Z: si analiza ese contexto, entonces siempre es interesante ver alternativas a compartir el historial completo.
+
+
+201
+00:28:11.672 --> 00:28:16.812
+Matias Z: pero en principio nos da la máxima coherencia Cada vuelta.
+
+
+202
+00:28:17.102 --> 00:28:26.701
+Matias Z: Cada iteración agranda ese contexto agranda el costo, por supuesto, reduces la precisión o degrada de alguna manera, la métrica que nos interese.
+
+
+203
+00:28:27.432 --> 00:28:33.632
+Matias Z: y eso trae ruido extra con el fenómeno este conocido como lost namidú en
+
+
+204
+00:28:33.752 --> 00:28:37.191
+Matias Z: creo que ya lo mencionamos. Si alguien no sabe qué es una visa.
+
+
+205
+00:28:39.042 --> 00:28:45.372
+Matias Z: Bien, la segunda opción es compartir un artefacto explícito.
+
+
+206
+00:28:46.201 --> 00:28:53.622
+Matias Z: Esto, qué puede ser? ¿se puede convertir en un plan, un borrador, una lista de hallazgos. Esto lo vamos a ver en el módulo de aprendizaje.
+
+
+207
+00:28:56.092 --> 00:29:02.602
+Matias Z: Los artefactos pueden ser objetos de diferentes naturaleza
+
+
+208
+00:29:02.752 --> 00:29:10.092
+Matias Z: en Adicae, K. Dos pueden ser incluso imágenes, pueden ser objetos binarios
+
+
+209
+00:29:10.701 --> 00:29:15.232
+Matias Z: pueden ser borradores en texto. Pueden ser
+
+
+210
+00:29:15.602 --> 00:29:21.922
+Matias Z: información tipada en algún tipo de de de esquema. Jason que utilicemos
+
+
+211
+00:29:26.951 --> 00:29:35.392
+Matias Z: qué tiene interesante esto, cada paso. Cada paso en nuestro work flow recibe solo la porción del contexto que necesita
+
+
+212
+00:29:35.702 --> 00:29:49.011
+Matias Z: y además, un artefacto. Lo que tiene interesante es que se puede inspeccionar. Tenemos la opción intermedia de poder verificar que ese artefacto efectivamente es lo que estamos intentando compartir entre diferentes componentes.
+
+
+213
+00:29:50.902 --> 00:30:01.162
+Matias Z: Yo creo que esto se va a ver mucho más claro cuando veamos los arquetipos, Pero básicamente hay una diferencia importante entre que estos artefactos sean compartidos de manera automática
+
+
+214
+00:30:01.382 --> 00:30:14.322
+Matias Z: en función de lo que elija el modelo o que nosotros mismos decidamos qué es lo que comparte un componente con otro componente. ¿por qué? Porque eso nos da la opción a nosotros de inspeccionar qué es lo que está compartiendo
+
+
+215
+00:30:15.032 --> 00:30:17.802
+Matias Z: y no es un detalle menor cuando lo hacemos auditoría, por ejemplo.
+
+
+216
+00:30:21.332 --> 00:30:26.562
+Matias Z: Bien, el tercer tipo de ausencia.
+
+
+217
+00:30:27.042 --> 00:30:35.952
+Matias Z: la tercera técnica, a la hora de compartir el contexto es el de resúmenes o notas. También relacionado con el aprendizaje.
+
+
+218
+00:30:36.262 --> 00:30:54.051
+Matias Z: Vamos a ver que, por ejemplo, una de las primitivas básicas en A. Dk: Dos a la hora de pasar, por ejemplo, memoria de corto plazo, memoria de largo plazo, es no pasar directamente una lista literal de todos los eventos que fueron sucediendo en una sesión, sino intentar extraer hechos.
+
+
+219
+00:30:54.382 --> 00:30:59.562
+Matias Z: Esto, por supuesto, se hace a partir de la intervención de un L L M en
+
+
+220
+00:31:01.202 --> 00:31:03.681
+Matias Z: con sus ventajas y sus desventajas. De nuevo
+
+
+221
+00:31:05.642 --> 00:31:10.362
+Matias Z: un plan, un borrador, una lista de hallazgos y
+
+
+222
+00:31:11.992 --> 00:31:23.142
+Matias Z: es un objeto con forma de definida, que conecta pasos. De alguna manera está asociado a la idea de artefacto explícito lo que pasa, que el artefacto explícito puede ser audio, imágenes y vídeos. También.
+
+
+223
+00:31:23.372 --> 00:31:24.731
+Matias Z: Sí, puede ser un blog.
+
+
+224
+00:31:25.382 --> 00:31:28.462
+Matias Z: En general, las resúmenes sonoras son son
+
+
+225
+00:31:28.602 --> 00:31:31.032
+Matias Z: información en en forma de texto.
+
+
+226
+00:31:36.742 --> 00:31:37.822
+Matias Z: en
+
+
+227
+00:31:38.442 --> 00:31:47.042
+Matias Z: bien la El El cuarto método es el del contexto aislado. Es, por ejemplo, una de las características fundamentales en Deep Research.
+
+
+228
+00:31:47.242 --> 00:31:53.681
+Matias Z: En lo vamos a ver hoy en funcionamiento. Es
+
+
+229
+00:31:54.182 --> 00:31:59.352
+Matias Z: fundamental cuando queremos estudiar algún tema abierto, Mhm
+
+
+230
+00:32:00.492 --> 00:32:05.221
+Matias Z: al algún tópico de research complejo que tenga como
+
+
+231
+00:32:05.552 --> 00:32:15.422
+Matias Z: diferentes caminos de de de investigación, algún mercado desconocido, algún espacio de decisión muy grande.
+
+
+232
+00:32:16.522 --> 00:32:18.422
+Matias Z: por ejemplo, estrategias de negocio.
+
+
+233
+00:32:18.712 --> 00:32:31.722
+Matias Z: Entonces el contexto aislado. Básicamente, lo que hace es dividir el contexto fundamental. El contexto principal del orquestador en diferentes contextos más pequeños que se repartan entre los especialistas que van a participar en
+
+
+234
+00:32:31.872 --> 00:32:34.132
+Matias Z: en la en la investigación.
+
+
+235
+00:32:34.702 --> 00:32:37.922
+Matias Z: ¿en qué implica esto.
+
+
+236
+00:32:37.922 --> 00:32:39.641
+Mariano Mondani: Tengo una consulta, perdón.
+
+
+237
+00:32:39.932 --> 00:32:40.672
+Matias Z: Sí.
+
+
+238
+00:32:40.842 --> 00:32:42.022
+Mariano Mondani: Acá
+
+
+239
+00:32:42.022 --> 00:33:04.172
+Mariano Mondani: cuando ya empezás a hablar de varios agentes. Porque ahí, cuando hablamos de esto medio, que hay como un acoplamiento entre los agentes. Y 1 como está más acostumbrado en programación normal. Justamente evitar el acoplamiento. Acá como haces para degobiar o para podés desarrollar una gente, solo lo desarrollas, eso lo testeas y después le sumas otro, o estás condenado al acoplamiento de todo el sistema.
+
+
+240
+00:33:06.602 --> 00:33:13.211
+Matias Z: No como como estrategia. Lo ideal sería arrancar con un solo agente de hecho, Mariano
+
+
+241
+00:33:14.582 --> 00:33:18.821
+Matias Z: para Deep Research, La verdad es que los subagentes
+
+
+242
+00:33:19.022 --> 00:33:22.461
+Matias Z: que van tomando los diferentes como temas de investigación
+
+
+243
+00:33:23.302 --> 00:33:26.972
+Matias Z: no son más que llamadas recursivas al mismo agente original.
+
+
+244
+00:33:28.312 --> 00:33:31.121
+Matias Z: y vos le pones un tope si querés de profundidad.
+
+
+245
+00:33:31.852 --> 00:33:37.332
+Matias Z: o sea, dee research. Lo que tiene es eso son llamadas recursivas a la imagen, normalmente sí.
+
+
+246
+00:33:37.332 --> 00:33:37.752
+Mariano Mondani: Okay.
+
+
+247
+00:33:37.752 --> 00:33:42.462
+Matias Z: En pero con la ventaja de
+
+
+248
+00:33:42.622 --> 00:33:51.792
+Matias Z: que le mandase un contexto aislado, le mandase un contexto solamente de la subconsulta de investigación que quisieras que ese sub agente tome
+
+
+249
+00:33:52.092 --> 00:33:52.981
+Matias Z: en el.
+
+
+250
+00:33:54.692 --> 00:33:57.182
+Mariano Mondani: O sea, sería testeable, digamos, solo
+
+
+251
+00:33:58.622 --> 00:34:01.762
+Mariano Mondani: inyectándole un contexto que vos tengas
+
+
+252
+00:34:02.122 --> 00:34:06.412
+Mariano Mondani: que puedas generar, que o sea, que puedas sintetizar. Podrías testear un agente solo.
+
+
+253
+00:34:07.812 --> 00:34:10.132
+Matias Z: Podrías testear un agente? Solo esa es la pregunta.
+
+
+254
+00:34:10.132 --> 00:34:13.602
+Mariano Mondani: Después va a terminar. Sí que después va a terminar orquestado. Digamos podés hacerlo.
+
+
+255
+00:34:14.502 --> 00:34:18.531
+Matias Z: Sí, Sí, sí. La idea es que lleguemos a poder hacer
+
+
+256
+00:34:19.152 --> 00:34:25.751
+Matias Z: observabilidad lo más exhaustivamente posible, porque es la manera también que tenemos de
+
+
+257
+00:34:26.332 --> 00:34:29.861
+Matias Z: lograr estos Lookboks de mejora continua.
+
+
+258
+00:34:30.362 --> 00:34:40.342
+Matias Z: Así que, efectivamente, cuanto más compleja sea, cuanto más compleja y más autónoma sean las decisiones de orquestación más difícil va a ser justamente
+
+
+259
+00:34:40.852 --> 00:34:42.261
+Matias Z: el D. I, V A, G. N, Digamos
+
+
+260
+00:34:44.582 --> 00:34:52.352
+Matias Z: entonces qué ventajas tiene que evidencias de una llamada a un su agente
+
+
+261
+00:34:53.012 --> 00:35:03.441
+Matias Z: evidencias. Me refiero a contexto y respuesta, contaminen a otros sub agentes. Y esto es importante porque en general, los son fácilmente manipulables.
+
+
+262
+00:35:04.182 --> 00:35:15.622
+Matias Z: Si de alguna manera, si nos separamos estas cosas, normalmente suele aparecer cierto tipo de sesgo. Por eso es interesante. Y más allá de que sean llamadas recursivas al mismo agente. Son diferentes instancias.
+
+
+263
+00:35:16.192 --> 00:35:17.122
+Matias Z: En
+
+
+264
+00:35:20.202 --> 00:35:21.112
+Matias Z: genial.
+
+
+265
+00:35:25.212 --> 00:35:28.642
+Matias Z: Ok, acá hay una super simplificación.
+
+
+266
+00:35:31.112 --> 00:35:35.012
+Matias Z: Una vez más, son 6 arquetipos.
+
+
+267
+00:35:35.132 --> 00:35:43.052
+Matias Z: Lo que hacemos acá es empezar a dividir como en categorías muy básicas. Esto, por supuesto, después lo vamos a ver mucho más en detalle
+
+
+268
+00:35:43.262 --> 00:35:47.912
+Matias Z: hoy mismo, pero yo creo que es interesante
+
+
+269
+00:35:48.052 --> 00:35:55.541
+Matias Z: la idea central de la planificación: separar, razonar, de actuar.
+
+
+270
+00:35:56.332 --> 00:36:02.382
+Matias Z: Sí, ya hablamos de razonar. Razonar significa
+
+
+271
+00:36:03.012 --> 00:36:17.842
+Matias Z: decidir qué hacer. Básicamente, razonar junto con planificar, planificar después nos dice qué clase de herramientas queremos invocar y actuar es llamar justamente a las herramientas, a las pulsas y que vamos a utilizar más adelante
+
+
+272
+00:36:18.942 --> 00:36:23.942
+Matias Z: y traer un resultado que el framework se va a encargar después de inyectar al elen.
+
+
+273
+00:36:25.842 --> 00:36:31.832
+Matias Z: Entonces lo que vemos ahí es que los diferentes arquetipos son simplemente diferentes combinaciones de estos
+
+
+274
+00:36:32.022 --> 00:36:34.222
+Matias Z: los pasos. Esto está súper simplificado
+
+
+275
+00:36:40.832 --> 00:36:41.862
+Matias Z: en
+
+
+276
+00:36:45.802 --> 00:36:49.111
+Matias Z: Réflex, aunque parezca super sencillo.
+
+
+277
+00:36:49.352 --> 00:37:00.881
+Matias Z: se sigue utilizando y definitivamente es útil, porque justamente los modelos system one. Los modelos tipo sher básicamente son modelos réflex.
+
+
+278
+00:37:01.312 --> 00:37:11.792
+Matias Z: no hace más que una única pasada. No tienen manera de volver en Bocana. Si no tienen forma de volver a llamarse con más información, hacen una única pasada y toman una única decisión.
+
+
+279
+00:37:12.192 --> 00:37:13.012
+Matias Z: sí
+
+
+280
+00:37:13.762 --> 00:37:23.521
+Matias Z: pueden pensar para qué me sirve esto? Bueno, efectivamente nos sirve para rutear. Definitivamente nos sirve para tomar una decisión para clasificar, pero
+
+
+281
+00:37:24.142 --> 00:37:24.832
+Matias Z: un
+
+
+282
+00:37:24.972 --> 00:37:42.471
+Matias Z: evaluar si la llamada a una tul es segura o no lo es. En particular, lo que tienen los modelos tipo ser es que son las salidas, son tipadas una vez más y que tienen asociadas una probabilidad calibrada de manera tal que tenemos una confianza
+
+
+283
+00:37:42.562 --> 00:37:47.091
+Matias Z: sobre esa decisión tomada por ser el Riflex sigue siendo.
+
+
+284
+00:37:47.282 --> 00:37:54.772
+Matias Z: aunque parezca súper sencillo y viene de la literatura de la vieja escuela de la inteligencia artificial sigue siendo hoy súper súper relevante
+
+
+285
+00:37:54.912 --> 00:38:01.591
+Matias Z: en esas topologías. Tal es así que la gran innovación del 20, 26 Creo que tiene que ver con Reflex.
+
+
+286
+00:38:09.412 --> 00:38:15.522
+Matias Z: Bien. Sin embargo, lo que convierte a este a este bucle básico
+
+
+287
+00:38:15.642 --> 00:38:21.721
+Matias Z: en un agente es que hay una fase de razonamiento que decide qué acción tomar
+
+
+288
+00:38:21.862 --> 00:38:24.722
+Matias Z: y por qué. Por supuesto.
+
+
+289
+00:38:28.352 --> 00:38:36.342
+Matias Z: lo interesante es que cada arquetipo es, en esencia un patrón temporal distinto con respecto a cómo intercalar estos diferentes pasos.
+
+
+290
+00:38:36.792 --> 00:38:41.401
+Matias Z: Sí, no es más que eso. En principio, esa sería la la
+
+
+291
+00:38:43.042 --> 00:38:49.311
+Matias Z: la intuición, si quieren, de de de los diferentes. Este arquetipos que vamos a ver hoy.
+
+
+292
+00:38:50.932 --> 00:38:59.722
+Matias Z: Riflek A Reflex actúa sobre una sola pasada, pero cuando tiene, por supuesto. Por el contrario.
+
+
+293
+00:38:59.992 --> 00:39:09.972
+Matias Z: es infinito. Es un bucle que no tiene fin. Solamente termina cuando el Ldm decide que ya tiene todo lo necesario y decide dar una respuesta final.
+
+
+294
+00:39:10.112 --> 00:39:13.371
+Matias Z: Si no lo termina. Eso es Riad, Sí,
+
+
+295
+00:39:15.442 --> 00:39:18.022
+Matias Z: es el bucle al cual estamos más acostumbrados.
+
+
+296
+00:39:18.202 --> 00:39:26.281
+Matias Z: Planet Exetuter tiene la capacidad de razonar una vez y decidir de manera.
+
+
+297
+00:39:27.372 --> 00:39:46.401
+Matias Z: La versión más sencilla es decidir una serie de pasos a ser ejecutados posteriormente. Después vamos a ver variantes. Por supuesto, se pueden re planificar en función de de errores, pero en principio pensamos así: planes de es una estancia de razonamiento, y muchas muchos pasos de ejecución sí
+
+
+298
+00:39:46.882 --> 00:39:54.682
+Matias Z: de composition tienen la capacidad de razonar a partir de una pregunta
+
+
+299
+00:39:55.872 --> 00:39:58.691
+Matias Z: en general tiene que ver con cuando
+
+
+300
+00:39:59.192 --> 00:40:06.672
+Matias Z: cuando tenemos un prompt o alguna consulta o alguna consigna que implica sus preguntas.
+
+
+301
+00:40:06.672 --> 00:40:19.851
+Matias Z: y necesitamos repreguntar la capacidad de cuerda y composición. Es justamente abrir ese pronto o esa consigna en diferentes preguntas más pequeñas. Y a partir de ahí invocar diferentes módulos que la van respondiendo
+
+
+302
+00:40:20.762 --> 00:40:25.891
+Matias Z: con sus ventajas y sus ventajas. O sea, vamos a ver, el mantenimiento, era un
+
+
+303
+00:40:27.562 --> 00:40:32.282
+Matias Z: reflection. Es 1 de los les diría 1 de los arquetipos que más vamos a ver
+
+
+304
+00:40:32.392 --> 00:40:36.502
+Matias Z: de ahora en adelante tiene
+
+
+305
+00:40:38.372 --> 00:40:50.962
+Matias Z: como idea básica la la colaboración o, mejor dicho, la no colaboración. El vínculo adversarial entre un generador y un evaluador.
+
+
+306
+00:40:51.402 --> 00:40:55.781
+Matias Z: Me gusta más. No colaboran, Por cierto, si colaboraran, Estaríamos en problemas.
+
+
+307
+00:40:55.892 --> 00:41:03.762
+Matias Z: Tiene más que ver con un evaluador que va a tomar una decisión de lo que entrega un generador
+
+
+308
+00:41:04.402 --> 00:41:20.012
+Matias Z: de esto. En la literatura académica más tradicional tenemos 2 versiones. Hay un selfrie. Fine, que es un único modelo que evalúa sus propias propuestas y la opción que en general se intenta implementar.
+
+
+309
+00:41:20.012 --> 00:41:26.821
+Matias Z: que es el uso de 2 modelos independientes, porque suele haber ciertos sesgo de confirmación cuando usamos un solo modelo.
+
+
+310
+00:41:28.412 --> 00:41:39.002
+Matias Z: research, como les mencioné antes, Tiene que ver con esto con las llamadas recursivas
+
+
+311
+00:41:39.412 --> 00:41:49.081
+Matias Z: Y normalmente se suelen juntar esas como evidencias o respuestas. En un último componente que suele armar una síntesis a
+
+
+312
+00:41:49.442 --> 00:41:54.691
+Matias Z: de todo lo que fue recolectado por los diferentes sub agentes.
+
+
+313
+00:41:56.832 --> 00:42:05.301
+Valentina Da Silva: Una pregunta matias al Al a a la lo que te anterior: la laya anterior, esta de los patrones
+
+
+314
+00:42:06.322 --> 00:42:07.342
+Valentina Da Silva: que vimos
+
+
+315
+00:42:10.412 --> 00:42:21.362
+Valentina Da Silva: la parte, la de reflection, como que me parece raro que en el estelle actuar no porque razona y no tendría que ser razón, actúa y evalúa.
+
+
+316
+00:42:26.362 --> 00:42:28.621
+Matias Z: La zona actúa y evalúa.
+
+
+317
+00:42:29.702 --> 00:42:37.222
+Valentina Da Silva: Claro como que decide hacer, ejecuta la acción. Y ahí después se evalúa a ver si si el resultado era el que se esperaba o no.
+
+
+318
+00:42:38.602 --> 00:42:41.201
+Matias Z: Me das un ratito y llegamos a los detalles.
+
+
+319
+00:42:41.692 --> 00:42:42.122
+Valentina Da Silva: Dale, el.
+
+
+320
+00:42:42.882 --> 00:42:50.151
+Matias Z: Hay. Hay a ver el el pie que me das es el siguiente: hay ciertos solapamiento
+
+
+321
+00:42:51.322 --> 00:42:53.512
+Matias Z: entre estos diferentes arquetipos.
+
+
+322
+00:42:53.702 --> 00:43:00.412
+Matias Z: Recuerdan que en principio no no son más que una forma de pensar soluciones.
+
+
+323
+00:43:00.522 --> 00:43:04.521
+Matias Z: No son más que una manera de compartir terminología
+
+
+324
+00:43:05.132 --> 00:43:11.862
+Matias Z: entre nosotros y entre nuestros equipos como para aproximarnos, como cuando pensábamos
+
+
+325
+00:43:11.972 --> 00:43:19.182
+Matias Z: diferentes arquitecturas a la hora de plantear microservicios o soluciones cliente servidor.
+
+
+326
+00:43:19.322 --> 00:43:24.632
+Matias Z: Normalmente esto lo vamos a ver como de manera no tan pura. Así que la pregunta no está
+
+
+327
+00:43:25.772 --> 00:43:31.462
+Matias Z: fuera de lugar. Es pertinente que vamos a ver los detalles de qué implica cada 1.
+
+
+328
+00:43:31.962 --> 00:43:36.272
+Matias Z: Ajá Y en
+
+
+329
+00:43:37.422 --> 00:43:50.481
+Matias Z: como criterio general, si ordenamos los 6 arquetipos según quien decide el flujo, o sea, el próximo paso desde la izquierda hacia la derecha. Lo que vemos es una mayor autonomía, básicamente
+
+
+330
+00:43:52.722 --> 00:44:00.362
+Matias Z: de nuevo, es un ordenamiento didáctico no es una medición estricta.
+
+
+331
+00:44:03.262 --> 00:44:17.151
+Matias Z: De hecho, una implementación concreta Podría moverse en ese en ese en ese eje que estamos mostrando básicamente estamos intentando construir criterio para empezar a pensar Ahora, sí, cómo armamos las arquitecturas
+
+
+332
+00:44:17.692 --> 00:44:22.852
+Matias Z: de nuestros de nuestras soluciones. Entonces, Desde réflex a la izquierda.
+
+
+333
+00:44:23.002 --> 00:44:28.171
+Matias Z: donde el flujo está resuelto directamente en el diseño. No hay ninguna decisión autónoma
+
+
+334
+00:44:29.882 --> 00:44:37.441
+Matias Z: hacia Research Deep Research hacia la derecha, perdón, donde en el M va a decidir
+
+
+335
+00:44:38.672 --> 00:44:48.512
+Matias Z: cómo descomponen sus agentes, qué profundidad de recurrición van a tener sus agentes, o sea, hasta dónde vamos a hacer
+
+
+336
+00:44:48.872 --> 00:44:55.472
+Matias Z: spon hasta dónde vamos a disparar luego su agentes para entrar más en detalle en cada 1 de los temas de ejecución.
+
+
+337
+00:44:56.122 --> 00:45:02.692
+Matias Z: desde la izquierda hasta la derecha. Lo que tenemos es un espectro de autonomía a la hora de orquestar.
+
+
+338
+00:45:02.822 --> 00:45:03.612
+Matias Z: Sí,
+
+
+339
+00:45:06.722 --> 00:45:09.602
+Matias Z: qué significa moverse de izquierda a derecha. Bueno.
+
+
+340
+00:45:10.602 --> 00:45:13.862
+Matias Z: hacia la derecha tenemos mayor adaptabilidad claramente.
+
+
+341
+00:45:15.222 --> 00:45:22.011
+Matias Z: Pero ¿qué nos cuesta eso? Nos cuesta latencia. No tenemos capacidad de predecir la latencia nos cuesta
+
+
+342
+00:45:22.262 --> 00:45:26.122
+Matias Z: previsibilidad. Dos invocaciones a un mismo
+
+
+343
+00:45:26.432 --> 00:45:32.482
+Matias Z: sistema genético pueden devolver distintas respuestas y el coste económico básicamente
+
+
+344
+00:45:32.662 --> 00:45:49.682
+Matias Z: una variable importante a la hora de decidir nuestras arquitecturas. Entonces la regla práctica que se desprende de esto es empezar de la de la forma más sencilla. Empezamos con la izquierda con la solución más básica y nos desplazamos a medida que necesitemos
+
+
+345
+00:45:49.922 --> 00:45:54.442
+Matias Z: en mayor complejidad en nuestros flujos de trabajo.
+
+
+346
+00:45:54.792 --> 00:46:03.041
+Matias Z: Bien, Seis arquetipos, 6 respuestas a estas 3 preguntas que acabamos de mencionar.
+
+
+347
+00:46:05.992 --> 00:46:13.982
+Matias Z: sí que parece reiterativo, pero un poco. La idea es, llevemos, no lo nombre. Estos 6 arquetipos lo vamos a empezar a combinar, a mezclar, a a deformar.
+
+
+348
+00:46:14.502 --> 00:46:21.381
+Matias Z: La idea es un poco identificar cuando veamos un problema, un flujo de trabajo, un Pibeline
+
+
+349
+00:46:21.522 --> 00:46:33.231
+Matias Z: World flow de negocio. La idea es un poco tratar de lograr en nuestra cabeza un mapa que directamente nos lleve a alguno de estos tipos de de soluciones o una composición de ellas, que es lo que vamos a ver en, básicamente en
+
+
+350
+00:46:33.682 --> 00:46:38.212
+Matias Z: los demos que tenemos preparados para dentro de un ratito.
+
+
+351
+00:46:39.712 --> 00:46:50.302
+Diego Mihanovich: A mí me perdón, pero a mí me pasó al principio que pensé que Reac se refería a la librería de de Javascript y y no después, me después me di cuenta, no tenía nada que ver, pero bueno.
+
+
+352
+00:46:50.302 --> 00:46:51.212
+Matias Z: No, no.
+
+
+353
+00:46:51.212 --> 00:46:52.202
+Diego Mihanovich: Educación.
+
+
+354
+00:46:52.622 --> 00:46:57.542
+Matias Z: No sé, no sé nada de Frontend, así que no te preocupes nunca. Voy a mencionar nada de Frontend.
+
+
+355
+00:46:57.672 --> 00:46:58.832
+Matias Z: Estaría hecha museo.
+
+
+356
+00:46:59.152 --> 00:47:09.081
+Matias Z: Pero está bien en Riad. Viene justamente de de las siglas de cómo se compone de ese ese
+
+
+357
+00:47:09.282 --> 00:47:14.032
+Matias Z: bucle de 3 Estados de en
+
+
+358
+00:47:18.332 --> 00:47:20.212
+Matias Z: Ok. Entonces.
+
+
+359
+00:47:25.652 --> 00:47:30.692
+Matias Z: si no hay ninguna pregunta acá, básicamente lo que tenemos son las definiciones de lo que acabamos de
+
+
+360
+00:47:31.072 --> 00:47:32.552
+Matias Z: de describir.
+
+
+361
+00:47:33.312 --> 00:47:41.581
+Matias Z: Si no hay ninguna pregunta, vamos a el primer modelo más sencillo. El primer arquetipo, mejor dicho, el más sencillo de todos.
+
+
+362
+00:47:45.042 --> 00:47:56.642
+Matias Z: es importante por varios motivos. Primero, ya les digo porque se está planteando como una revolución en la industria. Se están dejando de utilizar el Erems, acá
+
+
+363
+00:47:58.952 --> 00:48:08.411
+Matias Z: donde muchas veces se hacía una llamada a un modelo, a un modelo sencillo, a un elemento pequeño con fantuning
+
+
+364
+00:48:09.212 --> 00:48:17.561
+Matias Z: y normalmente eso tenía costo y latencia que eran innecesarios. Y como estamos viendo, eso está reemplazando por otro tipo de modelos
+
+
+365
+00:48:17.982 --> 00:48:28.351
+Matias Z: y debe ser una de las disrupciones más importantes en la industria desde la aparición de de los modelos razonadores. Por eso insisto con que no dejemos de lado la aparición de ser.
+
+
+366
+00:48:28.832 --> 00:48:36.471
+Matias Z: Sé que soy pesado con el tema, pero es importante estar resolviendo temas súper súper complejos, combinado con el L. L:
+
+
+367
+00:48:36.942 --> 00:48:42.022
+Matias Z: Entonces, ¿qué podemos entender de reflexiones? Básicamente, Primero.
+
+
+368
+00:48:43.252 --> 00:48:55.132
+Matias Z: un tema importante: Hay un código de colores que vamos a repetir a lo largo de todos los diagramas cuando vean azul. Normalmente vamos a estar hablando de una decisión que toma un modelo
+
+
+369
+00:48:56.192 --> 00:49:03.022
+Matias Z: cuando ven naran perdón cuando ve cuando ven azul. Es código. En este caso, es, podría ser azul o naranja
+
+
+370
+00:49:03.282 --> 00:49:11.022
+Matias Z: cuando había naranja. Es definitivamente una decisión tomada por el en este caso, de nuevo, debería ser mejor.
+
+
+371
+00:49:11.882 --> 00:49:18.522
+Matias Z: pero es un mapping en realidad, con lo cual podría ser un código, Podría ser un modelo.
+
+
+372
+00:49:18.962 --> 00:49:30.351
+Matias Z: Cuando vean verde, van a hacer acciones, tools, herramientas servidores? M C, P, Cuando veamos amarillo o ámbar, van a ser justamente estos artefactos
+
+
+373
+00:49:30.382 --> 00:49:43.192
+Matias Z: o resúmenes compartidas en el contexto. Y cuando vemos componentes en gris, vamos a ver como no es de entrada, salida del modelo o del sistema genético, mejor dicho.
+
+
+374
+00:49:45.192 --> 00:49:49.622
+Matias Z: ajá Bien, en este.
+
+
+375
+00:49:50.012 --> 00:49:56.321
+Matias Z: En esta primera aproximación definimos réflex como una sola pasada de percepción a la acción.
+
+
+376
+00:49:57.042 --> 00:49:59.761
+Matias Z: No hay ningún bucle, no hay ningún Estado intermedio.
+
+
+377
+00:50:00.672 --> 00:50:13.161
+Matias Z: Sí, y esta definición admite básicamente 2 realizaciones concretas: este la definición o la decisión de esa definición puede ser una regla codificada
+
+
+378
+00:50:15.382 --> 00:50:19.441
+Matias Z: tipo Unif en Else. O sea, puede ser código.
+
+
+379
+00:50:20.642 --> 00:50:25.591
+Matias Z: puede ser una tabla de búsqueda puede ser un modelo. Ser. Puede ser el L L. M.
+
+
+380
+00:50:26.592 --> 00:50:35.331
+Matias Z: Una única llamada a un Lm. Es una única llamada, con lo cual no hay posibilidad de mejorar el contexto. Esto es por ahí lo más importante de reflex
+
+
+381
+00:50:37.042 --> 00:50:40.062
+Matias Z: este, al no tener una segunda llamada, entonces
+
+
+382
+00:50:41.762 --> 00:50:52.162
+Matias Z: dependemos exclusivamente de lo que ingresa como contexto. Si estamos hablando de una semana en este ejemplo.
+
+
+383
+00:50:53.532 --> 00:50:58.052
+Matias Z: básicamente es una suerte de banco digital
+
+
+384
+00:50:58.572 --> 00:51:08.061
+Matias Z: que recibe un mensaje y lo enruta a una de 3 colas de mensajes, tarjetas, préstamos o fraude
+
+
+385
+00:51:08.422 --> 00:51:14.521
+Matias Z: para los que hayan estado estudiando los modelos System One, como sea, o como el Asa.
+
+
+386
+00:51:14.632 --> 00:51:18.062
+Matias Z: Seguramente encontrarán estos súper súper familiar.
+
+
+387
+00:51:21.622 --> 00:51:23.942
+Matias Z: Acá No hay mucho que analizar
+
+
+388
+00:51:24.082 --> 00:51:30.862
+Matias Z: en términos de de orquestación, o sea, que se ejecuta después nada.
+
+
+389
+00:51:31.462 --> 00:51:37.272
+Matias Z: La respuesta honesta es que no hay nada que ejecutar después. El flujo entero es un solo paso.
+
+
+390
+00:51:37.962 --> 00:51:43.192
+Matias Z: Esta decisión ya fue tomada a la hora de diseñar el arquetipo.
+
+
+391
+00:51:43.572 --> 00:51:46.422
+Matias Z: y esto lo que hace la orquestación sea súper trivial, ¿no?
+
+
+392
+00:51:46.542 --> 00:51:55.451
+Matias Z: Y la trivialidad en este caso es una de las virtudes que tiene este arquetipo. Latencia mínima costo mínimo comportamiento predecible. Y, además.
+
+
+393
+00:51:56.182 --> 00:52:03.372
+Matias Z: si utilizamos un modelo sistema, tenemos probabilidad calibrada como confianza, lo cual no es menor, insisto
+
+
+394
+00:52:04.122 --> 00:52:15.461
+Matias Z: sobre el contexto que se pasa. Bueno, básicamente el paso ve únicamente la percepción actual. El único contexto que existe es el que ingresa al arquetipo. Por primera vez, como vemos en la cajita gris que ingresaba
+
+
+395
+00:52:16.012 --> 00:52:24.872
+Matias Z: a ese conjunto de componentes. No hay historia, no hay pasos, no hay reintentos.
+
+
+396
+00:52:25.752 --> 00:52:27.971
+Matias Z: no hay nada que pasar a un paso siguiente.
+
+
+397
+00:52:29.322 --> 00:52:37.152
+Matias Z: La consecuencia fundamental de esto es si la información necesaria no viene a la entrada reflex, no sirve para nada. Básicamente
+
+
+398
+00:52:37.972 --> 00:52:40.291
+Matias Z: comete errores importantes, entonces
+
+
+399
+00:52:40.692 --> 00:52:50.672
+Matias Z: reflex. Es sencillo. Sin embargo, lo vamos a usar como parte de la construcción de topologías multi agente
+
+
+400
+00:52:51.092 --> 00:52:53.252
+Matias Z: más complejas.
+
+
+401
+00:52:53.772 --> 00:52:56.572
+Matias Z: No lo descartemos por sus simples
+
+
+402
+00:53:06.812 --> 00:53:08.822
+Matias Z: con respecto a fallas típicas.
+
+
+403
+00:53:09.802 --> 00:53:10.702
+Matias Z: Bueno.
+
+
+404
+00:53:17.402 --> 00:53:23.332
+Matias Z: lo que se imaginan con respecto a un modelo que recibe un contexto.
+
+
+405
+00:53:24.942 --> 00:53:29.871
+Matias Z: un contexto que no es suficiente. Por ejemplo, una mala clasificación en silencio.
+
+
+406
+00:53:30.192 --> 00:53:33.571
+Matias Z: No hay un reintento, no hay un evaluador. Sí,
+
+
+407
+00:53:35.942 --> 00:53:44.761
+Matias Z: podemos tener el problema de la obsolescencia en estas reglas. Normalmente, cuando tenemos arquetipos que son un poco más inteligentes y utilizamos algún tipo de retriever
+
+
+408
+00:53:46.062 --> 00:53:49.471
+Matias Z: que se actualiza como vamos a ver en el módulo siguiente.
+
+
+409
+00:53:49.692 --> 00:53:52.082
+Matias Z: No nos vamos a encontrar frente a este problema
+
+
+410
+00:53:52.552 --> 00:54:12.282
+Matias Z: cuando elegirlo cuando no elegirlo? Bueno, básicamente, cuando queremos hacer una decisión, súper queremos tomar una decisión de de router de diseño, de perdón de clasificación de de toma de decisión con respecto a qué Tul saber y que tú no llamabas. Si estamos implementando un wardale con respecto a la a la respuesta de una tool.
+
+
+411
+00:54:12.322 --> 00:54:21.112
+Matias Z: Ahí Reflex funciona muy bien, que es justamente donde seve está tomando el lugar de los antiguos réflex tradicionales.
+
+
+412
+00:54:21.322 --> 00:54:25.711
+Matias Z: Sí, estoy tratando de adelantar un poquito porque son un montón.
+
+
+413
+00:54:25.972 --> 00:54:33.282
+Matias Z: Bien, y acá. Hay un ejemplo claro: simplemente se toma una decisión en función de la entrada.
+
+
+414
+00:54:33.462 --> 00:54:35.271
+Matias Z: No hay mucho misterio.
+
+
+415
+00:54:35.872 --> 00:54:41.512
+Matias Z: Les dijo, si quieren las slides para que las evaluen, que.
+
+
+416
+00:54:42.502 --> 00:54:46.222
+Matias Z: Pero este ejemplo es muy, muy trivial. Así que vamos a avanzar un poco más rápido.
+
+
+417
+00:54:46.492 --> 00:54:58.712
+Matias Z: Ahora, sí. Riac Mhm Riad viene de Risoning and acting no
+
+
+418
+00:55:00.822 --> 00:55:03.392
+Matias Z: es el patrón central de los agentes modernos.
+
+
+419
+00:55:03.592 --> 00:55:12.972
+Matias Z: Te lo deben reconocer por su nombre o lo van a entender por su funcionamiento fue propuesto en un paper de
+
+
+420
+00:55:14.212 --> 00:55:20.561
+Matias Z: el de un chino, yao con con un laboratorio en el 22.
+
+
+421
+00:55:22.542 --> 00:55:28.362
+Matias Z: Básicamente, la idea que hoy parece natural es intercalar razonamiento con actuación.
+
+
+422
+00:55:28.582 --> 00:55:33.721
+Matias Z: Sí, hoy parece trivial. Bueno, en ese momento no lo era
+
+
+423
+00:55:34.692 --> 00:55:41.931
+Matias Z: entonces intercalar trazas de razonamiento. El lenguaje natural con acciones sobre el mundo a partir del uso de herramientas
+
+
+424
+00:55:45.262 --> 00:55:46.302
+Matias Z: de
+
+
+425
+00:55:46.502 --> 00:55:57.042
+Matias Z: lo importante es. Estas acciones nos permiten traer información externa. Y en función de eso, el L. L. B decide si requiere el uso de las herramientas.
+
+
+426
+00:55:57.152 --> 00:56:04.762
+Matias Z: Requiere hacer una pregunta al usuario o directamente terminar con la ejecución. Por eso React es el el el el
+
+
+427
+00:56:05.132 --> 00:56:09.931
+Matias Z: arquetipo, Probablemente el más flexible, el más caro.
+
+
+428
+00:56:10.482 --> 00:56:17.622
+Matias Z: el menos previsible, el más, el el de más latencia. El diagrama va a mostrar un ciclo bastante
+
+
+429
+00:56:17.922 --> 00:56:24.851
+Matias Z: clásico canónico. Después, a esto se le pueden agregar un montón de variantes, No, el modelo razona
+
+
+430
+00:56:25.082 --> 00:56:28.631
+Matias Z: perdón objetivo objetivo. Puede ser de nuevo
+
+
+431
+00:56:28.992 --> 00:56:34.261
+Matias Z: brond, una consigna. Cualquier estímulo que le demos a nuestro sistema genético.
+
+
+432
+00:56:35.432 --> 00:56:40.192
+Matias Z: Recuerden que todo lo que sea naranja son L Ms.
+
+
+433
+00:56:40.662 --> 00:56:47.001
+Matias Z: En este caso tenemos un elemento razonador y decide una acción sí.
+
+
+434
+00:56:48.052 --> 00:56:53.121
+Matias Z: Ahora, esta acción, recuerden que no la ejecuta directamente el L V, sino que
+
+
+435
+00:56:53.552 --> 00:57:05.911
+Matias Z: el Framew es el es el encargado de realizar la llamada a la función o al encipiserver o a lo que sea, con sus argumentos correspondientes.
+
+
+436
+00:57:06.972 --> 00:57:10.072
+Matias Z: Tenemos la observación ahora sí valentina
+
+
+437
+00:57:10.282 --> 00:57:20.302
+Matias Z: en este caso, si hay una observación explícita como paso de este Graf y lo que
+
+
+438
+00:57:20.412 --> 00:57:37.672
+Matias Z: podemos destacar como característica particular de Riad es que utiliza un contexto único. Esto tiene, como dijimos, ventajas y desventajas. Por un lado, agrega coherencia. Cada vez que volvemos a llamar al razonador vuelve a ver toda la lista de llamadas, en ocasiones previas respuestas de las Tools.
+
+
+439
+00:57:38.402 --> 00:57:40.812
+Matias Z: Pero ese contexto crece sin parar.
+
+
+440
+00:57:41.222 --> 00:57:53.222
+Matias Z: Ya vamos a ver de qué manera se pueden utilizar ciertas heurísticas, inteligencias o estrategias para intentar o compactar o resumir ese contexto que que va creciendo. A medida que el Buclerk sigue avanzando
+
+
+441
+00:58:01.832 --> 00:58:19.221
+Matias Z: bien. Recién cuando el el el L. L. M. O sea, el cerebro, en este caso del de Bucler decide que tenemos toda la información suficiente. Es que damos una respuesta final al usuario o al componente que hizo la invocación. Ok. En este caso, el razonamiento
+
+
+442
+00:58:20.422 --> 00:58:23.542
+Matias Z: es el razonamiento del L. M es el orquestador.
+
+
+443
+00:58:23.882 --> 00:58:27.931
+Matias Z: Sí, la orientación está completamente decidida de manera autónoma, por el
+
+
+444
+00:58:29.482 --> 00:58:35.461
+Matias Z: que es un poco lo que nos menciona este primer pilar.
+
+
+445
+00:58:36.042 --> 00:58:42.572
+Matias Z: Lo que se ejecuta después, básicamente lo decide el modelo en cada vuelta de ejecución
+
+
+446
+00:58:43.462 --> 00:58:49.492
+Matias Z: va a elegir qué herramientas tomar, en qué argumentos. Y también va a decidir si ese momento o no de terminar.
+
+
+447
+00:58:50.262 --> 00:58:56.691
+Matias Z: El código no tiene ninguna injerencia en términos de cuando termina o termina ese flujo de ejecución.
+
+
+448
+00:59:00.162 --> 00:59:05.732
+Matias Z: sí puede ser. De hecho, nahuel. Esto es módulo, 4 módulo, 5.
+
+
+449
+00:59:06.562 --> 00:59:12.552
+Matias Z: Nos salteamos el módulo, 3 por una decisión arbitraria
+
+
+450
+00:59:13.212 --> 00:59:19.191
+Matias Z: que he tomado para avanzar un poquito con con cuestiones arquitectónicas en función de de
+
+
+451
+00:59:19.492 --> 00:59:21.621
+Matias Z: ir más directo al como
+
+
+452
+00:59:22.192 --> 00:59:28.742
+Matias Z: al corazón del curso. Y después empezaremos a alimentar alrededor de las arquitecturas, lo que estaba
+
+
+453
+00:59:29.162 --> 00:59:33.041
+Matias Z: planificado para algunos módulos, que son más bien complementarios.
+
+
+454
+00:59:35.822 --> 00:59:42.832
+Matias Z: un poco, tratamos de adaptarnos a las expectativas Y como estamos aprendiendo a dictar este curso y la disciplina que no es tan
+
+
+455
+00:59:43.382 --> 00:59:44.402
+Matias Z: trivial.
+
+
+456
+00:59:44.882 --> 00:59:45.782
+Matias Z: En
+
+
+457
+00:59:46.462 --> 00:59:54.432
+Matias Z: un poco. La propuesta que estamos haciendo es ir directo ahora a los arquetipos que de hecho era, Hicimos lo mismo en la primera Comisión, así que
+
+
+458
+00:59:54.882 --> 01:00:01.982
+Matias Z: en fue una decisión recortar un poquito el curso
+
+
+459
+01:00:02.312 --> 01:00:06.412
+Matias Z: para tratar de traerles lo antes posible la información que por ahí la más importante.
+
+
+460
+01:00:09.232 --> 01:00:10.582
+Matias Z: En
+
+
+461
+01:00:15.372 --> 01:00:35.521
+Matias Z: bien, entonces decíamos qué se ejecuta. Después está de determinado exclusivamente por el L Lm: Con el contexto, el contexto es 1 solo. La vemos la ventana de contexto. Crece por cada iteración. Eso es un problema. Nos da mayor coherencia, pero a la vez nos da mayor costo. Nos trae el problema de los 1 000 más ruido
+
+
+462
+01:00:35.562 --> 01:00:40.312
+Matias Z: integrada. La métrica, como dijimos en
+
+
+463
+01:00:43.092 --> 01:00:52.112
+Matias Z: y cuando se detiene, se detiene básicamente cuando el L M decide que tiene la información suficiente para terminar con la ejecución de de este arquetipo. Sí,
+
+
+464
+01:00:53.372 --> 01:01:01.292
+Matias Z: las fallas típicas, estas slides que dicen fallas típicas y cuando elegirlo. Y cuando no son importantes.
+
+
+465
+01:01:02.212 --> 01:01:04.852
+Matias Z: son importantes, son un poco triviales.
+
+
+466
+01:01:05.362 --> 01:01:06.392
+Matias Z: En
+
+
+467
+01:01:07.982 --> 01:01:20.402
+Matias Z: lo que sí que me gustaría es pedirles. Las voy a subir. Por supuesto, no sé si están subidas o no. Creo que no. En esta Comisión la idea sería que le pegue una revisada rápida es bastante claro.
+
+
+468
+01:01:20.652 --> 01:01:28.731
+Matias Z: porque un poco la idea se empezará a utilizar ahora. A partir de ahora, esta terminología, cuando vamos a usar un react, un reflection o un decler
+
+
+469
+01:01:29.112 --> 01:01:29.972
+Matias Z: a.
+
+
+470
+01:01:35.332 --> 01:01:44.632
+Matias Z: Normalmente, el problema real que es caro. Voy a intentar resumirlo. Ryac es caro y no tiene nada de determinismo
+
+
+471
+01:01:45.352 --> 01:01:50.421
+Matias Z: si estamos en nos entregamos de lleno a las decisiones que toma el N con respecto a
+
+
+472
+01:01:50.802 --> 01:01:51.721
+Matias Z: a la orquestación
+
+
+473
+01:01:53.142 --> 01:01:59.971
+Matias Z: y cuándo podemos elegir cuando no? Bueno, cuando no tenemos ninguna clase de certidumbre con respecto a cuáles son podrían ser los pasos
+
+
+474
+01:02:00.802 --> 01:02:06.802
+Matias Z: de nuestro flujo de ejecución. Claramente, Riad es una forma súper flexible de descubriendo eso.
+
+
+475
+01:02:07.752 --> 01:02:10.771
+Matias Z: Pero cuando ya sabemos, ya entendemos
+
+
+476
+01:02:11.242 --> 01:02:13.861
+Matias Z: de antemano, ya podemos dibujar ese grafo.
+
+
+477
+01:02:14.802 --> 01:02:20.942
+Matias Z: No tiene absolutamente ningún sentido dejar que la orquestación esté a cargo de un Lm: Sí,
+
+
+478
+01:02:21.142 --> 01:02:29.222
+Matias Z: ese grafo directamente se manifiesta con A. Dk: Dos, igual que con Lan Grafo o con Frameworks, que prefieren utilizar.
+
+
+479
+01:02:31.502 --> 01:02:40.151
+Matias Z: Acá. Les dejo un ejemplo para pasar al próximo arquetipo que es Planet Institute.
+
+
+480
+01:02:44.662 --> 01:02:53.172
+Matias Z: Una vez más, les recuerdo, vamos a encontrar cierta como similitudes entre estos arquetipos, pero hay matices.
+
+
+481
+01:02:53.602 --> 01:03:00.262
+Matias Z: Hay sutilezas. Que está bueno tener en cuenta por algo.
+
+
+482
+01:03:01.202 --> 01:03:08.021
+Matias Z: Existen y se plantean de esta manera en la literatura y de hecho, en
+
+
+483
+01:03:09.602 --> 01:03:12.721
+Matias Z: podemos encontrarlo muchas veces implementados, también en los Frameworks.
+
+
+484
+01:03:14.622 --> 01:03:18.422
+Matias Z: En el caso del plan extitutor, la tarea
+
+
+485
+01:03:18.662 --> 01:03:21.892
+Matias Z: se separa, como en 2 fases con roles distintos, no
+
+
+486
+01:03:24.002 --> 01:03:28.641
+Matias Z: el Planner, que es el la única caja naranja que vemos En este caso. De De nuevo.
+
+
+487
+01:03:28.882 --> 01:03:31.331
+Matias Z: esto es una variante súper simplificada.
+
+
+488
+01:03:31.962 --> 01:03:37.652
+Matias Z: Recuerden que hay papers que que de esto ramifican un montón de de al de alternativas.
+
+
+489
+01:03:38.071 --> 01:03:48.282
+Matias Z: Entonces el Planner, que en nuestro diagrama básico es el el único componente no determinista es el que crea un
+
+
+490
+01:03:48.441 --> 01:03:50.171
+Matias Z: una suerte de lista.
+
+
+491
+01:03:50.762 --> 01:04:03.202
+Matias Z: Lo vemos en el contexto como un artefacto con pasos y dependencias, puede o no haber una instancia de revisión que puede ser un validador. Esta podría ser una caja naranja. También
+
+
+492
+01:04:03.361 --> 01:04:06.611
+Matias Z: puede ser un validador humano o un validador. El leve.
+
+
+493
+01:04:06.722 --> 01:04:09.101
+Matias Z: Una vez que esté aprobado.
+
+
+494
+01:04:09.372 --> 01:04:27.022
+Matias Z: hay un componente que secutor, que es el que se encarga de ejecutar los diferentes pasos que se corresponden con el plan, que fue definido por, digamos, por anticipado por parte de L. L. En general. Esto no funciona así Normalmente, cuando hay algún error en alguno de los pasos
+
+
+495
+01:04:27.652 --> 01:04:30.451
+Matias Z: se suele llamar al Planner para que corrija el plan.
+
+
+496
+01:04:30.762 --> 01:04:33.792
+Matias Z: Pero, como digamos.
+
+
+497
+01:04:34.682 --> 01:04:49.012
+Matias Z: como gráfico o como descripción canónica de este arquetipo, hay 2 instancias: una instancia de planificación hecha por modelo y después, a instancias de ejecución realizada por un componente determinista.
+
+
+498
+01:04:50.752 --> 01:04:54.671
+Matias Z: puede o no haber una revisión de ese de ese plan
+
+
+499
+01:04:57.862 --> 01:04:58.772
+Matias Z: en
+
+
+500
+01:05:01.772 --> 01:05:10.051
+Matias Z: sobre qué se ejecuta después, con qué contexto y cuando se detiene bien las 3 decisiones de orquestación de la que estábamos hablando.
+
+
+501
+01:05:10.652 --> 01:05:17.661
+Matias Z: que se ejecuta después la decisión se toma alguna vez y por adelantado, o sea, el control
+
+
+502
+01:05:17.962 --> 01:05:26.661
+Matias Z: de flujo, migró del modelo hacia el artefacto. El artefacto es ese pedazo de contexto naranja que este amarillo que estamos compartiendo
+
+
+503
+01:05:29.022 --> 01:05:47.582
+Matias Z: como el mismo plan, declara la dependencia entre cada 1 de los pasos a ejecutarse. De ahí derivamos si existe la posibilidad de ejecución paralela o no entre los diferentes pasos, entonces el exequito va a poder o no hacer un funk out de esas etapas. Ya vamos a ver para los que no vean, no sepan lo que es un fan out que significa.
+
+
+504
+01:05:48.462 --> 01:05:55.241
+Matias Z: en con respecto al contexto que se comparte. Esto es importante.
+
+
+505
+01:05:56.002 --> 01:06:03.921
+Matias Z: Es, en principio, según la literatura básica es el arquetipo, donde el contexto está mejor administrado.
+
+
+506
+01:06:04.252 --> 01:06:10.672
+Matias Z: Porque, por un lado, tenemos el planner que ve el objetivo central y las herramientas disponibles.
+
+
+507
+01:06:13.292 --> 01:06:19.981
+Matias Z: Cada paso del instituto va a ver solamente su propia instrucción y el pedazo de
+
+
+508
+01:06:20.452 --> 01:06:23.951
+Matias Z: de contexto que les resulte relevante
+
+
+509
+01:06:25.342 --> 01:06:28.412
+Matias Z: y normalmente. Al final, lo que hay es una suerte de
+
+
+510
+01:06:29.842 --> 01:06:40.212
+Matias Z: que acá no aparece. Pero suele haber algún tipo como de de de, digamos.
+
+
+511
+01:06:40.752 --> 01:06:44.361
+Matias Z: un integrador. Vamos a ponerle ese nombre, un integrador de
+
+
+512
+01:06:44.652 --> 01:06:50.972
+Matias Z: de todo lo que fuimos aprendiendo para construir el resultado final.
+
+
+513
+01:06:51.602 --> 01:06:55.381
+Matias Z: De cualquier manera, lo que va a haber cualquier paso
+
+
+514
+01:06:56.282 --> 01:07:09.852
+Matias Z: posterior al paso 1 vamos a tener, vamos a el paso 2, solamente. El paso 2 va a observar la salida del paso 1, con lo cual el integrador va a obtener solamente la salida del paso Tres: lo va a ser el encargado de construir la respuesta final.
+
+
+515
+01:07:12.572 --> 01:07:28.532
+Matias Z: La contracara de esto es que el sistema no aprende a mitad de camino en su versión más básica. Si tenemos un error grave, no hay una como reorquestación o una reconstrucción de este flujo de trabajo.
+
+
+516
+01:07:29.722 --> 01:07:34.711
+Matias Z: que es un poco en lo que dicen las las slides.
+
+
+517
+01:07:37.152 --> 01:07:49.051
+Matias Z: Bien, un ejemplo de recorrido lo vamos a ver en el demo que tenemos preparado en breve. Así que
+
+
+518
+01:07:49.192 --> 01:07:51.462
+Matias Z: se los dejo para que lo miren. Un ratito.
+
+
+519
+01:07:51.622 --> 01:07:52.922
+Matias Z: Aquareli de composition.
+
+
+520
+01:07:53.232 --> 01:08:00.051
+Matias Z: Le meto, le meto patas si podemos llegar a ver todos los los arquetipos, los primeros 6 arquetipos que vamos a ver, por lo menos
+
+
+521
+01:08:00.172 --> 01:08:05.761
+Matias Z: y después nociones básicas de cómo como componer estos arquetipos
+
+
+522
+01:08:09.492 --> 01:08:11.682
+Matias Z: hasta que haga una pregunta
+
+
+523
+01:08:18.232 --> 01:08:21.352
+Matias Z: bien buenísimo.
+
+
+524
+01:08:24.182 --> 01:08:29.612
+Matias Z: Entonces cuerda de composición tiene.
+
+
+525
+01:08:30.112 --> 01:08:34.981
+Matias Z: Yo les diría que tiene una aplicación directa, que es cuando
+
+
+526
+01:08:35.362 --> 01:08:41.591
+Matias Z: tenemos prompts compuestos, tenemos consignas que incluyen muchas su preguntas, ¿no?
+
+
+527
+01:08:42.142 --> 01:08:54.301
+Matias Z: Mhm o incluso perdón. Estoy haciendo chat, pero me avisan cualquier cosa, o incluso cuando necesitamos de manera
+
+
+528
+01:08:55.562 --> 01:08:59.002
+Matias Z: dinámica e ir descubriendo nuevas su preguntas.
+
+
+529
+01:08:59.112 --> 01:09:11.141
+Matias Z: Esto también lo vamos a ver. Hay una versión de cuerda de composición que lo que hace es Ok, Con lo que tengo no me alcanza, necesito hacer más su preguntas, escuela y composición. Básicamente tomas la decisión, como ven en esta segunda variante secuencial
+
+
+530
+01:09:11.532 --> 01:09:17.401
+Matias Z: que en a partir de una pregunta compleja.
+
+
+531
+01:09:17.802 --> 01:09:26.552
+Matias Z: se hace una búsqueda Con respecto a su pregunta. Uno: tenemos una respuesta que alimenta una su pregunta, 2: Este este bucle puede parecerse un poquito más arriaca
+
+
+532
+01:09:26.792 --> 01:09:28.362
+Matias Z: si si lo
+
+
+533
+01:09:29.082 --> 01:09:36.692
+Matias Z: se interpretan como como una forma de tomar decisiones con respecto a hasta cuando sigo haciendo sus preguntas en
+
+
+534
+01:09:43.852 --> 01:09:44.882
+Matias Z: bien.
+
+
+535
+01:09:46.502 --> 01:09:58.021
+Matias Z: Fue básicamente el resultado de una observación empírica en en a principios del 2 000,
+
+
+536
+01:09:58.942 --> 01:10:02.812
+Matias Z: Quince. Si no recuerdo mal, 2 020
+
+
+537
+01:10:03.192 --> 01:10:15.341
+Matias Z: que se llamó la brecha de la composicionalidad, que es que básicamente los modelos solían responder bien a preguntas. Tengan en cuenta que estábamos trabajando con modelos como mucho menos sofisticados que los de ahora, no.
+
+
+538
+01:10:15.882 --> 01:10:20.502
+Matias Z: Ahora, los modelos incluyen este tipo de comportamiento de manera nativa.
+
+
+539
+01:10:21.352 --> 01:10:30.642
+Matias Z: Mhm: en los modelos, respondían bien a preguntas sencillas, pero fallaban al componer
+
+
+540
+01:10:33.012 --> 01:10:37.331
+Matias Z: respuestas para preguntas que eran compuestas que tenían muchas sus preguntas.
+
+
+541
+01:10:39.492 --> 01:10:47.411
+Matias Z: Entonces tenemos las 2 formas del flujo. Una de las maneras, este que vemos la variante paralela que vemos arriba.
+
+
+542
+01:10:48.792 --> 01:10:54.922
+Matias Z: El modelo descompone la pregunta en sus preguntas independientes
+
+
+543
+01:10:55.122 --> 01:10:57.352
+Matias Z: y cada hora se resuelve por su cuenta.
+
+
+544
+01:10:58.012 --> 01:11:07.702
+Matias Z: Imagínense las implicancias que esto tiene para la separación de contextos la posibilidad de paralelizar
+
+
+545
+01:11:08.002 --> 01:11:11.051
+Matias Z: el el procesamiento de huellas complejas.
+
+
+546
+01:11:11.512 --> 01:11:12.602
+Matias Z: Mhm.
+
+
+547
+01:11:15.942 --> 01:11:20.571
+Matias Z: Y el paso final, La sintetiza casi se ve claramente que es un
+
+
+548
+01:11:20.722 --> 01:11:27.891
+Matias Z: es un paso por un elen. El paso final es el que recibe todas las respuestas y es el que construye la respuesta final.
+
+
+549
+01:11:31.772 --> 01:11:38.532
+Matias Z: Y después tenemos una variante secuencial, que es conocida como Self Ask, donde el modelo
+
+
+550
+01:11:38.852 --> 01:11:45.652
+Matias Z: formula y responde, responde preguntas y sus preguntas intermedias. Antes de contestar la respuesta
+
+
+551
+01:11:46.912 --> 01:11:50.832
+Matias Z: principal, digamos, de construir la respuesta principal.
+
+
+552
+01:11:51.592 --> 01:11:56.491
+Matias Z: Son 2 maneras distintas de pensarlo. Pero básicamente, la idea es justamente
+
+
+553
+01:11:58.912 --> 01:12:09.402
+Matias Z: intentar en aquel momento atacar un problema que tenían los modelos que eran la imposibilidad de descomponer prontos complejos en productos más sencillos.
+
+
+554
+01:12:09.502 --> 01:12:15.181
+Matias Z: Y esto, efectivamente, en aquel momento rompió todos los benchmars, con lo cual fue adoptado
+
+
+555
+01:12:16.922 --> 01:12:23.942
+Matias Z: como 1 de los patrones. Uno de los arquetipos más conocidos todavía se sigue utilizando todavía sigue siendo relevante.
+
+
+556
+01:12:26.082 --> 01:12:29.241
+Matias Z: así que lo enseñamos como 1 de los 6 arquetipos importantes.
+
+
+557
+01:12:29.512 --> 01:12:31.542
+Matias Z: El
+
+
+558
+01:12:34.582 --> 01:12:42.192
+Matias Z: qué de nuevo se solapan. Se suponen? Hay una intersección entre Reflection react
+
+
+559
+01:12:42.482 --> 01:12:57.192
+Matias Z: de composition lo noto, lo sé. Lo saben. Lo vamos a ver. Vamos a discutirlo a veces, vamos a ver qué ponemos acá código de composition real. O bueno, justamente es: son las discusiones de arquitectura que me parece que tienen.
+
+
+560
+01:12:57.322 --> 01:13:00.882
+Matias Z: Mhm sentido que empecemos a convertir.
+
+
+561
+01:13:04.102 --> 01:13:09.441
+Matias Z: Con respecto a las 3 preguntas un poco, es lo que estuvimos hablando.
+
+
+562
+01:13:10.822 --> 01:13:21.721
+Matias Z: particularmente si las subpreguntas, si utilizamos la variante secuencial. Si las sub preguntas son independientes. Ahí tenemos, como cierto nivel de autonomía Con respecto a la orquestación.
+
+
+563
+01:13:22.372 --> 01:13:25.672
+Matias Z: Si se puede resolver De manera paralela, podemos aprovechar un poco
+
+
+564
+01:13:25.792 --> 01:13:30.652
+Matias Z: la independencia de esas su preguntas en
+
+
+565
+01:13:31.832 --> 01:13:40.992
+Matias Z: y sobre el contexto acá. La característica principal es como el aislamiento? No, cada su pregunta se resuelve con su propia consulta.
+
+
+566
+01:13:41.472 --> 01:13:44.211
+Matias Z: Es un poco una forma también de crear
+
+
+567
+01:13:44.352 --> 01:13:50.851
+Matias Z: una estrategia de hin offs un poquito más sofisticada que enviarle todo el contexto a cada suba gente no
+
+
+568
+01:13:52.512 --> 01:14:01.431
+Matias Z: de acá su pregunta. Tiene la consulta, la evidencia que recuperó y las otras no lo ven un poco de nuevo, atacando el problema del sesgo que suelen tener los elementos.
+
+
+569
+01:14:02.522 --> 01:14:10.682
+Matias Z: y responde esa respuesta corta con la fuente necesaria para que el paso final, que era un el
+
+
+570
+01:14:10.842 --> 01:14:13.971
+Matias Z: sea quien construya la respuesta definitiva.
+
+
+571
+01:14:16.882 --> 01:14:22.232
+Matias Z: Bien, 19 Quince. No hay caso. Gustavo, No llego con el tiempo.
+
+
+572
+01:14:22.442 --> 01:14:31.452
+Matias Z: Mira que lo intento, lo intento, pero no hay casos alguna pregunta.
+
+
+573
+01:14:35.742 --> 01:14:36.642
+Agustin Aimale: No por ahora.
+
+
+574
+01:14:37.452 --> 01:14:38.542
+Matias Z: Bien, bien.
+
+
+575
+01:14:39.712 --> 01:14:40.242
+Gustavo Narcisi: Claro, sí.
+
+
+576
+01:14:40.842 --> 01:14:43.041
+Matias Z: Me me alegro. Me alegro.
+
+
+577
+01:14:46.762 --> 01:14:52.742
+Matias Z: Bien. Reflection, probablemente probablemente
+
+
+578
+01:14:55.892 --> 01:15:01.482
+Matias Z: el arquetipo más interesante, el arquetipo más más flexible, el más poderoso.
+
+
+579
+01:15:01.812 --> 01:15:08.092
+Matias Z: En Déjenme que a todos
+
+
+580
+01:15:14.752 --> 01:15:21.442
+Matias Z: a ver se los puedo contar rápidamente. Acá Y
+
+
+581
+01:15:25.122 --> 01:15:32.152
+Matias Z: les hago les hago una pregunta muy muy rápido. Si alguno utilizó algún tipo de topología similar.
+
+
+582
+01:15:32.582 --> 01:15:36.461
+Matias Z: Me podría levantar la mano y contarme rápidamente.
+
+
+583
+01:15:36.742 --> 01:15:40.582
+Matias Z: porque me interesaría saber si alguien utilizó esto en producción.
+
+
+584
+01:15:44.332 --> 01:15:49.552
+Valentina Da Silva: Yo lo estuve usando para un desarrollo que hice para un sistema de
+
+
+585
+01:15:49.922 --> 01:15:54.762
+Valentina Da Silva: como que hice una un rap que buscaba información en una base de historias clínicas
+
+
+586
+01:15:55.202 --> 01:15:59.572
+Valentina Da Silva: y después validaba que que esa información es estuviera de acuerdo a la
+
+
+587
+01:15:59.952 --> 01:16:03.572
+Valentina Da Silva: a la pregunta que hizo el usuario. Entonces tenía como un un loop ahí.
+
+
+588
+01:16:03.642 --> 01:16:20.001
+Valentina Da Silva: Si no, no, no respondía la pregunta del usuario, entonces que fuera la base. Y o sea, tantas veces se lo daba tipo no se pone que fuera 3 veces. Y si y si no, si en las 3 veces no mejoraba ahí. Le le respondía al usuario que no no había podido encontrar información.
+
+
+589
+01:16:21.992 --> 01:16:28.342
+Alejandro Declerk: Sí. Yo hice 1. Así parecido que era para una empresa que se dedicaba a hacer macheos de pacientes con cáncer con tratamientos experimentales
+
+
+590
+01:16:28.692 --> 01:16:45.791
+Alejandro Declerk: y hacía algo muy parecido a lo tuyo. Este tipo historia clínica y ver si marchaban los cánceres era un lío no andaban mucho. Y después hizo 1 también que tampoco de B Boys of de de Company Viste para marketing cuando querés hacer tweets que tengan como la onda de la empresa. Bueno.
+
+
+591
+01:16:46.182 --> 01:16:52.621
+Alejandro Declerk: que hacía ciertas validaciones ahí, pero termin pero a lo mejor era en ese caso, hacer un human delux porque no era muy buena tampoco. La
+
+
+592
+01:16:52.992 --> 01:16:54.322
+Alejandro Declerk: La parte crítica.
+
+
+593
+01:16:56.792 --> 01:17:04.142
+Gustavo Narcisi: En mi caso, lo que hicimos fue un para complementar un poquito como chat bot de comida para
+
+
+594
+01:17:04.312 --> 01:17:13.762
+Gustavo Narcisi: brindar información a participantes de un evento, por ejemplo, un congreso médico, y tener unas herramientas para buscar actividades, buscar, disertar antes sponsor.
+
+
+595
+01:17:13.882 --> 01:17:16.532
+Gustavo Narcisi: Pero era más bien como un loop en el que
+
+
+596
+01:17:16.692 --> 01:17:22.272
+Gustavo Narcisi: en el que trataba de usar las herramientas hasta encontrar la respuesta y un tope de 6 llamadas. Por ejemplo.
+
+
+597
+01:17:22.972 --> 01:17:27.792
+Gustavo Narcisi: entonces estaba tratando de ver cuál era el que el que estaría más congruente con esto no.
+
+
+598
+01:17:28.112 --> 01:17:30.221
+Matias Z: Bien bien tiene pinta de Riat.
+
+
+599
+01:17:30.402 --> 01:17:43.831
+Matias Z: Pero bien, bien, todas las respuestas son interesantes: la de valentina. Creo que se acerca mucho porque Reflection suele ser 1 de los arquetipos más utilizados en los rarsénticos. Lo vamos a ver en el mundo que viene
+
+
+600
+01:17:45.092 --> 01:17:48.322
+Matias Z: en un Mhm.
+
+
+601
+01:17:49.462 --> 01:18:09.721
+Matias Z: básicamente tenemos 2 componentes. L Ms: Uno genera 1 genera el el el el retrial, básicamente cuando trae la información y hay un evaluador que lo que hace es es corear si si la información que se trae para enriquecer el contexto para la llamada final cumple con ciertos requisitos o no.
+
+
+602
+01:18:09.862 --> 01:18:18.022
+Matias Z: y es reflection el arquetipo que más se utiliza para la implementación, justamente de 2 o 3 de las
+
+
+603
+01:18:19.122 --> 01:18:25.122
+Matias Z: arquitecturas que vamos a ver para rap se utilizan. Se implementan con reflection en
+
+
+604
+01:18:26.492 --> 01:18:30.861
+Matias Z: así que es. Es 1 de los de los arquetipos más utilizados
+
+
+605
+01:18:31.562 --> 01:18:37.301
+Matias Z: es bastante intuitivo, creo yo. Hay un módulo generador y hay un módulo crítico.
+
+
+606
+01:18:39.572 --> 01:18:47.222
+Matias Z: y el arquetipo lo que hace es agregar a cualquier generación un lazo de verificación.
+
+
+607
+01:18:47.852 --> 01:18:54.272
+Matias Z: Fíjense que lo que se comparte es un borrador como contexto compartido.
+
+
+608
+01:18:56.232 --> 01:19:04.612
+Matias Z: Si no pasa, la se envía la crítica y el motivo y el generador lo vuelve a construir.
+
+
+609
+01:19:04.862 --> 01:19:19.891
+Matias Z: En el caso de Rugb. Se pueden imaginar que Esto tiene que ver con si alcanza o no alcanza, Por ejemplo, ¿qué es eso Los Chanks que recuperamos de nuestra base vectorial para una respuesta correcta, perdón para la generación de un producto correcto. Para
+
+
+610
+01:19:20.702 --> 01:19:24.851
+Matias Z: hay 3 detalles en el diagrama.
+
+
+611
+01:19:27.012 --> 01:19:28.192
+Matias Z: En
+
+
+612
+01:19:29.272 --> 01:19:46.911
+Matias Z: primero, las señales externas son importantes normalmente a ver el crítico. Normalmente es un N que suele tener un ti, algún tipo de rúbrica. Sí, información adicional con criterio para tomar esa decisión. No se le suele permitir el M cualquier tipo de de decisión, porque si no, los generadores.
+
+
+613
+01:19:47.362 --> 01:19:51.131
+Matias Z: perdón, los críticos pueden tener
+
+
+614
+01:19:52.122 --> 01:19:59.971
+Matias Z: comportamientos, por ejemplo, o o de o de psicofasis, y de dejar pasar cualquier cosa o de ser extremadamente estrictos.
+
+
+615
+01:20:00.182 --> 01:20:12.102
+Matias Z: entonces solemos utilizar un tipo de rúbrica o hacemos fin tuning para tener un crítico adaptado a nuestras necesidades, pero también se suelen utilizar señales externas que que son feministas.
+
+
+616
+01:20:13.302 --> 01:20:14.302
+Matias Z: El.
+
+
+617
+01:20:20.492 --> 01:20:26.212
+Matias Z: Y con respecto a sí, demos, este es el detalle que más me interesa en este momento.
+
+
+618
+01:20:27.192 --> 01:20:30.712
+Matias Z: Así vamos a avanzar, entonces
+
+
+619
+01:20:33.722 --> 01:20:42.512
+Matias Z: que se ejecuta paso a paso? Bueno, el arquetipo tiene un esquel como una suerte de esqueleto. O mhm
+
+
+620
+01:20:42.722 --> 01:20:47.471
+Matias Z: esqueleto es una palabra que no me interesa demasiado: una estructura fija.
+
+
+621
+01:20:47.602 --> 01:20:48.342
+Nahuel Civico: En el.
+
+
+622
+01:20:49.592 --> 01:20:50.642
+Matias Z: Sí
+
+
+623
+01:20:55.262 --> 01:20:58.412
+Matias Z: o si Nahuel.
+
+
+624
+01:20:58.792 --> 01:21:03.252
+Nahuel Civico: Sí, sí, no solamente puede ser con un template lo que aporta.
+
+
+625
+01:21:03.792 --> 01:21:10.302
+Matias Z: Bueno puede ser. Puede ser Sí, Sí, Definitivamente, de hecho, son todos templates los que estamos viendo
+
+
+626
+01:21:11.202 --> 01:21:16.651
+Matias Z: lo que vamos a ver cuando implementemos es que todos van a ser variantes.
+
+
+627
+01:21:16.752 --> 01:21:22.572
+Matias Z: que aproximan algún tipo de arquetipo, pero que definitivamente no implementan
+
+
+628
+01:21:22.682 --> 01:21:25.941
+Matias Z: exactamente lo que estamos comentando en este momento. ¿no?
+
+
+629
+01:21:26.302 --> 01:21:35.202
+Matias Z: Mhm en ahí va. Entonces.
+
+
+630
+01:21:37.042 --> 01:21:43.801
+Matias Z: tiene tiene esta forma fija de generar, evaluar, corregir, lo cual un poco está fijado como una suerte de
+
+
+631
+01:21:44.322 --> 01:21:48.052
+Matias Z: de work flow, Sí, en.
+
+
+632
+01:21:48.362 --> 01:21:50.331
+Matias Z: Y lo que decide el modelo es
+
+
+633
+01:21:51.232 --> 01:22:02.851
+Matias Z: cómo se juzga cómo se evalúa lo que genera el el el generador justamente, y cómo se corrige en función de las de los motivos por los cuales el borrador era incorrecto.
+
+
+634
+01:22:03.782 --> 01:22:10.721
+Matias Z: Y después, en el código, lo que hacemos normalmente es poner como umbrales límites, no
+
+
+635
+01:22:11.622 --> 01:22:20.741
+Matias Z: cuántas cuántas rondas cuántos bucles cuántas vueltas. Le permitimos a este arquetipo de arco que definitivamente
+
+
+636
+01:22:20.842 --> 01:22:27.932
+Matias Z: puede existir el el el error de o perdón. El peligro de que esto se vuelva un infinito, definitivamente puede existir
+
+
+637
+01:22:28.712 --> 01:22:35.332
+Matias Z: ese híbrido más claro de todos los arquetipos que tuvimos viendo tiene un poquito de todo.
+
+
+638
+01:22:35.612 --> 01:22:43.622
+Matias Z: y Es por eso también, tal vez 1 de los más utilizados en diferentes escenarios.
+
+
+639
+01:22:44.212 --> 01:22:52.252
+Matias Z: Sobre el contexto que se comparte. Hay una decisión de diseño bastante importante. El generador, por supuesto, genera
+
+
+640
+01:22:52.542 --> 01:22:57.702
+Matias Z: ve la tarea que se le envía crea el borrador
+
+
+641
+01:22:59.402 --> 01:23:10.291
+Matias Z: y va a haber la crítica que le envía el evaluador. Si el crítico ve la tarea y el borrador, y además tiene un acceso a la rúbrica y a esas señales que habíamos mencionado previamente
+
+
+642
+01:23:10.432 --> 01:23:12.012
+Matias Z: señales externos.
+
+
+643
+01:23:13.362 --> 01:23:21.402
+Matias Z: Esas señales externas, por cierto, pueden ser construidas de manera dinámica en función de pasadas. Anteriores. Lo vamos a ver en el modelo el módulo de aprendizaje.
+
+
+644
+01:23:21.622 --> 01:23:27.531
+Matias Z: Cuando veamos aprendizaje, Vamos a ver que estos arquetipos no son necesariamente estáticos
+
+
+645
+01:23:27.722 --> 01:23:29.762
+Matias Z: en cuanto a los datos que consume.
+
+
+646
+01:23:29.892 --> 01:23:34.372
+Matias Z: Mhm mhm en
+
+
+647
+01:23:38.172 --> 01:23:45.962
+Matias Z: bueno y lo que se conserva entre las rondas va a ser la crítica.
+
+
+648
+01:23:46.092 --> 01:23:50.742
+Matias Z: Si esta crítica se va guardando entre Rombos reflection Fundamentalmente.
+
+
+649
+01:23:52.052 --> 01:23:59.581
+Matias Z: estas reflexiones se guardan entre rondas y son importantes porque son un input muy interesante para para aprender
+
+
+650
+01:24:00.112 --> 01:24:02.611
+Matias Z: es básicamente el
+
+
+651
+01:24:05.112 --> 01:24:09.832
+Matias Z: el insumo que va a utilizar una de las técnicas que vamos a aprender en el módulo que viene
+
+
+652
+01:24:10.062 --> 01:24:16.131
+Matias Z: sobre aprendizaje, que es cuando el generador se equivoca y el crítico encuentra un error.
+
+
+653
+01:24:16.282 --> 01:24:20.851
+Matias Z: ya sea estructural, ya sea de contexto.
+
+
+654
+01:24:21.972 --> 01:24:30.022
+Matias Z: sea por lo que sea, estas críticas se van a guardar. ¿para qué? Para que el generador la persona tenga la oportunidad incluso de no generar el mismo error.
+
+
+655
+01:24:30.342 --> 01:24:35.272
+Matias Z: Lo vamos a estudiar en detalle cuando estudiemos aprendizaje en sistemas agentes.
+
+
+656
+01:24:37.872 --> 01:24:42.711
+Matias Z: Vamos a decir research si no hay preguntas a
+
+
+657
+01:24:44.182 --> 01:24:54.701
+Matias Z: bien Deep Research es definitivamente el arquetipo más ambicioso, no que y probablemente el más costoso
+
+
+658
+01:24:58.652 --> 01:25:04.292
+Matias Z: alguno, utilizó así como rápidamente alguno utilizó Deep Research. Me imagino que sí.
+
+
+659
+01:25:06.612 --> 01:25:09.681
+Alejandro Declerk: Está con una opción, no en Chatg. P, T, No sé si sigue
+
+
+660
+01:25:10.352 --> 01:25:12.532
+Alejandro Declerk: hace de o hace como un año o más.
+
+
+661
+01:25:14.602 --> 01:25:21.911
+Matias Z: Las tronchas? Sí, Sí, sí, se le quiero contar rápido.
+
+
+662
+01:25:23.902 --> 01:25:25.942
+Valentina Da Silva: En sáminas. Ahí está todavía.
+
+
+663
+01:25:25.942 --> 01:25:26.472
+Alejandro Declerk: Ah, Ah.
+
+
+664
+01:25:26.472 --> 01:25:32.881
+Matias Z: Sólido, absolutamente absolutamente en semina. Ahí está bueno, bien.
+
+
+665
+01:25:32.882 --> 01:25:35.842
+Nahuel Civico: Figura como razonamiento e extendido. Ahí.
+
+
+666
+01:25:36.972 --> 01:25:39.551
+Matias Z: Ojo que no es exactamente lo mismo.
+
+
+667
+01:25:40.342 --> 01:25:43.362
+Nahuel Civico: O no lo tiene más.
+
+
+668
+01:25:44.902 --> 01:25:46.592
+Matias Z: Son cosas distintas.
+
+
+669
+01:25:47.082 --> 01:25:53.972
+Matias Z: digamos, en general, cuando hablamos de razonamiento extendido, estás hablando de la profundidad de del gen off Flock, de la cadena de razonamiento.
+
+
+670
+01:25:56.292 --> 01:26:04.891
+Matias Z: Research Deep Research, en realidad aparece suele aparecer como Deep Research, donde lo encontrarás fácilmente en las notebooks de
+
+
+671
+01:26:06.142 --> 01:26:07.402
+Matias Z: de Google, Viste.
+
+
+672
+01:26:07.862 --> 01:26:09.661
+Nahuel Civico: Sí, ya lo encontré.
+
+
+673
+01:26:10.052 --> 01:26:13.992
+Diego Mihanovich: Más de la bien. Sí, Sí.
+
+
+674
+01:26:14.532 --> 01:26:18.782
+Matias Z: Y en genial aparece como Deep Research, normalmente.
+
+
+675
+01:26:18.962 --> 01:26:19.772
+Matias Z: ¿en
+
+
+676
+01:26:19.882 --> 01:26:26.732
+Matias Z: por qué digo que es el más ambicioso y probablemente el más costoso. Bueno, porque la idea, como ven en el diagrama es
+
+
+677
+01:26:27.452 --> 01:26:29.271
+Matias Z: a partir de una pregunta abierta.
+
+
+678
+01:26:32.002 --> 01:26:39.371
+Matias Z: El objetivo es producir un informe exhaustivo sobre esta pregunta abierta investigando en rondas.
+
+
+679
+01:26:39.972 --> 01:26:43.391
+Matias Z: pero no conocemos cuántas rondas vamos a correr de antemano.
+
+
+680
+01:26:49.022 --> 01:26:52.082
+Matias Z: Vemos el ciclo del diagrama, un plan de investigación.
+
+
+681
+01:26:52.582 --> 01:26:55.272
+Matias Z: Le voy a ir marcando 1 a 1,
+
+
+682
+01:26:57.232 --> 01:27:02.022
+Matias Z: un plan de investigación elaborado por por modelo. Por supuesto
+
+
+683
+01:27:02.132 --> 01:27:07.292
+Matias Z: que define temas y preguntas. Un conjunto de investigadores que van a correr en paralelo
+
+
+684
+01:27:09.372 --> 01:27:26.372
+Matias Z: cada 1 con su propio contexto fundamental. No solamente estamos paralelizando la resolución del problema, sino que, además estamos bifurcando o segmentando ese contexto inicial que si no sería enorme, explotaría cada ronda.
+
+
+685
+01:27:26.502 --> 01:27:31.142
+Matias Z: su siguiente traería, digo una cantidad
+
+
+686
+01:27:31.522 --> 01:27:35.092
+Matias Z: enorme de contexto. Ya te dejo, se van
+
+
+687
+01:27:36.102 --> 01:27:46.251
+Matias Z: y los hallazgos de estos investigadores en paralelo se van acumulando en lo que podríamos llamar un bloc de notas, si me permiten, en la nomenclatura.
+
+
+688
+01:27:47.822 --> 01:27:58.272
+Matias Z: A partir de ahí, de nuevo son definiciones super canónicas y básicas. Esto es simplemente una simplificación. A partir de ahí se evalúan si existen brechas en esta investigación.
+
+
+689
+01:27:59.712 --> 01:28:09.171
+Matias Z: revisa las notas que se acumula en este bloc de notas y decide si falta cobertura.
+
+
+690
+01:28:10.912 --> 01:28:18.541
+Matias Z: La flecha punteada es claramente el camino a que hay brechas. Vamos de nuevo con una nueva ronda.
+
+
+691
+01:28:20.272 --> 01:28:26.071
+Matias Z: Por supuesto, tenemos algunas restricciones que podemos ponerles como cantidad de rondas o nuestro presupuesto de Tokens.
+
+
+692
+01:28:26.382 --> 01:28:31.512
+Matias Z: que normalmente es el que el que yo, por lo menos, utilizo presupuestos tokens o cantidad de tiempo que tenemos
+
+
+693
+01:28:32.072 --> 01:28:33.781
+Matias Z: para destinarla a esto.
+
+
+694
+01:28:33.922 --> 01:28:38.871
+Matias Z: Y finalmente, cuando terminamos con estas rondas que, ya les digo, pueden ser
+
+
+695
+01:28:39.092 --> 01:28:52.891
+Matias Z: primero n rondas ejecutándose de manera paralela. Pero aparte, se multiplica por la cantidad o por la profundidad que esas rondas pueden tener, que es la profundidad, la cantidad de invocaciones recursivas hacia su agenda.
+
+
+696
+01:28:53.942 --> 01:29:06.101
+Matias Z: Eso lo decide todo el modelo. Acá No tenemos ninguna clase de control sobre cómo se va a desarrollar ese esa estructura jerárquica de sus agentes que investigan cada 1 de los subtemas.
+
+
+697
+01:29:09.012 --> 01:29:10.041
+Matias Z: Dale Sigo.
+
+
+698
+01:29:11.002 --> 01:29:17.621
+Sebastian Langer: No que por ahí está faltando el human in de lupa ahí, no sobre todo después del plan de investigación, a ver si está haciendo para el lado correcto.
+
+
+699
+01:29:22.392 --> 01:29:23.262
+Sebastian Langer: Bien, no.
+
+
+700
+01:29:23.682 --> 01:29:26.572
+Matias Z: Sí, sí. En todos los que fui mencionando.
+
+
+701
+01:29:26.572 --> 01:29:35.651
+Sebastian Langer: Pero no sé si se gráfica. No sé si lo no sé si este es el caso de más de 1 de estos patrones si no está graficado, pero entiendo que se tiene como es tan costoso.
+
+
+702
+01:29:35.752 --> 01:29:41.041
+Sebastian Langer: Está. Bueno, te pregunte. De De hecho, las distintas herramientas, por ejemplo.
+
+
+703
+01:29:41.252 --> 01:30:00.652
+Sebastian Langer: Cada tanto te van cambiando el la la experiencia de usuario, y en algunos casos, te hacen un resumen o te van diciendo cómo lo van a disparar Jemini por ahí. En una época, te hacía todo un resumen de todo lo que yo pensaba hacer. Y por ahí, cuando estás te está haciendo el resumen decís, no, o se lo dije mal.
+
+
+704
+01:30:00.712 --> 01:30:05.842
+Sebastian Langer: o estás está a punto de hacer cualquier cosa, nada que ver lo que yo quería y será modificar.
+
+
+705
+01:30:07.562 --> 01:30:16.741
+Sebastian Langer: sobre todo si le pedís un resortch con audio y estuviste 2 h diciéndole boludeces. La mareaste puede pasar. No.
+
+
+706
+01:30:17.702 --> 01:30:18.732
+Matias Z: Absolutamente.
+
+
+707
+01:30:21.692 --> 01:30:31.442
+Sebastian Langer: A mí lo que me resulta, digo, más allá de lo que serían las las el el trabajo programático, generalmente
+
+
+708
+01:30:31.532 --> 01:30:48.551
+Sebastian Langer: el el pie, un prom de de research en una guía y lo ejecuto en otro. Y y y y para mí, incluso te diría que el que mejor prompts de deep research te redacta es es chatg P, T, con con cualquiera de sus modelos, pero
+
+
+709
+01:30:48.792 --> 01:30:57.592
+Sebastian Langer: pero el este suele tener proms larguísimos, recontra bien redactados que que son muy útiles.
+
+
+710
+01:30:58.852 --> 01:30:59.882
+Matias Z: Perfecto.
+
+
+711
+01:31:00.242 --> 01:31:09.712
+Matias Z: Bueno, bien, tomen nota de de la opinión del compañero acá un poco. La idea es
+
+
+712
+01:31:09.772 --> 01:31:28.131
+Matias Z: sí verlos en su forma más más pura. Efectivamente, son son patrones de diseño que están súper simplificados. Como bien decis, Está faltando. Están faltando en todos los adjetivos que vivimos, una flechita hacia human in the look, porque hoy la pusimos, porque esos pertenece a otro módulo.
+
+
+713
+01:31:28.592 --> 01:31:38.361
+Matias Z: Pero tenés un módulo donde vamos a ver que no es trivial. ¿cómo? Cuándo, dónde, por qué y a quién disparar el trigger del régimen de luz.
+
+
+714
+01:31:39.132 --> 01:31:41.682
+Matias Z: pero no te preocupes que lo vamos a ver.
+
+
+715
+01:31:42.592 --> 01:31:50.462
+Matias Z: Por ahora. Esto Ima imaginario, como ya te digo como formas, ideales, como patrones teóricos.
+
+
+716
+01:31:51.022 --> 01:31:53.791
+Matias Z: de cómo puedes aproximar una solución
+
+
+717
+01:31:54.302 --> 01:31:56.771
+Matias Z: en función de cuál es tu problema
+
+
+718
+01:31:57.682 --> 01:32:03.991
+Matias Z: y cómo podés comunicarte con gente en tu equipo? Básicamente, no se parece más A esto se parece más a aquello
+
+
+719
+01:32:04.212 --> 01:32:08.832
+Matias Z: después. En el medio vamos a ver que todo se empieza como a
+
+
+720
+01:32:09.642 --> 01:32:14.942
+Matias Z: adaptar a a a tomar la forma propia que requiere la solución
+
+
+721
+01:32:15.082 --> 01:32:21.561
+Matias Z: y a componer Fundamentalmente, no los vamos a ver en de manera aislada. En general, no aparecen de manera aislada.
+
+
+722
+01:32:22.102 --> 01:32:23.082
+Matias Z: Y
+
+
+723
+01:32:27.352 --> 01:32:37.121
+Matias Z: bien, entonces acá. Sí es importante. Por ahí entender las decisiones de orquestación.
+
+
+724
+01:32:37.282 --> 01:32:46.061
+Matias Z: Creo que ya las mencionamos varias veces, pero cada ronda lanza sus consultas en paralelo, y cada una de ellas puede a su vez.
+
+
+725
+01:32:47.312 --> 01:32:51.322
+Matias Z: y ahora sí empecemos a pensar en componer
+
+
+726
+01:32:51.352 --> 01:33:04.561
+Matias Z: arquetipos. Cada ronda puede lanzar sus consultas en paralelo, y cada 1 de esos agentes puede ser un agente Riact, lo cual implica que básicamente le estamos dando control total
+
+
+727
+01:33:04.562 --> 01:33:11.811
+Matias Z: a la autonomía de un L L m para orquestar y hacer lo que quiera con nuestro tokens con con nuestro presupuesto de tokens
+
+
+728
+01:33:12.152 --> 01:33:26.881
+Matias Z: súper súper poderoso y a la vez. Bueno, si esto está en producción, hay que tener un montón de de cuidado con sutilezas matices, restricciones constraint. No sabemos cuando termina
+
+
+729
+01:33:27.462 --> 01:33:36.492
+Matias Z: y sobre el contexto, me parece que Este es el arquetipo más importante para entender que implica la gestión de contexto. Cuando estudiamos arquetipos.
+
+
+730
+01:33:37.472 --> 01:33:45.061
+Matias Z: si se acumulara todo en una sola conversación, el contexto se volvería inmanejable en pocas rondas.
+
+
+731
+01:33:45.172 --> 01:34:02.822
+Matias Z: manejar en términos de nuevo, por más de que las los modelos de quinta generación tengan un 1 000 000 de Tokens, 2 000 000 de tokens en sus ventanas de contexto, recuerden que a medida que se incrementa el contenido de la ventana de contexto se reduce, se degrada la precisión. La forma en la que los transformers procesan
+
+
+732
+01:34:02.852 --> 01:34:08.392
+Matias Z: esos toques. Entonces, en general, queremos tener la la ventaja en contexto
+
+
+733
+01:34:08.812 --> 01:34:11.371
+Matias Z: como con la menor cantidad de información posible.
+
+
+734
+01:34:12.832 --> 01:34:23.342
+Matias Z: Por eso los investigadores que dispara deep twiserts trabajan de manera aislada y devuelven sus hallazgos condensados.
+
+
+735
+01:34:23.752 --> 01:34:25.742
+Matias Z: O sea, no es que
+
+
+736
+01:34:30.362 --> 01:34:40.462
+Matias Z: no es que volemos con todas, lo digamos literalmente, con todos los hallazgos con línea por línea por cada su agente, porque eso sería.
+
+
+737
+01:34:40.852 --> 01:34:41.962
+Matias Z: primero.
+
+
+738
+01:34:42.492 --> 01:34:51.562
+Matias Z: muy mal, una ma muy mala gestión del contexto, y, segundo, una forma muy tonta de gestionar el contexto. Si tenemos agentes inteligentes, lo ideal sería extraer hechos.
+
+
+739
+01:34:51.672 --> 01:34:59.512
+Matias Z: evidencias, sí, resúmenes, extraer lo que sea relevante para la consulta.
+
+
+740
+01:34:59.822 --> 01:35:08.392
+Matias Z: Entonces, en términos de gestión del contexto, me parece que tipo Research es 1 de los arquetipos más interesantes para estudiar
+
+
+741
+01:35:09.552 --> 01:35:10.622
+Matias Z: que
+
+
+742
+01:35:14.592 --> 01:35:15.882
+Matias Z: yo creo que es.
+
+
+743
+01:35:15.882 --> 01:35:20.062
+Agustin Aimale: Costos en tema de costos o consumo. ¿cómo queda.
+
+
+744
+01:35:22.452 --> 01:35:26.622
+Matias Z: Es. Es una excelente pregunta. Yo creo que depende de de como lo implementemos.
+
+
+745
+01:35:27.962 --> 01:35:38.172
+Matias Z: Mhm, por ejemplo, lo que vamos a ver ahora es, digamos, le vamos a dar simplemente una
+
+
+746
+01:35:38.952 --> 01:35:50.501
+Matias Z: un único constraint que es, ¿cuál es la profundidad. Ahora, cuando veamos los demos, cuál es la profundidad de recursión que podemos darle a los a los agentes que podemos disparar.
+
+
+747
+01:35:51.502 --> 01:35:58.652
+Matias Z: pero podríamos darle mucho más este limitaciones en términos de costos, probablemente pueda ser 1 de los más costosos.
+
+
+748
+01:36:01.702 --> 01:36:02.422
+Matias Z: Sí.
+
+
+749
+01:36:02.682 --> 01:36:06.462
+Matias Z: Mhm, De hecho.
+
+
+750
+01:36:14.272 --> 01:36:27.082
+Matias Z: Mhm en Hacemos Deep research cuando estamos intentando explorar un espacio de soluciones que, en general no conocemos. Sí,
+
+
+751
+01:36:27.592 --> 01:36:32.202
+Matias Z: si no, no tendría absolutamente ningún sentido disparar semejante cantidad de sus agentes.
+
+
+752
+01:36:32.372 --> 01:36:39.521
+Matias Z: porque, efectivamente, hay Pa: Además, esos agentes podrían ser sus agentes Riact, con lo cual
+
+
+753
+01:36:39.682 --> 01:36:44.492
+Matias Z: la pregunta con respecto a los costos, te la debo depende de cómo lo implementemos.
+
+
+754
+01:36:48.182 --> 01:36:53.541
+Agustin Aimale: De algún modelo mal implementado con también con menos procesamiento, puede generar mucho coste.
+
+
+755
+01:36:54.642 --> 01:36:55.962
+Matias Z: Definitivamente
+
+
+756
+01:37:01.702 --> 01:37:03.822
+Matias Z: estoy intentando buscar.
+
+
+757
+01:37:07.732 --> 01:37:14.882
+Matias Z: Bueno, ya ya lo vamos a ver. Es igual. No te preocupes que tenemos. Estoy convenciendo ahí a a mi colega para para que nos dé una clase de finops
+
+
+758
+01:37:15.172 --> 01:37:20.332
+Matias Z: En bien, lo importante acá es
+
+
+759
+01:37:22.282 --> 01:37:36.952
+Matias Z: la gran frase que me parece que quiero que me gustaría que se lleven de todas estas conversaciones, que los arquetipos que estamos estudiando rara vez aparecen aislados solos rara vez no aparecen compuestos de alguna manera.
+
+
+760
+01:37:37.522 --> 01:37:43.472
+Matias Z: Normalmente podemos pensarlo como como subcomponiente dentro de una arquitectura mayor. Así
+
+
+761
+01:37:45.492 --> 01:37:48.531
+Matias Z: se componen. Hay 2 formas de hacerlo.
+
+
+762
+01:37:50.282 --> 01:38:02.901
+Matias Z: y conviene reconocer estas 2 formas, 2 formas más básicas, después. Por supuesto, hay 1 000 maneras 1 000 variantes para hacer esto. Pero básicamente, la la primer forma de componerlos es el escalamiento.
+
+
+763
+01:38:04.212 --> 01:38:07.232
+Matias Z: Es la opción de arriba.
+
+
+764
+01:38:07.392 --> 01:38:12.332
+Matias Z: Veamos un reflex. Funciona como un router de primer nivel. Acá
+
+
+765
+01:38:14.912 --> 01:38:19.321
+Matias Z: Los casos conocidos se resuelven directamente a bajo costo.
+
+
+766
+01:38:22.602 --> 01:38:28.282
+Matias Z: lo ambiguo o lo nuevo, se envía a un nuevo
+
+
+767
+01:38:28.532 --> 01:38:34.762
+Matias Z: arquetipo conocido como Riad. Lo acabamos de estudiar, que investiga y resuelve.
+
+
+768
+01:38:35.622 --> 01:38:40.972
+Matias Z: Y si la acción resultante tiene riesgo alto, incluso
+
+
+769
+01:38:42.112 --> 01:38:46.762
+Matias Z: se puede pasar por un lazo de reflexión antes de
+
+
+770
+01:38:46.982 --> 01:38:49.741
+Matias Z: terminar con la acción verificada o no.
+
+
+771
+01:38:50.722 --> 01:38:55.832
+Matias Z: Entonces, ahora lo que estamos viendo son estos arquetipos dentro de estas cajitas se entiende.
+
+
+772
+01:38:56.862 --> 01:39:03.851
+Matias Z: Cada una de estas cajitas es 1 de esos arquetipos. Estamos viendo cómo se escala, cómo se complementa
+
+
+773
+01:39:04.932 --> 01:39:22.111
+Matias Z: un reflex que toma la decisión de ruteo con un Riad que investigue, resuelve con reflection que se puede ejecutar condicionalmente dependiendo de si la resolución de riesgo cumplió o no cumplió con el objetivo.
+
+
+774
+01:39:22.422 --> 01:39:34.031
+Matias Z: La segunda forma de componer arquetipos. De nuevo, acá tenemos arquetipos como cajitas, es el anidamiento
+
+
+775
+01:39:38.212 --> 01:39:39.841
+Matias Z: en este ejemplo.
+
+
+776
+01:39:43.642 --> 01:39:46.522
+Matias Z: Lo que tenemos es una pregunta abierta.
+
+
+777
+01:39:46.832 --> 01:40:04.151
+Matias Z: y lo que vamos a hacer es implementar un deep research, pero en vez de dejar que algún asistente implemente tipo rezar como quiera, lo vamos a implementar nosotros, porque porque nos da justamente la capacidad de controlar esos pequeños matices de tunear esas pequeñas variables
+
+
+778
+01:40:04.152 --> 01:40:09.921
+Matias Z: que nos interesan a nosotros en función de cuánto control querramos tener sobre cómo funciona, dep research
+
+
+779
+01:40:09.972 --> 01:40:11.982
+Matias Z: en en producción.
+
+
+780
+01:40:12.652 --> 01:40:17.721
+Matias Z: El El flujo de navajo es un deep resert implementado por nosotros.
+
+
+781
+01:40:20.032 --> 01:40:24.831
+Matias Z: Entonces Deep Resach se puede leer como una composición claramente
+
+
+782
+01:40:25.142 --> 01:40:27.681
+Matias Z: un plan al estilo Planner executor
+
+
+783
+01:40:31.132 --> 01:40:45.832
+Matias Z: sus preguntas en paralelo trabajadas Al estilo Criary de composition investigadores que buscan ajustan utilizando tal vez un Riad
+
+
+784
+01:40:46.312 --> 01:40:49.462
+Matias Z: sí reflection como evaluador.
+
+
+785
+01:40:50.102 --> 01:40:55.082
+Matias Z: Y si reflexiona no encuentra brechas, se vuelve a el Twitter de composition
+
+
+786
+01:40:55.672 --> 01:40:58.932
+Matias Z: esto evidentemente es muy parecido a Deep Research.
+
+
+787
+01:40:59.262 --> 01:41:02.522
+Matias Z: Entonces ahí es donde me parece que queda súper claro que
+
+
+788
+01:41:04.062 --> 01:41:11.342
+Matias Z: lo que estamos viendo son templates. Estamos viendo formas de pensar, de razonar sí, cómo mapear
+
+
+789
+01:41:11.892 --> 01:41:29.092
+Matias Z: una arquitectura géntica a un problema que tengamos de negocio o un caso de uso, como combinarlos como complementarlos, cómo implementarlos, incluso aunque estén planteados ya con una solución completa en el caso de abajo. Por ejemplo, vemos como implementamos Deep research nosotros mismos
+
+
+790
+01:41:31.192 --> 01:41:35.652
+Matias Z: con mayor control, con mayor granularidad en las variables que podemos controlar.
+
+
+791
+01:41:37.532 --> 01:41:46.232
+Matias Z: Se entiende, Bueno, 5 preguntas para elegir entre 1 y otro sí
+
+
+792
+01:41:47.682 --> 01:41:55.571
+Matias Z: son básicas, son intuitivas, pero vale la pena recordarlas, alcanza con una sola pasada. Estamos ruteando. Estamos
+
+
+793
+01:41:55.982 --> 01:42:07.651
+Matias Z: validando la salida de un atúl, Estamos verificando que la llamada a una tul sea segura. Estamos verificando que los parámetros que usamos para una llamada segura. Ok
+
+
+794
+01:42:07.782 --> 01:42:11.672
+Matias Z: Reflex, eso suena a Riflex. Es una única llamada.
+
+
+795
+01:42:13.412 --> 01:42:23.961
+Matias Z: Recuerden que hoy Riflex se implementa de manera mucho más efectiva, eficiente y de mucho más bajo costo utilizando modelos, sistemas.
+
+
+796
+01:42:24.252 --> 01:42:27.412
+Matias Z: como ser o sus variantes opensource. Sí,
+
+
+797
+01:42:27.982 --> 01:42:35.131
+Matias Z: bien. La segunda pregunta, si no alcanza esto, es un problema de información que se parte en sus preguntas conocibles. Bueno.
+
+
+798
+01:42:35.702 --> 01:42:44.672
+Matias Z: evidentemente suena a cuerda de composición cuando no tenemos la información completa y creemos que necesitamos iterar sobre el pront.
+
+
+799
+01:42:45.942 --> 01:42:53.101
+Matias Z: Probablemente tengamos que que acercarnos hacia una solución parecida a acuerea y composición.
+
+
+800
+01:42:57.142 --> 01:43:13.672
+Matias Z: Tercera pregunta: si conoces los pasos de antemano, conviene probarlos antes. ¿qué tiene de interesante cuerda de composición? Uno podría pensarlo. Bueno, es un poquito más estricto, más rígido, menos flexible. No, no tiene la capacidad de reestructurarse en función del feedback ok. Pero, por otro lado, me da un plan que yo puedo dar
+
+
+801
+01:43:14.182 --> 01:43:15.632
+Matias Z: aprobar previamente.
+
+
+802
+01:43:15.752 --> 01:43:17.541
+Matias Z: Y eso se usa. Y un montón
+
+
+803
+01:43:17.812 --> 01:43:30.812
+Matias Z: Sí, Lo que usan es que en clave como, por ejemplo, para para desarrollo de software un poquito más sofisticado. Normalmente, el el la fase de planificación es fundamental y le damos un Ok, a eso.
+
+
+804
+01:43:31.242 --> 01:43:42.041
+Matias Z: Entonces lo que me da Planet excure es la posibilidad de darle el Ok a la lista de ejecuciones que va a realizar el flujo
+
+
+805
+01:43:42.952 --> 01:43:46.611
+Matias Z: finalmente sin ninguna de las anteriores. Aplica.
+
+
+806
+01:43:46.832 --> 01:43:50.881
+Matias Z: y es una pregunta abierta que justifica un costo grande
+
+
+807
+01:43:51.082 --> 01:43:53.812
+Matias Z: y una latencia que no podemos predecir.
+
+
+808
+01:43:54.322 --> 01:44:05.462
+Matias Z: Entonces, tal vez Deep Research o Riad pueden ser la solución, Sí, en
+
+
+809
+01:44:05.792 --> 01:44:12.822
+Matias Z: Reflection acuérdense. Puede ser parte de deep research De hecho, podemos implementar deep recers con Riac y Reflection.
+
+
+810
+01:44:13.902 --> 01:44:18.552
+Matias Z: No quiero confundirlos con con la cantidad de de nombres, pero son 6
+
+
+811
+01:44:18.852 --> 01:44:21.191
+Matias Z: que vamos a tener que recordar sí,
+
+
+812
+01:44:21.502 --> 01:44:25.371
+Matias Z: ni más ni menos 6 para empezar.
+
+
+813
+01:44:28.072 --> 01:44:34.862
+Matias Z: Okay, Preguntas rápidas. Mientras cambio, a a modo demo.
+
+
+814
+01:44:51.922 --> 01:44:57.942
+Gustavo Narcisi: Yo tengo una Matis. Esto imagino que es como se desarrolla en el código fuente. No es como que
+
+
+815
+01:44:58.182 --> 01:45:02.191
+Gustavo Narcisi: y desarrollar. Desarrollamos los agentes.
+
+
+816
+01:45:02.462 --> 01:45:03.922
+Gustavo Narcisi: Esto es como que ya está,
+
+
+817
+01:45:04.802 --> 01:45:10.302
+Gustavo Narcisi: digamos, ayuda de la de cada, digamos, el framework o cada 1 lo tiene que desarrollar.
+
+
+818
+01:45:11.012 --> 01:45:19.432
+Gustavo Narcisi: Digamos, me imagino que, obviamente, en Gita hay como proyectos que lo implementan ya, pero digo en la de K que parte nos ayuda en esto y qué parte.
+
+
+819
+01:45:19.722 --> 01:45:21.492
+Gustavo Narcisi: como implementación nuestra.
+
+
+820
+01:45:25.542 --> 01:45:30.101
+Matias Z: Genial. Me das un pie alucinante para contarte algo distinto a lo que iba a contar.
+
+
+821
+01:45:30.332 --> 01:45:33.251
+Matias Z: pero que también es igual de importante.
+
+
+822
+01:45:36.832 --> 01:45:38.332
+Matias Z: Por acá. Lo tenemos.
+
+
+823
+01:45:41.922 --> 01:45:46.852
+Matias Z: Mira, efectivamente. A Dk: Nos ayuda.
+
+
+824
+01:45:53.922 --> 01:45:55.192
+Matias Z: Lo perdí. Gracias.
+
+
+825
+01:45:55.832 --> 01:45:57.561
+Matias Z: Ahí que nos ayudamos
+
+
+826
+01:45:59.832 --> 01:46:09.901
+Matias Z: no solamente nos ayuda, sino que es. Te diría clave que aprendamos las primitivas nuevas de Adk. Dos de las últimas versiones de Adk. Dos
+
+
+827
+01:46:11.382 --> 01:46:13.942
+Matias Z: de final ver si puedo.
+
+
+828
+01:46:14.832 --> 01:46:21.242
+Matias Z: Hay que haber 2 grafos.
+
+
+829
+01:46:27.432 --> 01:46:28.572
+Matias Z: sí, pero no
+
+
+830
+01:46:35.572 --> 01:46:39.222
+Matias Z: en work flows
+
+
+831
+01:46:47.472 --> 01:46:57.832
+Matias Z: o qué sí, pero tampoco dejame que dame un ratito, porque vale la pena la década de los.
+
+
+832
+01:46:57.832 --> 01:47:03.541
+Gustavo Narcisi: No igual como para darme una idea de entender si que tanto tendríamos como codificar nosotros o basarnos.
+
+
+833
+01:47:03.542 --> 01:47:04.132
+Matias Z: En la.
+
+
+834
+01:47:04.132 --> 01:47:05.802
+Gustavo Narcisi: En el.
+
+
+835
+01:47:05.842 --> 01:47:11.382
+Matias Z: La pregunta está bien. De hecho, te tenía como
+
+
+836
+01:47:12.292 --> 01:47:16.422
+Matias Z: planificaba empezar al revés. Primero empezaba con la implementación en a D. K, Dos
+
+
+837
+01:47:16.542 --> 01:47:19.971
+Matias Z: de cuáles son las primitivas de las últimas versiones de la de K. Dos.
+
+
+838
+01:47:21.062 --> 01:47:29.441
+Matias Z: Eso es importante porque cambió, bastante, o sea, el cambio no es marginal de cada 1 de cada 2. Con respecto al uso de de de los Workplus.
+
+
+839
+01:47:29.922 --> 01:47:34.822
+Matias Z: las primitivas para implementar este tipo de arquetipos en A de cada 2. Son estas
+
+
+840
+01:47:37.372 --> 01:47:42.361
+Matias Z: en a Dk, 1 utilizábamos unos templetes más parecidos a lance
+
+
+841
+01:47:44.222 --> 01:47:54.322
+Matias Z: sequence paralel y louphations. Y ahora utilizamos 3 tipos de worcross entre comillas el el grafo que sería worklow propiamente dicho
+
+
+842
+01:47:54.362 --> 01:48:04.731
+Matias Z: el Dynamy work flow que tiene más que ver como con la idea de de usuario que crece horizontalmente en función de la consulta de entrada, más parecido a un Deep Research.
+
+
+843
+01:48:04.922 --> 01:48:14.402
+Matias Z: y el y el colaborativo World Flow, que tiene que ver con la idea de sus agentes especializados especialistas
+
+
+844
+01:48:14.982 --> 01:48:21.532
+Matias Z: especialistas en en determinados temas que van a ser elegidos, o sea, del conjunto
+
+
+845
+01:48:21.642 --> 01:48:28.801
+Matias Z: de especialistas. Vamos a elegir un subconjunto en función de la Quary, que le mandemos al coordinator.
+
+
+846
+01:48:29.582 --> 01:48:39.162
+Matias Z: Estos los que están debajo de flexing work float, son los que utilizan ahora todavía funcionan estos template World Floast de A. Dk: Dos, pero
+
+
+847
+01:48:39.792 --> 01:48:43.782
+Matias Z: están marcados como deprecados. Como deplicating.
+
+
+848
+01:48:44.102 --> 01:48:49.612
+Matias Z: normalmente tendemos a implementar las soluciones con este tipo de primitivas.
+
+
+849
+01:48:49.972 --> 01:48:58.082
+Matias Z: Estas primitivas ya les digo, son más similares. El link es este para los que
+
+
+850
+01:49:00.412 --> 01:49:05.272
+Matias Z: de cualquier manera tengo el el reporte y tenemos la clase completa por si quisiéramos revisarla.
+
+
+851
+01:49:06.172 --> 01:49:10.242
+Matias Z: No quería entrar en detalles de implementación, pero
+
+
+852
+01:49:10.712 --> 01:49:16.001
+Matias Z: la idea es: esos arquetipos se implementan con estas primitivas de las décadas.
+
+
+853
+01:49:19.182 --> 01:49:20.712
+Matias Z: ¿cómo se implementan?
+
+
+854
+01:49:21.642 --> 01:49:23.911
+Matias Z: Lo vamos a ver un poquito. Ahora decimos
+
+
+855
+01:49:24.782 --> 01:49:36.711
+Matias Z: en los 10 min que nos quedan. Los voy a subir al repo. Pero además encontré que no había un skill para Cloud code que a partir, por ejemplo, de la descripción
+
+
+856
+01:49:37.722 --> 01:49:41.811
+Matias Z: o del diagrama o de una serie de preguntas que le haces. El usuario
+
+
+857
+01:49:42.292 --> 01:49:51.722
+Matias Z: hubiera un Skill que te construyera un arquetipo con las primitivas de A de K. Dos: en este caso, el psicóloga de K. Dos.
+
+
+858
+01:49:52.052 --> 01:49:53.532
+Matias Z: 2, 9, 1, Acatar.
+
+
+859
+01:49:55.652 --> 01:50:01.521
+Matias Z: Esto ya no existía. Lo que te quiero decir es ahora lo voy a actualizar 2 días. Y lo que te permite
+
+
+860
+01:50:01.652 --> 01:50:07.622
+Matias Z: está aquí, básicamente es a partir de un arquetipo que quiera construir con una de cada 2 días
+
+
+861
+01:50:07.792 --> 01:50:10.612
+Matias Z: es simplemente responder un montón de preguntas
+
+
+862
+01:50:10.822 --> 01:50:13.972
+Matias Z: y que te dé el código fuente para para implementarlo.
+
+
+863
+01:50:14.232 --> 01:50:16.792
+Matias Z: Definitivamente no tenés que ir una línea de código.
+
+
+864
+01:50:17.682 --> 01:50:23.121
+Matias Z: Ahí lo veo levantar los dientes. Sí, Sí, no, no escriban, no escriban más código que dicen que es irresponsable escribir código
+
+
+865
+01:50:26.192 --> 01:50:28.542
+Matias Z: bien y en
+
+
+866
+01:50:29.222 --> 01:50:36.732
+Matias Z: eso está en construcción, así que todavía no, pero se aceptan todas las contribuciones que puedan enviar.
+
+
+867
+01:50:37.422 --> 01:50:43.491
+Matias Z: Lo otro que quería comentarles rápidamente es que Sher se va a de una manera
+
+
+868
+01:50:43.812 --> 01:50:51.742
+Matias Z: colar en cada 1 de los de los arquetipos que estuvimos viendo, como algunos de los pasos de ese workflow que estuvimos estudiando
+
+
+869
+01:50:52.172 --> 01:50:58.771
+Matias Z: una vez más warframe entre comillas. Porque cuando es dinámico, no le tratemos de no llamarle Worklore para que se confunda.
+
+
+870
+01:50:59.812 --> 01:51:03.021
+Matias Z: Llamémoslo World, cuando hay un grafo que podemos escribir previamente
+
+
+871
+01:51:03.662 --> 01:51:10.051
+Matias Z: y va a empezar a aparecer en cada una de estas instancias que están viendo en este caso
+
+
+872
+01:51:10.392 --> 01:51:13.771
+Matias Z: este material, no lo vamos a ver hoy
+
+
+873
+01:51:14.992 --> 01:51:29.231
+Matias Z: por razones obvias. Pero tengamos en cuenta que a lo largo del curso, si tienen interés y se van dando cuenta que ser es muy importante, está disponible y podemos hacer una clase completa sobre cómo ser viene a cambiar
+
+
+874
+01:51:29.352 --> 01:51:31.522
+Matias Z: la construcción de estas tipologías.
+
+
+875
+01:51:32.572 --> 01:51:33.412
+Matias Z: Mhm.
+
+
+876
+01:51:39.382 --> 01:51:43.532
+Matias Z: No, no guardamos nada bien.
+
+
+877
+01:51:52.322 --> 01:51:53.461
+Matias Z: Ya estamos
+
+
+878
+01:51:59.532 --> 01:52:02.141
+Matias Z: a ver si les puedo mostrar en un ratito
+
+
+879
+01:52:07.252 --> 01:52:08.232
+Matias Z: que me
+
+
+880
+01:52:12.572 --> 01:52:18.701
+Matias Z: tenía unos slides para esto que la voy a subir.
+
+
+881
+01:52:21.952 --> 01:52:28.062
+Matias Z: Tenemos 3 casos donde a ver un poquito es forcé en
+
+
+882
+01:52:29.982 --> 01:52:35.952
+Matias Z: la composición de diferentes arquetipos para resolver problemas de negocio más o menos familiares.
+
+
+883
+01:52:36.272 --> 01:52:42.082
+Matias Z: En no, no vamos de ninguna manera.
+
+
+884
+01:52:42.622 --> 01:52:44.621
+Matias Z: Afirmo que son las soluciones
+
+
+885
+01:52:44.792 --> 01:52:51.612
+Matias Z: correctas y las más eficientes, pero de alguna forma, lo que intentaba era mostrarles cómo se podían componer este tipo de arquetipos
+
+
+886
+01:52:54.682 --> 01:53:00.731
+Matias Z: para resolver problemas concretos en función de los constraint o de los requerimientos que pueden llegar a tener los problemas de negocio.
+
+
+887
+01:53:01.002 --> 01:53:06.892
+Matias Z: Sí, entonces tenemos las slides con 3 casos de negocios concretos.
+
+
+888
+01:53:08.782 --> 01:53:09.782
+Matias Z: Tenemos.
+
+
+889
+01:53:10.782 --> 01:53:23.191
+Matias Z: por otro lado, el código fuente. Les volvemos tanto rápido porque veo que el tiempo va va a escasear. Tenemos el código fuente con como se implementan para esto. Deberíamos ver un poquito de de primitivas de K 2
+
+
+890
+01:53:23.312 --> 01:53:29.752
+Matias Z: en pero no es lo que más me interesa en este momento. Lo que me interesa es lo siguiente.
+
+
+891
+01:53:30.332 --> 01:53:37.912
+Matias Z: Por ejemplo, para 3 problemas vamos a ver 3 arquitecturas. El primer problema es un problema relacionado con
+
+
+892
+01:53:38.102 --> 01:53:43.012
+Matias Z: un banco que recibe solicitudes de crédito y necesita responder rápido.
+
+
+893
+01:53:43.382 --> 01:53:46.861
+Matias Z: Fíjense en las palabras clave. Dice responder rápido.
+
+
+894
+01:53:49.102 --> 01:53:52.261
+Matias Z: Mhm: Aprobar, pedir más garantías o rechazarlas.
+
+
+895
+01:53:54.182 --> 01:53:56.991
+Matias Z: ¿qué necesitamos chequear antecedentes?
+
+
+896
+01:53:59.032 --> 01:54:07.462
+Matias Z: Las reglas de rechazo siempre tienen que aplicarse de manera igual esto es súper común, políticas que sean aplicadas de manera uniforme para todos los clientes.
+
+
+897
+01:54:08.292 --> 01:54:12.152
+Matias Z: Y para los perfiles de uso necesitamos poder explicar, necesitamos explicabilidad.
+
+
+898
+01:54:15.022 --> 01:54:23.082
+Matias Z: Bien, Entonces, Ok, esto no se ve ni a palos a ver si puedo abrir el diagrama en
+
+
+899
+01:54:29.152 --> 01:54:32.422
+Matias Z: mhm diagramas, préstamos.
+
+
+900
+01:54:37.042 --> 01:54:39.061
+Matias Z: Creo que le vamos a hacer un poquito encima.
+
+
+901
+01:54:39.062 --> 01:54:47.561
+Sebastian Langer: Estas soluciones son extrapoladas de de algún trabajo consultivo. Están creadas ad hoc para el curso.
+
+
+902
+01:54:47.882 --> 01:54:48.532
+Sebastian Langer: Te pregunto.
+
+
+903
+01:54:48.532 --> 01:54:49.032
+Matias Z: No vale.
+
+
+904
+01:54:49.032 --> 01:54:50.832
+Sebastian Langer: Y.
+
+
+905
+01:54:51.162 --> 01:54:54.861
+Matias Z: Le metí un poco de creatividad. Se la verdad? No.
+
+
+906
+01:54:54.972 --> 01:54:56.442
+Matias Z: Mhm.
+
+
+907
+01:54:56.442 --> 01:54:56.812
+Sebastian Langer: Que es.
+
+
+908
+01:54:56.812 --> 01:54:57.462
+Matias Z: Un poco.
+
+
+909
+01:54:57.932 --> 01:55:04.882
+Matias Z: intenté que sean lo más sencillas, lo más pedagógicas posible, pero que me dieran la oportunidad de mostrar cómo se podían componer.
+
+
+910
+01:55:05.442 --> 01:55:06.252
+Sebastian Langer: Okay Okay.
+
+
+911
+01:55:06.472 --> 01:55:07.592
+Sebastian Langer: Gracias.
+
+
+912
+01:55:07.592 --> 01:55:08.492
+Matias Z: No, por favor.
+
+
+913
+01:55:09.392 --> 01:55:12.642
+Sebastian Langer: Me sirve todos los ejemplos del banco, Vos los Odias. Pero.
+
+
+914
+01:55:12.642 --> 01:55:15.242
+Matias Z: Nooo, no lo son a mí.
+
+
+915
+01:55:15.242 --> 01:55:15.832
+Sebastian Langer: Ya.
+
+
+916
+01:55:16.402 --> 01:55:21.992
+Matias Z: Son mis clientes principales. No, por favor, no digas eso y
+
+
+917
+01:55:23.412 --> 01:55:27.581
+Matias Z: a ver este claro vos trabajas en en.
+
+
+918
+01:55:27.582 --> 01:55:34.322
+Sebastian Langer: Sí, pero igual E. I Igual, digo, está bien. Los ejemplos en el sentido que son bien restrictivos.
+
+
+919
+01:55:34.452 --> 01:55:39.172
+Sebastian Langer: súper cuadrado, todo tenés que tener un montón de cosas en cuenta.
+
+
+920
+01:55:39.392 --> 01:55:40.072
+Matias Z: Sí, Sí.
+
+
+921
+01:55:40.072 --> 01:55:45.112
+Sebastian Langer: El gráfico no te entraría ni en toda la pared de tu casa, pero sí.
+
+
+922
+01:55:45.112 --> 01:55:45.532
+Matias Z: De es.
+
+
+923
+01:55:45.532 --> 01:55:46.442
+Sebastian Langer: Extracción.
+
+
+924
+01:55:46.772 --> 01:55:51.381
+Matias Z: Sí, Sí, tal cual Sí, buenísimo no es. Está bien.
+
+
+925
+01:55:53.072 --> 01:55:59.151
+Matias Z: Está bien el aporte de una persona que labura en en la en la industria.
+
+
+926
+01:56:01.092 --> 01:56:07.921
+Matias Z: Yo estoy aprendiendo ahora poquito la terminología bancaria, y ahora estoy trabajando con clases de documentales. Es es es todo un tema.
+
+
+927
+01:56:08.172 --> 01:56:08.872
+Matias Z: No es de.
+
+
+928
+01:56:08.872 --> 01:56:19.481
+Sebastian Langer: No, no. Lo único que te digo es que cuando vos te referís al tema de de aprobar el crédito, pagar, dar, otorgar el No, No, Eso no.
+
+
+929
+01:56:19.482 --> 01:56:19.952
+Matias Z: No, no.
+
+
+930
+01:56:19.952 --> 01:56:32.602
+Sebastian Langer: O sea, a ver a menos que sea una fin tech. Las vi fintech tienen muchísima más libertad. Y yo creo que además es un terreno. Digo, ahí sí que hay y hay agentes, y no sé si hay hasta agentes autónomos que hacen cosas.
+
+
+931
+01:56:33.172 --> 01:56:34.102
+Sebastian Langer: Qué Bueno.
+
+
+932
+01:56:34.102 --> 01:56:35.791
+Matias Z: Sí, sí los hay, pero.
+
+
+933
+01:56:35.792 --> 01:56:37.452
+Sebastian Langer: Ganarán más de lo que pierde.
+
+
+934
+01:56:37.972 --> 01:56:46.881
+Matias Z: De cualquier manera. De los 3 ejemplos son: El primero tiene que ver con créditos y acá un poco. La idea era contarles o mostrarles
+
+
+935
+01:56:47.192 --> 01:56:52.042
+Matias Z: cómo podíamos componer, por ejemplo, en este caso, en este primer caso.
+
+
+936
+01:56:52.182 --> 01:56:56.152
+Matias Z: arquetipos tipo réflex, con un plan en secreto.
+
+
+937
+01:56:56.482 --> 01:56:57.372
+Matias Z: Entonces.
+
+
+938
+01:57:01.352 --> 01:57:06.471
+Matias Z: ¿por qué decidíamos utilizar esta arquitectura? ¿por qué decidimos utilizar esta arquitectura?
+
+
+939
+01:57:07.122 --> 01:57:08.152
+Matias Z: Tenemos
+
+
+940
+01:57:08.252 --> 01:57:14.342
+Matias Z: las slides, tenemos los diagramas y tengo el código fuente para mostrarles. No voy a llegar a hacerlo hoy.
+
+
+941
+01:57:14.562 --> 01:57:20.411
+Matias Z: Entonces lo que quiero mostrarles es un primer ejemplo para que puedan explorarlo
+
+
+942
+01:57:20.572 --> 01:57:30.132
+Matias Z: ustedes antes del próximo encuentro y, en todo caso, lo validamos el próximo encuentro o hacen consultas previamente si fuera necesario.
+
+
+943
+01:57:30.272 --> 01:57:33.461
+Matias Z: Pero por favor, no dejen de mirarlo, porque básicamente es un poco
+
+
+944
+01:57:34.232 --> 01:57:37.741
+Matias Z: la aplicación de todo lo que estuvimos charlando a casos.
+
+
+945
+01:57:37.742 --> 01:57:43.952
+Sebastian Langer: No, Eso te va a pedir más difícil si para el finde o para antes del finde, lo puedes subir Así lo vemos.
+
+
+946
+01:57:44.522 --> 01:57:48.432
+Matias Z: Sí, sí me pongo al día con todo el material que me falta subir mañana.
+
+
+947
+01:57:48.432 --> 01:57:54.582
+Sebastian Langer: Creo que había. Está bien. Habían un montón de cosas. Ya no sé si te fal de la clase anterior. Te falta no me acuerdo. Me parece que no.
+
+
+948
+01:57:54.582 --> 01:57:57.422
+Matias Z: Intenté subir muchas cosas hoy.
+
+
+949
+01:57:58.642 --> 01:58:01.681
+Matias Z: No sé, No sé si estos ejemplos los voy a revisar y los voy a voy.
+
+
+950
+01:58:01.682 --> 01:58:03.052
+Sebastian Langer: Bueno, bueno, dale dale.
+
+
+951
+01:58:03.052 --> 01:58:05.972
+Matias Z: En el reto. Eso sí, todo todo esto está en el remol.
+
+
+952
+01:58:07.912 --> 01:58:18.992
+Matias Z: Entonces, como como como manual de uso, podrían hacer lo siguiente: intentar ver cuál es el problema.
+
+
+953
+01:58:19.442 --> 01:58:26.851
+Matias Z: ver cuál es la solución propuesta. Y en la solución propuesta ya les digo, pueden encontrar en el mismo diagrama
+
+
+954
+01:58:26.932 --> 01:58:33.491
+Matias Z: donde se utilizaba, por ejemplo, Rflex, y no se utiliza en este caso plano executor que es cuando, por ejemplo, el reflex
+
+
+955
+01:58:33.522 --> 01:58:50.832
+Matias Z: se hace una primer consulta rápida con respecto a la validación del quid, y si no se disparan 3 herramientas en paralelo. Y acá utilizamos la noción de Router. Y este router, dependiendo de la complejidad de la búsqueda, dispara un plan en excutor Todo esto está implementado, funciona. Ahora lo podemos correr si quieren.
+
+
+956
+01:58:53.012 --> 01:58:58.102
+Matias Z: en tratar de entender por qué utilizamos esta arquitectura en este ejemplo.
+
+
+957
+01:58:58.262 --> 01:59:03.592
+Matias Z: por qué determinadas palabras claves de la consigna. Me llevan a utilizar este tipo de artículos
+
+
+958
+01:59:03.962 --> 01:59:09.071
+Matias Z: y esto aplicado a y una pregunta para pensar en sus cosas.
+
+
+959
+01:59:10.622 --> 01:59:20.762
+Matias Z: y esto aplicado en 3 casos distintos. Este no tiene nada que ver con bancos. Por suerte, con todo respeto al mundo, tiene más que ver con seguridad informática acá por ahí. Entiendo un poco más.
+
+
+960
+01:59:20.972 --> 01:59:27.042
+Matias Z: y el ejemplo acá se resuelve con algo parecido a
+
+
+961
+01:59:27.782 --> 01:59:32.562
+Matias Z: un Riad más un hubaning de loop. Acá Justamente
+
+
+962
+01:59:33.222 --> 01:59:38.992
+Matias Z: tenemos el ejemplo del hemón hidrop, a ver si puedo abrir rápidamente el el diagrama.
+
+
+963
+01:59:45.952 --> 01:59:47.542
+Matias Z: Bien.
+
+
+964
+01:59:52.872 --> 02:00:10.912
+Matias Z: acá. Tenemos el diagrama completo. Entonces acá vemos como se utiliza. Pero la parte de la parte interesante es cómo se utiliza la idea de swarm agentico, o sea, de work float colaborativo que lo van a encontrar. Si quieren. En la documentación oficial de Dcam.
+
+
+965
+02:00:11.762 --> 02:00:31.701
+Matias Z: estos especialistas no están estructurados en ningún workflow con aristas previas. Acá No existe la noción de work flow o el estilo land graf. Si estos son especialistas que se disparan, se invocan de manera dinámica en función del tipo de, por ejemplo, en este caso incidente que hayamos detectado.
+
+
+966
+02:00:32.532 --> 02:00:38.552
+Matias Z: Entonces acá aparecen 2 o 3 cosas interesantes. Primero, un sware colaborativo, un Riact y un human in theluop
+
+
+967
+02:00:38.912 --> 02:00:40.002
+Matias Z: en
+
+
+968
+02:00:44.512 --> 02:00:52.661
+Matias Z: una vez más, porque esta arquitectura, en función de las palabras claves y el caso para pensar
+
+
+969
+02:00:53.392 --> 02:00:55.762
+Matias Z: la forma de ejecutar esto.
+
+
+970
+02:00:56.592 --> 02:01:08.741
+Matias Z: Y, por ejemplo, vamos a ejecutar el ejemplo de recién el 2, el 3 auditoría, licitaciones Okay.
+
+
+971
+02:01:11.892 --> 02:01:22.881
+Matias Z: Vamos mientras tanto. Mientras esto se resuelve. Esto es un deep resal. Vamos a dejarlo corriendo porque así lo ven rápidamente. La forma de ejecutarlo es muy sencillito. Es es un script
+
+
+972
+02:01:25.552 --> 02:01:31.722
+Matias Z: con el número del ejemplo. Y lo que van a ver en la salida es como se hace el digamos.
+
+
+973
+02:01:32.402 --> 02:01:46.322
+Matias Z: el cuerry de composición. De alguna manera se disparan los investigadores de manera paralela. Y los que se los que tienen de 1 son el primer nivel de investigadores D 2 sería el segundo nivel de reclusión
+
+
+974
+02:01:46.792 --> 02:01:52.241
+Matias Z: y al final, el módulo de sintetizador que devuelve la respuesta completa.
+
+
+975
+02:01:52.882 --> 02:02:03.382
+Matias Z: Este ejemplo que acabo de correr solamente para mostrarles que están para ejecutar. Se corresponde con este tercer caso.
+
+
+976
+02:02:04.192 --> 02:02:05.791
+Matias Z: Y con esta topología.
+
+
+977
+02:02:09.132 --> 02:02:11.892
+Matias Z: bueno, gustavo lo entendés.
+
+
+978
+02:02:13.452 --> 02:02:17.022
+Sebastian Langer: Escúchame justo.
+
+
+979
+02:02:17.092 --> 02:02:17.792
+Gustavo Narcisi: Sí.
+
+
+980
+02:02:18.172 --> 02:02:27.142
+Sebastian Langer: Bibliografía de esto que haya digo a ver, sabes, es una de las partes que más me interesa porque ve que ve. Veo que tenés este
+
+
+981
+02:02:27.442 --> 02:02:36.882
+Sebastian Langer: todos estos arquetipos que están tan buenos, qué sé yo, los están están procesados. Vos Pusiste como en las referencias de la bibliografía que podemos mirar o.
+
+
+982
+02:02:38.972 --> 02:02:39.632
+Matias Z: ¿qué piensas.
+
+
+983
+02:02:39.632 --> 02:02:44.872
+Sebastian Langer: Que debe estar en transformación. No digo, tampoco no creo que haya tantos libros, pero.
+
+
+984
+02:02:44.872 --> 02:02:45.242
+Matias Z: No.
+
+
+985
+02:02:45.242 --> 02:02:47.322
+Sebastian Langer: Bueno la recomendación que tengas.
+
+
+986
+02:02:48.042 --> 02:02:55.372
+Matias Z: No muchos libros. No hay. Lo que tengo es, son todos reportes resúmenes, resúmenes de los papers en.
+
+
+987
+02:02:55.372 --> 02:02:56.882
+Sebastian Langer: Lo sacas de papers.
+
+
+988
+02:02:57.872 --> 02:03:04.482
+Matias Z: Muchos los valido con Paper, porque muchas veces los libros te tiran cualquiera en algunos libros. Aparecen algunos.
+
+
+989
+02:03:04.592 --> 02:03:09.051
+Matias Z: Puedo buscar capítulos concretos, pero así actualizado.
+
+
+990
+02:03:09.052 --> 02:03:14.692
+Sebastian Langer: No, no. A mí. Lo que me interesa no es tanto la foto de ahora, sino digo, como
+
+
+991
+02:03:14.842 --> 02:03:27.502
+Sebastian Langer: digo, ¿cómo ¿Cómo es que 1 puede ir actualizándose usando el pensamiento crítico? No, porque esto digo dentro de un un mes seguro que va a haber algún otro, mucha más información.
+
+
+992
+02:03:28.052 --> 02:03:28.452
+Matias Z: Y a la.
+
+
+993
+02:03:28.752 --> 02:03:29.281
+Sebastian Langer: Se que.
+
+
+994
+02:03:29.282 --> 02:03:32.291
+Matias Z: Hola, No, lo sí. Sí, efectivamente.
+
+
+995
+02:03:32.292 --> 02:03:40.492
+Sebastian Langer: Si después nos contás las fuentes. Por ahí estaría bueno como para entender de que a qué lugares 1 puede ir para actualizarse, no cuando va a hacer una tarea.
+
+
+996
+02:03:41.112 --> 02:03:44.922
+Matias Z: Vale, eso también. Lo que tengo son.
+
+
+997
+02:03:44.922 --> 02:03:56.642
+Sebastian Langer: Sabes por qué? Porque me parece que la ebullición más grande que ocurre en este momento está en este lugar, no en el desarrollo de estos agentes, en la en los patrones.
+
+
+998
+02:03:56.812 --> 02:04:00.942
+Sebastian Langer: arquetipos o el como le qu como se le llame ahora. Pero
+
+
+999
+02:04:01.092 --> 02:04:15.222
+Sebastian Langer: Pero eso es lo que constantemente está evolucionando, porque son formas ingeniosas de usar los L L. M de distinta manera. El L L m va progresando. Pero la verdad que que con el progreso que ya tenemos haces unos harness que son divinos, unos agentes que son espectaculares y
+
+
+1000
+02:04:15.342 --> 02:04:23.561
+Sebastian Langer: y vas resolviendo cosas diferentes. No, Si 1 se queda con una foto de hoy y dentro de 6 meses está igual, me parece que estás atrasado.
+
+
+1001
+02:04:25.192 --> 02:04:35.132
+Alejandro Declerk: Yo se yo es que leí hace poquito un libro. Estaba muy bueno que si quieren, lo tengo. En P, D se los pasos, si les interesa, se lo sienta muy bueno. Es de los más conociditos
+
+
+1002
+02:04:35.272 --> 02:04:41.962
+Alejandro Declerk: Bueno, lo que te y trata estos temas, No, no puntualmente, así como lo trató Mati. Pero bueno, nada igual suma un montón.
+
+
+1003
+02:04:41.992 --> 02:04:47.772
+Sebastian Langer: Está. Bueno, no sé por dónde nos lo podés pasar, pero yo, si lo yo.
+
+
+1004
+02:04:47.772 --> 02:04:50.012
+Alejandro Declerk: Pongan el mail acá al que le quiere. Se lo mando por mail.
+
+
+1005
+02:04:50.812 --> 02:04:51.572
+Sebastian Langer: Ahí está.
+
+
+1006
+02:04:52.312 --> 02:04:53.032
+Alejandro Declerk: Vale.
+
+
+1007
+02:04:53.202 --> 02:04:55.981
+Nahuel Civico: Es un Guy Book de Google.
+
+
+1008
+02:04:56.332 --> 02:04:57.061
+Alejandro Declerk: No, no, no es.
+
+
+1009
+02:04:57.062 --> 02:04:57.532
+Matias Z: No, no.
+
+
+1010
+02:04:57.532 --> 02:04:59.612
+Alejandro Declerk: Do Riley.
+
+
+1011
+02:04:59.772 --> 02:05:05.542
+Matias Z: Súper recomendable. Lo bajan de cualquier lado, chicos, lo googlean y lo lo bajan de vuelo súper regular es la base.
+
+
+1012
+02:05:06.182 --> 02:05:13.822
+Alejandro Declerk: Tengo varios. Si quieren, una carpetita nueva, Si llegan así, yo les hago una carpetita en mi Drive. Se las comparto porque tengo como 10 de estos y puede ser.
+
+
+1013
+02:05:13.822 --> 02:05:14.842
+Nahuel Civico: Bueno.
+
+
+1014
+02:05:15.322 --> 02:05:17.101
+Matias Z: Puedo sumar un par más ahí Si quieres.
+
+
+1015
+02:05:17.912 --> 02:05:21.682
+Alejandro Declerk: Genial, buenísimo. Sí. Dale el que quiera sumar que sume que está eso va a estar buenísimo. Dale.
+
+
+1016
+02:05:21.972 --> 02:05:22.922
+Matias Z: Hola chicos.
+
+
+1017
+02:05:23.092 --> 02:05:26.462
+Matias Z: Les agradezco por seguirme en esta clase tan densa.
+
+
+1018
+02:05:26.462 --> 02:05:27.342
+Alejandro Declerk: Muy buena, muy buena.
+
+
+1019
+02:05:27.682 --> 02:05:28.312
+Matias Z: Yo más en.
+
+
+1020
+02:05:28.572 --> 02:05:29.512
+Alejandro Declerk: No. Bueno.
+
+
+1021
+02:05:29.512 --> 02:05:30.932
+Francisco Berthet Cosentino: Genial.
+
+
+1022
+02:05:31.462 --> 02:05:33.251
+Matias Z: Y nada te mando un abrazo.
+
+
+1023
+02:05:34.182 --> 02:05:34.612
+Sebastian Langer: Bueno.
+
+
+1024
+02:05:34.612 --> 02:05:35.291
+Matias Z: Ha sido en.
+
+
+1025
+02:05:35.292 --> 02:05:36.282
+Sebastian Langer: Semana.
+
+
+1026
+02:05:36.572 --> 02:05:36.891
+Matias Z: El de.
+
+
+1027
+02:05:36.892 --> 02:05:37.642
+Francisco Berthet Cosentino: Vale, bueno.
+
+
+1028
+02:05:37.642 --> 02:05:38.902
+Gustavo Narcisi: Dime. Gracias.
+
+
+1029
+02:05:38.902 --> 02:05:39.242
+Sebastian Langer: De la.
+
+
+1030
+02:05:39.242 --> 02:05:41.361
+Valentina Da Silva: Gracias, Chao.
+
+
+1031
+02:05:41.362 --> 02:05:42.942
+Carlos Miguez: Sí.
+
+
+1032
+02:05:42.942 --> 02:05:45.241
+Alejandro Declerk: Para dejen la sesión abierta que.
+
+
+1033
+02:05:45.242 --> 02:05:46.072
+Daniel Sosa: Sí, Sí.
+
+
+1034
+02:05:46.072 --> 02:05:47.282
+Alejandro Declerk: Cinco por mails.
+
+
+1035
+02:05:47.282 --> 02:05:48.402
+Matias Z: La pará, no grabemos y.
+
+
+1036
+02:05:48.402 --> 02:05:49.691
+Alejandro Declerk: No me cierra la sesión.
+
+
+1037
+02:05:49.942 --> 02:05:50.882
+Matias Z: No grabemos esto.
+
+
+1038
+02:05:50.892 --> 02:05:52.292
+Daniel Sosa: No.
+
+
+1039
+02:05:52.292 --> 02:05:52.932
+Alejandro Declerk: Es que.
+
+
+1040
+02:05:52.932 --> 02:05:58.551
+Gustavo Gagliardi: No están los contactos ahí en el excel del campus.
+
+
+1041
+02:05:58.552 --> 02:05:58.862
+Sebastian Langer: No lo.
+
+
+

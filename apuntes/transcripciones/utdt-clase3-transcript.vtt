@@ -1,0 +1,6013 @@
+WEBVTT
+
+1
+00:00:06.585 --> 00:00:08.065
+Valentina Da Silva: Hola, buenas tardes.
+
+
+2
+00:00:08.295 --> 00:00:09.644
+Carlos Miguez: Hola, buenas tardes.
+
+
+3
+00:00:11.485 --> 00:00:13.715
+Matias Z: Hola, Valentina. ¿cómo están Carlos?
+
+
+4
+00:00:15.125 --> 00:00:16.404
+Carlos Miguez: Qué tal.
+
+
+5
+00:00:16.405 --> 00:00:16.885
+Valentina Da Silva: Y.
+
+
+6
+00:00:16.885 --> 00:00:17.545
+Matias Z: Negocio.
+
+
+7
+00:00:17.545 --> 00:00:18.355
+Javier Carral: Buenas.
+
+
+8
+00:00:18.355 --> 00:00:18.785
+Carlos Miguez: Otra.
+
+
+9
+00:00:18.785 --> 00:00:20.634
+Victor Favazza: Hola. Buenas cómo andas.
+
+
+10
+00:00:21.435 --> 00:00:22.495
+Matias Z: Qué haces? Victor.
+
+
+11
+00:00:22.815 --> 00:00:25.205
+Victor Favazza: Está bien arrancando.
+
+
+12
+00:00:28.925 --> 00:00:30.535
+Darío Cartamil: Hola, chicos. Buenas tardes.
+
+
+13
+00:00:32.405 --> 00:00:33.235
+Carlos Miguez: Buenas.
+
+
+14
+00:00:34.315 --> 00:00:35.605
+Agustin aimale: No. Tal vez.
+
+
+15
+00:00:36.975 --> 00:00:37.735
+Matias Z: Hola.
+
+
+16
+00:00:41.765 --> 00:00:49.705
+Matias Z: 10 018 1 002, somos 17 participantes.
+
+
+17
+00:00:50.365 --> 00:00:58.854
+Matias Z: Si les parece bien, tomamos 2 o 3 min para esperar a que ingrese el resto. Y aprovechamos para dar un espacio pequeño de consulta rápida si quieren.
+
+
+18
+00:00:59.965 --> 00:01:03.474
+Matias Z: si necesitan, si no les voy contando ¿De qué se trata La clase de hoy.
+
+
+19
+00:01:07.925 --> 00:01:09.275
+Javier Carral: Arranquemos. Arranquemos.
+
+
+20
+00:01:09.515 --> 00:01:10.735
+Matias Z: Arranquemos.
+
+
+21
+00:01:10.955 --> 00:01:11.535
+Javier Carral: Mhm.
+
+
+22
+00:01:11.535 --> 00:01:21.675
+Matias Z: Alguna alguna duda, con perdón, pudieron acceder al repositorio, mirar algo de material, revisar. Tienen tiempo de
+
+
+23
+00:01:21.905 --> 00:01:27.554
+Matias Z: revisar un poquito las cosas que vamos viendo las clases en entre clase y clase. ¿le puede indicar algún tiempito a eso.
+
+
+24
+00:01:28.375 --> 00:01:31.205
+Matias Z: Es importante por ahí un repaso entre clase y clase.
+
+
+25
+00:01:33.695 --> 00:01:34.255
+Valentina Da Silva: De los.
+
+
+26
+00:01:35.014 --> 00:01:35.534
+Matias Z: Sí.
+
+
+27
+00:01:35.534 --> 00:01:38.614
+Valentina Da Silva: Ma: Yo, más que nada, el finde, voy a mirar que tengo más tiempo para.
+
+
+28
+00:01:38.615 --> 00:01:39.274
+Matias Z: Bueno.
+
+
+29
+00:01:39.425 --> 00:01:40.815
+Carlos Miguez: Y yo igual.
+
+
+30
+00:01:40.815 --> 00:01:41.915
+Claudia Artucio: Yo también.
+
+
+31
+00:01:42.615 --> 00:01:52.134
+Matias Z: Está bien valentina. Venís con con conocimientos previos en tecnología, no, O sea que muchas.
+
+
+32
+00:01:52.135 --> 00:01:55.524
+Valentina Da Silva: Sí, Sí, sí. Lo que no he usado es este framework.
+
+
+33
+00:01:55.775 --> 00:01:58.135
+Matias Z: Bueno, pues.
+
+
+34
+00:01:58.355 --> 00:01:59.374
+Valentina Da Silva: Lo que no usabas es.
+
+
+35
+00:02:02.805 --> 00:02:14.775
+Matias Z: Joya, me alegro. Imagino que no te debe. No te va a resultar nada difícil. Entonces incorporar los los conceptos que que vamos a ir viendo hoy. Vamos a ver un poquito más de detalles sobre a Dk.
+
+
+36
+00:02:15.655 --> 00:02:29.245
+Matias Z: en siempre recordando que el curso tiene un enfoque arquitectónico, no ingeneril. Entonces la idea siempre es intentar
+
+
+37
+00:02:29.785 --> 00:02:38.805
+Matias Z: priorizar la perspectiva, seguir. No, no, no nos estamos estábamos esperando ahora, vos no te preocupes y.
+
+
+38
+00:02:38.805 --> 00:02:40.315
+Nahuel Civico: Bueno, me parece muy bien.
+
+
+39
+00:02:40.645 --> 00:02:45.404
+Matias Z: La clase no empieza sin voz. Este
+
+
+40
+00:02:47.205 --> 00:03:02.264
+Matias Z: no lo que comentabas. Primero les decía, si habían podido mirar un poquito lo que habíamos charlado en el encuentro pasado. Y si tienen tiempo en la semana o el fin de semana, como decía valentina de repasar un poquito las cosas que se van viendo porque se empiezan a acumular. Hoy estamos en el encuentro 3,
+
+
+41
+00:03:02.865 --> 00:03:07.715
+Matias Z: pero después la curva de aprendizaje se pone un poquito más empinada rápidamente.
+
+
+42
+00:03:08.015 --> 00:03:19.475
+Matias Z: Entonces sí es importante que por lo menos estos estos fundamentos los tengan asentados, cualquier duda, siempre estoy disponible en el mail o por el foro, por supuesto, Pero.
+
+
+43
+00:03:19.855 --> 00:03:27.764
+Matias Z: y yo creo que entre entre las clases, las slides y la documentación que puedan encontrar en
+
+
+44
+00:03:28.295 --> 00:03:33.534
+Matias Z: la documentación. Básicamente es la oficial. Siempre les pido que vayan. Yo creo que les pase
+
+
+45
+00:03:38.005 --> 00:03:39.025
+Matias Z: el link.
+
+
+46
+00:03:39.425 --> 00:03:43.335
+Matias Z: Pero si no se los pasee adk punto, deb
+
+
+47
+00:03:44.515 --> 00:03:50.455
+Matias Z: siempre intenten ir a la fuente oficial porque es la fuente actualizada
+
+
+48
+00:03:50.615 --> 00:04:01.745
+Matias Z: lo que me pasa un montón, incluso en el transcurso del curso, es que tengo que ir adaptando ciertas cosas porque he estado en plena evolución, evolución. Perdón, se está moviendo mucho.
+
+
+49
+00:04:02.185 --> 00:04:12.985
+Matias Z: El El framework se está moviendo mucho. La forma de implementar Work Flows o swarms o topologías más complejas de gente.
+
+
+50
+00:04:13.225 --> 00:04:16.394
+Matias Z: Y cómo lo implementa, particularmente a Dk: Dos. Entonces.
+
+
+51
+00:04:16.735 --> 00:04:24.684
+Claudia Artucio: Te cuento lo que nos pasa. Yo estoy haciendo el recorrido de los recorridos en la plataforma de Google en Skills.
+
+
+52
+00:04:25.065 --> 00:04:34.865
+Claudia Artucio: y nos pasa con otros chicos que estamos haciendo que terminamos un recorrido. Y cuando volvemos para mirar algo, lo cambiaron
+
+
+53
+00:04:35.065 --> 00:04:47.954
+Claudia Artucio: porque y nos dijeron, sí, tienen que volver porque actualizan continuamente. Entonces quizás vos viste un concepto, y ahora tenés que volver a mirarlo, o sea, que está cambiando continuamente. Entonces.
+
+
+54
+00:04:47.955 --> 00:04:49.125
+Matias Z: André, Sí.
+
+
+55
+00:04:49.125 --> 00:04:52.275
+Claudia Artucio: Hicimos Labs inclusive, y
+
+
+56
+00:04:52.405 --> 00:05:05.394
+Claudia Artucio: ahora vamos a tener que hacerlo. O sea, no te dicen que lo hagas de nuevo, pero que sería conveniente para verlo actualizado. Así que te entiendo con eso, porque sí nos pasa a nosotros que lo empezamos ahora hace un mes.
+
+
+57
+00:05:05.695 --> 00:05:13.445
+Claudia Artucio: sino que ya te digo, es distinto a esto porque esto es, toda, digamos, 4 recorridos que nos pusieron exclusivamente a Dk.
+
+
+58
+00:05:13.605 --> 00:05:22.585
+Claudia Artucio: pero supongo que vos que la gente que prepara los los slides y todo, tienes que estar cambiando. Continuamente te querés matar, va
+
+
+59
+00:05:22.745 --> 00:05:25.415
+Claudia Artucio: le preguntas a la a la ya que te pone.
+
+
+60
+00:05:26.295 --> 00:05:34.994
+Matias Z: Sí, Sí, No hay gente que prepara los Likes. La gente prepara los Likes, yo, y y hay alguna gente que me da una mano, pero efectivamente.
+
+
+61
+00:05:34.995 --> 00:05:38.195
+Claudia Artucio: Documentación. Ya no documentamos más, nada, diga.
+
+
+62
+00:05:38.195 --> 00:05:40.924
+Matias Z: Es súper súper difícil estar al día.
+
+
+63
+00:05:41.125 --> 00:05:47.104
+Matias Z: Estás llevando un re trabajo, tratar de traerles la información actualizada.
+
+
+64
+00:05:47.695 --> 00:06:04.815
+Matias Z: Pero, bueno, un poco, me me puse esa visión y quisiera que se vayan con la visión, por lo menos con con la visión de de lo último que pudimos es estudiar en el curso que por ahora es la versión 2, 2, 9 de 2 punto, 2, 10 en algunos ejercicios.
+
+
+65
+00:06:05.405 --> 00:06:06.385
+Matias Z: Y
+
+
+66
+00:06:06.645 --> 00:06:13.945
+Matias Z: de cualquier manera, lo que vamos a ver ahora es como una de cada 2 y a de cada 1 como son cuestiones más básicas todavía. Así que no se preocupen.
+
+
+67
+00:06:14.385 --> 00:06:17.595
+Matias Z: ya vamos a ver en el módulo
+
+
+68
+00:06:18.005 --> 00:06:21.645
+Matias Z: 5 de la clase 5 en el encuentro 5.
+
+
+69
+00:06:22.025 --> 00:06:40.464
+Matias Z: Cuando empezamos a tratar de entender como la orquestación, la gestión del contexto y la topología. Mucha gente se implementan con el nuevo. Dk: Dos. Sí, ahí vamos a ver cambios importantes en las clases que se utilizan y cómo se se instancia en sus Worldclous.
+
+
+70
+00:06:40.605 --> 00:06:45.324
+Matias Z: En vamos a ver gay si los cambios fueron bastante disruptivos.
+
+
+71
+00:06:46.825 --> 00:06:47.685
+Matias Z: Y en.
+
+
+72
+00:06:47.685 --> 00:06:49.085
+Mariano Mondani: Te he consultado. Sí,
+
+
+73
+00:06:49.185 --> 00:06:56.664
+Mariano Mondani: Tema: slites de la clase, 2 o de las que vengan. Digamos ahí, como como es la dinámica para subirlas. Creo que no está subida. No.
+
+
+74
+00:06:56.935 --> 00:07:02.064
+Matias Z: Me puedo haber salteado eso. Este no lo has visto subidas en el campus.
+
+
+75
+00:07:02.065 --> 00:07:05.774
+Mariano Mondani: No está la del 1. Y pensé que estaba en el repo, pero no.
+
+
+76
+00:07:05.975 --> 00:07:13.935
+Matias Z: Okay tampoco. Bueno, bien, no. Entonces error mío, me lo anoto. Yo mismo pensé que lo habías oído
+
+
+77
+00:07:18.425 --> 00:07:20.515
+Matias Z: este okay.
+
+
+78
+00:07:21.055 --> 00:07:26.055
+Matias Z: Hoy vamos a hablar justamente. Yo creo que Claudio me habías preguntado por Adecauer
+
+
+79
+00:07:26.425 --> 00:07:29.734
+Matias Z: o tengo el recuerdo que algún compañero ya había preguntado algo.
+
+
+80
+00:07:29.735 --> 00:07:33.485
+Claudia Artucio: Sí, porque nosotros, en las prácticas, lo
+
+
+81
+00:07:33.615 --> 00:07:37.175
+Claudia Artucio: lo levantamos siempre para probar localmente, digamos, los argentitos.
+
+
+82
+00:07:37.745 --> 00:07:44.065
+Matias Z: Genial para que no todo el comentario de Mariano.
+
+
+83
+00:07:46.095 --> 00:07:53.244
+Matias Z: estoy con 3 cursos y se me se me mezclan un poquito Slide. Dos, y nosotros somos la Comisión, 2.
+
+
+84
+00:07:55.965 --> 00:07:59.095
+Matias Z: Bien en
+
+
+85
+00:07:59.325 --> 00:08:12.594
+Matias Z: hoy, justamente lo que vamos a hacer es tratar de de empezar a comprender los componentes fundamentales que conforman la distanciación, la creación concreta de un agente mínimo con a Dk.
+
+
+86
+00:08:12.705 --> 00:08:26.694
+Matias Z: ¿Qué componentes básicos son los que con los que conforman a un agente y vamos a verlos corriendo en a dk web para los que no saben lo que es a Dk Web en un ratito, Lo vamos a descubrir. Pero si tienen
+
+
+87
+00:08:26.925 --> 00:08:36.105
+Matias Z: muchas ganas de verlo previamente, si lo encuentro adicae web, es básicamente
+
+
+88
+00:08:37.975 --> 00:08:43.535
+Matias Z: les mostré el Playgrown en la consola de Xiipi alguna vez.
+
+
+89
+00:08:43.735 --> 00:08:45.084
+Matias Z: Bien, no sé la otra.
+
+
+90
+00:08:45.325 --> 00:08:46.735
+Matias Z: No va a ser lo siguiente.
+
+
+91
+00:08:47.195 --> 00:08:58.254
+Matias Z: Mhm, insisto, yo hablo simplemente de C, C, P y de Adk, porque son las herramientas que por ahí
+
+
+92
+00:08:58.445 --> 00:09:06.235
+Matias Z: más utilizo en el trabajo. Prefiero comentarles de de lo que tengo experiencia concreta.
+
+
+93
+00:09:06.535 --> 00:09:10.344
+Matias Z: pero por supuesto, en todos los vendos van a encontrar herramientas similares.
+
+
+94
+00:09:11.415 --> 00:09:16.404
+Matias Z: Entonces acá abrí mi consola de X, C, p.
+
+
+95
+00:09:17.615 --> 00:09:19.455
+Matias Z: Si Si Pi tiene
+
+
+96
+00:09:19.735 --> 00:09:27.374
+Matias Z: rebranding importante de lo que era el vértex. Y ahí se acuerdan. Ahora se llama es el platform construido. Por
+
+
+97
+00:09:28.595 --> 00:09:33.465
+Matias Z: básicamente, qué aprender sí
+
+
+98
+00:09:37.785 --> 00:09:47.855
+Matias Z: construido? Básicamente por Ok. El primero es el Blockhorne. Es un ya.
+
+
+99
+00:09:48.015 --> 00:09:54.715
+Matias Z: déjenme esto no está dentro de la clase. Pero de cualquier manera, no viene mal recordarlo.
+
+
+100
+00:09:56.045 --> 00:10:04.214
+Matias Z: En el En el Google Next, 2 026 se presentaron 4 pilares fundamentales en lo que sería como
+
+
+101
+00:10:04.515 --> 00:10:12.305
+Matias Z: el el ciclo de vida de construcción de agentes para producción en un entorno corporativo en un entorno. Enterprise
+
+
+102
+00:10:12.775 --> 00:10:25.625
+Matias Z: presentaron el pilar Bild. Para esto hay un Slide. También. Eso. Seguro que está en el repositorio. Hay un pilar Bill donde encuentran servicios y funcionalidades para construir agentes.
+
+
+103
+00:10:25.804 --> 00:10:28.984
+Matias Z: un espacio para escalar esas gentes.
+
+
+104
+00:10:29.475 --> 00:10:34.405
+Matias Z: un espacio donde se habla de gobernanza y seguridad, y, finalmente la parte de optimización.
+
+
+105
+00:10:34.855 --> 00:10:36.155
+Matias Z: Entonces.
+
+
+106
+00:10:37.075 --> 00:10:47.554
+Matias Z: a lo largo del curso, vamos a ir viendo cada 1 de estos pilares no necesariamente en Psisipi, porque trato de hacer un poquito más agnóstico, pero sepan que van a encontrar las mismas capas en en sus vendor favoritos.
+
+
+107
+00:10:47.865 --> 00:10:57.825
+Matias Z: En bien, Y si vamos a, por ejemplo, Playments, a ver si tengo.
+
+
+108
+00:10:58.565 --> 00:11:00.615
+Matias Z: creo que tenía una demo por acá
+
+
+109
+00:11:01.645 --> 00:11:10.534
+Matias Z: Voy a ingresar a la demo simplemente para mostrarles que cuando tenemos un agente desplegado, una de las alternativas que tenemos es
+
+
+110
+00:11:11.105 --> 00:11:14.795
+Matias Z: correr algo su modo playground sí.
+
+
+111
+00:11:17.275 --> 00:11:19.074
+Matias Z: Y el Playground. Es esto.
+
+
+112
+00:11:21.135 --> 00:11:23.905
+Matias Z: Si lo tuviera, digamos.
+
+
+113
+00:11:24.235 --> 00:11:40.364
+Matias Z: perdón. Tenemos un montón de otras opciones para evaluar, para para observar topología. Si es mucha gente toda la infraestructura de seguridad, si es que levantamos modelar Mod o alguna de las otras funcionalidades de seguridad. El manejo de sesiones que hoy vamos a empezar a ver de qué se trata
+
+
+114
+00:11:42.175 --> 00:11:56.155
+Matias Z: y el playground, que básicamente es como la interfaz conversacional que nos ofrece. S s. Y P para empezar a jugar, para empezar a evaluar un poco a desvalidar un poco cómo cómo responde nuestro agente, cómo funciona nuestra gente
+
+
+115
+00:11:57.215 --> 00:12:03.764
+Matias Z: también interesante. Son los trails. Yo creo que si tuviera corridas anteriores
+
+
+116
+00:12:07.555 --> 00:12:11.084
+Matias Z: a hablar de los últimos 14 días, tal vez, si encuentro alguna. Si no, no.
+
+
+117
+00:12:11.245 --> 00:12:13.325
+Matias Z: no hay problemas, No, no pasa nada.
+
+
+118
+00:12:14.275 --> 00:12:16.064
+Matias Z: Nos vamos a dar. No se preocupe.
+
+
+119
+00:12:16.585 --> 00:12:23.615
+Matias Z: Básicamente quería mostrarles que en el C. C. P. Lo tienen como una un servicio en Cloud.
+
+
+120
+00:12:23.945 --> 00:12:29.364
+Matias Z: Lo que vamos a ver nosotros ahora es lo mismo corriendo local, como un server local.
+
+
+121
+00:12:29.655 --> 00:12:30.715
+Matias Z: En fin.
+
+
+122
+00:12:35.465 --> 00:12:37.935
+Gustavo Narcisi: Es el equilibrio y para.
+
+
+123
+00:12:40.465 --> 00:12:44.564
+Matias Z: Para que no haya tanto misterio. Lo único que hacemos es
+
+
+124
+00:12:46.375 --> 00:12:56.615
+Matias Z: bueno En este caso lo hice con un script que básicamente es adicap web, y el el servidor levanta todos los ejemplos que encuentra en esa carpeta, sí,
+
+
+125
+00:12:59.555 --> 00:13:05.685
+Matias Z: o sea que ahora de acá nos da la posibilidad de correr tanto los ejemplos en la consola, si el Life
+
+
+126
+00:13:05.845 --> 00:13:19.274
+Matias Z: o como ejemplos dentro de crea unas web apps muy finitas y las levanta directamente en madeca web. Ahora vamos a probar 5 ejemplos de agentes.
+
+
+127
+00:13:19.835 --> 00:13:22.954
+Matias Z: Esta clase. Un poco responde a la idea de tratar de
+
+
+128
+00:13:23.525 --> 00:13:30.535
+Matias Z: antes de empezar los deseos de lleno en conceptos bastante más complejos conceptualmente hablando.
+
+
+129
+00:13:30.895 --> 00:13:37.945
+Matias Z: tratar de empezar a ver agentes sencillos en funcionamiento en el
+
+
+130
+00:13:38.195 --> 00:13:47.724
+Matias Z: y presentarles a dk web, que es una herramienta de deving y de testeo básico manual. Es una primera instancia que funciona, que sirve, que se utiliza
+
+
+131
+00:13:49.065 --> 00:13:56.255
+Matias Z: bien a Okay.
+
+
+132
+00:13:57.245 --> 00:14:05.664
+Matias Z: Entonces la idea es pasar las próximas 2 h
+
+
+133
+00:14:06.335 --> 00:14:13.945
+Matias Z: construyendo, o mejor dicho, en nuestro caso, analizando un poco el texto y y
+
+
+134
+00:14:14.705 --> 00:14:29.905
+Matias Z: la configuración de agentes con a Dk, No necesariamente con la última versión de Adk, porque ya les digo: en este caso no es necesario, pero antes de tocar código, me gustaría que tener un mapa mental de
+
+
+135
+00:14:30.145 --> 00:14:38.564
+Matias Z: 4 piezas claves, 4 componentes mínimos claves que van a aparecer una y otra vez en todas las clases a partir de hoy
+
+
+136
+00:14:38.945 --> 00:14:44.085
+Matias Z: y que son los, como, digamos.
+
+
+137
+00:14:44.805 --> 00:14:50.784
+Matias Z: las partes fundamentales indispensables para que exista una gente en adecua.
+
+
+138
+00:14:52.135 --> 00:14:54.415
+Matias Z: Le llamamos Runner.
+
+
+139
+00:14:55.975 --> 00:15:03.535
+Matias Z: La sesión, el modelo, ¿sí?
+
+
+140
+00:15:04.075 --> 00:15:08.114
+Matias Z: Y le sumamos las tools que van a estar dentro del Aishn
+
+
+141
+00:15:11.555 --> 00:15:15.085
+Matias Z: acá empiezo con y
+
+
+142
+00:15:15.655 --> 00:15:30.774
+Matias Z: una aclaración que a veces genera confusión, por lo menos en en la primera comisión, tuve como esta charla, que que nos llevó bastante tiempo. Lo que vamos a mencionar ahora son clases dentro del código fuente que implementa la gente.
+
+
+143
+00:15:31.325 --> 00:15:35.725
+Matias Z: Cuando hablo de Aissent, en este caso, estar hablando de una clase
+
+
+144
+00:15:36.115 --> 00:15:46.035
+Matias Z: de un tipo de una clase que me permite instanciar gentes. No significa que adentro de esta casa, se encuentre todo lo necesario para que corra una gente de verdad.
+
+
+145
+00:15:46.405 --> 00:15:49.625
+Matias Z: un agente de verdad está construido por todos estos componentes.
+
+
+146
+00:15:49.835 --> 00:15:50.705
+Matias Z: Sí,
+
+
+147
+00:15:54.495 --> 00:15:57.855
+Matias Z: se entiende esa distinción en.
+
+
+148
+00:15:59.755 --> 00:16:00.685
+Alejandro Declerk: Normalmente es algo bueno.
+
+
+149
+00:16:02.895 --> 00:16:03.575
+Matias Z: Bien.
+
+
+150
+00:16:04.015 --> 00:16:17.475
+Matias Z: Tal vez un tema importante a entender es es que no necesariamente tenemos que correr nuestros agentes con semina y creo que había habíamos hablado algo de esto. Adecán No necesariamente nos deja como
+
+
+151
+00:16:19.735 --> 00:16:23.814
+Matias Z: atados al uso de los modelos de Google, los modelos
+
+
+152
+00:16:24.195 --> 00:16:28.824
+Matias Z: propios de Google, sino que, por ejemplo, utilizando.
+
+
+153
+00:16:29.215 --> 00:16:36.804
+Matias Z: bueno, no se escucharon hablar de like l l e m, que es una manera de que es como un proxy que nos permite acceder a cualquier otro modelo que tenga cierta
+
+
+154
+00:16:37.175 --> 00:16:45.855
+Matias Z: interfaz nos permite correr cualquier l cualquier modelo de inteligencia artificial como cerebro de estos agentes.
+
+
+155
+00:16:46.595 --> 00:16:55.324
+Matias Z: si adicas simplemente es el framework para la creación de los agentes. Pero podemos correr cualquier elemento como cerebro de ese agente en particular.
+
+
+156
+00:16:55.725 --> 00:16:56.615
+Matias Z: Entonces.
+
+
+157
+00:16:57.945 --> 00:17:06.914
+Matias Z: de las 4 piezas fundamentales que sería el Aise, el que creo que habíamos mencionado en el encuentro anterior, que tiene como atributos fundamentales
+
+
+158
+00:17:07.335 --> 00:17:10.814
+Matias Z: el modelo que se va a utilizar, la instrucción del sistema Bront
+
+
+159
+00:17:10.985 --> 00:17:15.604
+Matias Z: o la instrucción del sistema y la tools que va a correr esa gente.
+
+
+160
+00:17:16.445 --> 00:17:20.094
+Matias Z: Vamos a ver qué es el Runner, que es un poco el
+
+
+161
+00:17:20.325 --> 00:17:35.275
+Matias Z: el el el core del orquestador de la gente. Vamos a ver la orquestación en el módulo, 5 en detalle, pero ahí empezamos a introducir. Como Runner empieza a orquestar el la ejecución de nuestra gente.
+
+
+162
+00:17:36.955 --> 00:17:44.534
+Matias Z: Básicamente es el encargado de ejecutar las tools que le impide y es el encargado de emitir eventos.
+
+
+163
+00:17:45.405 --> 00:17:51.655
+Matias Z: Vamos a entender qué es la sesión a ver.
+
+
+164
+00:17:52.995 --> 00:17:56.205
+Matias Z: No quisiera saltearme algunas cosas.
+
+
+165
+00:17:58.635 --> 00:17:59.305
+Matias Z: Mhm.
+
+
+166
+00:18:00.325 --> 00:18:03.304
+Matias Z: Primero, cuando vean Aisend
+
+
+167
+00:18:03.505 --> 00:18:16.915
+Matias Z: en el código fuente. Sepan que también se puede utilizar una clase con el nombre L L y son simplemente alias dentro del código. Así que espero que eso no los confunda.
+
+
+168
+00:18:18.425 --> 00:18:30.174
+Matias Z: Es la combinación de estas 3 características que les comento: el modelo, la instrucción y las Tools, que en general son opcionales. Pero si no tenemos Tools, no tenemos agente.
+
+
+169
+00:18:30.545 --> 00:18:31.335
+Matias Z: sí,
+
+
+170
+00:18:31.995 --> 00:18:42.564
+Matias Z: no hay mucho más que esto. No hay memoria no hay Estado propio. El es esta Iglesia es en esencia una función que transforma una conversación en la siguiente respuesta
+
+
+171
+00:18:44.535 --> 00:18:50.554
+Matias Z: y les desalada del Runner, que tal vez es el que más polémica suele generar.
+
+
+172
+00:18:53.635 --> 00:18:59.305
+Matias Z: y la gente por sí solo no sabe cómo conectarse con el mundo un poco. Lo hemos mencionado.
+
+
+173
+00:18:59.685 --> 00:19:06.484
+Matias Z: no sabe leer el input del usuario, no sabe persistir una conversación.
+
+
+174
+00:19:07.485 --> 00:19:09.644
+Matias Z: No sabe qué pasa.
+
+
+175
+00:19:11.615 --> 00:19:20.665
+Matias Z: El el el agente no, no sabe qué pasa si el modelo pide usar un atún o un servidor M, C, P: Y hay que ejecutarla y hay que devolverle el resultado.
+
+
+176
+00:19:21.805 --> 00:19:30.815
+Matias Z: Todo eso lo va a hacer el componente Runner Es como el corazón de Este Framework, que nos permite orquestar nuestras topologías, agentes.
+
+
+177
+00:19:31.715 --> 00:19:34.844
+Matias Z: El Runner, entonces orquesta, El ciclo completo
+
+
+178
+00:19:35.925 --> 00:19:41.635
+Matias Z: recibe un mensaje o un estímulo o qué sé yo
+
+
+179
+00:19:42.535 --> 00:19:59.085
+Matias Z: un umbral que es cruzado por una métrica que estamos monitoreando, sí o data de un sensor. Digo, para empezar a desacoplar un poco la idea de de agente con con siempre, con una interfaz conversacional. Y la gente puede despertarse por un montón de de estímulos.
+
+
+180
+00:19:59.315 --> 00:20:04.184
+Matias Z: o simplemente puede despertarse porque lo planificamos con algún tipo de de
+
+
+181
+00:20:04.555 --> 00:20:08.835
+Matias Z: de algoritmos tipo Chrome en Múnix.
+
+
+182
+00:20:09.405 --> 00:20:15.004
+Matias Z: Podemos planificar ejecuciones periódicas de esa manera.
+
+
+183
+00:20:17.715 --> 00:20:18.645
+Matias Z: Bien.
+
+
+184
+00:20:21.705 --> 00:20:30.584
+Matias Z: Todo esto lo hace el Runner, que no es más que un generador asíncrono. Y en ese sentido, con el Runner, va emitiendo eventos
+
+
+185
+00:20:32.235 --> 00:20:40.235
+Matias Z: a medida que estas cosas van sucediendo. Si ya sean mensajes de usuarios llamados tools resultados de las tours.
+
+
+186
+00:20:40.545 --> 00:20:45.774
+Matias Z: respuestas parciales, vamos a ver que también puede suceder que haya respuestas parciales.
+
+
+187
+00:20:46.525 --> 00:20:54.745
+Matias Z: Estoy tomando las manguitas. Acá Estoy pensando para aquellos que no tuvieron la oportunidad de acceder a
+
+
+188
+00:20:55.335 --> 00:21:01.234
+Matias Z: al material de aprendizaje previo. Si todavía no pudieron repasar la
+
+
+189
+00:21:01.585 --> 00:21:16.644
+Matias Z: la sección de Python, donde se habla un poco de funciones, síncrones y ejecuciones en Python. Sería muy interesante que si le peguen una repasada de eso, porque van a ver que la manera de implementar en general
+
+
+190
+00:21:16.865 --> 00:21:22.064
+Matias Z: a nuestras arquitecturas multiagénicas, es usando funciones asícranas dentro de Python.
+
+
+191
+00:21:22.355 --> 00:21:28.964
+Matias Z: Nada complejo, simplemente funciones que no bloquean la ejecución de nuestro proceso.
+
+
+192
+00:21:29.215 --> 00:21:35.745
+Matias Z: Lo menciono ahora lo vamos a ver varias veces en el futuro sin Napoli en
+
+
+193
+00:21:36.815 --> 00:21:45.845
+Matias Z: y finalmente, el modelo como característica central también, que es la interfaz al L Lm en sí que vamos a utilizar.
+
+
+194
+00:21:46.555 --> 00:21:58.364
+Matias Z: Pero, como les dije antes, en general, vamos a empezar a pensar en nuestros agentes como multi model, digamos, de manera nativa. Prácticamente vamos a empezar a a entender nuestros agentes como
+
+
+195
+00:22:01.845 --> 00:22:08.264
+Matias Z: como estructuras que tienen varias alternativas a la hora de invocar un modelo de inteligencia artificial.
+
+
+196
+00:22:08.465 --> 00:22:20.254
+Matias Z: Así que no nos casamos básicamente con ningún vendor con ningún modelo. Siempre estamos pensando en la posibilidad utilizar varios modelos a la vez y dependiendo de la quari, como vimos la otra vez, se puede incluso rutear en tiempo real.
+
+
+197
+00:22:20.495 --> 00:22:36.975
+Matias Z: Hay diferentes modelos, pero también puede pasar que un modelo falle o que un vendedor falle o que se nos acabe la cuota en adolescentes, entonces tenemos llamar al mismo modelo en otro vendorf o hacer una invocación local. Digamos, hay varias. Hay varios motivos por los cuales nuestros agentes tienen que tener varios Clds
+
+
+198
+00:22:37.515 --> 00:22:38.634
+Matias Z: a disposición.
+
+
+199
+00:22:38.915 --> 00:22:42.835
+Nahuel Civico: O una caída del servicio en alguno, en particular, o.
+
+
+200
+00:22:42.835 --> 00:22:43.185
+Matias Z: De el.
+
+
+201
+00:22:43.185 --> 00:22:44.395
+Nahuel Civico: Cae. Todos.
+
+
+202
+00:22:45.525 --> 00:22:51.835
+Matias Z: Exactamente exactamente esta. Se no la subí. Todavía Sebastián este
+
+
+203
+00:22:52.525 --> 00:22:56.765
+Matias Z: apenas termines de dar. De cualquier manera, si bus si buscas.
+
+
+204
+00:22:56.765 --> 00:22:59.594
+Sebastian Langer: Pensé que no la encontraba. Gracias.
+
+
+205
+00:22:59.595 --> 00:23:03.995
+Matias Z: Sí. Bueno, bueno, por mi sueño es el uso chicos.
+
+
+206
+00:23:05.555 --> 00:23:08.865
+Matias Z: Entré en calor a de K. Dos.
+
+
+207
+00:23:12.425 --> 00:23:22.234
+Matias Z: Nos permite hacer varias cosas, entre entre otras, este ejecutar topologías de varios agentes que
+
+
+208
+00:23:23.225 --> 00:23:31.665
+Matias Z: colaboran de diferentes maneras que negocian, que resuelven conflictos que se comunican de diferentes formas en
+
+
+209
+00:23:34.935 --> 00:23:42.834
+Matias Z: lo que vamos a hacer hoy es mostrar los ejemplos en Adica Web. Y probablemente les interese esto porque se puede correr localmente y sin ninguna
+
+
+210
+00:23:43.085 --> 00:23:52.055
+Matias Z: ningún requerimiento y no demasiado exigente en términos de hardware, por ejemplo, ahora estoy corriendo
+
+
+211
+00:23:52.205 --> 00:23:58.465
+Matias Z: un servidor de cada web y no es más que un server que
+
+
+212
+00:23:59.075 --> 00:24:04.124
+Matias Z: lo levantan. Como les comenté recién. Para los que no vieron antes los que llegaron Recién
+
+
+213
+00:24:05.865 --> 00:24:07.554
+Matias Z: esto es Ikea Web.
+
+
+214
+00:24:07.895 --> 00:24:13.005
+Matias Z: Como ven, estoy corriendo en mi máquina, el ser en el puerto 8 0
+
+
+215
+00:24:13.815 --> 00:24:20.174
+Matias Z: y tiene la característica de que, dependiendo de Do, de donde lo corre, como lo corro, puedo elegir qué agente
+
+
+216
+00:24:20.895 --> 00:24:30.474
+Matias Z: probar en este momento, sí vamos a empezar con probablemente el agente más sencillo, que es el agente simplemente que in que involucra el uso de tus
+
+
+217
+00:24:30.825 --> 00:24:35.085
+Matias Z: como ejemplo básico poqui en.
+
+
+218
+00:24:37.055 --> 00:24:37.595
+Gabriel Colloca: A ti.
+
+
+219
+00:24:37.955 --> 00:24:38.605
+Matias Z: Sí.
+
+
+220
+00:24:38.605 --> 00:24:39.575
+Gabriel Colloca: Consulta.
+
+
+221
+00:24:39.575 --> 00:24:40.385
+Matias Z: Por favor.
+
+
+222
+00:24:40.775 --> 00:24:46.245
+Gabriel Colloca: De burro, ¿ Pero que siempre me me confundo con todo esto, ¿Qué tiene que ver el jarnés
+
+
+223
+00:24:47.175 --> 00:24:48.214
+Gabriel Colloca: o qué es.
+
+
+224
+00:24:48.705 --> 00:24:54.595
+Matias Z: Pues es una excelente pregunta: ¿quién se.
+
+
+225
+00:24:54.595 --> 00:24:56.285
+Gabriel Colloca: Tiene que ver con todo esto.
+
+
+226
+00:24:56.585 --> 00:25:07.494
+Gabriel Colloca: No sé este manejo de distintas. No sé como decías del Runner que habla con distintos modelos. Este mendimos las tuls en el medio el otro día y que se yo.
+
+
+227
+00:25:08.075 --> 00:25:14.745
+Matias Z: To. Todo eso está vinculado con con la creación de un harnes alrededor de un Lm: Todo lo que rodea a un L L M
+
+
+228
+00:25:14.875 --> 00:25:24.044
+Matias Z: para la construcción de la gente. Se puede, se puede o se podría considerar parte de un hardnas, pero me gustaría que alguno de los compañeros
+
+
+229
+00:25:24.185 --> 00:25:26.315
+Matias Z: se anime a dar una definición
+
+
+230
+00:25:26.715 --> 00:25:29.325
+Matias Z: sencilla, intuitiva de lo que sería dejarles.
+
+
+231
+00:25:30.715 --> 00:25:37.295
+Sebastian Langer: Bueno, en la clase pasada. Te acuerdas que hablábamos de L de los L. L. M fundacionales. Y
+
+
+232
+00:25:37.435 --> 00:25:48.164
+Sebastian Langer: y y yo hice una pregunta de de un S, D, K, de del Open A, S, D, K, A, N, S. D, K: Bueno, cuando vos llamas a
+
+
+233
+00:25:48.275 --> 00:25:49.735
+Sebastian Langer: a Al, a un
+
+
+234
+00:25:50.355 --> 00:25:56.585
+Sebastian Langer: a un modelo de open eye, en realidad estás pegándole un harnés que adentra hace un montón de cosas.
+
+
+235
+00:25:56.755 --> 00:26:05.775
+Sebastian Langer: Y Y y una de las cosas que puedes hacer es bajarte una cosa parecida que hace open online para que puedas hacer lo mismo en
+
+
+236
+00:26:05.775 --> 00:26:23.865
+Sebastian Langer: onpremis, que es algo que a mí siempre me interesa a ver de la misma manera. Cuando vos tenés un agente igual. Acá Seguramente Mati me va a recontra pasear, porque si no, porque siempre creo que tengo todos desacuerdo por vicio, tengo todos desacomodados los conceptos.
+
+
+237
+00:26:23.865 --> 00:26:44.144
+Sebastian Langer: pero pero es lo mismo, O sea, vos estás generando, no no trabajas con el L, M. El L. M directo, sino que trabajas con un conjunto de L. L Ms: A los que le haces dinamicroating le le usas 1 para una cosa y otro para la otra haces operaciones de distinto tipo que vamos a ir viendo seguramente.
+
+
+238
+00:26:44.375 --> 00:26:58.255
+Sebastian Langer: Y todo eso está alrededor del L. M. Y es un es un Harners. No entiendo que hay una sofisticación o de de, y que todo eso me parece a mí, es lo que hace que sea
+
+
+239
+00:26:58.625 --> 00:27:03.075
+Sebastian Langer: tan eficiente la I A en
+
+
+240
+00:27:03.445 --> 00:27:16.944
+Sebastian Langer: esos harness son, me parece, la la clave, y ahí es donde está el valor humano, no de más humano co que podemos aportar nosotros, con con una lógica especializada por industria, por por
+
+
+241
+00:27:17.114 --> 00:27:23.944
+Sebastian Langer: o sea, puede ser la diferencia entre que gastes muchísimos tokens o gastes pocos. No sé mate ahí si quieres complementar algo.
+
+
+242
+00:27:24.714 --> 00:27:29.824
+Matias Z: La respuesta. No sé si alguno más quiere participar. Si no está muy bien. Nahuel levantamos.
+
+
+243
+00:27:29.825 --> 00:27:43.644
+Nahuel Civico: Sí, por ejemplo, y que la gente o cualquier chat que use, que te responda de forma no agresiva o que no te dé recomendaciones médicas y demás. Eso también se considera como carnes.
+
+
+244
+00:27:45.045 --> 00:27:46.234
+Matias Z: Es una pregunta.
+
+
+245
+00:27:46.845 --> 00:27:47.395
+Nahuel Civico: Sí.
+
+
+246
+00:27:47.995 --> 00:27:50.475
+Matias Z: Bien
+
+
+247
+00:27:51.194 --> 00:27:59.654
+Matias Z: bueno, pero que podría ser considerado parte de del Jarness. Podrías considerar a todos los War Rays como parte de James también.
+
+
+248
+00:27:59.655 --> 00:28:00.045
+Nahuel Civico: Ajá.
+
+
+249
+00:28:00.045 --> 00:28:08.785
+Sebastian Langer: Para decir, yo tengo una pregunta más todavía más rebuscada. Si vos tenés todo el Dynamic Roating, pero tenés un lite del L. M. ¿quién hace el roating?
+
+
+250
+00:28:09.765 --> 00:28:11.165
+Sebastian Langer: Depende de qué.
+
+
+251
+00:28:12.835 --> 00:28:14.984
+Matias Z: No son 2 cosas distintas.
+
+
+252
+00:28:14.985 --> 00:28:22.385
+Sebastian Langer: No, o sea, porque le me te sirve para hacer un ruteo, ¿de acuerdo a un request. Pero vos lo que lo pregunto, no
+
+
+253
+00:28:22.965 --> 00:28:26.324
+Sebastian Langer: la verdad que nunca lo usé. Sé que lo usamos en la empresa, pero nunca lo usé.
+
+
+254
+00:28:26.785 --> 00:28:27.905
+Matias Z: Con.
+
+
+255
+00:28:27.905 --> 00:28:28.974
+Sebastian Langer: Ponemos a un lado.
+
+
+256
+00:28:29.275 --> 00:28:47.805
+Matias Z: Con con la E. T. L. M: En realidad, lo que haces es como interfasear sin cambiar mucho el código, interfasear con diferentes tipos de le lentes. El El ruteo en general se suele implementar de manera explícita dentro del workflow para darte toda la expresividad necesaria para que tomes la las decisiones que quieras tomar. Pero como parte del Framework.
+
+
+257
+00:28:48.195 --> 00:28:54.514
+Matias Z: en dicho de otra manera, Light del M: Es como la manera de poder conectar cualquier modelo.
+
+
+258
+00:28:55.195 --> 00:28:59.274
+Matias Z: tu implementación sin tener que trabajar demasiado en enchufar diferentes.
+
+
+259
+00:28:59.275 --> 00:29:01.635
+Sebastian Langer: Pero hace ruteo. Por eso.
+
+
+260
+00:29:01.635 --> 00:29:08.084
+Matias Z: Sí, sí, pero sí sí sí se puede configurar también para que haga rooteo dinámico en general.
+
+
+261
+00:29:08.085 --> 00:29:15.815
+Agustin aimale: Qué sé yo, por ejemplo, curso, que vos seleccionas el modelo con el que quiere trabajar ya chiquitito.
+
+
+262
+00:29:16.475 --> 00:29:19.964
+Agustin aimale: El Cloud es un ideal para algo así.
+
+
+263
+00:29:21.085 --> 00:29:26.615
+Matias Z: No, no la hay de leer. No, no es, no es un I D, No, En ese caso, la decisión, la.
+
+
+264
+00:29:26.835 --> 00:29:30.434
+Agustin aimale: O sea, la posibilidad de elegir con qué modelo trabajar o que el mismo.
+
+
+265
+00:29:31.185 --> 00:29:33.075
+Agustin aimale: o sea, dentro de una misma plataforma.
+
+
+266
+00:29:36.015 --> 00:29:45.535
+Matias Z: Podría ser una analogía? Sí, Sí, sí. Podría funcionar como analogía. En general en los los asistentes de de
+
+
+267
+00:29:45.665 --> 00:30:00.145
+Matias Z: de I a tipo agente, ac agentes tipo Cloud cursor Windsurf Codex, te permiten definir contratar tantas cosas que
+
+
+268
+00:30:00.645 --> 00:30:03.405
+Matias Z: te permiten.
+
+
+269
+00:30:03.405 --> 00:30:04.715
+Sebastian Langer: Está bien.
+
+
+270
+00:30:04.715 --> 00:30:05.475
+Matias Z: De corriente definir.
+
+
+271
+00:30:05.475 --> 00:30:09.795
+Nahuel Civico: Por un momento, siento que sé todo y por otro momento aparecen cosas que digo.
+
+
+272
+00:30:09.795 --> 00:30:26.154
+Sebastian Langer: Yo también me re confundo con el tema, ese porque digo bueno para tal Dynamic Roater que hago, lo lo meto dentro del carnet, o le o le digo a la tele que me rote, digo, de acuerdo a alguna regla determinada.
+
+
+273
+00:30:26.625 --> 00:30:30.105
+Sebastian Langer: Eso es lo que digo como que me quedé ahí ahí.
+
+
+274
+00:30:30.105 --> 00:30:32.324
+Matias Z: No, no. La pregunta está perfecta.
+
+
+275
+00:30:33.035 --> 00:30:43.504
+Matias Z: Efectivamente, el aire Lem hace dynamite roating Sí, tiene un módulo específico para eso. De hecho, no suele utilizarse para eso.
+
+
+276
+00:30:45.975 --> 00:30:54.094
+Matias Z: Pero si lo querés googlear después el el módulo era tipo lider lend router.
+
+
+277
+00:30:55.935 --> 00:31:09.395
+Matias Z: De cualquier manera, Mi recomendación es bancar que lleguemos a ver cómo implementamos nosotros, Dynamicroating. Y como Adk implementa Dynamicroating y si quieres después ves cual elegís por.
+
+
+278
+00:31:09.395 --> 00:31:13.784
+Sebastian Langer: Tenés un montón de contenido. Así que y todo es bueno, Así que dale.
+
+
+279
+00:31:13.785 --> 00:31:14.115
+Matias Z: A la.
+
+
+280
+00:31:14.115 --> 00:31:16.815
+Sebastian Langer: Hablaron del Router. Me me quedé con eso.
+
+
+281
+00:31:16.815 --> 00:31:21.424
+Matias Z: Sí, sí te te despierta 2. No hay ningún problema. Bien.
+
+
+282
+00:31:21.535 --> 00:31:26.504
+Matias Z: entonces todo lo que vamos a ver hoy corre en Adek web.
+
+
+283
+00:31:26.615 --> 00:31:44.115
+Matias Z: Básicamente es un servidor local que instancia un Runner, que es este generador de ventas que vimos y utiliza algo llamado in Memory Sesion Service. ¿qué es eso? Simplemente una instanciación de lo que vamos a a estudiar como sesión.
+
+
+284
+00:31:44.165 --> 00:31:51.855
+Matias Z: Vamos a ver qué es una sesión. ¿cómo se utiliza para guardar los diferentes eventos que suceden a lo largo de los diferentes turnos en una llamada
+
+
+285
+00:31:51.915 --> 00:31:56.694
+Matias Z: a un nene leer y cómo diferentes agentes pueden compartir información a través de esa sesión
+
+
+286
+00:31:57.495 --> 00:32:05.085
+Matias Z: encima alcahueb. Lo que hace es simplemente poner esta ayuda ahí, sí tipo de chat
+
+
+287
+00:32:05.355 --> 00:32:07.675
+Matias Z: para que puedan probar sus implementaciones.
+
+
+288
+00:32:07.945 --> 00:32:14.035
+Matias Z: Entonces, cuando elegimos un agente en el sector de arriba, vamos a ver si
+
+
+289
+00:32:14.865 --> 00:32:17.705
+Matias Z: tengo algo más interesante para mostrarles por lo menos Ahora.
+
+
+290
+00:32:18.245 --> 00:32:22.075
+Matias Z: este creo que tiene unos cuantos su agentes
+
+
+291
+00:32:23.625 --> 00:32:37.055
+Matias Z: en el selector de acá arriba. Elegimos el agente que queremos probar en este momento. Tiene algo interesante de adicae webb, que es una forma sencilla de visualizar rápidamente el el grafo o el árbol de agentes o sus agentes.
+
+
+292
+00:32:37.185 --> 00:32:39.955
+Matias Z: sí apretando el simbolito, ese.
+
+
+293
+00:32:40.235 --> 00:32:50.614
+Matias Z: y les muestra rápidamente cómo cómo está constituida la tipología de este multi agente, que acá simplemente es un agente como coordinador o manager
+
+
+294
+00:32:50.985 --> 00:33:02.644
+Matias Z: o el roottation, que en este caso va haciendo llamadas a diferentes especialistas. Y cuando acá arriba tienen un poquito la explicación de cómo interpretar
+
+
+295
+00:33:03.845 --> 00:33:07.724
+Matias Z: qué es cada cosa. Por ejemplo, cuando aparece la llavecita.
+
+
+296
+00:33:07.835 --> 00:33:10.624
+Matias Z: Estamos hablando de una tul, no de un subagente
+
+
+297
+00:33:11.965 --> 00:33:15.734
+Matias Z: cuando aparece el rombito o el diamantito. Estamos hablando de agentes
+
+
+298
+00:33:18.885 --> 00:33:26.415
+Matias Z: introducción rápida a Adk: Después vamos a verlo funcionando. Ok, alcahueb Perdón.
+
+
+299
+00:33:28.335 --> 00:33:31.505
+Matias Z: Y sí, hay un montón de material, así que vamos a meterte
+
+
+300
+00:33:35.065 --> 00:33:40.674
+Matias Z: bien a ver qué tenemos
+
+
+301
+00:33:47.395 --> 00:33:48.215
+Matias Z: si no.
+
+
+302
+00:33:48.325 --> 00:34:01.565
+Matias Z: Si vamos a vamos a pasar con las primeras, los primeros ejemplos. Tool Colling es como habíamos visto, la pieza más chica, que es la que construye la noción de agente.
+
+
+303
+00:34:01.815 --> 00:34:09.475
+Matias Z: Le doy al L M la capacidad de hacer algo, consultar una a P. I Ir un archivo, Crear una cuenta. Borrar una cuenta
+
+
+304
+00:34:09.655 --> 00:34:18.845
+Matias Z: no es recomendado, pero básicamente lo que diferencia a un chatbot tradicional de de una gente en
+
+
+305
+00:34:21.535 --> 00:34:34.324
+Matias Z: creo que habíamos mencionado que la forma de distanciar a gentes es a través de esta de esta clase Aise y la manera de decirle a la gente cuáles son las tuyas que tiene disponibles simplemente a partir de esta lista.
+
+
+306
+00:34:34.475 --> 00:34:38.975
+Matias Z: No sé si lo recuerdan, pero se mantiene esta lista de funciones Python. Por ahora
+
+
+307
+00:34:39.085 --> 00:34:48.185
+Matias Z: ya vamos a ver que esta lista puede ser cualquier cosa más adelante. Vamos a ver, pueden ser otros agentes. Pueden ser servidores en T V. Vamos a ver, puede ser cualquier cosa
+
+
+308
+00:34:49.485 --> 00:35:07.885
+Matias Z: bien. Y el modelo y acá lo tenemos. Es un diagrama de flujos que básicamente nos nos muestra muy sencillamente que no es el modelo quien invoca a las funciones no no es para que lo terminen de mirar ahora en detalle, sino cuando lo tengan las slides, pero un poco La idea es
+
+
+309
+00:35:08.125 --> 00:35:13.425
+Matias Z: el modelo. Lo único que hace es tomar una decisión en función del lenguaje natural que recibe, Sí,
+
+
+310
+00:35:14.215 --> 00:35:19.234
+Matias Z: interpreta ese Prompt y le pide al Runner que corra
+
+
+311
+00:35:20.075 --> 00:35:31.605
+Matias Z: una de sus alternativas de Tools que fueron enviadas a través de esta lista, y es el Runner el que, efectivamente hace la llamada al atún.
+
+
+312
+00:35:32.865 --> 00:35:42.265
+Matias Z: la tul devuelve el resultado del Runner. Y es el Runner quien devuelve los resultados al modelo. Eso es importante recordarlo, porque
+
+
+313
+00:35:42.335 --> 00:35:54.065
+Matias Z: es una conjunción bastante común. Va a aparecer varias veces, pero simplemente entender eso. El Ldm no tiene ningún tipo de exposición a la ejecución de herramientas. Por suerte.
+
+
+314
+00:35:55.035 --> 00:35:57.025
+Matias Z: sí.
+
+
+315
+00:35:57.025 --> 00:36:00.674
+Lucia Etchart: Que que el modelo es como un señor muy, muy viejo.
+
+
+316
+00:36:00.675 --> 00:36:01.795
+Matias Z: Entonces.
+
+
+317
+00:36:01.795 --> 00:36:08.565
+Lucia Etchart: En un trono y sabe todo el conocimiento del mundo. Pero no se puede mover, solo puede escupir
+
+
+318
+00:36:08.995 --> 00:36:20.305
+Lucia Etchart: conocimiento y después hay un cadete que va y viene con toda la información, pero que solo el señor Grande tiene la información, entonces tiene que ir a buscarla cada vez y se va moviendo.
+
+
+319
+00:36:20.465 --> 00:36:31.755
+Lucia Etchart: Es Es lógico entenderlo así como revoludo. Ya sé, pero para una persona no técnica, para no mezclarme entre las 1 000 000 de cosas que hay y no asignarle al modelo, cosas que el modelo no hace.
+
+
+320
+00:36:34.675 --> 00:36:48.705
+Matias Z: Puede ser. Puede ser. Es un ejemplo creativo. Pero si quieres pensarlo como, Mhm.
+
+
+321
+00:36:50.715 --> 00:36:51.755
+Lucia Etchart: Tal cual.
+
+
+322
+00:36:51.775 --> 00:37:01.345
+Matias Z: Bueno, estoy tratando de como de complementar a ver para valentina. Tiene la más levantada. Tal vez tiene alguna idea mejor, porque yo estoy buscando la forma de complementar la analogía que que no va mal.
+
+
+323
+00:37:01.615 --> 00:37:20.555
+Valentina Da Silva: No. Yo en realidad tenía una duda, pero creo sí creo que viene por ahí como que el modelo es el el cerebro. Lo que pasa que el modelo como que no puede actuar no puede llamar al azul, no puede integrarse con m. F, P. Con Apis y a la gente, Sí, pero es como que el modelo es el cerebro de la gente.
+
+
+324
+00:37:20.895 --> 00:37:22.505
+Valentina Da Silva: Y eso es así. Lo entiendo yo.
+
+
+325
+00:37:24.395 --> 00:37:30.075
+Matias Z: Ese es un poco la respuesta que quería acomodarte Lucia Justamente
+
+
+326
+00:37:30.815 --> 00:37:47.355
+Matias Z: pensar más por ese lado si quieres como como cerebro y las herramientas y las habilidades, pensarla como como los músculos, digamos, la capacidad de realizar acciones en el mundo real. Y en general, el Jarness se lo suele denominar, como.
+
+
+327
+00:37:47.845 --> 00:38:03.525
+Matias Z: digamos, volviendo a la antropomorfización que hiciste de de de de esta de esta composición de componentes básicos. Bueno, no está mal. El harners se lo suele llamar como sistema nervioso de nuestra gente.
+
+
+328
+00:38:03.865 --> 00:38:15.565
+Matias Z: Entonces el Ld sería el cerebro. Las tools. Serían nuestros músculos, nuestras manos, nuestros pies. Y el Harlem es el sistema nervioso. Es quien transmite quién comunica quién envía y quien recibe señales
+
+
+329
+00:38:15.845 --> 00:38:17.045
+Matias Z: y
+
+
+330
+00:38:17.515 --> 00:38:28.015
+Matias Z: no, no es para nada boluda. La explicación para alguien no técnico. Eso te quería decir: lucia tranquila, cualquiera analogía que te sirva para entenderlo. Sirve
+
+
+331
+00:38:29.435 --> 00:38:31.295
+Matias Z: entonces el primer ejemplo.
+
+
+332
+00:38:31.295 --> 00:38:42.064
+Valentina Da Silva: Del Runner. Esto es esto es porque la estamos usando de K, o es algo que se usa también en otro framework de la gente. El uso del Runner, el concepto este del Runner.
+
+
+333
+00:38:42.795 --> 00:38:47.244
+Matias Z: Lo que estamos viendo ahora son componentes específicos de la década, Pero en general, cualquier
+
+
+334
+00:38:48.325 --> 00:38:54.265
+Matias Z: framebol mo moderno va a tener algún tipo de generador de eventos, algún tipo de de orquestadora sincron, no digamos
+
+
+335
+00:38:54.965 --> 00:38:59.054
+Matias Z: en particular rana. Se llama la clase dentro de A. D. K.
+
+
+336
+00:39:00.035 --> 00:39:01.545
+Valentina Da Silva: Chao Okay Okay. Gracias.
+
+
+337
+00:39:02.115 --> 00:39:03.044
+Matias Z: No, por favor.
+
+
+338
+00:39:04.305 --> 00:39:09.504
+Matias Z: Ok. Entonces, para verlo un poquito en la vida real.
+
+
+339
+00:39:11.025 --> 00:39:17.615
+Matias Z: El primer ejemplo decíamos que era este del uso de de herramientas en
+
+
+340
+00:39:18.205 --> 00:39:22.805
+Matias Z: hoy. Vamos a ver herramientas de las más básicas que son funciones puras de Python.
+
+
+341
+00:39:22.955 --> 00:39:26.874
+Matias Z: Sí, 100 por 100 Python funciones comunes las que conocen.
+
+
+342
+00:39:27.375 --> 00:39:49.144
+Matias Z: No hay ningún tipo de decorador. Fíjense que, a diferencia de otros framers que a veces requieren decorar las funciones para indicarle después a la gente que son fun que son tuls de esa gente. No hay ningún tipo de decorador en Adk. Si nosotros definimos funciones de Python después simplemente ponemos la asignatura, el nombre de la función, perdón, el título de la función, la ponemos dentro de esa lista de Tools
+
+
+343
+00:39:49.865 --> 00:40:02.045
+Matias Z: a la hora de distanciar el agente y adica mismo, es quien se encarga después de extraer la signature de la función, que es tanto el tipo de retorno, el nombre de función, los parámetros, los tipos de los parámetros.
+
+
+344
+00:40:02.295 --> 00:40:07.375
+Matias Z: toda esa información se encargaba de Ca: De extraerla de de esa lista de nombres de función de España.
+
+
+345
+00:40:07.965 --> 00:40:08.995
+Matias Z: En
+
+
+346
+00:40:13.225 --> 00:40:18.264
+Matias Z: Se entendió eso a ver por ahí. Me fui un poco de de tema con con la
+
+
+347
+00:40:18.745 --> 00:40:21.315
+Matias Z: con la explicación técnica. Lo que quiero decirles es.
+
+
+348
+00:40:22.095 --> 00:40:30.985
+Matias Z: escriben una función, no para valentina que imagino que entendiste, Pero para el resto te digo, valentina porque tengo acá gigante para que vamos a cambiar.
+
+
+349
+00:40:31.955 --> 00:40:37.965
+Matias Z: No, no te escondas, no te escondas, ¿verdad? Viste el día, así lo veo. Todos mira en la
+
+
+350
+00:40:38.355 --> 00:40:40.125
+Matias Z: definimos funciones Python
+
+
+351
+00:40:41.215 --> 00:40:55.504
+Matias Z: tal cual lo haríamos en cualquier programa que implementamos con Python. Y después esas funciones. Python Las colocamos en una lista y se las damos a la gente para que las utilice como tú no requiere ningún tipo de decoración ni adaptación. Sí,
+
+
+352
+00:40:55.735 --> 00:41:00.595
+Matias Z: este es el caso más básico de Tulbis. Funciones Python locales tienen sus ventajas y sus desventajas.
+
+
+353
+00:41:00.855 --> 00:41:03.895
+Matias Z: Lo más importante, acá
+
+
+354
+00:41:09.135 --> 00:41:22.434
+Matias Z: lo que necesito que recuerden es que hay un cambio de interpretación de lo que conocemos como Dogstream. Los que los paitoneros recordarán que el Dogstream era esa
+
+
+355
+00:41:23.095 --> 00:41:28.734
+Matias Z: primera sección de las funciones donde poníamos un string que explicaba
+
+
+356
+00:41:29.125 --> 00:41:33.815
+Matias Z: el funcionamiento de esa función, El objetivo, los parámetros para
+
+
+357
+00:41:34.105 --> 00:41:38.845
+Matias Z: otros humanos, para otros colaboradores humanos, sí,
+
+
+358
+00:41:39.545 --> 00:41:46.474
+Matias Z: bueno, no. Más. A partir de ahora ese Dogstream, ese string que se pone al principio de la función que explica
+
+
+359
+00:41:47.035 --> 00:41:50.395
+Matias Z: qué es lo que hace la función. ¿qué parámetros recibe que devuelve?
+
+
+360
+00:41:50.915 --> 00:41:58.174
+Matias Z: Se utiliza fundamentalmente para que la gente entienda cuándo debería invocar a esa función
+
+
+361
+00:42:02.685 --> 00:42:09.125
+Matias Z: dejo un segundo de silencio, a ver si hay alguna consulta al respecto y al final.
+
+
+362
+00:42:09.775 --> 00:42:19.385
+Mariano Mondani: De tema Tools puede tiene alguna limitación con que sean asíncronas o algo ¿Hay alguna. Puede ser cualquier función literal.
+
+
+363
+00:42:20.965 --> 00:42:32.554
+Matias Z: Puede ser cualquier función literal, siempre y cuando respete la topología que estás armando. Vamos a llegar a un momento en el que esas funciones, por ejemplo, tienen que ser asínca.
+
+
+364
+00:42:34.715 --> 00:42:47.784
+Matias Z: Esto que estamos viendo ahora, es súper súper súper básico. Ya lo van a ver en el ejemplo. Pero en un momento vamos a necesitar que las funciones definitivamente sean del tipo zinc, por el tipo de topología de gente que vamos a correr
+
+
+365
+00:42:48.785 --> 00:42:51.105
+Matias Z: de por ahora.
+
+
+366
+00:42:51.475 --> 00:42:53.055
+Matias Z: Está muy bien la pregunta: ¿
+
+
+367
+00:42:53.225 --> 00:42:57.865
+Matias Z: Estamos 10 pasos atrás. Por ahora, lo que estamos viendo es que el Dogstream
+
+
+368
+00:42:58.275 --> 00:43:07.844
+Matias Z: es la descripción del lenguaje natural que va a utilizar el agente para decidir si llama a una o a otra función
+
+
+369
+00:43:07.955 --> 00:43:11.055
+Matias Z: como a una u otra tuna. En realidad sí.
+
+
+370
+00:43:11.345 --> 00:43:14.315
+Matias Z: Mhm Okay.
+
+
+371
+00:43:19.175 --> 00:43:20.175
+Matias Z: el mando.
+
+
+372
+00:43:20.175 --> 00:43:21.035
+Mariano Mondani: Una pregunta.
+
+
+373
+00:43:21.575 --> 00:43:21.935
+Matias Z: Sí.
+
+
+374
+00:43:21.935 --> 00:43:31.574
+Mariano Mondani: Todo el dogtring que pongas te come contexto también. No, O sea, todo te lo va a mandar al L, L. M, ¿O lo decide antes el Runner, que mandaba que no.
+
+
+375
+00:43:31.965 --> 00:43:37.635
+Matias Z: No excelente pregunta excelente: Cuantas más tools tengas definidas a ver.
+
+
+376
+00:43:37.805 --> 00:43:44.215
+Matias Z: vamos a ver también técnicas un poquito más avanzadas donde indexamos estas Tools para que no se invoquen.
+
+
+377
+00:43:45.105 --> 00:43:54.175
+Matias Z: digamos, la implementación Na y I B, L. La implementación más ingenua que podemos hacer de esto es que el system pront
+
+
+378
+00:43:54.615 --> 00:43:55.565
+Matias Z: en
+
+
+379
+00:43:55.715 --> 00:44:06.425
+Matias Z: la historia de la conversación pasada y la lista de tools con sus descripciones. Todo eso viaje en la ventana de contexto, junto con cada una de las cuerdas que les hagas al Erevi.
+
+
+380
+00:44:07.495 --> 00:44:22.635
+Matias Z: lo cual es una locura, porque, por supuesto, estás usando de manera muy ineficiente Tus Tokens. Entonces vamos a ver que se puede, de alguna manera, empezar a hacer algún tipo de caching. De eso se pueden cachear el system plan se puede cachar las sis, las tools
+
+
+381
+00:44:23.705 --> 00:44:30.005
+Matias Z: y hay técnicas incluso para compactar la descripción de las Tools con con esquemas Shason también.
+
+
+382
+00:44:33.305 --> 00:44:52.894
+Matias Z: Pero dicho eso, el en cada invocación, el M va a decidir a qué pulso llamar dependiendo de la topología que utilices, perdón y acá mira, está buena la pregunta. Lo que pasa que se están adelantando un montón son super curiosos dependiendo de qué tipo de de arquetipo de gente estemos utilizando. Si hablamos de Riac
+
+
+383
+00:44:53.625 --> 00:45:00.184
+Matias Z: reactest por ejemplo, ¿cómo se implementa cloud code ahí. Tenés un bucle que es razonar.
+
+
+384
+00:45:00.495 --> 00:45:03.485
+Matias Z: actuar y observar. En ese caso.
+
+
+385
+00:45:03.825 --> 00:45:11.835
+Matias Z: siempre va a estar decidiendo en tiempo real a que tú llamas. Pero hay otras tipologías donde vos, por ejemplo, usas Work Flows
+
+
+386
+00:45:12.755 --> 00:45:15.484
+Matias Z: que te permiten de manera.
+
+
+387
+00:45:17.905 --> 00:45:27.275
+Matias Z: digamos, menos flexible, con más determinismo, darle posibilidades a la gente en función de cuáles de las aristas sigue de ese de ese grafo de ejecución.
+
+
+388
+00:45:30.205 --> 00:45:36.794
+Matias Z: Si querés lo vemos en 2 o 3 encuentros. Así no concluimos mucho, pero está muy bien la pregunta.
+
+
+389
+00:45:38.315 --> 00:45:48.905
+Matias Z: En principio vamos a pensar que la gente tiene la descripción de estas funciones, La descripción de estas tools existen Brown y toda la historia en cada llamada
+
+
+390
+00:45:49.995 --> 00:45:50.765
+Matias Z: sí.
+
+
+391
+00:45:51.235 --> 00:45:52.935
+Matias Z: Por ahora vamos a pensarlo de esta manera.
+
+
+392
+00:45:55.975 --> 00:46:04.295
+Matias Z: Bien, Bueno, nuestro primer agente en alicaw Web
+
+
+393
+00:46:04.685 --> 00:46:08.204
+Matias Z: es muy, muy básico. Tiene 2 herramientas.
+
+
+394
+00:46:09.305 --> 00:46:25.325
+Matias Z: Utiliza seminar 2,5 Flash, Un modelo sencillo. Lo estoy corriendo contra mi sandbox de S S P: Pero después de tener el código para poder correrlo con con sus Kiss de de Google, Studio.
+
+
+395
+00:46:25.515 --> 00:46:30.824
+Matias Z: y tiene básicamente 2 herramientas: una de ellas, lo que hace es devolver la hora y el tiempo, lo que
+
+
+396
+00:46:31.295 --> 00:46:33.554
+Matias Z: prácticamente no hace más que llamar
+
+
+397
+00:46:34.225 --> 00:46:50.165
+Matias Z: funcionamiento local de la máquina, y la otra es una llamada a una a P. I una a P I muy sencilla, que también es un api de juguete que se nos devuelve básicamente el nombre de un usuario errando Si lo que estamos demostrando acá es que estamos combinando en nuestro primer ejemplo la
+
+
+398
+00:46:50.325 --> 00:46:57.655
+Matias Z: funciones de Python locales, una de ellas que accede, por ejemplo, a llamadas del sistema operativo y la otra que se llama a la Api.
+
+
+399
+00:46:58.735 --> 00:46:59.825
+Matias Z: en
+
+
+400
+00:47:02.235 --> 00:47:13.604
+Matias Z: bien para los que vayan después al al Repo. Tengan en cuenta que en el Ritmi van a encontrar un poquito más de información sobre cuál es el objetivo del ejemplo. Te digo porque hay 5 ejemplos.
+
+
+401
+00:47:13.625 --> 00:47:24.034
+Matias Z: Este es bastante sencillo, pero hay ejemplos un poquito más sofisticados. Entonces van a encontrar el objetivo. ¿cómo funciona? ¿qué parte del código tienen que chequear, cómo ejecutar
+
+
+402
+00:47:24.105 --> 00:47:28.045
+Matias Z: y Mhm.
+
+
+403
+00:47:30.445 --> 00:47:37.695
+Valentina Da Silva: Aimati. Tengo una pregunta código. En algún momen en algún momento llegamos a ver al Runner, o es algo interno del framework.
+
+
+404
+00:47:38.565 --> 00:47:46.594
+Matias Z: Sí vamos a ver el real instanciado muchas veces de manera explícita. Cuando no lo vemos. Cuando lo vemos en el código, sepamos que se instancia
+
+
+405
+00:47:47.055 --> 00:47:53.104
+Matias Z: de manera automática por parte del Facebook. Lo vamos a ver instanciado de manera explícita un montón de veces
+
+
+406
+00:47:53.385 --> 00:47:58.504
+Matias Z: porque muchas veces necesitamos acceder a atributos que no son los atributos por default
+
+
+407
+00:47:59.075 --> 00:48:08.884
+Matias Z: con los cuales se instancia de esa clase en particular. Entonces lo vas a ver, Lo vamos a ver. Lo vamos a ver juntos. Y si no me equivoco, a partir de la clase que viene del encuentro que viene.
+
+
+408
+00:48:09.395 --> 00:48:10.895
+Valentina Da Silva: Dale Dale Bárbaro.
+
+
+409
+00:48:11.565 --> 00:48:19.714
+Matias Z: No, Por favor, Bien, volvemos al ejemplo del tool asian. Si lo corren con la llegada web.
+
+
+410
+00:48:20.365 --> 00:48:30.234
+Matias Z: la idea es que van van a encontrar una suerte de arritmia al principio, y qué preguntas hacer si se acuerdan un poco. La noción de este primer agente era el de poder
+
+
+411
+00:48:33.955 --> 00:48:40.045
+Matias Z: preguntarle la hora y que nos dé un usuario rando.
+
+
+412
+00:48:40.305 --> 00:48:44.094
+Matias Z: Voy a usar ese último pront para que use las 2 herramientas.
+
+
+413
+00:48:44.905 --> 00:48:45.825
+Matias Z: ¿sí?
+
+
+414
+00:48:51.875 --> 00:49:03.604
+Matias Z: Si no rompemos nada en el camino. Lo que quería mostrarles también es que a ver acá lo que tienen son la lista de eventos. Vamos a ver que en algunos ejemplos más adelante vamos a encontrar hasta
+
+
+415
+00:49:03.775 --> 00:49:10.325
+Matias Z: 30 eventos. Cada 1 de sus eventos. Haces una lista dentro de la sesión, y en cada evento van a encontrar
+
+
+416
+00:49:10.535 --> 00:49:28.635
+Matias Z: algo que sucedió, ya sea una llamada tu la respuesta de de un atún, la cuerda de un usuario, la respuesta del Edén. Entonces lo interesante de cada 1 de ellos, si ven a la izquierda tienen en tiempo real. Ya se ha demostrado esto no, que era como la arquitectura
+
+
+417
+00:49:29.855 --> 00:49:41.235
+Matias Z: básica. En este caso un agente con 2 herramientas. Pero a la izquierda lo que pueden ver, ese gráfico mediante tiempo real y se van como iluminando las partes de de la gente que en cada evento
+
+
+418
+00:49:41.785 --> 00:49:42.895
+Matias Z: se invócanos?
+
+
+419
+00:49:43.175 --> 00:49:48.384
+Matias Z: No, Sí. Sí, sí.
+
+
+420
+00:49:48.385 --> 00:49:55.085
+Nahuel Civico: ¿qué pasa ahí si vos les preguntas Otra cosa que no está relacionada con la fecha y el nombre de de la persona.
+
+
+421
+00:49:55.085 --> 00:49:56.045
+Matias Z: Por ejemplo, a.
+
+
+422
+00:49:56.315 --> 00:49:57.405
+Nahuel Civico: Contemplado.
+
+
+423
+00:49:57.735 --> 00:49:59.595
+Matias Z: Dame un ejemplo.
+
+
+424
+00:50:00.685 --> 00:50:11.195
+Nahuel Civico: No sé. Dame el código Python y no sé para llamar a una.
+
+
+425
+00:50:17.615 --> 00:50:23.444
+Matias Z: Bueno, ¿qué pasa? Acá Lo que tenemos es una gente que no tiene ningún guardal en particular.
+
+
+426
+00:50:24.605 --> 00:50:30.685
+Matias Z: Sí, tenemos varios problemas.
+
+
+427
+00:50:31.385 --> 00:50:36.445
+Matias Z: El primer problema, la pregunta es muy pertinente.
+
+
+428
+00:50:37.585 --> 00:50:46.864
+Matias Z: De hecho, digamos es la pregunta: ¿Qué pasa si le preguntamos cualquier cosa? Bueno, en general
+
+
+429
+00:50:46.975 --> 00:50:50.544
+Matias Z: es un riesgo, Por supuesto, es un riesgo gigante.
+
+
+430
+00:50:52.405 --> 00:50:55.614
+Matias Z: y esta pregunta nunca debería haber llegado a la gente.
+
+
+431
+00:50:57.245 --> 00:51:00.684
+Matias Z: Me parece que es la primera aclaración que podemos hacer con respecto a
+
+
+432
+00:51:00.885 --> 00:51:19.065
+Matias Z: cuando empecemos a pensar en desplegar esta producción. Esta pregunta que le hicimos nunca debería haber llegado a la gente, No, la clásica, es darme las instrucciones para hacer una bomba perdón, por el ejemplo, pero es el ejemplo clásico en, por ejemplo, en seguridad y en sex y de gentes.
+
+
+433
+00:51:19.345 --> 00:51:26.975
+Matias Z: en o cualquier tipo de de expresión inadecuada o violenta por parte de la gente.
+
+
+434
+00:51:27.165 --> 00:51:32.474
+Matias Z: Bien, esta pregunta nunca debería haber llegado a la gente. ¿por qué llegó a la gente? Porque no implementamos. Guardar Rays
+
+
+435
+00:51:32.995 --> 00:51:38.455
+Matias Z: es un tema que vamos a ver en el módulo de seguridad. Los War Rails son va
+
+
+436
+00:51:38.865 --> 00:51:52.275
+Matias Z: barreras que se ponen antes de que se invoque al Ldm para que este tipo de preguntas no llegue a la inferencia que hace la red neuronal. ¿por qué? Porque acá tuvimos la suerte
+
+
+437
+00:51:52.985 --> 00:52:01.995
+Matias Z: de que ya estoy en acá. Tuvimos la suerte de que nuestro Lm está lo suficientemente bien alineado
+
+
+438
+00:52:02.115 --> 00:52:04.765
+Matias Z: para darnos una respuesta segura
+
+
+439
+00:52:04.955 --> 00:52:17.535
+Matias Z: alineado significa que después del pre entrenamiento, la red neuronal pasó por una parte de de Fang Tuning, donde se hace un alineamiento a determinadas determinados principios de seguridad
+
+
+440
+00:52:17.795 --> 00:52:25.565
+Matias Z: sin por ahí. Acá. Me adelanto. Pero básicamente es esta seguridad está implementada de manera paramétrica.
+
+
+441
+00:52:27.105 --> 00:52:36.875
+Matias Z: ¿qué significa eso 2 cosas: Primero, que no siempre podemos esperar la misma respuesta y, segundo, que no queda logrado en ningún lado como un problema de seguridad como un intento de ataque. Esto no es un intento de ataque para nuestra infraestructura.
+
+
+442
+00:52:37.885 --> 00:52:40.794
+Matias Z: Sí, podría haber sido un intento de ataque tranquilamente.
+
+
+443
+00:52:41.725 --> 00:52:46.464
+Matias Z: De hecho, yo creo que con 2 o 3 preguntas más de estas Nahuel podemos sacarle el sistema probado.
+
+
+444
+00:52:47.525 --> 00:52:48.835
+Nahuel Civico: Claro, Por eso te digo.
+
+
+445
+00:52:49.085 --> 00:53:02.275
+Matias Z: No, no, digamos. Está in ingenuamente implementado un poco. Por eso, de a poquito vamos a ir construyendo incrementalmente capas de seguridad a lo largo y a lo ancho de este en Lm, Para que
+
+
+446
+00:53:02.325 --> 00:53:10.694
+Matias Z: este tipo de consultas ni siquiera llega al Lm: Lo fundamental acá es: los War Rays tienen que tener ciertas garantías.
+
+
+447
+00:53:11.105 --> 00:53:21.914
+Matias Z: muchas veces no probabilísticas, muchas veces implementadas como heurísticas, muchas veces implementados, como redes, otras veces, como l ls o modelos de clasificación de emociones más tradicionales
+
+
+448
+00:53:22.185 --> 00:53:24.885
+Matias Z: de manera inútil.
+
+
+449
+00:53:25.355 --> 00:53:25.905
+Matias Z: Sí.
+
+
+450
+00:53:25.905 --> 00:53:34.495
+Nahuel Civico: Pero vos decir que la pregunta no debe llegar ni siquiera del elemento, entonces tiene que haber un método determinístico
+
+
+451
+00:53:34.615 --> 00:53:40.435
+Nahuel Civico: que busque palabras inadecuadas y, cosa que no queremos
+
+
+452
+00:53:40.595 --> 00:53:43.434
+Nahuel Civico: para que cuando la contenga directamente, fuiste.
+
+
+453
+00:53:44.725 --> 00:53:46.325
+Matias Z: Correcto.
+
+
+454
+00:53:46.485 --> 00:53:52.575
+Matias Z: ¿sí? Y lo lo vamos a ver en el módulo de seguridad en en C, C, P, Se llama model armour Esto
+
+
+455
+00:53:52.715 --> 00:53:55.795
+Matias Z: que cuida tanto la entrada como la salida.
+
+
+456
+00:53:56.245 --> 00:54:02.965
+Matias Z: Y acá lo vamos a ver con una implementación opensource de Nvidia que se llama Nemo War Race, que implementa también
+
+
+457
+00:54:03.185 --> 00:54:12.504
+Matias Z: este tipo de guardianes en la entrada y en la salida. Ya estoy valentina, te lo estoy diciendo en la entrada y la salida del L M y la entrada y la salida de las llamadas a las tours
+
+
+458
+00:54:12.905 --> 00:54:17.624
+Matias Z: en la entrada y la salida de las llamadas a los servicios en civico. Todo eso tiene estar implementado definitivamente.
+
+
+459
+00:54:17.945 --> 00:54:20.124
+Matias Z: Ahora, sí, no valentina.
+
+
+460
+00:54:20.125 --> 00:54:37.545
+Valentina Da Silva: Te quería preguntar si el S si ya el framework como este de acá no tenía algo de de Dar Ralls, embebido como para proteger un poco, porque, como que te respondió bastante bien, podría haber intentado darte un código Python para que vos invocaras y poner como ejemplo
+
+
+461
+00:54:37.865 --> 00:54:39.485
+Valentina Da Silva: eso te quería consultar.
+
+
+462
+00:54:39.745 --> 00:54:45.305
+Matias Z: Absolutamente una vez más. Si vas acá. A Dk: de art
+
+
+463
+00:54:45.535 --> 00:54:48.315
+Matias Z: dibujamos, creo que mencionamos las las colots.
+
+
+464
+00:54:54.285 --> 00:55:01.274
+Matias Z: Bien, si no les mencioné jordás igual. Está bien, porque no, todavía no es momento, pero
+
+
+465
+00:55:04.485 --> 00:55:07.744
+Matias Z: la manera que tendríamos de proteger a nuestra gente
+
+
+466
+00:55:08.855 --> 00:55:11.145
+Matias Z: en el caso del uso de A. Dk
+
+
+467
+00:55:12.325 --> 00:55:18.264
+Matias Z: es utilizar funciones que se llaman, por ejemplo, en este caso, antes y después de la educación al elevo
+
+
+468
+00:55:19.245 --> 00:55:20.295
+Matias Z: en
+
+
+469
+00:55:23.865 --> 00:55:32.585
+Matias Z: si les parece bien, No me metería mucho en detalle ahora en esto, pero valentina más o menos tienes idea de cómo se podría implementar los guardias.
+
+
+470
+00:55:32.585 --> 00:55:38.324
+Valentina Da Silva: Te preguntaba, porque, como que en mi trabajo, han desarrollado como agentes con E con esto.
+
+
+471
+00:55:38.325 --> 00:55:53.005
+Valentina Da Silva: y cuando yo le pregunto ah que que Gary le han le han puesto como que muchas veces ni le han puesto. Y Y, sin embargo, el como que dentro de todo, la gente responde bastante bien. Entonces me ahí se generó la duda de si si a decano tenía algo interno que ya filtraba cosas.
+
+
+472
+00:55:53.635 --> 00:56:01.755
+Matias Z: No por defecto, no va a filtrar nada. En Es en esta ocasión hicimos. Segundo, si no pusimos guardar res en
+
+
+473
+00:56:02.145 --> 00:56:04.704
+Matias Z: en tu trabajo, decirles que lo hagan
+
+
+474
+00:56:05.785 --> 00:56:11.835
+Matias Z: no solamente porque no puedes confiar en, digamos, en una política de seguridad que está embebida
+
+
+475
+00:56:12.255 --> 00:56:17.374
+Matias Z: en función del entrenamiento de esa gente. Imagínate que estás usando un model rooting dinámico
+
+
+476
+00:56:17.715 --> 00:56:26.664
+Matias Z: y que llamas a un modelo que tiene otro comportamiento, y que digamos si vos estás si vos estás basando tu seguridad en las políticas de light del modelo.
+
+
+477
+00:56:26.935 --> 00:56:28.135
+Matias Z: primero
+
+
+478
+00:56:28.445 --> 00:56:37.244
+Matias Z: es probabilístico. No sabes si va a funcionar o no va a funcionar. Segundo, no queda logueado correctamente en la infraestructura.
+
+
+479
+00:56:37.775 --> 00:56:49.214
+Matias Z: ¿sí? Y tercero, en mucha infra que ya se te resuelve directamente este problema medio en capas.
+
+
+480
+00:56:49.425 --> 00:57:00.164
+Matias Z: Así que si si no hay garra, es en pro en producción, es un problema serio. Ya te digo, no solamente en las llamadas de los usuarios, sino en llamadas a herramientas y llamadas
+
+
+481
+00:57:00.405 --> 00:57:08.354
+Matias Z: y también las llamadas entre agentes. Cualquier invocación, Cualquier comunicación que suceda tiene que haber en el medio algún módulo tipo
+
+
+482
+00:57:08.545 --> 00:57:11.684
+Matias Z: tipo Garda, rey o tipo callback, que verifique cosas.
+
+
+483
+00:57:12.075 --> 00:57:17.595
+Gustavo Gagliardi: Y en este caso puntual, que la bloqueó, hay un colback o.
+
+
+484
+00:57:17.995 --> 00:57:19.384
+Matias Z: No, no, no, no.
+
+
+485
+00:57:20.595 --> 00:57:27.965
+Matias Z: Mhm: Bien, la ruta mira, ahí está claro. Fíjate.
+
+
+486
+00:57:28.855 --> 00:57:30.375
+Alejandro Declerk: No tienen acceso de intérprete.
+
+
+487
+00:57:31.505 --> 00:57:32.175
+Matias Z: Cómo.
+
+
+488
+00:57:32.675 --> 00:57:37.025
+Alejandro Declerk: Yo pensé que le había bloqueado que no puede acceder a Python. No, no puedes.
+
+
+489
+00:57:37.215 --> 00:57:42.944
+Alejandro Declerk: no, No tiene acceso a un intérprete de Python, entonces no no genera código, porque no lo puede correr como que el mismo Yo no tengo esa tool para hacerlo.
+
+
+490
+00:57:44.785 --> 00:57:48.064
+Daniel Sosa: Claro. Pero ¿cómo lo decidió? Eso es? Creo que esa es la pregunta.
+
+
+491
+00:57:48.665 --> 00:57:54.084
+Matias Z: Alguien se anima a decir cómo lo decidió, quién lo decidió, cómo fue.
+
+
+492
+00:57:54.085 --> 00:57:57.435
+Agustin aimale: Esto lo podemos especificar también en el brom system también, que es solo que.
+
+
+493
+00:57:57.675 --> 00:58:03.655
+Matias Z: Correcto. Sí, podrías hacerlo, claro, no respondas nada que no tenga nada que ver con esto. Sí.
+
+
+494
+00:58:03.655 --> 00:58:05.604
+Agustin aimale: Consulta. También puede ser que
+
+
+495
+00:58:05.915 --> 00:58:22.004
+Agustin aimale: a ver. Yo tengo el ejemplo de la A, P. I de Open, a cuando 1 va a crear Lapi para un proyecto. Uno puede también establecer de alguna manera restricciones y permisos en casos de uso. Desde ahí eso se se se le suma también.
+
+
+496
+00:58:23.675 --> 00:58:24.365
+Matias Z: No es un.
+
+
+497
+00:58:25.325 --> 00:58:26.454
+Matias Z: Cómo, cómo, cómo.
+
+
+498
+00:58:26.455 --> 00:58:29.845
+Agustin aimale: Cuando 1 te vas a crear.
+
+
+499
+00:58:30.115 --> 00:58:37.244
+Agustin aimale: creás un proyecto de No Peney Lu para dejar tener una A, p. I K, para consumirla con un modelo
+
+
+500
+00:58:38.775 --> 00:58:43.144
+Agustin aimale: ahí mismo. Puedes setear de alguna manera estas cuestiones de seguridad.
+
+
+501
+00:58:45.165 --> 00:58:49.174
+Agustin aimale: Esto se complementa con lo que nosotros le damos acá.
+
+
+502
+00:58:49.175 --> 00:58:49.715
+Matias Z: Mhm.
+
+
+503
+00:58:49.945 --> 00:58:50.315
+Agustin aimale: Okay.
+
+
+504
+00:58:50.315 --> 00:58:56.815
+Matias Z: Bueno, voy a la respuesta. La voy a hacer rápida.
+
+
+505
+00:58:57.705 --> 00:59:04.305
+Matias Z: Sé que genera un montón de de dudas, pero prefiero meterle pata porque no estamos pasando ni el primer ejemplo. Tenemos 5.
+
+
+506
+00:59:05.155 --> 00:59:08.074
+Matias Z: Esta respuesta fue generada directamente por el Ldln.
+
+
+507
+00:59:08.755 --> 00:59:10.315
+Matias Z: Sí,
+
+
+508
+00:59:11.105 --> 00:59:23.194
+Matias Z: Acá No intervino ningún otro módulo que no fuera simplemente lo que es el el aliment que se incorpora en los parámetros del Lm en una de las etapas de entrenamiento.
+
+
+509
+00:59:25.115 --> 00:59:27.664
+Matias Z: Sí, en general.
+
+
+510
+00:59:28.975 --> 00:59:39.265
+Matias Z: los modelos pasan por etapas de entrenamiento. Una de ellas normalmente intenta parametrizar determinadas políticas de seguridad
+
+
+511
+00:59:40.335 --> 00:59:48.895
+Matias Z: dentro del mismo modelo de inteligencia artificial. Estamos hablando solo del Ldlm. Acá no hay ningún módulo externo de Python ni del framework ni de nada.
+
+
+512
+00:59:49.075 --> 00:59:57.055
+Matias Z: Si corriera contra el Lm directamente, me respondería exactamente lo mismo y.
+
+
+513
+00:59:58.275 --> 01:00:03.934
+Matias Z: fundamentalmente, si le hacemos alguna consulta que sea un poco más polémica que la que hicimos ahora, porque
+
+
+514
+01:00:04.255 --> 01:00:19.465
+Matias Z: en principio no violamos ninguna de las de las políticas de seguridad tradicionales, Pero si me dan. Si tienen paciencia, lo vamos a ver en detalle en el modelo en el módulo correspondiente. Así podemos avanzar un poquito con lo que sería el contenido de hoy.
+
+
+515
+01:00:19.465 --> 01:00:25.074
+Matias Z: Pero para que sepan este nivel de seguridad es en el el nivel seguridad en el cual no podemos confiar.
+
+
+516
+01:00:25.585 --> 01:00:35.955
+Matias Z: Este es el nivel de seguridad que se hackea en 2 o 3 preguntas. Si tenés la oportunidad de hacer 2 o 3 llamadas. Si haces un un intento de proyección multi turno. Esto lo lo hackeas en un segundo.
+
+
+517
+01:00:37.335 --> 01:00:43.245
+Matias Z: En esto no podemos confiar. Siempre tenemos que poner warriors en la entrada y en la salida, de cualquier modo.
+
+
+518
+01:00:46.195 --> 01:00:46.705
+Matias Z: bien.
+
+
+519
+01:00:46.705 --> 01:00:55.645
+Valentina Da Silva: Y A. Y otra cosa que no está buena tampoco de ahí para agregar, no más, porque en realidad está gastando tipo, o sea, por más que sean 10.
+
+
+520
+01:00:55.645 --> 01:00:55.965
+Matias Z: Bien.
+
+
+521
+01:00:55.965 --> 01:01:03.575
+Valentina Da Silva: Lo respondo ahí, pero estamos como usando el modelo para como uso que no fueron programados. Y estamos gastando.
+
+
+522
+01:01:03.575 --> 01:01:04.335
+Matias Z: Alucinante.
+
+
+523
+01:01:04.335 --> 01:01:05.814
+Valentina Da Silva: Bueno, también los barro.
+
+
+524
+01:01:05.815 --> 01:01:13.585
+Matias Z: Me había retro olvidado de eso primis Muy bien. Primero, la seguridad en este caso probabilidadística, o sea, no tenés, garantías de ningún tipo.
+
+
+525
+01:01:13.865 --> 01:01:17.605
+Matias Z: Segundo, no queda logueado. O sea, no hay trazabilidad de estos intentos de hacking.
+
+
+526
+01:01:17.914 --> 01:01:22.595
+Matias Z: Eso es tremendo. Digo, si vos para tu equipo de seguridad, esto es lo peor que le puede pasar. Es una pesadilla.
+
+
+527
+01:01:23.065 --> 01:01:28.785
+Matias Z: Tercero, estás haciendo inferencia con lo caro que es la diferencia con los modelos grandes. Estás en diferencia
+
+
+528
+01:01:29.475 --> 01:01:32.155
+Matias Z: para consultas que no son apropiadas.
+
+
+529
+01:01:32.825 --> 01:01:51.885
+Matias Z: ¿qué implica esto que puedes hacer un ataque de binario a los services contra un modelo donde, por ejemplo, aunque no le saques ninguna información, no hagas filtración de ningún tipo de propiedad intelectual o de datos sensibles simplemente estés, consumiendo la capacidad de inferencia del modelo con este tipo de consultas inapropiadas o o que no corresponden al caso de uso
+
+
+530
+01:01:52.175 --> 01:01:57.564
+Matias Z: clarísimo. Buenísimo. Genial. Me encantó. Gracias por complementar eso. Avanzamos.
+
+
+531
+01:01:58.105 --> 01:02:01.544
+Matias Z: Sí, sale dinero. Fundamentalmente.
+
+
+532
+01:02:05.315 --> 01:02:07.524
+Matias Z: estos intentos a ver
+
+
+533
+01:02:07.645 --> 01:02:16.655
+Matias Z: lo que quería cerrar. Este era un poco la idea de esta ida y vuelta. Es un A
+
+
+534
+01:02:16.995 --> 01:02:20.325
+Matias Z: para repasar un poquito que
+
+
+535
+01:02:20.475 --> 01:02:35.174
+Matias Z: el mensaje del usuario en en lenguaje natural sea el L. M. El la única responsabilidad del L. M. S. Tratar de interpretar la intención del usuario. Y en función de eso y de la lista de herramientas que tiene y que conoce
+
+
+536
+01:02:35.325 --> 01:02:40.075
+Matias Z: por el dock string de esas funciones de Python
+
+
+537
+01:02:40.775 --> 01:02:44.874
+Matias Z: decide cuál de ellas utilizar. ¿le pasa al Runner?
+
+
+538
+01:02:45.834 --> 01:02:50.315
+Matias Z: ¿cuál de las herramientas quieres utilizar y
+
+
+539
+01:02:51.595 --> 01:03:01.055
+Matias Z: mediante algo llamado Fangsung Call, que no, no lo vamos a ver ahora. El Runner va a interceptar. Esto ejecuta la función de Python real. Le manda el resultado al modelo
+
+
+540
+01:03:01.195 --> 01:03:12.224
+Matias Z: como un nuevo turno. Todo esto va quedando grabado en una lista de eventos que lo vamos a ver en las sesiones, Y recién ahí el modelo genera la respuesta correcta
+
+
+541
+01:03:12.795 --> 01:03:16.405
+Matias Z: para devolver al al usuario esto esta ida y vuelta se llama básicamente
+
+
+542
+01:03:17.565 --> 01:03:20.634
+Matias Z: Tul Kohling. Loops. Si Si quieren recordar el concepto.
+
+
+543
+01:03:20.735 --> 01:03:25.755
+Matias Z: lo que les puedo decir es en esta invocación que hicimos. Fíjense que no llamó a ninguna de las herramientas.
+
+
+544
+01:03:25.975 --> 01:03:35.395
+Matias Z: si si si les sirve de algo como para entender el modelo, efectivamente decidió correctamente que ninguna de las herramientas respondía a la a la educación, a la al al Acueri del usuario.
+
+
+545
+01:03:36.695 --> 01:03:38.375
+Matias Z: Ok.
+
+
+546
+01:03:39.205 --> 01:03:41.914
+Matias Z: Qué otro ejemplo tengo para mostrarles ya mismo.
+
+
+547
+01:03:42.355 --> 01:03:42.965
+Juan Franco Echeverria: Mhm.
+
+
+548
+01:03:43.365 --> 01:03:47.275
+Matias Z: Salida estructurada. Ok, esto es importante.
+
+
+549
+01:03:47.845 --> 01:03:50.315
+Juan Franco Echeverria: En la
+
+
+550
+01:03:52.275 --> 01:03:55.605
+Matias Z: De la bien.
+
+
+551
+01:03:55.605 --> 01:03:56.285
+Juan Franco Echeverria: Mhm.
+
+
+552
+01:04:00.165 --> 01:04:15.605
+Matias Z: Ok, Hasta acá. Tenemos salida. El texto del modelo en texto libre que está bien para un chat, pero es un problema. Si, por ejemplo, la salida de un agente tiene que ser el input de otro modelo, otro componente de otro programa de otro agente
+
+
+553
+01:04:16.305 --> 01:04:19.984
+Matias Z: o de otra función o de otro en su pizarra.
+
+
+554
+01:04:20.295 --> 01:04:27.994
+Matias Z: Este entonces texto libre implica parcial con expresiones regulares. Tratar de usar algún tipo de horística
+
+
+555
+01:04:28.425 --> 01:04:30.085
+Matias Z: y tratar de que funcione.
+
+
+556
+01:04:30.275 --> 01:04:34.484
+Matias Z: Lo interesante de de cada es que.
+
+
+557
+01:04:34.945 --> 01:04:38.914
+Matias Z: y no solamente acá en general, van a ver. Este tipo de de
+
+
+558
+01:04:40.325 --> 01:04:49.264
+Matias Z: de bibliotecas utilizadas en diferentes frameworks permite acá permite forzar la salida. Y la entrada
+
+
+559
+01:04:50.095 --> 01:04:56.374
+Matias Z: de un modelo utilizando algo llamado Pidantic. ¿alguien conoce Paidantic y me quiere contar de qué se trata.
+
+
+560
+01:05:00.595 --> 01:05:05.345
+Nahuel Civico: Lo vimos el otro día, pero no recuerdo exactamente. Era algo para estructurar
+
+
+561
+01:05:05.645 --> 01:05:09.034
+Nahuel Civico: una librería de Python para estructurar los datos, algo así.
+
+
+562
+01:05:10.825 --> 01:05:13.944
+Matias Z: Bien algo Charlamos entonces
+
+
+563
+01:05:19.695 --> 01:05:21.284
+Matias Z: y como Pait.
+
+
+564
+01:05:21.285 --> 01:05:28.154
+Gustavo Narcisi: Soporta cualquier cosa en parámetros. Esto es como una manera de forzar un lenguaje tipado.
+
+
+565
+01:05:29.315 --> 01:05:44.395
+Matias Z: Ok, Ahí va. Nos vamos acercando una definición un poquito más técnica. Este Python está en el otro extremo del del del espectro de lenguajes entre fuertemente equipado y tipado dinámico. Entonces, como no tenemos ningún tipo de seguridad de tipo, como se llama
+
+
+566
+01:05:44.515 --> 01:05:50.294
+Matias Z: paradigmas del lenguaje de programación. Lo utilizamos. Son estos hacks
+
+
+567
+01:05:50.865 --> 01:06:05.744
+Matias Z: como Payantic, que hace un suerte de de verificación en este caso en tiempo de ejecución. ¿y por qué es importante? Bueno escuchar hablar de Ce. Hablamos de Ceve el otro día. Justamente, lo que tiene es que de alguna manera
+
+
+568
+01:06:06.145 --> 01:06:10.274
+Matias Z: introduce la noción de la salida ya tipada
+
+
+569
+01:06:10.605 --> 01:06:21.894
+Matias Z: muchas veces, Cuando queremos comunicar 2 agentes, cuando queremos comunicar una un Lm con con una Tul con una función con un City Deserver. No queremos salir en texto libre, porque es un peligro.
+
+
+570
+01:06:22.245 --> 01:06:34.205
+Matias Z: porque muchas veces los agentes alucinan porque muchas veces es muy difícil, parcial, esa salida en extendida. Entonces nos interesa mucho más que saque un Jason que ya tenga los campos correctos con los parámetros correctos
+
+
+571
+01:06:35.045 --> 01:06:46.624
+Matias Z: para adelante. Es una manera de decirle a nuestra gente: queremos que tu entrada o tu salida tengas esta forma. Y se lo interesante de esto es que se verifica que la entrada y la salida tenga esa forma. Efectivamente
+
+
+572
+01:06:47.005 --> 01:06:56.404
+Matias Z: es otra medida de seguridad si quieres no tanto por una cuestión de vector de ataque, sino por negligencia, por ejemplo, a la hora de implementar diferentes componentes.
+
+
+573
+01:06:56.865 --> 01:06:57.965
+Matias Z: En
+
+
+574
+01:07:03.505 --> 01:07:07.165
+Matias Z: entonces que nos da pie de qué es validación automática.
+
+
+575
+01:07:07.565 --> 01:07:22.435
+Matias Z: Sí, nos permite incluso serializar desde Json o hacia Jason y generación automática de esquemas Shason a partir de una clase particular que utilicemos. Y ahora vamos a ver ejemplos de esto para que no suenen tan abstra.
+
+
+576
+01:07:22.945 --> 01:07:25.174
+Matias Z: ¿por qué le importa esto a Adicae?
+
+
+577
+01:07:27.245 --> 01:07:33.095
+Matias Z: Porque podemos empezar a utilizar en el un nuevo tipo de atributo.
+
+
+578
+01:07:42.865 --> 01:07:43.705
+Matias Z: por ejemplo.
+
+
+579
+01:07:45.715 --> 01:07:51.535
+Matias Z: Bueno, en este caso, fíjense que ya estamos hablando de 2 agentes que
+
+
+580
+01:07:51.865 --> 01:08:03.394
+Matias Z: tienen 2 características nuevas que creo que no hemos visto. Una de ellas es la salida estructurada y la otra es el compartir información mediante el el la sesión, el estado de la sesión. Particularmente
+
+
+581
+01:08:05.035 --> 01:08:15.394
+Matias Z: lo que ven acá es la instanciación de 2 agentes y, entre otras cosas, lo que van a encontrar son los nuevos atributos, inputs, kima y output Skima.
+
+
+582
+01:08:15.835 --> 01:08:21.305
+Matias Z: Esos atributos son básicamente distanciaciones de
+
+
+583
+01:08:21.885 --> 01:08:28.855
+Matias Z: esquemas en Jason, que las implementamos con pidantic que es una biblioteca nuevamente de Python que hace esta esta verificación.
+
+
+584
+01:08:31.255 --> 01:08:39.344
+Matias Z: Es un poco técnico y puede ser, pero se entiende o alguien está como súper perdido.
+
+
+585
+01:08:41.665 --> 01:08:42.635
+Matias Z: Me avisan
+
+
+586
+01:08:44.595 --> 01:08:49.395
+Matias Z: si si si es necesario. Yo creo que los ejemplos lo van a lo vamos a ver mucho más claramente. Sí.
+
+
+587
+01:08:51.045 --> 01:08:55.035
+Matias Z: Genial, genial, mucho deditos para lo mío en.
+
+
+588
+01:08:58.065 --> 01:09:07.464
+Matias Z: Fíjese problem análisis por problemas de la iser perdón, problem, análisis, mejor dicho.
+
+
+589
+01:09:07.725 --> 01:09:17.125
+Matias Z: es esta clase que construimos siempre en variante, Normalmente, cuando construimos una clase, la heredamos de la superclase o la clase, padre
+
+
+590
+01:09:17.545 --> 01:09:24.425
+Matias Z: béisbol que básicamente se utiliza como
+
+
+591
+01:09:24.555 --> 01:09:37.025
+Matias Z: Justamente este tipo que no, no podemos asegurar en tiempo de compilación en Python, por lo menos, o sea, por el análisis, es el contrato de salida del primer agente. Vamos a pensarlo como contratos.
+
+
+592
+01:09:37.245 --> 01:09:40.075
+Matias Z: Tal vez esa palabra sea un poquito más fácil de digerir.
+
+
+593
+01:09:41.925 --> 01:09:52.165
+Matias Z: Pensemoslo como contrato contrato de entrada, contrato de salida. Tenemos que asegurar que la entrada y la salida nuestros agentes tengan determinadas Este características. Determinadas formas.
+
+
+594
+01:09:53.615 --> 01:09:56.185
+Matias Z: determinados tipos, los campos.
+
+
+595
+01:09:56.285 --> 01:09:57.265
+Matias Z: Entonces.
+
+
+596
+01:10:06.335 --> 01:10:13.195
+Matias Z: si lo vemos, estoy buscando una cantidad de ventanas abiertas que no les puedo olvidar.
+
+
+597
+01:10:13.855 --> 01:10:23.315
+Matias Z: debería cerrarlas antes del curso. Si lo vemos en acá. Estamos ya
+
+
+598
+01:10:24.025 --> 01:10:34.764
+Matias Z: Bien, recuerden que esto está en repo. Pueden mirar tranquilo objetivo. Cómo funciona de nuevo los pasos.
+
+
+599
+01:10:35.975 --> 01:10:37.655
+Matias Z: ¿cómo correrlo? Sí,
+
+
+600
+01:10:37.875 --> 01:10:43.185
+Matias Z: digo porque ahora lo pasamos medio rápido, pero estaría bueno que lo puedan revisar si tienen tiempo.
+
+
+601
+01:10:46.345 --> 01:10:52.425
+Matias Z: Entonces, si lo vemos en el código fuente del ejemplo que vamos a ver ahora en Adica Web en
+
+
+602
+01:10:52.535 --> 01:10:58.894
+Matias Z: el primer agente es nazisen que se llama problem analizar.
+
+
+603
+01:10:59.905 --> 01:11:03.345
+Matias Z: Nos resuelve todos los problemas que tengamos en la vida.
+
+
+604
+01:11:05.245 --> 01:11:11.174
+Matias Z: Fíjense lo que es la distanciación de la gente. Son deliberadamente sencillos. Estos agentes.
+
+
+605
+01:11:11.465 --> 01:11:17.414
+Matias Z: o sea, son especialmente gordos, básicamente porque la idea es intentar enfocarnos en cada ejercicio
+
+
+606
+01:11:17.835 --> 01:11:22.974
+Matias Z: en el tema que estamos viendo en este momento, ¿sí? En este momento estamos viendo que son los esquemas de entrada y de salida.
+
+
+607
+01:11:24.005 --> 01:11:28.305
+Matias Z: Entonces acá vemos que tiene además de nombre modelo e instrucción.
+
+
+608
+01:11:29.185 --> 01:11:34.714
+Matias Z: tiene una un esquema de salida que es un esquema de salida, Es una instancia
+
+
+609
+01:11:34.905 --> 01:11:38.724
+Matias Z: que nos da a Identi y que nos permite asegurar que la salida
+
+
+610
+01:11:39.155 --> 01:11:41.665
+Matias Z: de ese agente va a tener esa forma.
+
+
+611
+01:11:50.035 --> 01:11:57.405
+Matias Z: Ahora vemos otro atributo nuevo que no habíamos visto que es outbootkin.
+
+
+612
+01:11:58.405 --> 01:12:02.375
+Matias Z: ¿se acuerdan algo? ¿quién mencionamos a upput King en la primera en la segunda clase perdón
+
+
+613
+01:12:06.895 --> 01:12:09.155
+Matias Z: si no se los recuerdo muy rápidamente.
+
+
+614
+01:12:09.155 --> 01:12:13.465
+Daniel Sosa: Como un parámetro profe, ¿no? Para otro agente. Es como una entrada.
+
+
+615
+01:12:14.185 --> 01:12:21.484
+Matias Z: Bien excelente. Excelente. Excelente. Emm: Lo vamos a ver en detalle en el próximo ejemplo, pero
+
+
+616
+01:12:22.015 --> 01:12:38.425
+Matias Z: quiero que sepan de qué se trata ahora para que no quede ahí como un agente extraño, que básicamente es si pensamos en clave de valor en un diccionario dentro de lo que sería la sesión compartida entre agentes, que es la clave
+
+
+617
+01:12:38.615 --> 01:12:40.774
+Matias Z: de la salida de esta gente.
+
+
+618
+01:12:41.445 --> 01:12:46.574
+Matias Z: y es lo que nos permite que otra gente encuentre esta misma información en la misma sesión compartida.
+
+
+619
+01:12:47.485 --> 01:12:50.284
+Matias Z: Lo vamos a ver en el próximo ejemplo que Se trata justamente de
+
+
+620
+01:12:50.645 --> 01:12:53.175
+Matias Z: de varios agentes compartiendo una sesión.
+
+
+621
+01:12:54.265 --> 01:13:01.644
+Matias Z: Pero, bueno, lo más importante de este ejemplo es el tema de las entradas y las salidas con
+
+
+622
+01:13:02.765 --> 01:13:07.174
+Matias Z: con tipos, con esquemas, básicamente con esquemas validadas variables.
+
+
+623
+01:13:07.395 --> 01:13:13.815
+Matias Z: ¿dónde le decimos a la gente qué tipo de salida queremos en la instrucción.
+
+
+624
+01:13:14.995 --> 01:13:27.615
+Matias Z: ¿dónde está la instrucción de este agente acá? Arriba? Problema. Analizar distractions es no es más que un string y en el Stream estamos diciendo la salida tiene que ser un objeto Jason
+
+
+625
+01:13:28.265 --> 01:13:32.065
+Matias Z: con estos campos ibla.
+
+
+626
+01:13:32.615 --> 01:13:43.235
+Matias Z: Ahora, esto podría estar en el sistema extracción, y el agente podría o no hacerlo, O sea, podría intentar hacerlo incluso sí. Muchas veces lo que pasa es que se lo pedimos en el system prom. Y como
+
+
+627
+01:13:44.565 --> 01:13:59.464
+Matias Z: habrán escuchado las alucinaciones. Le agrega un campo de más o modifica el tipo de un campo, Entonces lo que hacemos con Oputskima es agregar otro componente que no es probabilístico, que es determinista, que es Pailantic.
+
+
+628
+01:13:59.565 --> 01:14:11.154
+Matias Z: tipo un warden pero para el formato de la salida de este agente fundamental cuando la salida se va a utilizar para nuevamente, llamado a funciones, comunicarnos con otros agentes, etcétera.
+
+
+629
+01:14:11.645 --> 01:14:15.974
+Matias Z: Bien, tenemos un agente que resuelve problemas.
+
+
+630
+01:14:22.265 --> 01:14:40.134
+Matias Z: aparentemente, resuelve todo tipo de problemas. Así que si están con temas de psicología, nutricionismo personal trainer financial. Bueno, en general, si tienen, si tienen problemas de cualquier tipo con este ejercicio lo resuelven. Así que les recomiendo que lo miren en detalle
+
+
+631
+01:14:40.935 --> 01:14:42.125
+Matias Z: en.
+
+
+632
+01:14:42.125 --> 01:14:50.354
+Mariano Mondani: Ahí Matis, consulta en el System promp anterior, cuando estaba con la el agente, con el oput esquiva.
+
+
+633
+01:14:50.695 --> 01:15:03.245
+Mariano Mondani: Hay también que nombrar, o conviene nombrar el system prom algo relacionado a ese Jason, o esa parte de como tiene que ser el formato de salida. Ya lo metes solo el Runner, digamos cuando llama.
+
+
+634
+01:15:04.895 --> 01:15:05.415
+Matias Z: En general.
+
+
+635
+01:15:05.415 --> 01:15:07.325
+Mariano Mondani: Como redundante, digamos.
+
+
+636
+01:15:09.365 --> 01:15:12.255
+Matias Z: Perdón redundante. ¿cómo.
+
+
+637
+01:15:12.255 --> 01:15:18.794
+Mariano Mondani: No porque estás hablando en el system prom que tiene que ser en formato. Json: Y además estás usando el parámetro de autoestima.
+
+
+638
+01:15:19.225 --> 01:15:23.735
+Matias Z: Claro, pero cumple 2 funciones distintas. Está bien la pregunta. Mi copa
+
+
+639
+01:15:24.155 --> 01:15:32.084
+Matias Z: acá le estás sugiriendo existe, pero no es más que una sugerencia, como se deben imaginar, no es más que una sugerencia que le estamos haciendo a nuestro
+
+
+640
+01:15:32.585 --> 01:15:52.294
+Matias Z: modelo auto regresivo que va prediciendo el siguiente token. Acá le está sugiriendo. Le está diciendo, mira, yo soy el jefe. Te sugiero que lo hagas de esta manera hacelo de esta manera, porque necesito grabada de esta manera. De cualquier manera, la soluciones en este tipo de de respuestas existen y existen muchos. Entonces acá le pedimos que
+
+
+641
+01:15:52.785 --> 01:15:57.765
+Matias Z: que la salida tenga este formato acá verificando pua
+
+
+642
+01:15:58.585 --> 01:16:05.305
+Matias Z: actualmente contra un componente no determinista que ese formato es respetado.
+
+
+643
+01:16:06.095 --> 01:16:12.584
+Matias Z: Entonces, esto estamos como un algoritmo tradicional. Si la salida de la gente no repite ese formato, te dispara una excepción.
+
+
+644
+01:16:13.975 --> 01:16:16.824
+Mariano Mondani: O te comes retrais. Si le configuras, te retrais.
+
+
+645
+01:16:17.405 --> 01:16:22.005
+Matias Z: Bueno, depende si el copiloto retrais o no tal cual viene ahí, excelente.
+
+
+646
+01:16:22.175 --> 01:16:22.875
+Mariano Mondani: Okay.
+
+
+647
+01:16:23.055 --> 01:16:29.045
+Mariano Mondani: se lo tenés que explicar en el sistema si no, no le va a obligar nunca a esa a esa validación.
+
+
+648
+01:16:29.045 --> 01:16:33.745
+Matias Z: No claro totalmente. De hecho, normalmente lo que se pone en el sistema son ejemplos.
+
+
+649
+01:16:33.745 --> 01:16:34.425
+Mariano Mondani: Claro.
+
+
+650
+01:16:34.985 --> 01:16:42.585
+Matias Z: Si quieres ser todavía más preciso y tener más probabilidades de que de que lee el M a modo de Fiushot.
+
+
+651
+01:16:42.705 --> 01:16:59.984
+Matias Z: examble viste, se suele poner ejemplos, pero está muy bien la pregunta. Acá Lo que tenés es una sugerencia que le haces al modelo. El resultado de esa sugerencia va a ser probabilística, Lo que no va a hacer probabilístico va a ser la validación de que la salida
+
+
+652
+01:17:00.485 --> 01:17:03.354
+Matias Z: se verifique con Bay D. Andy.
+
+
+653
+01:17:05.425 --> 01:17:07.815
+Matias Z: Hay, digamos que no hay.
+
+
+654
+01:17:09.755 --> 01:17:25.405
+Matias Z: no hay ningún proceso estocástico haciendo que nuestro programa funcione o no funciona. Ahora, el anal el analiser es 1 de los agentes. El segundo agente que teníamos por acá. Era el Advice Generator Ation.
+
+
+655
+01:17:25.825 --> 01:17:29.944
+Matias Z: Uno analiza el problema y el otro genera la
+
+
+656
+01:17:30.515 --> 01:17:37.424
+Matias Z: el Consejo. Claro, la salida del primero que analiza el problema.
+
+
+657
+01:17:38.495 --> 01:17:50.944
+Matias Z: recuerdan que era problem análisis bien. Fíjense que definitivamente se está comunicando con otro agente que tiene otra función. La entrada de ese segundo agente definitivamente va a tener que tener este esquema
+
+
+658
+01:17:57.875 --> 01:17:59.034
+Matias Z: se entiende.
+
+
+659
+01:18:03.505 --> 01:18:06.314
+Valentina Da Silva: Y dónde está Santiago de la parte que se comunica?
+
+
+660
+01:18:06.555 --> 01:18:10.084
+Valentina Da Silva: En qué parte queda queda claro en el código que se comunicarán.
+
+
+661
+01:18:10.445 --> 01:18:20.554
+Matias Z: Clarísimo. Bien, ahora lo vamos a ver en detalle, y no es el ejemplo de justamente
+
+
+662
+01:18:20.925 --> 01:18:26.814
+Matias Z: que que visualiza ese ese tema, pero lo vamos a explicar ahora por tu pregunta.
+
+
+663
+01:18:27.805 --> 01:18:30.015
+Matias Z: Cuando tenés 2 agentes que estás invocando.
+
+
+664
+01:18:30.135 --> 01:18:35.015
+Matias Z: como en este caso, en paralelo, en qué va.
+
+
+665
+01:18:35.155 --> 01:18:41.465
+Matias Z: No sé, me gusta, o sea, cuando tienes 2 agentes que estás invocando en paralelo con A, D, K.
+
+
+666
+01:18:42.785 --> 01:18:44.085
+Matias Z: Y
+
+
+667
+01:18:44.675 --> 01:18:51.514
+Matias Z: y no especificas, nada con respecto a qué tipo de topología quieres utilizar si quieres o no aislar los contextos?
+
+
+668
+01:18:52.465 --> 01:19:05.774
+Matias Z: Sí, Sí, ¿Qué ¿Qué parte del contexto querés compartir y qué parte No querés compartir. Si querés que utilicen sesiones distintas. Todo eso lo vamos a ir viendo a medida que avance el curso, ¿verdad? Hoy, lo que estamos viendo son 2 agentes que estamos como como
+
+
+669
+01:19:05.885 --> 01:19:11.894
+Matias Z: instanciando con atributos por defecto, una única sesión.
+
+
+670
+01:19:13.065 --> 01:19:17.655
+Matias Z: En este caso la implementamos como una sesión de memoria. Tiene un atributo. Estado.
+
+
+671
+01:19:17.825 --> 01:19:21.165
+Matias Z: Ese atributo está o se implementa como un diccionario en Python.
+
+
+672
+01:19:21.305 --> 01:19:27.354
+Matias Z: y ese diccionario de Python tiene estas entradas con clave de valor que habíamos mencionado. De acuerdo.
+
+
+673
+01:19:28.575 --> 01:19:36.464
+Matias Z: Ok, el primer agente va a ir guardando en ese atributo Session State
+
+
+674
+01:19:36.975 --> 01:19:47.484
+Matias Z: con esta clave que mencionamos como Output, que, como 1 de los atributos del primer agente. ¿se acuerdan Ahora lo vemos en el en el en el código.
+
+
+675
+01:19:47.775 --> 01:19:54.275
+Matias Z: Y el segundo agente va a ir a buscar esa sesión State. Cualquier entrada que tenga está aquí,
+
+
+676
+01:19:56.575 --> 01:19:57.694
+Matias Z: es decir.
+
+
+677
+01:19:57.895 --> 01:20:10.835
+Matias Z: en una suerte de de diccionario, donde tenemos entradas clave de valor, lo podemos indexar por clave. El primer agente genera contenido y el segundo lo va a buscar por el nombre de esa clave.
+
+
+678
+01:20:11.305 --> 01:20:13.494
+Matias Z: ¿dónde está especificado que se comunican
+
+
+679
+01:20:13.875 --> 01:20:17.314
+Matias Z: en principio Acá en ningún lado. Mira.
+
+
+680
+01:20:17.475 --> 01:20:23.865
+Matias Z: simplemente estamos diciendo que el problema guarde sus resultados como
+
+
+681
+01:20:24.865 --> 01:20:27.814
+Matias Z: como salía en esa sesión con esta out Key.
+
+
+682
+01:20:28.565 --> 01:20:33.595
+Matias Z: la aquí con la cual vas a indexar el diccionario Python pragmático.
+
+
+683
+01:20:33.595 --> 01:20:36.635
+Gustavo Narcisi: Volviendo un poquito a la apetencia que tenía recién
+
+
+684
+01:20:37.485 --> 01:20:42.365
+Gustavo Narcisi: ahí. Uno estaba como que estabas instanciando un agente secuencial.
+
+
+685
+01:20:43.115 --> 01:20:51.415
+Gustavo Narcisi: Entonces Lo que yo interpreto es que se ejecuta primero 1 y después se ejecuta el otro como automáticamente. No, no es que elige cuál la gente usar.
+
+
+686
+01:20:52.075 --> 01:20:57.735
+Matias Z: No llegamos todavía claro, no llegamos todavía al final del recorrido.
+
+
+687
+01:20:58.145 --> 01:21:01.314
+Matias Z: por lo cual está bien la la duda.
+
+
+688
+01:21:06.835 --> 01:21:08.715
+Matias Z: Si quieres? Vamos directamente a eso?
+
+
+689
+01:21:09.575 --> 01:21:12.365
+Gustavo Narcisi: No yo por la pregunta que hizo Valentina Krov.
+
+
+690
+01:21:12.805 --> 01:21:18.245
+Matias Z: Ah, Perfecto. ¿dónde está? ¿cómo se comunican? Bien, lo que tenemos acá? Es
+
+
+691
+01:21:18.785 --> 01:21:32.994
+Matias Z: básicamente un tipo de template que se utilizaba en la de cada 1. No quisiera hacer mucho hincapié en esto porque están deprecados lamentos que estén en el ejemplo, pero es la manera más sencilla de incorporar para
+
+
+692
+01:21:33.295 --> 01:21:49.775
+Matias Z: los más nuevos, incorporar la idea de agentes secuenciales paralelos y basados en Lux todavía funcionan en la de K. Dos funcionan cuando sirven para resolver el problema. Utilícenlos Sepan que todo esto se está migrando a un mundo de de grafos
+
+
+693
+01:21:49.905 --> 01:21:54.394
+Matias Z: más similar a Lanchen landgraft perdón.
+
+
+694
+01:21:55.365 --> 01:21:58.794
+Matias Z: H Adou. Básicamente es una versión similar al Land Graf
+
+
+695
+01:21:59.005 --> 01:22:07.595
+Matias Z: con algunas cuestiones más sencillas. Creo que lo había mencionado en el encuentro pasado y donde dice que se comunican. Ok. Ahora entiendo la pregunta.
+
+
+696
+01:22:08.425 --> 01:22:20.184
+Matias Z: El orden de ejecución en este caso, como es una estructura secuencial, es primero se ejecuta y se ejecuta este agente llamado Problemy selection y después ejecuta el Advice Generated.
+
+
+697
+01:22:22.475 --> 01:22:25.984
+Matias Z: Ese sería el orden de ejecución. Esa sería la orquestación.
+
+
+698
+01:22:28.555 --> 01:22:35.924
+Matias Z: ¿cómo se comunican? Se comunican utilizando la llave compartida en el diccionario
+
+
+699
+01:22:36.025 --> 01:22:45.504
+Matias Z: que implementa el estado de la sesión particular de este ejemplo por ese montón.
+
+
+700
+01:22:46.975 --> 01:22:53.664
+Matias Z: Pero veámoslo si quieren corriendo para que se den cuenta que el ejemplo es en sí
+
+
+701
+01:22:53.835 --> 01:22:57.254
+Matias Z: muy sencillo. Simplemente 2 agentes. Si lo encontramos.
+
+
+702
+01:22:59.005 --> 01:23:02.935
+Matias Z: acá está, ¿qué preguntas le puedo hacer? No sé cómo organizar.
+
+
+703
+01:23:04.765 --> 01:23:08.215
+Matias Z: No sé qué hacer con mi vida. Me gusta más.
+
+
+704
+01:23:11.045 --> 01:23:12.754
+Matias Z: Las otras son muy fáciles.
+
+
+705
+01:23:13.505 --> 01:23:15.075
+Matias Z: Lo sigue así con mi vida.
+
+
+706
+01:23:16.225 --> 01:23:20.994
+Matias Z: Okay, me la juego acá. ¿ Puede explotar
+
+
+707
+01:23:23.215 --> 01:23:27.365
+Matias Z: oca, estás llamando. Está analizando la la Cueri.
+
+
+708
+01:23:28.125 --> 01:23:33.505
+Matias Z: Sí. Fíjense que salió con con la salida. Jason Okay
+
+
+709
+01:23:42.715 --> 01:23:54.274
+Matias Z: y la salida. Consultad Live Coach Ok llama llaman directamente al Life Coach.
+
+
+710
+01:23:57.295 --> 01:24:02.745
+Matias Z: Está difícil para leer. Así Me olvidó los anteojos.
+
+
+711
+01:24:04.205 --> 01:24:09.615
+Matias Z: No sé si llegan a leer. Pero la un poco. La respuesta está acá.
+
+
+712
+01:24:09.815 --> 01:24:13.715
+Matias Z: En lo que sí me interesa contarles es que
+
+
+713
+01:24:14.055 --> 01:24:17.135
+Matias Z: performance. No se preocupen, no es un problema importante.
+
+
+714
+01:24:18.215 --> 01:24:26.495
+Matias Z: Si me interesa contarles que el tipo de consultor que eligió llamar es el de Life Coach.
+
+
+715
+01:24:26.605 --> 01:24:31.954
+Matias Z: El el tipo de consultor es fundamental porque es el que nos da acá
+
+
+716
+01:24:37.175 --> 01:24:39.945
+Matias Z: básicamente el tipo de respuesta que estamos buscando.
+
+
+717
+01:24:40.505 --> 01:24:45.805
+Matias Z: Mi pregunta fue un poco ambigua. Vamos hacer una pregunta un poco más sencilla. En una nueva sesión
+
+
+718
+01:24:46.015 --> 01:24:47.475
+Matias Z: me fui un poco al trabajo.
+
+
+719
+01:24:49.295 --> 01:24:51.274
+Matias Z: No sé cómo organizar mis finanzas
+
+
+720
+01:25:00.835 --> 01:25:11.274
+Matias Z: bien fainés, aldevisor Hokey A, identifica el problema. Ok.
+
+
+721
+01:25:15.475 --> 01:25:23.674
+Matias Z: Y hace su pregunta, su financiación de ofender genial perfecto.
+
+
+722
+01:25:25.515 --> 01:25:34.385
+Matias Z: Un poco. La idea es mostrarles que tenemos templates, que no son agentes que se invocan. Si bien se invocan en
+
+
+723
+01:25:37.075 --> 01:25:49.015
+Matias Z: de manera secuencial la manera de implementarlos en el código. La forma más sencilla de implementarlos en el código es utilizando estos templates, que no son agentes, sino que son básicamente
+
+
+724
+01:25:49.275 --> 01:25:56.245
+Matias Z: estructuras muy sencillas de orquestación. Tenemos 3 formas de ordenar nuestras
+
+
+725
+01:25:56.505 --> 01:26:01.375
+Matias Z: topologías, multi agentes Cuando utilizamos a Dk. Uno en
+
+
+726
+01:26:01.655 --> 01:26:07.134
+Matias Z: una de ellas es secuencia solution. La otra es paralel atien y la otra es Lux Aison.
+
+
+727
+01:26:07.385 --> 01:26:11.914
+Matias Z: Se los iba a mostrar en la documentación, pero estamos medio cortitos de tiempo.
+
+
+728
+01:26:13.345 --> 01:26:23.675
+Matias Z: Cierro un poco el mapa de cómo se comunica, por qué primero se ejecutan este orden? Segundo, ¿cómo se comunican; tercero, cómo se valía la salida y la entrada estructurada.
+
+
+729
+01:26:24.485 --> 01:26:27.144
+Matias Z: Si me dicen que sí, avanzo al próximo ejemplo.
+
+
+730
+01:26:30.185 --> 01:26:30.805
+Sebastian Langer: Sí.
+
+
+731
+01:26:31.095 --> 01:26:31.665
+Agustin aimale: Bueno.
+
+
+732
+01:26:31.665 --> 01:26:32.335
+Matias Z: Genial, pero.
+
+
+733
+01:26:32.335 --> 01:26:33.355
+Nahuel Civico: Sí avanzó.
+
+
+734
+01:26:33.695 --> 01:26:40.175
+Matias Z: Avancemos, avancemos cualquier duda. Igualmente la la revisemos más adelante.
+
+
+735
+01:26:41.405 --> 01:26:42.285
+Matias Z: Okay.
+
+
+736
+01:26:46.905 --> 01:26:49.014
+Matias Z: No sé cómo organizar mis finanzas.
+
+
+737
+01:26:53.135 --> 01:26:56.995
+Matias Z: Bueno, eso estaba, Bueno, tendría que mostrarlo antes a ver si encuentro. Acá
+
+
+738
+01:27:02.025 --> 01:27:04.385
+Matias Z: Sí, justamente esta es la la
+
+
+739
+01:27:05.705 --> 01:27:08.255
+Matias Z: la arquitectura de lo que acabamos de hacer, no.
+
+
+740
+01:27:09.115 --> 01:27:14.715
+Matias Z: Ahora, lo que vamos a tratar de hacer es intentar comprender un poco mejor cómo es que se conforman.
+
+
+741
+01:27:16.135 --> 01:27:19.985
+Matias Z: digamos, las sesiones, cuando empezamos a ejecutar
+
+
+742
+01:27:20.305 --> 01:27:22.894
+Matias Z: en a D. K, particularmente en adicae k web.
+
+
+743
+01:27:23.415 --> 01:27:25.115
+Matias Z: más de una gente. Y como
+
+
+744
+01:27:25.725 --> 01:27:28.634
+Matias Z: podemos compartir información entre entre diferentes
+
+
+745
+01:27:30.505 --> 01:27:33.844
+Matias Z: agentes utilizando el Estado compartido, ¿verdad?
+
+
+746
+01:27:34.005 --> 01:27:36.605
+Matias Z: Básicamente la introducción ya la hicimos.
+
+
+747
+01:27:40.675 --> 01:27:46.925
+Matias Z: Mhm Bueno, si si no me equivoco.
+
+
+748
+01:27:47.845 --> 01:28:00.714
+Matias Z: en este caso, sería más interesante correrlo en el en la la terminal para que vean cómo se crea una sesión como pasa por un Runner. Justamente acabamos ahora esta sesión de un Runner particular.
+
+
+749
+01:28:00.975 --> 01:28:01.995
+Matias Z: En
+
+
+750
+01:28:04.555 --> 01:28:10.565
+Matias Z: sí, yo creo que va a ser la mejor forma de de verlo, pero para empezar a explicarles un poquito las cosas.
+
+
+751
+01:28:11.415 --> 01:28:15.395
+Matias Z: Sepan esto. El boceto resume la idea central.
+
+
+752
+01:28:15.535 --> 01:28:18.175
+Matias Z: Son 2 sesiones.
+
+
+753
+01:28:19.135 --> 01:28:21.094
+Matias Z: Tenemos historias de eventos
+
+
+754
+01:28:24.365 --> 01:28:34.815
+Matias Z: y en este caso, todo se mantendría aislado. O sea, si estamos utilizando sesiones distintas, todo se mantendría aislado. Lo que vamos a mostrar ahora es que con un Estado compartido.
+
+
+755
+01:28:39.065 --> 01:28:48.584
+Matias Z: Lo que tenemos es la posibilidad de enviar información de un agente a otro y la manera de implementar esto es justamente utilizando
+
+
+756
+01:28:48.735 --> 01:28:52.205
+Matias Z: esta idea de output que habíamos mencionado previamente.
+
+
+757
+01:28:56.815 --> 01:28:58.014
+Matias Z: Les voy a.
+
+
+758
+01:28:58.625 --> 01:29:03.864
+Matias Z: Les quiero dejar esto. Por si se llega esto, la veo difícil.
+
+
+759
+01:29:10.415 --> 01:29:13.685
+Matias Z: Sigan hablando de eso. Difícil, ¿no?
+
+
+760
+01:29:15.135 --> 01:29:19.295
+Matias Z: Sí. Tomémonos 10 s para observarlo.
+
+
+761
+01:29:20.595 --> 01:29:25.854
+Matias Z: Y seguimos entonces me dan un segundo primer baño. Ya ve.
+
+
+762
+01:29:32.365 --> 01:29:37.015
+Lucia Etchart: Tal vez alguno me puede contestar el mientras tanto, si quieren.
+
+
+763
+01:29:39.185 --> 01:29:44.665
+Lucia Etchart: ¿por qué, para tal vez me estoy adelantando y después lo corre a la gente de marketing.
+
+
+764
+01:29:45.145 --> 01:29:46.865
+Lucia Etchart: Pero
+
+
+765
+01:29:47.455 --> 01:29:55.644
+Lucia Etchart: vi que no tiene inputs Kima, Nin Ninguno de los agentes que van des como secuen 1 después del otro
+
+
+766
+01:29:56.305 --> 01:29:57.735
+Lucia Etchart: y que
+
+
+767
+01:29:59.485 --> 01:30:09.805
+Lucia Etchart: la instrucción está en lenguaje natural. Le dice tipo Che, toma como input l el output de tu amigo, pero está escrito. Es como que no hay un input esquima
+
+
+768
+01:30:10.565 --> 01:30:12.295
+Lucia Etchart: alguno. Sabe por qué.
+
+
+769
+01:30:12.295 --> 01:30:21.534
+Gustavo Gagliardi: Porque es un agente orquestador. O sea que básicamente lo que hacía era entender la intención de que necesitaba qué buscaba.
+
+
+770
+01:30:22.025 --> 01:30:31.345
+Gustavo Gagliardi: Y como con ese string que tiene cada gente que hace, va buscando y saber quién es el que me resuelve, lo que yo le necesito.
+
+
+771
+01:30:31.545 --> 01:30:37.185
+Gustavo Gagliardi: y la gente A, B, C, D, cuál de esos su agente, ese y le manda a consulta a ese.
+
+
+772
+01:30:37.635 --> 01:30:43.764
+Gustavo Gagliardi: Por eso es texto. Necesita un esquema de entrada o salida, porque es todo un choclo de texto.
+
+
+773
+01:30:45.575 --> 01:30:56.555
+Lucia Etchart: okay. O sea que no es que corre todo a mí. Yo, las consultas que me van a reemplazar, me pareció que corría todo, sí o sí, tipo como.
+
+
+774
+01:30:56.555 --> 01:30:59.294
+Gustavo Gagliardi: Pero depende de lo que vos le preguntas
+
+
+775
+01:30:59.405 --> 01:31:09.044
+Gustavo Gagliardi: o puede consultar a 1 a 2. Y este orquestador junta y arma. La respuesta final con lo que recibió de los otros Su agentes.
+
+
+776
+01:31:09.845 --> 01:31:15.485
+Gustavo Gagliardi: El que orquesta hace eso entiende, deriva, Consolida y muestra.
+
+
+777
+01:31:18.715 --> 01:31:20.335
+Lucia Etchart: Muchísimas gracias. Gustavo.
+
+
+778
+01:31:21.215 --> 01:31:22.674
+Matias Z: Superclaro. Gracias.
+
+
+779
+01:31:23.255 --> 01:31:23.605
+Lucia Etchart: Mhm.
+
+
+780
+01:31:23.605 --> 01:31:24.715
+Gustavo Gagliardi: Es, hay.
+
+
+781
+01:31:25.785 --> 01:31:27.264
+Lucia Etchart: Era una trampa.
+
+
+782
+01:31:27.365 --> 01:31:28.235
+Gustavo Gagliardi: A la.
+
+
+783
+01:31:28.635 --> 01:31:32.335
+Matias Z: Sí, Sí, no, no, Muy Bueno, Muy bueno. Genial.
+
+
+784
+01:31:32.495 --> 01:31:33.565
+Matias Z: Muy bueno.
+
+
+785
+01:31:34.585 --> 01:31:36.344
+Matias Z: Los escuchaba con una sonrisa
+
+
+786
+01:31:36.465 --> 01:31:44.164
+Matias Z: este okay. Vamos a ver rápidamente el ejemplo de agentes y sesiones. ¿cómo se implementa esto?
+
+
+787
+01:31:46.345 --> 01:31:48.625
+Matias Z: Mhm: En
+
+
+788
+01:31:53.355 --> 01:31:54.525
+Matias Z: No, este. No me gusta.
+
+
+789
+01:32:00.125 --> 01:32:04.634
+Matias Z: Vamos a usar la campaña de marketing para ver.
+
+
+790
+01:32:07.795 --> 01:32:09.595
+Matias Z: Wiki. Este me gusta más.
+
+
+791
+01:32:09.705 --> 01:32:18.655
+Matias Z: Ok, Bien, a ver qué tenemos acá en
+
+
+792
+01:32:23.585 --> 01:32:25.925
+Matias Z: primero.
+
+
+793
+01:32:27.105 --> 01:32:29.714
+Matias Z: Digamos, Yo creo que sería mejor
+
+
+794
+01:32:34.765 --> 01:32:43.324
+Matias Z: mostrarles el archivo donde están las instrucciones de cada 1 de los agentes. Lo que vamos a ver ahora es este ejemplo. Déjenme que lo graficamos, porque me parece que va a ser más
+
+
+795
+01:32:43.535 --> 01:32:50.075
+Matias Z: intuitivo mirar el ejemplo tuqui
+
+
+796
+01:32:50.845 --> 01:32:58.805
+Matias Z: ahí. Pero vamos a ver si es este ejemplo, que es un poquito más complejo, pero no es nada más que extender la misma idea que vimos previamente.
+
+
+797
+01:33:02.415 --> 01:33:05.205
+Matias Z: Se imaginarán que simplemente lo que hacemos es
+
+
+798
+01:33:09.775 --> 01:33:24.535
+Matias Z: implementar diferentes especialistas. Podemos decirles, cada 1 con con sus instrucciones particulares, con su nombre particular y con su con su output específico.
+
+
+799
+01:33:24.995 --> 01:33:27.374
+Matias Z: Sí, son sus agentes.
+
+
+800
+01:33:29.145 --> 01:33:31.225
+Matias Z: Sí, en
+
+
+801
+01:33:31.815 --> 01:33:39.645
+Matias Z: ahora vamos a ver exactamente qué hace cada 1, Pero un poco, la idea es de estos 5 su agentes un poco. La idea es que tengamos un orquestador
+
+
+802
+01:33:40.615 --> 01:33:47.605
+Matias Z: que, una vez más, de manera secuencial, va desembocando a sus agentes.
+
+
+803
+01:33:47.905 --> 01:33:52.525
+Matias Z: Entonces, perdón. Este es un detalle que no les comenté.
+
+
+804
+01:33:53.445 --> 01:33:56.455
+Matias Z: Ha de cada 1. Nos pide
+
+
+805
+01:33:56.615 --> 01:34:10.235
+Matias Z: de manera no optativa que tengamos un agente llamado Root Aisen. Esto no lo vamos a ver más en los ejemplos siguientes. Simplemente es un detalle de implementación que tiene que ver con versiones viejas de Adk, 2. Mejor dicho.
+
+
+806
+01:34:10.375 --> 01:34:22.135
+Matias Z: entonces básicamente sabe cómo empezar a ejecutar el el el el programa, la la topología de nuestros de nuestros agentes secuenciales. Lo que tenemos acá es
+
+
+807
+01:34:22.695 --> 01:34:23.935
+Matias Z: a
+
+
+808
+01:34:24.065 --> 01:34:34.155
+Matias Z: un primer agente orquestador que tiene 5 subagentes que se van a ejecutar en orden 1 tras el otro, compartiendo el mismo Estado
+
+
+809
+01:34:34.735 --> 01:34:36.444
+Matias Z: en la misma sesión.
+
+
+810
+01:34:36.855 --> 01:34:44.374
+Matias Z: Básicamente, esto que vemos acá es la pieza de estación, que convierte los 5 agentes independientes en especialistas.
+
+
+811
+01:34:45.505 --> 01:34:51.855
+Matias Z: A esto se le suele llamar pible o worlfo workflow lineal en
+
+
+812
+01:34:53.455 --> 01:35:02.004
+Matias Z: no es más que la instanciación de un template que básicamente toma como una lista de sus agentes y los ejecuta 1 a 1.
+
+
+813
+01:35:02.165 --> 01:35:10.185
+Matias Z: Yo creo que esto se entiende ya no es básicamente una extensión del ejemplo anterior, a modo de
+
+
+814
+01:35:11.175 --> 01:35:18.525
+Matias Z: reforzar un poco la idea de cómo se comunican es que quería mostrarles
+
+
+815
+01:35:23.465 --> 01:35:42.865
+Matias Z: en este archivo instractions. Lo que tienen son las instrucciones de sistema que vamos a dar a cada 1 de los especialistas. No sé si es necesario que las comentemos ahora simplemente para cada 1 de los roles que ocupa cada agente. La idea es darle el sistema extracción apropiado si está en otro archivo simplemente
+
+
+816
+01:35:43.085 --> 01:35:45.695
+Matias Z: para mantener la legibilidad del código.
+
+
+817
+01:35:46.285 --> 01:35:47.355
+Matias Z: No sé.
+
+
+818
+01:35:47.355 --> 01:35:47.945
+Nahuel Civico: A a.
+
+
+819
+01:35:48.295 --> 01:35:58.935
+Lucia Etchart: Esa era mi duda vez, porque en ese en ese file distractions hay una cosa que dice input y 2 puntos y la descripción del input a tomar está en lenguaje natural.
+
+
+820
+01:35:59.085 --> 01:36:05.214
+Lucia Etchart: Creo que no sigo sin entender la diferencia entre eso y el inputs quima que nos habías enseñado. Pero tampoco quiero.
+
+
+821
+01:36:05.215 --> 01:36:10.985
+Matias Z: Lucia viste en el clavo, y era 1 de los temas que quería
+
+
+822
+01:36:12.215 --> 01:36:14.284
+Matias Z: en un ratito. Pero vamos ahora con eso
+
+
+823
+01:36:14.795 --> 01:36:16.685
+Matias Z: contame de nuevo. ¿qué es lo que estás viendo.
+
+
+824
+01:36:18.725 --> 01:36:21.975
+Lucia Etchart: Fila. Diecinueve
+
+
+825
+01:36:23.035 --> 01:36:34.985
+Lucia Etchart: le o 35, vamos con ese. Le estás diciendo hablar? Copyright. ¿de dónde tiene que sacar su Input, que vendría a ser de el agente anterior que elaboró para para eso.
+
+
+826
+01:36:35.325 --> 01:36:37.034
+Matias Z: Excelente. Excelente. Excelente.
+
+
+827
+01:36:37.155 --> 01:36:46.504
+Matias Z: Venga, marca. ¿qué hicimos entonces? La pregunta estaba más que bien, eso se llama interpolación.
+
+
+828
+01:36:46.815 --> 01:36:50.915
+Matias Z: No tiene nada que ver con la función matemática de Interpolar.
+
+
+829
+01:36:51.075 --> 01:36:56.405
+Matias Z: Y quisiera ver si llego a mostrártelo. Si no
+
+
+830
+01:36:57.885 --> 01:37:05.095
+Matias Z: vamos para evitarnos la búsqueda, simplemente lo compartimos nosotros acá mismo.
+
+
+831
+01:37:05.305 --> 01:37:11.135
+Matias Z: La pregunta está muy bien, y de hecho, es una observación bastante aguda.
+
+
+832
+01:37:13.845 --> 01:37:22.715
+Matias Z: ¿vos Solamente le estás sugiriendo en el system Prompt suba gente. ¿de dónde tiene que sacar la entrada
+
+
+833
+01:37:23.385 --> 01:37:29.705
+Matias Z: que va a utilizar Cuando lo colocas en el system pront Eso se llama interpolación.
+
+
+834
+01:37:35.555 --> 01:37:44.574
+Valentina Da Silva: Eso, igual que la pregunta que te que estaba haciendo Lugo es como que acá no estamos poniendo esquemas en los en los agentes como en el otro, porque el esquema y en el otro, si.
+
+
+835
+01:37:45.105 --> 01:37:46.834
+Lucia Etchart: ¿cuál es el Francia o sí.
+
+
+836
+01:37:46.835 --> 01:37:47.165
+Matias Z: No sé.
+
+
+837
+01:37:47.165 --> 01:37:47.745
+Lucia Etchart: Mismo.
+
+
+838
+01:37:48.225 --> 01:37:52.234
+Matias Z: No los esquemas no son obligatorios. Los esquemas son una medida de seguridad.
+
+
+839
+01:37:52.955 --> 01:37:56.384
+Matias Z: no son una indicación de dónde obtener la información.
+
+
+840
+01:37:56.545 --> 01:38:02.895
+Matias Z: el esquema lo que hace es validar que la información que obtenemos sea correcta en términos de formato
+
+
+841
+01:38:03.195 --> 01:38:04.175
+Matias Z: y de tipos.
+
+
+842
+01:38:05.035 --> 01:38:15.644
+Matias Z: Los Aput Keys y los Input Kiss tienen más que ver con dónde encuentro la información y donde dejo la información para que el próximo especialista la encuentre.
+
+
+843
+01:38:15.945 --> 01:38:18.935
+Matias Z: Son como 2 cosas, 2 funciones distintas.
+
+
+844
+01:38:19.975 --> 01:38:27.535
+Matias Z: Yo podría definitivamente, sin utilizar esquemas como en este ejemplo. Sin utilizar esquemas, podría igual utilizar el la
+
+
+845
+01:38:27.755 --> 01:38:29.665
+Matias Z: sí, perdón, dale laguna.
+
+
+846
+01:38:30.445 --> 01:38:34.495
+Nahuel Civico: Yo tengo otra pregunta. No sé si peca de de de tonta esta altura, pero.
+
+
+847
+01:38:35.015 --> 01:38:35.405
+Matias Z: Y cuando.
+
+
+848
+01:38:35.405 --> 01:38:48.534
+Nahuel Civico: Definimos cuando definimos que sea secuencial, no por más que tenemos un orquestador que después se fija en sus en sus subagentes. Si mi consulta es para en la lista secuencial, el último
+
+
+849
+01:38:48.875 --> 01:38:51.995
+Nahuel Civico: tiene que pasar 1 por 1 para ver
+
+
+850
+01:38:52.285 --> 01:38:57.274
+Nahuel Civico: si lo que yo le pregunté machado en el primero, si no pasa a segundo, y así funciona de esa manera?
+
+
+851
+01:38:57.645 --> 01:39:02.565
+Nahuel Civico: ¿o es más, como no es tan com como se dice.
+
+
+852
+01:39:03.065 --> 01:39:05.724
+Nahuel Civico: no es tan costoso ir de 1 a otro.
+
+
+853
+01:39:06.665 --> 01:39:14.265
+Matias Z: No no sé si te sigo con la pregunta, si marchea en qué sentido tiene que ejecutar todos los agentes, al ser secuencial definitivamente sí o sí,
+
+
+854
+01:39:14.585 --> 01:39:16.384
+Matias Z: sí, es una cadena.
+
+
+855
+01:39:17.135 --> 01:39:20.955
+Nahuel Civico: O sea que si yo, si mi sistema
+
+
+856
+01:39:21.185 --> 01:39:25.895
+Nahuel Civico: lo o sea, siempre, el input es más, o sea, como que tiene más probabilidades.
+
+
+857
+01:39:25.895 --> 01:39:40.865
+Gustavo Gagliardi: Igual. No voy acordate que dijo que esto es algo que se está deprecando. No funciona más así secuencial. La gente tiene conocimiento de todos los agentes y que hace cada 1
+
+
+858
+01:39:40.925 --> 01:39:46.565
+Gustavo Gagliardi: busca y ejecuta solo al que necesita para resolver esa actividad.
+
+
+859
+01:39:47.245 --> 01:39:52.105
+Nahuel Civico: Lo mínimo, digamos como para saber a cuál ir.
+
+
+860
+01:39:53.105 --> 01:39:54.165
+Matias Z: No, no, no.
+
+
+861
+01:39:54.485 --> 01:39:58.584
+Gustavo Gagliardi: Si el string, la carta de presentación, digamos, es.
+
+
+862
+01:40:00.125 --> 01:40:01.735
+Matias Z: Mhm.
+
+
+863
+01:40:06.925 --> 01:40:08.085
+Matias Z: A ver.
+
+
+864
+01:40:08.555 --> 01:40:13.035
+Nahuel Civico: Como que a mí me sería más fácil ver el ejemplo andando. Por ejemplo, si le podemos dar Play
+
+
+865
+01:40:13.395 --> 01:40:18.355
+Nahuel Civico: a ese que son de muchos y para dónde va.
+
+
+866
+01:40:18.765 --> 01:40:23.285
+Matias Z: Te lo voy a anticipar. Va a pasar por todos los agentes.
+
+
+867
+01:40:24.425 --> 01:40:29.454
+Matias Z: Cuando vos pones un un Payland o un workflow
+
+
+868
+01:40:29.455 --> 01:40:45.024
+Matias Z: secuencial va a pasar por todos los agentes. Eso no es opcional. Eso ya está predefinido por ¿Cómo armaste el país, o sea, ahí hay. No, no hay ningún tipo de de de de decisión del Lm. Esto tiene que ver con la orquestación. Tiene que ver con cómo
+
+
+869
+01:40:45.505 --> 01:40:47.845
+Matias Z: estructuramos. La
+
+
+870
+01:40:48.095 --> 01:40:53.764
+Matias Z: colaboración entre agentes tiene que ver con lo que vamos a empezar a ver en el módulo 5.
+
+
+871
+01:40:54.855 --> 01:41:07.375
+Matias Z: Lo que estamos usando ahora son estos templates que eran la única manera que teníamos en A. Dk: Uno, no por ahí. Los estoy complicando con con estos términos más más técnicos, pero era la única forma que teníamos una de cada 1 de armar colaboración inteligente.
+
+
+872
+01:41:07.585 --> 01:41:11.325
+Matias Z: Era más parecido a lo que se puede hacer con con con Nancho.
+
+
+873
+01:41:12.675 --> 01:41:17.094
+Matias Z: Hay décadas. Está proponiendo dejar a este tipo
+
+
+874
+01:41:17.345 --> 01:41:26.475
+Matias Z: de templates, perdón en a Dk: 1 lo que tenías eran esos temples que te permitían armar agentes secuenciales, o sea, una lista de su agente secuenciales.
+
+
+875
+01:41:27.245 --> 01:41:29.915
+Matias Z: su agente paralelos y el humo.
+
+
+876
+01:41:30.765 --> 01:41:33.434
+Matias Z: Ahora estamos pasando a este tipo
+
+
+877
+01:41:34.285 --> 01:41:38.115
+Matias Z: de work flows o de topologías donde, por ejemplo, vos.
+
+
+878
+01:41:38.645 --> 01:41:43.495
+Matias Z: una topología secuencial, la armonía con un grafo que sea simplemente un grafo lineal.
+
+
+879
+01:41:44.485 --> 01:41:53.644
+Matias Z: Pero no es que necesariamente o si quieres armar lo que mencionaba el compañero antes, que era tener una lista de especialistas que se van a invocar
+
+
+880
+01:41:54.155 --> 01:41:58.044
+Matias Z: en función de la consulta. Hay armadas un swan.
+
+
+881
+01:41:58.965 --> 01:42:03.805
+Matias Z: un world flow colaborativo, como se le como le dice a de K. Dos: Sí.
+
+
+882
+01:42:07.305 --> 01:42:08.725
+Nahuel Civico: Gracias.
+
+
+883
+01:42:08.725 --> 01:42:19.735
+Matias Z: Hay un espectro que va desde la decisión pura del Ellm de a que su agente voy a invocar en función de lo que me está pidiendo el usuario, por un lado.
+
+
+884
+01:42:21.775 --> 01:42:25.354
+Matias Z: en que es esta.
+
+
+885
+01:42:25.595 --> 01:42:43.754
+Matias Z: o sea, en estos casos, En estos ejemplos vamos a ver exactamente eso. Tenemos un montón de especialistas y vamos a ver cómo, en función de qué cueri hacemos como el agente orquestador va a invocar a un subconjunto de esos especialistas, y eso es dinámico para cada consulta, y eso lo decide el ere el m. El
+
+
+886
+01:42:44.895 --> 01:42:53.225
+Matias Z: Ahora, si vamos a este tipo de topología, donde tenés un work flow implementado como grafo.
+
+
+887
+01:42:53.355 --> 01:42:59.644
+Matias Z: tanto los nodos como las aristas ya predeterminan cuáles son los posibles caminos, los posibles recorridos.
+
+
+888
+01:42:59.895 --> 01:43:08.434
+Matias Z: Y eso no se puede saltear, independientemente de lo que elija el Ldm, o sea acá el ruteo está determinado por la persona que implementa el Working
+
+
+889
+01:43:08.805 --> 01:43:15.315
+Matias Z: acá la decisión de a que sus especialistas se invocan la toma del Ldm.
+
+
+890
+01:43:15.945 --> 01:43:18.454
+Matias Z: Esto es terminalista. Esto es probabilístico.
+
+
+891
+01:43:18.685 --> 01:43:20.965
+Agustin aimale: Eso depende del caso de uso.
+
+
+892
+01:43:22.085 --> 01:43:28.584
+Matias Z: Claro, exactamente claro. Lo que vamos a ver es que qué tipo de work flows, o mejor dicho, topologías.
+
+
+893
+01:43:28.695 --> 01:43:35.675
+Matias Z: algoritmos de orquestación y administración de contexto. Vamos a utilizar que son básicamente 3 pilares de de lo mismo. No.
+
+
+894
+01:43:36.645 --> 01:43:43.314
+Matias Z: cuál de estos 3 vamos a utilizar. Lo vamos a ver en primero, 6 arquetipos puros que vamos a estudiar.
+
+
+895
+01:43:45.865 --> 01:43:51.305
+Matias Z: Probablemente escucharon hablar de Riac Planet Exetuter en
+
+
+896
+01:43:51.995 --> 01:43:58.385
+Matias Z: Acto critic reflection deep Research. Seguramente escucharon hablar de alguno de ellos.
+
+
+897
+01:43:58.695 --> 01:44:06.704
+Matias Z: En Normalmente, en la vida real se ven combinados no solamente quizás 1 combina varios.
+
+
+898
+01:44:07.945 --> 01:44:15.214
+Matias Z: Pero para responder como muy firmemente a lo que estaban preguntando antes, cuando utilizas
+
+
+899
+01:44:15.325 --> 01:44:21.615
+Matias Z: un punn secuencial, se ejecutan 1 por 1, todos los agentes, porque eso se
+
+
+900
+01:44:22.025 --> 01:44:28.345
+Matias Z: escribe de manera estática en el código. Lo decide el humano que decide el diseño de la topología.
+
+
+901
+01:44:28.925 --> 01:44:30.635
+Matias Z: sí es lo que estamos viendo ahora.
+
+
+902
+01:44:34.715 --> 01:44:50.855
+Matias Z: Lo vamos a ver más adelante. No sé, no se enrojen mucho por ahora con esto. Simplemente Ahora, lo que vemos es una lista de llamadas secuenciales. Acá No hay forma de saltearse a ninguno de los agentes. Lo queremos ver en ejecución. Para eso tenemos entonces adeca web
+
+
+903
+01:44:53.715 --> 01:44:55.684
+Matias Z: que nos muestra como el orquestador
+
+
+904
+01:45:00.115 --> 01:45:05.954
+Matias Z: va llamando a cada 1 de sus especialistas. Y lo más importante acá es: tenemos la idea del producto
+
+
+905
+01:45:06.385 --> 01:45:10.464
+Matias Z: en cada 1 de ellos. Lo que tiene es
+
+
+906
+01:45:12.685 --> 01:45:17.445
+Matias Z: un aquí en particular, que es la salida
+
+
+907
+01:45:17.675 --> 01:45:28.025
+Matias Z: del su del especialista anterior y la entrada de especialista siguiente. ¿cómo sabe la siguiente dónde buscarlo? Bueno, como Lucia bien adivinó a través de lo que se pone en el asistente.
+
+
+908
+01:45:28.255 --> 01:45:29.015
+Matias Z: Sí,
+
+
+909
+01:45:29.245 --> 01:45:37.475
+Matias Z: Pero recuerden 2 cosas: la verificación de la entrada y la salida, usando esquemas para Allantic es simplemente una medida de seguridad.
+
+
+910
+01:45:39.485 --> 01:45:49.114
+Matias Z: La forma de compartir información a través del estado de la sesión es simplemente una manera de compartir info nada más de pasarse mensajes entre diferentes gentes.
+
+
+911
+01:45:49.535 --> 01:45:54.825
+Matias Z: Si validamos o no validamos esa info es problema de usar o no usar pedantica.
+
+
+912
+01:45:55.185 --> 01:46:01.505
+Matias Z: Entonces la manera de compartir información entre especialistas es a través de este estado compartido.
+
+
+913
+01:46:01.625 --> 01:46:03.734
+Matias Z: Sí, como vimos en el código.
+
+
+914
+01:46:03.865 --> 01:46:05.445
+Matias Z: nos íbamos a ver en realidad.
+
+
+915
+01:46:05.945 --> 01:46:09.775
+Matias Z: Pero como el compañero prefería verlo corriendo. Yo creo que está buena la idea
+
+
+916
+01:46:11.115 --> 01:46:13.775
+Matias Z: primero ver si funciona, porque honestamente.
+
+
+917
+01:46:16.785 --> 01:46:22.435
+Matias Z: no lo probé hoy, pero podemos hacer campaña de lanzamiento para una app de finanzas personales dirigidas. Bueno.
+
+
+918
+01:46:23.105 --> 01:46:30.585
+Matias Z: un montón okay Okay s que hacer aparte.
+
+
+919
+01:46:30.795 --> 01:46:36.555
+Matias Z: No los probé en español. Yo creo que es ahí está mi error, como son ejemplos que están.
+
+
+920
+01:46:38.825 --> 01:46:40.854
+Lucia Etchart: Corre muy buenísimo.
+
+
+921
+01:46:41.865 --> 01:46:49.664
+Lucia Etchart: Estoy muy, Sí, Sí, lo corrí con otro pedido de algo que tengo que hacer para el laburo, y es increíble lo que hizo.
+
+
+922
+01:46:50.575 --> 01:46:51.665
+Matias Z: Buenísimo.
+
+
+923
+01:46:52.045 --> 01:46:54.994
+Matias Z: Bueno, me alegro acá.
+
+
+924
+01:46:54.995 --> 01:46:55.445
+Lucia Etchart: De un.
+
+
+925
+01:46:55.445 --> 01:46:56.035
+Matias Z: También.
+
+
+926
+01:46:56.035 --> 01:47:10.015
+Lucia Etchart: Lo que me pasó es que, claro, lo lo que yo le pedía tal vez no requerirla de todos los agentes. Por eso, mi pregunta es: ¿qué raro que haya que haya tenido que pasar por todos? Cuando, con mi mi pregunta se resolvía sólo con 1 o 2 de ellos. Pero ahora ya me contestaste.
+
+
+927
+01:47:12.395 --> 01:47:13.165
+Matias Z: Okay
+
+
+928
+01:47:23.155 --> 01:47:33.835
+Matias Z: van viendo como va invocando a cada su agente acá en el grafo verde. A la izquierda, sí.
+
+
+929
+01:47:33.835 --> 01:47:34.615
+Nahuel Civico: Sí.
+
+
+930
+01:47:34.615 --> 01:47:38.985
+Matias Z: Bien, genial, recuerdo Uy, me parece que se va a ver.
+
+
+931
+01:47:39.155 --> 01:47:40.205
+Matias Z: Ahí está.
+
+
+932
+01:47:41.715 --> 01:47:50.295
+Matias Z: Sí, lo observé, no importa eso Les iba mostrando en tiempo real, como
+
+
+933
+01:47:50.915 --> 01:48:00.234
+Matias Z: como iba llamando a cada 1 de los Estados. Digo moviéndose entre la lista de de eventos, si está un poco lento, pero va a funcionar. Ok.
+
+
+934
+01:48:00.475 --> 01:48:11.195
+Matias Z: entrevista dentro con lo que van viendo es cómo va invocando secuencialmente a cada 1 de los de los especialistas. Y la respuesta que da cada especialista. Y como esa respuesta es entrada del próximo, el próximo especialista.
+
+
+935
+01:48:11.605 --> 01:48:17.485
+Matias Z: al terminar, el último. Se supone que el orquestador tiene que haber hecho.
+
+
+936
+01:48:21.825 --> 01:48:23.905
+Matias Z: No, No pura,
+
+
+937
+01:48:24.195 --> 01:48:25.325
+Nahuel Civico: Mhm.
+
+
+938
+01:48:25.515 --> 01:48:26.265
+Matias Z: Mhm.
+
+
+939
+01:48:26.815 --> 01:48:30.065
+Nahuel Civico: Es una locura, o sea, porque 1,
+
+
+940
+01:48:30.355 --> 01:48:33.864
+Nahuel Civico: digamos yo, de toda esta parte como que desconozco, pero
+
+
+941
+01:48:34.465 --> 01:48:49.285
+Nahuel Civico: qué complejo que es, O sea, qué simple parece, pero también qué complejo que es, porque 1 puede armar muchas cosas complejas o simples o capaz que lo simple lo pueda hacer complejo, y puedes perder mucha plata, o tal vez ahorrarte mucha guita si lo haces bien
+
+
+942
+01:48:49.495 --> 01:48:50.675
+Nahuel Civico: y demás.
+
+
+943
+01:48:53.065 --> 01:49:04.904
+Matias Z: Sí sí a ver en es 1 de los ejemplos más sencillos que vamos a ver. Tómenlo como
+
+
+944
+01:49:05.755 --> 01:49:21.544
+Matias Z: como un juego pedagógico. Lo que estamos haciendo hoy no son agentes de ninguna forma. Son agentes que en los cuales se puede confiar que tengan las características de robustez, seguridad de gobernanza necesarias para para poner en producción. Esto no le va a sacar el trabajo, No se preocupe por eso
+
+
+945
+01:49:21.925 --> 01:49:22.815
+Matias Z: en
+
+
+946
+01:49:25.205 --> 01:49:31.045
+Matias Z: Pero lo que sí es verdad que tiene de interesante es empezar a ver lo antes posible en el curso cómo
+
+
+947
+01:49:31.505 --> 01:49:36.695
+Matias Z: tenemos primitivas a ver. Voy a dejar de compartir. Así charlamos un poquito
+
+
+948
+01:49:39.715 --> 01:49:44.335
+Matias Z: en cómo no.
+
+
+949
+01:49:46.185 --> 01:49:50.904
+Matias Z: Sí, me parece interesante empezar a ver lo antes posible en el curso. Cómo
+
+
+950
+01:49:52.645 --> 01:50:01.804
+Matias Z: la noción de de un agente conformado únicamente por solo un l l m rodeado de herramientas es algo que no tiene absolutamente ningún sentido.
+
+
+951
+01:50:01.975 --> 01:50:09.845
+Matias Z: en en particular, perdón. Luego te lo bajaste del rebo y lo ejecutaste localmente.
+
+
+952
+01:50:09.845 --> 01:50:10.435
+Lucia Etchart: Sí.
+
+
+953
+01:50:11.205 --> 01:50:13.395
+Matias Z: Okay, una genia.
+
+
+954
+01:50:14.505 --> 01:50:15.775
+Matias Z: ¿y qué.
+
+
+955
+01:50:15.775 --> 01:50:21.334
+Lucia Etchart: De Claude Code le decía ¿qué tengo que escribir en la terminal para que esto corra y me ayudaba.
+
+
+956
+01:50:21.335 --> 01:50:23.435
+Matias Z: Una genia, una genia, una genial perfecta.
+
+
+957
+01:50:24.155 --> 01:50:27.725
+Matias Z: o si no decide que di que directamente te lo ejecute. Muchas veces.
+
+
+958
+01:50:27.725 --> 01:50:28.305
+Lucia Etchart: No es.
+
+
+959
+01:50:28.305 --> 01:50:28.895
+Matias Z: Al final.
+
+
+960
+01:50:28.895 --> 01:50:33.164
+Lucia Etchart: Y dije, no quiero aprender. Quiero entender que tengo que hacer para que esto corra.
+
+
+961
+01:50:33.165 --> 01:50:39.085
+Matias Z: Buenísimo, buenísimo. Me alegra un montón que tengas esa curiosidad y que que te pongas esas pilas en
+
+
+962
+01:50:40.925 --> 01:50:44.585
+Matias Z: son son ejemplos de juguetes. Eso lo que quiero decir, Básicamente, el como
+
+
+963
+01:50:44.925 --> 01:50:49.345
+Matias Z: conclusión me quedo con la mitad de los ejemplos todavía, pero
+
+
+964
+01:50:52.015 --> 01:50:57.895
+Matias Z: me gustaría primero aclarar esto son ejemplos de juguetes. No tienen prácticamente ninguna de las características.
+
+
+965
+01:50:58.005 --> 01:51:02.904
+Matias Z: Lo que nosotros consideramos agentes como para poner en producción.
+
+
+966
+01:51:03.165 --> 01:51:16.004
+Matias Z: pero sí es importante empezar a ver desde un principio. Como Como con Adk, podemos conquistar muy fácilmente diferentes modelos, diferentes, agentes diferentes, tours. Lo que vamos a ver a partir de el encuentro que viene
+
+
+967
+01:51:17.045 --> 01:51:34.405
+Matias Z: tiene que ver con la ejecución de diferentes tipos de tubos. Este Ahí es donde me parece que se pone un poquito más interesante. Porque salimos un poco de esta idea, esta noción de llamadas a apis tradicionales y llamadas a funciones de Python tradicionales. Y empezamos a ver como dentro de nuestra lista de Tools.
+
+
+968
+01:51:37.235 --> 01:51:45.844
+Matias Z: Lo que encontramos son, por ejemplo, llamadas a cervos, llamadas azul, agentes como tuls.
+
+
+969
+01:51:46.995 --> 01:51:58.395
+Matias Z: Sí, vamos a encontrar incluso otras formas de estructurar nuestra jerarquía de Tools, Otra forma de búsqueda dentro del espacio de Tools. Cuando
+
+
+970
+01:51:58.455 --> 01:52:16.785
+Matias Z: Cuando los agentes pone un poquito más complejos en nuestra lista de turnos, son extremadamente largas, el espacio de búsqueda se vuelve un poco grande. Entonces estructuramos esas tuls en en sus categorías y se suelen hacer búsquedas semánticas para que la búsqueda no sea un cuello de botella en el caso de que necesitemos
+
+
+971
+01:52:16.975 --> 01:52:23.375
+Matias Z: determinadas de características, por ejemplo, de latencia, aparte de
+
+
+972
+01:52:24.765 --> 01:52:34.115
+Matias Z: fundamentalmente. Lo que quiero es introducir el tema de en C, P, porque creo que es una de las cosas modelos. Hoy, una de las de los temas fundamentales.
+
+
+973
+01:52:34.525 --> 01:52:39.054
+Matias Z: Si queremos empezar de verdad a implementar a gente que consuman herramientas
+
+
+974
+01:52:39.315 --> 01:52:42.434
+Matias Z: un poco más serias que las funciones que estamos viendo en este momento.
+
+
+975
+01:52:43.555 --> 01:52:45.185
+Matias Z: Sí, gustavo, por favor.
+
+
+976
+01:52:46.235 --> 01:52:54.504
+Gustavo Narcisi: Matías. Yo te quería hacer una pregunta. No sé si está después. Lo vemos después, pero como que no tengo muy claro cuáles criterios debería usar para
+
+
+977
+01:52:54.725 --> 01:53:00.534
+Gustavo Narcisi: crear sus agentes o en vez de usar 1 solo, dividirlo. No sé si eso está más adelante.
+
+
+978
+01:53:01.385 --> 01:53:02.105
+Matias Z: O de.
+
+
+979
+01:53:02.105 --> 01:53:02.735
+Gustavo Narcisi: Ahora.
+
+
+980
+01:53:03.505 --> 01:53:06.245
+Matias Z: Es parte de todo el curso?
+
+
+981
+01:53:06.715 --> 01:53:12.695
+Matias Z: En general, la respuesta es empezar sencillo. Vamos primero, adoptar una metodología iterativa.
+
+
+982
+01:53:13.145 --> 01:53:21.905
+Matias Z: arrancaba siempre con tu tío. Usía Arranqué con un M V p básico. No sé si conoces alguna de antología y desarrollo
+
+
+983
+01:53:22.275 --> 01:53:30.415
+Matias Z: tradicionales un poco un poco, no sirven más para nada, porque se están modificando un montón porque ya, digamos.
+
+
+984
+01:53:30.595 --> 01:53:36.785
+Matias Z: los Sprints de allá y ya no tienen mucho sentido. Pero sí te diría que puedes
+
+
+985
+01:53:37.445 --> 01:53:42.595
+Matias Z: pensar en en link en términos de en
+
+
+986
+01:53:42.835 --> 01:53:56.865
+Matias Z: arrancar súper básico con un erem de estos grandes generales de 1 de los laboratorios conocidos, un único agente, la lista de turnos más sencilla y e integrar sobre eso sí, instrumental, o de manera tal que puedas aprender.
+
+
+987
+01:53:57.055 --> 01:54:04.074
+Matias Z: O sea, ahí, el objetivo principal no es tener funcionalidad, O sea, no es tener una lista completa de features, sino aprender
+
+
+988
+01:54:04.415 --> 01:54:09.265
+Matias Z: que para lo cual también tienes que decidir qué métrica es el apellido, va a sumar.
+
+
+989
+01:54:10.005 --> 01:54:16.904
+Matias Z: Y a partir de ahí, vas a ver como como va surgiendo, naturalmente, la necesidad, por ejemplo, de
+
+
+990
+01:54:17.045 --> 01:54:19.755
+Matias Z: si necesitas en
+
+
+991
+01:54:20.325 --> 01:54:29.635
+Matias Z: capacidad de procesamiento paralelo, probablemente tengas la posibilidad de repartir en sus agentes que escalen dinámicamente en función de la demanda.
+
+
+992
+01:54:30.575 --> 01:54:31.575
+Matias Z: Si tenés
+
+
+993
+01:54:32.335 --> 01:54:42.644
+Matias Z: una cantidad de tools demasiado grandes. Normalmente eso se suele separar en sus agentes, porque el espacio de búsqueda de Tours, como les decía, recién, puede ser un problema importante en tiempo de ejecución
+
+
+994
+01:54:43.055 --> 01:54:46.485
+Matias Z: en sin tener restricciones de latencia.
+
+
+995
+01:54:46.615 --> 01:54:51.725
+Matias Z: Normalmente quieres reducir la cantidad de sus agentes porque vas a tener costos de comunicación.
+
+
+996
+01:54:52.855 --> 01:55:03.994
+Matias Z: entonces siempre hay entre 2. Hay entre claro: cuanto más cuanto más complejidad, más costo, menor velocidad, pero más flexibilidad
+
+
+997
+01:55:04.175 --> 01:55:13.525
+Matias Z: de lo vamos a ver, efectivamente, en el módulo 4, creo yo.
+
+
+998
+01:55:13.645 --> 01:55:15.594
+Matias Z: 4 o 5. No me acuerdo. Sabes.
+
+
+999
+01:55:15.595 --> 01:55:16.105
+Gustavo Narcisi: Perfecto.
+
+
+1000
+01:55:16.105 --> 01:55:19.614
+Matias Z: Los arquetipos a lo largo de esos? No de nada.
+
+
+1001
+01:55:19.995 --> 01:55:21.164
+Matias Z: Sí. Sí. Agustín.
+
+
+1002
+01:55:22.945 --> 01:55:26.165
+Agustin aimale: Yo quería una consulta, el tema.
+
+
+1003
+01:55:26.725 --> 01:55:34.605
+Agustin aimale: Abocamos a gente para tareas específicas, o hacemos gentes, o sea, cómo se estructura. Eso suma gente para tareas específicas
+
+
+1004
+01:55:34.835 --> 01:55:41.075
+Agustin aimale: y o a gente con capacidades grandes, con grandes capacidades que saben hacer varias cosas.
+
+
+1005
+01:55:45.045 --> 01:55:46.145
+Matias Z: Es una pregunta.
+
+
+1006
+01:55:47.275 --> 01:55:48.555
+Agustin aimale: Texas.
+
+
+1007
+01:55:48.555 --> 01:55:49.565
+Matias Z: Ninguna otra.
+
+
+1008
+01:55:50.205 --> 01:55:56.375
+Matias Z: Mira, Entiendo que es un poco parecido a la pregunta de recién.
+
+
+1009
+01:55:58.155 --> 01:56:01.115
+Matias Z: Y desde luego, yo creo que es que es un
+
+
+1010
+01:56:01.595 --> 01:56:05.945
+Matias Z: proceso permanente de Discovery. El hecho de
+
+
+1011
+01:56:06.325 --> 01:56:10.204
+Matias Z: cuán generalista querés que sea tu agente o
+
+
+1012
+01:56:11.045 --> 01:56:13.315
+Matias Z: qué ventajas te trae el hecho de
+
+
+1013
+01:56:13.725 --> 01:56:22.965
+Matias Z: de separar, de delegar responsabilidades de alguna manera. Si venir al mundo de la ingeniería de software fundamentalmente de ingeniería, software, distribuidor
+
+
+1014
+01:56:23.905 --> 01:56:28.285
+Matias Z: si ya trabajaste con nuestros servicios un poco entendés.
+
+
+1015
+01:56:28.435 --> 01:56:31.085
+Matias Z: cuáles son las ventajas y las desventajas de tener
+
+
+1016
+01:56:31.735 --> 01:56:37.675
+Matias Z: componentes monolíticos versus empezar a delegar en componentes más pequeños
+
+
+1017
+01:56:39.845 --> 01:56:51.754
+Matias Z: en ambos casos, tenés pros y cons y definitivamente esos criterios nos pertenecen a nosotros como como arquitectos de nuestras arquitecturas agénticas de a poquito vamos a ir desarrollando ese criterio.
+
+
+1018
+01:56:52.105 --> 01:57:09.965
+Matias Z: Pero una vez más, la misma respuesta empezó siempre sencillo: empezar con un agente con un Ln grande, un solo agente, una lista de tours acotadas y en función de eso, vas explorando nuevas topologías de a poco de manera interactiva
+
+
+1019
+01:57:09.995 --> 01:57:16.934
+Matias Z: y paso a paso. Pero parte del criterio que tenemos construir en este curso justamente tiene que ver con decidir eso que estás preguntando.
+
+
+1020
+01:57:16.975 --> 01:57:19.534
+Matias Z: Así que lo vamos a resolver.
+
+
+1021
+01:57:22.225 --> 01:57:25.695
+JULIAN DAMIAN FANCHI: Puedo hacer una consultita a Matis, al.
+
+
+1022
+01:57:25.695 --> 01:57:26.205
+Matias Z: Sí, por supuesto.
+
+
+1023
+01:57:26.205 --> 01:57:35.284
+JULIAN DAMIAN FANCHI: Para ver para ver ahí un poco qué es lo que opinas. Quizás no va a ser una una reconsulta, pero está bueno, todo el curso. Todo lo que estamos viendo.
+
+
+1024
+01:57:35.475 --> 01:57:53.924
+JULIAN DAMIAN FANCHI: A mí me pasa que vengo del lado corporativo, en donde tenemos montón de herramientas, pero dentro de del ambiente de Microsoft, todo por suerte puedo tocar lo que es compartirlo. Estudio que sigue siendo Low Cost, pero que voy notando que me sirve a.
+
+
+1025
+01:57:53.925 --> 01:58:01.175
+JULIAN DAMIAN FANCHI: Por el otro lado, veo que las las políticas están cada vez más fuertes y
+
+
+1026
+01:58:01.525 --> 01:58:10.604
+JULIAN DAMIAN FANCHI: están estamos empujando mucho para que la parte más operativa o de proceso de data
+
+
+1027
+01:58:10.905 --> 01:58:28.075
+JULIAN DAMIAN FANCHI: consuma mucho chasi pití. Enterprise. No tenemos instalado todavía la versión Dekstop. Ya tenemos el web y los coppilots, no entonces desde mi lado y y afrontando un poco que quizás lo que le va pasando a muchos. Es.
+
+
+1028
+01:58:28.955 --> 01:58:31.235
+JULIAN DAMIAN FANCHI: hay menos recursos y más trabajos.
+
+
+1029
+01:58:31.825 --> 01:58:36.025
+JULIAN DAMIAN FANCHI: Hay más trabajo y menos recursos, y
+
+
+1030
+01:58:36.965 --> 01:58:52.465
+JULIAN DAMIAN FANCHI: estoy en, estoy enfocando el el el desarrollo: primero motivando a los chicos a que empiecen a usar las herramientas para que ganen tiempo en el procesamiento de datos que antes iban haciendo de forma manual Txt: todo lo que fuese
+
+
+1031
+01:58:52.665 --> 01:59:00.175
+JULIAN DAMIAN FANCHI: por el y pero estoy jugando bastante con culpable. Studio, que es mucho menos código de lo que estamos haciendo en clase.
+
+
+1032
+01:59:00.785 --> 01:59:13.885
+JULIAN DAMIAN FANCHI: pero me permite conectarme con un montón de herramientas dentro del de de de el ambiente de Microsoft. Entonces yo puedo conectar Sharepoints. Puedo conectar planes. Puedo conectar emails y también grupos
+
+
+1033
+01:59:13.995 --> 01:59:18.775
+JULIAN DAMIAN FANCHI: chat en Teams No me voy enfocando O sea.
+
+
+1034
+01:59:19.075 --> 01:59:27.855
+JULIAN DAMIAN FANCHI: no quiero robarle el tiempo a mis compañeros, pero yo lo que voy tratando de haciendo ahora. Por ejemplo, soy gerente de impuestos. Si entonces tengo a
+
+
+1035
+01:59:28.355 --> 01:59:32.675
+JULIAN DAMIAN FANCHI: calendarios de Argentina y de un montón de países, tengo que seguir eso.
+
+
+1036
+01:59:33.465 --> 01:59:44.284
+JULIAN DAMIAN FANCHI: Una sugerencia sería una gente que me lea el calendario y que me pusiera ya Tims o que me lea el calendario que me lee Ayer, Point que vea que está presentado. Y qué no está presentado, O sea.
+
+
+1037
+01:59:44.625 --> 01:59:50.914
+JULIAN DAMIAN FANCHI: por lo que vos decís, me conviene ir dividiendo. Los agentes ¿cierto? Hoy en día no me cobran los tokens, con lo cual
+
+
+1038
+01:59:51.225 --> 01:59:52.555
+JULIAN DAMIAN FANCHI: estoy bien. No.
+
+
+1039
+01:59:56.685 --> 01:59:57.905
+Matias Z: En.
+
+
+1040
+01:59:58.025 --> 02:00:03.404
+Gustavo Gagliardi: Y mirá. Yo te digo de mi experiencia. He hecho el laburo en personal
+
+
+1041
+02:00:03.545 --> 02:00:09.855
+Gustavo Gagliardi: con Pilot no escalan los agentes y va a tener un uso masivo.
+
+
+1042
+02:00:10.125 --> 02:00:19.435
+Gustavo Gagliardi: Y todavía no tienen a entre los mismos bailot si quieres hacer comunicación entre gente.
+
+
+1043
+02:00:20.575 --> 02:00:24.354
+JULIAN DAMIAN FANCHI: Perdón. Esto es Comparet Studio. No. Seis. Cinco a.
+
+
+1044
+02:00:25.415 --> 02:00:33.484
+Gustavo Gagliardi: No escala te te sirve para lo tuyo local. Así, a nivel corporativo. No es una escala.
+
+
+1045
+02:00:34.235 --> 02:00:40.644
+JULIAN DAMIAN FANCHI: Okay, o sea, a nivel de equipo, lo podría hacer con el equipo de Argentina, otro con el equipo de Chile, y así sucesivamente.
+
+
+1046
+02:00:41.605 --> 02:00:44.165
+JULIAN DAMIAN FANCHI: A eso apuntaba. Gustavo. No sé si entendí bien.
+
+
+1047
+02:00:44.165 --> 02:00:55.005
+Gustavo Gagliardi: No te escalan, si lo va a consumir mucha gente. Y si le empezás a meter cada vez más cosas, más cosas más cosas.
+
+
+1048
+02:00:55.165 --> 02:01:03.715
+Gustavo Gagliardi: El Sharepoint de esto y lo otro con más archivos termina, no es una para.
+
+
+1049
+02:01:06.585 --> 02:01:07.225
+JULIAN DAMIAN FANCHI: Bien.
+
+
+1050
+02:01:07.445 --> 02:01:11.465
+Sebastian Langer: Tenés desarrolladores en la compañía Julian.
+
+
+1051
+02:01:11.855 --> 02:01:13.205
+JULIAN DAMIAN FANCHI: Sí tengo.
+
+
+1052
+02:01:14.045 --> 02:01:21.525
+JULIAN DAMIAN FANCHI: Sí, tengo la respuesta. Es sí, Depende lo que quiera hacer, O sea, si yo voy.
+
+
+1053
+02:01:21.525 --> 02:01:25.004
+Sebastian Langer: No, no, pero como para tener una charla, porque en realidad.
+
+
+1054
+02:01:25.485 --> 02:01:31.225
+Sebastian Langer: lo interesante de esta época, que me parece que 1 lo ve también en el curso.
+
+
+1055
+02:01:31.455 --> 02:01:40.495
+Sebastian Langer: donde somos un grupo de gente mixto técnico negocio alguno, le ha dado cosas. Y y todos que me parece que me parece está buenísimo
+
+
+1056
+02:01:41.285 --> 02:01:56.205
+Sebastian Langer: el esfuerzo. Y, además, por diseño, me parece que está el mix de gente, no es esto donde te está acercando el esquil a lo técnico y igual no despreciaría para nada
+
+
+1057
+02:01:56.535 --> 02:02:03.165
+Sebastian Langer: que para acercar esa edad. Tengas alguna conversación con alguien de desarrollo que, como dijo, creo que
+
+
+1058
+02:02:03.535 --> 02:02:23.484
+Sebastian Langer: que no sé si fue matica, y lo dijo recién, pero bueno, digo, así como el hablo de los microservicios, por ejemplo, recién que es un concepto de desarrollo. Bueno, esa gente te puede ilustrar un poco. Vos le decís, tengo este problema y voy a querer, y estaba pensando en hacer agentes que resuelvan esto. Y se me ocurrió tal cosa y un pibe con una visión de desarrollo. Te puede decir.
+
+
+1059
+02:02:23.675 --> 02:02:43.595
+Sebastian Langer: yo lo dividiría así: Whatsapp. Ahora, en relación a lo que comentó, recién no me acuerdo cuál de los chicos es muy importante que hagas una prueba de estrés y poder. No sé si tenés como consultor, si tenés contratado algún paquete que permita que recibas a alguien de Microsoft hacerte una consultoría, o cosa por el estilo.
+
+
+1060
+02:02:43.595 --> 02:02:45.475
+JULIAN DAMIAN FANCHI: Tengo.
+
+
+1061
+02:02:45.475 --> 02:02:50.085
+Claudia Artucio: Después, si quieren. Hablo porque nosotros estamos usando coppilote studio.
+
+
+1062
+02:02:50.085 --> 02:02:57.524
+Sebastian Langer: ¿Qué? Bueno, Bueno, pero yo mi mi mi intervención era solamente para decir que tie es muy acertado. El comentario. De
+
+
+1063
+02:02:57.695 --> 02:02:59.125
+Sebastian Langer: no me acuerdo. ¿cuál de los chicos.
+
+
+1064
+02:02:59.125 --> 02:02:59.505
+JULIAN DAMIAN FANCHI: De los.
+
+
+1065
+02:02:59.505 --> 02:03:00.995
+Sebastian Langer: Tengo la pantalla medio.
+
+
+1066
+02:03:00.995 --> 02:03:02.065
+Matias Z: Chao Gustavo.
+
+
+1067
+02:03:02.065 --> 02:03:06.055
+Sebastian Langer: Se me escondieron. Los se me escondieron los chavo
+
+
+1068
+02:03:06.095 --> 02:03:16.554
+Sebastian Langer: y te te recomiendo muchísimo que otra con interconsulta que hagas para complementar tu perfil, sea esto de de la factibilidad técnica
+
+
+1069
+02:03:16.555 --> 02:03:35.034
+Sebastian Langer: y la y qu y y hablar con alguien que te diga, che yo tengo. Voy a tener esta carga de trabajo. Te va a hacer algunas preguntas sobre cuántas consultas vas a tener, etcétera, y ahí pedirle a ver si si si que te haga una evaluación para ver si es adecuado, y también te recomiendo que hagas la misma pregunta
+
+
+1070
+02:03:35.035 --> 02:03:39.245
+Sebastian Langer: a 3 inteligencias artificiales distintas solamente antes de tener.
+
+
+1071
+02:03:39.245 --> 02:03:40.075
+JULIAN DAMIAN FANCHI: Sí de empezar.
+
+
+1072
+02:03:40.075 --> 02:03:44.364
+Sebastian Langer: En un experto, pero vas a descubrir un montón de cosas.
+
+
+1073
+02:03:44.475 --> 02:03:50.725
+Sebastian Langer: Te digo porque si vos con ese perfil que tenés, que es súper valioso para la compañía. Tratás de resolver todo. Solo
+
+
+1074
+02:03:50.875 --> 02:03:54.704
+Sebastian Langer: te vas a frustrar que es lo peor. Ojalá que no te pase.
+
+
+1075
+02:03:55.275 --> 02:03:58.054
+JULIAN DAMIAN FANCHI: Bueno, muchas gracias. Eva.
+
+
+1076
+02:03:58.055 --> 02:03:59.095
+Claudia Artucio: Si quieres.
+
+
+1077
+02:03:59.095 --> 02:03:59.425
+JULIAN DAMIAN FANCHI: De que.
+
+
+1078
+02:03:59.425 --> 02:04:07.514
+Claudia Artucio: Momento, experiencia, porque te va a pasar. O sea, nosotros estamos trabajando con Copaylor Studio. Empezamos ya el año pasado
+
+
+1079
+02:04:07.735 --> 02:04:10.255
+Claudia Artucio: con cuando recién
+
+
+1080
+02:04:10.925 --> 02:04:22.455
+Claudia Artucio: formamos un grupo en empresa para empezar a trabajar con un I y adoptamos eso, pues tenemos todo el paquete de todo lo que es Office, digo, Office, todo lo que es Microsoft a la compañía.
+
+
+1081
+02:04:22.625 --> 02:04:25.645
+Claudia Artucio: Y claro, es es Low Cost. Y
+
+
+1082
+02:04:25.695 --> 02:04:32.805
+Claudia Artucio: por ahora, pero no sé si viste que ahora salieron otras versiones de copylor de estudio.
+
+
+1083
+02:04:32.805 --> 02:04:45.894
+Claudia Artucio: vos ibas o ibas con el con vos tenías la parte de los temas, la parte que vos debes estar trabajando con ese que vos lo vas llevando. Y es como que fuera un work flu. Y como te te permite hacer fácilmente un
+
+
+1084
+02:04:46.365 --> 02:04:54.384
+Claudia Artucio: cómo se hizo un chat box que te contesta y todo nosotros, de de hecho, lo tenemos vinculado con base de datos y todo.
+
+
+1085
+02:04:54.425 --> 02:05:06.895
+Claudia Artucio: Pero todo lo tuvimos que ir estudiando, y era medio nuevito, y hemos tenido en toda la investigación. Algunos temillas técnicos y el principal problema técnico que tuvimos últimamente
+
+
+1086
+02:05:06.915 --> 02:05:15.515
+Claudia Artucio: es que nosotros, en mayo del año de este año teníamos agentes orquestados. Yo podía llamar desde una urgente a otro agente sin problema
+
+
+1087
+02:05:15.695 --> 02:05:21.304
+Claudia Artucio: y un buen día 1 en particular, se me dejó de comunicar con el otro y no quiso más.
+
+
+1088
+02:05:21.465 --> 02:05:26.625
+Claudia Artucio: Y estamos con un caso abierto desde hace desde mayo con Microsoft, viendo.
+
+
+1089
+02:05:26.885 --> 02:05:35.764
+Claudia Artucio: pero en particular, no es un problema de en sí de usar los agentes por fuera. Es el problema cuando lo lo publicas en Teams.
+
+
+1090
+02:05:35.885 --> 02:05:36.504
+Claudia Artucio: y cuando.
+
+
+1091
+02:05:36.505 --> 02:05:38.005
+JULIAN DAMIAN FANCHI: Que por en el.
+
+
+1092
+02:05:38.005 --> 02:05:41.284
+Claudia Artucio: Manda cuando lo mandas al canal, tenemos un problema.
+
+
+1093
+02:05:41.485 --> 02:05:41.885
+JULIAN DAMIAN FANCHI: Claro.
+
+
+1094
+02:05:41.885 --> 02:05:53.425
+Claudia Artucio: Hemos tenido, o sea, muchos idas y vueltas, muchas reuniones, muchas cosas. Y todavía estamos con el caso. O sea, yo tenía los 2: el que se comunicaban bárbaro y de golpe, Ahora
+
+
+1095
+02:05:53.565 --> 02:05:54.715
+Claudia Artucio: no puedo
+
+
+1096
+02:05:54.735 --> 02:06:08.435
+Claudia Artucio: Lo que vimos en estos días y que yo lo vi también en es que generaron nuevas versiones de copa y lo studio de generación de agentes. Hay 1 que es muy similar a lo que hoy sería
+
+
+1097
+02:06:08.435 --> 02:06:18.244
+Claudia Artucio: los demás, o sea, que tienen los las tuls, todo por separado, no como este, que es tan como esquemático y no te permite
+
+
+1098
+02:06:18.265 --> 02:06:19.505
+Claudia Artucio: ser muy
+
+
+1099
+02:06:19.635 --> 02:06:30.465
+Claudia Artucio: ac. O sea, es haces el flujo grama, el flujograma, y no podés hacer mucho más que eso hay cosas que no te permiten. El otro es más abierto, pero no encontré mucha información.
+
+
+1100
+02:06:30.465 --> 02:06:41.784
+Claudia Artucio: Es el problema que por ahí tiene Microsoft que nosotros entramos un día y las cosas estaban en un lugar al otro día, estaban en otra. Es muy dinámico y fácil de que cualquier persona que no sepa programar
+
+
+1101
+02:06:41.815 --> 02:06:51.944
+Claudia Artucio: lo lo pueda hacer, porque como vos te basas en disparadores que va generando con los temas y es como un flujo común de Fede, digamos.
+
+
+1102
+02:06:51.945 --> 02:06:52.665
+JULIAN DAMIAN FANCHI: No estás hablando.
+
+
+1103
+02:06:52.665 --> 02:06:57.144
+Claudia Artucio: Claro los temas, entonces es fácil para trabajar, pero
+
+
+1104
+02:06:57.485 --> 02:07:00.214
+Claudia Artucio: lo que dicen es que, como era tan
+
+
+1105
+02:07:00.495 --> 02:07:17.885
+Claudia Artucio: como te te permitía poca apertura, empezaron a hacerlos más tipo, como Cloucott. Como todos los demás agentes que vos tenés, un skill tenés, las tools tenés todo por separado, pero ahí sí. Ya tenés que ahora, como es, no sé porque esto apareció hace poquito
+
+
+1106
+02:07:18.205 --> 02:07:33.465
+Claudia Artucio: 3 semanas más o menos. Si vos. Ahora vas a la Plataforma y vas desde el inicio elegís alguno de los enviroment que tenés y de del vamos, te dice. Hola, Tenés esto. Esto esto y vos decís si esto. Y bueno, no encontré mucho documentación ni nada.
+
+
+1107
+02:07:33.465 --> 02:07:38.605
+Claudia Artucio: ni videos. Y a lo sumo. Lo que hice fue anotarme
+
+
+1108
+02:07:38.605 --> 02:07:46.344
+Claudia Artucio: en estas charlas que tiene Microsoft de vez en cuando, donde lanzan productos que hay una ahora 22 de octubre como para ver
+
+
+1109
+02:07:46.675 --> 02:08:04.204
+Claudia Artucio: hacia dónde van. Porque también hay como flujos nuevos en vez de vos hacer un agente como una orquestación de de flujos, digamos, de eventos con hay otro que generaron que parece un nene, 8 n. O sea, hay como 4 herramientas distintas, pero nuevas, digamos
+
+
+1110
+02:08:04.615 --> 02:08:10.335
+Claudia Artucio: que pero no tenés mucha documentación tenés que ponerte a leer, a ver si qué fue lo que subieron.
+
+
+1111
+02:08:10.335 --> 02:08:10.655
+JULIAN DAMIAN FANCHI: En que.
+
+
+1112
+02:08:10.655 --> 02:08:22.354
+Claudia Artucio: Mi duda, que crees que yo llevé la compañía fue: ¿qué pasa con estos que tenemos publicados en esto? El otro te propone directamente, viste que te propone un agen, un modelo por default
+
+
+1113
+02:08:22.955 --> 02:08:23.545
+Claudia Artucio: y de.
+
+
+1114
+02:08:23.545 --> 02:08:27.164
+JULIAN DAMIAN FANCHI: Perdona ahí. Te quiero hacer una consulta disculpadme que te corte la.
+
+
+1115
+02:08:27.165 --> 02:08:27.905
+Claudia Artucio: Sí.
+
+
+1116
+02:08:28.265 --> 02:08:36.055
+JULIAN DAMIAN FANCHI: Porque yo no sé qué es lo que vos ves en tu compañía. Yo, en en la mía ya de hace unos meses. Ya veo esto que vos mencionas de ennios.
+
+
+1117
+02:08:36.055 --> 02:08:36.405
+Claudia Artucio: Sí.
+
+
+1118
+02:08:36.875 --> 02:08:41.095
+JULIAN DAMIAN FANCHI: Yo trabajo en una farma que tiene convenio con Open y
+
+
+1119
+02:08:41.815 --> 02:08:53.724
+JULIAN DAMIAN FANCHI: y también, bueno, no tiene que ver ópera y acá, pero le están poniendo mucha guita a esto. El tema. Eso que vos. Ves tipo Ennio, Ocho. N, Yo ya lo veo hace más o menos do 2 meses y.
+
+
+1120
+02:08:53.725 --> 02:08:56.944
+Claudia Artucio: Puede ser. Lo que pasa es que nosotros empezamos a trabajar con otros productos.
+
+
+1121
+02:08:57.135 --> 02:08:57.835
+JULIAN DAMIAN FANCHI: Y de cara.
+
+
+1122
+02:08:57.835 --> 02:09:12.115
+Claudia Artucio: Mucha respuesta. Entonces lo que tenemos hechos los dejamos y pero o trabajamos con lo que ya teníamos, pero no seguimos investigando Ahora, yo dije, bueno, vamos a darle una oportunidad a ver qué qué es lo que
+
+
+1123
+02:09:12.115 --> 02:09:20.824
+Claudia Artucio: lo que hacen, porque lo vi en estos días que volví a entrar. Estamos trabajando con otros ahora por el tema de justamente las limitaciones que teníamos con coppilot.
+
+
+1124
+02:09:20.855 --> 02:09:22.455
+Claudia Artucio: pero S,
+
+
+1125
+02:09:22.505 --> 02:09:38.275
+Claudia Artucio: o sea, o sea, en sí hay G. Hay gente en nuestra empresa que empezó a generar propios también que no son. Nosotros preferimos que pase por sistemas las cosas para poder asesorarme, entendés, porque no es si no es medio como que es ser malo.
+
+
+1126
+02:09:38.284 --> 02:09:42.524
+Claudia Artucio: un tema que tiene todo el mundo, cosas que quizás hacen lo mismo.
+
+
+1127
+02:09:42.565 --> 02:09:45.344
+Claudia Artucio: Entonces, para el tema de gobernanza.
+
+
+1128
+02:09:45.755 --> 02:09:51.975
+Claudia Artucio: empezamos con el tema de que primero pasen por sistemas y después ver asesorarlos que no.
+
+
+1129
+02:09:52.135 --> 02:09:54.755
+Claudia Artucio: Pero en cuanto a
+
+
+1130
+02:09:55.625 --> 02:10:03.545
+Claudia Artucio: la facilidad, sí tiene facilidad que te podés, lo lo lo vinculas con todo lo que es el universo Microsoft.
+
+
+1131
+02:10:03.684 --> 02:10:18.485
+Claudia Artucio: Sí, ten en cuenta eso, si vas a querer or orquestar probátelo que por ahí no te pase. Porque ya te digo más, que todo es la publicación en el canal, en lo que nosotros, Si yo lo pruebo en copalo. Tres, 6, 5, anda bien.
+
+
+1132
+02:10:18.665 --> 02:10:23.335
+Claudia Artucio: si lo pruebo dentro de la misma plataforma que ti viste que tiene el el que.
+
+
+1133
+02:10:23.335 --> 02:10:23.765
+JULIAN DAMIAN FANCHI: A parte.
+
+
+1134
+02:10:23.765 --> 02:10:27.465
+Claudia Artucio: Pero cuando lo publico en Teams
+
+
+1135
+02:10:27.795 --> 02:10:37.574
+Claudia Artucio: no contesta más. O sea, es más, se rompe la gente inicial también. El O sea, yo llamo de 1 a otro, y el inicial se
+
+
+1136
+02:10:37.934 --> 02:10:48.434
+Claudia Artucio: se volvió y ya no contesta nada. Un día te contesta. Pero si vos no vas a orquestar tanto. Por eso te digo, me entera a probar a ver qué onda.
+
+
+1137
+02:10:48.715 --> 02:10:49.274
+JULIAN DAMIAN FANCHI: Está.
+
+
+1138
+02:10:49.284 --> 02:10:54.614
+Sebastian Langer: Te hago una pregunta: Tenés Este I, B, M, ¿Algún contrato en la empresa?
+
+
+1139
+02:10:55.564 --> 02:11:02.114
+Sebastian Langer: Tenés ¿Alguna herramienta y obviamente, licencia es algo porque ellos tienen una herramienta que se llama Watson X Orquestrade
+
+
+1140
+02:11:02.614 --> 02:11:09.854
+Sebastian Langer: y Whatson X governance, que es una plataforma low Cost Low code donde puedes hacer un montón de cosas a nivel negocio.
+
+
+1141
+02:11:10.244 --> 02:11:16.464
+Sebastian Langer: Y bueno, todo esto que estamos igual aprendiendo con matías está buenísimo, porque es, digo.
+
+
+1142
+02:11:16.724 --> 02:11:22.714
+Sebastian Langer: es es como muy profundo y y te permite entender cómo funcionan las cosas. Pero
+
+
+1143
+02:11:22.914 --> 02:11:26.374
+Sebastian Langer: Pero para democratizar la I a dentro de la organización.
+
+
+1144
+02:11:26.624 --> 02:11:35.794
+Sebastian Langer: Lo que necesitas es que el negocio tenga acceso a eso. Pero digo, no te quiero frustrar, pero eso también, como re recién decía Claudia
+
+
+1145
+02:11:36.334 --> 02:11:50.734
+Sebastian Langer: tiene como un un quilombo que si todo el mundo empieza a usar después, empiezan a gastar un montón y necesita un gobierno, entonces ahí vas a necesitar a alguien de sistemas. ¿y qué sé yo que bueno, que por ahí son unos pesados y no tenés ganas de verlos. Te entiendo.
+
+
+1146
+02:11:50.735 --> 02:12:10.484
+JULIAN DAMIAN FANCHI: Sí ha hay un equipo especial de de Compai, los estudios en la empresa. Entonces, si yo tengo alguna duda, lo puedo llamar. O sea, es como que el Copage Lo Studio tiene su propio equipo en Dinamarca. Entonces yo lo puedo llamar, y me pueden ayudar obvio que siempre me va a tocar el pibe de India, que me quizá gano tiempo tratando de hacer las cosas. Yo que hablando con el pibe de indias, no para entendernos, pero sí.
+
+
+1147
+02:12:10.845 --> 02:12:14.455
+Sebastian Langer: Sí, no, Yo también soy del sistema. Sé.
+
+
+1148
+02:12:14.815 --> 02:12:16.245
+Matias Z: Eso te iba a decir.
+
+
+1149
+02:12:16.245 --> 02:12:30.295
+Sebastian Langer: Yo soy el sistema, pero pero te digo que entiendo, porque porque entiendo las las que muchas veces negocio no se entiende tan rápido con sistemas y está buscando una herramienta para solucionar sus problemas.
+
+
+1150
+02:12:30.505 --> 02:12:45.724
+Sebastian Langer: Eso tiene un techo y y tener cuidado con co con las con el canto de las sirenas de copa y Lot Studio, que es que es como que me parece que es un lugar de mucho naufragio. Por lo que vivimos. Hay herramientas más. Pro como Whatson X
+
+
+1151
+02:12:46.085 --> 02:12:53.354
+Sebastian Langer: hay otra que está buenísima que se llama Taiku, que es Re que es mucho más próspero, hace muchas otras cosas.
+
+
+1152
+02:12:53.395 --> 02:13:09.085
+Sebastian Langer: Y hay un par más. De hecho, seguramente online. Vas a encon en Cloud. Vas en Cloud. Vas a encontrar un montón de otras cosas, pero vos necesitas eso. Un una plataforma, Low cotnow Cost, que te permita hacer cosas y conectar tus agentes, y que se van, que la carga
+
+
+1153
+02:13:09.085 --> 02:13:14.595
+Sebastian Langer: que por ahí un coppile de estudio te vende que va, te va a dar. Y por ahí no te da. Se me ocurre, no.
+
+
+1154
+02:13:17.215 --> 02:13:19.095
+JULIAN DAMIAN FANCHI: Bueno, vamos a empezar a jugar.
+
+
+1155
+02:13:19.435 --> 02:13:23.434
+Matias Z: Si te sirve de de de algo cuando arrancamos con
+
+
+1156
+02:13:24.425 --> 02:13:28.044
+Matias Z: cuando suben ahí. Enterprise, que, como decía Sebastián.
+
+
+1157
+02:13:28.355 --> 02:13:35.064
+Matias Z: sí, efectivamente, lo que estamos viendo en este curso no sería necesariamente la manera de democratizar el acceso a
+
+
+1158
+02:13:35.735 --> 02:13:37.665
+Matias Z: a la I a Nueva.
+
+
+1159
+02:13:37.885 --> 02:13:40.745
+Matias Z: Todos los perfiles posibles de la compañía.
+
+
+1160
+02:13:41.035 --> 02:13:43.195
+Matias Z: En nosotros.
+
+
+1161
+02:13:43.345 --> 02:13:44.585
+Matias Z: Y
+
+
+1162
+02:13:44.745 --> 02:13:52.665
+Matias Z: junto a Google, Argentina, empezamos a implementar un programa de adopción, de seminaría enterprise para diferentes perfiles no necesariamente técnicos.
+
+
+1163
+02:13:52.845 --> 02:13:56.034
+Matias Z: donde sí había también herramientas. Know code
+
+
+1164
+02:13:57.025 --> 02:14:08.095
+Matias Z: Todavía anda mal, todavía sigue teniendo un montón de problemas. Todavía Sigue habiendo un montón de quejas, con lo cual yo creo que, en en general, estas iniciativas deben estar, como en esa instancia medio fundacional, de de
+
+
+1165
+02:14:08.165 --> 02:14:18.484
+Matias Z: estar lanzando cosas cosas que andan bien, cosas que andan más o menos y que cambian todos los días. Así que del lado de Google, te puedo decir que los problemas son similares.
+
+
+1166
+02:14:18.865 --> 02:14:25.984
+Matias Z: Definitivamente, lo que vemos en el curso no resuelve ese problema. Quería intervenir solamente. Por eso no vamos a ver
+
+
+1167
+02:14:26.125 --> 02:14:31.775
+Matias Z: cuáles serían como el cuál es el Playbook para democratizar el uso de agentes en la compañía
+
+
+1168
+02:14:32.065 --> 02:14:34.085
+Matias Z: en general. Acá Lo que hacemos es más
+
+
+1169
+02:14:34.255 --> 02:14:38.895
+Matias Z: a intentar formar criterios como arquitectos de sistemas agénticos.
+
+
+1170
+02:14:39.625 --> 02:14:41.484
+JULIAN DAMIAN FANCHI: Totalmente y me sirve, Sí.
+
+
+1171
+02:14:42.695 --> 02:14:45.144
+Matias Z: Perdón. Mariano tienes la mano levantada hace una hora.
+
+
+1172
+02:14:45.495 --> 02:14:46.755
+Mariano Mondani: Nada. No pasa nada.
+
+
+1173
+02:14:46.755 --> 02:14:47.375
+JULIAN DAMIAN FANCHI: De los.
+
+
+1174
+02:14:47.375 --> 02:14:48.965
+Mariano Mondani: ¿
+
+
+1175
+02:14:48.965 --> 02:15:07.485
+Mariano Mondani: De los ejemplos de este módulo que tienen como otra arquitectura, digamos como el Boiler Break del Código es totalmente distinto, no tipo. Nos invoca un o no se instancia. Un Runner, una sesión es como bastante distinto a los otros ejemplos. Eso es por algo en particular.
+
+
+1176
+02:15:09.365 --> 02:15:11.955
+Matias Z: Sí. Creo que hoy lo mencionamos.
+
+
+1177
+02:15:12.135 --> 02:15:13.885
+Matias Z: Valentina había preguntado
+
+
+1178
+02:15:14.035 --> 02:15:25.275
+Matias Z: en qué casos era necesario instanciar explícitamente el Runner y ver cómo se construía la sesión y ver qué tipo de sesión se construía.
+
+
+1179
+02:15:25.735 --> 02:15:30.655
+Matias Z: Vamos a ver más adelante cuando necesitemos comportamientos
+
+
+1180
+02:15:30.875 --> 02:15:44.524
+Matias Z: más sofisticados o diferentes formas de compartir el contexto entre diferentes gentes. Vamos a ver que tenemos que configurar distinto esas esos objetos. Así que vamos a ver cómo se se instancian de otras maneras el Runner y las sesiones.
+
+
+1181
+02:15:44.955 --> 02:15:51.475
+Matias Z: pero por defecto, si no lo si no lo instancias vos de manera explicita. En el código se encarga de cada vez.
+
+
+1182
+02:15:52.055 --> 02:16:03.074
+Mariano Mondani: Okay. Y después, o sea, decavé, está como pensado para usar esta estructura, o puede encaj, o lo puedes enganchar a cualquier estructura de de código distanciando, no instanciando.
+
+
+1183
+02:16:03.775 --> 02:16:12.134
+Matias Z: Sí viste que creo que en en entre los ejemplos hay algunos casos donde se instancia. El Runner.
+
+
+1184
+02:16:12.135 --> 02:16:12.734
+Mariano Mondani: okay.
+
+
+1185
+02:16:13.195 --> 02:16:14.484
+Matias Z: Y en otros casos no.
+
+
+1186
+02:16:14.715 --> 02:16:15.415
+Mariano Mondani: Dale.
+
+
+1187
+02:16:16.005 --> 02:16:23.074
+Matias Z: Depende dónde lo de donde lo dispares. Si tu agente está armado con a Dk, descubre rápidamente cuál es la estructura de la gente.
+
+
+1188
+02:16:23.185 --> 02:16:23.824
+Matias Z: Así No.
+
+
+1189
+02:16:23.825 --> 02:16:24.205
+Mariano Mondani: Lo que.
+
+
+1190
+02:16:26.145 --> 02:16:33.705
+Matias Z: Bueno, gente. Gracias por bancar la clase, un montón de preguntas. Este
+
+
+1191
+02:16:34.935 --> 02:16:38.614
+Matias Z: me cualquier cosa me escriben de nuevo.
+
+
+1192
+02:16:39.305 --> 02:16:51.224
+Matias Z: faltaría simplemente subir las slides, porque, por lo que veo, ya estuvieron probando el código, lo cual me pone muy, muy contento. Les agradezco la iniciativa, la proactividad, la participación, el acompañamiento.
+
+
+1193
+02:16:51.405 --> 02:16:55.365
+Matias Z: Y, bueno, nos vemos el martes que viene, si no me equivoco, ¿verdad?
+
+
+1194
+02:16:58.145 --> 02:16:59.584
+Sebastian Langer: Sí, Gracias a.
+
+
+1195
+02:16:59.585 --> 02:17:01.975
+Matias Z: Buenas noches. Gracias.
+
+
+1196
+02:17:02.725 --> 02:17:04.665
+Matias Z: Escritor: en.
+
+
+1197
+02:17:04.665 --> 02:17:05.415
+Claudia Artucio: Hasta luego.
+
+
+1198
+02:17:05.705 --> 02:17:07.615
+Matias Z: Nos vemos. Chao, chao.
+
+
+1199
+02:17:07.615 --> 02:17:08.135
+Juan Franco Echeverria: Está bueno.
+
+
+1200
+02:17:08.135 --> 02:17:09.014
+Carlos Miguez: Gracias hasta luego.
+
+
+1201
+02:17:09.015 --> 02:17:09.715
+Mariano Mondani: Mhm.
+
+
+1202
+02:17:12.915 --> 02:17:13.645
+JULIAN DAMIAN FANCHI: Chau.
+
+
+

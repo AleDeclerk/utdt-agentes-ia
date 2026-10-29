@@ -1,0 +1,8018 @@
+WEBVTT
+
+1
+00:05:23.407 --> 00:05:32.407
+Y eso tiene que ver con un fenómeno llamado psicofansi que responde a el mecanismo de reinforcement learning que se utiliza en
+
+
+2
+00:05:32.407 --> 00:05:38.407
+Las etapas en la última etapa de entrenamiento de los LLM
+
+
+3
+00:05:38.407 --> 00:05:44.407
+Se ha utilizado un tipo de reinforcement learning que está como orientado a la calibracion.
+
+
+4
+00:05:44.407 --> 00:05:50.407
+¿Qué significa la calibraciones que de esas opciones que vos le das te devuelve
+
+
+5
+00:05:50.407 --> 00:05:55.407
+una probabilidad o un nivel de confianza
+
+
+6
+00:05:55.407 --> 00:06:01.407
+Que está bueno incluso la confianza la puedes usar para después seguir con tu lógica, digamos, planchar en función de eso.
+
+
+7
+00:06:01.407 --> 00:06:02.407
+He
+
+
+8
+00:06:02.407 --> 00:06:05.407
+La confianza no es más que la probabilidad normalizada
+
+
+9
+00:06:05.407 --> 00:06:21.407
+Es que, a mí eso viene bárbaro porque el sistema que, que armamos, viste vos, o sea, si, si vos pasas un mal de confianza, vas a prueba directo, estás abajo de su umbral, va un human reviewer
+
+
+10
+00:06:21.407 --> 00:06:25.407
+Entonces está buenísimo en teoría
+
+
+11
+00:06:25.407 --> 00:06:32.407
+debería un número de confianza abajo, lo mando
+
+
+12
+00:06:32.407 --> 00:06:33.407
+Y bueno.
+
+
+13
+00:06:33.407 --> 00:06:36.407
+That
+
+
+14
+00:06:36.407 --> 00:06:45.407
+Buenísimo, Alejandro, genial. Entonces, cuando lleguemos a ese módulo probablemente puedas, si tienes ganas, mostrarlo, están haciendo, participar
+
+
+15
+00:06:45.407 --> 00:06:48.407
+Pero
+
+
+16
+00:06:48.407 --> 00:06:50.407
+Bien, bien
+
+
+17
+00:06:50.407 --> 00:06:57.407
+Vimos esta primera clase
+
+
+18
+00:06:57.407 --> 00:07:09.407
+Pudieron ver la clase de la charla informativa para los que no habían visto la charla informativa pudieron verlo
+
+
+19
+00:07:09.407 --> 00:07:25.407
+Bien, mírenla, mírela, básicamente es como la introducción, es casi la primera clase del curso, mírela, van a encontrar estos gráficos, no es necesario que se entienda todos desde el principio
+
+
+20
+00:07:25.407 --> 00:07:45.407
+Pero bueno, un poco les les empieza a dar terminología y contexto para empezar el curso como con un poquito más centrados en calor no significa que tengan que entender esto antes del curso, todo lo que vamos a entender después del curso cuando terminemos.
+
+
+21
+00:07:45.407 --> 00:08:01.407
+Acá tienen algunos conceptos que vamos a terminar utilizando para la construcción de nuestras arquitecturas si hay algo que creo que es interesante que es importante, mejor dicho, que es que definir el scope del curso
+
+
+22
+00:08:01.407 --> 00:08:04.407
+No es un curso de ingeniería, entonces
+
+
+23
+00:08:04.407 --> 00:08:08.407
+Por ejemplo, cuando estudiamos embeddings
+
+
+24
+00:08:08.407 --> 00:08:13.407
+No vamos a estudiar la matemática de los medios, ni cómo implementar de cero.
+
+
+25
+00:08:13.407 --> 00:08:19.407
+no tiene sentido nuestro caso son componentes, sí, tenemos que entender las implicancias del uso de uno u otro
+
+
+26
+00:08:19.407 --> 00:08:21.407
+Este.
+
+
+27
+00:08:21.407 --> 00:08:26.407
+Cuando estudiemos la geografía de memoria, cuando estudiemos las diferentes arquitecturas de RAM
+
+
+28
+00:08:26.407 --> 00:08:35.407
+Sí, cuando estudiamos diferentes topologías muy exigente, no implementamos cosas, decir, no escribimos código de ser, no, no es lo que hacemos
+
+
+29
+00:08:35.407 --> 00:08:39.407
+En general es lo que de los
+
+
+30
+00:08:39.407 --> 00:08:40.407
+Se está dejando de hacer
+
+
+31
+00:08:40.407 --> 00:08:48.407
+Pero fundamentalmente sí está bueno que sepan que todas estas cosas son parte
+
+
+32
+00:08:48.407 --> 00:08:52.407
+de nuestra caja de herramientas
+
+
+33
+00:08:52.407 --> 00:08:55.407
+Y por lo menos tenemos que entender
+
+
+34
+00:08:55.407 --> 00:09:00.407
+Fundamentalmente, ¿qué problemas pueden resolver, o sea, mapear
+
+
+35
+00:09:00.407 --> 00:09:06.407
+cada una de estas opciones a alguno de los problemas que surjan, cómo se combinan
+
+
+36
+00:09:06.407 --> 00:09:16.407
+con otras opciones y qué ventajas y desventajas tiene, qué trade off hay entre latencia, seguridad, robustez, costo.
+
+
+37
+00:09:16.407 --> 00:09:21.407
+precisión aquí depende la métrica que utilizan
+
+
+38
+00:09:21.407 --> 00:09:30.407
+Esto es un poco lo que vamos a ir viendo en los módulos sucesivos, el módulo 1 era un poco
+
+
+39
+00:09:30.407 --> 00:09:36.407
+La charla que tuvimos en la primer clase
+
+
+40
+00:09:36.407 --> 00:09:47.407
+Hay un módulo específico para memoria y para RAM, por supuesto, hay módulo específico para MCP porque hoy es el sustrato de interconectividad de los agentes
+
+
+41
+00:09:47.407 --> 00:09:53.407
+Junto con Hway
+
+
+42
+00:09:53.407 --> 00:09:57.407
+Vamos a ver, por supuesto
+
+
+43
+00:09:57.407 --> 00:10:00.407
+Patrones de diseño en general
+
+
+44
+00:10:00.407 --> 00:10:07.407
+no solamente multigénticos, también pueden ser patrones para un harness con solo gente
+
+
+45
+00:10:07.407 --> 00:10:11.407
+Um, vamos a ver algunos frameworks, no en profundidad, pero sí
+
+
+46
+00:10:11.407 --> 00:10:12.407
+Ver
+
+
+47
+00:10:12.407 --> 00:10:25.407
+analizar juntos por qué elegimos a dedicados como instrumento pedagógico y qué diferencia tiene con el resto de los frameworks de la industria
+
+
+48
+00:10:25.407 --> 00:10:27.407
+Bien.
+
+
+49
+00:10:27.407 --> 00:10:31.407
+Y finalmente, de nuevo, tratamos de ser agnósticos
+
+
+50
+00:10:31.407 --> 00:10:43.407
+shows OCCP porque es donde tengo cierta experiencia por el trabajo, pero sepan que todo lo que aprendemos lo pueden investigar en sus propias infraestructuras.
+
+
+51
+00:10:43.407 --> 00:10:48.407
+Obi, aquí estamos
+
+
+52
+00:10:48.407 --> 00:10:56.407
+Estoy un poco haciendo esto porque en la primera comisión me pidieron bastante que trate de ir llevándolos como con
+
+
+53
+00:10:56.407 --> 00:10:59.407
+Un mapa y un usted está aquí
+
+
+54
+00:10:59.407 --> 00:11:07.407
+porque a medida que vamos sumando módulos se puede poner compleja la cosa, perdemos un poco la perspectiva, entonces
+
+
+55
+00:11:07.407 --> 00:11:09.407
+en
+
+
+56
+00:11:09.407 --> 00:11:11.407
+Lo que hacemos hoy es
+
+
+57
+00:11:11.407 --> 00:11:15.407
+crear nuestro primer agente
+
+
+58
+00:11:15.407 --> 00:11:20.407
+Para eso vamos a ver un montón de cosas que todavía no aprendimos
+
+
+59
+00:11:20.407 --> 00:11:23.407
+Pero la idea no es que se
+
+
+60
+00:11:23.407 --> 00:11:32.407
+Vayan conociendo el funcionamiento interno, los detalles, sino que se vayan como con una cierta intuición
+
+
+61
+00:11:32.407 --> 00:11:35.407
+Sí, y también con
+
+
+62
+00:11:35.407 --> 00:11:48.407
+tenemos unos resultados concretos, podemos hacer varios agentes, este, para distintos casos
+
+
+63
+00:11:48.407 --> 00:11:49.407
+Bien.
+
+
+64
+00:11:49.407 --> 00:11:54.407
+Esta es la, es importante porque mapea 1 a 1 con cada uno de los módulos
+
+
+65
+00:11:54.407 --> 00:11:57.407
+No fue intencional, pero bueno
+
+
+66
+00:11:57.407 --> 00:12:13.407
+encontré este diagrama, me pareció que estaba bueno, era claro y casualmente mape a uno con los módulos a ver cómo se arma el rompecabezas
+
+
+67
+00:12:13.407 --> 00:12:21.407
+Por lo tanto, insisto, hoy armamos nuestro primer agente, vamos a utilizar algunas de estas cosas, no todas, por supuesto.
+
+
+68
+00:12:21.407 --> 00:12:25.407
+Y no
+
+
+69
+00:12:25.407 --> 00:12:29.407
+Se preocupan si hay temas que no se terminan de entender en una primera pasada
+
+
+70
+00:12:29.407 --> 00:12:31.407
+Sí,
+
+
+71
+00:12:31.407 --> 00:12:36.407
+En dos cosas
+
+
+72
+00:12:36.407 --> 00:12:44.407
+Ok, insisto, los que no vieron la charla informativa tienen estos slides.
+
+
+73
+00:12:44.407 --> 00:12:55.407
+Hoy tuve la oportunidad por primera vez de acceder al al curso de de esta comisión, de esta segunda comisión, así que recién hoy pude subir las slides en la clase pasada
+
+
+74
+00:12:55.407 --> 00:12:57.407
+Les pido disculpas por la demora
+
+
+75
+00:12:57.407 --> 00:13:01.407
+Había un error en la configuración, así que
+
+
+76
+00:13:01.407 --> 00:13:06.407
+Lo que van a encontrar es van a tener por cada clase
+
+
+77
+00:13:06.407 --> 00:13:11.407
+Slides o PDF en el campus y repetido después
+
+
+78
+00:13:11.407 --> 00:13:16.407
+En el repo GitHub
+
+
+79
+00:13:16.407 --> 00:13:18.407
+1 2
+
+
+80
+00:13:18.407 --> 00:13:20.407
+Simulos
+
+
+81
+00:13:20.407 --> 00:13:26.407
+tenemos lóbulo encontrar
+
+
+82
+00:13:26.407 --> 00:13:29.407
+Los labs que
+
+
+83
+00:13:29.407 --> 00:13:35.407
+Gustaría que por lo menos mi de nuevo la idea no es enfocarse en el código, pero
+
+
+84
+00:13:35.407 --> 00:13:37.407
+los que tengan la curiosidad de
+
+
+85
+00:13:37.407 --> 00:13:42.407
+ejecutarse experimentos, bueno, simplemente clonando el repositorio
+
+
+86
+00:13:42.407 --> 00:13:48.407
+Sí,
+
+
+87
+00:13:48.407 --> 00:13:50.407
+Y hoy tenemos el módulo 2
+
+
+88
+00:13:50.407 --> 00:13:54.407
+Sí,
+
+
+89
+00:13:54.407 --> 00:13:59.407
+Ya está subido en reposo, así que también lo pueden correr cuando
+
+
+90
+00:13:59.407 --> 00:14:00.407
+Pero
+
+
+91
+00:14:00.407 --> 00:14:16.407
+Yo sé si se lo mencioné, pero me gustaría repetírselos, hay diferentes maneras de correr estos ejemplos. En principio había armado una versión local, que se corría con el agua, y una versión que consumía la API de un estudio
+
+
+92
+00:14:16.407 --> 00:14:20.407
+te permite acceder a un modelo seminar gratuito
+
+
+93
+00:14:20.407 --> 00:14:32.407
+La idea es que puedan ejecutar estas cosas sin gastar un peso, así que bueno, la verdad que con Google
+
+
+94
+00:14:32.407 --> 00:14:41.407
+se me hizo muy lento, entonces les recomiendo bajarse de nuevo de un estudio si no lo hicieron todavía, bajar la API para poder correr estos ejemplos.
+
+
+95
+00:14:41.407 --> 00:14:44.407
+Son los que vamos a ver si
+
+
+96
+00:14:44.407 --> 00:14:45.407
+hasta ahí me siguen
+
+
+97
+00:14:45.407 --> 00:14:55.407
+Matías, a vos también te sucede que por momentos la inversión gratuita no corre o te tira error, pero si intentas
+
+
+98
+00:14:55.407 --> 00:15:01.407
+3.8
+
+
+99
+00:15:01.407 --> 00:15:10.407
+No, no, eso, eso es, eso fue un error que me encontré, que por suerte estaba con Claude y me ayudó, dijo, sí, para el dos punto cinco no le gusta, pero va el tres punto ocho y funcionó
+
+
+100
+00:15:10.407 --> 00:15:12.407
+Me paso igual
+
+
+101
+00:15:12.407 --> 00:15:13.407
+Okay.
+
+
+102
+00:15:13.407 --> 00:15:21.407
+Pero después cuando lo corría a los labs el agente 3 creo, perdón, el lap 3 creo que fue
+
+
+103
+00:15:21.407 --> 00:15:44.407
+Que me corrió los primeros dos casos y el tercero un error larguísimo que después Claude me dijo sí esto parece que es porque es la cosa gratuita y que se saturan los requests, probá de nuevo en algunos minutos y la verdad que no probé, pero digo, es algo que que sucede en general o habrá alguno de mi configuración que no esta bien.
+
+
+104
+00:15:44.407 --> 00:15:50.407
+Pero pasé al modelo 3.5 lead y ese me anduvo bien, no sé si
+
+
+105
+00:15:50.407 --> 00:15:51.407
+Uh, voy a intentar con eso
+
+
+106
+00:15:51.407 --> 00:15:58.407
+Mira, sin errores del 4:29, Lucía.
+
+
+107
+00:15:58.407 --> 00:16:08.407
+El problema tiene que ver con que efectivamente tenés una cuota bastante limitada por día si usas el gusto de
+
+
+108
+00:16:08.407 --> 00:16:15.407
+Ese sería el problema, o sea, que no hay un error de tu parte, sino la otra opción es, este, el error que viste, perdón
+
+
+109
+00:16:15.407 --> 00:16:19.407
+Ahí estaba buscándolo
+
+
+110
+00:16:19.407 --> 00:16:23.407
+Yo tengo compartiendo
+
+
+111
+00:16:23.407 --> 00:16:29.407
+Dentro del módulo 2, el ring tiene errores frecuentes
+
+
+112
+00:16:29.407 --> 00:16:33.407
+Ah, buenísimo, ahí, ahí lo agarro.
+
+
+113
+00:16:33.407 --> 00:16:36.407
+Es el límite del gratuito de estudio
+
+
+114
+00:16:36.407 --> 00:16:41.407
+La otra opción que te tiro para probar cosas locales es
+
+
+115
+00:16:41.407 --> 00:16:46.407
+Angular estas cosas con con tu cloud con local
+
+
+116
+00:16:46.407 --> 00:16:52.407
+No es exactamente lo mismo a modo de experimento, funciona
+
+
+117
+00:16:52.407 --> 00:17:05.407
+Si quieres después te comento cómo lo implemente yo no es sencillo porque lo hace cloud, pero no, no representa exactamente el experimento que
+
+
+118
+00:17:05.407 --> 00:17:06.407
+que queremos mostrar
+
+
+119
+00:17:06.407 --> 00:17:07.407
+Okay.
+
+
+120
+00:17:07.407 --> 00:17:10.407
+De cualquier manera.
+
+
+121
+00:17:10.407 --> 00:17:19.407
+Vuelvo a decir, si tu perfil no es técnico, no es necesario que lo ejecutes en en casa, no hay problema, la idea más que nada es
+
+
+122
+00:17:19.407 --> 00:17:20.407
+Si tienes ganas de hacerlo, por supuesto que sí,
+
+
+123
+00:17:20.407 --> 00:17:26.407
+lo tengo que vivir
+
+
+124
+00:17:26.407 --> 00:17:30.407
+Listo, perfecto, entonces no dije nada
+
+
+125
+00:17:30.407 --> 00:17:31.407
+I
+
+
+126
+00:17:31.407 --> 00:17:41.407
+No, pero me sirve todo lo que, lo que decís y si es un tema de esperar, y además me corrieron algunos y el último se quedó trunco, así que la idea se entendió, no, no pasa nada.
+
+
+127
+00:17:41.407 --> 00:17:48.407
+Bueno, me alegro mucho, puedes pasar, puede pasar, de hecho, mis demos en vivo pueden pasar
+
+
+128
+00:17:48.407 --> 00:17:52.407
+Te recomiendo investigar open router
+
+
+129
+00:17:52.407 --> 00:17:55.407
+Es un agregador de
+
+
+130
+00:17:55.407 --> 00:18:02.407
+como de modelos de APIs y a veces tenés la posibilidad de ejecutar modelos
+
+
+131
+00:18:02.407 --> 00:18:04.407
+De manera gratuita
+
+
+132
+00:18:04.407 --> 00:18:09.407
+open router.ai
+
+
+133
+00:18:09.407 --> 00:18:14.407
+Si quieres probar eso desde la API de Google Studio
+
+
+134
+00:18:14.407 --> 00:18:21.407
+Bien.
+
+
+135
+00:18:21.407 --> 00:18:23.407
+Ok.
+
+
+136
+00:18:23.407 --> 00:18:26.407
+Cualquier pregunta
+
+
+137
+00:18:26.407 --> 00:18:35.407
+Me van frenando
+
+
+138
+00:18:35.407 --> 00:18:39.407
+Ok.
+
+
+139
+00:18:39.407 --> 00:18:41.407
+Bien.
+
+
+140
+00:18:41.407 --> 00:18:50.407
+Voy a intentar que entre todo en estas 2 horas, así que voy medio rápido. Me frenan ustedes
+
+
+141
+00:18:50.407 --> 00:18:54.407
+Porque en general son criterios, son
+
+
+142
+00:18:54.407 --> 00:18:59.407
+Y ella es bastante intuitivas
+
+
+143
+00:18:59.407 --> 00:19:05.407
+como para ir conformando a nuestra, nuestra
+
+
+144
+00:19:05.407 --> 00:19:12.407
+Nuestras estrategias en torno a cuándo utilizar un componente u otro, cómo tomar decisiones de arquitectura
+
+
+145
+00:19:12.407 --> 00:19:23.407
+es simplemente una introducción rápida a la creación de nuestro primer agente
+
+
+146
+00:19:23.407 --> 00:19:25.407
+A ver.
+
+
+147
+00:19:25.407 --> 00:19:34.407
+Una cosa importante para los que vienen de del software, el diseño de sistemas agénticos, primero no es una disciplina nueva, los que
+
+
+148
+00:19:34.407 --> 00:19:36.407
+noticia de la computacion lo saben
+
+
+149
+00:19:36.407 --> 00:19:41.407
+Solo que antes no tenían un cerebro probabilístico
+
+
+150
+00:19:41.407 --> 00:19:44.407
+Retoma principios de la ingeniería del software
+
+
+151
+00:19:44.407 --> 00:19:48.407
+Así que bienvenidos a aquellos que estudiaron eso.
+
+
+152
+00:19:48.407 --> 00:19:56.407
+And software distribuido como composicion, tolerancia a fallos, escalabilidad, todo eso les va a salir un montón.
+
+
+153
+00:19:56.407 --> 00:20:00.407
+Y los adapta a este nuevo paradigma
+
+
+154
+00:20:00.407 --> 00:20:08.407
+Donde justamente uno de los componentes es su modelo de lenguaje, que es básicamente el que
+
+
+155
+00:20:08.407 --> 00:20:11.407
+Cambia todo lo que sabíamos hasta el momento
+
+
+156
+00:20:11.407 --> 00:20:22.407
+Pero por esta familiaridad para aquellos que trabajaron con sistemas distribuidos o con nuestros servicios reduce un poco la curva de aprendizaje
+
+
+157
+00:20:22.407 --> 00:20:27.407
+Bien, lo que vamos a ver hoy es
+
+
+158
+00:20:27.407 --> 00:20:32.407
+Primero no nos apresuremos, tengan, tenga paciencia
+
+
+159
+00:20:32.407 --> 00:20:46.407
+Otro de los aprendizajes está bueno que sea en la comisión 2 porque aprendí mucho de la comisión, hay que tener paciencia, hay que tomarse el tiempo necesario para ver cada ítem, preguntar.
+
+
+160
+00:20:46.407 --> 00:20:47.407
+Sí,
+
+
+161
+00:20:47.407 --> 00:20:58.407
+Son conocimientos como básicos pero fundamentales que después nos permiten construir sobre eso el resto de la complejidad
+
+
+162
+00:20:58.407 --> 00:20:59.407
+Digamos.
+
+
+163
+00:20:59.407 --> 00:21:05.407
+Igá la distinción entre fundamentos hacia la izquierda
+
+
+164
+00:21:05.407 --> 00:21:10.407
+¿Sí? Y diseño y producción hacia la derecha es
+
+
+165
+00:21:10.407 --> 00:21:12.407
+Una progresión
+
+
+166
+00:21:12.407 --> 00:21:20.407
+Pedagógica deliberada no es al azar, primero está bueno entender las piezas
+
+
+167
+00:21:20.407 --> 00:21:27.407
+componentes, selección de modelos, tools, memorias y luego entender cómo ensamblarlas con criterio
+
+
+168
+00:21:27.407 --> 00:21:31.407
+Que es un poco de nuevo la responsabilidad fundamental de un arquitecto
+
+
+169
+00:21:31.407 --> 00:21:34.407
+En la idea es que este orden ayuda a reducir
+
+
+170
+00:21:34.407 --> 00:21:38.407
+la carga cognitiva que van a tener en estos días
+
+
+171
+00:21:38.407 --> 00:21:43.407
+Y que tratemos de evitar optimizar cosas que todavía no terminamos de entender
+
+
+172
+00:21:43.407 --> 00:21:55.407
+Sí, por eso van a ver que son fundamentos, pero son centrales para todo el resto del curso
+
+
+173
+00:21:55.407 --> 00:21:59.407
+Bien.
+
+
+174
+00:21:59.407 --> 00:22:06.407
+Que lo dice todo.
+
+
+175
+00:22:06.407 --> 00:22:11.407
+Bien, ¿alguien se anima a definir un foundation model?
+
+
+176
+00:22:11.407 --> 00:22:14.407
+Con sus propias palabras, que es un elemento
+
+
+177
+00:22:14.407 --> 00:22:21.407
+Cortito
+
+
+178
+00:22:21.407 --> 00:22:29.407
+Puede ser esto que usamos todos los días, mucha chiquitico
+
+
+179
+00:22:29.407 --> 00:22:36.407
+Claro, cualquier modelo de eso que ya están online por los que pagamos o no una suscripción
+
+
+180
+00:22:36.407 --> 00:22:37.407
+Bien.
+
+
+181
+00:22:37.407 --> 00:22:44.407
+Yo diría redes neuroneuronales, muchas redes neuronales ocultas, complejas, enlazadas unas con otra
+
+
+182
+00:22:44.407 --> 00:22:50.407
+Con la capacidad, bueno, de razonar y demás.
+
+
+183
+00:22:50.407 --> 00:22:54.407
+Ok.
+
+
+184
+00:22:54.407 --> 00:22:55.407
+Se va armando alguien más
+
+
+185
+00:22:55.407 --> 00:22:57.407
+Un gran predictor.
+
+
+186
+00:22:57.407 --> 00:22:58.407
+Bueno, razonamiento artificial
+
+
+187
+00:22:58.407 --> 00:23:02.407
+Un gran proyector de palabras iba a decir yo.
+
+
+188
+00:23:02.407 --> 00:23:06.407
+Un gran proyector de palabra de tokens
+
+
+189
+00:23:06.407 --> 00:23:11.407
+El lenguaje
+
+
+190
+00:23:11.407 --> 00:23:13.407
+Sí, Dios iba a decir algo
+
+
+191
+00:23:13.407 --> 00:23:16.407
+No, modelos de lenguaje con muchísima cantidad de datos
+
+
+192
+00:23:16.407 --> 00:23:20.407
+Y que tienen capacidades diferentes también
+
+
+193
+00:23:20.407 --> 00:23:21.407
+Capacidad de
+
+
+194
+00:23:21.407 --> 00:23:25.407
+De generar información, manipularla, mostrar la diferente manera.
+
+
+195
+00:23:25.407 --> 00:23:27.407
+Ok.
+
+
+196
+00:23:27.407 --> 00:23:32.407
+Bueno, entre todos armamos la definición
+
+
+197
+00:23:32.407 --> 00:23:42.407
+Una aclaración por ahí, la idea de del LM como un predictor autorregresivo del próximo token es un poco
+
+
+198
+00:23:42.407 --> 00:23:47.407
+Hoy les diría que es una definición ya obsoleta
+
+
+199
+00:23:47.407 --> 00:23:54.407
+O sea, tienen capacidad de generar distancias intermedias con sus cadenas de razonamiento
+
+
+200
+00:23:54.407 --> 00:23:58.407
+Árboles de razonamiento
+
+
+201
+00:23:58.407 --> 00:24:02.407
+Digamos que el elemento entonces es el cerebro
+
+
+202
+00:24:02.407 --> 00:24:06.407
+que nos va a permitir entender el lenguaje natural
+
+
+203
+00:24:06.407 --> 00:24:14.407
+Sí, tienen un lo que se conoce como un modelo del mundo y en función de eso
+
+
+204
+00:24:14.407 --> 00:24:17.407
+Tomar decisiones, darnos respuestas
+
+
+205
+00:24:17.407 --> 00:24:19.407
+Pero
+
+
+206
+00:24:19.407 --> 00:24:21.407
+razonar, planificar
+
+
+207
+00:24:21.407 --> 00:24:27.407
+Sí, vamos a ver que justamente el Foundation model es
+
+
+208
+00:24:27.407 --> 00:24:31.407
+Hoy, como el corazón, el centro de la gente
+
+
+209
+00:24:31.407 --> 00:24:35.407
+Pero a medida que aprendamos sobre arquitectura, va a salir, necesitamos
+
+
+210
+00:24:35.407 --> 00:24:38.407
+Controlar el funcionamiento de este leve
+
+
+211
+00:24:38.407 --> 00:24:53.407
+De alguna manera, tenemos que darle determinismo, tenemos que poner límites también el trabajo de la arquitectura, fundamentalmente cuando el costo de un error es caro.
+
+
+212
+00:24:53.407 --> 00:25:00.407
+Bien, ¿quién me cuenta que son las tools?
+
+
+213
+00:25:00.407 --> 00:25:02.407
+Acá tiene la lista de
+
+
+214
+00:25:02.407 --> 00:25:10.407
+tipos de tours, pero, ¿qué son las tools en un agente
+
+
+215
+00:25:10.407 --> 00:25:13.407
+Son, o sea, habilidades que tiene para hacer ciertas tareas
+
+
+216
+00:25:13.407 --> 00:25:16.407
+Puede ser?
+
+
+217
+00:25:16.407 --> 00:25:17.407
+Sí
+
+
+218
+00:25:17.407 --> 00:25:20.407
+Como el MCP y todo eso.
+
+
+219
+00:25:20.407 --> 00:25:22.407
+Absolutamente alguien más
+
+
+220
+00:25:22.407 --> 00:25:30.407
+Más que habilidades, las acciones que puede hacer
+
+
+221
+00:25:30.407 --> 00:25:34.407
+chocolate versus tul
+
+
+222
+00:25:34.407 --> 00:25:43.407
+Ok, bien, la precisión terminológica del compañero Gustavo, me gusta.
+
+
+223
+00:25:43.407 --> 00:25:44.407
+Es correcto
+
+
+224
+00:25:44.407 --> 00:25:51.407
+Puede que sean funciones de carácter poco más determinístico que que puede tener un LLM
+
+
+225
+00:25:51.407 --> 00:25:54.407
+Bien, Gonzalo, me gusta también
+
+
+226
+00:25:54.407 --> 00:25:59.407
+Sin embargo, hay tools que pueden tener detrás otro elemento
+
+
+227
+00:25:59.407 --> 00:26:02.407
+No siempre son
+
+
+228
+00:26:02.407 --> 00:26:04.407
+Digamos
+
+
+229
+00:26:04.407 --> 00:26:09.407
+Algoritmos predecibles o determinísticos
+
+
+230
+00:26:09.407 --> 00:26:15.407
+Si quieres, está bien la aclaración de separar skills de tools está buena
+
+
+231
+00:26:15.407 --> 00:26:21.407
+Pero bueno, si nos damos el permiso decir habilidades en términos
+
+
+232
+00:26:21.407 --> 00:26:27.407
+Más ilustrativos se pueden decir habilidades, capacidades
+
+
+233
+00:26:27.407 --> 00:26:35.407
+herramientas básicamente es la posibilidad de el LMD de operar
+
+
+234
+00:26:35.407 --> 00:26:41.407
+Sobre el mundo, ¿no? Sobre el mundo real, es lo que separa a la inteligencia artificial generativa
+
+
+235
+00:26:41.407 --> 00:26:46.407
+De la inteligencia artificial agéntica, ¿no?
+
+
+236
+00:26:46.407 --> 00:26:50.407
+Pero la corrección es correcta, Santiago
+
+
+237
+00:26:50.407 --> 00:26:56.407
+son 2 componentes centrales
+
+
+238
+00:26:56.407 --> 00:26:59.407
+Si en estos 2 no hay agente
+
+
+239
+00:26:59.407 --> 00:27:08.407
+Sí, ¿qué se imaginan de la memoria
+
+
+240
+00:27:08.407 --> 00:27:09.407
+Como la capacidad de, de
+
+
+241
+00:27:09.407 --> 00:27:16.407
+The token, te token es verdad de toquen.
+
+
+242
+00:27:16.407 --> 00:27:18.407
+Sería la venta.
+
+
+243
+00:27:18.407 --> 00:27:35.407
+Nah, iba a decir algo lógico, pero bueno, sería como la base de datos y, y demás, ¿no?
+
+
+244
+00:27:35.407 --> 00:27:36.407
+Podría ser también más que solo
+
+
+245
+00:27:36.407 --> 00:27:39.407
+Bien, sí, adelante.
+
+
+246
+00:27:39.407 --> 00:27:40.407
+No vale.
+
+
+247
+00:27:40.407 --> 00:27:43.407
+Ay, perdón, si tengo diley, chicos, mil disculpas.
+
+
+248
+00:27:43.407 --> 00:27:58.407
+Corto plazo y también si se diseña un poquito tal vez más mediano y largo, ¿no? Si uno le le pide che anda recordando lo que vamos charlando, quedarte con lo más importante, descarta lo que no. Eso puede perdurar a trave de las sesiones, ¿no?
+
+
+249
+00:27:58.407 --> 00:28:00.407
+Excelente, excelente.
+
+
+250
+00:28:00.407 --> 00:28:02.407
+Y ahí también perdone.
+
+
+251
+00:28:02.407 --> 00:28:03.407
+Sí
+
+
+252
+00:28:03.407 --> 00:28:05.407
+Que, aparte del contexto.
+
+
+253
+00:28:05.407 --> 00:28:11.407
+Muchas veces tenemos bases de datos como base de datos de grafos, que permiten representar relaciones o.
+
+
+254
+00:28:11.407 --> 00:28:14.407
+O la vector divi para los rags.
+
+
+255
+00:28:14.407 --> 00:28:19.407
+Y es como todo un tema de ebullición, no porque.
+
+
+256
+00:28:19.407 --> 00:28:21.407
+Digo el manejo de la memoria.
+
+
+257
+00:28:21.407 --> 00:28:28.407
+Permite reconstruir con calidad, lo que sucede, lo que lo que lo que lo que se va aprendiendo.
+
+
+258
+00:28:28.407 --> 00:28:30.407
+De las interacciones.
+
+
+259
+00:28:30.407 --> 00:28:32.407
+Y esta colaboración entre.
+
+
+260
+00:28:32.407 --> 00:28:34.407
+El ser humano y.
+
+
+261
+00:28:34.407 --> 00:28:37.407
+Y los y los entornos de trabajo. Entonces.
+
+
+262
+00:28:37.407 --> 00:28:43.407
+Digo todo eso. Si si empezamos siempre con una hoja en blanco, es un bajón.
+
+
+263
+00:28:43.407 --> 00:28:45.407
+Y no es eficiente y.
+
+
+264
+00:28:45.407 --> 00:28:49.407
+You pareciera como que.
+
+
+265
+00:28:49.407 --> 00:28:54.407
+Es muchísimo más inteligente. El te la forma de trabajo con el L M y se consigue mucho más.
+
+
+266
+00:28:54.407 --> 00:28:57.407
+Cuando sos ingenioso en relación a.
+
+
+267
+00:28:57.407 --> 00:29:03.407
+Bueno, almacena, una cantidad de información que la recupero en un momento determinado y la uso.
+
+
+268
+00:29:03.407 --> 00:29:07.407
+Y esa información encima en forma de vector para los rags o.
+
+
+269
+00:29:07.407 --> 00:29:13.407
+Un grafo para conservar las relaciones entre una cosa y la otra y qué sé yo y bueno se va complejizando. Pero.
+
+
+270
+00:29:13.407 --> 00:29:16.407
+El memory más que además del contexto creo que es.
+
+
+271
+00:29:16.407 --> 00:29:19.407
+También eso no.
+
+
+272
+00:29:19.407 --> 00:29:21.407
+Bien, bien, entonces terminaron
+
+
+273
+00:29:21.407 --> 00:29:25.407
+Yo creo que es lo que le da la buena dirección a la ejecución
+
+
+274
+00:29:25.407 --> 00:29:27.407
+Bien
+
+
+275
+00:29:27.407 --> 00:29:29.407
+Más conceptualmente
+
+
+276
+00:29:29.407 --> 00:29:30.407
+Claro.
+
+
+277
+00:29:30.407 --> 00:29:34.407
+Excelente, la buena o la mala de entre todos armaron la definición súper completa
+
+
+278
+00:29:34.407 --> 00:29:38.407
+Sí, empezando por
+
+
+279
+00:29:38.407 --> 00:29:52.407
+context windows que como la ventana, la memoria más básica que tiene que ver con la estructura de la red neuronal efectivamente lo que se implementa cuando se crea el lm
+
+
+280
+00:29:52.407 --> 00:30:00.407
+La memoria de trabajo y empezamos a expandirlo, como decía después Lucía, a la memoria de sesiones, a la memoria intercessiones
+
+
+281
+00:30:00.407 --> 00:30:12.407
+Si seguimos creciendo, tenemos memoria episódica, memoria procedural, eso estaba en una de las redes que les fui mostrando.
+
+
+282
+00:30:12.407 --> 00:30:17.407
+De hecho, la memoria es un poco
+
+
+283
+00:30:17.407 --> 00:30:21.407
+La manera que tenemos también después
+
+
+284
+00:30:21.407 --> 00:30:23.407
+de
+
+
+285
+00:30:23.407 --> 00:30:24.407
+de aprender
+
+
+286
+00:30:24.407 --> 00:30:30.407
+Vamos a separar memoria de conocimiento si quieren para no confundir, pero por ahora nos quedamos con memoria.
+
+
+287
+00:30:30.407 --> 00:30:41.407
+También dice base de datos y grafos de conocimiento, son simplemente técnicas que vamos a estudiar, cada uno tiene su aplicación especifica. Hoy el mundo
+
+
+288
+00:30:41.407 --> 00:30:50.407
+en general mundo memoria memoria y conocimiento es 2026, es
+
+
+289
+00:30:50.407 --> 00:30:59.407
+La nueva capa de aprendizaje de la gente, si no tenemos esto en su lugar.
+
+
+290
+00:30:59.407 --> 00:31:12.407
+No tenemos un agente que hoy funcione como debería, entonces es uno de los temas más importantes junto con el uso de tools, junto con la orquestación.
+
+
+291
+00:31:12.407 --> 00:31:21.407
+Sí, efectivamente usamos a veces base de datos vectoriales, pero vamos a ver que eso es un poco, digamos, una versión bastante ingenua, honrado
+
+
+292
+00:31:21.407 --> 00:31:29.407
+En los últimos 2 años las arquitecturas RAC evolucionaron notablemente
+
+
+293
+00:31:29.407 --> 00:31:33.407
+Hoy tenemos real agénticos
+
+
+294
+00:31:33.407 --> 00:31:38.407
+O sea, el mismo ran es un agente
+
+
+295
+00:31:38.407 --> 00:31:39.407
+Este.
+
+
+296
+00:31:39.407 --> 00:31:48.407
+y combina diferentes técnicas de recuperacion de informacion, tambien es la manera que tenemos de que nuestro agente este actualizado sin tener que entrenarlo
+
+
+297
+00:31:48.407 --> 00:31:52.407
+Piensen que el LNB tiene
+
+
+298
+00:31:52.407 --> 00:31:54.407
+Si quieren información
+
+
+299
+00:31:54.407 --> 00:31:58.407
+Codificada en sus parámetros
+
+
+300
+00:31:58.407 --> 00:32:00.407
+El día en el que se entrenó
+
+
+301
+00:32:00.407 --> 00:32:04.407
+A partir de ahí su conocimiento quedó congelado
+
+
+302
+00:32:04.407 --> 00:32:13.407
+Es por eso que, por ejemplo, los modelos no pueden responder más allá de la fecha en la que fueron entrenados
+
+
+303
+00:32:13.407 --> 00:32:20.407
+¿Cómo hacen para responder preguntas sobre cuestiones actuales? Bueno, justamente utilizan funciones, llaman APIs
+
+
+304
+00:32:20.407 --> 00:32:23.407
+Si quieren, por ejemplo, responder temas específicos de
+
+
+305
+00:32:23.407 --> 00:32:33.407
+la base de conocimiento de una compañía tienen que utilizar justamente estos mecanismos que les permiten acceder a
+
+
+306
+00:32:33.407 --> 00:32:37.407
+Grafos conocimiento bases de datos RAD
+
+
+307
+00:32:37.407 --> 00:32:40.407
+Y toda la jerarquía de memoria que fuimos mencionando
+
+
+308
+00:32:40.407 --> 00:32:44.407
+Finalmente, la orquestación
+
+
+309
+00:32:44.407 --> 00:32:45.407
+Porque estación
+
+
+310
+00:32:45.407 --> 00:32:48.407
+Se los cuento rápido, es
+
+
+311
+00:32:48.407 --> 00:32:54.407
+La magia central del harness de de la gente
+
+
+312
+00:32:54.407 --> 00:33:03.407
+Y cuando es multi agente se vuelve todavía más importante y más compleja porque estacion básicamente responde tres preguntas
+
+
+313
+00:33:03.407 --> 00:33:08.407
+La primera es cómo se maneja el flujo de control
+
+
+314
+00:33:08.407 --> 00:33:12.407
+¿Qué significa esto?
+
+
+315
+00:33:12.407 --> 00:33:22.407
+¿Quién decide cuál es el próximo paso? Básicamente si pensamos en un workflow, no sé si trabajaron con N8N,
+
+
+316
+00:33:22.407 --> 00:33:27.407
+Pero imagínese un grafo, bueno, básicamente es quién decide cuál es el próximo paso.
+
+
+317
+00:33:27.407 --> 00:33:31.407
+en un pipeline, por ejemplo
+
+
+318
+00:33:31.407 --> 00:33:34.407
+En el caso de
+
+
+319
+00:33:34.407 --> 00:33:37.407
+De los workflows que son estáticos
+
+
+320
+00:33:37.407 --> 00:33:46.407
+Vamos a ver que eso está predefinido por el código y en el otro extremo del espectro, por ejemplo, cuando cloud
+
+
+321
+00:33:46.407 --> 00:33:48.407
+Dispara a sus agentes
+
+
+322
+00:33:48.407 --> 00:33:52.407
+Está tomando decisiones de orquestación que son dinámicas
+
+
+323
+00:33:52.407 --> 00:33:53.407
+Sí,
+
+
+324
+00:33:53.407 --> 00:33:57.407
+Eso también es aceptación y eso lo está diciendo en el elemento.
+
+
+325
+00:33:57.407 --> 00:34:02.407
+Vamos a ver todas las técnicas intermedias y cómo hacer para
+
+
+326
+00:34:02.407 --> 00:34:05.407
+Combinar
+
+
+327
+00:34:05.407 --> 00:34:06.407
+tanto el detaminismo
+
+
+328
+00:34:06.407 --> 00:34:08.407
+como la autonomía
+
+
+329
+00:34:08.407 --> 00:34:19.407
+para lograr el nivel de control que necesitamos, entonces la orquestación es flujo de control, ejecución, gestión del contexto, o sea, qué contexto se comparte con quién
+
+
+330
+00:34:19.407 --> 00:34:26.407
+cuando, cuánto y por qué? Y fundamentalmente, la condición de parada de la ejecución
+
+
+331
+00:34:26.407 --> 00:34:33.407
+Y el trigger cuando necesitamos el human in the look, sí, el man
+
+
+332
+00:34:33.407 --> 00:34:36.407
+Alguna duda? Fui rápido
+
+
+333
+00:34:36.407 --> 00:34:45.407
+Recuerden que si no se entiende algo
+
+
+334
+00:34:45.407 --> 00:34:57.407
+Todos saben lo que es el flujo de ejecución.
+
+
+335
+00:34:57.407 --> 00:35:10.407
+Perdón, no, no tengo técnico, pero imagino que desde que uno aprieta enter con su, con su pedido, todo lo que sucede internamente, que nosotros no vemos, o tal vez sí, que vamos viendo.
+
+
+336
+00:35:10.407 --> 00:35:14.407
+Hasta el output final, no lo sé igual, súper, si tengo que adivinar
+
+
+337
+00:35:14.407 --> 00:35:24.407
+Igual este mateo. Said, ¿Te estás refiriendo al a a lo último que vimos que tiene que ver con la con la orquestación, porque ahí es donde también se maneja un poco el flujo.
+
+
+338
+00:35:24.407 --> 00:35:31.407
+And en parte. Pero no sé si te te referís a eso.
+
+
+339
+00:35:31.407 --> 00:35:36.407
+Sí, no, consulta porque me pasó que
+
+
+340
+00:35:36.407 --> 00:35:40.407
+El otro grupo no tenía por ahí la noción de
+
+
+341
+00:35:40.407 --> 00:35:48.407
+De qué era manejar el fuego de ejecución y básicamente es esta idea de que apretar center, me mataste con eso
+
+
+342
+00:35:48.407 --> 00:35:58.407
+desde que llega el estímulo a la gente veamos cuál es el camino, cuál es el próximo paso en el workflo, cuál sería la próxima rama
+
+
+343
+00:35:58.407 --> 00:36:03.407
+Claro. Por eso el último punto del slide anterior, digamos, el de la orquestación.
+
+
+344
+00:36:03.407 --> 00:36:04.407
+Exactamente, sí, sí
+
+
+345
+00:36:04.407 --> 00:36:05.407
+Okay, ahí. Lo que.
+
+
+346
+00:36:05.407 --> 00:36:07.407
+Digo lo que está bueno también de de.
+
+
+347
+00:36:07.407 --> 00:36:12.407
+A ver que, de un modelo de de fundacional que que vos decías.
+
+
+348
+00:36:12.407 --> 00:36:18.407
+Es esto de que son bichos que tienen un montón de cosas adentro. No son el l M y nada más.
+
+
+349
+00:36:18.407 --> 00:36:21.407
+Sino que estás hablando de con algo que.
+
+
+350
+00:36:21.407 --> 00:36:24.407
+Que que decide.
+
+
+351
+00:36:24.407 --> 00:36:27.407
+Si le manda el modelo A B o C.
+
+
+352
+00:36:27.407 --> 00:36:31.407
+Lo que está, lo que el prom que le estás mandando es como que también rutea.
+
+
+353
+00:36:31.407 --> 00:36:38.407
+Es que dura cosas que nos pedimos, o sea, no el modelo de frontera. Es una bestia.
+
+
+354
+00:36:38.407 --> 00:36:42.407
+Y a veces en los entornos corporativos.
+
+
+355
+00:36:42.407 --> 00:36:45.407
+Que no necesariamente las puedes usar.
+
+
+356
+00:36:45.407 --> 00:36:49.407
+No tenía que ver cómo haces para emular todo eso con.
+
+
+357
+00:36:49.407 --> 00:36:56.407
+Con un gateway. No se me ocurre y con un montón de otras cosas. Están por afuera en algunos casos Y Bueno, se van por ahí menos.
+
+
+358
+00:36:56.407 --> 00:36:59.407
+Está como más este.
+
+
+359
+00:36:59.407 --> 00:37:05.407
+Divididas las decisiones de diseño. Me parece.
+
+
+360
+00:37:05.407 --> 00:37:23.407
+Ahí no es un poco lo que salió la vez pasada de la diferencia de flujo agéntico en donde uno le va definiendo los pasos en el flujo
+
+
+361
+00:37:23.407 --> 00:37:24.407
+Sí,
+
+
+362
+00:37:24.407 --> 00:37:39.407
+You utiliza la idea generativa, no sé, para algo puntual de generar un resumen o lo que sea versus la otra gema del agente club en donde la gente tiene
+
+
+363
+00:37:39.407 --> 00:37:40.407
+Excelente.
+
+
+364
+00:37:40.407 --> 00:37:47.407
+todas las tools o todo lo que pueda hacer y razona, piensa, ejecuta con eso que hizo vuelve a razonar, piensa, ejecuta, entonces en un lado te queda como más a libertad de la gente y en el otro lo defineste vos
+
+
+365
+00:37:47.407 --> 00:37:54.407
+Excelente, Gustavo, excelente, si mencionaste un arquetipo llamado React que hoy es como
+
+
+366
+00:37:54.407 --> 00:37:57.407
+estar en el corazón, bueno, eso que mencionaste no reflexionar, ejecutar y
+
+
+367
+00:37:57.407 --> 00:38:01.407
+Well, de nombre
+
+
+368
+00:38:01.407 --> 00:38:12.407
+Buenísimo, ¿no? Pero la intuición es lo que cuenta, así que genial, ese es un posible flujo de ejecución que mencionaste y ahí está decidido enteramente por el el
+
+
+369
+00:38:12.407 --> 00:38:15.407
+Sí,
+
+
+370
+00:38:15.407 --> 00:38:18.407
+Una tal vez aclaración
+
+
+371
+00:38:18.407 --> 00:38:22.407
+Creo que era Sebastián el que decían
+
+
+372
+00:38:22.407 --> 00:38:24.407
+Sí
+
+
+373
+00:38:24.407 --> 00:38:25.407
+Sí
+
+
+374
+00:38:25.407 --> 00:38:27.407
+Sí, sí, corregirme. Si me si me equivoqué ahí lo que dije antes, o si tenéis algo para aportar una visión diferente, porque.
+
+
+375
+00:38:27.407 --> 00:38:31.407
+The el tema de.
+
+
+376
+00:38:31.407 --> 00:38:40.407
+Cuando 1 en un entorno corporativo tiene que construir, incluso te diría que un premise ponerle con un montón de Cosas que No Puedes reproducir en un modelo de.
+
+
+377
+00:38:40.407 --> 00:38:43.407
+Fundacional o de frontera. Esto que están en la nube.
+
+
+378
+00:38:43.407 --> 00:38:51.407
+Bueno, nada me parece interesante hacer. Doble clic. Ahí de qué es lo que nos pasa.
+
+
+379
+00:38:51.407 --> 00:39:03.407
+Bien, cuando haces una llamada a la API de OpenAI o cloud, en realidad no estás accediendo al LL, claramente estás accediendo
+
+
+380
+00:39:03.407 --> 00:39:04.407
+Claro, claro, claro, claro.
+
+
+381
+00:39:04.407 --> 00:39:07.407
+Un agente
+
+
+382
+00:39:07.407 --> 00:39:14.407
+El LLM no, no hace de todo lo que mencionaste, no hace
+
+
+383
+00:39:14.407 --> 00:39:15.407
+Nada. Sí.
+
+
+384
+00:39:15.407 --> 00:39:25.407
+Casi nada excepto excepto los últimos los la 5a generación que tienen ciertas capacidades agénticas, digamos
+
+
+385
+00:39:25.407 --> 00:39:37.407
+En general, todo lo que mencionaste es más, más bien corresponde al alejarnos de que rodea, que rodea el LLM
+
+
+386
+00:39:37.407 --> 00:39:38.407
+La diferencia es
+
+
+387
+00:39:38.407 --> 00:39:41.407
+Sí, o sea, todo lo que vos mostraste en el slide anterior son los son los componentes que.
+
+
+388
+00:39:41.407 --> 00:39:50.407
+Que que que cuando vos llamas a una A P, I vas a encontrar para que las cosas funcionen, digamos.
+
+
+389
+00:39:50.407 --> 00:39:52.407
+Correcto y uno de esos componentes es el modelo
+
+
+390
+00:39:52.407 --> 00:39:57.407
+Uh Foundation model estaba diciendo mal entonces.
+
+
+391
+00:39:57.407 --> 00:40:02.407
+Claro, esta es la red neuronal que mencionaba el compañero, sigue
+
+
+392
+00:40:02.407 --> 00:40:07.407
+tienen algunas características particulares
+
+
+393
+00:40:07.407 --> 00:40:16.407
+construyes a partir de estos transformers que no sé si recuerdas de un paper fundacional también
+
+
+394
+00:40:16.407 --> 00:40:33.407
+El 2017 de Google que básicamente introduce la arquitectura o el patrón llamado transformers que son los que tienen esta capacidad de atención entre los tokens
+
+
+395
+00:40:33.407 --> 00:40:35.407
+And
+
+
+396
+00:40:35.407 --> 00:40:41.407
+Bueno, y logran un nivel de efectividad que supera todas las expectativas
+
+
+397
+00:40:41.407 --> 00:40:45.407
+Después, si quieren, podemos ver un poquito más de eso, es importante esto que les estoy diciendo
+
+
+398
+00:40:45.407 --> 00:40:51.407
+Pero si quieren avancemos como para no demasiado a ver el ejemplo concreto de las leyes
+
+
+399
+00:40:51.407 --> 00:40:55.407
+Intencionalmente específico y muy sencillo
+
+
+400
+00:40:55.407 --> 00:41:00.407
+Una gente que resuelve una única acción bien definida
+
+
+401
+00:41:00.407 --> 00:41:02.407
+Siento cuando estamos empezando a, a
+
+
+402
+00:41:02.407 --> 00:41:10.407
+A crear la prueba concepto no vale más que una gente que intenta cubrir un proceso entero
+
+
+403
+00:41:10.407 --> 00:41:16.407
+Probablemente con fallos en el borde, digamos, es muy, muy importante empezar
+
+
+404
+00:41:16.407 --> 00:41:21.407
+Con la noción de que vamos a usar una metodología iterativa
+
+
+405
+00:41:21.407 --> 00:41:27.407
+Sí, y hay que empezar siempre con una prueba de concepto bien chiquitita
+
+
+406
+00:41:27.407 --> 00:41:41.407
+Cada iteración nos va a ir como devolviendo feedback y datos reales de comportamiento que después nos van a guiar en decisiones de diseño siguiente, ¿no? Es un poco el trabajo tambien que vamos a tener.
+
+
+407
+00:41:41.407 --> 00:41:44.407
+Respetar esa metodología, sí
+
+
+408
+00:41:44.407 --> 00:41:49.407
+En
+
+
+409
+00:41:49.407 --> 00:41:51.407
+Bueno.
+
+
+410
+00:41:51.407 --> 00:41:53.407
+este último título
+
+
+411
+00:41:53.407 --> 00:41:57.407
+Es
+
+
+412
+00:41:57.407 --> 00:42:02.407
+Parece un detalle, pero es uno de los temas más importantes a la hora
+
+
+413
+00:42:02.407 --> 00:42:07.407
+de evitar catástrofes con nuestros agentes
+
+
+414
+00:42:07.407 --> 00:42:10.407
+And
+
+
+415
+00:42:10.407 --> 00:42:15.407
+Siempre tenemos que preocuparnos por definir
+
+
+416
+00:42:15.407 --> 00:42:16.407
+los objetivos
+
+
+417
+00:42:16.407 --> 00:42:19.407
+de nuestros agentes
+
+
+418
+00:42:19.407 --> 00:42:27.407
+De la manera más específica, clara y medible, sí, posible, siempre tenemos que tener en cuenta
+
+
+419
+00:42:27.407 --> 00:42:31.407
+Un conjunto de métricas o KPIs, de hecho podemos empezar por ahí
+
+
+420
+00:42:31.407 --> 00:42:43.407
+Empezar por las por las métricas, los que veis, los test para ir definiendo después de qué manera seguimos iterando, de qué manera seguimos mejorando, de manera seguimos aprendiendo
+
+
+421
+00:42:43.407 --> 00:42:58.407
+Asociado a esto, existen un montón de problemas que si no controlamos al principio hacia el final tienen consecuencias como, por ejemplo, el ataque masivo de los agentes de OpenAI
+
+
+422
+00:42:58.407 --> 00:43:03.407
+Que justamente por no haber tenido un objetivo claro
+
+
+423
+00:43:03.407 --> 00:43:07.407
+Sufrieron de este fenómeno conocido como reward hacking
+
+
+424
+00:43:07.407 --> 00:43:16.407
+Lo vamos a ver porque es importante, al menos importante, tener el concepto en la cabeza
+
+
+425
+00:43:16.407 --> 00:43:21.407
+Creo que no.
+
+
+426
+00:43:21.407 --> 00:43:24.407
+Bien.
+
+
+427
+00:43:24.407 --> 00:43:30.407
+Como ven, son todos conceptos súper sencillos
+
+
+428
+00:43:30.407 --> 00:43:34.407
+Pero
+
+
+429
+00:43:34.407 --> 00:43:39.407
+que esconder un montón de detalles, digamos, acá
+
+
+430
+00:43:39.407 --> 00:43:43.407
+Hablamos de la complejidad de la tarea
+
+
+431
+00:43:43.407 --> 00:43:47.407
+Y es en realidad lo primero que tenemos que entender
+
+
+432
+00:43:47.407 --> 00:43:49.407
+La complejidad de la tarea.
+
+
+433
+00:43:49.407 --> 00:43:59.407
+A ver, una forma de operacionalizar la decisión de qué modelo utilizar para empezar es el concepto de entropía de salida
+
+
+434
+00:43:59.407 --> 00:44:07.407
+Estamos hablando de selección de que el elemento usar el primer componente vamos a poner en el centro de la gente
+
+
+435
+00:44:07.407 --> 00:44:14.407
+¿Qué es la entropía de salida? ¿Alguien quiere explicar qué es la entropía de salida? ¿Se animan?
+
+
+436
+00:44:14.407 --> 00:44:27.407
+Se puede inventar, tranquilo, se puede alucinar
+
+
+437
+00:44:27.407 --> 00:44:30.407
+Bien, si las respuestas
+
+
+438
+00:44:30.407 --> 00:44:35.407
+Correctas a una tarea son altamente predecibles
+
+
+439
+00:44:35.407 --> 00:44:38.407
+Y el espacio de soluciones es pequeño
+
+
+440
+00:44:38.407 --> 00:44:41.407
+Por ejemplo, clasificación binaria.
+
+
+441
+00:44:41.407 --> 00:44:45.407
+like fraccion de un capo de un campo especifico
+
+
+442
+00:44:45.407 --> 00:44:47.407
+Un modelo pequeño es suficiente.
+
+
+443
+00:44:47.407 --> 00:44:54.407
+De hecho, ser yo creo que es el ejemplo paradigmático de esto
+
+
+444
+00:44:54.407 --> 00:45:05.407
+para qué complicarnos con un montón de pasadas, un montón de costos, montón de latencia cuando tenemos tareas que no requieren más que un mapeo.
+
+
+445
+00:45:05.407 --> 00:45:07.407
+una decisión binaria
+
+
+446
+00:45:07.407 --> 00:45:14.407
+Sí, sin embargo, si las respuestas correctas a esas tareas son ambiguas, abiertas.
+
+
+447
+00:45:14.407 --> 00:45:18.407
+Poco predecibles
+
+
+448
+00:45:18.407 --> 00:45:26.407
+En general decimos fueron un espacio continuo y amplio, sí, por ejemplo, análisis crítico.
+
+
+449
+00:45:26.407 --> 00:45:29.407
+Generación de estrategias
+
+
+450
+00:45:29.407 --> 00:45:34.407
+Se requieren modelos con mayor capacidad de razonamiento y es como el primer criterio
+
+
+451
+00:45:34.407 --> 00:45:45.407
+A veces ni siquiera necesitamos un elemento para mí la idea que
+
+
+452
+00:45:45.407 --> 00:45:57.407
+O sea, la columna de la derecha implica que no siempre vamos a tener un LLM en ese espacio del workflow, a veces simplemente son heuristicas
+
+
+453
+00:45:57.407 --> 00:46:02.407
+Entonces o un algoritmo
+
+
+454
+00:46:02.407 --> 00:46:07.407
+Ahora esta dimensión no es estática.
+
+
+455
+00:46:07.407 --> 00:46:13.407
+Una tarea que tal vez hoy requiere un modelo grande
+
+
+456
+00:46:13.407 --> 00:46:15.407
+Podría cambiar
+
+
+457
+00:46:15.407 --> 00:46:19.407
+Por ejemplo.
+
+
+458
+00:46:19.407 --> 00:46:34.407
+Si nosotros empezamos prototipando con con modelos genéricos de OpenAI con chat GPT, pero queremos reducir latencia, costo o queremos privacidad porque son datos sensibles, bueno, podemos utilizar
+
+
+459
+00:46:34.407 --> 00:46:41.407
+Otro tipo de modelo al cual le podemos ser fine tuning que es exactamente
+
+
+460
+00:46:41.407 --> 00:46:48.407
+Y de esa manera un modelo mucho más pequeño, mucho más barato, incluso corriéndolo nosotros en nuestra infraestructura.
+
+
+461
+00:46:48.407 --> 00:46:52.407
+puede tener el mismo nivel de Akira sí que un modelo grande
+
+
+462
+00:46:52.407 --> 00:46:53.407
+Sí,
+
+
+463
+00:46:53.407 --> 00:47:01.407
+O sea, básicamente el diseño iterativo nos ayuda a revisar periódicamente estas decisiones
+
+
+464
+00:47:01.407 --> 00:47:11.407
+Se entiende este criterio sencillo pero importantísimo a la hora de la primera etapa que se llama model selection
+
+
+465
+00:47:11.407 --> 00:47:12.407
+Donna consulta.
+
+
+466
+00:47:12.407 --> 00:47:13.407
+Sí,
+
+
+467
+00:47:13.407 --> 00:47:31.407
+Ahí en esta primera dimensión que digamos es como para llegar a un MVP tiene sentido meterse tan de lleno en tratar de optimizar el modelo o conviene capaz empezar con alguno para llegar hasta capaz con alguno con mucha capacidad y
+
+
+468
+00:47:31.407 --> 00:47:32.407
+Sí
+
+
+469
+00:47:32.407 --> 00:47:33.407
+tener como una métrica de techo y después ir optimizando
+
+
+470
+00:47:33.407 --> 00:47:39.407
+Excelente, sí, sí, sí, ese es el primer paso, arrancaba con un modelo de uno de los laboratorios grandes
+
+
+471
+00:47:39.407 --> 00:47:45.407
+Foundation model, aunque sea un overquil para la tarea que estás haciendo y después vas viendo cómo
+
+
+472
+00:47:45.407 --> 00:47:50.407
+Hace más eficiente, más económico, más rápido
+
+
+473
+00:47:50.407 --> 00:47:59.407
+Pero sí, perfecto, evidentemente, si no necesitas un equipo de ingenieros para implementar
+
+
+474
+00:47:59.407 --> 00:48:04.407
+Este, en tu infraestructura algo que en realidad ni siquiera sabes si va a funcionar, cómo va a funcionar
+
+
+475
+00:48:04.407 --> 00:48:09.407
+Con lo cual, eso que está diciendo casi que es
+
+
+476
+00:48:09.407 --> 00:48:19.407
+Una de las ideas a recordar de esta clase
+
+
+477
+00:48:19.407 --> 00:48:21.407
+Bueno.
+
+
+478
+00:48:21.407 --> 00:48:26.407
+Otras dimensiones que son también creo que se explican solas
+
+
+479
+00:48:26.407 --> 00:48:27.407
+And
+
+
+480
+00:48:27.407 --> 00:48:31.407
+No solamente la complejidad de la tarea
+
+
+481
+00:48:31.407 --> 00:48:43.407
+Sino la modalidad de la tarea, alguien quiere explicar qué es la modalidad
+
+
+482
+00:48:43.407 --> 00:48:55.407
+¿Qué tipo de inputs vas a tener que si va a ser esto solo texto o haber también audio o vídeo?
+
+
+483
+00:48:55.407 --> 00:48:56.407
+totalmente
+
+
+484
+00:48:56.407 --> 00:49:00.407
+Wow, también
+
+
+485
+00:49:00.407 --> 00:49:04.407
+Absolutamente, este.
+
+
+486
+00:49:04.407 --> 00:49:08.407
+Todos conocen más o menos la noción de modalidad
+
+
+487
+00:49:08.407 --> 00:49:17.407
+Lo que podemos tener en cuenta simplemente en este momento es que hubo una pequeña revolución con respecto a modelos de visión
+
+
+488
+00:49:17.407 --> 00:49:19.407
+Modelos de audio, modelo de vídeo
+
+
+489
+00:49:19.407 --> 00:49:24.407
+Entonces, en algunos casos de uso
+
+
+490
+00:49:24.407 --> 00:49:35.407
+Donde, qué sé yo, antes usaba un OCR para tratar de extraer algo de una imagen, se está empezando a utilizar modelos de visión, modelos pequeños de visión entrenados con datos de
+
+
+491
+00:49:35.407 --> 00:49:38.407
+Alguna corporación particular
+
+
+492
+00:49:38.407 --> 00:49:48.407
+Con respecto al audio pasa exactamente lo mismo, entonces la otra, el otro criterio para decidir el modelo es qué modalidades vamos a utilizar
+
+
+493
+00:49:48.407 --> 00:49:51.407
+No solamente eso, a veces los modelos son multimodales
+
+
+494
+00:49:51.407 --> 00:49:55.407
+Tal vez necesitamos que entiendan audio, vídeo, texto
+
+
+495
+00:49:55.407 --> 00:49:58.407
+Sí,
+
+
+496
+00:49:58.407 --> 00:50:13.407
+Esto, por supuesto, no es un detalle menor, es una de las cosas más importantes porque estamos yendo hacia ese lado, seguramente estamos muy acostumbrados a solamente texto, pero cada vez más van a ver que tenemos
+
+
+497
+00:50:13.407 --> 00:50:14.407
+modelos que de forma nativa
+
+
+498
+00:50:14.407 --> 00:50:22.407
+Y esto es importante, antes, por ejemplo, el audio tenía una instancia intermedia
+
+
+499
+00:50:22.407 --> 00:50:23.407
+And
+
+
+500
+00:50:23.407 --> 00:50:31.407
+Conocida como speech to text que transformaba el audio a texto y eso se le pasaba a un LLM
+
+
+501
+00:50:31.407 --> 00:50:46.407
+Con tokens tradicionales hoy tenemos LEBS que son nativos con diferentes modalidades, o sea, el audio ingresa directamente a la ventana de contexto en forma de tokens, se discretiza de una manera el audio.
+
+
+502
+00:50:46.407 --> 00:50:52.407
+Y esos tokens se proyectan en el mismo espacio vectorial que los tokens de texto
+
+
+503
+00:50:52.407 --> 00:50:55.407
+¿Qué significa esto, que se puede hacer
+
+
+504
+00:50:55.407 --> 00:50:59.407
+búsquedas semántica se puede relacionar
+
+
+505
+00:50:59.407 --> 00:51:01.407
+Texto
+
+
+506
+00:51:01.407 --> 00:51:12.407
+con audio o texto con imágenes el LLM entiende de manera nativa estas diferentes modalidades
+
+
+507
+00:51:12.407 --> 00:51:13.407
+Se entendió esto?
+
+
+508
+00:51:13.407 --> 00:51:20.407
+cada esquema, no esquema 4 fue un poco revolucionario que decía no termina nunca entenderlo, pero decían como que
+
+
+509
+00:51:20.407 --> 00:51:25.407
+No lo entrenaron con, con imágenes, igual era bueno con imágenes.
+
+
+510
+00:51:25.407 --> 00:51:27.407
+Puede ser
+
+
+511
+00:51:27.407 --> 00:51:29.407
+Pardon, ¿qué modelo
+
+
+512
+00:51:29.407 --> 00:51:33.407
+4 o gema 3, uno de esos de Google Open Source, la verdad es que hace un par de meses estaba
+
+
+513
+00:51:33.407 --> 00:51:36.407
+Ah, sí, sí, sí, sí.
+
+
+514
+00:51:36.407 --> 00:51:38.407
+See? No recuerdo.
+
+
+515
+00:51:38.407 --> 00:51:39.407
+Ah, bueno.
+
+
+516
+00:51:39.407 --> 00:51:42.407
+sé que fue una bomba, pero no recuerdo
+
+
+517
+00:51:42.407 --> 00:51:46.407
+No, no, nunca te voy a entender por eso, pero debe ser algo relativo, bueno
+
+
+518
+00:51:46.407 --> 00:51:48.407
+Algo pasó hoy
+
+
+519
+00:51:48.407 --> 00:51:52.407
+Algo pasó ahí, si Gema 4 lo tuvo
+
+
+520
+00:51:52.407 --> 00:51:54.407
+Fue una diferencia
+
+
+521
+00:51:54.407 --> 00:52:07.407
+Bueno, no tan al pie con respecto a eso, hay una convergencia interesante en capabilities entre los modelos open source y los modelos cerrados
+
+
+522
+00:52:07.407 --> 00:52:11.407
+Sima 4 celulares
+
+
+523
+00:52:11.407 --> 00:52:13.407
+Yo creo que es, no sé
+
+
+524
+00:52:13.407 --> 00:52:19.407
+debe haber diferentes variantes, el que yo instalé tenía varios billions de parámetros
+
+
+525
+00:52:19.407 --> 00:52:22.407
+Pero
+
+
+526
+00:52:22.407 --> 00:52:23.407
+No
+
+
+527
+00:52:23.407 --> 00:52:35.407
+Sí, sí, yo estoy en el mundo del desarrollo mobile con Flattery, y como Gema, el entorno de Google y todo eso, hay uno que es bien livianito, que se puede instalar en el celu, pero tambien te come el garrón de conectar aplicaciones con eso LLM que corren en tu celu, que también
+
+
+528
+00:52:35.407 --> 00:52:42.407
+Tenía que calcular todo el tiempo de espera hasta que se baje ese modelo y todo eso
+
+
+529
+00:52:42.407 --> 00:52:43.407
+Claro.
+
+
+530
+00:52:43.407 --> 00:52:45.407
+además medio jugado.
+
+
+531
+00:52:45.407 --> 00:52:49.407
+Y tiene que ser un buen ser, sí
+
+
+532
+00:52:49.407 --> 00:52:51.407
+Te queda el celo jugado, bueno, bien, de hecho
+
+
+533
+00:52:51.407 --> 00:52:53.407
+Pero
+
+
+534
+00:52:53.407 --> 00:53:02.407
+Ustedes me iba a pasar un modelo cerrado, modelo abierto
+
+
+535
+00:53:02.407 --> 00:53:05.407
+Tal vez la única aclaración a nivel de detalle es
+
+
+536
+00:53:05.407 --> 00:53:10.407
+Open source versus open weight
+
+
+537
+00:53:10.407 --> 00:53:14.407
+Conocen la diferencia
+
+
+538
+00:53:14.407 --> 00:53:20.407
+si no algunos te pasan directamente los pesos
+
+
+539
+00:53:20.407 --> 00:53:21.407
+Ahí va.
+
+
+540
+00:53:21.407 --> 00:53:27.407
+Y le pueden pasar parte del código, pero quizás no todos los pesos o quizás no dicen cómo lo entonaron, no hay como un montón de
+
+
+541
+00:53:27.407 --> 00:53:29.407
+de cositas así
+
+
+542
+00:53:29.407 --> 00:53:35.407
+Claro, los modelos de nuevo, también tenemos un espectro y los modelos más, más abiertos pasan
+
+
+543
+00:53:35.407 --> 00:53:45.407
+Los pesos, los algoritmos utilizados para entrenar el código utilizado para entrenar, los datasets fundamentalmente
+
+
+544
+00:53:45.407 --> 00:53:53.407
+that tenés toda la receta para recrear el modelo completo cuando solamente lees los pesos
+
+
+545
+00:53:53.407 --> 00:54:01.407
+Lo que puedes hacer es jugar un poco con esos pesos, claramente puede ser 21, por ejemplo, pero no tenés
+
+
+546
+00:54:01.407 --> 00:54:05.407
+Toda la información de cómo fue entrenado el modelo
+
+
+547
+00:54:05.407 --> 00:54:08.407
+Por ejemplo.
+
+
+548
+00:54:08.407 --> 00:54:16.407
+deep fue interesante porque Deep Siq se acuerdan cuando aparece Deep Sick como modelo razonador?
+
+
+549
+00:54:16.407 --> 00:54:31.407
+Chino open source super barato y que aparte publico todo, incluso como hacían reinforcement learning, entonces eso fue una verdadera revolución.
+
+
+550
+00:54:31.407 --> 00:54:32.407
+Bien.
+
+
+551
+00:54:32.407 --> 00:54:43.407
+Bueno, vamos.
+
+
+552
+00:54:43.407 --> 00:54:47.407
+Cuando hay info
+
+
+553
+00:54:47.407 --> 00:55:00.407
+Bien, pasemos esto rápido porque es sencillo a la hora de elegir el modelo, tenemos 2 opciones, simplemente usar, como decía el compañero, un modelo pre entrenado
+
+
+554
+00:55:00.407 --> 00:55:16.407
+O tomar la decisión de entrenar un modelo con datos específicos, esto lo vamos a ver más adelante cuando usar fine tuning y cuándo no usarlo no es barato, hay que tener
+
+
+555
+00:55:16.407 --> 00:55:19.407
+A veces conviene, a veces no, sí
+
+
+556
+00:55:19.407 --> 00:55:27.407
+En los últimos meses aparecieron técnicas y bibliotecas muy interesantes que facilitan el fin tuning
+
+
+557
+00:55:27.407 --> 00:55:32.407
+Pero en general en producción es una decision muy, muy importante
+
+
+558
+00:55:32.407 --> 00:55:36.407
+Y de hecho hay otras maneras también de
+
+
+559
+00:55:36.407 --> 00:55:41.407
+Digamos especializar el modelo sin tener que hacer frente básicamente es
+
+
+560
+00:55:41.407 --> 00:55:49.407
+Alguien quiere contar que Francione
+
+
+561
+00:55:49.407 --> 00:55:59.407
+Es simplemente congelar la red neuronal, tiene un montón de capas, entonces lo que hacemos para
+
+
+562
+00:55:59.407 --> 00:56:04.407
+Reentrenar un LLM es congelar
+
+
+563
+00:56:04.407 --> 00:56:06.407
+pesos los números que están en
+
+
+564
+00:56:06.407 --> 00:56:22.407
+Que es una gran parte de las primeras capas y simplemente correr ese bucle de entrenamiento para cambiar los pesos de las últimas capas, por ejemplo, de esta manera le puedes dar un tono específico, puedes especializar en algún dominio específico, puedes
+
+
+565
+00:56:22.407 --> 00:56:28.407
+hacer alignment de seguridad
+
+
+566
+00:56:28.407 --> 00:56:34.407
+Entre otras cosas
+
+
+567
+00:56:34.407 --> 00:56:42.407
+No, no pretendo que lo entiendan ahora, simplemente que se queden con la idea bien.
+
+
+568
+00:56:42.407 --> 00:56:53.407
+Un tema fundamental que vamos a ver ahora en un ejercicio es el dynamic model routing, esto hoy ya no es ni una opción.
+
+
+569
+00:56:53.407 --> 00:57:04.407
+Ni siquiera se discute, hoy se hace rooteo dinámico de los prompts o del estímulo a diferentes modelos de todas nuestras arquitecturas
+
+
+570
+00:57:04.407 --> 00:57:11.407
+Van a ser multimodelo, sí,
+
+
+571
+00:57:11.407 --> 00:57:12.407
+Es un estándar
+
+
+572
+00:57:12.407 --> 00:57:25.407
+mismo en web y está en modo auto, es que elige el cómo, con qué modelo contestarme
+
+
+573
+00:57:25.407 --> 00:57:27.407
+O hay un modelo que es auto, perdón.
+
+
+574
+00:57:27.407 --> 00:57:29.407
+No, el
+
+
+575
+00:57:29.407 --> 00:57:34.407
+Por lo menos en cloud code entiendo que el modo auto lo que hace es
+
+
+576
+00:57:34.407 --> 00:57:40.407
+Vistemos poder darle como diferentes niveles de permiso para ejecutar diferentes cosas
+
+
+577
+00:57:40.407 --> 00:57:44.407
+Por ejemplo, espiar de todos permiso que te pregunte paso a paso en
+
+
+578
+00:57:44.407 --> 00:57:49.407
+Ah, mira, yo venía el modelo a utilizar
+
+
+579
+00:57:49.407 --> 00:57:54.407
+What?
+
+
+580
+00:57:54.407 --> 00:57:55.407
+But
+
+
+581
+00:57:55.407 --> 00:57:58.407
+Claro, lo voy a resequear, pero tengo entendido que el modo auto es justamente detectar cuál
+
+
+582
+00:57:58.407 --> 00:57:59.407
+Cuando
+
+
+583
+00:57:59.407 --> 00:58:00.407
+Sí, es acerca de los permisos
+
+
+584
+00:58:00.407 --> 00:58:06.407
+Bien, detectar cuando hay una posible ejecución que puede ser
+
+
+585
+00:58:06.407 --> 00:58:07.407
+destructiva de algún tipo
+
+
+586
+00:58:07.407 --> 00:58:21.407
+Yo siempre ejecuto con sin permisos, no me pregunta nada, así que, en general no lo utilizo, pero no, tampoco lo estaría recomendando.
+
+
+587
+00:58:21.407 --> 00:58:31.407
+Sabes que cuando pones en Ultra Code estás en cloud code y pones ultra code, ahí te larga gentes y a veces fíjate que te dice este agente es Sonet, no es Opus
+
+
+588
+00:58:31.407 --> 00:58:35.407
+este como que mande un agente más barato a veces cuando estás ultra code
+
+
+589
+00:58:35.407 --> 00:58:43.407
+cuando el modelo grande llama otro tipo de gente para la tarea más simple
+
+
+590
+00:58:43.407 --> 00:58:56.407
+Sí, sí, absolutamente. De hecho, también lo podría sacrificar en en la configuración, pedirle que utilice Haiku para tareas de determinadas características, sonnet para otras tareas
+
+
+591
+00:58:56.407 --> 00:58:57.407
+De
+
+
+592
+00:58:57.407 --> 00:59:02.407
+podrías clasificar
+
+
+593
+00:59:02.407 --> 00:59:14.407
+Nosotros vamos a ver cómo implementarlo en un workflow, no en cloud code, no local, sino en una gente que vamos a correr en cloud, entonces vamos a ver
+
+
+594
+00:59:14.407 --> 00:59:17.407
+Las primitivas
+
+
+595
+00:59:17.407 --> 00:59:18.407
+Sí
+
+
+596
+00:59:18.407 --> 00:59:24.407
+significa que elige entre modelos pro y flash
+
+
+597
+00:59:24.407 --> 00:59:29.407
+Solito, en base a la complejidad de la tarea, no, no en cloud, perdón
+
+
+598
+00:59:29.407 --> 00:59:31.407
+Qué confusión, está bien, está bien.
+
+
+599
+00:59:31.407 --> 00:59:32.407
+Now.
+
+
+600
+00:59:32.407 --> 00:59:34.407
+Then.
+
+
+601
+00:59:34.407 --> 00:59:35.407
+takeo pailo también tienes
+
+
+602
+00:59:35.407 --> 00:59:36.407
+también tiene eso, el auto
+
+
+603
+00:59:36.407 --> 00:59:37.407
+El auto en copilot elige el que quiera
+
+
+604
+00:59:37.407 --> 00:59:39.407
+El auto se llega a modelo
+
+
+605
+00:59:39.407 --> 00:59:40.407
+Exacto.
+
+
+606
+00:59:40.407 --> 00:59:47.407
+Si no vos tenés que elegir el que vos queres, si lo dejas en auto, eligiendo y, pero Cloud tambien lo tiene, creo.
+
+
+607
+00:59:47.407 --> 00:59:52.407
+me mezclo.
+
+
+608
+00:59:52.407 --> 00:59:55.407
+Sha no, no lo uso el auto directamente, pero sí,
+
+
+609
+00:59:55.407 --> 01:00:10.407
+cada uno llama lo mismo de diferentes maneras, uno es skill y el otro tal cosa, auto por una cosa, para auto routines
+
+
+610
+01:00:10.407 --> 01:00:19.407
+En Cloud Code ahí estoy viendo vos tenés los modelos Opus 5, Facebook Light y arriba de todo tenemos un default, creo que el default funciona como auto que sea el mismo
+
+
+611
+01:00:19.407 --> 01:00:22.407
+Claro, el default es en
+
+
+612
+01:00:22.407 --> 01:00:26.407
+El de fuel es lo mismo que el auto en Copilot, sí.
+
+
+613
+01:00:26.407 --> 01:00:27.407
+Algo así
+
+
+614
+01:00:27.407 --> 01:00:39.407
+El tema está que si vos lo dejas en default te lo va cambiando, depende de lo que quiero. Hay veces que te lo cambia solito y si no te das cuenta te consume más.
+
+
+615
+01:00:39.407 --> 01:00:47.407
+Bien, después, si quieren, revisamos esos detalles
+
+
+616
+01:00:47.407 --> 01:00:50.407
+Porque intenté abrir mi Cloud Code y me quedé casi se me muere la máquina, así que
+
+
+617
+01:00:50.407 --> 01:00:54.407
+Hey, Monty, tengo una pregunta.
+
+
+618
+01:00:54.407 --> 01:00:55.407
+Sí, pues
+
+
+619
+01:00:55.407 --> 01:00:58.407
+Es usual que la gente baje.
+
+
+620
+01:00:58.407 --> 01:01:04.407
+Por ejemplo, el Open Ai, Agents Sdk y.
+
+
+621
+01:01:04.407 --> 01:01:12.407
+Y y lo toque para usarlo en premise, metiéndole los modelos que quiera. Yo sé que se puede no.
+
+
+622
+01:01:12.407 --> 01:01:15.407
+Pero digo.
+
+
+623
+01:01:15.407 --> 01:01:21.407
+Es usual que la que que sea que las empresas hagan. Eso, que agarren un harness y y.
+
+
+624
+01:01:21.407 --> 01:01:29.407
+Lo tunen de esa manera. Más allá del tema de los agentes. No.
+
+
+625
+01:01:29.407 --> 01:01:34.407
+Los intentos que que tuvimos nosotros
+
+
+626
+01:01:34.407 --> 01:01:39.407
+Que bueno, casualmente fueron con con bancos
+
+
+627
+01:01:39.407 --> 01:01:49.407
+Digo, casualmente, lamentablemente estás muy restringido a qué ejecutar con la gente
+
+
+628
+01:01:49.407 --> 01:01:50.407
+Sí, sí, sí,
+
+
+629
+01:01:50.407 --> 01:01:54.407
+Claro. Por eso también estaba tantas preguntas en esa dirección, porque bueno, pero están buenos. Esos carnes hay varios publicados.
+
+
+630
+01:01:54.407 --> 01:02:00.407
+El de Open Air está bastante abierto, el de Cloud. Creo que tiene que estar como más.
+
+
+631
+01:02:00.407 --> 01:02:03.407
+Más, es más gris, porque tiene algo ahí con el gateway.
+
+
+632
+01:02:03.407 --> 01:02:06.407
+Te lo tenés que engañar. Pero digo es.
+
+
+633
+01:02:06.407 --> 01:02:09.407
+¿cómo te fue?
+
+
+634
+01:02:09.407 --> 01:02:10.407
+Okay.
+
+
+635
+01:02:10.407 --> 01:02:18.407
+Y mal, nunca llegamos a la etapa de estancia de implementación
+
+
+636
+01:02:18.407 --> 01:02:19.407
+La verdad
+
+
+637
+01:02:19.407 --> 01:02:21.407
+Y fue muy laborioso.
+
+
+638
+01:02:21.407 --> 01:02:23.407
+La burocracia muy laborioso
+
+
+639
+01:02:23.407 --> 01:02:26.407
+Yeah, Yeah, .
+
+
+640
+01:02:26.407 --> 01:02:33.407
+Para poder seguir adelante con la clase. El principal bloqueo para vos cuál fue.
+
+
+641
+01:02:33.407 --> 01:02:38.407
+Y el desconocimiento de de qué implica tener
+
+
+642
+01:02:38.407 --> 01:02:42.407
+pipeline workflow agentico
+
+
+643
+01:02:42.407 --> 01:02:46.407
+A ver.
+
+
+644
+01:02:46.407 --> 01:02:47.407
+con todo
+
+
+645
+01:02:47.407 --> 01:02:52.407
+Contador
+
+
+646
+01:02:52.407 --> 01:02:53.407
+Sí, sí,
+
+
+647
+01:02:53.407 --> 01:02:57.407
+El otro día fui a nerdearla y hablé con alguien y me dijo que el BCRA tiene normativas también. Entonces como que no lo pueden aplicar en todas las
+
+
+648
+01:02:57.407 --> 01:02:58.407
+Sí, sí
+
+
+649
+01:02:58.407 --> 01:03:05.407
+las cuestiones que tiene el banco, entonces sólo quedó como un chatbot que es medio un poquito el M, pero mayormente determinista.
+
+
+650
+01:03:05.407 --> 01:03:08.407
+Eso es lo que me comentaron
+
+
+651
+01:03:08.407 --> 01:03:09.407
+pero para que proce
+
+
+652
+01:03:09.407 --> 01:03:13.407
+Totalmente, esas me las tuve que estudiar todas
+
+
+653
+01:03:13.407 --> 01:03:20.407
+Pero te diría que incluso están más actualizado
+
+
+654
+01:03:20.407 --> 01:03:23.407
+que
+
+
+655
+01:03:23.407 --> 01:03:33.407
+Los tomadores de decisiones de los bancos y mira lo que te voy a decir con los expertos de data science y lo digo con mucho respeto
+
+
+656
+01:03:33.407 --> 01:03:45.407
+Muchas veces, por ejemplo, no conocían la diferencia entre lo que es un harness que se ejecuta localmente con cloud code y que podéis configurarlo para que consuma tokens de otro modelo.
+
+
+657
+01:03:45.407 --> 01:03:46.407
+Claro.
+
+
+658
+01:03:46.407 --> 01:03:58.407
+o que puede ser gente entonces eso por un lado, después, por otro lado, sí, por supuesto tenés requerimientos de seguridad y gobernanza súper estrictos que me parece perfecto
+
+
+659
+01:03:58.407 --> 01:04:01.407
+Así es, a mí particularmente, ya digo que fue bastante mal con
+
+
+660
+01:04:01.407 --> 01:04:12.407
+Sí, sí, me me me parece que podría llegar a ir por ahí también igual. Cuando haces cosas on premisa. Hay como cierta flexibilidad nosotros, trabajamos mucho con el b c r a y y y.
+
+
+661
+01:04:12.407 --> 01:04:18.407
+You You, por lo menos mi entendimiento de las normas que ellos ponen que también las tenemos que.
+
+
+662
+01:04:18.407 --> 01:04:20.407
+Todo el tiempo, tenemos auditoría y todo lo demás.
+
+
+663
+01:04:20.407 --> 01:04:22.407
+No son tan.
+
+
+664
+01:04:22.407 --> 01:04:27.407
+Estrictas me parece que, o sea, me parece que se pueden lograr.
+
+
+665
+01:04:27.407 --> 01:04:32.407
+Pero un poco, la pregunta era si técnicamente era fácil o difícil.
+
+
+666
+01:04:32.407 --> 01:04:38.407
+A mí me parece, por lo que me está diciendo lo que me llevo como para seguir.
+
+
+667
+01:04:38.407 --> 01:04:42.407
+Es que, evidentemente, hay una cuestión de madurez primero hacia gente, primero hace un montón de otras cosas. Después, si quieres.
+
+
+668
+01:04:42.407 --> 01:04:48.407
+Hace tú agarrar el harnés de Open A y tratar de hacerle algo y reproducirlo.
+
+
+669
+01:04:48.407 --> 01:04:53.407
+Para usarlo en premise, porque ya está Re canchero y la gente sabe de qué estás hablando. Digamos.
+
+
+670
+01:04:53.407 --> 01:04:57.407
+En términos de implementación.
+
+
+671
+01:04:57.407 --> 01:04:58.407
+Es una buena opción.
+
+
+672
+01:04:58.407 --> 01:05:00.407
+Bye.
+
+
+673
+01:05:00.407 --> 01:05:02.407
+te puede crecer la barba hasta que suceda eso, pero, pero es una buena opción
+
+
+674
+01:05:02.407 --> 01:05:08.407
+Que hoy sí que vino mi compañero de cigarr seguridad.
+
+
+675
+01:05:08.407 --> 01:05:20.407
+Pero yo estoy re re con la gente de seguridad, me dedicaba a eso real sí está actualizado y está bien, tienes un montón de
+
+
+676
+01:05:20.407 --> 01:05:27.407
+De otras normativas que también restringen un poco lo que podés hacer y lo que no
+
+
+677
+01:05:27.407 --> 01:05:33.407
+Pero nuevamente, en general es, hay algo de desconocimiento, hay algo de, por supuesto.
+
+
+678
+01:05:33.407 --> 01:05:39.407
+Resistencia gestión del cambio porque el cambio también es
+
+
+679
+01:05:39.407 --> 01:05:40.407
+Got it.
+
+
+680
+01:05:40.407 --> 01:05:46.407
+de cultura es organizacional, es de topología de equipo, está buena la charla, la podemos hacer en nuestro horario de charlas locas después de las
+
+
+681
+01:05:46.407 --> 01:05:49.407
+Después de las 8 si.
+
+
+682
+01:05:49.407 --> 01:05:51.407
+Dale, cuando paguemos la cama
+
+
+683
+01:05:51.407 --> 01:05:58.407
+Bien, tengo que decirlo, son mucho más divertidos que la comisión
+
+
+684
+01:05:58.407 --> 01:06:08.407
+comparativa de modelos está absolutamente desactualizado adrede porque tengo un conjunto de slides
+
+
+685
+01:06:08.407 --> 01:06:14.407
+los últimos números no quiero mostrar ahora para no hacerles perder el tiempo.
+
+
+686
+01:06:14.407 --> 01:06:16.407
+And
+
+
+687
+01:06:16.407 --> 01:06:27.407
+Pero básicamente vamos a tener que estudiar tablas de este tipo, vamos a tener que estudiar benchmarks y vamos a tener que aprender cómo leer esos benchmarks
+
+
+688
+01:06:27.407 --> 01:06:29.407
+Sí,
+
+
+689
+01:06:29.407 --> 01:06:42.407
+Bueno, me imagino que tiene alguna idea de qué significa este número para los que no sepan, es la cantidad de billion de parámetros, es el tamaño del modelo
+
+
+690
+01:06:42.407 --> 01:06:46.407
+El tamaño del modelo tiene como
+
+
+691
+01:06:46.407 --> 01:06:57.407
+Varias implicancias, primero normalmente a a un modelo más grande siempre se le asocian mayores capabilities, pero por supuesto consume más birrama, o sea, la RAM de la GPU
+
+
+692
+01:06:57.407 --> 01:07:00.407
+And
+
+
+693
+01:07:00.407 --> 01:07:06.407
+Suele necesitar hardware más potente
+
+
+694
+01:07:06.407 --> 01:07:15.407
+Y no siempre se se condice con cambios significativos en el benchmark que estamos
+
+
+695
+01:07:15.407 --> 01:07:18.407
+Es solamente una introducción
+
+
+696
+01:07:18.407 --> 01:07:31.407
+Esto es un tema que vamos a ver en una clase completa porque estamos eligiendo no solamente la primer versión, sino como después ir iterando y cambiando
+
+
+697
+01:07:31.407 --> 01:07:40.407
+Así que, si me permiten avanzar
+
+
+698
+01:07:40.407 --> 01:07:42.407
+Bueno.
+
+
+699
+01:07:42.407 --> 01:07:46.407
+A ver, acá seguramente la mayoría
+
+
+700
+01:07:46.407 --> 01:07:59.407
+De una idea puede entender qué está pasando acá generalmente en términos genéricos siempre estamos lidiando con traidos
+
+
+701
+01:07:59.407 --> 01:08:03.407
+Acá hay una simplificación
+
+
+702
+01:08:03.407 --> 01:08:06.407
+De extrema en pos de la
+
+
+703
+01:08:06.407 --> 01:08:09.407
+pedagogía
+
+
+704
+01:08:09.407 --> 01:08:18.407
+Estamos viendo 4 ejes que parecen ser independientes, pero en realidad, cuando hablo de tradeoffs estoy diciendo normalmente
+
+
+705
+01:08:18.407 --> 01:08:24.407
+Si queremos un modelo más preciso, probablemente sea más lento. Normalmente
+
+
+706
+01:08:24.407 --> 01:08:30.407
+Sí, si queremos más velocidad, tenemos algún requerimiento específico de latencia
+
+
+707
+01:08:30.407 --> 01:08:35.407
+Bueno, seguramente eso impacte en en la precisión
+
+
+708
+01:08:35.407 --> 01:08:39.407
+Eso suele suceder, o sea.
+
+
+709
+01:08:39.407 --> 01:08:44.407
+Sabemos con ser que, bueno, pueden empezar a cambiar esos como
+
+
+710
+01:08:44.407 --> 01:08:47.407
+Esos trade-offs
+
+
+711
+01:08:47.407 --> 01:08:49.407
+Con respecto a la escalabilidad, esto tiene más que ver
+
+
+712
+01:08:49.407 --> 01:08:54.407
+cuando hagamos el deploy introducción
+
+
+713
+01:08:54.407 --> 01:08:56.407
+Dos temas fundamentales.
+
+
+714
+01:08:56.407 --> 01:08:59.407
+Normalmente usamos infraestructura elástica
+
+
+715
+01:08:59.407 --> 01:09:11.407
+No hacemos asignación estática ni a GPU ni tenemos definida la cantidad de distancias de máquinas virtuales que usamos eso o cloud runo
+
+
+716
+01:09:11.407 --> 01:09:16.407
+and especially in Branton, normalmente intentamos en ese sentido ser flexibles
+
+
+717
+01:09:16.407 --> 01:09:22.407
+Esto tiene que ver con la distribución que normalmente tiene el uso de un agente
+
+
+718
+01:09:22.407 --> 01:09:26.407
+Que suele ser mi modal, en realidad
+
+
+719
+01:09:26.407 --> 01:09:36.407
+No importa entrar ahora en esos detalles, lo vamos a ver en el capítulo específico de cómo llevamos esto a producción
+
+
+720
+01:09:36.407 --> 01:09:44.407
+El tercer eje es clave y es el que más se subestima, ¿sí?
+
+
+721
+01:09:44.407 --> 01:09:53.407
+¿Por qué redundancia? Bueno, porque fallan todo el tiempo, fallan las APIs, fallan los modelos, fallan las tools de si nosotros queremos un modelo robusto.
+
+
+722
+01:09:53.407 --> 01:09:56.407
+Perdón, un agente robusto
+
+
+723
+01:09:56.407 --> 01:10:02.407
+Tenemos que pensar desde el día 1 en cómo hacerlo
+
+
+724
+01:10:02.407 --> 01:10:12.407
+tolerante a esas fallas internas y ahí vamos a ver cómo se especifica eso en el grafo, por ejemplo, en el caso que sea un grafo
+
+
+725
+01:10:12.407 --> 01:10:15.407
+Y también desde el día 1 necesitamos esos feedback loops
+
+
+726
+01:10:15.407 --> 01:10:21.407
+Para ir aprendiendo, tenemos que tener señales que nos vayan diciendo qué pasa con
+
+
+727
+01:10:21.407 --> 01:10:28.407
+Todo el harness que pasa con todo el sistema gentico para saber dónde tenemos cuello de botella, donde tenemos gasto, demás
+
+
+728
+01:10:28.407 --> 01:10:29.407
+in
+
+
+729
+01:10:29.407 --> 01:10:38.407
+Así que uno de los módulos del curso tienen que ver con estos feedback loops y el monitoreo en tiempo real
+
+
+730
+01:10:38.407 --> 01:10:48.407
+Finalmente, el costo, esta clase la va a dar un colega mío, un economista muy crack, así que no me gusta meterme mucho en términos de
+
+
+731
+01:10:48.407 --> 01:10:58.407
+Tokenomics o token economics, todo lo que tenga que ver con retorno de la inversion, prefiero dejarse lo a mi colega.
+
+
+732
+01:10:58.407 --> 01:11:05.407
+Pero, por supuesto, si queremos un modelo que sea preciso, rápido, confiable, por supuesto lo va a ser más caro.
+
+
+733
+01:11:05.407 --> 01:11:10.407
+acá lo que quiero decirles como ideas generales que
+
+
+734
+01:11:10.407 --> 01:11:14.407
+Hay una correlación directa entre los 4 ejes
+
+
+735
+01:11:14.407 --> 01:11:21.407
+Quebemos tener en cuenta a la hora de definir la arquitectura
+
+
+736
+01:11:21.407 --> 01:11:26.407
+Bien.
+
+
+737
+01:11:26.407 --> 01:11:30.407
+19:18
+
+
+738
+01:11:30.407 --> 01:11:40.407
+Voy a dejar que lean estas slides que explican en detalle lo que acabo de decir
+
+
+739
+01:11:40.407 --> 01:11:48.407
+necesito que estudien un poquito también en sus casas
+
+
+740
+01:11:48.407 --> 01:11:57.407
+Si voy a explicar estos 2 mecanismos muy por arriba porque vamos a empezar a ver un poquito de código ahora.
+
+
+741
+01:11:57.407 --> 01:12:00.407
+And
+
+
+742
+01:12:00.407 --> 01:12:03.407
+Si alguien se pierde con el código, me avisa.
+
+
+743
+01:12:03.407 --> 01:12:07.407
+No es necesario entenderlo todo
+
+
+744
+01:12:07.407 --> 01:12:09.407
+With básicamente
+
+
+745
+01:12:09.407 --> 01:12:19.407
+Lo que quiero que empecemos a entender es que adecar particularmente de cada 2 nos va a ofrecer un montón de mecanismos primitivas
+
+
+746
+01:12:19.407 --> 01:12:22.407
+clases
+
+
+747
+01:12:22.407 --> 01:12:29.407
+Que nosotros traen de el manejo de un montón de problemas que pueden tener los agentes a la hora de correrlos
+
+
+748
+01:12:29.407 --> 01:12:34.407
+Uno de ellos es el atributo timeout
+
+
+749
+01:12:34.407 --> 01:12:35.407
+A ver.
+
+
+750
+01:12:35.407 --> 01:12:42.407
+Vamos a darle
+
+
+751
+01:12:42.407 --> 01:12:43.407
+Primera línea
+
+
+752
+01:12:43.407 --> 01:12:52.407
+Cuando instanciamos un agente para que quiero verle la cara baje
+
+
+753
+01:12:52.407 --> 01:13:05.407
+Primera línea cuando instanciamos un agente, este es un snippet, le falta, por supuesto, los importes y todo, pero cuando estamos un agente, cuando creamos un agente en nuestro código, simplemente distanciamos una clase
+
+
+754
+01:13:05.407 --> 01:13:09.407
+que tiene que tener por lo menos 3 atributos
+
+
+755
+01:13:09.407 --> 01:13:13.407
+Sí,
+
+
+756
+01:13:13.407 --> 01:13:19.407
+El nombre, el tipo de modelo que va a usar y, en este caso, el de mount es más
+
+
+757
+01:13:19.407 --> 01:13:24.407
+Que un límite de tiempo que dice, si no respondió este tiempo.
+
+
+758
+01:13:24.407 --> 01:13:27.407
+Volvemos una excepción.
+
+
+759
+01:13:27.407 --> 01:13:40.407
+Sí, en eso se entiende el tema, simplemente es un límite de tiempo, ¿para qué? Para que la experiencia del usuario sea relativamente satisfactoria
+
+
+760
+01:13:40.407 --> 01:13:44.407
+Esta primera línea se entiende, la entienden todos
+
+
+761
+01:13:44.407 --> 01:13:46.407
+Hello, vamos por las preguntas boludas, pero prefiero estar tranquilo
+
+
+762
+01:13:46.407 --> 01:13:47.407
+Sí, perfecto.
+
+
+763
+01:13:47.407 --> 01:13:49.407
+Sí, sí.
+
+
+764
+01:13:49.407 --> 01:13:56.407
+Gracias, chicos
+
+
+765
+01:13:56.407 --> 01:14:01.407
+Genial, acá abajo vemos otra instanciación de otro agente
+
+
+766
+01:14:01.407 --> 01:14:08.407
+Con su nombre, con su modelo y con un nuevo atributo que es onmodel error card
+
+
+767
+01:14:08.407 --> 01:14:11.407
+Sí,
+
+
+768
+01:14:11.407 --> 01:14:16.407
+¿Quién explica esto? Estoy seguro que lo pueden sacar todos
+
+
+769
+01:14:16.407 --> 01:14:21.407
+más o menos sabe lo que es un callback y si no seguramente algún compañero
+
+
+770
+01:14:21.407 --> 01:14:24.407
+Llama a otro agente para resolver eso
+
+
+771
+01:14:24.407 --> 01:14:26.407
+porque dio error el primero
+
+
+772
+01:14:26.407 --> 01:14:30.407
+En casa timeout
+
+
+773
+01:14:30.407 --> 01:14:31.407
+No
+
+
+774
+01:14:31.407 --> 01:14:32.407
+o en caso de error
+
+
+775
+01:14:32.407 --> 01:14:33.407
+the
+
+
+776
+01:14:33.407 --> 01:14:44.407
+O en caso de error, perfecto, perfecto, son mecanismos distintos en los colmax en general son funciones que se llaman en diferentes
+
+
+777
+01:14:44.407 --> 01:14:50.407
+Puntos de inserción dentro del flujo de ejecución, vamos a ver que tenemos
+
+
+778
+01:14:50.407 --> 01:14:58.407
+un montón a ver si puedo abrir rápido
+
+
+779
+01:14:58.407 --> 01:15:01.407
+A dedica
+
+
+780
+01:15:01.407 --> 01:15:10.407
+Coloss
+
+
+781
+01:15:10.407 --> 01:15:14.407
+Se nos muestra rápido
+
+
+782
+01:15:14.407 --> 01:15:21.407
+En los colbacks son simplemente oportunidades que tenemos de
+
+
+783
+01:15:21.407 --> 01:15:25.407
+Igregar comportamiento
+
+
+784
+01:15:25.407 --> 01:15:32.407
+Antes o después de que pasean, por ejemplo, antes o después de que llamamos una función o a un atúl o a un agente
+
+
+785
+01:15:32.407 --> 01:15:38.407
+Antes o después que creemos un nuevo subvergente
+
+
+786
+01:15:38.407 --> 01:15:42.407
+incluso al crear un agente.
+
+
+787
+01:15:42.407 --> 01:15:51.407
+podemos ejecutar funciones que son callbacks si definimos una función y el callback dice cuando esa función va a ser invocada
+
+
+788
+01:15:51.407 --> 01:15:59.407
+Se entendió
+
+
+789
+01:15:59.407 --> 01:16:00.407
+Genial.
+
+
+790
+01:16:00.407 --> 01:16:04.407
+Para que se utilizan para todas estas cosas
+
+
+791
+01:16:04.407 --> 01:16:12.407
+Lo vamos a ver en detalle de nuevo, recuerden que hoy es simplemente una pasada muy para arriba
+
+
+792
+01:16:12.407 --> 01:16:20.407
+Hay que a punto de barra con los nuestra fuente de valores
+
+
+793
+01:16:20.407 --> 01:16:28.407
+Por ahora no nos interesa tanto.
+
+
+794
+01:16:28.407 --> 01:16:37.407
+Y otra cosa que vamos a ver también es cómo implementar esta, esta idea de
+
+
+795
+01:16:37.407 --> 01:16:42.407
+y hacerlo tolerante a fallos y hacerlo redundante
+
+
+796
+01:16:42.407 --> 01:16:43.407
+And
+
+
+797
+01:16:43.407 --> 01:16:52.407
+De todo esto lo que me interesa es que veamos esta línea que se retrae con firme
+
+
+798
+01:16:52.407 --> 01:16:57.407
+Ya se van a ver
+
+
+799
+01:16:57.407 --> 01:16:58.407
+Bien
+
+
+800
+01:16:58.407 --> 01:17:01.407
+Sí
+
+
+801
+01:17:01.407 --> 01:17:05.407
+Esta es una, es un tercer ejemplo donde instanciamos un agente
+
+
+802
+01:17:05.407 --> 01:17:17.407
+Con su nombre, con su modelo y con un nuevo atributo que trae con fe si no es más que la instalación de otra clase, le traigo fin
+
+
+803
+01:17:17.407 --> 01:17:23.407
+que dice básicamente cuántos intentos máximo vamos a
+
+
+804
+01:17:23.407 --> 01:17:26.407
+permitir
+
+
+805
+01:17:26.407 --> 01:17:30.407
+¿Cuánto vamos a esperar entre intento e intento?
+
+
+806
+01:17:30.407 --> 01:17:41.407
+Y el back off factor es el factor multiplicador de ese primer delay, porque en general cuando tenemos errores lo que queremos es que los reintentos estemos espaciados en el tiempo
+
+
+807
+01:17:41.407 --> 01:17:49.407
+Por ejemplo, el primer intento lo hacemos al segundo, el segundo intento lo hacemos a los 2 segundos, el tercer intento a los 4 segundos.
+
+
+808
+01:17:49.407 --> 01:17:54.407
+Es un poco la manera de
+
+
+809
+01:17:54.407 --> 01:17:57.407
+diversificar el riesgo
+
+
+810
+01:17:57.407 --> 01:18:07.407
+Por ejemplo, la salamapi en el tiempo o darle al componente que está fallando o darle tiempo para que se recupere
+
+
+811
+01:18:07.407 --> 01:18:11.407
+Venimos bien
+
+
+812
+01:18:11.407 --> 01:18:13.407
+Cosa.
+
+
+813
+01:18:13.407 --> 01:18:16.407
+No vamos a, no se preocupen
+
+
+814
+01:18:16.407 --> 01:18:24.407
+Ok, categorías de herramientas
+
+
+815
+01:18:24.407 --> 01:18:29.407
+¿Quién cuenta rápidamente y en 10 segundos
+
+
+816
+01:18:29.407 --> 01:18:41.407
+Este contenido de esta es la
+
+
+817
+01:18:41.407 --> 01:18:45.407
+Y a través de los NCP le damos como
+
+
+818
+01:18:45.407 --> 01:18:48.407
+habilidades
+
+
+819
+01:18:48.407 --> 01:18:49.407
+Al elen para que puedan hacer
+
+
+820
+01:18:49.407 --> 01:18:54.407
+o consultar ciertas cosas que él no puede, digamos
+
+
+821
+01:18:54.407 --> 01:18:59.407
+No sé, que desde Clauco vaya a, a mis email o cualquier otra
+
+
+822
+01:18:59.407 --> 01:19:05.407
+Cualquier otra
+
+
+823
+01:19:05.407 --> 01:19:12.407
+Bueno, esos MCP, vamos a estudiar el protocolo en detalle porque es, ya les digo, protocolo estándar
+
+
+824
+01:19:12.407 --> 01:19:13.407
+And
+
+
+825
+01:19:13.407 --> 01:19:24.407
+Interoperabilidad vertical se llama, es una manera de estandarizar la comunicación con herramientas o con recursos, y hay tools que tambien pueden ser locales.
+
+
+826
+01:19:24.407 --> 01:19:25.407
+Ah, perdón.
+
+
+827
+01:19:25.407 --> 01:19:26.407
+Funciones de Python, por ejemplo.
+
+
+828
+01:19:26.407 --> 01:19:27.407
+No, no, tranquil
+
+
+829
+01:19:27.407 --> 01:19:38.407
+Sí, y también se consideran herramientas el, los comandos de graph para leer, buscar o escribir y todo eso, eso serían como herramientas locales
+
+
+830
+01:19:38.407 --> 01:19:42.407
+Estás hablando de
+
+
+831
+01:19:42.407 --> 01:19:44.407
+Glaucodo o algún asistente de ese tipo
+
+
+832
+01:19:44.407 --> 01:19:52.407
+Sí, cual, cual, sí, sí, cual, cualquier element que, que, que tenga la funcionalidad de poder leer, de escribir.
+
+
+833
+01:19:52.407 --> 01:19:54.407
+buscar
+
+
+834
+01:19:54.407 --> 01:19:55.407
+Bien.
+
+
+835
+01:19:55.407 --> 01:19:58.407
+Dentro de un archivo, por ejemplo, o dentro de la máquina
+
+
+836
+01:19:58.407 --> 01:20:00.407
+Totalmente, totalmente
+
+
+837
+01:20:00.407 --> 01:20:01.407
+Sí, son herramientas
+
+
+838
+01:20:01.407 --> 01:20:07.407
+de acceso a tu base de datos local también o a base de datos de la compañía o archivos también
+
+
+839
+01:20:07.407 --> 01:20:13.407
+O sea, vos tenese las tools te sirven para conectarte con
+
+
+840
+01:20:13.407 --> 01:20:18.407
+fuentes de datos también
+
+
+841
+01:20:18.407 --> 01:20:19.407
+En este caso sería
+
+
+842
+01:20:19.407 --> 01:20:29.407
+funciones internas como para acceder a la base de datos de tu compania o por o a funciones ya que tenés publicadas
+
+
+843
+01:20:29.407 --> 01:20:36.407
+Yo laburo mucho con vacas en la base de datos, entonces para no repetir cosas, van ahi
+
+
+844
+01:20:36.407 --> 01:20:42.407
+O consumir APIs internas o externas o el MSP directamente, o sea.
+
+
+845
+01:20:42.407 --> 01:20:43.407
+Bien, bien.
+
+
+846
+01:20:43.407 --> 01:20:44.407
+a
+
+
+847
+01:20:44.407 --> 01:20:49.407
+Excelente, esa es la explicación que necesitaba, vamos a seguir adelante, gracias.
+
+
+848
+01:20:49.407 --> 01:20:52.407
+In
+
+
+849
+01:20:52.407 --> 01:20:55.407
+Ok.
+
+
+850
+01:20:55.407 --> 01:21:04.407
+los otros 2 componentes que habíamos dicho que eran súper importantes eran la memoria, tenemos 2 tipos de memoria, normalmente memoria de corto plazo, como nos aclaró Lucía, y memoria de largo plazo.
+
+
+851
+01:21:04.407 --> 01:21:08.407
+La memoria de corto plazo
+
+
+852
+01:21:08.407 --> 01:21:12.407
+En estos ejemplos que vamos a utilizar
+
+
+853
+01:21:12.407 --> 01:21:17.407
+En esta primera clase, en nuestros primeros agentes
+
+
+854
+01:21:17.407 --> 01:21:30.407
+La vamos a implementar con un tipo de memoria que se crea en RAM, sí, o sea, básicamente es simplemente para pruebas, para experimentos
+
+
+855
+01:21:30.407 --> 01:21:40.407
+Y básicamente es todo el historial de los eventos que fueron sucediendo a lo largo de los turnos en la ejecución de nuestra agenda
+
+
+856
+01:21:40.407 --> 01:21:41.407
+Sí,
+
+
+857
+01:21:41.407 --> 01:21:43.407
+In
+
+
+858
+01:21:43.407 --> 01:21:51.407
+Bien, como dice acá la función nos da coherencia conversacional, digamos, si vos volvés a preguntar algo, ¿sabe qué pasó antes
+
+
+859
+01:21:51.407 --> 01:21:55.407
+Tienes que repetir la información
+
+
+860
+01:21:55.407 --> 01:22:02.407
+y tiene un límite que tiene que ver con la ventana en el contexto del modelo
+
+
+861
+01:22:02.407 --> 01:22:16.407
+porque porque en general nuestro framework, en este caso de cada session
+
+
+862
+01:22:16.407 --> 01:22:20.407
+Dentro de la ventana de contexto del modelo
+
+
+863
+01:22:20.407 --> 01:22:26.407
+La ventana de contexto del modelo, lo vuelvo a repetir por si no quede claro
+
+
+864
+01:22:26.407 --> 01:22:31.407
+La la información en la sesión es parte del framework del harness
+
+
+865
+01:22:31.407 --> 01:22:38.407
+Eso se guarda en memoria, la ventana de contexto del modelo es el espacio de input del LLM
+
+
+866
+01:22:38.407 --> 01:22:41.407
+Y claramente tiene un límite
+
+
+867
+01:22:41.407 --> 01:22:47.407
+aunque ese límite está creciendo rápidamente, por ejemplo, los primeros chats tenían
+
+
+868
+01:22:47.407 --> 01:22:53.407
+4096 tokens posibles en su ventana de contexto
+
+
+869
+01:22:53.407 --> 01:23:00.407
+Hoy tenemos modelos con un millón o hasta 2 millones de tokens
+
+
+870
+01:23:00.407 --> 01:23:01.407
+Imagina que son
+
+
+871
+01:23:01.407 --> 01:23:06.407
+Cientos de libros en en un solo prompt
+
+
+872
+01:23:06.407 --> 01:23:08.407
+Este.
+
+
+873
+01:23:08.407 --> 01:23:15.407
+Para los nuevos modelos, ahora vamos a ver en nuestro módulo de contexto
+
+
+874
+01:23:15.407 --> 01:23:24.407
+Gestionado que no necesariamente es conveniente llenar esa ventana de contexto, el modelo no funciona igual si tiene la ventana de contexto explotada de datos
+
+
+875
+01:23:24.407 --> 01:23:29.407
+Si somos un poco más inteligentes en esa gestión.
+
+
+876
+01:23:29.407 --> 01:23:33.407
+Creo que les hablé de un problema conocido como lost in the middle
+
+
+877
+01:23:33.407 --> 01:23:36.407
+que tiene que ver con una
+
+
+878
+01:23:36.407 --> 01:23:38.407
+Limitación
+
+
+879
+01:23:38.407 --> 01:23:43.407
+Estructural, esto tiene que ver con cómo funcionan los transformers que normalmente
+
+
+880
+01:23:43.407 --> 01:23:54.407
+Hace que el modelo tenga mucha menos precisión y pierda mucho más el interés en todo el contenido está en el centro de la ventana de contexto
+
+
+881
+01:23:54.407 --> 01:23:59.407
+Si se imaginan la venta de contexto con un vector gigante de tokens
+
+
+882
+01:23:59.407 --> 01:24:07.407
+Todo lo que está en el centro tiende a como confundir el modelo, como que los Transformers no no trabajan bien con eso
+
+
+883
+01:24:07.407 --> 01:24:11.407
+Por eso, por ejemplo, el barra compact en
+
+
+884
+01:24:11.407 --> 01:24:13.407
+En Cloud Code no
+
+
+885
+01:24:13.407 --> 01:24:20.407
+Bien, entonces me voy a corto plazo, vamos a usar una memoria a corto plazo muy básica
+
+
+886
+01:24:20.407 --> 01:24:28.407
+implementamos con este servicio que se corre en RAM, por supuesto, existen implementaciones mucho más robustas
+
+
+887
+01:24:28.407 --> 01:24:41.407
+Imagina que cuando pasea esto perdemos todo, no es lo que queremos, podemos tener memoria a corto plazo, pero que se guarden disco que normalmente hacemos cuando desplegamos
+
+
+888
+01:24:41.407 --> 01:24:49.407
+Con respecto a la memoria de largo plazo, un poco hablamos
+
+
+889
+01:24:49.407 --> 01:24:53.407
+Yo creo que acá recordar 2 cosas que habilita
+
+
+890
+01:24:53.407 --> 01:25:00.407
+Personalización porque justamente donde guardamos la posición del usuario y aprendizaje organizacional
+
+
+891
+01:25:00.407 --> 01:25:07.407
+Para eso está raw, para eso están los gráfocos de conocimiento
+
+
+892
+01:25:07.407 --> 01:25:09.407
+Esta es una clase entera
+
+
+893
+01:25:09.407 --> 01:25:19.407
+Así que de nuevo, no se preocupen, vamos a ver en base, vamos a cerrar de conocimiento, cuándo usar uno, cuando sale el otro.
+
+
+894
+01:25:19.407 --> 01:25:22.407
+Así que por ahora
+
+
+895
+01:25:22.407 --> 01:25:23.407
+Awesome.
+
+
+896
+01:25:23.407 --> 01:25:25.407
+Sí, ahí te hago una pregunta honcho: conoces.
+
+
+897
+01:25:25.407 --> 01:25:27.407
+Si no.
+
+
+898
+01:25:27.407 --> 01:25:28.407
+Hello?
+
+
+899
+01:25:28.407 --> 01:25:31.407
+Honcho es un.
+
+
+900
+01:25:31.407 --> 01:25:36.407
+Como un servicio porque en realidad no existe para un premise. Pero.
+
+
+901
+01:25:36.407 --> 01:25:42.407
+Es como que almacena la memoria. Lo que lo que vas conversando.
+
+
+902
+01:25:42.407 --> 01:25:47.407
+Y tiene como esta memoria episódica y semántica. Eso es como el.
+
+
+903
+01:25:47.407 --> 01:25:51.407
+Digo, sería como una memoria a largo plazo, pero.
+
+
+904
+01:25:51.407 --> 01:25:59.407
+Bah. Me imagino yo lo catalogaría más como una una memoria a largo plazo de vos mencionaste hoy memoria episódica. No.
+
+
+905
+01:25:59.407 --> 01:26:03.407
+Sí, sí,
+
+
+906
+01:26:03.407 --> 01:26:04.407
+Sí,
+
+
+907
+01:26:04.407 --> 01:26:10.407
+Okay, y que estaría en la segunda parte, digamos, no es corto plazo, sino que están ahí en el medio.
+
+
+908
+01:26:10.407 --> 01:26:13.407
+Claro, tal cual
+
+
+909
+01:26:13.407 --> 01:26:15.407
+Sí, se usa mucho también para
+
+
+910
+01:26:15.407 --> 01:26:25.407
+Hay hay unos arquetipos específicos que que aprenden a partir de evaluar sus propios resultados y a veces guardan en esas memorias
+
+
+911
+01:26:25.407 --> 01:26:31.407
+Ehm
+
+
+912
+01:26:31.407 --> 01:26:32.407
+Claro.
+
+
+913
+01:26:32.407 --> 01:26:33.407
+Sus experiencias como para la próxima vez que se ejecuten poder revisar para no tener que red
+
+
+914
+01:26:33.407 --> 01:26:37.407
+No eso es interesante desde que lo vamos a ver en detalle o en más detalle.
+
+
+915
+01:26:37.407 --> 01:26:38.407
+Sí, sí, sí, sí, sí,
+
+
+916
+01:26:38.407 --> 01:26:41.407
+Okay.
+
+
+917
+01:26:41.407 --> 01:26:46.407
+Sí, de hecho es la clase que doy mañana, así que es es interesante
+
+
+918
+01:26:46.407 --> 01:26:48.407
+Lo que pasa que
+
+
+919
+01:26:48.407 --> 01:26:49.407
+El gran problema que tenemos de nuevo es ser
+
+
+920
+01:26:49.407 --> 01:26:51.407
+Perfecto.
+
+
+921
+01:26:51.407 --> 01:26:57.407
+Creo que lo estoy empezando a odiar porque hizo que el curso
+
+
+922
+01:26:57.407 --> 01:26:58.407
+It does.
+
+
+923
+01:26:58.407 --> 01:26:59.407
+que
+
+
+924
+01:26:59.407 --> 01:27:00.407
+pasa lo mismo
+
+
+925
+01:27:00.407 --> 01:27:03.407
+requiere una actualización inmediata
+
+
+926
+01:27:03.407 --> 01:27:09.407
+Bien, vamos a tratar de terminar así, vemos ejemplos, por favor.
+
+
+927
+01:27:09.407 --> 01:27:17.407
+No conozco mucho, pero sí hay un montón de de repos github que implementan diferentes tipos de
+
+
+928
+01:27:17.407 --> 01:27:32.407
+Ok, la orquestación, esto también es, directamente, es el módulo 5 dedicado a la orquestación, con lo cual vamos a ver ahora simplemente de qué manera se puede implementar. Acá estamos, fíjense.
+
+
+929
+01:27:32.407 --> 01:27:36.407
+Instanciando un pipeline ya no es un agente, es un pipeline
+
+
+930
+01:27:36.407 --> 01:27:44.407
+Con un nombre y una lista de subagentes
+
+
+931
+01:27:44.407 --> 01:27:48.407
+Esto es lo que ofrece, ofrecía de cada uno
+
+
+932
+01:27:48.407 --> 01:27:58.407
+este template secuencial, como os imaginarán, lo que hace es invocar uno a uno de manera secuencial a los subagentes que se encuentran en esa lista
+
+
+933
+01:27:58.407 --> 01:28:08.407
+No mucho más que es una cadena de subagentes y se van pasando la respuesta de uno o la salida de uno es el input del próximo
+
+
+934
+01:28:08.407 --> 01:28:21.407
+Tenemos un montón de otras opciones, hay secuencia de agent, hay parallel agent, hay loops en agent, pesos, templates están siendo duplicados en este momento porque ha dejado
+
+
+935
+01:28:21.407 --> 01:28:26.407
+Propone pasar todo a un modelo de grafos
+
+
+936
+01:28:26.407 --> 01:28:34.407
+más parecido Alan Graf
+
+
+937
+01:28:34.407 --> 01:28:36.407
+Bueno.
+
+
+938
+01:28:36.407 --> 01:28:38.407
+Blah
+
+
+939
+01:28:38.407 --> 01:28:45.407
+No mucho más
+
+
+940
+01:28:45.407 --> 01:28:48.407
+que esto
+
+
+941
+01:28:48.407 --> 01:28:56.407
+quieren que veamos un poco
+
+
+942
+01:28:56.407 --> 01:28:58.407
+Este.
+
+
+943
+01:28:58.407 --> 01:28:59.407
+algún ejemplo
+
+
+944
+01:28:59.407 --> 01:29:00.407
+Queríamos otro ejemplo. No.
+
+
+945
+01:29:00.407 --> 01:29:05.407
+Sí, sí, porque se se nos va el tiempo, no dejen de mirar las las slides, por favor.
+
+
+946
+01:29:05.407 --> 01:29:06.407
+Dale.
+
+
+947
+01:29:06.407 --> 01:29:08.407
+Porque
+
+
+948
+01:29:08.407 --> 01:29:11.407
+Si viendo que hay cosas
+
+
+949
+01:29:11.407 --> 01:29:20.407
+Por ejemplo, esto lo agregué al final y lo agregué cuando hice el análisis de la audiencia de las cohortes, así que
+
+
+950
+01:29:20.407 --> 01:29:27.407
+Especializado para ustedes, pero si no lo llegamos, así que vamos a la siguiente
+
+
+951
+01:29:27.407 --> 01:29:33.407
+De última me han preguntado durante los ejemplos.
+
+
+952
+01:29:33.407 --> 01:29:38.407
+Bien.
+
+
+953
+01:29:38.407 --> 01:29:40.407
+Acá le ocurría si funcionan bien
+
+
+954
+01:29:40.407 --> 01:29:42.407
+Bueno, primero
+
+
+955
+01:29:42.407 --> 01:29:49.407
+Esto en Linux y en Mac corre de una, los que tienen Windows
+
+
+956
+01:29:49.407 --> 01:30:00.407
+Supongo que habrá alguien que me ayude o
+
+
+957
+01:30:00.407 --> 01:30:03.407
+No lo probé para Windows, eso quiere decir.
+
+
+958
+01:30:03.407 --> 01:30:06.407
+Ehm
+
+
+959
+01:30:06.407 --> 01:30:07.407
+El les pido disculpas
+
+
+960
+01:30:07.407 --> 01:30:09.407
+Bien
+
+
+961
+01:30:09.407 --> 01:30:16.407
+A ver, ¿qué van a encontrar cuando
+
+
+962
+01:30:16.407 --> 01:30:27.407
+Multi
+
+
+963
+01:30:27.407 --> 01:30:29.407
+Okay.
+
+
+964
+01:30:29.407 --> 01:30:37.407
+¿Qué van a encontrar cuando abran los lados? Yo les recomiendo que primero vaya principal
+
+
+965
+01:30:37.407 --> 01:30:41.407
+Suele estar en M D desde el repo lo ven bien
+
+
+966
+01:30:41.407 --> 01:30:46.407
+Y esto va a repetirse para todos los módulos, así que
+
+
+967
+01:30:46.407 --> 01:30:50.407
+Está bueno que lo repasemos
+
+
+968
+01:30:50.407 --> 01:30:53.407
+Normalmente
+
+
+969
+01:30:53.407 --> 01:30:57.407
+Se llama su
+
+
+970
+01:30:57.407 --> 01:31:05.407
+Normalmente lo que hago es, en el principal, tratar de tener como un índice de los ejercicios. Estos son muy sencillos, como les dije.
+
+
+971
+01:31:05.407 --> 01:31:14.407
+y después dentro de cada uno de los ejercicios suelo tener un ritmo específico, como en este caso no valía la pena, no los tenemos
+
+
+972
+01:31:14.407 --> 01:31:23.407
+Lo que o sea son experimentos para tratar de ver en funcionamiento lo que estábamos mencionando
+
+
+973
+01:31:23.407 --> 01:31:27.407
+El primero es
+
+
+974
+01:31:27.407 --> 01:31:30.407
+A gente que utiliza tools, vamos a ver cómo
+
+
+975
+01:31:30.407 --> 01:31:32.407
+Implementar eso
+
+
+976
+01:31:32.407 --> 01:31:40.407
+incluso tiene un gate de aprobación humana en función del monto el primer agente es
+
+
+977
+01:31:40.407 --> 01:31:49.407
+Estos ejemplos los odio porque son todos bancarios, financieros pero bueno básicamente con todo respeto
+
+
+978
+01:31:49.407 --> 01:31:54.407
+No es mi pan
+
+
+979
+01:31:54.407 --> 01:31:57.407
+Es un agente de gestión de reclamos
+
+
+980
+01:31:57.407 --> 01:32:05.407
+Si le sacamos la tarjeta de crédito, vamos a ver cómo, cómo se hace eso, es el ejercicio 1
+
+
+981
+01:32:05.407 --> 01:32:08.407
+Ejercicio 2
+
+
+982
+01:32:08.407 --> 01:32:14.407
+Muestra algo similar, pero lo más interesante es el 3 donde vemos el routing dinámico y vamos a analizar
+
+
+983
+01:32:14.407 --> 01:32:17.407
+¿Cómo
+
+
+984
+01:32:17.407 --> 01:32:22.407
+evitamos consumir tokens de más
+
+
+985
+01:32:22.407 --> 01:32:29.407
+Entonces, la idea es los que tengan interés, esto es opcional
+
+
+986
+01:32:29.407 --> 01:32:30.407
+De nuevo
+
+
+987
+01:32:30.407 --> 01:32:37.407
+los que tengan interés pueden clonar el repo, mirar el ritmo.
+
+
+988
+01:32:37.407 --> 01:32:40.407
+Traté de hacerlo lo más sencillo posible
+
+
+989
+01:32:40.407 --> 01:32:44.407
+Están los scripts para ejecutarlos
+
+
+990
+01:32:44.407 --> 01:32:47.407
+Bueno, eso lo estoy usando con Nisdbox en CCP, pero lo puedo usar
+
+
+991
+01:32:47.407 --> 01:32:51.407
+Funciona bárbaro con la estuve
+
+
+992
+01:32:51.407 --> 01:32:55.407
+y cómo leer las salidas, lo más importante
+
+
+993
+01:32:55.407 --> 01:32:58.407
+Como las va a salir
+
+
+994
+01:32:58.407 --> 01:33:01.407
+Vamos rápido a ver uno de ellos
+
+
+995
+01:33:01.407 --> 01:33:04.407
+en
+
+
+996
+01:33:04.407 --> 01:33:10.407
+Vamos a sacar esto solo por ahora.
+
+
+997
+01:33:10.407 --> 01:33:14.407
+Sí
+
+
+998
+01:33:14.407 --> 01:33:15.407
+Sí, puede ser
+
+
+999
+01:33:15.407 --> 01:33:17.407
+Y materia, consulta, puede ser que falte pushar algo porque yo no veía los puntos ,
+
+
+1000
+01:33:17.407 --> 01:33:21.407
+Sí, puede ser, terminé de darle forma
+
+
+1001
+01:33:21.407 --> 01:33:23.407
+Hace un ratito sigue
+
+
+1002
+01:33:23.407 --> 01:33:24.407
+Okay.
+
+
+1003
+01:33:24.407 --> 01:33:27.407
+Si quieres, de hecho
+
+
+1004
+01:33:27.407 --> 01:33:29.407
+Mientras corre esto.
+
+
+1005
+01:33:29.407 --> 01:33:34.407
+Bueno, nada, tiene que armar el entorno.
+
+
+1006
+01:33:34.407 --> 01:33:45.407
+Y este cito corre los 3 si no hay nada roto debería solucionar
+
+
+1007
+01:33:45.407 --> 01:33:51.407
+Y
+
+
+1008
+01:33:51.407 --> 01:33:56.407
+Te iba a decirlo ahora, pero creo que no llego
+
+
+1009
+01:33:56.407 --> 01:34:00.407
+Bueno, ¿qué hace este primer ejemplo?
+
+
+1010
+01:34:00.407 --> 01:34:06.407
+Van a encontrar siempre en los archivos de código arriba la consigna
+
+
+1011
+01:34:06.407 --> 01:34:10.407
+Sí, un agente sencillo que resuelve una tarea
+
+
+1012
+01:34:10.407 --> 01:34:13.407
+Agotada y medible
+
+
+1013
+01:34:13.407 --> 01:34:17.407
+Y para eso utiliza tools
+
+
+1014
+01:34:17.407 --> 01:34:20.407
+Básicamente, lo que quiero es que se vayan exponiendo como
+
+
+1015
+01:34:20.407 --> 01:34:27.407
+En el caso de que tengan interés
+
+
+1016
+01:34:27.407 --> 01:34:35.407
+Simulamos las todos, todo está todo lo que usar es sintético, no hay datos reales porque nos llevamos
+
+
+1017
+01:34:35.407 --> 01:34:47.407
+particularmente a decano, pero estudié lancha en todo, pero después como en el día a día, como que
+
+
+1018
+01:34:47.407 --> 01:34:59.407
+No está bueno para entender lo que hace cloud, pero como que nunca en mi vida volví a armar esto con Langraf llegué a hacer un par de cosas de estas, pero después como que lo importante es saber, ¿no? Como está armado, pero
+
+
+1019
+01:34:59.407 --> 01:35:02.407
+como que la sintaxis es difícil de retenerla
+
+
+1020
+01:35:02.407 --> 01:35:08.407
+Sí, estoy 100% de acuerdo, no
+
+
+1021
+01:35:08.407 --> 01:35:11.407
+No recomendaría escribir nada de esto a mano
+
+
+1022
+01:35:11.407 --> 01:35:15.407
+Okay, igual es necesario entenderlo, si no se te rompe algo, no sabes qué hacer, pero, pero bueno
+
+
+1023
+01:35:15.407 --> 01:35:17.407
+Pregúntale glauco.
+
+
+1024
+01:35:17.407 --> 01:35:25.407
+tokens y ya está
+
+
+1025
+01:35:25.407 --> 01:35:26.407
+Correcto modelito local
+
+
+1026
+01:35:26.407 --> 01:35:27.407
+I
+
+
+1027
+01:35:27.407 --> 01:35:34.407
+Bueno, porque se me hace difícil a veces que se entienda.
+
+
+1028
+01:35:34.407 --> 01:35:37.407
+No, no se escribe nada de esto
+
+
+1029
+01:35:37.407 --> 01:35:49.407
+They justamente lo que hace es a partir de una consigna, te va haciendo preguntas y te crea directamente la persona
+
+
+1030
+01:35:49.407 --> 01:35:54.407
+multigéntica implementada con la última versión de décadas
+
+
+1031
+01:35:54.407 --> 01:35:58.407
+Ehm
+
+
+1032
+01:35:58.407 --> 01:36:04.407
+Sí, la idea es no escribir código.
+
+
+1033
+01:36:04.407 --> 01:36:05.407
+Sí,
+
+
+1034
+01:36:05.407 --> 01:36:10.407
+Qué curioso, ¿no? Utilizar a gente para escribir agentes
+
+
+1035
+01:36:10.407 --> 01:36:11.407
+Bueno, claro, ahí está lo exponencial de la curva de
+
+
+1036
+01:36:11.407 --> 01:36:12.407
+Es un bucle infinito
+
+
+1037
+01:36:12.407 --> 01:36:16.407
+Empezó a Terminator
+
+
+1038
+01:36:16.407 --> 01:36:23.407
+Exactamente sean las 8
+
+
+1039
+01:36:23.407 --> 01:36:29.407
+Ok, rápido, no me distraigan, chicos
+
+
+1040
+01:36:29.407 --> 01:36:35.407
+Bien, 3 funciones, no voy a mostrar los los
+
+
+1041
+01:36:35.407 --> 01:36:38.407
+detalles de ejecución son dos if
+
+
+1042
+01:36:38.407 --> 01:36:47.407
+then reglas de negocio, pero básicamente son funciones que no tienen ningún tipo de ejecución de LLMs, no son
+
+
+1043
+01:36:47.407 --> 01:36:50.407
+Para nada.
+
+
+1044
+01:36:50.407 --> 01:36:57.407
+Estocásticas o problemas no, no, no tiene ninguna lógica rara
+
+
+1045
+01:36:57.407 --> 01:37:00.407
+Y quiero llegar acá
+
+
+1046
+01:37:00.407 --> 01:37:08.407
+que dijimos necesitamos un agente de reclamos, básicamente la magia de esta gente es entender el reclamo que está expresado el lenguaje natural
+
+
+1047
+01:37:08.407 --> 01:37:11.407
+Sí, atender la consulta
+
+
+1048
+01:37:11.407 --> 01:37:12.407
+algún cliente enojado
+
+
+1049
+01:37:12.407 --> 01:37:22.407
+And recuerden que el sistema es algo que el framework siempre va a incluir
+
+
+1050
+01:37:22.407 --> 01:37:25.407
+En la ventana de contexto
+
+
+1051
+01:37:25.407 --> 01:37:32.407
+Recuerdan que los LLM son, no va a recordar ese sistema
+
+
+1052
+01:37:32.407 --> 01:37:37.407
+Ay mecanismos de caching, pero no, no, no, no entremos en eso ahora desde el sistema van a definir
+
+
+1053
+01:37:37.407 --> 01:37:47.407
+Y es muy importante que lo definan con acá, acá tiene que estar la precisión, con precisión exactamente qué es lo que hace este modelo, así estamos hablando del modelo
+
+
+1054
+01:37:47.407 --> 01:37:49.407
+And
+
+
+1055
+01:37:49.407 --> 01:37:57.407
+Y lo que tienen que decirle es qué tareas pueden realizar, a qué herramientas llamar, porque esa es la decisión que va a tomar el LM
+
+
+1056
+01:37:57.407 --> 01:38:07.407
+Sí, en función de la entrada, el lenguaje natural, el LLB va a elegir algún tipo de habilidad o función para llamar
+
+
+1057
+01:38:07.407 --> 01:38:16.407
+Entonces, el system prompt y las herramientas que no sé si hemos visto este atributo, las herramientas se definen en este caso
+
+
+1058
+01:38:16.407 --> 01:38:21.407
+simplemente como funciona de Python una lista de funciones de Python que están en el mismo archivo
+
+
+1059
+01:38:21.407 --> 01:38:29.407
+Yo creo que es la expresión más sencilla de de darle herramientas a a una gente
+
+
+1060
+01:38:29.407 --> 01:38:34.407
+Si hay una característica interesante que me gustaría que vean porque la vamos a utilizar
+
+
+1061
+01:38:34.407 --> 01:38:39.407
+A partir de siempre, que es el output key
+
+
+1062
+01:38:39.407 --> 01:38:41.407
+Un nuevo atributo también
+
+
+1063
+01:38:41.407 --> 01:38:48.407
+Que tiene que ver con que esa sesión que hablamos que mencionamos hoy, esa sesión
+
+
+1064
+01:38:48.407 --> 01:38:51.407
+Implementamos en memoria RAM en este caso
+
+
+1065
+01:38:51.407 --> 01:38:56.407
+Es un espacio donde si existieran más agentes, podríamos compartir información.
+
+
+1066
+01:38:56.407 --> 01:39:01.407
+In general, esa sesión se implementa con un diccionario
+
+
+1067
+01:39:01.407 --> 01:39:03.407
+Entonces.
+
+
+1068
+01:39:03.407 --> 01:39:10.407
+La manera de que una gente se comunique con otro es a partir de esta
+
+
+1069
+01:39:10.407 --> 01:39:14.407
+Es la aquí que después el otro agente va a utilizar para acceder, para indexar
+
+
+1070
+01:39:14.407 --> 01:39:18.407
+y acceder a la respuesta de este agente
+
+
+1071
+01:39:18.407 --> 01:39:23.407
+Eso se entendió
+
+
+1072
+01:39:23.407 --> 01:39:24.407
+Sí,
+
+
+1073
+01:39:24.407 --> 01:39:31.407
+Esa que sería como una etiqueta de la del texto de respuesta como en sistema
+
+
+1074
+01:39:31.407 --> 01:39:33.407
+Diría respuesta gente
+
+
+1075
+01:39:33.407 --> 01:39:43.407
+Son 2 cosas distintas, el system prompt es la indicación que le das al LM de cómo tiene que funcionar, cuál es su objetivo.
+
+
+1076
+01:39:43.407 --> 01:39:44.407
+¿Y cómo salgo
+
+
+1077
+01:39:44.407 --> 01:39:48.407
+Claro, pero todo después se, se, se envía como uno debajo del otro, ¿no? Entonces, este sería como
+
+
+1078
+01:39:48.407 --> 01:39:52.407
+una etiqueta de esa respuesta de la gente
+
+
+1079
+01:39:52.407 --> 01:39:55.407
+O queda en las sesiones en memoria
+
+
+1080
+01:39:55.407 --> 01:40:01.407
+Que queda en la sesión como como una entrada en el diccionario con esta aquí
+
+
+1081
+01:40:01.407 --> 01:40:02.407
+Okay.
+
+
+1082
+01:40:02.407 --> 01:40:03.407
+No siempre va a llamar
+
+
+1083
+01:40:03.407 --> 01:40:04.407
+una especie de parámetro
+
+
+1084
+01:40:04.407 --> 01:40:05.407
+¿Cómo?
+
+
+1085
+01:40:05.407 --> 01:40:09.407
+como una especie de parámetro de entrada para la otra gente
+
+
+1086
+01:40:09.407 --> 01:40:16.407
+The otra gente va a saber dónde buscar la respuesta de este primer agente directamente indexando el diccionario con esta
+
+
+1087
+01:40:16.407 --> 01:40:17.407
+Okay.
+
+
+1088
+01:40:17.407 --> 01:40:18.407
+Sí,
+
+
+1089
+01:40:18.407 --> 01:40:19.407
+Genial.
+
+
+1090
+01:40:19.407 --> 01:40:21.407
+Genial, genial.
+
+
+1091
+01:40:21.407 --> 01:40:23.407
+Bien.
+
+
+1092
+01:40:23.407 --> 01:40:29.407
+Cuando tenés muchos agentes, todos comparten la misma sesión o habitualmente comparten la misma sesión
+
+
+1093
+01:40:29.407 --> 01:40:31.407
+Excelente pregunta.
+
+
+1094
+01:40:31.407 --> 01:40:35.407
+Depende, vamos a ver casos en los que sí y casos en los que queremos aislar
+
+
+1095
+01:40:35.407 --> 01:40:38.407
+Las sesiones, ¿sí?
+
+
+1096
+01:40:38.407 --> 01:40:43.407
+covered at the end of the sesión para poder acceder a este output key si quisiera acceder
+
+
+1097
+01:40:43.407 --> 01:40:48.407
+Correcto, ahí es donde aparece como la gestión del contexto, a veces creemos que puede acceder y otras veces preferimos que no
+
+
+1098
+01:40:48.407 --> 01:40:51.407
+Right.
+
+
+1099
+01:40:51.407 --> 01:41:00.407
+Lo lo vamos a ver justamente cuando estudiemos arquetipos. Okay, caso de prueba.
+
+
+1100
+01:41:00.407 --> 01:41:06.407
+Básicamente lo que tienen acá es un rival set muy, muy sencillito donde están
+
+
+1101
+01:41:06.407 --> 01:41:12.407
+Los reclamos de los clientes furiosos
+
+
+1102
+01:41:12.407 --> 01:41:14.407
+Sí, esto es lo que le vamos a mandar a nuestro gente
+
+
+1103
+01:41:14.407 --> 01:41:19.407
+Bueno, ejecutar la evaluación
+
+
+1104
+01:41:19.407 --> 01:41:20.407
+Más o menos
+
+
+1105
+01:41:20.407 --> 01:41:33.407
+Se entiende la estructura es muy sencilla, solamente enfóquense en la parte en la que se instancia la gente, tiene un sistema, tiene una lista de herramientas y nada más.
+
+
+1106
+01:41:33.407 --> 01:41:39.407
+el lm va a decidir en función de la entrada qué herramientas llamar
+
+
+1107
+01:41:39.407 --> 01:41:46.407
+Lo que busca justamente es eso, dado un input que lo acabamos de ejecutar
+
+
+1108
+01:41:46.407 --> 01:41:49.407
+contra seminar dado un input
+
+
+1109
+01:41:49.407 --> 01:41:58.407
+Hay una respuesta en un lenguaje natural que nos da el elemento
+
+
+1110
+01:41:58.407 --> 01:42:07.407
+Y esto lo hace en función de la llamada a una, a un atún en particular
+
+
+1111
+01:42:07.407 --> 01:42:14.407
+Para cada caso, dependiendo del tipo de input.
+
+
+1112
+01:42:14.407 --> 01:42:16.407
+acá te discutas
+
+
+1113
+01:42:16.407 --> 01:42:22.407
+depende el tipo de input, el agente va a invocar a alguna de esas funciones
+
+
+1114
+01:42:22.407 --> 01:42:25.407
+Y dada la respuesta de la función, el agente va
+
+
+1115
+01:42:25.407 --> 01:42:30.407
+A construir esta respuesta en lenguaje natural
+
+
+1116
+01:42:30.407 --> 01:42:36.407
+Súper básico, primera gente que utilizan
+
+
+1117
+01:42:36.407 --> 01:42:38.407
+herramientas sí
+
+
+1118
+01:42:38.407 --> 01:42:43.407
+Más o menos se entiende
+
+
+1119
+01:42:43.407 --> 01:42:44.407
+Sí, sí,
+
+
+1120
+01:42:44.407 --> 01:42:48.407
+And
+
+
+1121
+01:42:48.407 --> 01:42:49.407
+So
+
+
+1122
+01:42:49.407 --> 01:42:53.407
+Genial, vamos a hacer una comparación rápida que ahora es 49
+
+
+1123
+01:42:53.407 --> 01:43:03.407
+acá el estímulo que recibe es la consulta por el reclamo o el reclamo en sí, ahí estoy como medio mareada
+
+
+1124
+01:43:03.407 --> 01:43:08.407
+A ver.
+
+
+1125
+01:43:08.407 --> 01:43:09.407
+Bueno
+
+
+1126
+01:43:09.407 --> 01:43:15.407
+Esa es la, la duda, como que esto está medio pensado para interactuar con humanos
+
+
+1127
+01:43:15.407 --> 01:43:17.407
+Pero ahí mi duda fue si, si esta gente viene a, a resolver reclamos
+
+
+1128
+01:43:17.407 --> 01:43:24.407
+Uh and una función. Creo que le hace la liquidación del del de una liquidación a su favor, hace como de todo.
+
+
+1129
+01:43:24.407 --> 01:43:26.407
+Creo por lo que leí ahí en españa.
+
+
+1130
+01:43:26.407 --> 01:43:37.407
+Pero de amo fue creado de antemano por el cliente, ahora el cliente está volviendo a insistir para que se lo liquiden, ahí es donde me confunde porque no lo hace directamente
+
+
+1131
+01:43:37.407 --> 01:43:47.407
+Claramente debe ser para el ejemplo, ¿no? Para la, como malo más pedagógico, pero mi duda era esa, ¿cuál es el estimulo que hace actuar a la gente?
+
+
+1132
+01:43:47.407 --> 01:43:48.407
+En este caso
+
+
+1133
+01:43:48.407 --> 01:43:53.407
+El input que que ves ahí en
+
+
+1134
+01:43:53.407 --> 01:43:58.407
+tenemos el prompt sería la pregunta.
+
+
+1135
+01:43:58.407 --> 01:44:02.407
+Y no es multituno, la idea es que sea un único turno.
+
+
+1136
+01:44:02.407 --> 01:44:12.407
+Solo para mostrarles que cuando el LM recibe una pregunta en lenguaje coloquial, toma una decision de invocar a una función particular, eso es lo que intenta ilustrar
+
+
+1137
+01:44:12.407 --> 01:44:23.407
+Yo creo, una consulta, o sea, acá es para la prueba, ¿no? Google, en la persona que pregunta ya viene con el número de reclamo, o sea, hizo una gestión o tiene un número de reclamo, entonces
+
+
+1138
+01:44:23.407 --> 01:44:30.407
+¿Cuál es el estado de mi reclamo número reclamo 20261 dieciocho?
+
+
+1139
+01:44:30.407 --> 01:44:35.407
+O el, o, o, o el mismo sistema ya validó, hizo reclamo, vino con el reclamo y
+
+
+1140
+01:44:35.407 --> 01:44:37.407
+Está todo jarcodeado.
+
+
+1141
+01:44:37.407 --> 01:44:38.407
+Acá
+
+
+1142
+01:44:38.407 --> 01:44:39.407
+No, sí
+
+
+1143
+01:44:39.407 --> 01:44:40.407
+Si tienes todo ahí
+
+
+1144
+01:44:40.407 --> 01:44:41.407
+No son datos, fíjate que tienen todo hardcoin tiene armado
+
+
+1145
+01:44:41.407 --> 01:44:43.407
+Got it.
+
+
+1146
+01:44:43.407 --> 01:44:44.407
+Acá
+
+
+1147
+01:44:44.407 --> 01:44:46.407
+Entiendo, entiendo, simulando
+
+
+1148
+01:44:46.407 --> 01:44:47.407
+Hay
+
+
+1149
+01:44:47.407 --> 01:44:52.407
+Es más, en el ranch de 1 o 2 debe estar haciendo distintas cosas, supongo, no vi el S H.
+
+
+1150
+01:44:52.407 --> 01:44:57.407
+Hay un que no tiene número de reclamos que es él
+
+
+1151
+01:44:57.407 --> 01:44:59.407
+Pregunta por nombre
+
+
+1152
+01:44:59.407 --> 01:45:04.407
+Lo único que recibe la gente es el campo.
+
+
+1153
+01:45:04.407 --> 01:45:06.407
+El resto
+
+
+1154
+01:45:06.407 --> 01:45:13.407
+Se tiene que ver más con el, la evaluación, con la mini suite de evaluación que estamos corriendo
+
+
+1155
+01:45:13.407 --> 01:45:25.407
+Sí, mi pregunta viene más del lado de producto, como de por qué esperar a que alguien pregunte por un reclamo ya creado para resolverlo, pero entiendo que debe ser cien por ciento por el ejemplo.
+
+
+1156
+01:45:25.407 --> 01:45:26.407
+And
+
+
+1157
+01:45:26.407 --> 01:45:27.407
+Es era
+
+
+1158
+01:45:27.407 --> 01:45:28.407
+Gotta put it again.
+
+
+1159
+01:45:28.407 --> 01:45:33.407
+En realidad, en realidad podrías preguntar por algún reclamo que existe que todavía no se resolvió
+
+
+1160
+01:45:33.407 --> 01:45:35.407
+Esa sería una opción
+
+
+1161
+01:45:35.407 --> 01:45:38.407
+You seguramente
+
+
+1162
+01:45:38.407 --> 01:45:50.407
+Al final el el caso ahí más tradicional es que decime tu número de cliente y algo y con eso invoca algún atúl y ya trae los reclamos y sabe
+
+
+1163
+01:45:50.407 --> 01:45:55.407
+que tiene algún reclamo abierto, lo que sea
+
+
+1164
+01:45:55.407 --> 01:45:56.407
+Creo que mi pregunta
+
+
+1165
+01:45:56.407 --> 01:46:00.407
+U otra tour que vos le pasas el número de reclamo y se fija si existe.
+
+
+1166
+01:46:00.407 --> 01:46:01.407
+Exacto
+
+
+1167
+01:46:01.407 --> 01:46:13.407
+Pero sí primero tenés que saber quién es.
+
+
+1168
+01:46:13.407 --> 01:46:14.407
+Mira.
+
+
+1169
+01:46:14.407 --> 01:46:18.407
+Creo que mi pregunta me preocupa porque va a la esencia de qué hace la gente, si la gente está encargado de brindar información sobre estado de reclamos o resolver reclamos o las dos cosas. Por eso insisto en la pregunta, porque creo que es fundamental el entender que tiene que hacer el, el guachín, perdón.
+
+
+1170
+01:46:18.407 --> 01:46:23.407
+Me encanta
+
+
+1171
+01:46:23.407 --> 01:46:26.407
+Creo que en este párrafo, si lo llegas a leer
+
+
+1172
+01:46:26.407 --> 01:46:29.407
+Sí,
+
+
+1173
+01:46:29.407 --> 01:46:30.407
+12
+
+
+1174
+01:46:30.407 --> 01:46:41.407
+Resuelve una tarea en esa consultar, listar y liquidar reclamos, respetando el circuito de estados y un gay de aprobación humana por mundo
+
+
+1175
+01:46:41.407 --> 01:46:42.407
+peso
+
+
+1176
+01:46:42.407 --> 01:46:43.407
+Por
+
+
+1177
+01:46:43.407 --> 01:46:44.407
+Claro.
+
+
+1178
+01:46:44.407 --> 01:46:45.407
+Sí, pero igual es por ahí la mirada de ella. Es más de productos.
+
+
+1179
+01:46:45.407 --> 01:46:47.407
+Pero esto es un ejemplío.
+
+
+1180
+01:46:47.407 --> 01:46:48.407
+ese ejemplo tal cual
+
+
+1181
+01:46:48.407 --> 01:46:49.407
+Tenerle, Piedad.
+
+
+1182
+01:46:49.407 --> 01:46:51.407
+Sí, se entiende, sí.
+
+
+1183
+01:46:51.407 --> 01:46:52.407
+Hay me quedo claro
+
+
+1184
+01:46:52.407 --> 01:46:55.407
+Podemos crear otro agente
+
+
+1185
+01:46:55.407 --> 01:46:56.407
+No me quedé
+
+
+1186
+01:46:56.407 --> 01:47:01.407
+Lo que me hacía ruido pensaba que le pregunten para resolverlo, pero ya está, ya entendí, ya está
+
+
+1187
+01:47:01.407 --> 01:47:07.407
+Theresi que la entiendo
+
+
+1188
+01:47:07.407 --> 01:47:10.407
+No me critiquen algo, no me critiquen algo así
+
+
+1189
+01:47:10.407 --> 01:47:23.407
+Me dice, ¿pero por qué acá no diste esto hoy no, esto no es, no lo va a entender, van a preguntarte y van a apretar cualquier, bueno, si es, asi que esta bien, ella da la la visión del
+
+
+1190
+01:47:23.407 --> 01:47:24.407
+Y me, y me encanta
+
+
+1191
+01:47:24.407 --> 01:47:25.407
+del cliente, digamos, de lo que puede
+
+
+1192
+01:47:25.407 --> 01:47:33.407
+Me encanta que así sea, sí, efectivamente, son, son ejemplos acotados, pedagógicos, muy chiquitos.
+
+
+1193
+01:47:33.407 --> 01:47:37.407
+Por ahí para empezar a
+
+
+1194
+01:47:37.407 --> 01:47:38.407
+ver código
+
+
+1195
+01:47:38.407 --> 01:47:40.407
+en
+
+
+1196
+01:47:40.407 --> 01:47:55.407
+Estuve trabajando mucho en este producto, no sé por qué no estás conforme. No, no. A ver, lo lo que tiene que ver acá es este 2 o 3 cosas. Primero, ¿qué hace la gente? ¿Cuáles son los circuitos? ¿Qué tareas puede realizar
+
+
+1197
+01:47:55.407 --> 01:47:59.407
+Y las reglas importantes de negocio
+
+
+1198
+01:47:59.407 --> 01:48:01.407
+Esto también existen pronto.
+
+
+1199
+01:48:01.407 --> 01:48:13.407
+Se puede liquidar reclamos que no tengo ni idea bien de qué significa, pero lo importante en realidad es que si el monto del reclamo supera cierto umbral.
+
+
+1200
+01:48:13.407 --> 01:48:20.407
+Y como hay una regla de negocio que dice que no puede superar cierto número
+
+
+1201
+01:48:20.407 --> 01:48:22.407
+Lo interesante es ver que
+
+
+1202
+01:48:22.407 --> 01:48:26.407
+En el caso de que el umbral supere los
+
+
+1203
+01:48:26.407 --> 01:48:36.407
+como esta cantidad directamente se llama a un humano un poco el ejemplo hace eso, muestra tools y muestra gimnas de look
+
+
+1204
+01:48:36.407 --> 01:48:40.407
+Pero podría liquidar reclamos
+
+
+1205
+01:48:40.407 --> 01:48:46.407
+De hecho, es lo que dice el sistema
+
+
+1206
+01:48:46.407 --> 01:48:47.407
+Como me parece el ejemplo
+
+
+1207
+01:48:47.407 --> 01:48:54.407
+No el primero dice Carlos, ya le quidé a tu favor. El reclamo así que si puedes liquidar, puede liquidar en este ejemplo.
+
+
+1208
+01:48:54.407 --> 01:48:59.407
+Sí,
+
+
+1209
+01:48:59.407 --> 01:49:07.407
+Okay, bien, después vamos a ver una comparación
+
+
+1210
+01:49:07.407 --> 01:49:17.407
+Déjenme que lo vaya corriendo porque esto tarda un poquito
+
+
+1211
+01:49:17.407 --> 01:49:27.407
+Fue una, una consulta que quizás escribía la respuesta, pero en el caso de la creo que era la
+
+
+1212
+01:49:27.407 --> 01:49:35.407
+En este caso, en estos ejemplos, ¿cuál sería la respuesta o el resultado?
+
+
+1213
+01:49:35.407 --> 01:49:41.407
+como cuál la respuesta o el resultado a qué te referiste
+
+
+1214
+01:49:41.407 --> 01:49:47.407
+Claro, de los ejemplos que, que están ahí ejecutados
+
+
+1215
+01:49:47.407 --> 01:49:52.407
+resultado falla respuesta y el a eso se refiere está buenísima la pregunta
+
+
+1216
+01:49:52.407 --> 01:49:53.407
+Uh, I'll I'll.
+
+
+1217
+01:49:53.407 --> 01:49:54.407
+Yo creo que el texto que te devuelve
+
+
+1218
+01:49:54.407 --> 01:49:57.407
+Claro, ¿cuál sería el, el valor que toma la, el, claro.
+
+
+1219
+01:49:57.407 --> 01:49:58.407
+Perfecto.
+
+
+1220
+01:49:58.407 --> 01:49:59.407
+Got it. El valor del opus.
+
+
+1221
+01:49:59.407 --> 01:50:05.407
+El texto que te devuelve para el usuario es el otro, es como el framework de testing que si pasa o no la prueba
+
+
+1222
+01:50:05.407 --> 01:50:08.407
+Lo que va a leer el usuario es lo que dice respuesta 2
+
+
+1223
+01:50:08.407 --> 01:50:09.407
+Ok.
+
+
+1224
+01:50:09.407 --> 01:50:12.407
+No, a ver si estoy bien. Y eso es lo que va a ir en la clave, respuesta, gente.
+
+
+1225
+01:50:12.407 --> 01:50:13.407
+Claro, eso es lo que interpretaba.
+
+
+1226
+01:50:13.407 --> 01:50:16.407
+Eso entiendo yo
+
+
+1227
+01:50:16.407 --> 01:50:17.407
+Andrés
+
+
+1228
+01:50:17.407 --> 01:50:20.407
+Eso se, es lo de también ahí
+
+
+1229
+01:50:20.407 --> 01:50:23.407
+En realidad.
+
+
+1230
+01:50:23.407 --> 01:50:31.407
+Digamos en este tipo de agentes tan sencillo va guardando en la sesión absolutamente todos los eventos
+
+
+1231
+01:50:31.407 --> 01:50:33.407
+Que, que se sucedan en un turno
+
+
+1232
+01:50:33.407 --> 01:50:37.407
+Con lo cual las llamadas azules
+
+
+1233
+01:50:37.407 --> 01:50:44.407
+Respuesta de tools, vamos a ver que tenemos un historial completo de qué sucedió en ese turno.
+
+
+1234
+01:50:44.407 --> 01:50:46.407
+En la sesión
+
+
+1235
+01:50:46.407 --> 01:50:55.407
+Por eso, este tipo de gente tiene el problema de que, de hecho, si le damos la posibilidad de iterar, va a hacer que nuestro contexto crezca
+
+
+1236
+01:50:55.407 --> 01:50:58.407
+sin ningún límite
+
+
+1237
+01:50:58.407 --> 01:51:03.407
+Se, se entiende
+
+
+1238
+01:51:03.407 --> 01:51:06.407
+A ver, avances.
+
+
+1239
+01:51:06.407 --> 01:51:11.407
+Te juro que esa duda te la voy a responder mucho mejor en un ratito
+
+
+1240
+01:51:11.407 --> 01:51:14.407
+Si te quedas
+
+
+1241
+01:51:14.407 --> 01:51:15.407
+Bien, sí,
+
+
+1242
+01:51:15.407 --> 01:51:17.407
+Acá hicimos una experiencia muy sencilla
+
+
+1243
+01:51:17.407 --> 01:51:21.407
+Lo que hicimos es una misma query
+
+
+1244
+01:51:21.407 --> 01:51:23.407
+Una misma query
+
+
+1245
+01:51:23.407 --> 01:51:33.407
+La palmeras de arriba
+
+
+1246
+01:51:33.407 --> 01:51:36.407
+Y lo que hacemos es correrla con 2 con 2 modelos distintos, ¿sí?
+
+
+1247
+01:51:36.407 --> 01:51:39.407
+2 5 flashlight
+
+
+1248
+01:51:39.407 --> 01:51:43.407
+Y 2, 5 pro
+
+
+1249
+01:51:43.407 --> 01:51:45.407
+Los quiero que
+
+
+1250
+01:51:45.407 --> 01:51:49.407
+Vasan entendiendo es que
+
+
+1251
+01:51:49.407 --> 01:51:52.407
+Dependiendo de la complejidad de las cuales.
+
+
+1252
+01:51:52.407 --> 01:51:59.407
+Es importante empezar a elegir el modelo que vamos a utilizar porque porque estos números
+
+
+1253
+01:51:59.407 --> 01:52:00.407
+Acá hay un
+
+
+1254
+01:52:00.407 --> 01:52:05.407
+factor de 13 x casi 14 x de costo entre una y otra y tenemos
+
+
+1255
+01:52:05.407 --> 01:52:10.407
+Gran volumen de consultas, esto escala rápido en términos de costo
+
+
+1256
+01:52:10.407 --> 01:52:18.407
+Sí, de forma y sencilla
+
+
+1257
+01:52:18.407 --> 01:52:20.407
+Donde los 2 modelos responden lo mismo
+
+
+1258
+01:52:20.407 --> 01:52:23.407
+Fíjense que el segundo modelo
+
+
+1259
+01:52:23.407 --> 01:52:25.407
+That
+
+
+1260
+01:52:25.407 --> 01:52:28.407
+14 veces más
+
+
+1261
+01:52:28.407 --> 01:52:29.407
+Si tenemos
+
+
+1262
+01:52:29.407 --> 01:52:40.407
+Ese es un tema que, que uno al principio ponía y ahora tiene que empezar a evaluar todo el tema del costo de token, que primero vos lo usabas y no había problema y ahora que es cada vez
+
+
+1263
+01:52:40.407 --> 01:52:48.407
+Sale más, tenes que empezar a evaluar los modelos en cada, en cada parte de, de tu agente, y es un tema
+
+
+1264
+01:52:48.407 --> 01:52:53.407
+Sí, es un relema, es otro de los motivos que te pueden bloquear un proyecto
+
+
+1265
+01:52:53.407 --> 01:52:54.407
+el costo
+
+
+1266
+01:52:54.407 --> 01:52:55.407
+Y
+
+
+1267
+01:52:55.407 --> 01:53:02.407
+Aparte uno lo mira por costo por millón y dicen ay, qué barato, pero cuando haces los cálculos de 800 personas con 10 mensajes
+
+
+1268
+01:53:02.407 --> 01:53:06.407
+Ya empiezan a sumar cien dólares, doscientos dólares, trescientos dólares
+
+
+1269
+01:53:06.407 --> 01:53:08.407
+Exacto, y para
+
+
+1270
+01:53:08.407 --> 01:53:09.407
+It's a company guy.
+
+
+1271
+01:53:09.407 --> 01:53:13.407
+Sí, ahí también 1 es lo que piensa. Es el el el perfil de fin. Ops, que a veces 1 cree que bueno.
+
+
+1272
+01:53:13.407 --> 01:53:18.407
+Para es alguien un poco más administrativo que se fija un poco las cosas. Pero en realidad.
+
+
+1273
+01:53:18.407 --> 01:53:22.407
+El desarrollo deben estar todo el tiempo viendo eso, o sea.
+
+
+1274
+01:53:22.407 --> 01:53:27.407
+El aire vela. Pero tiene que estar mirando.
+
+
+1275
+01:53:27.407 --> 01:53:33.407
+Casi intensivamente qué es lo que hace con cada vez que hace una operación.
+
+
+1276
+01:53:33.407 --> 01:53:38.407
+Y si, ¿y si es caro o barato, bueno, no sé, me parece como todo un tema nuevo.
+
+
+1277
+01:53:38.407 --> 01:53:44.407
+En la disciplina.
+
+
+1278
+01:53:44.407 --> 01:53:47.407
+Sí, definitivamente
+
+
+1279
+01:53:47.407 --> 01:53:48.407
+Sí
+
+
+1280
+01:53:48.407 --> 01:53:49.407
+O sea.
+
+
+1281
+01:53:49.407 --> 01:53:50.407
+Se te puede escapar, se te puede escapar. La liebre. Por cualquier lado, por cualquier lado, literalmente.
+
+
+1282
+01:53:50.407 --> 01:53:51.407
+Claro.
+
+
+1283
+01:53:51.407 --> 01:53:52.407
+Sí,
+
+
+1284
+01:53:52.407 --> 01:53:53.407
+The waterproof te puede
+
+
+1285
+01:53:53.407 --> 01:53:55.407
+Sí, sí.
+
+
+1286
+01:53:55.407 --> 01:54:03.407
+de frases muy graciosas
+
+
+1287
+01:54:03.407 --> 01:54:13.407
+En esta segunda corrida le mandamos una query un poco más compleja y vemos cómo los dos modelos, uno más sencillo y barato
+
+
+1288
+01:54:13.407 --> 01:54:16.407
+Y un segundo modelo más caro
+
+
+1289
+01:54:16.407 --> 01:54:27.407
+Efectivamente, si responden cosas distintas de manera distinta y solamente el segundo responde de manera correcta con el tono correcto para el cliente que está haciendo la query compleja.
+
+
+1290
+01:54:27.407 --> 01:54:40.407
+anything conviene efectivamente usar el segundo modelo aunque sea más caro. Ahora, ¿qué hacemos? usamos el primero siempre usamos el segundo siempre, bueno, no, ninguna de las dos.
+
+
+1291
+01:54:40.407 --> 01:54:51.407
+Si me dan un segundito
+
+
+1292
+01:54:51.407 --> 01:54:54.407
+A ver si de pronto el ejemplo de dinámica utilidad
+
+
+1293
+01:54:54.407 --> 01:55:00.407
+El paso 3
+
+
+1294
+01:55:00.407 --> 01:55:03.407
+que se imaginan
+
+
+1295
+01:55:03.407 --> 01:55:04.407
+Sí,
+
+
+1296
+01:55:04.407 --> 01:55:09.407
+Mientras haces? Esto? ¿Te te pregunto? Te pregunto algo? Mati? Vano? Sin sin hacerlo? No tiene que ver con esto tiene que ver en tu experiencia en los procesos de.
+
+
+1297
+01:55:09.407 --> 01:55:14.407
+De desarrollo de este estilo, donde tenés que medir tanto el tema de los tokens y qué sé yo cómo es la.
+
+
+1298
+01:55:14.407 --> 01:55:17.407
+¿cuál es la mejor manera.
+
+
+1299
+01:55:17.407 --> 01:55:19.407
+De.
+
+
+1300
+01:55:19.407 --> 01:55:25.407
+De evaluar intensiva o la manera más intensiva que vos podés tener.
+
+
+1301
+01:55:25.407 --> 01:55:28.407
+De evaluar.
+
+
+1302
+01:55:28.407 --> 01:55:32.407
+Todas las fugas de Tokens que puedas llegar a tener una aplicación.
+
+
+1303
+01:55:32.407 --> 01:55:35.407
+A la hora de.
+
+
+1304
+01:55:35.407 --> 01:55:38.407
+De organizar un desarrollo y de ver que el desarrollo.
+
+
+1305
+01:55:38.407 --> 01:55:42.407
+Sea eficiente. Se entiende a mi pregunta.
+
+
+1306
+01:55:42.407 --> 01:55:48.407
+Pero la, a ver
+
+
+1307
+01:55:48.407 --> 01:55:49.407
+La respuesta de poder es
+
+
+1308
+01:55:49.407 --> 01:55:50.407
+Es la gran pregunta
+
+
+1309
+01:55:50.407 --> 01:55:58.407
+Porque lo que se me ocurre una interacción con Cuba. Pero pero, ¿cuál ¿cuál explota la cabeza? Si le tiras algo así por la cabeza o sea no no no podría.
+
+
+1310
+01:55:58.407 --> 01:55:59.407
+No, no.
+
+
+1311
+01:55:59.407 --> 01:56:06.407
+So, pero sí que es algo medio, como una mezcla de Cuba con fin ops con algo.
+
+
+1312
+01:56:06.407 --> 01:56:07.407
+La macumba rara.
+
+
+1313
+01:56:07.407 --> 01:56:09.407
+Sí, sí, y olvídate que se
+
+
+1314
+01:56:09.407 --> 01:56:13.407
+Olvídate que sea ejecutado por humanos
+
+
+1315
+01:56:13.407 --> 01:56:16.407
+La pregunta es muy difícil y la respuesta es context engineering
+
+
+1316
+01:56:16.407 --> 01:56:18.407
+Con un juez con un.
+
+
+1317
+01:56:18.407 --> 01:56:22.407
+Modelo juez, o algo por el estilo.
+
+
+1318
+01:56:22.407 --> 01:56:26.407
+Es es una excelente respuesta la que estás dando
+
+
+1319
+01:56:26.407 --> 01:56:31.407
+puede ser con modelo juez, eso también tiene sus complicaciones y sus costos
+
+
+1320
+01:56:31.407 --> 01:56:36.407
+Bueno, pero lo ejecutas una vez y te ahorraste un montón de fugas.
+
+
+1321
+01:56:36.407 --> 01:56:37.407
+Y
+
+
+1322
+01:56:37.407 --> 01:56:41.407
+Pero esto no es todo el tema de los evals, hay toda una literatura, es un quilombo mal.
+
+
+1323
+01:56:41.407 --> 01:56:46.407
+Tenemos un módulo para eso si ya no vamos a romper
+
+
+1324
+01:56:46.407 --> 01:56:53.407
+Pero lo que quería mostrarles es cuál usamos, el primero o el segundo? Bueno, depende, depende de qué, de la complejidad de la queri
+
+
+1325
+01:56:53.407 --> 01:57:00.407
+Si la query sencilla, si podemos clasificar la coherente sencilla y compleja, estoy súper súper simplificando el tema
+
+
+1326
+01:57:00.407 --> 01:57:03.407
+Ahí ya vas con routing, digamos, o sea, con estás como.
+
+
+1327
+01:57:03.407 --> 01:57:05.407
+Claro, claro.
+
+
+1328
+01:57:05.407 --> 01:57:06.407
+Lo que no quería
+
+
+1329
+01:57:06.407 --> 01:57:08.407
+Estás como hasta ahí, ahí o sea, parte de la fuga del token, la la.
+
+
+1330
+01:57:08.407 --> 01:57:13.407
+Lo simplifica con model selection y routing.
+
+
+1331
+01:57:13.407 --> 01:57:20.407
+Sí,
+
+
+1332
+01:57:20.407 --> 01:57:21.407
+Sí,
+
+
+1333
+01:57:21.407 --> 01:57:23.407
+Pero bueno, también veo, me imagino tenés que evaluar el prompt engineering que esté bien hecho no será como un montón de cosas.
+
+
+1334
+01:57:23.407 --> 01:57:26.407
+Hay un montón de técnicas
+
+
+1335
+01:57:26.407 --> 01:57:31.407
+de catching de todo tipo, semántica
+
+
+1336
+01:57:31.407 --> 01:57:36.407
+Catching del system prompt. Hay catching interno dentro de los modelos
+
+
+1337
+01:57:36.407 --> 01:57:45.407
+Decima que le vamos a dar.
+
+
+1338
+01:57:45.407 --> 01:57:46.407
+Okay.
+
+
+1339
+01:57:46.407 --> 01:57:57.407
+Uf, son ambiciosos. Bueno, son temas muy técnicos, es lo único que puedo decir, pero sí, efectivamente, efectivamente, cuando vemos memoria, vamos a ver que se puede utilizar un tipo de memoria para hacer
+
+
+1340
+01:57:57.407 --> 01:57:58.407
+Bueno.
+
+
+1341
+01:57:58.407 --> 01:58:03.407
+Ahorro de tokens. De hecho, era una de las de las imágenes que le mostré al principio
+
+
+1342
+01:58:03.407 --> 01:58:11.407
+No quiere que se vayan sin decirles esto, dynamic model router con la de cada 2 que implementamos algo muy, muy sencillo
+
+
+1343
+01:58:11.407 --> 01:58:17.407
+En un acuerdo
+
+
+1344
+01:58:17.407 --> 01:58:27.407
+Algo que va a categorizar, a clasificar esa query como simple o compleja
+
+
+1345
+01:58:27.407 --> 01:58:28.407
+Y en función de eso
+
+
+1346
+01:58:28.407 --> 01:58:36.407
+Una invocación condicional a uno de los modelos, en este caso, como es simple, nos conviene llamar al modelo más chiquito, el más barato
+
+
+1347
+01:58:36.407 --> 01:58:41.407
+tiene menos latencia, es más barato
+
+
+1348
+01:58:41.407 --> 01:58:42.407
+La justificación
+
+
+1349
+01:58:42.407 --> 01:58:47.407
+Cuando es compleja
+
+
+1350
+01:58:47.407 --> 01:58:54.407
+Se detecta la complejidad, se llama un modelo más complejo, más grande, más caro, más lento
+
+
+1351
+01:58:54.407 --> 01:59:01.407
+Fíjense la latencia entre el primero y segundo y el costo fundamentalmente
+
+
+1352
+01:59:01.407 --> 01:59:02.407
+entre el primero y segundo
+
+
+1353
+01:59:02.407 --> 01:59:03.407
+Si va a decir la ventana de contexto, tendría que ver con la ventana de contexto, la como en esa memoria a corto plazo que tiene para para poder hilar una conversación.
+
+
+1354
+01:59:03.407 --> 01:59:10.407
+Bueno, ahí en modo el routing te en el ejemplo. De modo routing. Hay hay algo de esto de lo que estamos hablando entonces.
+
+
+1355
+01:59:10.407 --> 01:59:11.407
+Bueno, sí, sí,
+
+
+1356
+01:59:11.407 --> 01:59:14.407
+And then dynamic routing.
+
+
+1357
+01:59:14.407 --> 01:59:18.407
+Sí, sí, es justamente el ejercicio 3,
+
+
+1358
+01:59:18.407 --> 01:59:21.407
+Clasificador
+
+
+1359
+01:59:21.407 --> 01:59:30.407
+Digamos, hay 1000 maneras de clasificar lo que vamos a empezar a ver cada vez más es ser como clasificador
+
+
+1360
+01:59:30.407 --> 01:59:34.407
+Para. Pero pa ponerme ponerme. Openshelf.
+
+
+1361
+01:59:34.407 --> 01:59:35.407
+Bueno
+
+
+1362
+01:59:35.407 --> 01:59:39.407
+Okay, ni siquiera igual está para usar. Pero.
+
+
+1363
+01:59:39.407 --> 01:59:40.407
+No me pongas.
+
+
+1364
+01:59:40.407 --> 01:59:52.407
+Hay un montón de versión sobre cómo se clasifica? Bueno, hay diferentes maneras, pueden ser de nuevo holísticas, regs.
+
+
+1365
+01:59:52.407 --> 01:59:55.407
+Un LLM
+
+
+1366
+01:59:55.407 --> 01:59:58.407
+O en este caso, un modelo sistema como ser
+
+
+1367
+01:59:58.407 --> 02:00:00.407
+Y
+
+
+1368
+02:00:00.407 --> 02:00:05.407
+Acá vemos los distintos tipos de modelos
+
+
+1369
+02:00:05.407 --> 02:00:14.407
+Vemos cómo se mapea de la complejidad de la consulta a un modelo distinto
+
+
+1370
+02:00:14.407 --> 02:00:19.407
+Se ve
+
+
+1371
+02:00:19.407 --> 02:00:22.407
+Acá está el clasificador que es otro agente
+
+
+1372
+02:00:22.407 --> 02:00:27.407
+que tiene construcción clasificada la complejidad del acuario y que te manda el usuario
+
+
+1373
+02:00:27.407 --> 02:00:34.407
+Interesante esto, responde únicamente con un 6 son válido, acá vemos por primera vez salida estructurada
+
+
+1374
+02:00:34.407 --> 02:00:37.407
+Sí, la solicitamos en el system prompt
+
+
+1375
+02:00:37.407 --> 02:00:41.407
+Respondeme Jason, no me respondas lenguaje coloquial.
+
+
+1376
+02:00:41.407 --> 02:00:49.407
+no necesitamos que entre los agentes hablen lenguaje natural y los criterios
+
+
+1377
+02:00:49.407 --> 02:00:52.407
+En este caso, el clasificador es otro agente.
+
+
+1378
+02:00:52.407 --> 02:00:59.407
+Hay que ver si el costo fijo en el que incurrimos por clasificar las cuales
+
+
+1379
+02:00:59.407 --> 02:01:06.407
+Justifica la clasificación, porque no vamos a ver que no siempre en función de cómo esté distribuida
+
+
+1380
+02:01:06.407 --> 02:01:20.407
+¿Cómo esté distribuida la complejidad de nuestras queries? Puede ser que el rooting no sea un ahorro de tokens, eso está en las slides, si lo quieren mirar, está la fórmula
+
+
+1381
+02:01:20.407 --> 02:01:24.407
+pero básicamente es ser de tokens por tipo de query
+
+
+1382
+02:01:24.407 --> 02:01:27.407
+Eso lo tienen que chequear
+
+
+1383
+02:01:27.407 --> 02:01:32.407
+Y en función de eso van a sacar un número, van a sacar el porcentaje de ahorro
+
+
+1384
+02:01:32.407 --> 02:01:35.407
+Así que miren la celada de porque ve los ciudadanos.
+
+
+1385
+02:01:35.407 --> 02:01:52.407
+La intuición entonces es que tenemos un LLM que está clasificando en la query de entrada y en función del resultado devuelve un JSON que mapea a una salida que ejecuta un modelo distinto en función de la complejidad de la cual
+
+
+1386
+02:01:52.407 --> 02:01:55.407
+Espero que hasta ahí se haya entendido
+
+
+1387
+02:01:55.407 --> 02:02:00.407
+Y acá está la salida, vamos a enfocarnos en
+
+
+1388
+02:02:00.407 --> 02:02:03.407
+Esto
+
+
+1389
+02:02:03.407 --> 02:02:06.407
+Se ve, ¿no?
+
+
+1390
+02:02:06.407 --> 02:02:16.407
+Bien.
+
+
+1391
+02:02:16.407 --> 02:02:27.407
+If
+
+
+1392
+02:02:27.407 --> 02:02:29.407
+Puede ser bloqueantería
+
+
+1393
+02:02:29.407 --> 02:02:34.407
+And
+
+
+1394
+02:02:34.407 --> 02:02:45.407
+El uso de puntero dinámico es prácticamente, es una práctica estándar
+
+
+1395
+02:02:45.407 --> 02:02:49.407
+Solamente que hay que tener en claro bien esos criterios, ¿no? Porque esos criterios también
+
+
+1396
+02:02:49.407 --> 02:02:55.407
+Puede cumplirse o no a veces no porque estamos dependiendo de un modelo que es estadístico
+
+
+1397
+02:02:55.407 --> 02:03:00.407
+There's router
+
+
+1398
+02:03:00.407 --> 02:03:07.407
+fue al 100% esto no siempre es así, debemos tener que estar preparado
+
+
+1399
+02:03:07.407 --> 02:03:08.407
+Claro.
+
+
+1400
+02:03:08.407 --> 02:03:11.407
+para casos donde el router se equivoque y hay que ver cuánto cuesta el error
+
+
+1401
+02:03:11.407 --> 02:03:18.407
+O sea, ¿cuánto catalán es es uno de los motivos para tener en cuenta a la hora de usar un router u otro por un lado
+
+
+1402
+02:03:18.407 --> 02:03:19.407
+And
+
+
+1403
+02:03:19.407 --> 02:03:20.407
+Y por otro lado, algo que se llama
+
+
+1404
+02:03:20.407 --> 02:03:26.407
+Para nosotros. Por ahí como arquitectos la lección es que tenemos que ponerlo.
+
+
+1405
+02:03:26.407 --> 02:03:27.407
+Sí,
+
+
+1406
+02:03:27.407 --> 02:03:29.407
+Después, veremos técnicamente, cómo se implementa. Podemos tirar un par de ideas.
+
+
+1407
+02:03:29.407 --> 02:03:34.407
+O podemos hacer un Spike para que se investigue que.
+
+
+1408
+02:03:34.407 --> 02:03:40.407
+De qué manera rutear de acuerdo al caso lo que fuera. Pero esto tiene que estar y tiene que haber un informe.
+
+
+1409
+02:03:40.407 --> 02:03:41.407
+Sí,
+
+
+1410
+02:03:41.407 --> 02:03:42.407
+Sí,
+
+
+1411
+02:03:42.407 --> 02:03:47.407
+De que de qué es lo que ahorro en un caso y en el otro y aunque no me lo Pida, nadie, lo tengo que hacer porque si no.
+
+
+1412
+02:03:47.407 --> 02:03:52.407
+Va a venir un día un elefante y se me va a colar.
+
+
+1413
+02:03:52.407 --> 02:03:56.407
+Esa no la entendí, pero pero sí, sí, si te va a volver un elefante. Efectivamente, o va a venir otro, digamos, es una práctica estándar, no opcional
+
+
+1414
+02:03:56.407 --> 02:04:06.407
+Uh.
+
+
+1415
+02:04:06.407 --> 02:04:08.407
+A esta altura y
+
+
+1416
+02:04:08.407 --> 02:04:09.407
+Y se resuelve tambien con el maldito ser que me está haciendo cambiar todas las slides
+
+
+1417
+02:04:09.407 --> 02:04:15.407
+Segura.
+
+
+1418
+02:04:15.407 --> 02:04:25.407
+Día a día porque porque para el router ser es ideal y tienen costo muy bajo y tienen muy buenas
+
+
+1419
+02:04:25.407 --> 02:04:39.407
+Lo único que quiero cerrar la clase con esto, sí, es obligatorio, si es importante ver el adquirir así de ruta, sí es importante ver en función de la fibra, si cuanto, cuánto nos sale un falso positivo, un falso negativo.
+
+
+1420
+02:04:39.407 --> 02:04:44.407
+Porque, por supuesto que el ahorro va a estar condicionado por eso
+
+
+1421
+02:04:44.407 --> 02:04:46.407
+Y finalmente
+
+
+1422
+02:04:46.407 --> 02:04:53.407
+El ahorro del routing es una propiedad de lo que se llama traffic mix
+
+
+1423
+02:04:53.407 --> 02:05:02.407
+Que necesitamos hacer? Bueno, necesitamos tener un dataset representativo de la distribución de esas queries, de su complejidad y tenemos que evaluar tambien
+
+
+1424
+02:05:02.407 --> 02:05:05.407
+esas cuales
+
+
+1425
+02:05:05.407 --> 02:05:07.407
+¿Cuántos tokens requieren
+
+
+1426
+02:05:07.407 --> 02:05:13.407
+Eso, si quieren, lo seguimos la clase que viene porque la fórmula es justamente lo que utiliza es el share de tokens
+
+
+1427
+02:05:13.407 --> 02:05:16.407
+En
+
+
+1428
+02:05:16.407 --> 02:05:26.407
+tiene algunos matices, algunos detalles, pero queda la intuición de que no queremos que, como era la del elefante, es muy bueno
+
+
+1429
+02:05:26.407 --> 02:05:27.407
+Bueno, porque nos escape
+
+
+1430
+02:05:27.407 --> 02:05:38.407
+Aunque no se te cuele un elefante por el colador, porque significa, no está. No está funcionando ahí. Nada no tienes ningún tipo de restricción. Te rompe, el colador y todo no no bajo.
+
+
+1431
+02:05:38.407 --> 02:05:45.407
+Básicamente algo sencillo, no necesitamos correr
+
+
+1432
+02:05:45.407 --> 02:05:46.407
+No tiene sentido
+
+
+1433
+02:05:46.407 --> 02:05:48.407
+Tengo una pregunta, Martín.
+
+
+1434
+02:05:48.407 --> 02:05:49.407
+Sí, por favor.
+
+
+1435
+02:05:49.407 --> 02:05:57.407
+No sé si, si está modo de ejemplo, pero ¿cómo calculaste la, la curación ahí de, de ese router que te dio un cien por ciento?
+
+
+1436
+02:05:57.407 --> 02:06:00.407
+mas
+
+
+1437
+02:06:00.407 --> 02:06:04.407
+más sencilla como tengo datos sintéticos.
+
+
+1438
+02:06:04.407 --> 02:06:18.407
+Yo sé de antemano que es simple, media, compleja, por eso es que te dice
+
+
+1439
+02:06:18.407 --> 02:06:19.407
+Yeah
+
+
+1440
+02:06:19.407 --> 02:06:20.407
+Sí, sí, recuerdo haber estudiado en machine learning que vos tenés como recola que ahora sí eran 4 y hay una matriz
+
+
+1441
+02:06:20.407 --> 02:06:24.407
+Totalmente
+
+
+1442
+02:06:24.407 --> 02:06:27.407
+Eso lo vamos a ver en raro, vamos a ver precision
+
+
+1443
+02:06:27.407 --> 02:06:31.407
+Eso exactamente
+
+
+1444
+02:06:31.407 --> 02:06:45.407
+Básicamente sabemos de antemano porque es un facet sintético, sabemos de mano que se esperaba que sea simple y que el router la clasificó correctamente
+
+
+1445
+02:06:45.407 --> 02:06:53.407
+ejemplos analizados
+
+
+1446
+02:06:53.407 --> 02:06:56.407
+Y si todos dieron positivo o negativo, si todos vieron bien
+
+
+1447
+02:06:56.407 --> 02:07:06.407
+Sobre la candidez de los analizadores
+
+
+1448
+02:07:06.407 --> 02:07:11.407
+Pero se entendió, se quedan con 2 o 3 ideas
+
+
+1449
+02:07:11.407 --> 02:07:18.407
+Me imagino que también debe haber algún tipo de tool que te permita sobre proyectos legados.
+
+
+1450
+02:07:18.407 --> 02:07:21.407
+Hacer un diagnóstico para.
+
+
+1451
+02:07:21.407 --> 02:07:25.407
+Para ver si hay po oportunidades de mejora de.
+
+
+1452
+02:07:25.407 --> 02:07:33.407
+Del consumo de token también bueno no sé. Me dio por lo menos en lo que es el Dynamic Routing, que estuvimos viendo.
+
+
+1453
+02:07:33.407 --> 02:07:38.407
+Se me ocurre. No se trata todo inventado casi, pero bueno.
+
+
+1454
+02:07:38.407 --> 02:07:47.407
+Lo que es si estás investigando tanto sobre eso.
+
+
+1455
+02:07:47.407 --> 02:07:48.407
+Y
+
+
+1456
+02:07:48.407 --> 02:07:50.407
+Y me hace el favor. Fíjate si encuentras alguno que puede usar un permiso. Vi que Open es 1 de los que Se menciona.
+
+
+1457
+02:07:50.407 --> 02:07:53.407
+Pero bueno, vos estás ahí más en la pomada.
+
+
+1458
+02:07:53.407 --> 02:07:59.407
+Con este modelo, porque te gusta y.
+
+
+1459
+02:07:59.407 --> 02:08:03.407
+Perdón, ¿probaste que
+
+
+1460
+02:08:03.407 --> 02:08:08.407
+Claro. Pero es es lo puedes usar online nada más.
+
+
+1461
+02:08:08.407 --> 02:08:13.407
+HEP no, que se baja y se corre
+
+
+1462
+02:08:13.407 --> 02:08:14.407
+O sea.
+
+
+1463
+02:08:14.407 --> 02:08:15.407
+Iker no te entendía las a ver lo pusiste acá dentro del chat a ver.
+
+
+1464
+02:08:15.407 --> 02:08:17.407
+No, para que.
+
+
+1465
+02:08:17.407 --> 02:08:19.407
+Ahí te escucho mejor.
+
+
+1466
+02:08:19.407 --> 02:08:20.407
+Ay, mira.
+
+
+1467
+02:08:20.407 --> 02:08:21.407
+Lo chequeo.
+
+
+1468
+02:08:21.407 --> 02:08:27.407
+Para mi caso anduvo mal, pero nada, hay que probar
+
+
+1469
+02:08:27.407 --> 02:08:28.407
+Bueno.
+
+
+1470
+02:08:28.407 --> 02:08:31.407
+Además, este me dijeron está buenísimo, es la muy bien
+
+
+1471
+02:08:31.407 --> 02:08:35.407
+Ah, Laia estuvo investigando. No sé si lo viste. Matías.
+
+
+1472
+02:08:35.407 --> 02:08:38.407
+Yeah.
+
+
+1473
+02:08:38.407 --> 02:08:39.407
+Sí, sí, porque existe hace casi
+
+
+1474
+02:08:39.407 --> 02:08:41.407
+Yo pensaba, laia versus open. Share okay.
+
+
+1475
+02:08:41.407 --> 02:08:44.407
+I
+
+
+1476
+02:08:44.407 --> 02:08:49.407
+Pero de nombre, eh? No me quiero hacer canchero.
+
+
+1477
+02:08:49.407 --> 02:08:50.407
+Yo también esto es muy nuevo
+
+
+1478
+02:08:50.407 --> 02:08:51.407
+Ya estaba, esa canción
+
+
+1479
+02:08:51.407 --> 02:08:52.407
+Allá salieron un montón.
+
+
+1480
+02:08:52.407 --> 02:08:54.407
+Por eso por eso quiero saber si matías.
+
+
+1481
+02:08:54.407 --> 02:08:57.407
+Okay. Good. Deal.
+
+
+1482
+02:08:57.407 --> 02:08:58.407
+Yo
+
+
+1483
+02:08:58.407 --> 02:09:01.407
+Me parece por ahí. Los pruebo un poco.
+
+
+1484
+02:09:01.407 --> 02:09:02.407
+No, no.
+
+
+1485
+02:09:02.407 --> 02:09:03.407
+O los manda a probar y se andan bien.
+
+
+1486
+02:09:03.407 --> 02:09:06.407
+Problemas anda en ámbitos académicos.
+
+
+1487
+02:09:06.407 --> 02:09:15.407
+No, no sé aprobar todos estos, siempre probé
+
+
+1488
+02:09:15.407 --> 02:09:18.407
+No estoy en ámbitos académicos hace mucho tiempo, gracias a
+
+
+1489
+02:09:18.407 --> 02:09:19.407
+El universo
+
+
+1490
+02:09:19.407 --> 02:09:21.407
+No haber es papers info.
+
+
+1491
+02:09:21.407 --> 02:09:24.407
+No, no
+
+
+1492
+02:09:24.407 --> 02:09:33.407
+Sí, no, no, de, de, yo creo que si nos interesa a todos, si logramos consenso, estudiar esto es tan importante como estudiar modelos razonables
+
+
+1493
+02:09:33.407 --> 02:09:35.407
+Por eso es que
+
+
+1494
+02:09:35.407 --> 02:09:37.407
+Hemos
+
+
+1495
+02:09:37.407 --> 02:09:41.407
+Lo menciono bastante
+
+
+1496
+02:09:41.407 --> 02:09:45.407
+Porque a ver si lo encuentro
+
+
+1497
+02:09:45.407 --> 02:09:46.407
+En
+
+
+1498
+02:09:46.407 --> 02:09:50.407
+Una que nos apruebe, de seguridad.
+
+
+1499
+02:09:50.407 --> 02:09:51.407
+Bueno, mira.
+
+
+1500
+02:09:51.407 --> 02:09:54.407
+Y claro.
+
+
+1501
+02:09:54.407 --> 02:09:58.407
+Doncep tiene la policy de no retention data
+
+
+1502
+02:09:58.407 --> 02:10:04.407
+No no si yo también nosotros usamos igual a Sur, pero que chequeamos esa póliza, pero.
+
+
+1503
+02:10:04.407 --> 02:10:09.407
+Pero no puedes. No se puede tener que ir por algo si tenés.
+
+
+1504
+02:10:09.407 --> 02:10:19.407
+Si tenés infra para hacer un premise tenés que ir por algún premise.
+
+
+1505
+02:10:19.407 --> 02:10:22.407
+No solamente son, son livianos
+
+
+1506
+02:10:22.407 --> 02:10:25.407
+Sí, tal cual.
+
+
+1507
+02:10:25.407 --> 02:10:30.407
+O esa que es un spoiler de algo. No.
+
+
+1508
+02:10:30.407 --> 02:10:33.407
+Sí, la prueba de el finde
+
+
+1509
+02:10:33.407 --> 02:10:37.407
+Y
+
+
+1510
+02:10:37.407 --> 02:10:49.407
+Por ahí, si quieren, lo puedo sumar en el módulo de orquestación en realidad porque lo que sucede es que lo que sabemos de orquestación cambió bastante
+
+
+1511
+02:10:49.407 --> 02:10:54.407
+Soto que si, mientras haces una alternativa que pueda usar.
+
+
+1512
+02:10:54.407 --> 02:11:00.407
+Bueno, entonces, igual está. Bueno, saber.
+
+
+1513
+02:11:00.407 --> 02:11:02.407
+Definitivamente hay alternativas para que puedas usar y es
+
+
+1514
+02:11:02.407 --> 02:11:08.407
+Está sonando fuerte. También. Sí, es cierto.
+
+
+1515
+02:11:08.407 --> 02:11:09.407
+Bien.
+
+
+1516
+02:11:09.407 --> 02:11:10.407
+Pero no está bueno, está bueno, él está buena. Esta mirada.
+
+
+1517
+02:11:10.407 --> 02:11:12.407
+Está buena.
+
+
+1518
+02:11:12.407 --> 02:11:17.407
+Lo incluir.
+
+
+1519
+02:11:17.407 --> 02:11:18.407
+Sí, sí,
+
+
+1520
+02:11:18.407 --> 02:11:20.407
+soy elefante, pero
+
+
+1521
+02:11:20.407 --> 02:11:21.407
+A
+
+
+1522
+02:11:21.407 --> 02:11:31.407
+¿Viste? Yo estuve probando un agente que estaba construyendo y me pasaba que con los modelos básicos no sabia usar bien las tools
+
+
+1523
+02:11:31.407 --> 02:11:33.407
+O le decía devolvé este formato
+
+
+1524
+02:11:33.407 --> 02:11:36.407
+Jason tal y
+
+
+1525
+02:11:36.407 --> 02:11:42.407
+O la próxima ejecución tenés que llamar a un atúl y lo ponía como texto en vez de llamarla.
+
+
+1526
+02:11:42.407 --> 02:11:50.407
+Eso cambió o también hay que probarlo, digamos, cuando haces el routing
+
+
+1527
+02:11:50.407 --> 02:11:52.407
+Buena pregunta, también
+
+
+1528
+02:11:52.407 --> 02:12:01.407
+Mira, yo descarté Google de 9 millones de parámetros justamente porque tenía ese inconveniente
+
+
+1529
+02:12:01.407 --> 02:12:10.407
+No manejan correctamente el sonado de tools o no siempre responden con el formato que respondan
+
+
+1530
+02:12:10.407 --> 02:12:18.407
+Con lo cual, en realidad, probablemente tengas que usar un modelo con un poquito más de capacidad.
+
+
+1531
+02:12:18.407 --> 02:12:19.407
+En tu caso
+
+
+1532
+02:12:19.407 --> 02:12:20.407
+Se encuentre
+
+
+1533
+02:12:20.407 --> 02:12:27.407
+O sea, nosotros deberíamos tener como un listado de, de, de modelos que ya sabemos que son útiles, digamos, como descartar
+
+
+1534
+02:12:27.407 --> 02:12:38.407
+La última generación de modelos son mucho mejores con el tool using porque se ve que antes le pasaba casi todo, todos los esquemas nuevos, todos los nuevos, a pesar del tamaño de los
+
+
+1535
+02:12:38.407 --> 02:12:39.407
+Las versiones viejas eran malísimas
+
+
+1536
+02:12:39.407 --> 02:12:48.407
+Claro, porque sí, no fue hace mucho, fue este año y, y ponerle, viste que esta luna, sol, terra, todo eso y en Luna como que le pifea siempre y
+
+
+1537
+02:12:48.407 --> 02:12:52.407
+Y era casi imposible de usar este, por lo menos
+
+
+1538
+02:12:52.407 --> 02:12:57.407
+Nada, fue una cosa simple que hice y quizá le faltó un montón de
+
+
+1539
+02:12:57.407 --> 02:13:00.407
+de herramientas pero de herramientas como de
+
+
+1540
+02:13:00.407 --> 02:13:07.407
+de mejorar la parte de programación que la llama y todo eso, pero, pero me paso eso, como que tuve que ir a modelos mas
+
+
+1541
+02:13:07.407 --> 02:13:12.407
+caros como para que tenga sentido y
+
+
+1542
+02:13:12.407 --> 02:13:16.407
+Y el flujo salga correcto, ¿no?
+
+
+1543
+02:13:16.407 --> 02:13:17.407
+Mira.
+
+
+1544
+02:13:17.407 --> 02:13:22.407
+modelos más antiguos? Porque, por ejemplo.
+
+
+1545
+02:13:22.407 --> 02:13:27.407
+Luna desvariada, pero se usaba 5 5
+
+
+1546
+02:13:27.407 --> 02:13:29.407
+No bien
+
+
+1547
+02:13:29.407 --> 02:13:30.407
+Claro.
+
+
+1548
+02:13:30.407 --> 02:13:31.407
+Ves ahí gustó
+
+
+1549
+02:13:31.407 --> 02:13:35.407
+La va a ir mejorando, sí, sí.
+
+
+1550
+02:13:35.407 --> 02:13:37.407
+Mira.
+
+
+1551
+02:13:37.407 --> 02:13:43.407
+Aparentemente no lo sabía yo, pero aparentemente tiene esos problemas.
+
+
+1552
+02:13:43.407 --> 02:13:53.407
+Así que si justamente tendrías que cambiar de modelo o intentar forzar de alguna manera, vamos a ver para seguro los Pytoneros lo conocen
+
+
+1553
+02:13:53.407 --> 02:13:54.407
+Este.
+
+
+1554
+02:13:54.407 --> 02:14:01.407
+Pero de cualquier manera, los modelos con pocas capabilities normalmente son malos llamadores de funciones o alucinan parámetros
+
+
+1555
+02:14:01.407 --> 02:14:14.407
+Con hombres de tools hay métricas para eso, hay los conjuntos de evaluaciones, entre otras cosas, miden justamente precisión, recall y aquí en el llamado de tools.
+
+
+1556
+02:14:14.407 --> 02:14:17.407
+Hay que hacerlo porque es
+
+
+1557
+02:14:17.407 --> 02:14:21.407
+Son los errores más comunes y los más caros en general
+
+
+1558
+02:14:21.407 --> 02:14:23.407
+And
+
+
+1559
+02:14:23.407 --> 02:14:30.407
+No querés que se llama un atúl con el parámetro equivocado porque de cualquier manera, de cualquier manera.
+
+
+1560
+02:14:30.407 --> 02:14:38.407
+Si el modelo hiciera eso, también hay war rails donde vos podes básicamente interceptar esa llamada
+
+
+1561
+02:14:38.407 --> 02:14:44.407
+y hacer una verificación de que los parámetros sean correctos estén dentro de rangos correctos, sean del tipo correcto.
+
+
+1562
+02:14:44.407 --> 02:14:53.407
+Y eso es antes de que se ejecute el atún. Una vez que se ejecute el atún, ya ya está
+
+
+1563
+02:14:53.407 --> 02:14:55.407
+Lo vamos a ver también en el módulo de seguridad
+
+
+1564
+02:14:55.407 --> 02:15:05.407
+Pero mira, no sabía esto
+
+
+1565
+02:15:05.407 --> 02:15:06.407
+Bien.
+
+
+1566
+02:15:06.407 --> 02:15:08.407
+¿Cuánta data se
+
+
+1567
+02:15:08.407 --> 02:15:21.407
+Se hicieron alguna idea de cómo empezar a armar sus propios, ya no estoy escuchando esta nueva versión, consideran que es una clase simplemente de
+
+
+1568
+02:15:21.407 --> 02:15:24.407
+Un recorrido
+
+
+1569
+02:15:24.407 --> 02:15:30.407
+next vuelo de algunos conceptos
+
+
+1570
+02:15:30.407 --> 02:15:32.407
+Cada cosa que mencionamos
+
+
+1571
+02:15:32.407 --> 02:15:38.407
+Es casi un módulo entero, así que, si quedaron dudas, huecos, baches
+
+
+1572
+02:15:38.407 --> 02:15:48.407
+No tengan, digamos, no se preocupen, va a pasar de a poquito, empezamos a unir los puntos, los conceptos, los componentes
+
+
+1573
+02:15:48.407 --> 02:15:52.407
+Pero esta primera clase es un poco una motivacion
+
+
+1574
+02:15:52.407 --> 02:15:56.407
+Ya puse o en los últimos ejemplos
+
+
+1575
+02:15:56.407 --> 02:15:59.407
+con estos scripts por si quieren probarlos
+
+
+1576
+02:15:59.407 --> 02:16:05.407
+Y me queda un ratito más, si quieren hacer consultas y si no me escriben directamente.
+
+
+1577
+02:16:05.407 --> 02:16:06.407
+¿Les parece bien
+
+
+1578
+02:16:06.407 --> 02:16:10.407
+Genial, muchas gracias, muy buena la clase
+
+
+1579
+02:16:10.407 --> 02:16:15.407
+Bueno, muchas gracias a vos por participar
+
+
+1580
+02:16:15.407 --> 02:16:22.407
+Bueno a ti. Gracias por todo.
+
+
+1581
+02:16:22.407 --> 02:16:23.407
+Not at all.
+
+
+1582
+02:16:23.407 --> 02:16:24.407
+A ustedes
+
+
+1583
+02:16:24.407 --> 02:16:25.407
+Muchas gracias
+
+
+1584
+02:16:25.407 --> 02:16:26.407
+Hoy. Hoy no vamos a hablar de.
+
+
+1585
+02:16:26.407 --> 02:16:31.407
+De los negocios neurodivergentes ni nada de eso. No hay ningún problema.
+
+
+1586
+02:16:31.407 --> 02:16:32.407
+Buenísimo
+
+
+1587
+02:16:32.407 --> 02:16:34.407
+Hoy. Estamos bien.
+
+
+1588
+02:16:34.407 --> 02:16:36.407
+Vale, genial, me alegro
+
+
+1589
+02:16:36.407 --> 02:16:37.407
+Recién empezamos
+
+
+1590
+02:16:37.407 --> 02:16:38.407
+Bueno.
+
+
+1591
+02:16:38.407 --> 02:16:39.407
+Bueno, nos vemos, muchas gracias
+
+
+1592
+02:16:39.407 --> 02:16:40.407
+Tengo paciente
+
+
+1593
+02:16:40.407 --> 02:16:41.407
+I know, muchas gracias
+
+
+1594
+02:16:41.407 --> 02:16:42.407
+my cheers.
+
+
+1595
+02:16:42.407 --> 02:16:43.407
+So
+
+
+1596
+02:16:43.407 --> 02:16:44.407
+Gracias. Hasta luego.
+
+
+1597
+02:16:44.407 --> 02:16:45.407
+Chao.
+
+
+1598
+02:16:45.407 --> 02:16:46.407
+No
+
+
+1599
+02:16:46.407 --> 02:16:47.407
+Gracias, buenas noches
+
+
+1600
+02:16:47.407 --> 02:16:48.407
+Gente, hasta luego.
+
+
+1601
+02:16:48.407 --> 02:16:49.407
+Gracias
+
+
+1602
+02:16:49.407 --> 02:16:50.407
+Paso
+
+
+1603
+02:16:50.407 --> 02:16:54.447
+I
+
+
+

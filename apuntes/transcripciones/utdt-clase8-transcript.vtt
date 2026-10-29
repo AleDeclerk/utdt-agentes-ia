@@ -1,0 +1,6188 @@
+WEBVTT
+
+1
+00:00:02.030 --> 00:00:03.270
+Matias Z: Buenas tardes.
+
+
+2
+00:00:03.540 --> 00:00:05.579
+Matias Z: ¿cómo están. Me escuchan.
+
+
+3
+00:00:05.580 --> 00:00:07.080
+Agustin Aimale: Hola buenas. Oa.
+
+
+4
+00:00:07.690 --> 00:00:08.410
+Juan Franco Echeverria: Al revés.
+
+
+5
+00:00:08.780 --> 00:00:10.260
+Valentina Da Silva: Hola, buenas tardes.
+
+
+6
+00:00:10.950 --> 00:00:11.730
+Matias Z: Bueno, sí.
+
+
+7
+00:00:13.860 --> 00:00:15.020
+Francisco Berthet Cosentino: Buenas.
+
+
+8
+00:00:15.890 --> 00:00:18.520
+Gustavo Narcisi: A vos, te digo, no me.
+
+
+9
+00:00:18.520 --> 00:00:20.350
+Alejandro Declerk: Hola, ¿Cómo están? ¿qué tal.
+
+
+10
+00:00:20.350 --> 00:00:21.810
+Matias Z: Todo, más o menos en orden.
+
+
+11
+00:00:22.340 --> 00:00:27.710
+Matias Z: Mariano. Ahora que te veo, creo que te
+
+
+12
+00:00:28.040 --> 00:00:30.270
+Matias Z: todavía te estoy bebiendo algo. No.
+
+
+13
+00:00:30.440 --> 00:00:32.559
+Mariano Mondani: No creo que no. Los 2.
+
+
+14
+00:00:32.560 --> 00:00:32.980
+Matias Z: Y.
+
+
+15
+00:00:32.980 --> 00:00:37.590
+Mariano Mondani: Lo si lo del módulo de memoria y R a D está abajo. Así que.
+
+
+16
+00:00:37.590 --> 00:00:46.740
+Matias Z: Genial. Genial. No subí todos los ejemplos. Así que si querés le pego una segunda revisión, a ver si hay algo más que pueda compartir.
+
+
+17
+00:00:48.230 --> 00:00:51.670
+Matias Z: y no sé si les está faltando algún material
+
+
+18
+00:00:52.060 --> 00:01:02.179
+Matias Z: o estamos al día. Ok. No me ha mareado con con las 2 comisiones y Ok, de hecho.
+
+
+19
+00:01:02.850 --> 00:01:07.430
+Matias Z: alabar 2 comisiones y esta ser la segunda instancia.
+
+
+20
+00:01:08.460 --> 00:01:14.690
+Matias Z: Hay algo que está bueno, que es que me permite, como acomodar un poco este el recorrido.
+
+
+21
+00:01:17.220 --> 00:01:19.570
+Matias Z: Vimos evaluaciones
+
+
+22
+00:01:20.150 --> 00:01:27.010
+Matias Z: mientras esperamos al resto de los compañeros que ya faltan poquito. Somos 20 Vimos evaluaciones en la primera Comisión.
+
+
+23
+00:01:27.250 --> 00:01:39.700
+Matias Z: Son unos 35, también perfiles similares, seniors directivos, vale líderes técnicos, todos con algún proyecto gentítico.
+
+
+24
+00:01:41.110 --> 00:01:50.660
+Matias Z: Y empecé la clase preguntando: quién había implementado alguna infraestructura mínima de evaluaciones.
+
+
+25
+00:01:50.880 --> 00:01:56.240
+Matias Z: no sobre sus pies sobre sus m. Ps: Y
+
+
+26
+00:01:57.530 --> 00:02:05.710
+Matias Z: para Mi sorpresa fue la respuesta. Fue como un silencio incómodo, lo cual es una gran motivación
+
+
+27
+00:02:05.820 --> 00:02:12.309
+Matias Z: para para esta clase, creo yo, porque yo creo que se interpreta un poco perdón. La cámara apagada
+
+
+28
+00:02:15.120 --> 00:02:19.699
+Matias Z: y la peluca desordenada se interpreta un poco
+
+
+29
+00:02:20.540 --> 00:02:26.489
+Matias Z: la idea de, digamos, por dónde se ve en el recorrido, se interpreta como si fuera.
+
+
+30
+00:02:27.960 --> 00:02:31.439
+Matias Z: digamos, la instrumentación tanto para observar
+
+
+31
+00:02:31.660 --> 00:02:33.750
+Matias Z: tanto para la usabilidad, trazabilidad como
+
+
+32
+00:02:33.900 --> 00:02:37.930
+Matias Z: e v a ls evaluaciones offline y online que llamamos ahora, que son
+
+
+33
+00:02:38.210 --> 00:02:43.250
+Matias Z: como si fuera un agregado posterior a la construcción de la lógica principal
+
+
+34
+00:02:43.450 --> 00:02:50.279
+Matias Z: y y los que trabajan con algún tipo de metodología link mitrativa ágil. ¿saben qué?
+
+
+35
+00:02:50.530 --> 00:03:02.039
+Matias Z: Si no aprendemos, no sabemos para dónde disparar en el próximo sprint. Entonces, y como en el mundo genético, prácticamente es la única opción. Trabajar de manera interactiva.
+
+
+36
+00:03:04.190 --> 00:03:10.880
+Matias Z: Incluir instrumentación es no opcional
+
+
+37
+00:03:11.160 --> 00:03:21.830
+Matias Z: para los que no saben que es instrumentación, es la capacidad de que el mismo código, el mismo sistema, vaya guardando señales
+
+
+38
+00:03:22.140 --> 00:03:33.710
+Matias Z: que nos vayan permitiendo descubrir cosas, aprender cosas, tener feedback básicamente poder priorizar donde
+
+
+39
+00:03:34.100 --> 00:03:37.439
+Matias Z: enfocar nuestros esfuerzos para el próximo sprint.
+
+
+40
+00:03:37.760 --> 00:03:46.559
+Matias Z: Y, por supuesto, en un montón de dimensiones, seguridad, eficiencia, efectividad de las tareas
+
+
+41
+00:03:47.070 --> 00:03:55.429
+Matias Z: con rectitud, veracidad, alucinaciones. Hay una gran familia de de evaluaciones. Entonces, como como vi que es un tema
+
+
+42
+00:03:55.620 --> 00:04:02.009
+Matias Z: poco abordado, incluso en instancias de de de pruebas de conceptos.
+
+
+43
+00:04:05.900 --> 00:04:10.799
+Matias Z: Pensé que por ahí estaba, bueno traerlo hablarlo con ustedes
+
+
+44
+00:04:11.010 --> 00:04:15.520
+Matias Z: hacer una introducción, no solo la introducción que hicimos son 2 clases en general.
+
+
+45
+00:04:15.630 --> 00:04:19.830
+Matias Z: porque es un tema complejo que, aparte va a alimentar
+
+
+46
+00:04:20.080 --> 00:04:24.519
+Matias Z: el pible que están viendo arriba de lo que me prestas de otro curso que hoy, pero
+
+
+47
+00:04:24.890 --> 00:04:31.940
+Matias Z: no sirve porque básicamente muestra como 3 instancias
+
+
+48
+00:04:32.610 --> 00:04:43.789
+Matias Z: no se preocupen por los detalles, pero 3 instancias que que un arquitecto va a tener que resolver con diferentes soluciones alternativas diferentes frameworks.
+
+
+49
+00:04:45.530 --> 00:04:49.180
+Matias Z: componentes o servicios de cloud.
+
+
+50
+00:04:51.110 --> 00:05:04.889
+Matias Z: Básicamente, la capa 1 tiene que ver con con todo lo que hacíamos antes del despliegue. La capa. Dos. Es todo lo que sucede en tiempo real, más asociado al monitoreo, que es el próximo módulo y la capa. Tres tiene que ver con justamente el aprendizaje, la automejora, cómo usar ese
+
+
+51
+00:05:05.000 --> 00:05:09.169
+Matias Z: feedback loop para mejorar en nuestra próxima interacción. No
+
+
+52
+00:05:19.700 --> 00:05:29.259
+Matias Z: bien lo que lo que vamos a ver. Vamos a empezar a ver. De hecho, son 2 barras, 3 módulos, porque esto también incluye, por supuesto, seguridad.
+
+
+53
+00:05:29.960 --> 00:05:36.700
+Matias Z: Vamos a empezar. Primero, evaluaciones relacionadas con capabilitis con Mhm
+
+
+54
+00:05:38.370 --> 00:05:45.640
+Matias Z: con diferentes métricas relacionadas con la corrección de la trayectoria. Con resultados, vamos a revisar de nuevo, y les pido disculpas
+
+
+55
+00:05:46.060 --> 00:06:05.449
+Matias Z: Aquí nací precisión y recaut. Todos los scoures que ya conocen aplicados a una terminología específica de agentes vamos a ver al algunos, algunas fórmulas nuevas porque eres un escort. Y un un tema metodológico que a veces es problemático y vamos a ver.
+
+
+56
+00:06:05.960 --> 00:06:09.050
+Matias Z: básicamente qué sucede cuando alguien reporta
+
+
+57
+00:06:09.230 --> 00:06:14.120
+Matias Z: mi agente tiene un 92 por 100 de aquí. Y así vamos.
+
+
+58
+00:06:14.220 --> 00:06:18.840
+Matias Z: ¿cuánto vale ese número. ¿qué sentido tiene? ¿como se lo comunicamos al negocio? ¿no?
+
+
+59
+00:06:19.110 --> 00:06:24.989
+Matias Z: ¿qué peso tienes realmente si si estadísticamente significa algo o no?
+
+
+60
+00:06:25.490 --> 00:06:29.899
+Matias Z: Me animé a cambiar un poquito el orden de de del recorrido.
+
+
+61
+00:06:31.810 --> 00:06:42.460
+Matias Z: Y ustedes me dirán con estas señales. No solamente iteramos, aprendemos, mejoramos, sino que, además, en
+
+
+62
+00:06:43.050 --> 00:06:50.540
+Matias Z: automatizados fundamentalmente, que es un poco la idea del Asian Offs, que es como 1 de los módulos que van como
+
+
+63
+00:06:50.870 --> 00:06:56.379
+Matias Z: a poner todo lo que estuvimos estudiando. Lo va a poner en un plan tipo 6 y. C, D,
+
+
+64
+00:06:56.960 --> 00:06:59.730
+Matias Z: Por ahí, algunos ya estuvo trabajando con M. L Ops.
+
+
+65
+00:07:00.870 --> 00:07:08.860
+Matias Z: su sucesor. L. L. M. Hobs: Bueno, ahora hay Agend Ox, que tiene su su propia, su propia lógica.
+
+
+66
+00:07:09.110 --> 00:07:12.559
+Matias Z: Pero la filosofía es un poco la misma: no
+
+
+67
+00:07:13.080 --> 00:07:16.750
+Matias Z: tratar de manejar todo como código, versionar los artefactos
+
+
+68
+00:07:16.900 --> 00:07:21.700
+Matias Z: ser ordenados a la hora del despliegue, automatizar los Gates.
+
+
+69
+00:07:21.980 --> 00:07:25.670
+Matias Z: Todo lo que tiene que ver con el manejo de la arquitectura del despliegue de producción.
+
+
+70
+00:07:25.870 --> 00:07:33.049
+Matias Z: Pero para eso primero tendríamos que definir con algunos conceptos
+
+
+71
+00:07:33.870 --> 00:07:39.270
+Matias Z: entonces para que quede como superclaro. Estamos en la capa 1.
+
+
+72
+00:07:39.820 --> 00:07:41.539
+Matias Z: Acabo de enseñar Achmarks.
+
+
+73
+00:07:42.930 --> 00:07:50.299
+Matias Z: Bueno, los Bed Start son como evaluaciones generalizadas aplicadas a un montón de modelos, y normalmente este
+
+
+74
+00:07:51.900 --> 00:07:55.469
+Matias Z: nos dan una línea base, un beis line de determinadas
+
+
+75
+00:07:55.980 --> 00:08:02.790
+Matias Z: capabiritis es el modelo, pero generalmente necesitamos desarrollar nuestro propio conjunto de evaluaciones.
+
+
+76
+00:08:04.590 --> 00:08:07.029
+Matias Z: Vamos a ver evaluaciones en diferentes lugares.
+
+
+77
+00:08:08.920 --> 00:08:16.290
+Matias Z: Por ejemplo, si para Sos, La, qué sé yo, la la chequear, la la veracidad, o, o, digamos.
+
+
+78
+00:08:16.500 --> 00:08:24.429
+Matias Z: el groundding, es decir, que cada respuesta tenga un link directo algún tipo de evidencia dependiendo de
+
+
+79
+00:08:24.540 --> 00:08:29.939
+Matias Z: la industria. Eso es a veces muy importante. Muy Las auditorías buscan eso.
+
+
+80
+00:08:30.770 --> 00:08:35.239
+Matias Z: Bueno, evento antes para eso, o sea, básicamente para evaluar nuestro sistema de R A. D.
+
+
+81
+00:08:35.960 --> 00:08:41.550
+Matias Z: Sí, el sistema de recuperación, verificar el comportamiento.
+
+
+82
+00:08:41.680 --> 00:08:49.069
+Matias Z: no solamente el resultado final nos interesa. Nos interesa la trayectoria. Si tenemos un worklow, qué caminos tomó, qué herramientas tomó que parámetros.
+
+
+83
+00:08:51.910 --> 00:08:58.560
+Matias Z: pero también hay otro tipo de evaluaciones que verifican otras cuestiones igual de importantes. Por ejemplo, vamos a ver
+
+
+84
+00:08:59.110 --> 00:09:08.800
+Matias Z: framews específicos de evaluaciones para seguridad, entonces seguridad ofensiva y seguridad defensiva en un
+
+
+85
+00:09:09.180 --> 00:09:15.040
+Matias Z: y vamos a ver que todo esto se integra para crear scores que finalmente funcionan como Gates
+
+
+86
+00:09:15.870 --> 00:09:18.140
+Matias Z: y, por ejemplo, usando Githup actions
+
+
+87
+00:09:18.410 --> 00:09:20.410
+Matias Z: y Emery Flows, que son 2
+
+
+88
+00:09:20.670 --> 00:09:26.640
+Matias Z: desconocer. Podemos, por ejemplo, promover nociones, de agentes
+
+
+89
+00:09:27.390 --> 00:09:31.569
+Matias Z: a producción o stage dependiendo de cómo esté conformado nuestro papel.
+
+
+90
+00:09:35.460 --> 00:09:44.380
+Matias Z: Hay como 2 mundos en las evaluaciones. Están las evaluaciones offline, que son un poco las que tenemos acá arriba y las online, que son
+
+
+91
+00:09:44.690 --> 00:09:50.040
+Matias Z: más bien las que asociamos a Montenegro, que son las que vamos a ver en el módulo 10
+
+
+92
+00:09:54.400 --> 00:09:59.469
+Matias Z: y la capa 3 es interesante porque cierra un poco la idea de de toda esta triunfo.
+
+
+93
+00:09:59.750 --> 00:10:06.419
+Matias Z: Puedo reconstruir casos para mis evaluaciones. Puedo fragmentar. Se hace famoso film de loop.
+
+
+94
+00:10:06.910 --> 00:10:09.229
+Matias Z: ¿para qué? Para que las próximas opciones no?
+
+
+95
+00:10:09.590 --> 00:10:14.240
+Matias Z: repitan, tenemos los mismos errores, por lo menos
+
+
+96
+00:10:15.440 --> 00:10:23.199
+Matias Z: vamos a ver que si bien hay conceptos similares, la filosofía entre las evaluaciones offline y las online son bien distintas.
+
+
+97
+00:10:23.700 --> 00:10:26.820
+Matias Z: Es muy muy distinto evaluar más gente
+
+
+98
+00:10:28.620 --> 00:10:32.300
+Matias Z: con una cassette de casos que expone la gente
+
+
+99
+00:10:33.320 --> 00:10:38.270
+Matias Z: a la selva, que es, digamos, la utilización real por parte de usuarios.
+
+
+100
+00:10:38.800 --> 00:10:40.760
+Matias Z: Pues siempre hay casos.
+
+
+101
+00:10:40.990 --> 00:10:46.519
+Matias Z: Long Dail, caso de esquina. Siempre hay usuarios maliciosos.
+
+
+102
+00:10:47.310 --> 00:10:50.819
+Matias Z: y ahí es donde realmente vamos a empezar a aprender un poco como
+
+
+103
+00:10:53.810 --> 00:11:03.080
+Matias Z: a dimensionar realmente los riesgos de de de de bloquear sin tener estas cuestiones de seguridad. Además de que hay Drift, muchas veces distribución, algo respecto a las juvenil
+
+
+104
+00:11:03.260 --> 00:11:10.940
+Matias Z: ric semántico, cambios de los modelos del provers cambio. De ya hablamos de la estrategia de chunguimentruil.
+
+
+105
+00:11:11.720 --> 00:11:21.800
+Matias Z: Tenemos que evaluar permanentemente. Básicamente es un poco lo que queríamos, como estás diciendo, y
+
+
+106
+00:11:26.640 --> 00:11:29.219
+Matias Z: estas son las slides.
+
+
+107
+00:11:30.150 --> 00:11:33.570
+Matias Z: Me quedaron bastante aburridas. Los slides.
+
+
+108
+00:11:35.770 --> 00:11:39.210
+Matias Z: Así que pensé diferentes formas de motivarlos.
+
+
+109
+00:11:42.790 --> 00:11:44.719
+Matias Z: Esto salió ayer.
+
+
+110
+00:11:49.300 --> 00:11:50.780
+Matias Z: El resumen es
+
+
+111
+00:11:55.270 --> 00:12:07.759
+Matias Z: cómo se están desarrollando, desarrollando, desarrollando y gobernando agentes en la práctica y se es es un resumen relativamente serio tanto por la organización como por la metodología, todo a través de entrevistas
+
+
+112
+00:12:08.430 --> 00:12:14.050
+Matias Z: a compañías grandes importantes. ¿sí? Y
+
+
+113
+00:12:15.070 --> 00:12:18.080
+Matias Z: lo interesante, Bueno, al final tiene
+
+
+114
+00:12:19.640 --> 00:12:27.629
+Matias Z: igual, se las voy a copiar si me han hecho con todos los las soluciones agrínticas que auditaron
+
+
+115
+00:12:28.990 --> 00:12:37.450
+Matias Z: en Google, Microsoft net atrofico bien. Y
+
+
+116
+00:12:37.730 --> 00:12:40.769
+Matias Z: fundamentalmente, lo que propone el informe es
+
+
+117
+00:12:42.230 --> 00:12:46.479
+Matias Z: qué estamos viendo de cuáles son los gaps que que
+
+
+118
+00:12:47.980 --> 00:12:53.830
+Matias Z: que de alguna manera generan los mayores como riesgos en términos, por ejemplo, o de seguridad
+
+
+119
+00:12:54.800 --> 00:12:59.099
+Matias Z: o de riesgo reputacional o de pérdidas económicas. Concretamente.
+
+
+120
+00:12:59.480 --> 00:13:01.339
+Matias Z: y un poco el informe dice
+
+
+121
+00:13:01.750 --> 00:13:06.399
+Matias Z: esto de hace muy poquito no ya les digo, se publicó hace pocos días
+
+
+122
+00:13:06.580 --> 00:13:14.699
+Matias Z: infórmese. Bueno, lo más importante estamos encontrando es que incluso en producción no hay infraestructura seria de ni devaluaciones
+
+
+123
+00:13:15.460 --> 00:13:18.360
+Matias Z: ni de observabilidad ni de trazabilidad.
+
+
+124
+00:13:20.710 --> 00:13:29.819
+Matias Z: El por eso, un poco la idea de que las habilidades de saber.
+
+
+125
+00:13:31.640 --> 00:13:35.110
+Matias Z: la teoría y las buenas y las buenas prácticas de las evaluaciones.
+
+
+126
+00:13:35.520 --> 00:13:38.129
+Matias Z: que no es una disciplina trivial.
+
+
+127
+00:13:38.860 --> 00:13:41.059
+Matias Z: Se imaginarán menos agentes.
+
+
+128
+00:13:41.250 --> 00:13:44.150
+Matias Z: Hoy se se se las conoce como
+
+
+129
+00:13:44.750 --> 00:13:58.689
+Matias Z: como la las skills más como deseadas en el mercado laboral? No, no tanto. Ok, armo mi work flow con A. Dk: Sabemos que eso lo code es algo sencillo.
+
+
+130
+00:14:00.310 --> 00:14:08.090
+Matias Z: Ahora bien, como el instrumento, y a partir de ese feedback, ¿qué decisiones tomo para la próxima integración?
+
+
+131
+00:14:14.579 --> 00:14:18.739
+Matias Z: Okay. Y hablando del Glow Code. Lo que hice fue
+
+
+132
+00:14:20.440 --> 00:14:26.020
+Matias Z: que se los voy a copiar es intentar
+
+
+133
+00:14:26.290 --> 00:14:34.220
+Matias Z: obtener de ese informe los problemas de evaluaciones más importantes de cada 1 de estos sistemas genéticos en producción.
+
+
+134
+00:14:35.050 --> 00:14:35.990
+Matias Z: sí
+
+
+135
+00:14:37.280 --> 00:14:47.539
+Matias Z: simplemente como para entender que la problemática es, se esperaba, era 1 de los de los vaticinios que se habían hecho para el 20, 26
+
+
+136
+00:14:47.810 --> 00:14:52.100
+Matias Z: Totalmente, la falda de este tipo de de de buenas prácticas.
+
+
+137
+00:14:52.390 --> 00:15:03.419
+Matias Z: Pero bueno, efectivamente se está demostrando que el la velocidad de despliegue es mucho mayor que la velocidad de desarrollo, tanto de seguridad como de de evaluaciones y y monitoreo de tiempo real.
+
+
+138
+00:15:04.240 --> 00:15:09.160
+Matias Z: Entonces hice como un pequeño reporte con los problemas de de de evaluaciones.
+
+
+139
+00:15:09.270 --> 00:15:16.680
+Matias Z: los me metodológicos de evaluaciones en en estos sistemas agénicos, casos reales, empresas grandes.
+
+
+140
+00:15:17.920 --> 00:15:22.009
+Matias Z: Okay, Ojalá los haya motivado un poquito con eso.
+
+
+141
+00:15:24.550 --> 00:15:30.850
+Matias Z: Ahora la pregunta Sé que muchos tienen proyectos.
+
+
+142
+00:15:31.030 --> 00:15:35.370
+Matias Z: proyectos interesantes, sofisticados y tan avanzados.
+
+
+143
+00:15:36.210 --> 00:15:43.559
+Matias Z: ¿quién tiene una aproximación interactiva basada en evaluaciones
+
+
+144
+00:15:43.810 --> 00:15:48.220
+Matias Z: puede ser de cualquier tipo con cualquier técnica. Pero ¿quién empezó a pensar eso? Como
+
+
+145
+00:15:48.480 --> 00:15:54.330
+Matias Z: a la par de la lógica de la gente que está creando si tienen ganas de contar.
+
+
+146
+00:15:54.780 --> 00:16:08.010
+Sebastian Langer: Estamos en eso, chicos, o sea, en realidad, una de las motivos por los cuales estamos como detenidos en términos de industrializar agentes y hacer un montón de cosas es porque.
+
+
+147
+00:16:08.060 --> 00:16:18.320
+Sebastian Langer: por lo menos en en y le debe pasar a todos los que están con temas de banco. No es que puedes hacer lo que se te cante está. Hay muchos equipos que miden un montón de cosas, y es un
+
+
+148
+00:16:18.320 --> 00:16:29.680
+Sebastian Langer: y y y todo tiene su lugar. O sea, obviamente trabajamos con 6 C. D. Trabajamos con contenedores. Trabajamos con governetes, trabajamos con Opensea. Trabajamos con 300 000 000 de herramientas.
+
+
+149
+00:16:29.750 --> 00:16:46.639
+Sebastian Langer: pero los agentes por nosotros tenemos varias cosas hechas con i a generativa. Tenemos Racks, pero sobre todo, tenemos asistentes. Tenemos algún que otro agente, pero una cosita muy chiquita y y justamente lo que estamos explorando, y me parece bastante valioso. Y en eso Matis, la verdad que
+
+
+150
+00:16:46.640 --> 00:16:55.209
+Sebastian Langer: el recorrido que estamos haciendo me abre bastante la cabeza es justamente esto que vos estás mostrando, creo que
+
+
+151
+00:16:55.210 --> 00:17:10.679
+Sebastian Langer: o o no sé si alguno de mis compañeros acá tiene implementado toda la medición agente, etc. En nuestro caso nos parece un tema enorme que tenemos que que hacer una bajada de todo esto y y que lo entiendan un montón de grupos
+
+
+152
+00:17:10.960 --> 00:17:17.160
+Sebastian Langer: y que lo vea después. Geoffis en nuestro caso, China. Así que que no es poco ¿ Que no es poco.
+
+
+153
+00:17:17.160 --> 00:17:17.550
+Matias Z: Bien.
+
+
+154
+00:17:17.700 --> 00:17:20.189
+Sebastian Langer: Vas a tener mucho que decir.
+
+
+155
+00:17:20.190 --> 00:17:24.120
+Matias Z: Sí, está perfecto. Te agradezco alguien más.
+
+
+156
+00:17:25.990 --> 00:17:29.500
+Alejandro Declerk: Yo tengo un sistema implementado que ahora está haciendo producción.
+
+
+157
+00:17:29.710 --> 00:17:36.120
+Alejandro Declerk: que tiene varias partes. Una parte es más como un clasificador, pero que después tiene un human reformer, no como que
+
+
+158
+00:17:36.500 --> 00:17:38.959
+Alejandro Declerk: alguien te dice si está bien o mal clasificado.
+
+
+159
+00:17:39.210 --> 00:17:44.770
+Alejandro Declerk: Y bueno, aquí tenemos varios de vals, sobre todo por esa parte. Y para la parte de imágenes donde también describe la imagen.
+
+
+160
+00:17:44.950 --> 00:17:53.010
+Alejandro Declerk: Entonces ahí en el tema es que tenemos todos los jueces. Son siempre humanos. Todavía no tenemos.
+
+
+161
+00:17:53.060 --> 00:17:55.250
+Matias Z: Sirve, sí le sirve.
+
+
+162
+00:17:55.250 --> 00:17:56.080
+Alejandro Declerk: Eso que el.
+
+
+163
+00:17:56.080 --> 00:17:59.460
+Matias Z: Queda queda anotado y de alguna manera
+
+
+164
+00:17:59.610 --> 00:18:01.460
+Matias Z: les da los indicios para la persona.
+
+
+165
+00:18:01.460 --> 00:18:13.079
+Sebastian Langer: Una aclaración. En nuestro caso, todo lo que podría hacer un agente está embebido en el código y no es un agente, pero hacemos 300 000 000 de cosas con Ia generativa. Lo que no lo hicimos fue profesionalizarlo en la gente.
+
+
+166
+00:18:13.530 --> 00:18:26.090
+Matias Z: Bien, yo separaría Ia generativa en este caso de de agentes, porque por las implicancias que tiene justamente los múltiples pasos. El acceso a a herramientas emm
+
+
+167
+00:18:26.360 --> 00:18:28.679
+Matias Z: Las artículos multiagentes
+
+
+168
+00:18:29.110 --> 00:18:37.690
+Matias Z: van a ver que, como la la evaluación de agentes es un pasito más de de lo que hacíamos antes con los benchmarks tradicionales contra los los L L
+
+
+169
+00:18:37.960 --> 00:18:38.870
+Matias Z: es un.
+
+
+170
+00:18:39.690 --> 00:18:40.150
+Alejandro Declerk: Lo que me.
+
+
+171
+00:18:40.150 --> 00:18:40.750
+Matias Z: Alguien, más.
+
+
+172
+00:18:40.750 --> 00:18:52.810
+Alejandro Declerk: Perdón. Lo pregunto muy útil. Un no último comentario es, ¿sabes cuándo son? Para, en nuestro caso, cuando cambiamos de modelo por nosotros. Corremos modelos locales, viste Generalmente no. Po no podemos mandar información. Es salir y sacar la información de la red.
+
+
+173
+00:18:52.960 --> 00:19:04.909
+Alejandro Declerk: Y cuando corremos cuando cambiamos el pront, o cuando cambiamos modelos, ahí está. Bueno, porque ahí ahí sí es medio automatizado un poco más. O sea, hay una gente que generalmente es como el juez, y ahí sirve bastante porque se pasa, pasan cosas rarísimas.
+
+
+174
+00:19:05.980 --> 00:19:06.450
+Alejandro Declerk: Entonces.
+
+
+175
+00:19:06.450 --> 00:19:10.909
+Matias Z: Siempre que hay un Lm: Esa thatch pasan cosas rarísimas.
+
+
+176
+00:19:10.910 --> 00:19:16.579
+Alejandro Declerk: Interacciones. Pero si hacés 1 000, ya empiezan a pasar cosas que decís. Por como llegué a esto.
+
+
+177
+00:19:17.480 --> 00:19:26.860
+Matias Z: Bien, hay pros y comness de usar código versos humanos versus modelos como jueces. Los vamos a ver.
+
+
+178
+00:19:27.910 --> 00:19:37.090
+Matias Z: pero los 3 hacen falta este, fundamentalmente para escalar, no tema de usar modelos como juez que hay más.
+
+
+179
+00:19:38.610 --> 00:19:40.170
+Gustavo Narcisi: Así que comen tomate y.
+
+
+180
+00:19:40.170 --> 00:19:41.370
+Matias Z: Sí, Sí. Dale, Me encanta.
+
+
+181
+00:19:41.370 --> 00:19:45.360
+Gustavo Narcisi: Caso lo hice medio como a ciegas, porque no conocía nada de esto.
+
+
+182
+00:19:45.740 --> 00:19:52.159
+Gustavo Narcisi: Y como les comentaba el conserg, este de inteligencia que básicamente responde, por ejemplo, que
+
+
+183
+00:19:52.550 --> 00:19:58.380
+Gustavo Narcisi: quiénes son los oradores de este evento? ¿o se charla sobre arañitas en el ojo
+
+
+184
+00:19:58.610 --> 00:20:02.249
+Gustavo Narcisi: viste, entonces tenía que entender si funcionaba o no.
+
+
+185
+00:20:02.530 --> 00:20:12.359
+Gustavo Narcisi: Y ahí, bueno, la idea me fue ayudando diciendo, bueno, hacete esto se va. Ponete una aguja a ver si la encuentra, cosa que yo no tenía ni idea que eran. Pero bueno, íbamos avanzando.
+
+
+186
+00:20:12.820 --> 00:20:30.589
+Gustavo Narcisi: Y a raíz de eso, armé como una tabla de logs de todas las consultas. ¿qué herramientas llamó, cuáles fueron los resultados, Y eso me fue sirviendo No ahí, quedó viste como que no tiene una cosa profesionalizada, y después tampoco hice nada con eso. Esto se.
+
+
+187
+00:20:30.590 --> 00:20:31.840
+Matias Z: Bueno, bien, me entiendes.
+
+
+188
+00:20:31.840 --> 00:20:38.150
+Gustavo Narcisi: Yo lo estaba mirando, Lo arreglaba, pero después no le pude dar una segunda vuelta de mejora ni nada de eso.
+
+
+189
+00:20:38.150 --> 00:20:46.030
+Matias Z: Hoy vamos a ver cómo cómo, por ahí, usar herramientas o justamente a Dk o los Frameworks más usados
+
+
+190
+00:20:46.350 --> 00:21:01.450
+Matias Z: para profesionalizarlo de alguna manera, versionarlo. El El conjunto de casos de evaluaciones tiene que estar vivo, siempre nos puede quedar como como conjunto estático cuando es un conjunto creado específicamente a partir de un modelo.
+
+
+191
+00:21:02.470 --> 00:21:09.310
+Matias Z: puede haber problemas de de sesgos en los vamos a mencionar hoy, en
+
+
+192
+00:21:11.230 --> 00:21:15.530
+Matias Z: pero bien que arrancaste, digamos, y y después el el siguiente paso.
+
+
+193
+00:21:16.120 --> 00:21:22.890
+Matias Z: ¿qué hacer con eso? No es como fundamental no solamente tener las métricas, sino justamente que sirvan para
+
+
+194
+00:21:23.200 --> 00:21:27.340
+Matias Z: para para, por ejemplo, los temas que estamos viendo
+
+
+195
+00:21:27.730 --> 00:21:33.839
+Matias Z: actualmente en pantalla Sí, no solamente hay métricas técnicas, no solamente
+
+
+196
+00:21:34.270 --> 00:21:41.450
+Matias Z: tenemos métricas de satisfacción del usuario que son fundamentales. No interfaceamos con un usuario.
+
+
+197
+00:21:41.560 --> 00:21:48.170
+Matias Z: no solamente de métricas de infraestructura latencia que
+
+
+198
+00:21:48.330 --> 00:21:52.459
+Matias Z: tiempo al primer toque costos económicos.
+
+
+199
+00:21:58.060 --> 00:22:02.079
+Matias Z: Todo esto un poco. Algunas son heredadas de
+
+
+200
+00:22:03.300 --> 00:22:06.320
+Matias Z: el mundo del software tradicional, pero muchas otras no.
+
+
+201
+00:22:06.920 --> 00:22:15.409
+Matias Z: Todas las que son que implican algún tipo de análisis semántico. Evidentemente son nuevas.
+
+
+202
+00:22:15.730 --> 00:22:16.710
+Matias Z: Entonces hay
+
+
+203
+00:22:17.900 --> 00:22:31.860
+Matias Z: vamos a ver que tenemos como si quieren, 2 capas o 2 familias de frayworks. Algunos probablemente conocen los que están más orientados a infraestructura y otros que son específicamente de agentes de retriver
+
+
+204
+00:22:32.200 --> 00:22:38.219
+Matias Z: en del tono con el cual se responde sí
+
+
+205
+00:22:40.090 --> 00:22:44.699
+Matias Z: de la trayectoria que siguió esa gente, O sea, ya vamos a ver un poquito más detalles
+
+
+206
+00:22:44.890 --> 00:22:48.949
+Matias Z: y también tiene como su producto interesante que es
+
+
+207
+00:22:49.070 --> 00:22:53.119
+Matias Z: fácilmente traducible a una presentación para el espejos de negocios.
+
+
+208
+00:22:54.020 --> 00:22:58.470
+Matias Z: Bueno, esas evaluaciones no solamente nos permiten aprender.
+
+
+209
+00:22:59.170 --> 00:23:04.650
+Matias Z: sino que también nos permiten mostrar la evolución. Y fundamentalmente.
+
+
+210
+00:23:04.760 --> 00:23:08.769
+Matias Z: es la única evidencia que tenemos de que de que la gente está funcionando bien
+
+
+211
+00:23:09.000 --> 00:23:10.990
+Matias Z: más allá de nuestra interpretación personal.
+
+
+212
+00:23:11.450 --> 00:23:17.990
+Matias Z: Okay, entonces algún caso más alguien que use algún framework.
+
+
+213
+00:23:22.830 --> 00:23:31.480
+Valentina Da Silva: Ahí. Yo usé Dee Pevall para hacer pruebas con con lo que me devolvía el el el em y el rap y ese tipo de cosas, ese frame. No sé.
+
+
+214
+00:23:34.140 --> 00:23:36.970
+Matias Z: Genial. Genial.
+
+
+215
+00:23:38.650 --> 00:23:40.629
+Matias Z: ¿cómo te fue con eso.
+
+
+216
+00:23:40.630 --> 00:23:54.119
+Valentina Da Silva: Tiene pila de de métrica ya implementadas tipo. Por ejemplo, si para rap, si lo que te devuelve el Rag hace sentido a lo la pregunta del usuario como que y también te permitía
+
+
+217
+00:23:54.280 --> 00:24:10.340
+Valentina Da Silva: generar métricas cután. Pero yo tenía varias implementadas tipo a nivel semántico para evaluar la la calidad. Por ejemplo, la respuesta del rap, el elen, que no tenga alucinaciones, lo que lo que está, lo que se está devolviendo, el rap, también, que calidad tiene, etcétera.
+
+
+218
+00:24:11.490 --> 00:24:13.110
+Matias Z: Genial.
+
+
+219
+00:24:13.490 --> 00:24:18.129
+Matias Z: Consultas rápidas, armaste los casos a mano, usaste algún
+
+
+220
+00:24:18.900 --> 00:24:23.860
+Matias Z: conjunto de casos, ¿Algún datación de valls prefabricado.
+
+
+221
+00:24:24.390 --> 00:24:30.599
+Valentina Da Silva: Sí, o sea, me han un un par de casos yo. Y Y ahí fui viendo cómo.
+
+
+222
+00:24:30.920 --> 00:24:39.380
+Valentina Da Silva: como caso gorde como haría. Hay un I, T, E, S T, Pero para el para lo que me volvía el el Rac y ahí lo lo vas armando con con este Framer y Pegabal
+
+
+223
+00:24:40.450 --> 00:24:42.160
+Valentina Da Silva: que te permite armar estos test.
+
+
+224
+00:24:42.780 --> 00:24:50.319
+Matias Z: Claro, y después con con esos. Supongo que tienes algunos Scoures, y con eso tomamos alguna decisión.
+
+
+225
+00:24:50.800 --> 00:25:00.399
+Valentina Da Silva: Sí, sí. O sea, eso te te genera. Y además, lo bueno que tiene es que, como usa también el lema. Sash, como que también te dice. Bueno, porque falló el test
+
+
+226
+00:25:00.490 --> 00:25:13.319
+Valentina Da Silva: Enton porque porque, como que el elen que tiene el el framer por detrás que vos el oceteas Igual te dice, te expli, te explica por qué falló. Y esa buena porque te ayuda a entender qué está pasando con los datos?
+
+
+227
+00:25:13.970 --> 00:25:16.899
+Valentina Da Silva: Te genera como los escorias y, además, como un reporte, también.
+
+
+228
+00:25:18.500 --> 00:25:22.160
+Matias Z: Buenísimo en genial.
+
+
+229
+00:25:22.610 --> 00:25:27.289
+Matias Z: Me imaginé que ibas a usar Landful porque entiendo que Usas Land Graf.
+
+
+230
+00:25:28.690 --> 00:25:32.690
+Matias Z: Pero lo voy a mirar dipte Mal Okay.
+
+
+231
+00:25:33.230 --> 00:25:40.950
+Matias Z: En Adicae K. Dos tenemos bastante funcionalidad para poder emitir este
+
+
+232
+00:25:41.300 --> 00:25:51.350
+Matias Z: todo ese tipo de de información, sin ni siquiera tener que escribir explícitamente la instrumentación en el código. Eso es una buena ventaja. Usa open telemetry. Así que podemos usar
+
+
+233
+00:25:51.570 --> 00:25:56.620
+Matias Z: en ese sentido de diagnóstico al vender de la nube.
+
+
+234
+00:25:57.860 --> 00:26:09.060
+Matias Z: Y después tenemos diferentes Stacks. No podemos usar Tempo Locky, la farna landfulnes. Este Gracias. Perfecto.
+
+
+235
+00:26:09.420 --> 00:26:14.370
+Matias Z: Mhm viene bien, porque la verdad que no, no lo incluí entre las opciones.
+
+
+236
+00:26:15.090 --> 00:26:21.019
+Matias Z: En bueno, si alguien más después quiere compartir buenísimo
+
+
+237
+00:26:27.250 --> 00:26:34.370
+Matias Z: estas Slide son solamente una introducción, pero por lo que veo, más o menos, están en tema en a.
+
+
+238
+00:26:35.940 --> 00:26:46.480
+Matias Z: Pensemos que no son mi Unitest exclusivamente ni test de integración tienen como
+
+
+239
+00:26:49.060 --> 00:26:52.650
+Matias Z: si quieren. Podemos usar analogías distintas.
+
+
+240
+00:26:53.290 --> 00:27:00.840
+Matias Z: pero por ahí, para los que no vienen de software, no no sería, no sería apropiado, pensémoslo como una disciplina
+
+
+241
+00:27:01.500 --> 00:27:07.510
+Matias Z: super rigurosa. Tenemos que intentar ser rigurosas con la metodología.
+
+
+242
+00:27:07.660 --> 00:27:16.039
+Matias Z: para qué para entender qué números nos está dando y qué ¿Cuánto peso tiene ese número? ¿qué significan los números que estamos obteniendo?
+
+
+243
+00:27:16.480 --> 00:27:17.870
+Matias Z: Pones un poco.
+
+
+244
+00:27:20.520 --> 00:27:26.920
+Matias Z: Las edades empezaban con esta polémica que vemos en muchos clientes en
+
+
+245
+00:27:27.120 --> 00:27:35.550
+Matias Z: en casi todos, les diría: es nuestro agente. Tiene una gira así del 88 coma 6 por 100. No sé si a alguno le pasó
+
+
+246
+00:27:37.960 --> 00:27:39.690
+Matias Z: Okay.
+
+
+247
+00:27:41.130 --> 00:27:43.369
+Matias Z: Qué significa eso? Básicamente.
+
+
+248
+00:27:43.850 --> 00:27:52.280
+Matias Z: no no estaría dando ninguna información relevante. El el la carga de información, La información de este número de este porcentaje
+
+
+249
+00:27:52.780 --> 00:27:56.630
+Matias Z: sin más contexto que esto no estaría siendo
+
+
+250
+00:27:58.320 --> 00:28:04.709
+Matias Z: útil. Al contrario, puede ser contraproducente si puede generar un tipo de sesgo de confirmación que
+
+
+251
+00:28:04.840 --> 00:28:11.720
+Matias Z: no es poco común entre grupos de expertos, no Ok.
+
+
+252
+00:28:18.590 --> 00:28:26.149
+Matias Z: rápido. Con esto. Por si quedó alguna duda, tenemos 2 momentos en los que podemos hacer evaluaciones o mediciones.
+
+
+253
+00:28:27.060 --> 00:28:38.409
+Matias Z: Las evaluaciones offline son las que hacemos antes del despliegue, que son un poco las que vamos a ver hoy. Las online son todos los monitoreos que hacemos una vez que la gente está expuesto a tráfico real.
+
+
+254
+00:28:38.790 --> 00:28:45.130
+Matias Z: y ahí cambia mucho la cosa. Así que por eso se divide en 2 módulos distintos.
+
+
+255
+00:28:45.250 --> 00:28:52.479
+Matias Z: pero ambas se complementan y ambas son absolutamente necesarias porque encaran problemas distintos.
+
+
+256
+00:28:55.900 --> 00:29:07.739
+Matias Z: Bien, estas se las voy a dejar porque son muy, muy introductorias en básicamente están como orientadas a
+
+
+257
+00:29:07.870 --> 00:29:11.439
+Matias Z: a aquella persona que nunca había escuchado hablar de perdón. Alen.
+
+
+258
+00:29:12.120 --> 00:29:18.100
+Matias Z: Nunca escucho hablar de evaluaciones, tendría que ir a recado por ahí.
+
+
+259
+00:29:22.420 --> 00:29:25.680
+Gustavo Narcisi: Yo lo co Como que te dije, no lo aprendí solo porque no
+
+
+260
+00:29:26.080 --> 00:29:28.609
+Gustavo Narcisi: no sé lo que era. Y por ahí el concepto que tengo.
+
+
+261
+00:29:28.850 --> 00:29:32.930
+Gustavo Narcisi: lo que pude como acuñar, pero no entiendo un poco de qué va.
+
+
+262
+00:29:33.870 --> 00:29:36.140
+Gustavo Narcisi: pero antes no lo no lo había hecho nunca. Yo.
+
+
+263
+00:29:37.880 --> 00:29:42.139
+Matias Z: Bien. Bueno, si hay una idea que nos podemos dar del encuentro de este.
+
+
+264
+00:29:42.750 --> 00:29:44.899
+Matias Z: es tan importante como la gente en sí.
+
+
+265
+00:29:45.690 --> 00:29:53.410
+Matias Z: Si Si si esas evaluaciones y la gente no, no, no no tiene, no solamente
+
+
+266
+00:29:54.450 --> 00:30:00.629
+Matias Z: corremos riesgos de que funcione mal, sino que corremos riesgos reales de, por ejemplo.
+
+
+267
+00:30:00.870 --> 00:30:06.150
+Matias Z: exponer superficies de de de ataques, que es 1 de los problemas más grandes
+
+
+268
+00:30:06.300 --> 00:30:13.769
+Matias Z: con la falta de evaluaciones y monitoreo es es 1 de los temas más importantes para que estamos viendo
+
+
+269
+00:30:15.220 --> 00:30:22.009
+Matias Z: y, una vez más, dependiendo de la de la industria del dominio. Nos exponemos a daño reputacional, importante daño económico, importante
+
+
+270
+00:30:22.560 --> 00:30:24.550
+Matias Z: o directamente que por un problema
+
+
+271
+00:30:24.700 --> 00:30:27.330
+Matias Z: este se se caiga el proyecto porque
+
+
+272
+00:30:27.430 --> 00:30:36.000
+Matias Z: básicamente no tuvimos la precaución de evaluar el comportamiento de nuestro gente para ser un poquito más
+
+
+273
+00:30:36.270 --> 00:30:43.199
+Matias Z: ordenado, pero siguiendo como esta forma intuitiva de presentarlo.
+
+
+274
+00:30:43.470 --> 00:30:48.119
+Matias Z: Lo que hacemos es definir una tarea que queremos básicamente
+
+
+275
+00:30:48.280 --> 00:30:52.040
+Matias Z: entender, medir, ver cómo la gente se comporta.
+
+
+276
+00:30:52.680 --> 00:30:57.070
+Matias Z: recolectar datos y construir un clasificador o una escora. Sí,
+
+
+277
+00:30:58.480 --> 00:31:01.549
+Matias Z: vamos a ver después en detalle cómo se hace cada 1 de estos pasos.
+
+
+278
+00:31:14.540 --> 00:31:18.919
+Matias Z: Y así, al final. Hoy, lo que vamos a hacer es ver un primer grupo de métricas.
+
+
+279
+00:31:19.419 --> 00:31:28.810
+Matias Z: Y así, al final, vamos a empezar a entender que hay de nuevo familias de evaluaciones son fundamentales, tenerlas implementadas y desplegadas.
+
+
+280
+00:31:29.000 --> 00:31:40.369
+Matias Z: Una de las cosas a mencionar que después les voy a mostrar es que, por ejemplo, por supuesto, en todos los vendoscloud existen funcionalidades para esto, lo cual simplifica mucho las cosas.
+
+
+281
+00:31:40.899 --> 00:31:41.990
+Matias Z: en
+
+
+282
+00:31:45.020 --> 00:32:00.389
+Matias Z: pero la cantidad de evaluaciones que hoy tenemos para asegurarnos de diferentes cuestiones es enorme, con lo cual hacerlo artesanalmente. Es un poco difícil, a veces sí, Aunque a veces empecemos así, normalmente conviene usar algún tipo
+
+
+283
+00:32:00.510 --> 00:32:07.730
+Matias Z: de de frame, entonces esta se la voy a dejar con un texto para los que estén empezando.
+
+
+284
+00:32:14.070 --> 00:32:26.039
+Matias Z: Estas slides vienen con 3. Demos sí, Los 3 demos muestran en funcionamiento diferentes formas de medir el comportamiento de nuestros agentes
+
+
+285
+00:32:37.090 --> 00:32:39.210
+Matias Z: de este 92 por 100.
+
+
+286
+00:32:39.430 --> 00:32:47.580
+Matias Z: ¿quién se anima a hacer una primera crítica rápida, o sea, si alguien.
+
+
+287
+00:32:47.830 --> 00:32:52.230
+Matias Z: por ejemplo, reporta una cifra así suelta de aquí, de Narci.
+
+
+288
+00:32:57.340 --> 00:33:00.180
+Matias Z: Les comparto e E estoy ayudando
+
+
+289
+00:33:00.410 --> 00:33:03.570
+Matias Z: a a un cliente y me compartieron una cifra exactamente así.
+
+
+290
+00:33:03.700 --> 00:33:08.359
+Matias Z: ¿en qué tendría que preguntar yo ¿Qué les parece que tiene.
+
+
+291
+00:33:08.360 --> 00:33:16.429
+Sebastian Langer: ¿no? Bueno, pero asume un montón de cosas que que que no son obvias. Es como decís, vos Te son las preguntas de abajo.
+
+
+292
+00:33:17.030 --> 00:33:19.619
+Matias Z: Exactamente hasta la punta de abajo.
+
+
+293
+00:33:19.620 --> 00:33:35.310
+Sebastian Langer: O sea, no es 92 por 100 de de de de de aquí dura. Si 92 por 100 de de de ventas 92 por 100 de qué 92 por 100 de respuestas 92 por 100 de satisfacción.
+
+
+294
+00:33:36.000 --> 00:33:39.420
+Sebastian Langer: 92 por 100 de veces que no se rompió.
+
+
+295
+00:33:39.560 --> 00:33:40.650
+Sebastian Langer: No se entiende.
+
+
+296
+00:33:44.180 --> 00:33:51.619
+Matias Z: No se entiende, ¿no? Y además, dependiendo de, por ejemplo, la cantidad de veces que se corrieron ahí, Metemos un.
+
+
+297
+00:33:51.900 --> 00:34:03.520
+Sebastian Langer: Claro. Vos, agregas otras cosas, 92 por 100 con respecto a que, aparte de de qué estamos hablando, el éxito. Pero con respecto a que, con respecto a a 100 veces que sucedieron o a una o a.
+
+
+298
+00:34:05.580 --> 00:34:13.389
+Matias Z: Y eso es fundamental porque, digamos si no, la estimación termina siendo una estimación puntual que, en principio sabemos que que no es.
+
+
+299
+00:34:13.390 --> 00:34:14.380
+Sebastian Langer: Ese éxito.
+
+
+300
+00:34:14.600 --> 00:34:17.970
+Matias Z: No tiene robustez en términos de de de
+
+
+301
+00:34:18.740 --> 00:34:23.920
+Matias Z: de peso estadístico, digamos si tenemos una muestra menor a 30,
+
+
+302
+00:34:24.220 --> 00:34:30.680
+Matias Z: en realidad mucho sentido. No tendría mostrar una situación puntual. Y ahí entran en juego otro tipo de
+
+
+303
+00:34:31.590 --> 00:34:33.649
+Matias Z: de indicadores estadísticos. Vamos a ver.
+
+
+304
+00:34:33.650 --> 00:34:34.060
+Alejandro Declerk: Dos.
+
+
+305
+00:34:34.060 --> 00:34:40.309
+Matias Z: De esos y cómo corrigen algunos problemas. Por ejemplo, el escore F 1
+
+
+306
+00:34:41.360 --> 00:34:47.230
+Matias Z: o los interrogantes de confianza tradicionales no no está en detalle, pero
+
+
+307
+00:34:47.740 --> 00:34:54.350
+Matias Z: sí es como vamos a ver que es parte de de nuestra responsabilidad entender la lógica de lo que pasará
+
+
+308
+00:34:54.500 --> 00:34:56.140
+Matias Z: bien.
+
+
+309
+00:34:56.140 --> 00:34:59.970
+Alejandro Declerk: Perdón. La pregunta que a mí se me hace del toque cuando ves esto es.
+
+
+310
+00:35:00.160 --> 00:35:11.799
+Alejandro Declerk: tengo el 91 por 100 de éxito. Pero quiere decir, yo entiendo no que si cualquier proceso 100 veces 92 veces hizo lo que yo esperaba, pero estuvo bien correr los 100 veces. No tendré que hablarlo de 150,
+
+
+311
+00:35:12.640 --> 00:35:18.000
+Alejandro Declerk: no casi la típica, no entre a cuuras y precisión todas esas cosas que empiezan a faltar medio de.
+
+
+312
+00:35:18.000 --> 00:35:26.430
+Matias Z: Sí. Bueno, siempre también hay un costo. Las evaluaciones pueden ser muy caras, ¿
+
+
+313
+00:35:27.340 --> 00:35:35.089
+Matias Z: Algunas pueden tardar mucho. Entonces sí depende depende del tamaño muestral. Ahí es es 1 de los factores a tener en cuenta.
+
+
+314
+00:35:35.320 --> 00:35:39.710
+Matias Z: En lo vamos a ver en un cachito más adelante.
+
+
+315
+00:35:39.920 --> 00:35:45.840
+Matias Z: pero en principio, entonces lo interesante es entender que esto no nos dice absolutamente nada. ¿por qué? Porque primero no nos dice.
+
+
+316
+00:35:46.820 --> 00:35:55.069
+Matias Z: asumamos, que es éxito de tarea, que es una de las métricas en duende. Bueno, Ok, ponerle que la gente hizo lo que tenía que hacer
+
+
+317
+00:35:55.320 --> 00:35:56.840
+Matias Z: en el medio.
+
+
+318
+00:35:57.090 --> 00:35:58.700
+Matias Z: ¿a qué tú llamó?
+
+
+319
+00:35:59.740 --> 00:36:03.760
+Matias Z: Cuántas veces, con qué parámetros no, cuáles son los efectos secundarios.
+
+
+320
+00:36:04.040 --> 00:36:07.440
+Matias Z: entonces ahí tenemos que incluir una nueva forma de ver las
+
+
+321
+00:36:07.770 --> 00:36:13.230
+Matias Z: evaluaciones que no son solamente el resultado final, sino las evaluaciones de trayectoria.
+
+
+322
+00:36:13.770 --> 00:36:16.789
+Matias Z: Esta es la gran diferencia con los los L. L Emes, ¿verdad?
+
+
+323
+00:36:17.470 --> 00:36:18.590
+Matias Z: Okay.
+
+
+324
+00:36:22.620 --> 00:36:33.139
+Matias Z: Bueno, vamos a hablar un poco de esto. La idea es este: ver como los 3 grandes tipos de de Scorers, este que son justamente
+
+
+325
+00:36:33.590 --> 00:36:41.729
+Matias Z: o mediante código o mediante modelos o inclusión de humanos. Vamos a ver ragas que es un Framework como medio estándar.
+
+
+326
+00:36:41.910 --> 00:36:49.539
+Matias Z: creció bastante para el mundo augéntico y tiene un montón de métricas vinculadas a la calidad de la recuperación. Creo que es
+
+
+327
+00:36:49.700 --> 00:36:53.610
+Matias Z: o lo que comentaban recién en
+
+
+328
+00:36:56.280 --> 00:37:02.290
+Matias Z: ahí va. Bien, Sí, exacto. En general, estas cosas se suelen como como componer, no como
+
+
+329
+00:37:03.210 --> 00:37:13.880
+Matias Z: se apoyan unas, entre otras, para no no duplicar trabajo exactamente en bueno, entonces podemos avanzar
+
+
+330
+00:37:14.770 --> 00:37:25.560
+Matias Z: fundamentalmente. Les quiero contar sí, fundamentalmente les quiero contar también que ha dedicado Se 2 12. Tiene un montón de de infra. De nuevo.
+
+
+331
+00:37:25.690 --> 00:37:34.800
+Matias Z: imagino que nosotros podemos también, o sea, que instrumentar, nuestro agente no es tan complejo. De hecho, ha dejado.
+
+
+332
+00:37:34.950 --> 00:37:43.340
+Matias Z: te da la la opción de que a partir de la definición, mirando el código de tu agente, te puede crear los los casos, los igual que dices para tu
+
+
+333
+00:37:43.480 --> 00:37:46.480
+Matias Z: una casete de manera automática. Así que
+
+
+334
+00:37:46.940 --> 00:37:52.600
+Matias Z: digamos, se facilita mucho el trabajo, siempre empezar
+
+
+335
+00:37:52.900 --> 00:37:59.080
+Matias Z: con poco, en algunos casos propios, pero arrancar fundamentalmente como una buena práctica
+
+
+336
+00:38:01.680 --> 00:38:04.369
+Matias Z: Okay un poco. Esto fue, lo fuimos diciendo.
+
+
+337
+00:38:04.550 --> 00:38:05.999
+Matias Z: Pero tampoco la idea es
+
+
+338
+00:38:06.810 --> 00:38:14.099
+Matias Z: como arquitectos. Al terminar este encuentro es tratar de refinar un poco la terminología que usamos. Cuando
+
+
+339
+00:38:14.550 --> 00:38:25.220
+Matias Z: hablamos de clasificación de métricas, brevemente, ¿qué ¿Qué implica la matemática detrás? No entrar en eso, pero brevemente mencionado.
+
+
+340
+00:38:25.860 --> 00:38:29.929
+Matias Z: vamos a poner algo que me parece trivial, que es definir la métrica sin ambigüedad. Esto.
+
+
+341
+00:38:30.670 --> 00:38:32.430
+Matias Z: al igual que un Capei. Yo
+
+
+342
+00:38:33.200 --> 00:38:38.610
+Matias Z: se ¿Se imaginan este la la complejidad de definir métrica sin ambigüedad
+
+
+343
+00:38:39.030 --> 00:38:47.659
+Matias Z: no es nada sencillo. El rigor hacking, por ejemplo, es 1 de los grandes problemas que se producen a partir de la especificación incorrecta de un objetivo.
+
+
+344
+00:38:48.100 --> 00:38:49.090
+Matias Z: ¿
+
+
+345
+00:38:49.870 --> 00:38:53.580
+Matias Z: De hecho, en el borja, ¿quién es lo que sucedió cuando
+
+
+346
+00:38:53.820 --> 00:38:57.170
+Matias Z: el Swarm de agentes de pelear. Atacaron High Face
+
+
+347
+00:38:57.510 --> 00:39:01.980
+Matias Z: Así no escribía la especificar objetivos. Digamos esto. Me refiero
+
+
+348
+00:39:03.970 --> 00:39:09.899
+Matias Z: separar un poco la idea de trayectoria de la idea de resultado si y ver qué falla
+
+
+349
+00:39:10.110 --> 00:39:15.759
+Matias Z: en cada caso, tenemos que combinar integrar esas 2 tipos de métricas.
+
+
+350
+00:39:15.950 --> 00:39:23.139
+Matias Z: elegir el evaluador, el escorer para de cada criterio. Vamos a ver un poco más en detalle
+
+
+351
+00:39:23.810 --> 00:39:31.310
+Matias Z: mirar por arriba que nos ofrece la de K 2 12 simplemente como como ejemplo
+
+
+352
+00:39:31.640 --> 00:39:38.289
+Matias Z: de de fremor que simplifica esto y que se comunica de nuevo con con, por ejemplo, con raras, seguramente con
+
+
+353
+00:39:39.190 --> 00:39:47.819
+Matias Z: los enfermos también. Y realmente vamos a ver qué pasa con la cantidad de corridas que hacemos, ¿Qué pasa con el N, Este del que hablamos al principio?
+
+
+354
+00:39:47.980 --> 00:39:48.720
+Matias Z: Sí,
+
+
+355
+00:39:59.280 --> 00:40:04.599
+Matias Z: me voy a quedar con la primera columna. Básicamente, el resto la pueden leer. Después
+
+
+356
+00:40:11.290 --> 00:40:16.770
+Matias Z: tenemos como responsabilidad fundamental orquestar nuestro
+
+
+357
+00:40:17.140 --> 00:40:21.170
+Matias Z: nuestra infraestructura de de evaluaciones, Sí,
+
+
+358
+00:40:23.490 --> 00:40:36.100
+Matias Z: siempre, por supuesto, interactuando con la gente de producto interactuando con ingenieros interactuando con el negocio, obviamente, pero un poco somos como los integradores, los traductores.
+
+
+359
+00:40:37.340 --> 00:40:40.790
+Matias Z: a qué es lo que queremos evaluar y ¿Por qué
+
+
+360
+00:40:41.670 --> 00:40:49.839
+Matias Z: es importante? Recuerde, hay trade 2 de, de, digamos, es una nueva complejidad agregada al código. Hay que versionarlo. Es Es como otro proyecto más.
+
+
+361
+00:40:50.170 --> 00:40:56.650
+Matias Z: Y una vez más, les digo, las cibal pueden ser supercaras en
+
+
+362
+00:40:58.080 --> 00:41:13.240
+Matias Z: bueno, lo que mencionábamos presupuesto, donde corren donde viven los datos, cómo se versionan, cómo se versionan esos artefactos. Si hay temas de de de, por ejemplo, en algunas industrias, como la banca.
+
+
+363
+00:41:13.370 --> 00:41:19.360
+Matias Z: es importante entender la regulación para saber qué datos estamos mandando y a dónde en
+
+
+364
+00:41:20.080 --> 00:41:27.650
+Matias Z: es justamente entender que tiene que saber el arquitecto para después automatizar esta evaluación
+
+
+365
+00:41:29.330 --> 00:41:33.470
+Matias Z: y, en función de eso, lograr este ciclo de mejora continua
+
+
+366
+00:41:33.610 --> 00:41:36.510
+Matias Z: que íbamos a llegar a ver hacia el final del curso.
+
+
+367
+00:41:41.310 --> 00:41:44.510
+Matias Z: Bien, nada que no sepamos. Por ahora.
+
+
+368
+00:41:46.560 --> 00:41:51.100
+Matias Z: la gente recorre caminos, Ya sabemos que tiene un un bucle.
+
+
+369
+00:41:51.480 --> 00:41:53.780
+Matias Z: Es básicamente lo que vemos hasta ahora.
+
+
+370
+00:41:54.080 --> 00:41:59.249
+Matias Z: Lo más importante es entender. Bueno, obviamente, 2 corridas pueden dar
+
+
+371
+00:41:59.480 --> 00:42:02.689
+Matias Z: números distintos, pero más importante es el multipaso.
+
+
+372
+00:42:02.800 --> 00:42:05.010
+Matias Z: ¿qué implica esto Un error temprano
+
+
+373
+00:42:06.300 --> 00:42:12.409
+Matias Z: puede arrastrarse y puede amplificarse. Normalmente, El efecto amplificación es 1 de los que queremos evitar a toda costa
+
+
+374
+00:42:12.900 --> 00:42:14.299
+Matias Z: de los más peligrosos
+
+
+375
+00:42:15.850 --> 00:42:27.100
+Matias Z: con efectos se refiere a efectos secundarios, son, digamos, aquellas acciones tomadas por el agente que son irreversibles. Por ejemplo, la gente puede haberse comportado correctamente, pero haber invocado alguna turca se
+
+
+376
+00:42:27.240 --> 00:42:31.420
+Matias Z: una transacción económica que no debía ser. Son los efectos singulares
+
+
+377
+00:42:33.380 --> 00:42:46.959
+Matias Z: y con el entorno. Pienso que normalmente podemos evaluar en el laboratorio, pero después la gente vive en un mundo cambiante con usuarios distintos. Expuesto de nuevo distintas a datos que se van modificando.
+
+
+378
+00:42:51.200 --> 00:43:01.480
+Matias Z: Entonces la gente obliga a preguntarnos qué se hizo, en qué orden y que quedó cambiado en el mundo. Vamos a entrar a jugar nuestra idea de del del mundo, el mundo como estado final, si si representamos
+
+
+379
+00:43:01.940 --> 00:43:07.530
+Matias Z: el mundo como un conjunto de variables. Bueno, un poco piensen
+
+
+380
+00:43:08.520 --> 00:43:14.269
+Matias Z: que modificó el agente al finalizar la corrida en ese en ese mundo en ese conjunto de variables
+
+
+381
+00:43:15.230 --> 00:43:16.939
+Matias Z: es el resultado final.
+
+
+382
+00:43:17.530 --> 00:43:25.140
+Matias Z: Podemos llegar a ese resultado final de manera satisfactoria y en el medio haber hecho acciones catastróficas, No.
+
+
+383
+00:43:25.460 --> 00:43:29.350
+Matias Z: de ahí es que 2 sondas distintas igual de importantes.
+
+
+384
+00:43:30.050 --> 00:43:36.660
+Matias Z: Alguien no sabe lo que es una sonda o una proo en inglés.
+
+
+385
+00:43:44.880 --> 00:43:50.650
+Matias Z: Bueno, no nada importante. Me importa. Era simplemente que
+
+
+386
+00:43:51.110 --> 00:44:03.850
+Matias Z: para escucharlos un ratito, piensen en sondas por ahora como diagnósticos que atacan problemas específicos. Este los vamos a ver mucho más en detalle en el en el módulo de seguridad, porque ahí las pros las sondas son son.
+
+
+387
+00:44:04.040 --> 00:44:12.070
+Matias Z: Mhm los mecanismos de las ideas fundamentales, con lo que se valían determinadas cuestiones.
+
+
+388
+00:44:12.550 --> 00:44:15.919
+Sebastian Langer: Yo no, Yo te digo la verdad. No, no, escuché mu nunca eso.
+
+
+389
+00:44:16.490 --> 00:44:18.690
+Sebastian Langer: Pero decís que lo vamos a ver después.
+
+
+390
+00:44:21.010 --> 00:44:27.659
+Matias Z: Sí, Sí, sí. De hecho, si quieres tengo un texto, te lo puedo pasar. Pero si no pégale una buleada es.
+
+
+391
+00:44:27.660 --> 00:44:31.149
+Sebastian Langer: Iba a preguntar si era algo del espacio.
+
+
+392
+00:44:31.990 --> 00:44:33.350
+Matias Z: Bueno.
+
+
+393
+00:44:33.350 --> 00:44:38.230
+Sebastian Langer: De desde ese de encima decía trayectorias ondas, Dije, listo, estamos hasta
+
+
+394
+00:44:38.650 --> 00:44:42.780
+Sebastian Langer: es un ejemplo. Es una hip. Es una hipérbole, dices una metáfora.
+
+
+395
+00:44:45.270 --> 00:44:48.800
+Matias Z: Este Bueno, sí es una metáfora, efectivamente.
+
+
+396
+00:44:50.520 --> 00:44:53.060
+Matias Z: pensarlo, que es un diagnóstico, un diagnóstico.
+
+
+397
+00:44:53.060 --> 00:44:55.630
+Sebastian Langer: Un diagnóstico. Una sonda. Es un diagnóstico.
+
+
+398
+00:44:56.730 --> 00:45:01.310
+Matias Z: Sí como una pensarlo como una forma de diagnóstico, una un método de diagnóstico.
+
+
+399
+00:45:01.920 --> 00:45:09.410
+Matias Z: Vamos a pensar como en 2 tipos fundamentales, 1 que lo que hace es evaluar la trayectoria, justamente
+
+
+400
+00:45:10.350 --> 00:45:16.809
+Matias Z: todas las conversaciones, las respuestas llamadas parámetros, todas las métricas sobre las Tools
+
+
+401
+00:45:17.450 --> 00:45:20.450
+Matias Z: sobre la respuesta de la gente sobre el tono de la respuesta.
+
+
+402
+00:45:22.180 --> 00:45:25.119
+Matias Z: Por un lado, por otro lado, todas las
+
+
+403
+00:45:25.280 --> 00:45:29.699
+Matias Z: métricas que se nos ocurren con respecto al resultado final. Y vamos a ver que son
+
+
+404
+00:45:32.840 --> 00:45:36.470
+Matias Z: para los interesados en profundizar.
+
+
+405
+00:45:36.960 --> 00:45:43.520
+Matias Z: Hay un paper que introduce un benchmark llamado Tao Bench. Lo ven acá abajo.
+
+
+406
+00:45:44.320 --> 00:45:50.969
+Matias Z: publicada en el 24 por you et all. De ahí se sacaron muchas ideas para la nueva familia de
+
+
+407
+00:45:51.350 --> 00:45:53.229
+Matias Z: de evaluaciones pagénticas, digamos.
+
+
+408
+00:45:59.410 --> 00:46:07.570
+Matias Z: Okay, estoy siendo un poquito rápido, pero supongo que que me siguen, estamos bien.
+
+
+409
+00:46:08.380 --> 00:46:09.480
+Matias Z: Sí, genial.
+
+
+410
+00:46:16.700 --> 00:46:22.529
+Matias Z: Entonces, comodidad principal si están escribiendo agentes
+
+
+411
+00:46:22.750 --> 00:46:26.679
+Matias Z: y no tienen sus primeras evaluaciones.
+
+
+412
+00:46:27.420 --> 00:46:28.960
+Matias Z: Es el momento de empezar.
+
+
+413
+00:46:29.690 --> 00:46:35.379
+Matias Z: Este es la forma de de de medir la forma de entender cómo seguir. Sí.
+
+
+414
+00:46:37.780 --> 00:46:40.169
+Matias Z: Ahora vamos a ver cómo construir esas evaluaciones.
+
+
+415
+00:46:41.940 --> 00:46:46.430
+Matias Z: Bueno, el ejemplo, como siempre, es muy sencillo, es este
+
+
+416
+00:46:46.590 --> 00:46:58.690
+Matias Z: un sistema que hace soporte a clientes un marketplace. La entrada es una suerte de reclamo del cliente
+
+
+417
+00:46:58.950 --> 00:47:03.539
+Matias Z: que dice que les llegó un ítem roto y quiere que le devuelvan la plata no
+
+
+418
+00:47:05.250 --> 00:47:10.769
+Matias Z: después. Vamos a ver un ejemplo específico para para banca si les interesa
+
+
+419
+00:47:11.100 --> 00:47:13.730
+Matias Z: la clase que viene particularmente sobre el angios.
+
+
+420
+00:47:15.160 --> 00:47:25.549
+Matias Z: pero para no complicarla por ahora, entonces lo que tenemos es número de pedido, ca cantidad de días que se entregó la cantidad de ítems del del de ese de esa entrega.
+
+
+421
+00:47:26.050 --> 00:47:36.109
+Matias Z: Y lo que hacemos es básicamente definir la trayectoria esperada, Es decir, ¿qué herramientas esperamos que la gente llame en función de esta fuelli
+
+
+422
+00:47:36.600 --> 00:47:37.340
+Matias Z: Sí.
+
+
+423
+00:47:39.050 --> 00:47:43.410
+Matias Z: ¿qué tipo de respuesta queremos que le dé al usuario. Esto es parte como del caso.
+
+
+424
+00:47:44.560 --> 00:47:46.200
+Matias Z: ¿y cómo queremos que termine el mundo?
+
+
+425
+00:47:46.610 --> 00:47:49.639
+Matias Z: ¿cuál sería el mundo ideal cuando la cuando la gente terminabas.
+
+
+426
+00:47:49.830 --> 00:47:54.320
+Matias Z: digamos esa tarea que parece sencilla, pero vale.
+
+
+427
+00:47:56.240 --> 00:48:06.370
+Matias Z: no lo es tanto. Entonces cada una, estas cosas se alimentan diferentes tipos de métricas que las vemos abajo. Tool recal tool precision. Aquí lo haces parámetros frames, recaul
+
+
+428
+00:48:07.230 --> 00:48:16.650
+Matias Z: la evaluación de estado final acciones irreversibles son diferentes métricas que vamos a ir introduciendo rápidamente.
+
+
+429
+00:48:18.180 --> 00:48:20.780
+Matias Z: ¿de dónde salen los casos? Bueno, primero
+
+
+430
+00:48:21.870 --> 00:48:25.799
+Matias Z: la recomendación en general es arranquen con casos manuales.
+
+
+431
+00:48:26.980 --> 00:48:28.960
+Matias Z: Generalmente hay expertos de dominio.
+
+
+432
+00:48:32.420 --> 00:48:35.780
+Matias Z: Pueden ser ingenieros, pero en general, la gente de producto ahí
+
+
+433
+00:48:36.530 --> 00:48:41.770
+Matias Z: tiene mucho que decir. O sea, hay lógica de negocio compleja. La gente es negocio.
+
+
+434
+00:48:43.220 --> 00:48:52.700
+Matias Z: o sea lo la la idea, desde la estrategia de crear casos es empezar siempre con casos manuales, porque es a partir de esa interacción que después se puede empezar como a automatizar
+
+
+435
+00:48:53.640 --> 00:49:02.710
+Matias Z: una vez que está en producción. Por supuesto, ver los logos, esos logs nos va a decir también cómo construir nuevos pasos. Eso también se puede automatizar.
+
+
+436
+00:49:05.080 --> 00:49:11.929
+Sebastian Langer: Nathy. En nuestro caso, que tenemos un montón de cosas construidas ya. Una de las cosas que se nos pensaba era.
+
+
+437
+00:49:12.080 --> 00:49:16.579
+Sebastian Langer: Tenemos, como algunos candidatos que migrar entre comillas, no porque
+
+
+438
+00:49:16.790 --> 00:49:23.240
+Sebastian Langer: está todo procedural, por decirlo así, y
+
+
+439
+00:49:23.440 --> 00:49:30.260
+Sebastian Langer: y todo el tiempo decimos, esto puede ser un agente. Esto puede ser un agente, pero digo, me parece que par también es empezar por ahí.
+
+
+440
+00:49:30.430 --> 00:49:31.360
+Sebastian Langer: Creo no
+
+
+441
+00:49:31.720 --> 00:49:37.880
+Sebastian Langer: lo que pasa que ya arranca cuando cuando vos haces eso, ya tenés el compromiso de hacer todo lo demás, por decirlo así,
+
+
+442
+00:49:40.960 --> 00:49:41.860
+Sebastian Langer: quiero decir, tener.
+
+
+443
+00:49:41.860 --> 00:49:42.420
+Matias Z: De.
+
+
+444
+00:49:42.420 --> 00:49:47.209
+Sebastian Langer: Si vas a tener un agente tenés que tener todo todo lo que lo mida, todo lo que evalue
+
+
+445
+00:49:48.170 --> 00:49:49.219
+Sebastian Langer: a eso me refiero.
+
+
+446
+00:49:49.220 --> 00:49:56.019
+Matias Z: Claro, efectivamente, si no te pasa esto del del 95 por 100 de de los de los proyectos argentinos que se caen
+
+
+447
+00:49:56.210 --> 00:49:59.909
+Matias Z: antes de pasar a la producción, justamente porque, bueno.
+
+
+448
+00:50:00.440 --> 00:50:02.490
+Matias Z: porque no, no se sigue como
+
+
+449
+00:50:03.060 --> 00:50:10.720
+Matias Z: a una metodología para construir a gente que sean robustos, seguros que se puedan mejorar en.
+
+
+450
+00:50:11.350 --> 00:50:15.020
+Sebastian Langer: Si vos tuvieras que explicarle a un interlocutor de negocios
+
+
+451
+00:50:15.210 --> 00:50:20.559
+Sebastian Langer: que me dicen, Che, pero esto antes lo hacías más rápido y tenías que controlar menos cosas.
+
+
+452
+00:50:21.230 --> 00:50:29.810
+Sebastian Langer: Y ahora estás haciendo como un montón de otras cosas. No, No puedes, No puedo acusar de hacer un overkill por hacer esto? Que ¿cuál sería mi? ¿a qué qué.
+
+
+453
+00:50:29.810 --> 00:50:30.580
+Matias Z: Exactamente.
+
+
+454
+00:50:30.580 --> 00:50:34.150
+Sebastian Langer: Qué? ¿qué argumento me me.
+
+
+455
+00:50:34.150 --> 00:50:40.400
+Gustavo Narcisi: Y cuando le sumas de los telemarketers, Ahí te dicen. Claro sí.
+
+
+456
+00:50:41.200 --> 00:50:42.440
+Sebastian Langer: Muy bien.
+
+
+457
+00:50:42.440 --> 00:50:43.080
+Gustavo Narcisi: En te.
+
+
+458
+00:50:43.080 --> 00:51:02.169
+Sebastian Langer: Que por ahí ya hacemos cosas con llene ahí, pero no las hacemos con agentes. Entonces, estamos como cambiando y tratando de mostrar a la gente. Entonces un poco la pregunta orientada a a ver cómo cómo 1 puede hacerle entender a la gente que que bueno, que ve que que 1 tiene que hacer un esfuerzo mucho más grande por algo que a nivel código, por lo menos
+
+
+459
+00:51:02.210 --> 00:51:09.410
+Sebastian Langer: por algo que antes. Hacía Yo, Bueno, de forma más, ¿
+
+
+460
+00:51:10.130 --> 00:51:18.679
+Sebastian Langer: de forma simple o no sé, o o por lo menos no tan controlada en ver si
+
+
+461
+00:51:18.820 --> 00:51:23.740
+Sebastian Langer: si hay algún argumento de venta que a vos te resulte demoledor para ti.
+
+
+462
+00:51:24.210 --> 00:51:24.870
+Sebastian Langer: Para eso.
+
+
+463
+00:51:24.870 --> 00:51:32.089
+Matias Z: No nunca tuve esa capacidad de demoler.
+
+
+464
+00:51:32.300 --> 00:51:33.710
+Sebastian Langer: Aj.
+
+
+465
+00:51:33.710 --> 00:51:35.180
+Matias Z: Fundamentalmente, diago.
+
+
+466
+00:51:35.180 --> 00:51:38.240
+Sebastian Langer: Qué sé yo no sé sí.
+
+
+467
+00:51:38.240 --> 00:51:42.280
+Matias Z: Escalabilidad. Lo logras también con microsanillos a ver En tu caso.
+
+
+468
+00:51:42.280 --> 00:51:45.089
+Gustavo Narcisi: Creo que la plata no cuando le presentas a alguien.
+
+
+469
+00:51:45.780 --> 00:51:46.330
+Matias Z: Claro que se.
+
+
+470
+00:51:46.330 --> 00:51:48.930
+Gustavo Narcisi: El ahorro o la expansión.
+
+
+471
+00:51:49.820 --> 00:51:55.130
+Matias Z: Sí es, digamos, métrica de negocio seguro seguro
+
+
+472
+00:51:55.260 --> 00:52:05.560
+Matias Z: a ver. En general, mostras eso. Estás escondiendo otra parte de la historia que es, Por ejemplo, se suele subdimensionar un los riesgos, no
+
+
+473
+00:52:05.710 --> 00:52:15.949
+Matias Z: en tecnologías que están en plena evolución? La respuesta es.
+
+
+474
+00:52:17.720 --> 00:52:23.529
+Matias Z: realmente necesitas poner un agente donde tenés eso que ya funciona bien rápido determinista.
+
+
+475
+00:52:23.720 --> 00:52:28.910
+Matias Z: Pero bueno, lo lo vamos a lo vamos a ver, no te preocupes si consi queres lo discutimos después.
+
+
+476
+00:52:29.460 --> 00:52:34.409
+Sebastian Langer: Dale lo di. Lo Lo discutimos recién después, porque si tengo un par de preguntas sobre el tema, dale.
+
+
+477
+00:52:34.950 --> 00:52:35.770
+Matias Z: Genial.
+
+
+478
+00:52:36.170 --> 00:52:46.969
+Matias Z: Bien, Entonces, ¿cómo creamos los casos de evaluación, dijimos operación manual? Los logs, una gestión, producción, generación con modelo.
+
+
+479
+00:52:47.330 --> 00:52:51.520
+Matias Z: por ejemplo, Glauco tiene algunos Skills que te permiten generar generar casos
+
+
+480
+00:52:51.880 --> 00:53:01.099
+Matias Z: normalmente. Es importante revisarlo manualmente. Podemos Al principio hay 3 sesgos importantes que suelen tener los modelos.
+
+
+481
+00:53:01.480 --> 00:53:08.500
+Matias Z: Este que vamos a ver y utilizar los benchmark estándar de la industria como si quieren, un base line
+
+
+482
+00:53:08.830 --> 00:53:11.460
+Matias Z: para solamente asegurarnos
+
+
+483
+00:53:11.750 --> 00:53:18.819
+Matias Z: las capacidades básicas de de nuestra gente? No, Pero esto no, no. Por supuesto, no mide ninguna métrica de nuestro negocio particular.
+
+
+484
+00:53:20.390 --> 00:53:21.760
+Matias Z: Y
+
+
+485
+00:53:25.940 --> 00:53:33.880
+Matias Z: bien. También hay 3 técnicas de pensar estos casos de evaluaciones dependiendo lo que queramos medir.
+
+
+486
+00:53:34.750 --> 00:53:41.789
+Matias Z: La La La aproximación adversarial es justamente la que evita el el camino feliz.
+
+
+487
+00:53:42.500 --> 00:53:59.779
+Matias Z: Justamente lo que intenta es atacar de alguna forma normalmente semántica este comportamiento de la gente. Esto se hace más en seguridad, pero también vamos a ver que que lo vamos a a optimizar para estos casos, donde, por ejemplo, un reclamo puede ser contradictorio, ambiguo
+
+
+488
+00:54:00.840 --> 00:54:01.920
+Matias Z: o malicioso.
+
+
+489
+00:54:02.180 --> 00:54:14.509
+Matias Z: En la edición paneofártica. Tiene, tiene, digamos, el objetivo de cambiar alguna palabra que genere un cambio importante en
+
+
+490
+00:54:14.740 --> 00:54:22.919
+Matias Z: la respuesta también del modelo y la interpolación distribucional intenta justamente mezclar cómo
+
+
+491
+00:54:23.050 --> 00:54:34.949
+Matias Z: 2 intenciones no como genera esta quary compleja, donde no quede del todo claro cuál es la intención de la gente. Eso suele romper los clasificadores de intenciones que se suelen exponer
+
+
+492
+00:54:35.230 --> 00:54:39.740
+Matias Z: antes de que esa esa querida llegue a al al modelo.
+
+
+493
+00:54:40.080 --> 00:54:44.019
+Matias Z: Ya hemos hablado también estos componentes, que son clasificadores.
+
+
+494
+00:54:45.420 --> 00:54:53.940
+Matias Z: Bueno, los 7 casos nulos. Los vemos si quieren, cuando vemos, nacemos. Pero básicamente lo que hacemos es intentar probar este tipo de cosas.
+
+
+495
+00:54:54.060 --> 00:54:55.670
+Matias Z: no con diferentes casos.
+
+
+496
+00:55:00.200 --> 00:55:05.850
+Matias Z: Y de esta Slide. Más que decirles que esto es continuo.
+
+
+497
+00:55:06.270 --> 00:55:12.249
+Matias Z: este atraviesa, les diría muchos roles o muchos equipos. Es
+
+
+498
+00:55:12.950 --> 00:55:20.520
+Matias Z: horizontal en términos de colaboración y continuo. No es un momento en la en el desarrollo.
+
+
+499
+00:55:21.010 --> 00:55:24.990
+Matias Z: Es parte del 6 C, D, Sí, en
+
+
+500
+00:55:25.210 --> 00:55:31.299
+Matias Z: Y otro tema importante, parecido a lo que ya conocen de nacionales tradicionales, traía el holl out, que es
+
+
+501
+00:55:31.590 --> 00:55:42.020
+Matias Z: dejar casos aislados fuera de estas evaluaciones justamente para no
+
+
+502
+00:55:42.760 --> 00:55:54.729
+Matias Z: condicionarnos ahora suerte de de overshitting Orfitting no no era el término tradicional, sino no utilizar estas estos scores para solamente ir mejorando estos números.
+
+
+503
+00:55:54.920 --> 00:55:58.599
+Matias Z: sino medir mejor la real. Ya vamos a ver de qué se trata.
+
+
+504
+00:55:59.530 --> 00:56:02.869
+Matias Z: pero fundamentalmente dejar casos por fuera de las evaluaciones. Sí,
+
+
+505
+00:56:08.420 --> 00:56:12.520
+Matias Z: bien que implementa adecuadas
+
+
+506
+00:56:17.740 --> 00:56:20.070
+Matias Z: muchas cosas.
+
+
+507
+00:56:20.750 --> 00:56:25.449
+Matias Z: Mhm, el Eisent Blackford, que que se presentó
+
+
+508
+00:56:26.390 --> 00:56:32.220
+Matias Z: en el Next 26 hace unos pocos meses en
+
+
+509
+00:56:38.620 --> 00:56:43.209
+Matias Z: trae 4 pilares, Como ya hemos hablado en algún encuentro, creo.
+
+
+510
+00:56:43.780 --> 00:56:52.940
+Matias Z: los 4 pilares son cuan 4 conjuntos de funcionalidades: Build Skane gobernar y optimizar
+
+
+511
+00:56:53.390 --> 00:57:04.750
+Matias Z: esos 4 pilares. Si quieren abrir la consola del C P. Los 4 pilares, básicamente contienen diferentes tipos de funcionalidades que nos simplifican. Por ejemplo, en este caso, el cuarto pilar óptima es
+
+
+512
+00:57:04.860 --> 00:57:08.970
+Matias Z: no simplifica justamente crear este feedback loop para mejora continua
+
+
+513
+00:57:09.910 --> 00:57:12.449
+Matias Z: A becada. Por supuesto, le da soporte a esto
+
+
+514
+00:57:12.930 --> 00:57:20.900
+Matias Z: y qué nos permite hacer? Nos permite representar casos y conjuntos de casos clases de adk
+
+
+515
+00:57:23.070 --> 00:57:27.470
+Matias Z: correr. Una llamada. Eso se llama una invocación
+
+
+516
+00:57:27.920 --> 00:57:35.120
+Matias Z: utilizar métricas que vienen por defecto en el Framework y también utilizar métricas casto. Aunque podemos integrar con a Dk.
+
+
+517
+00:57:38.080 --> 00:57:45.809
+Matias Z: Podemos configurar diferentes tipos de puntaje. Vamos a ver cómo se integran, por promedio, por suma, por peor caso.
+
+
+518
+00:57:47.750 --> 00:57:54.729
+Matias Z: diferentes tipos de promedios y una manera de visibilizar esto.
+
+
+519
+00:57:55.160 --> 00:58:02.670
+Matias Z: que puede ser tanto en la consola de G. P. O utilizando, por ejemplo, Landfue, que tiene visualizadores muy interesantes
+
+
+520
+00:58:03.410 --> 00:58:05.230
+Matias Z: tipo Dashmoards No.
+
+
+521
+00:58:08.550 --> 00:58:17.009
+Matias Z: Y tiene la la ventaja de que se puede correr en línea con mando lo paso rápido, porque ahora no interesas tanto línea de comando, es Alga Iván.
+
+
+522
+00:58:17.510 --> 00:58:19.859
+Matias Z: Incluso puede generar los casos, ya les digo.
+
+
+523
+00:58:20.470 --> 00:58:26.419
+Matias Z: puede ser un buen primer paso o incluso se puede hacer en la interfaz web que vimos en la deca web.
+
+
+524
+00:58:27.220 --> 00:58:30.899
+Matias Z: También se puede hacer algo. Vamos a ir creando los casos a partir de conversaciones, por ejemplo.
+
+
+525
+00:58:31.440 --> 00:58:37.040
+Matias Z: O sea, acá. Nos simplifica si quiere, como primer paso, empezar a jugar con evaluación
+
+
+526
+00:58:37.420 --> 00:58:44.749
+Matias Z: Más interesante para mí es el hecho de que nos permite realizar 2 cosas
+
+
+527
+00:58:45.200 --> 00:58:47.479
+Matias Z: que no vi en muchos otros lados
+
+
+528
+00:58:47.590 --> 00:58:54.409
+Matias Z: que son simulaciones, primero de usuarios sintéticos y, segundo, de mundos sintéticos.
+
+
+529
+00:58:54.790 --> 00:59:05.340
+Matias Z: Esto nos permite automatizar corridas muchas corridas con diferentes usuarios sintéticos sobre diferentes mundos sintéticos sí en
+
+
+530
+00:59:06.480 --> 00:59:13.150
+Matias Z: vamos a ver que eso tiene aplicaciones específicas para métricas que de otra manera son prácticamente imposibles de medir.
+
+
+531
+00:59:14.070 --> 00:59:18.820
+Matias Z: Okay, por ejemplo.
+
+
+532
+00:59:21.850 --> 00:59:25.389
+Matias Z: si no tenemos ganas de implementar desde 0 y solamente queremos empezar a probar.
+
+
+533
+00:59:27.770 --> 00:59:31.830
+Matias Z: Tampoco tiene que escribir el código. Por supuesto, en
+
+
+534
+00:59:35.830 --> 00:59:41.870
+Matias Z: para eso hablé de mientras leen lo que está en pantalla.
+
+
+535
+00:59:58.360 --> 01:00:01.200
+Matias Z: No sé si les mencioné alguna vez ella en C, Li.
+
+
+536
+01:00:09.040 --> 01:00:10.570
+Daniel Sosa: Yo no lo recuerdo. Mati.
+
+
+537
+01:00:11.040 --> 01:00:11.920
+Matias Z: Bien.
+
+
+538
+01:00:13.010 --> 01:00:14.130
+Juan Franco Echeverria: Tampoco.
+
+
+539
+01:00:14.820 --> 01:00:21.999
+Matias Z: Ta: Ta: Bien, está bien, No pasa nada. Mira, Te digo que si les contaba esto antes, yo creo que que este
+
+
+540
+01:00:22.560 --> 01:00:28.680
+Matias Z: no seguían viniendo el curso, pues ellos sí el hay, se implementa tanto como una terminal como un skill para
+
+
+541
+01:00:29.310 --> 01:00:37.590
+Matias Z: para los diferentes asistentes como plat code en y básicamente te arma como un
+
+
+542
+01:00:37.850 --> 01:00:43.439
+Matias Z: las diferentes instancias para hacer el el código tipo Boylefred
+
+
+543
+01:00:43.760 --> 01:00:47.810
+Matias Z: para definir lo que tienen que hacer los agentes para construirlas. Y vals.
+
+
+544
+01:00:48.100 --> 01:00:55.849
+Matias Z: por ejemplo, definir en qué infraestructura de ese ciclo querés correr o local, sí tiene un montón de
+
+
+545
+01:00:58.610 --> 01:01:03.559
+Matias Z: de alternativas que simplemente nos permiten construir a gente sin tener que escribir código
+
+
+546
+01:01:03.770 --> 01:01:07.300
+Matias Z: y, entre otras cosas, también nos permite hacer evaluaciones.
+
+
+547
+01:01:07.870 --> 01:01:09.430
+Matias Z: Sí, la hay.
+
+
+548
+01:01:09.710 --> 01:01:15.649
+Matias Z: Sí, se lo bajan. Lo usa con con línea de mando o como un steel para para
+
+
+549
+01:01:17.250 --> 01:01:21.270
+Matias Z: Lo interesante es que siempre está actualizado, por lo menos Con respecto a Adrian
+
+
+550
+01:01:27.810 --> 01:01:32.019
+Matias Z: trae un montón de recetas también para para casos este comunes.
+
+
+551
+01:01:32.410 --> 01:01:33.870
+Matias Z: Es el cielo.
+
+
+552
+01:01:43.250 --> 01:01:43.950
+Matias Z: Ahí va.
+
+
+553
+01:01:53.250 --> 01:01:54.060
+Matias Z: Okay.
+
+
+554
+01:01:54.210 --> 01:01:55.210
+Matias Z: En
+
+
+555
+01:02:00.290 --> 01:02:06.430
+Matias Z: Bueno, interesante, la cantidad de métricas que trae acá por defecto es este. La verdad.
+
+
+556
+01:02:10.170 --> 01:02:13.050
+Matias Z: Es bastante generoso
+
+
+557
+01:02:13.170 --> 01:02:21.099
+Matias Z: en en Cu en cuanto a las métricas que trae por default, pero además nos permite elegir.
+
+
+558
+01:02:21.660 --> 01:02:29.510
+Matias Z: por supuesto, de los 3 tipos de scorees que mencionamos. Fíjese que para cada métrida que trae todo no tiene nada que ver con la demo.
+
+
+559
+01:02:29.760 --> 01:02:36.390
+Matias Z: Esto es simplemente mostrarles qué ventajas tiene utilizar un framework específico de evaluaciones.
+
+
+560
+01:02:37.390 --> 01:02:44.549
+Matias Z: Y una vez más, igual que de acá hay otros frames, si tenemos 3 ejemplos.
+
+
+561
+01:02:45.530 --> 01:02:49.019
+Matias Z: Tres: demos que si no me equivoco, están publicados, ya no
+
+
+562
+01:02:59.610 --> 01:03:00.410
+Matias Z: bien.
+
+
+563
+01:03:01.590 --> 01:03:08.210
+Matias Z: Okay. Hasta ahí la intro con Adi Gai era simplemente para que se animen bájense si la hay armen
+
+
+564
+01:03:08.860 --> 01:03:14.700
+Matias Z: agente, utilicen algunos de los agentes de ejemplo, pero fundamentalmente, construyen evaluaciones.
+
+
+565
+01:03:15.920 --> 01:03:23.760
+Matias Z: Empiecen a construir evaluaciones alrededor de eso incluyan las evaluaciones como parte de sus Sprint. Cualquier cambio Hay
+
+
+566
+01:03:24.990 --> 01:03:31.349
+Matias Z: cualquier cambio por mas ínfimo que sea la versión dedicada
+
+
+567
+01:03:32.880 --> 01:03:37.909
+Matias Z: algo de system pront algún Wardale.
+
+
+568
+01:03:39.310 --> 01:03:45.980
+Matias Z: cualquier tipo de público que cambiemos. Si agregamos unas utilizar cualquier cambio en el Worldflow
+
+
+569
+01:03:46.810 --> 01:03:51.260
+Matias Z: requiere que haga unas evaluaciones de nuevo, siempre sí.
+
+
+570
+01:03:52.550 --> 01:03:57.169
+Matias Z: Y si no tuvimos cambios internos en nuestra gente, pensemos que puede cambiar
+
+
+571
+01:03:57.380 --> 01:04:00.069
+Matias Z: el usuario, puede cambiar, las cuales
+
+
+572
+01:04:01.030 --> 01:04:03.479
+Matias Z: a esto se le llama el Drift o la deriva.
+
+
+573
+01:04:04.570 --> 01:04:05.800
+Matias Z: Y
+
+
+574
+01:04:06.980 --> 01:04:15.570
+Matias Z: o si, por ejemplo, estamos consumiendo modelos de un de un vendedor a través de una A. P. I. Muchas veces los vendedor cambian.
+
+
+575
+01:04:15.770 --> 01:04:20.839
+Matias Z: Hacen pequeños cambios en los en la versión de los modelos sin avisar.
+
+
+576
+01:04:21.560 --> 01:04:25.690
+Matias Z: y eso puede tener por amplificación, puede tener efectos.
+
+
+577
+01:04:27.610 --> 01:04:29.530
+Matias Z: Entonces.
+
+
+578
+01:04:29.870 --> 01:04:37.409
+Matias Z: insisto, la única idea importante de la del encuentro es empiece a hacer a jugar con las evaluaciones, porque a partir de ahora es como
+
+
+579
+01:04:37.740 --> 01:04:42.090
+Matias Z: les diría los
+
+
+580
+01:04:42.630 --> 01:04:50.800
+Matias Z: la los Foundation Foundations, son los cuales vamos a empezar a construir la infraestructura para después empezar a desplegar a nuestros agentes en producción
+
+
+581
+01:04:52.810 --> 01:04:54.730
+Matias Z: okay. Acá
+
+
+582
+01:04:56.140 --> 01:05:03.679
+Matias Z: no me odien los datos Scientics, pero no puedo dejar a nadie atrás alguno. No se acuerda de lo que era una matriz de confusión.
+
+
+583
+01:05:04.220 --> 01:05:10.450
+Matias Z: Se siente intimidado por la idea de
+
+
+584
+01:05:14.200 --> 01:05:19.220
+Matias Z: Narciso, el rico. Y saben lo que es un propósito tu negativo.
+
+
+585
+01:05:21.270 --> 01:05:22.439
+Daniel Sosa: Yo no. Mati.
+
+
+586
+01:05:23.309 --> 01:05:30.279
+Matias Z: Bueno, valiente, Bien, Bien, bien, bien, bien, ya alguien más.
+
+
+587
+01:05:33.800 --> 01:05:35.020
+Daniel Sosa: No me dejen, Solo.
+
+
+588
+01:05:37.429 --> 01:05:40.260
+Matias Z: Te está bien. También te sacrificaste por algo.
+
+
+589
+01:05:40.269 --> 01:05:43.469
+Gabriel Colloca: No, yo te acompaño. Yo te acompaño. Dani: No tengo idea tampoco.
+
+
+590
+01:05:43.889 --> 01:05:45.049
+Matias Z: A eso. Okay.
+
+
+591
+01:05:45.050 --> 01:05:45.590
+Daniel Sosa: A a.
+
+
+592
+01:05:46.639 --> 01:05:47.329
+Gabriel Colloca: Hay un.
+
+
+593
+01:05:47.330 --> 01:05:50.079
+Matias Z: Hay una charla Ted muy buena. ¿
+
+
+594
+01:05:50.410 --> 01:05:53.799
+Matias Z: Es como iniciar una revolución. Se las recomiendo en Youtube.
+
+
+595
+01:05:53.960 --> 01:05:58.519
+Matias Z: En básicamente, Daniel rein iniciaste. La revolución
+
+
+596
+01:05:58.740 --> 01:06:03.289
+Matias Z: está bien, porque incluso muchas veces lo vimos. Lo estudiamos
+
+
+597
+01:06:03.690 --> 01:06:06.510
+Matias Z: en algún momento para otro contexto.
+
+
+598
+01:06:06.790 --> 01:06:15.580
+Matias Z: Son formas de medir este como clasifico modelos si lo utilizamos en el contexto de mayor Langer tradicional.
+
+
+599
+01:06:18.650 --> 01:06:23.550
+Matias Z: Pero sobre estas ideas sencillas se construyen todas las métricas que vamos a ver hoy. Por ejemplo.
+
+
+600
+01:06:24.070 --> 01:06:26.020
+Matias Z: voy cambiando. Algunas palabritas
+
+
+601
+01:06:36.099 --> 01:06:47.800
+Matias Z: son 2. Entonces, bien, en vamos a utilizar en una aproximación super intuitiva.
+
+
+602
+01:06:49.670 --> 01:06:50.650
+Matias Z: Daniel.
+
+
+603
+01:06:51.880 --> 01:06:57.550
+Matias Z: Y después te voy a pasar. Tengo escrito un texto chiquito donde se explica un poco más en detalle
+
+
+604
+01:06:58.260 --> 01:07:05.609
+Matias Z: por no es un tema que vas a incorporar si nunca nunca lo viste de, digamos, en 2 min.
+
+
+605
+01:07:07.250 --> 01:07:13.760
+Matias Z: Pero para ver el resto de la clase, pues puede ser importante que que entiendas la definición de precisión y rival.
+
+
+606
+01:07:15.730 --> 01:07:21.259
+Matias Z: De hecho, ¿qué le explica a Daniel y a Gabriel
+
+
+607
+01:07:22.240 --> 01:07:25.979
+Matias Z: que es preciso, ni qué rico, en menos de un minuto.
+
+
+608
+01:07:29.790 --> 01:07:34.370
+Alejandro Declerk: Mira, básicamente cuando vos trabajas en The Science, hay un gran problema. Siempre que tenés
+
+
+609
+01:07:34.910 --> 01:07:38.730
+Alejandro Declerk: es como gusta, es que te voy a explicar así: fuiste. Cuando te haces un test de embarazo.
+
+
+610
+01:07:39.200 --> 01:07:42.090
+Alejandro Declerk: te puede dar positivo o negativo. Pero
+
+
+611
+01:07:42.510 --> 01:07:52.029
+Alejandro Declerk: tenés 4 escenarios, estar embarazado y que teste de que si estar embarazado y que estés, que no no estar embarazado y que teste que sí no estar y que no te de
+
+
+612
+01:07:52.120 --> 01:08:10.149
+Alejandro Declerk: entonces armamos unos kilombos bárbaros porque depende del área del problema donde estés un falso positivo te puede hacer muy mal. Y en otras áreas no te importa tanto, entonces hay que entender bien que estás haciendo. Y por ejemplo, no sé si yo me hago un me hago un test de una enfermedad venérea y me da un falso positivo.
+
+
+613
+01:08:10.700 --> 01:08:28.850
+Alejandro Declerk: Es grave porque tras un capaz con tratamiento y después eso no tenía sentido. Pero es mucho más grave que me un falso negativo, porque no sé que estoy enfermo y capaz que me considero una persona sana, entonces se desarman todas estas métricas y depende del problema que 1 esté tratando. Se usan distintas métricas. Un minuto dijiste: no, no es que.
+
+
+614
+01:08:29.680 --> 01:08:30.640
+Matias Z: El capo.
+
+
+615
+01:08:31.200 --> 01:08:33.979
+Daniel Sosa: Esa metáfora, clarísima, buenísima, claro.
+
+
+616
+01:08:33.980 --> 01:08:46.869
+Sebastian Langer: Y para algunos problemas va a ser, digo, 1 trata de minimizar la lo más negativo, no, o sea por ahí, a veces mejor que peque por porque.
+
+
+617
+01:08:46.870 --> 01:08:47.270
+Alejandro Declerk: A los.
+
+
+618
+01:08:47.270 --> 01:08:49.310
+Sebastian Langer: Falsos positivos que falsos negativos.
+
+
+619
+01:08:49.310 --> 01:09:00.240
+Alejandro Declerk: Cual depende el problema. Si Vos tenés un problema de revisión, por ejemplo, mi problema de revisiones que tengo a mí no me importa si hay un falso positivo, porque el tipo me lo corrige. Pero otro problema capaz que viste es un bajón, depende.
+
+
+620
+01:09:01.660 --> 01:09:02.020
+Matias Z: De el.
+
+
+621
+01:09:02.020 --> 01:09:18.099
+Sebastian Langer: Después te podés este fantunear las cosas como para que para ir mejorando el precisión y el récord, que son esas relaciones que que muestra ahí la presentación. No siempre cuanto cuanto mejor te dé, mejor. Pero Pero, bueno, a veces
+
+
+622
+01:09:18.160 --> 01:09:28.320
+Sebastian Langer: por ahí es preferible que el precisión esté este este mejor. Y o o L, o el depende lo que vos quieras hacer
+
+
+623
+01:09:28.440 --> 01:09:29.709
+Sebastian Langer: depende del problema.
+
+
+624
+01:09:31.280 --> 01:09:35.080
+Matias Z: Bueno, genial, gracias a todo este.
+
+
+625
+01:09:36.080 --> 01:09:45.830
+Matias Z: creo que dijeron lo más importante. Si efectivamente ahí están midiendo con respecto ponerle que es una clasificación binaria interesante. El caso en medicina, porque.
+
+
+626
+01:09:46.200 --> 01:09:51.590
+Matias Z: por ejemplo, Daniel en ese caso, en un error
+
+
+627
+01:09:51.810 --> 01:09:58.529
+Matias Z: cuesta mucho, digamos, un diagnóstico mal realizado. Cuesta mucho. Es algo que no querés que suceda este.
+
+
+628
+01:09:59.840 --> 01:10:12.700
+Matias Z: Entonces, como dijo Sebastian, se puede tunear esto, pero no es gratis. Vos te movés en una suerte de curva, donde si tratas de mover la frontera de decisión de ese modelo de clasificación
+
+
+629
+01:10:13.020 --> 01:10:20.720
+Matias Z: para, por ejemplo, mejorar la precisión del modelo, normalmente estás reduciendo el rigor normalmente. Entonces
+
+
+630
+01:10:21.160 --> 01:10:26.560
+Matias Z: lo que suele pasar es que hay entre 2 elegís entre una de las 2, el.
+
+
+631
+01:10:30.960 --> 01:10:32.399
+Sebastian Langer: El mejor de los males.
+
+
+632
+01:10:33.610 --> 01:10:41.190
+Matias Z: Sí exactamente. Y Y la materia de confusión no te preocupes ahora es simplemente una forma de comparar que
+
+
+633
+01:10:41.510 --> 01:10:45.249
+Matias Z: el Gran Truf: La verdad, contra lo que se predice.
+
+
+634
+01:10:48.890 --> 01:11:02.719
+Matias Z: entonces Estado. Métricas, precisión y rival es vos elegís alguna de las 2 clases. Por ejemplo, es una clasificación binaria, y puedes calcular justamente la precisión Y el ritual para una alguna de las clases. En particular.
+
+
+635
+01:11:04.390 --> 01:11:14.409
+Matias Z: tiene una fórmula sencilla. No es necesario que la mires ahora, pero bueno, era importante que que nadie se quede atrás. Tal vez este gráfico ayuda un poquito
+
+
+636
+01:11:15.050 --> 01:11:16.130
+Matias Z: en
+
+
+637
+01:11:21.610 --> 01:11:33.320
+Matias Z: yo. Creo que ahora, cuando lo veamos con los ejemplos, puede ser que que baje a tierra un poco la idea de precisión del recaul. La vamos a ver en un montón de aplicaciones. Por eso
+
+
+638
+01:11:34.460 --> 01:11:37.259
+Matias Z: te recomiendo después que que lo mires tranquilo, si quieres.
+
+
+639
+01:11:43.360 --> 01:11:49.670
+Matias Z: Pero por ahí estas frases ayudan alta precisión, pocas falsas alarmas.
+
+
+640
+01:11:50.720 --> 01:11:52.940
+Matias Z: Alto Ripoll, Pocas condiciones.
+
+
+641
+01:11:54.000 --> 01:11:58.479
+Matias Z: Sí, el Tricot también se se le conoce como cobertura, exhaustividad.
+
+
+642
+01:11:59.350 --> 01:12:12.259
+Matias Z: Okay, con esa explicación desordenada, poco académica. Pero espero que te haya servido como introducción, la idea es.
+
+
+643
+01:12:12.810 --> 01:12:14.380
+Matias Z: vamos a medir
+
+
+644
+01:12:15.780 --> 01:12:27.350
+Matias Z: qué pasa con la presión y el ritual en diferentes situaciones? Esto, de nuevo es muy básico de de de la del de pasajes tradicional, pero en este caso lo vamos a ver para llamadas a tools.
+
+
+645
+01:12:27.670 --> 01:12:30.920
+Matias Z: Vamos a ver, para, por ejemplo.
+
+
+646
+01:12:31.090 --> 01:12:33.419
+Matias Z: qué pasa con lo que Recupera R a D.
+
+
+647
+01:12:33.910 --> 01:12:36.940
+Matias Z: Vamos a ver en casi todas las situaciones. Sí,
+
+
+648
+01:12:41.550 --> 01:12:54.199
+Matias Z: pensé que podía seguir de largo, pero no F: 1. Scort: imagino que que tampoco arrégate de nuevo. Daniellei.
+
+
+649
+01:12:57.320 --> 01:12:59.170
+Matias Z: No te preocupes, No pasa nada.
+
+
+650
+01:13:00.870 --> 01:13:11.650
+Matias Z: Bien, ¿Quién le cuenta en 30 s? ¿qué es ley de un actor súper intuitivo.
+
+
+651
+01:13:20.320 --> 01:13:27.449
+Matias Z: Sabes que explicar estas cosas también es una forma de de medir si realmente lo lo tenemos ahí en la cabeza.
+
+
+652
+01:13:30.660 --> 01:13:33.689
+Matias Z: conocen el método Freemann del físico Feedmann
+
+
+653
+01:13:37.160 --> 01:13:40.840
+Matias Z: Okay. Bueno, después se los recomiendo que lo busquen
+
+
+654
+01:13:41.350 --> 01:13:44.120
+Matias Z: para saber cuánto entendemos de un tema.
+
+
+655
+01:13:44.380 --> 01:13:47.829
+Matias Z: Explicarlo en términos sencillos.
+
+
+656
+01:13:47.980 --> 01:13:49.120
+Matias Z: Es una forma.
+
+
+657
+01:13:49.670 --> 01:13:53.890
+Matias Z: Algunos se animan sin tecnicismos.
+
+
+658
+01:14:00.500 --> 01:14:15.019
+Alejandro Declerk: A ver yo lo que me acuerdo de muchos en no lo uso mucho, pero cuando lo estudié, era como si si un si, si era cerca de 1, estaban medios parejos. Y si a 0 no la precisión, el récord eran una de las 2 estaba muy media desbalanceada.
+
+
+659
+01:14:17.140 --> 01:14:19.050
+Alejandro Declerk: Dice eso. El tapetea,
+
+
+660
+01:14:20.110 --> 01:14:20.930
+Matias Z: Bien.
+
+
+661
+01:14:21.350 --> 01:14:21.780
+Alejandro Declerk: Claro.
+
+
+662
+01:14:21.780 --> 01:14:22.260
+Matias Z: No hay.
+
+
+663
+01:14:22.260 --> 01:14:23.210
+Alejandro Declerk: De no.
+
+
+664
+01:14:23.800 --> 01:14:29.229
+Matias Z: Sí. En En general, Daniel lo que queremos ver es, digamos, combinar estas 2
+
+
+665
+01:14:29.410 --> 01:14:45.519
+Matias Z: estas métricas. Dijimos que hay entre 2. Si movemos una, seguramente ya tenemos la otra, entonces se calcula una suerte de promedio. Si la verdad que si yo uso una media aritmética, el promedio normal.
+
+
+666
+01:14:45.810 --> 01:14:53.729
+Matias Z: Y tengo una gran divergencia entre un número y otro, por ejemplo, precisión del 1 por 100 y récord de 0, 1, el promedio.
+
+
+667
+01:14:55.050 --> 01:15:00.040
+Matias Z: Sabemos que, aparte son muy sensibles a los celulares de promedio. Este
+
+
+668
+01:15:01.130 --> 01:15:05.210
+Matias Z: parece aceptable, pero en realidad es un récord, que es un desastre.
+
+
+669
+01:15:05.620 --> 01:15:08.270
+Matias Z: entonces se usa otro tipo de promedio.
+
+
+670
+01:15:08.370 --> 01:15:17.989
+Matias Z: Se conoce como media aritmética armónica, perdón que básicamente muestra un poco el desequilibrio. Cuando hay divergencia entre ambas este métricas, lo que hacemos es tratar de
+
+
+671
+01:15:18.180 --> 01:15:26.390
+Matias Z: reflejarlo con este score. Si no es, no es nada más que eso. Combinarlas y ver cómo funcionan Ambas.
+
+
+672
+01:15:26.390 --> 01:15:33.309
+Sebastian Langer: Si te da 1, es perfecto, si te si si tiende más bien a 0, significa que está muy desequilibrada
+
+
+673
+01:15:33.770 --> 01:15:38.550
+Sebastian Langer: Y si te da 1 prestado el fiteando.
+
+
+674
+01:15:38.820 --> 01:15:51.800
+Sebastian Langer: me diría yo. Pero bueno, básicamente es es es una media armónica que te permite entender la relación entre el entre precisión y recol.
+
+
+675
+01:15:54.140 --> 01:16:00.210
+Matias Z: Bien final. Ahora, lo que se penaliza es un poco. La divergencia entre más números en
+
+
+676
+01:16:00.830 --> 01:16:08.660
+Matias Z: tiene algunas advertencias metodológicas. Primero no mira los true negativos. Vamos a ver si después va a ser importante. Por eso vamos a usar
+
+
+677
+01:16:08.920 --> 01:16:14.089
+Matias Z: una nueva forma de combinar estos números
+
+
+678
+01:16:16.300 --> 01:16:19.249
+Matias Z: y pesa por igual preciso en el rigor.
+
+
+679
+01:16:19.520 --> 01:16:25.719
+Matias Z: Eso también es importante porque, como decíamos antes, en función del problema que estemos resolviendo puede ser más
+
+
+680
+01:16:25.850 --> 01:16:33.890
+Matias Z: costoso, un error, Un falso positivo que que que, digamos, dejar pasar o no dejar pasar puede ser más costoso.
+
+
+681
+01:16:34.420 --> 01:16:39.690
+Matias Z: En con esta idea muy vaga y muy intuitiva.
+
+
+682
+01:16:40.680 --> 01:16:44.020
+Matias Z: Después te te recomiendo que los mire de nuevo.
+
+
+683
+01:16:45.000 --> 01:16:52.310
+Matias Z: vamos a ver qué pasa con llamadas de un agente. Cuando ejecutamos un acuerdo.
+
+
+684
+01:16:52.850 --> 01:16:59.160
+Matias Z: esto es la trayectoria. Lo primero que hay que mirar. Esto es obligatorio, digamos, no es opcional.
+
+
+685
+01:17:01.180 --> 01:17:06.689
+Matias Z: En en los cursos de de evaluaciones. Es un poco lo primero que se menciona, porque nos olvidamos que estamos
+
+
+686
+01:17:06.940 --> 01:17:13.849
+Matias Z: tratando con gente no en la trayectoria puede ser
+
+
+687
+01:17:14.230 --> 01:17:18.250
+Matias Z: la fuente del caos, no tanto el resultado final.
+
+
+688
+01:17:19.450 --> 01:17:27.319
+Matias Z: Entonces, si va estás mirando la tabla, vamos a imaginar
+
+
+689
+01:17:28.910 --> 01:17:35.450
+Matias Z: qué positivo sería esta herramienta debería llamarse y las esperadas.
+
+
+690
+01:17:35.650 --> 01:17:40.730
+Matias Z: En el caso de la tasa que mencionamos antes, son estas 2 llamadas a Tools.
+
+
+691
+01:17:42.830 --> 01:17:46.790
+Matias Z: Sí, O sea, este es el gran trout.
+
+
+692
+01:17:47.200 --> 01:17:52.089
+Matias Z: Y esto es lo que efectivamente sucede, algo así como la este.
+
+
+693
+01:17:52.390 --> 01:17:55.190
+Matias Z: la predicción, digamos, de esa matriz de confusión.
+
+
+694
+01:17:58.140 --> 01:18:07.560
+Matias Z: Rápidamente. Si esperamos que se llamen estas 2 herramientas y se llamaron que tenemos los trucks positivos.
+
+
+695
+01:18:07.910 --> 01:18:10.019
+Matias Z: Entonces los números nos dan.
+
+
+696
+01:18:10.350 --> 01:18:12.500
+Matias Z: Fíjate que no hay un grafiti acá.
+
+
+697
+01:18:12.640 --> 01:18:15.619
+Matias Z: Sebastian. De hecho, lo que hay es un comportamiento correcto.
+
+
+698
+01:18:17.990 --> 01:18:18.560
+Sebastian Langer: Claro.
+
+
+699
+01:18:26.530 --> 01:18:36.060
+Matias Z: Venimos. Bien, Estamos tratando de mapear lo que sabíamos de precisión récord a llamadas herramientas. ¿y qué sería el gran Trude. ¿y qué sería la proyección
+
+
+700
+01:18:37.640 --> 01:18:41.149
+Matias Z: cuando hay que consultar, además que tenemos un falso positivo
+
+
+701
+01:18:41.980 --> 01:18:45.210
+Matias Z: baja la precisión. Fíjense que no no cambia el récord.
+
+
+702
+01:18:46.470 --> 01:18:52.439
+Matias Z: Entonces Daniel, acá lo que pasa es que se afecta la métrica que compone esas 2 números.
+
+
+703
+01:18:54.250 --> 01:18:56.610
+Matias Z: Cuando solo llama a una de las Tours.
+
+
+704
+01:18:58.100 --> 01:18:59.879
+Matias Z: Tenemos un falso negativo
+
+
+705
+01:19:03.030 --> 01:19:06.199
+Matias Z: rico. Y cuando no hizo nada, lo más importante.
+
+
+706
+01:19:07.860 --> 01:19:15.019
+Matias Z: yo creo que acá es donde tenemos el mayor problema. Y acá es donde vamos a dedicarle directamente una slide completa.
+
+
+707
+01:19:16.050 --> 01:19:27.200
+Matias Z: ¿qué pasa cuando no hace nada y no esperábamos que haga nada. Bueno, acá. Es donde empiezan las discusiones metodológicas de de nuestros académicos. Con respecto a las evaluaciones.
+
+
+708
+01:19:28.840 --> 01:19:31.609
+Matias Z: vamos a dedicarle una slide completa
+
+
+709
+01:19:31.940 --> 01:19:37.380
+Matias Z: en un ratito, porque acá es donde tenemos muchas de las fuentes importantes de errores. Sí,
+
+
+710
+01:19:37.900 --> 01:19:39.880
+Matias Z: las otras son un poco más claras.
+
+
+711
+01:19:44.210 --> 01:19:47.549
+Matias Z: Este patrón. Lo vamos a ver en un montón de lugares. Así que avancemos
+
+
+712
+01:19:48.230 --> 01:19:52.999
+Matias Z: cómo definimos bien una métrica en función de lo que estamos aprendiendo. Ahora
+
+
+713
+01:19:58.450 --> 01:20:09.070
+Matias Z: bien, una métrica es una etiqueta. Cada equipo podría definirla de una manera distinta. Entonces es importante describir para empezar una especificación común, clara y sin ambigüedades.
+
+
+714
+01:20:10.830 --> 01:20:17.580
+Matias Z: Tenemos que definir qué es positivo que se cuenta con ciertos. Qué hacer cuando el denominador es 0.
+
+
+715
+01:20:17.840 --> 01:20:24.539
+Matias Z: Si eso los Frameworks de hecho, nos permiten configurarlo porque puede pasar, suele pasar.
+
+
+716
+01:20:25.790 --> 01:20:30.970
+Matias Z: sea utilizable. Dos personas mismo, agente del mismo caso. Tienen que tener el mismo número.
+
+
+717
+01:20:31.800 --> 01:20:33.540
+Matias Z: Las 4 preguntas
+
+
+718
+01:20:34.390 --> 01:20:42.309
+Matias Z: que la vamos a usar después como formulario para el resto de todas las métricas que vamos a definir primero la unidad que se compara con que
+
+
+719
+01:20:42.600 --> 01:20:44.140
+Matias Z: no básico. También.
+
+
+720
+01:20:44.570 --> 01:20:50.260
+Matias Z: Seguramente pueden ser conjunto de nombres de herramientas, lista de llamadas con parámetros
+
+
+721
+01:20:50.570 --> 01:20:54.950
+Matias Z: conjunto de oraciones. Los Chanks que nos traemos del rap
+
+
+722
+01:20:55.140 --> 01:21:04.510
+Matias Z: resultados de un juez de un juez como Ldm, 2 Estados del mundo. O sea, primero, la unidad que vamos a utilizar ¿Para qué, para machear.
+
+
+723
+01:21:05.110 --> 01:21:08.780
+Matias Z: cuando coinciden 2 de esas unidades.
+
+
+724
+01:21:09.430 --> 01:21:12.510
+Matias Z: El emparejamiento parece trivial, pero tampoco lo es.
+
+
+725
+01:21:13.290 --> 01:21:20.540
+Matias Z: Sí, puede ser semántico. Puede ser léxico por nombre.
+
+
+726
+01:21:21.040 --> 01:21:30.039
+Matias Z: Puede ser 1 a 1. Puede permitir o no repeticiones si es una lista. Si es una lista, tiene que estar ordenada o no. Es necesario que está ordenada.
+
+
+727
+01:21:31.590 --> 01:21:35.880
+Matias Z: Sí, vamos a ver que en llamadas azules es súper súper importante.
+
+
+728
+01:21:37.360 --> 01:21:42.829
+Matias Z: La tercera es: ¿qué hacemos cuando hay un denominador 0 vacío.
+
+
+729
+01:21:50.150 --> 01:21:53.720
+Matias Z: Lo acabamos de ver en la cuarta línea del slide anterior.
+
+
+730
+01:21:54.690 --> 01:21:55.860
+Matias Z: En
+
+
+731
+01:21:56.910 --> 01:22:06.769
+Matias Z: sucede dependiendo de si, por ejemplo, no se espera que llame ninguna herramienta y el agente efectivamente no lo llama ahí. Tenemos un denominador 0 y también en otros casos.
+
+
+732
+01:22:08.450 --> 01:22:14.050
+Matias Z: no los voy a enumerar, acá pero lo importante es el problema del 0 divido 0, hay que definirlo
+
+
+733
+01:22:14.180 --> 01:22:17.329
+Matias Z: dentro de ese formulario de la herramienta
+
+
+734
+01:22:17.950 --> 01:22:26.730
+Matias Z: y es fundamental. Eso también, de nuevo, parte de la ficha de la herramienta y es parte de la configuración de los enfermos de devaluaciones. Y la cuarta es la agregación.
+
+
+735
+01:22:28.860 --> 01:22:38.740
+Matias Z: Tenemos toda métrica que produce algún tipo de valor con cierta granularidad, sí puede ser por invocación.
+
+
+736
+01:22:39.010 --> 01:22:41.539
+Matias Z: Puede ser por turnos, puede ser por corrida.
+
+
+737
+01:22:42.530 --> 01:22:45.610
+Matias Z: pero lo importante es después, cómo hacemos para integrar eso?
+
+
+738
+01:22:46.860 --> 01:22:50.649
+Matias Z: Una vez más, se promedian, se cuentan, se toma el peor caso.
+
+
+739
+01:22:51.400 --> 01:22:56.350
+Matias Z: Eso, por supuesto, va a cambiar completamente los como leemos. Esa métrica.
+
+
+740
+01:22:57.870 --> 01:23:06.180
+Sebastian Langer: Perdón mati. Yo, la verdad que me me descontextualicé. Me puedes dar un ejemplo de esto por ahí un poco concreto.
+
+
+741
+01:23:07.380 --> 01:23:08.110
+Matias Z: Sí.
+
+
+742
+01:23:12.670 --> 01:23:13.700
+Matias Z: En
+
+
+743
+01:23:18.670 --> 01:23:35.420
+Matias Z: Imagínate que estamos evaluando llamadas herramientas y queremos calcular. Por ejemplo, ponele tool precisión.
+
+
+744
+01:23:35.910 --> 01:23:42.140
+Matias Z: Tu precisión sería la precisión aplicada a las llamadas no.
+
+
+745
+01:23:42.340 --> 01:23:44.770
+Sebastian Langer: O sea, llame a la herramienta correcta.
+
+
+746
+01:23:45.780 --> 01:23:52.600
+Matias Z: Tú, Claro, justamente yo lo iba a definir, no a la herramienta, sino a las herramientas.
+
+
+747
+01:23:53.550 --> 01:23:54.230
+Sebastian Langer: Bueno.
+
+
+748
+01:23:54.590 --> 01:24:01.989
+Matias Z: Entonces es importante porque porque por eso defino mi métrica de esta manera, no
+
+
+749
+01:24:02.870 --> 01:24:05.370
+Matias Z: en mi métrica de tu precisión.
+
+
+750
+01:24:05.900 --> 01:24:10.419
+Matias Z: Yo voy a definir que el orden de llamadas es importante.
+
+
+751
+01:24:10.860 --> 01:24:13.530
+Matias Z: Ahí estamos hablando de, de, por ejemplo, la unidad
+
+
+752
+01:24:13.780 --> 01:24:17.610
+Matias Z: es una lista ordenada sin repeticiones
+
+
+753
+01:24:17.980 --> 01:24:21.770
+Matias Z: y que no admite otros elementos que no sean los que yo estoy definiendo
+
+
+754
+01:24:23.630 --> 01:24:26.880
+Matias Z: eso en en una década, se configura también
+
+
+755
+01:24:27.710 --> 01:24:33.679
+Matias Z: sí porque pue digamos, no es lo mismo que la gente haya llamado a las herramientas que tenías que llamar.
+
+
+756
+01:24:34.520 --> 01:24:36.229
+Matias Z: pero en un orden distinto.
+
+
+757
+01:24:37.350 --> 01:24:43.350
+Matias Z: Eso puede ser una política de la compañía o haya llamado a las herramientas que tienes llamar. Pero además llamó a otra que no tenía que llamar.
+
+
+758
+01:24:47.270 --> 01:24:56.809
+Matias Z: No sé si me explico: la unidad es el objeto, el objeto de estudio, pero hay que definirlo con cierto nivel de riesgo, pues una lista de herramientas.
+
+
+759
+01:24:58.200 --> 01:25:01.650
+Matias Z: pero además se pueden repetir.
+
+
+760
+01:25:02.230 --> 01:25:08.699
+Matias Z: Puede haber otras incluidas eso, que se estudia Lo vas a ver ahora en detalle en el ejemplo.
+
+
+761
+01:25:08.700 --> 01:25:15.550
+Sebastian Langer: Sí, Sí, Sí, sí. Igual que te entendí un poquito mejor que ahora que explicaste el tema de del tu como ejemplo, digamos.
+
+
+762
+01:25:15.990 --> 01:25:16.930
+Sebastian Langer: Vale.
+
+
+763
+01:25:18.970 --> 01:25:23.779
+Matias Z: Buenísimo y el resto es más claro, no
+
+
+764
+01:25:27.770 --> 01:25:34.980
+Matias Z: en la agregación. Por ejemplo, cuando tenemos un algún fallo que puede ser catastrófico ahí.
+
+
+765
+01:25:35.530 --> 01:25:38.850
+Matias Z: Promediar no tendría absolutamente ningún sentido.
+
+
+766
+01:25:40.390 --> 01:25:47.390
+Matias Z: Volviendo al ejemplo médico, si nosotros dejamos pasar este que eso
+
+
+767
+01:25:48.500 --> 01:26:00.760
+Matias Z: hacemos mal algún diagnóstico ahí tenemos que ir siempre al peor caso. ¿no? Si tenemos un 95 por 100 de alquila, Así que en realidad deberíamos verificar qué pasa con con el 5 por 100 que está andando mal
+
+
+768
+01:26:01.340 --> 01:26:02.310
+Matias Z: en el
+
+
+769
+01:26:08.880 --> 01:26:09.840
+Matias Z: Okay?
+
+
+770
+01:26:16.020 --> 01:26:19.580
+Matias Z: Bueno, acá está un poco lo lo que te justamente te había comentado.
+
+
+771
+01:26:19.980 --> 01:26:27.579
+Matias Z: Esto es prácticamente es redundante esta S. L. E. D, porque explica un poco lo mismo, Visto desde el punto de vista de conjuntos
+
+
+772
+01:26:28.050 --> 01:26:29.010
+Matias Z: en
+
+
+773
+01:26:31.520 --> 01:26:42.419
+Matias Z: Fíjense que define el regault como la intersección entre esperadas y llamadas. La cardinalidad de eso desin intersección sobre la cardinalidad de las esperadas.
+
+
+774
+01:26:44.800 --> 01:26:49.979
+Matias Z: Más allá de eso, es básicamente si hizo todo lo que debía hacer versus
+
+
+775
+01:26:50.250 --> 01:26:55.860
+Matias Z: todo lo que hizo hacía falta. Esa sería como la la intuición de de precisión versus ricos.
+
+
+776
+01:26:56.140 --> 01:27:00.560
+Matias Z: No, no importa la definición en términos de conjuntos, está un poco de más.
+
+
+777
+01:27:01.280 --> 01:27:09.179
+Matias Z: Y y abajo está la ficha, que es un poco. Creo lo que Preguntabas Sebastian. Lo ponemos como ejemplo.
+
+
+778
+01:27:15.020 --> 01:27:22.520
+Matias Z: pero fíjate qué problema tiene? Tiene un problema importante en la definición. La unidad es el conjunto de nombres de herramientas.
+
+
+779
+01:27:26.770 --> 01:27:27.839
+Matias Z: Hola. ¿qué pasa?
+
+
+780
+01:27:28.240 --> 01:27:38.020
+Matias Z: ¿qué no ve esta métrica y lo que vamos a ver como patrones generales. Cada métrica tiene un punto 0. Esta métrica no ve si la Tur fue invocada con el
+
+
+781
+01:27:38.490 --> 01:27:40.110
+Matias Z: el parámetro. Correcto.
+
+
+782
+01:27:40.890 --> 01:27:46.960
+Matias Z: Sí, entonces cada métrica va a tener su problemática, su punto ciego, su
+
+
+783
+01:27:47.830 --> 01:27:51.450
+Matias Z: hueco metodológico y la vamos a completar con una métrica nueva.
+
+
+784
+01:27:54.690 --> 01:28:00.239
+Matias Z: Se entiende entonces abajo queda la ficha, que es la que vamos a ver en el resto de las de las métricas en general.
+
+
+785
+01:28:01.120 --> 01:28:02.609
+Matias Z: ¿qué no ve, además.
+
+
+786
+01:28:03.390 --> 01:28:12.470
+Matias Z: orden y repeticiones si nosotros definimos. Por eso la definición de la unidad es importante. Definimos la unidad como punto de nombres de herramientas. ¿qué no estamos viendo?
+
+
+787
+01:28:12.660 --> 01:28:19.980
+Matias Z: Es un conjunto? ¿qué perdemos en conjunto y perdemos en general, dependiendo de la definición del conjunto, dependemos del orden
+
+
+788
+01:28:20.140 --> 01:28:23.269
+Matias Z: conjuntos. No suelen estar ordenados y las repeticiones.
+
+
+789
+01:28:23.610 --> 01:28:29.480
+Matias Z: Sí, en general, si se repite el ítem en conjunto? Lo No, no lo incorpora.
+
+
+790
+01:28:29.600 --> 01:28:33.379
+Matias Z: Y eso puede ser importante porque tal vez la política de nuestra compañía
+
+
+791
+01:28:33.610 --> 01:28:38.779
+Matias Z: indica que la gente tiene que llamar en determinado orden sin repetir
+
+
+792
+01:28:41.350 --> 01:28:42.880
+Matias Z: y sin llamar a otras herramientas.
+
+
+793
+01:28:43.630 --> 01:28:51.179
+Matias Z: Ok, avanzo que aparece acá un poco lo mismo, pero aplicado a los parámetros
+
+
+794
+01:28:52.880 --> 01:28:54.640
+Matias Z: de las islas y de los paranomas.
+
+
+795
+01:28:54.780 --> 01:28:56.589
+Matias Z: se entiende un poco la lógica.
+
+
+796
+01:28:56.980 --> 01:28:59.030
+Matias Z: Miren un cachito, la ficha de abajo.
+
+
+797
+01:29:13.840 --> 01:29:17.460
+Matias Z: porque la idea es para cada métrica definir una ficha como la de abajo.
+
+
+798
+01:29:22.580 --> 01:29:31.679
+Matias Z: En este caso, tenemos llamadas correctas a herramientas, pero con un parámetro que es incorrecto, que es la suma total de de reembolso de los 2 ítems.
+
+
+799
+01:29:32.410 --> 01:29:35.140
+Matias Z: En este caso sí se promedia. ¿sí?
+
+
+800
+01:29:36.940 --> 01:29:40.999
+Matias Z: Y así es como verificamos cuál es el equilibrio. Con respecto a las llamadas
+
+
+801
+01:29:41.430 --> 01:29:45.399
+Matias Z: de parámetros, 2 cosas: normalmente hay que normalizar los números.
+
+
+802
+01:29:46.140 --> 01:29:48.079
+Matias Z: Un detalle técnico.
+
+
+803
+01:29:52.070 --> 01:29:58.000
+Matias Z: pero no responde algo importante si es que hizo algo que no debía hacer.
+
+
+804
+01:29:59.890 --> 01:30:02.739
+Matias Z: Y esto no es un detalle menor. Una vez más.
+
+
+805
+01:30:02.870 --> 01:30:11.670
+Matias Z: este responde. Hizo lo que debías y llamó al atún, llamó con el con argumento, pero hizo algo de más. Ok, eso es clave.
+
+
+806
+01:30:12.780 --> 01:30:15.569
+Matias Z: Vamos a ver cómo se mide. Y para eso sí, necesitamos un juez.
+
+
+807
+01:30:16.210 --> 01:30:30.680
+Matias Z: Bien, La tercer método importante, la más sencilla. Estamos viendo las primeras métricas que no requieren un juez. No vamos a ver métricas más interesantes. El ferry con el fe rico tiene que ver con cómo se puede imaginar. Normalmente, después de la tarea, lo que hacemos es
+
+
+808
+01:30:30.940 --> 01:30:33.530
+Matias Z: dar una respuesta al cliente.
+
+
+809
+01:30:33.640 --> 01:30:39.250
+Matias Z: Y esa respuesta es conveniente medirla, no medirla con diferentes tipos de métrica.
+
+
+810
+01:30:41.630 --> 01:30:52.640
+Sebastian Langer: Sí. Mati. Perdón. Yo sigo con las preguntas. Vos Esta granularidad y sofisticación en la medi en la en la
+
+
+811
+01:30:52.800 --> 01:30:58.159
+Sebastian Langer: en la medición de tus agentes. Evidentemente, requiere unas un un
+
+
+812
+01:30:58.570 --> 01:31:03.879
+Sebastian Langer: unas herramientas de soporte que manejen todos los datos que
+
+
+813
+01:31:04.460 --> 01:31:12.110
+Sebastian Langer: que corresponden. Por ejemplo, va, no sé post tenés un ejemplo de de de como
+
+
+814
+01:31:13.120 --> 01:31:20.820
+Sebastian Langer: de cómo se puede hacer esto sin que sea una enormidad de trabajo en.
+
+
+815
+01:31:20.940 --> 01:31:24.240
+Sebastian Langer: no sé ponerle a D. K. Tiene como sus tableros, o
+
+
+816
+01:31:26.610 --> 01:31:33.260
+Sebastian Langer: sabes, de alguna herramienta, Por ejemplo, nosotros estamos evaluando Watson X Orquestrain tal vez.
+
+
+817
+01:31:33.260 --> 01:31:36.200
+Matias Z: Sí. La verdad es que sí en.
+
+
+818
+01:31:36.750 --> 01:31:47.850
+Sebastian Langer: Será será que para eso es que 1 tiene esas herramientas de gobernanza y de y de medición, pero no sé cuál cuál si vos vas a si vos vas a co recomendar alguna o vas a poner algún ejemplo.
+
+
+819
+01:31:48.920 --> 01:32:06.289
+Matias Z: Sí, Sí, absolutamente. Sí, Esto normalmente recomiendan. Creo que dijimos al principio: recomiendan empezar con ejemplos escritos a mano y después seguir como pasos más sofisticados, pero no no es tan complejo como parece. Vas a ver.
+
+
+820
+01:32:06.460 --> 01:32:13.430
+Matias Z: De hecho, las demas vamos a mostrar todas las métricas con diversos distintos.
+
+
+821
+01:32:13.430 --> 01:32:20.620
+Sebastian Langer: No, no lo veo complejo. Lo veo trabajoso, pero si hay una simplificación, como me imagino que puede haberla. Está bueno.
+
+
+822
+01:32:24.300 --> 01:32:28.109
+Matias Z: Sí, Sí, no, no, no es tan a ver.
+
+
+823
+01:32:29.560 --> 01:32:40.269
+Matias Z: Sí, Sí, requiere cierta, o sea, ser meticuloso. Por supuesto, saber lo que está pasando. Pero después escribir a mano no es necesario hacerlo
+
+
+824
+01:32:40.700 --> 01:32:47.190
+Matias Z: por lo menos una vez que tienes un conjunto de casos este validados en
+
+
+825
+01:32:48.020 --> 01:32:51.639
+Matias Z: y efectivamente, lo lo más trabajoso tal vez es mantenerlo actualizado, no
+
+
+826
+01:32:51.900 --> 01:32:55.649
+Matias Z: ahora, en en la demo, seguramente vas a ver que no es tan complicado.
+
+
+827
+01:33:00.510 --> 01:33:01.240
+Sebastian Langer: Cosa.
+
+
+828
+01:33:02.210 --> 01:33:12.859
+Matias Z: Bueno, el el F, el Facebook, básicamente mira el mensaje que el cliente responde, que la gente responde. No sé si alguien está midiendo esto entre sus agentes.
+
+
+829
+01:33:13.480 --> 01:33:18.949
+Matias Z: es la métrica más sencilla para esto. Básicamente, en este caso va a buscar
+
+
+830
+01:33:19.510 --> 01:33:28.200
+Matias Z: palabras clave en la respuesta, pero, por supuesto, aritméticas más elaboradas en
+
+
+831
+01:33:28.300 --> 01:33:31.069
+Matias Z: es una métrica tipo ricol. En ese caso.
+
+
+832
+01:33:31.980 --> 01:33:34.869
+Matias Z: o sea, la unidad son las frases esperadas
+
+
+833
+01:33:35.210 --> 01:33:37.680
+Matias Z: y se preguntan cuántas de ellas están presentes.
+
+
+834
+01:33:39.000 --> 01:33:39.810
+Matias Z: Sí,
+
+
+835
+01:33:46.490 --> 01:33:52.419
+Matias Z: se se entiende. Básicamente estamos tratando de asegurarnos que la respuesta de la gente sea
+
+
+836
+01:33:52.850 --> 01:33:56.279
+Matias Z: o tenga determinada información. Ahora.
+
+
+837
+01:33:56.440 --> 01:34:00.750
+Matias Z: ¿cuál es el problema? ¿qué es lo que no ve que la gente puede dar una respuesta.
+
+
+838
+01:34:01.040 --> 01:34:08.230
+Matias Z: Pero la presencia de esa frase en la respuesta no necesariamente es una acción que efectivamente toma la gente.
+
+
+839
+01:34:08.430 --> 01:34:11.429
+Matias Z: o sea, presencia, y la respuesta no es necesariamente la verdad.
+
+
+840
+01:34:13.330 --> 01:34:21.130
+Matias Z: Sí, ver el patrón. Cada vez que vemos una métrica, encontramos un punto ciego nuevo problema nuevo, este.
+
+
+841
+01:34:21.900 --> 01:34:23.620
+Mariano Mondani: Hay Matis de con respecto.
+
+
+842
+01:34:23.980 --> 01:34:24.360
+Matias Z: Sí.
+
+
+843
+01:34:24.360 --> 01:34:32.970
+Mariano Mondani: Armar esta métrica. No es medio difícil, digamos, pegarle a las palabras, porque números puede ser, pero con
+
+
+844
+01:34:33.060 --> 01:34:48.320
+Mariano Mondani: con otras palabras que pueden tener el mismo significado y que el e mail elige generarlas y va a tener el mismo significado. Va a ser igual de verdad, pero es difícil pegarle en esa comparación o en ese chequeo de si está presente o no puede pasar.
+
+
+845
+01:34:50.050 --> 01:34:53.759
+Matias Z: Totalmente. De hecho, estas, como es la más básica de todas.
+
+
+846
+01:34:54.280 --> 01:35:02.930
+Matias Z: Este Estamos usando por ahora métricas que no usen modelos, pero sí efectivamente, si tenés paráfrasis, este esto no lo ves.
+
+
+847
+01:35:03.110 --> 01:35:09.600
+Matias Z: Así que ese es el también una de las debilidades del Freix fricaul en
+
+
+848
+01:35:10.390 --> 01:35:19.570
+Matias Z: así que viene. El comentario tiene ese problema y, además, que digamos no no valida que la respuesta S se esté
+
+
+849
+01:35:19.850 --> 01:35:22.670
+Matias Z: este sustentada con una acción real.
+
+
+850
+01:35:23.820 --> 01:35:36.810
+Matias Z: Entonces, Okay, hasta acá vimos métricas básicas, pero justamente acá es donde tenemos y
+
+
+851
+01:35:37.040 --> 01:35:41.319
+Matias Z: la primera frontera, si quieren, acabamos como cerrando. La primera sección, que son las métricas
+
+
+852
+01:35:41.470 --> 01:35:45.310
+Matias Z: que se pueden calcular de manera algorítmica.
+
+
+853
+01:35:45.460 --> 01:35:55.329
+Matias Z: A partir de acá esto, que no se ve efectivamente necesita otro modelo. Así que ahora lo que vamos a hacer es pasar a la familia de métricas que usan otros módulos.
+
+
+854
+01:36:01.350 --> 01:36:19.310
+Matias Z: Antes de eso, les dejo esta slide para que la susmenen. Es también un detalle metodológico, pero importante Si van a usar Adeka en particular, tienen que con configurar cuál es el comportamiento esperado cuando el denominador es 0.
+
+
+855
+01:36:19.710 --> 01:36:28.190
+Matias Z: Sí, Recuerden, era 0, por ejemplo, cuando no esperábamos ninguna llamada y no realizó ninguna llamada en
+
+
+856
+01:36:29.720 --> 01:36:33.269
+Matias Z: esto. Se configura con estos nombres que aparecen acá arriba.
+
+
+857
+01:36:33.590 --> 01:36:42.779
+Matias Z: Es importante el nombre literal, no, pero sepan que este tipo de configuración suele estar en los frameworks de evaluaciones.
+
+
+858
+01:36:43.180 --> 01:36:43.960
+Matias Z: Sí,
+
+
+859
+01:36:49.440 --> 01:37:01.680
+Matias Z: Bien, abajo van a encontrar un recuadro donde un estudio del 25, del 20 25. Justamente encontró que el el benchmark que les mencioné antes, el tao ben
+
+
+860
+01:37:01.960 --> 01:37:05.290
+Matias Z: puede contar respuestas vacías como exitosas.
+
+
+861
+01:37:06.910 --> 01:37:09.829
+Matias Z: Este tipo de errores es súper común
+
+
+862
+01:37:11.790 --> 01:37:14.970
+Matias Z: súper comunes, es el error principal. Les diría
+
+
+863
+01:37:19.070 --> 01:37:27.470
+Matias Z: bien, Y para cerrar este la un poco la respuesta de si tuvo éxito. Bueno, depende que miremos
+
+
+864
+01:37:29.140 --> 01:37:32.389
+Matias Z: si miramos la trayectoria o si miramos el resultado final.
+
+
+865
+01:37:34.260 --> 01:37:37.120
+Matias Z: Si miramos la trayectoria. Tenemos estas 4 métricas
+
+
+866
+01:37:37.450 --> 01:37:39.880
+Matias Z: que nos va a hablar. De qué herramientas llamó,
+
+
+867
+01:37:40.210 --> 01:37:43.199
+Matias Z: ¿Con qué parámetros, qué frases usó? La respuesta?
+
+
+868
+01:37:44.410 --> 01:37:47.359
+Matias Z: Tienen un mejor. Ese coro debería alcanzar un umbral
+
+
+869
+01:37:48.120 --> 01:37:57.689
+Matias Z: y, en general, usamos una conjunción de estos cores. Todos deberían alcanzar el umbral. No podemos permitir que 1 de estos
+
+
+870
+01:37:58.030 --> 01:38:02.550
+Matias Z: caiga por debajo de su umbral, sino la evaluación no pasa como sucede
+
+
+871
+01:38:05.980 --> 01:38:15.510
+Matias Z: o por resultado que tiene que ver con verificar el estado del mundo ideal para ese caso, versus cómo quedó el mundo después de la actuación de la gente.
+
+
+872
+01:38:16.550 --> 01:38:20.460
+Matias Z: Son las 2 sondas que mencionamos al comienzo.
+
+
+873
+01:38:21.040 --> 01:38:24.149
+Matias Z: Sí, son las 2 formas de evaluar a la gente.
+
+
+874
+01:38:26.100 --> 01:38:29.949
+Matias Z: Es un recorrido rápido para introducir el tema.
+
+
+875
+01:38:30.110 --> 01:38:32.719
+Matias Z: pero sepan que las 2 son
+
+
+876
+01:38:34.300 --> 01:38:38.460
+Matias Z: prácticas no opcionales. Cuando hacemos evaluaciones.
+
+
+877
+01:38:40.620 --> 01:38:50.750
+Matias Z: incluso muchos dominios, con auditorías. Un poquito más rigurosos nos van a pedir no solamente el resultado
+
+
+878
+01:38:51.110 --> 01:38:56.549
+Matias Z: final de nuestras evaluaciones, sino los resultados de las trayectorias.
+
+
+879
+01:38:57.350 --> 01:39:04.420
+Matias Z: Sí, por eso es importante tener estos datos, guardarlos correctamente, versionarlos correctamente.
+
+
+880
+01:39:06.680 --> 01:39:07.980
+Matias Z: Tomar esas.
+
+
+881
+01:39:07.980 --> 01:39:09.890
+Gustavo Narcisi: Mati, te puedo hacer una pregunta?
+
+
+882
+01:39:10.050 --> 01:39:11.239
+Matias Z: Sí, Sí, por favor.
+
+
+883
+01:39:11.240 --> 01:39:18.150
+Gustavo Narcisi: Esto sería como un poco, como también diagnósticos, para que nosotros podamos entender por donde está la falla, no porque si
+
+
+884
+01:39:18.290 --> 01:39:23.060
+Gustavo Narcisi: si hiciéramos como un test en conjunto de los 4 para el caso de éxito.
+
+
+885
+01:39:23.380 --> 01:39:27.929
+Gustavo Narcisi: Porque recién me estaba preguntando: y por qué mido solo a ver si el parámetro fue el correcto y no mido.
+
+
+886
+01:39:28.120 --> 01:39:31.979
+Gustavo Narcisi: Si llamó la astucia, el parámetro fue correcto. Si hizo lo que tenía que hacer
+
+
+887
+01:39:32.240 --> 01:39:35.510
+Gustavo Narcisi: es un poco para eso, ¿no? O o es por otra cosa.
+
+
+888
+01:39:38.400 --> 01:39:46.820
+Matias Z: En bueno, tiene múltiples propósitos. Uno de ellos, efectivamente es darnos indicios de dónde puede estar fallando la gente.
+
+
+889
+01:39:47.140 --> 01:39:58.020
+Matias Z: Definitivamente, por ejemplo, si nuestra gente de manera sistemática llama alguna herramienta de más o decide no llamar una herramienta y alucir. Y y esto, una vez más.
+
+
+890
+01:39:58.960 --> 01:40:01.019
+Matias Z: se ve en la práctica a diario.
+
+
+891
+01:40:02.800 --> 01:40:03.810
+Matias Z: Mhm.
+
+
+892
+01:40:04.750 --> 01:40:08.129
+Matias Z: Que los agentes te sigan no llaman de acuerdo.
+
+
+893
+01:40:08.130 --> 01:40:08.700
+Juan Franco Echeverria: Otra.
+
+
+894
+01:40:08.910 --> 01:40:09.400
+Matias Z: Sí.
+
+
+895
+01:40:09.400 --> 01:40:13.110
+Juan Franco Echeverria: Podemos tener ese tipo de errores en las gentes que no usan el L, M e.
+
+
+896
+01:40:16.320 --> 01:40:23.910
+Matias Z: Agentes que no usan el L. D. M: Bueno, por ejemplo.
+
+
+897
+01:40:23.910 --> 01:40:29.769
+Juan Franco Echeverria: Podemos tener inicialmente una vez que lo solucionamos, porque el flujo es determinístico.
+
+
+898
+01:40:30.860 --> 01:40:32.610
+Juan Franco Echeverria: No los deberíamos tener.
+
+
+899
+01:40:35.330 --> 01:40:44.389
+Matias Z: Bueno, ahí s Si si pensás en un World Flow que que no tenga decisiones de a qué tú invocar abiertas de un modelo claro. Si tenés un work flow
+
+
+900
+01:40:44.540 --> 01:40:51.080
+Matias Z: ya escrito, en realidad te aseguras es una de las maneras de forzar la llamada de esas herramientas.
+
+
+901
+01:40:51.260 --> 01:40:58.389
+Matias Z: Y solo de esas herramientas, el work flow sería una manera, otra forma que se utiliza normalmente
+
+
+902
+01:41:00.350 --> 01:41:12.669
+Matias Z: parche rápido. A mí no me no me no me agrada mucho, pero lo veo bastante es reforzar el sistema Prom. Por ejemplo, cuando tenés este baja precisión de Pool Calling. Por ejemplo.
+
+
+903
+01:41:12.980 --> 01:41:22.210
+Matias Z: después podemos charlar de cómo mitigar estos este tipo de comportamientos erráticos en
+
+
+904
+01:41:23.720 --> 01:41:27.539
+Matias Z: pero si digamos si es determinista el flujo.
+
+
+905
+01:41:28.310 --> 01:41:30.720
+Matias Z: Prácticamente no tendría sentido medir
+
+
+906
+01:41:30.920 --> 01:41:34.509
+Matias Z: te tenés la seguridad de que va a llamar a las herramientas que que que programaste. No
+
+
+907
+01:41:34.770 --> 01:41:37.680
+Matias Z: no sé si entendí bien la pregunta.
+
+
+908
+01:41:38.350 --> 01:41:40.249
+Juan Franco Echeverria: Sí, Sí, Esa es la pregunta.
+
+
+909
+01:41:40.700 --> 01:41:49.599
+Matias Z: Sí, perfecto. Me dice otras cosas. Igual me dice otras cosas Bien, Entonces
+
+
+910
+01:41:51.250 --> 01:41:56.170
+Matias Z: tenemos los las 4 corridas con algunos errores. Lo que
+
+
+911
+01:41:56.340 --> 01:42:02.869
+Matias Z: me parece que es importante esta tabla demostrar es cada fila es una corrida distinta, como pueden ver.
+
+
+912
+01:42:03.090 --> 01:42:09.959
+Matias Z: y Acá tenemos las columnas con el éxito por trayectoria o el éxito por el Estado final.
+
+
+913
+01:42:10.340 --> 01:42:15.040
+Matias Z: como para ir empezando entender qué es el 92 por 100 del principio.
+
+
+914
+01:42:17.470 --> 01:42:20.479
+Matias Z: Fíjese que normalmente se complementan.
+
+
+915
+01:42:21.190 --> 01:42:27.679
+Matias Z: Es súper común que una espacio, todas las evaluaciones y la otra no super común es lo más común.
+
+
+916
+01:42:27.890 --> 01:42:31.420
+Matias Z: Y lo que estamos buscando es la cuarta columna.
+
+
+917
+01:42:40.470 --> 01:42:52.279
+Matias Z: Entonces, bueno, acá perdón, les dejo un comentario fuera de orden. En realidad.
+
+
+918
+01:42:52.470 --> 01:43:06.509
+Matias Z: es un comentario sobre Hdk, 2 que no debería estar, acá pero me quedó para el que quiera probar y justamente con respecto a cómo definimos este con cierto rigor, que es una lista de llamadas herramientas.
+
+
+919
+01:43:06.740 --> 01:43:11.310
+Matias Z: Ha llegado 12. Te permite definir, bueno, justamente como quiero que sea esa lista
+
+
+920
+01:43:11.440 --> 01:43:14.200
+Matias Z: más importante de lo que parece.
+
+
+921
+01:43:14.780 --> 01:43:26.040
+Matias Z: Básicamente le decimos si queremos que sea una lista exacta la que estamos definiendo si tiene que estar en orden esas llamadas herramientas, si pueden estar en cualquier orden, si permite repeticiones, eso es
+
+
+922
+01:43:26.470 --> 01:43:32.860
+Matias Z: básicamente específico de la década. Dos: Bien, a ver si.
+
+
+923
+01:43:33.030 --> 01:43:42.740
+Valentina Da Silva: Hay Matis. Tengo una pregunta con eso que dijiste recién, o sea que vos le puedes y decirle como el orden que los tiene que llamar. Le puedes especificar eso para que sea determista.
+
+
+924
+01:43:44.610 --> 01:43:50.880
+Matias Z: Bien la Albacé rápido porque pensé que no me mueble, pero bien bien bien, la de.
+
+
+925
+01:43:51.130 --> 01:43:56.090
+Matias Z: efectivamente, nosotros en S tengo 2
+
+
+926
+01:43:56.210 --> 01:44:05.940
+Matias Z: como versiones de los de los Demos en una lo programé medio como a mano y en la otra. Lo sé, acá Y la verdad que simplifica un montón.
+
+
+927
+01:44:06.290 --> 01:44:11.880
+Matias Z: Si le pasas la lista y puedes este indicarle cómo se define esa lista.
+
+
+928
+01:44:13.000 --> 01:44:16.639
+Matias Z: A veces el orden del llamado de las herramientas. No nos importa tanto
+
+
+929
+01:44:19.000 --> 01:44:25.460
+Matias Z: que sea exacto, significa que no debería llamar a ninguna otra herramienta que esté fuera de la lista.
+
+
+930
+01:44:25.890 --> 01:44:28.320
+Matias Z: A veces la trayectoria es correcta, incluso si
+
+
+931
+01:44:28.440 --> 01:44:34.780
+Matias Z: cumplió con las tools que están en la lista, pero llamó alguna otra, y eso no nos importa tanto.
+
+
+932
+01:44:35.070 --> 01:44:36.890
+Matias Z: Depende del problema.
+
+
+933
+01:44:39.480 --> 01:44:41.600
+Matias Z: No sé si me expresé correctamente.
+
+
+934
+01:44:42.370 --> 01:44:43.430
+Valentina Da Silva: Sí, Sí. Gracias.
+
+
+935
+01:44:44.030 --> 01:44:51.390
+Matias Z: Por favor, tal vez con los ejemplos que me saca, puede servir.
+
+
+936
+01:44:53.060 --> 01:44:57.050
+Matias Z: Ok. Quiero llegar a la demo así. ¿ven algo corriendo.
+
+
+937
+01:45:00.870 --> 01:45:03.709
+Matias Z: Esto es un poco lo que ya mencionamos.
+
+
+938
+01:45:04.610 --> 01:45:06.479
+Matias Z: Como agregamos las cosas.
+
+
+939
+01:45:08.320 --> 01:45:14.789
+Matias Z: Se lo dejo para que lo miren, es súper sencillo en algunos casos, si queremos ver el peor
+
+
+940
+01:45:15.190 --> 01:45:21.839
+Matias Z: comportamiento, Peor de los casos. Así que la sumatoria, la alteración por promedios no nos sirven.
+
+
+941
+01:45:21.970 --> 01:45:22.650
+Matias Z: Sí.
+
+
+942
+01:45:25.250 --> 01:45:26.100
+Matias Z: Genial.
+
+
+943
+01:45:27.780 --> 01:45:28.930
+Matias Z: Bien.
+
+
+944
+01:45:34.000 --> 01:45:36.360
+Matias Z: ¿qué manera de hablar? Nunca hablé tanto ni.
+
+
+945
+01:45:36.960 --> 01:45:41.620
+Sebastian Langer: Es que es, es, es muy primero, que no es un tema fácil.
+
+
+946
+01:45:41.930 --> 01:45:45.979
+Sebastian Langer: Y, segundo, que tienen es mucho material, mucho material. Ese
+
+
+947
+01:45:49.090 --> 01:45:53.020
+Sebastian Langer: está, pero es un flash. Eso es un montón de material.
+
+
+948
+01:45:53.020 --> 01:46:00.360
+Matias Z: Primarias da igual. Estaba pensado para para los encuentros, definitivamente. Ahora que estamos viendo acá
+
+
+949
+01:46:00.790 --> 01:46:05.550
+Matias Z: este, si ven a la izquierda por fila.
+
+
+950
+01:46:05.970 --> 01:46:15.359
+Matias Z: Encuentran básicamente las métricas sencillas que vimos hasta ahora, sí y algunas otras
+
+
+951
+01:46:20.720 --> 01:46:22.020
+Matias Z: en.
+
+
+952
+01:46:22.550 --> 01:46:24.729
+Sebastian Langer: En un dashboard, por ejemplo.
+
+
+953
+01:46:26.980 --> 01:46:35.120
+Matias Z: Por ejemplo. Sí, en general, cuando empezás a automatizar y empiezas a crecer tu tu conjunto de de evaluaciones.
+
+
+954
+01:46:35.670 --> 01:46:38.790
+Matias Z: sí tiene más o menos sentido ver esto.
+
+
+955
+01:46:39.020 --> 01:46:47.990
+Matias Z: En acá. Aparece, por ejemplo, la trayectoria, con las diferentes configuraciones de dedicado.
+
+
+956
+01:46:48.180 --> 01:46:52.740
+Matias Z: aparece una métrica que no vimos todavía, pero que la vamos a ver más adelante.
+
+
+957
+01:46:53.480 --> 01:46:57.310
+Matias Z: Son Rush y Bleu, por ahí las conocen.
+
+
+958
+01:46:59.530 --> 01:47:13.130
+Matias Z: y algunas métricas más que son el estado final del mundo. Te podemos, como se ve eso llamadas irreversibles. Y acá hay una conjunción de llamada con él de 3 Estados. Este que que son
+
+
+959
+01:47:14.000 --> 01:47:22.190
+Matias Z: para esta métrica, son fundamentales, es el Estado final. Las frases de la respuesta y las llamadas a las tuyas y las suyas.
+
+
+960
+01:47:23.900 --> 01:47:27.130
+Matias Z: Ok. Esto es una materia de confusión, ¿verdad?
+
+
+961
+01:47:27.890 --> 01:47:28.930
+Matias Z: En
+
+
+962
+01:47:33.380 --> 01:47:49.159
+Matias Z: doy algunas pistas arriba van a ver en color verde y rojo para cada una de las corridas son 11 corridas. Son 11 columnas 11 corridas. El gran triunfo está como codificado con el color del nombre de la corrida de R. Uno, R. Once.
+
+
+963
+01:47:50.270 --> 01:47:54.209
+Matias Z: Y lo que ven acá son para cada una de las métricas que definimos
+
+
+964
+01:47:54.850 --> 01:47:59.100
+Matias Z: si hay un falso acierto o un falso rechazo.
+
+
+965
+01:48:00.840 --> 01:48:02.450
+Matias Z: Sí.
+
+
+966
+01:48:02.450 --> 01:48:07.609
+Gustavo Narcisi: Corría es como el mismo inputs, o son 11 test distintos.
+
+
+967
+01:48:08.350 --> 01:48:11.660
+Matias Z: Excelente pregunta. ¿vamos a a entrar en detalle
+
+
+968
+01:48:19.650 --> 01:48:28.949
+Matias Z: mientras voy abriendo alguna duda sobre la matriz que están viendo de nuevo matriz de confusión. Los errores
+
+
+969
+01:48:29.420 --> 01:48:35.350
+Matias Z: son básicamente la sumatoria de falsos aciertos o falsos rechazos ¿no?
+
+
+970
+01:48:36.360 --> 01:48:41.279
+Matias Z: Y y la el gran todos esta
+
+
+971
+01:48:41.450 --> 01:48:44.659
+Matias Z: de nuevo codificado con el color en el nombre de la corrida.
+
+
+972
+01:48:45.250 --> 01:48:48.629
+Matias Z: Esto es un humano que dijo si es de 2, es aceptable o no.
+
+
+973
+01:48:49.610 --> 01:48:52.569
+Matias Z: Por ejemplo, en este caso, en esta corrida
+
+
+974
+01:48:52.730 --> 01:48:54.869
+Matias Z: Tul Ricot nos dio un fan social.
+
+
+975
+01:48:56.070 --> 01:48:58.230
+Matias Z: y los motores de errores los vemos. Acá.
+
+
+976
+01:48:59.740 --> 01:49:04.760
+Matias Z: Déjenme que cambia rápido mientras miran y preguntan.
+
+
+977
+01:49:14.730 --> 01:49:15.770
+Matias Z: bien.
+
+
+978
+01:49:23.170 --> 01:49:24.160
+Matias Z: acá estamos.
+
+
+979
+01:49:24.860 --> 01:49:27.520
+Matias Z: No sé si mostrarles ahora el código, pero
+
+
+980
+01:49:27.790 --> 01:49:36.940
+Matias Z: hacemos una corridita, y después, si tenemos tiempo para el vuelo, a ver la frase de por ahí para llevarnos de esta matriz es
+
+
+981
+01:49:37.080 --> 01:49:41.280
+Matias Z: ninguna métrica sola. Va a acertar a las 11 corridas.
+
+
+982
+01:49:41.430 --> 01:49:43.159
+Matias Z: En general, es lo que sucede. No
+
+
+983
+01:49:43.760 --> 01:49:46.970
+Matias Z: tenemos errores en todas las métricas para todas las corridas.
+
+
+984
+01:49:49.470 --> 01:50:00.569
+Matias Z: o sea que la combinación es fundamental, digamos, es la la complementariedad entre estas métricas es hace que sea indispensable utilizarlas
+
+
+985
+01:50:00.680 --> 01:50:04.290
+Matias Z: a todas o casi todas en nuestro Pibeland.
+
+
+986
+01:50:07.900 --> 01:50:10.549
+Matias Z: Y si no hay preguntas, voy abriendo.
+
+
+987
+01:50:17.500 --> 01:50:18.640
+Matias Z: Me lo dejé.
+
+
+988
+01:50:20.900 --> 01:50:26.280
+Matias Z: ¿a qué hay descurridos en bien
+
+
+989
+01:50:29.280 --> 01:50:30.180
+Matias Z: a ver
+
+
+990
+01:50:36.000 --> 01:50:45.559
+Matias Z: Okay, Primero, a ver si puedo abrir el Código
+
+
+991
+01:50:49.750 --> 01:50:52.739
+Matias Z: y después, déjenme recordar cuál era.
+
+
+992
+01:50:53.750 --> 01:50:58.510
+Matias Z: Dijimos que tenemos 3. Demos. El primer demo es el que genera esa matriz.
+
+
+993
+01:51:00.660 --> 01:51:02.030
+Matias Z: Ahí lo recordemos.
+
+
+994
+01:51:09.850 --> 01:51:14.500
+Matias Z: Ahora, la pregunta es: ¿cómo leemos esto? Bueno, un poco este
+
+
+995
+01:51:15.590 --> 01:51:19.940
+Matias Z: estuvimos viendo como se entendía esta materia de confusión.
+
+
+996
+01:51:23.160 --> 01:51:25.240
+Matias Z: si me siguen, venimos bien.
+
+
+997
+01:51:27.390 --> 01:51:29.870
+Matias Z: Sí, además a ver.
+
+
+998
+01:51:32.350 --> 01:51:33.799
+Sebastian Langer: Sí se ve, se ve.
+
+
+999
+01:51:34.680 --> 01:51:35.650
+Matias Z: Genial. ¿por qué?
+
+
+1000
+01:51:35.650 --> 01:51:39.890
+Sebastian Langer: Entonces ahí en.
+
+
+1001
+01:51:43.120 --> 01:51:43.650
+Matias Z: Un total.
+
+
+1002
+01:51:43.650 --> 01:51:46.739
+Sebastian Langer: Corriendo? ¿qué co ¿Qué ejecutaste un scrip.
+
+
+1003
+01:51:47.810 --> 01:51:49.090
+Matias Z: Sí. Correcto.
+
+
+1004
+01:51:50.320 --> 01:51:52.299
+Matias Z: Demos 1 zoológico y.
+
+
+1005
+01:51:52.300 --> 01:51:52.730
+Sebastian Langer: Hombre de.
+
+
+1006
+01:51:52.730 --> 01:51:53.110
+Matias Z: En un.
+
+
+1007
+01:51:53.110 --> 01:51:53.660
+Sebastian Langer: Claro.
+
+
+1008
+01:51:56.290 --> 01:51:59.499
+Matias Z: Sí, estoy hablando de inmunoso.
+
+
+1009
+01:51:59.750 --> 01:52:03.080
+Matias Z: Lo que hace básicamente es utilizar. Fíjate.
+
+
+1010
+01:52:04.030 --> 01:52:08.210
+Matias Z: Te traigo que te digo, lo muestro rápido, No.
+
+
+1011
+01:52:09.350 --> 01:52:13.829
+Matias Z: no nos detengamos mucho más, pero sí tal vez entender de donde saca el enfo.
+
+
+1012
+01:52:15.620 --> 01:52:21.759
+Matias Z: las corridas son estas, que son son corridas, guionadas donde lo que
+
+
+1013
+01:52:23.370 --> 01:52:29.490
+Matias Z: hacemos básicamente es darle una tarea, una variante de una tarea
+
+
+1014
+01:52:30.490 --> 01:52:36.309
+Matias Z: y especificar lo que lo que esperamos de esa tarea no son estas 11.
+
+
+1015
+01:52:37.220 --> 01:52:50.620
+Matias Z: Sí, estas son las 11 corridas que estamos mencionando y después hay una función, medir que lo que hace es justamente medir para todas las este métricas que implementamos Son cuentas sencillas. Y en función de eso.
+
+
+1016
+01:52:51.600 --> 01:52:59.560
+Matias Z: y utilizando al alguna mhm umbral que decidimos en este caso en general, es 1.
+
+
+1017
+01:53:00.070 --> 01:53:03.610
+Matias Z: Sí, muestra. Este es el script que llamé.
+
+
+1018
+01:53:05.650 --> 01:53:07.179
+Matias Z: Se muestra esa lista.
+
+
+1019
+01:53:08.080 --> 01:53:12.280
+Matias Z: Sí, más o menos se entiende el código. Yo creo que lo pueden.
+
+
+1020
+01:53:12.490 --> 01:53:17.280
+Matias Z: Así que tranquilos, ya está publicado por si alguien quiere verificado
+
+
+1021
+01:53:20.220 --> 01:53:25.620
+Matias Z: bien y está separado como en como en etapas, para que vean la salida
+
+
+1022
+01:53:26.170 --> 01:53:32.850
+Matias Z: una vez más. No sé si es interesante ahora la corrida, pero para que sepan que esos datos vienen de de de un caso real.
+
+
+1023
+01:53:33.110 --> 01:53:38.900
+Matias Z: ¿de qué nos sirve ver el el código, Por ejemplo, pueden ver cómo están armados los casos
+
+
+1024
+01:53:39.030 --> 01:53:45.059
+Matias Z: en en los ejemplos para que entienda que no es tan complejo ni trabajoso como parece.
+
+
+1025
+01:53:47.550 --> 01:53:49.370
+Matias Z: De hecho, eso lo pueden ver.
+
+
+1026
+01:53:54.890 --> 01:53:56.290
+Matias Z: cada 1
+
+
+1027
+01:53:59.700 --> 01:54:02.680
+Matias Z: perdón, ahí va de nuevo en
+
+
+1028
+01:54:03.320 --> 01:54:06.879
+Matias Z: acabén Este, por ejemplo, el acuery del usuario
+
+
+1029
+01:54:11.940 --> 01:54:16.359
+Matias Z: y el resto de los de los datos necesarios para verificar que esa corrida es correcta.
+
+
+1030
+01:54:16.480 --> 01:54:24.410
+Matias Z: También tenemos implementada una tienda tipo. El marketplace es un mooc No tenemos implementado nada.
+
+
+1031
+01:54:25.990 --> 01:54:28.650
+Matias Z: Esto lo cuento por si alguien va a bajar el código.
+
+
+1032
+01:54:28.820 --> 01:54:32.680
+Matias Z: Y tenemos un corpus con un montón de otros casos
+
+
+1033
+01:54:32.780 --> 01:54:41.779
+Matias Z: que son los que vamos a utilizar para verificar cómo funcionan los jueces. Sí, estos son nuestros corpus con nuestros casos de evaluaciones.
+
+
+1034
+01:54:46.490 --> 01:54:54.949
+Matias Z: Entonces tenemos zoológico Corpus, la tienda que implementa un poco la lógica del marketplace
+
+
+1035
+01:54:55.060 --> 01:54:57.619
+Matias Z: y después las 3 dedos sí
+
+
+1036
+01:55:00.160 --> 01:55:04.630
+Matias Z: suele propongo terminar de ver en el encuentro que viene en
+
+
+1037
+01:55:05.960 --> 01:55:08.739
+Matias Z: alguien, miró si está publicado en el Git hab.
+
+
+1038
+01:55:10.430 --> 01:55:13.220
+Daniel Sosa: Sí está. Está publicado Matis, módulo.
+
+
+1039
+01:55:14.420 --> 01:55:15.300
+Matias Z: Me quedo otra vez.
+
+
+1040
+01:55:15.540 --> 01:55:16.080
+Juan Franco Echeverria: Sí, Sí.
+
+
+1041
+01:55:16.080 --> 01:55:20.860
+Matias Z: Mhm: Terminar de mirar las las slides
+
+
+1042
+01:55:21.030 --> 01:55:27.909
+Matias Z: por varios motivos. Primero, porque tenemos que todavía aprender un poco cómo funcionan los jueces.
+
+
+1043
+01:55:28.130 --> 01:55:36.250
+Matias Z: Los jueces son modelos para evaluaciones más complejas en jueces con rúbricas.
+
+
+1044
+01:55:36.560 --> 01:55:39.989
+Matias Z: Cuáles son los riesgos de utilizar jueces?
+
+
+1045
+01:55:40.110 --> 01:55:47.069
+Matias Z: Normalmente, los jueces tienen sesgos, fundamentalmente de posición de verbosidad y de auto preferencia. Eso está también
+
+
+1046
+01:55:47.200 --> 01:55:50.159
+Matias Z: en documentado en la literatura.
+
+
+1047
+01:55:51.090 --> 01:55:59.199
+Matias Z: ¿qué significa auto preferencia? Es si si usamos el mismo modelo como juez, normalmente el juez elige lo que él habría generado
+
+
+1048
+01:55:59.460 --> 01:56:05.519
+Matias Z: verbosidad es que un modelo normalmente elige la respuesta más larga, ese tipo de sesgos de de los elementos.
+
+
+1049
+01:56:06.640 --> 01:56:10.149
+Matias Z: Después vamos a ver, Les cuento rápido para que sepan cómo sigue.
+
+
+1050
+01:56:12.090 --> 01:56:20.240
+Matias Z: Vamos a ver que en este caso tenemos por aquí, esa, digamos, limitación
+
+
+1051
+01:56:21.230 --> 01:56:32.410
+Matias Z: que mencionamos con el con el F Uno. No sé si se acuerda que habíamos dicho que no medía true Negatives: Vamos a
+
+
+1052
+01:56:32.520 --> 01:56:41.719
+Matias Z: utilizar la métrica llamada capa de Cohen. Esto es casi estándar también donde utilizamos jueces, Sí,
+
+
+1053
+01:56:42.030 --> 01:56:45.950
+Matias Z: Lo que hace básicamente es descontar
+
+
+1054
+01:56:46.590 --> 01:56:52.519
+Matias Z: el azar de de esas de esas probabilidades. Vamos a verlo un poquito más en detalle.
+
+
+1055
+01:56:53.500 --> 01:56:57.090
+Matias Z: O sea que nos falta ver 2 métricas más capa de Coher.
+
+
+1056
+01:57:02.020 --> 01:57:10.120
+Matias Z: Después vamos a entrar en rada y vamos a empezar a ver algunas de las métricas relacionadas con la recuperación, recuperación del contexto.
+
+
+1057
+01:57:10.320 --> 01:57:18.300
+Matias Z: Sí, son métricas distintas. En ese caso también a veces se utilizan modelos en
+
+
+1058
+01:57:18.560 --> 01:57:20.610
+Matias Z: o en general, se utilizan modelos
+
+
+1059
+01:57:21.400 --> 01:57:26.890
+Matias Z: y son métricas relacionadas justamente con el la calidad de nuestro sistema de recuperación.
+
+
+1060
+01:57:29.300 --> 01:57:32.830
+Matias Z: Vamos a ver cómo nuestro recuperador
+
+
+1061
+01:57:33.040 --> 01:57:37.279
+Matias Z: a construir el contexto. Ahí aparece nuevo precisión en Bricol. Sí,
+
+
+1062
+01:57:37.990 --> 01:57:43.659
+Matias Z: pero también por esa relevancia, fakefullness y otro tipo de coherencia y otro tipo de cosas.
+
+
+1063
+01:57:49.870 --> 01:57:51.290
+Matias Z: Ya vamos cerrando.
+
+
+1064
+01:57:53.920 --> 01:58:10.180
+Matias Z: Bien, les vamos a mencionar que hay diferentes métricas específicas para cada 1 de los componentes que fuimos de a poquito introduciendo, recibimos las que están relacionadas con herramientas, pero hay métricas para el módulo de planificación de memoria de aprendizaje.
+
+
+1065
+01:58:10.490 --> 01:58:14.410
+Matias Z: Sí, Y hay
+
+
+1066
+01:58:15.280 --> 01:58:25.380
+Matias Z: pruebas, evaluaciones que tienen que ver con el sistema completo en Tuen, sí, y vamos a definirlas, rendimiento, consistencia, coherencia, alucinación y entradas inesperadas y cómo las maneja
+
+
+1067
+01:58:26.320 --> 01:58:27.390
+Matias Z: okay.
+
+
+1068
+01:58:29.230 --> 01:58:38.999
+Matias Z: Finalmente, sí me gustaría mostrarles que implica simular un usuario completo y simular un mundo completo y que nos permita hacer eso con estos agentes. Eso se puede hacer fácil
+
+
+1069
+01:58:43.360 --> 01:58:50.080
+Matias Z: listo. Último tema, dependiendo de la cantidad de corridas que hagamos nosotros de estos experimentos.
+
+
+1070
+01:58:51.490 --> 01:58:55.389
+Matias Z: Les vuelvo a repetir lo que dije al principio: esos números tienen
+
+
+1071
+01:58:55.760 --> 01:58:59.579
+Matias Z: cierto peso, cierto rigor o no.
+
+
+1072
+01:59:00.570 --> 01:59:05.740
+Matias Z: Y para eso lo que vamos a hacer es tratar de enriquecer
+
+
+1073
+01:59:05.860 --> 01:59:08.850
+Matias Z: nuestra estimación puntual. Ese 92 por 100
+
+
+1074
+01:59:08.990 --> 01:59:11.320
+Matias Z: tratando de agregar un intervalo de confianza.
+
+
+1075
+01:59:11.670 --> 01:59:15.419
+Matias Z: Pero Internet de confianza no va a ser el tradicional
+
+
+1076
+01:59:15.840 --> 01:59:21.690
+Matias Z: porque no nos sirve en estos casos, sino que es un intervalo específico, que es el intervalo de Wilson.
+
+
+1077
+01:59:22.710 --> 01:59:34.979
+Matias Z: que es el que se utiliza para estos casos. Entonces, a partir de ahí sí vamos a empezar a decir, bueno, hay una estimación puntual con intervalo de confianza y depende de la cantidad de corridas que hayamos hecho de estos experimentos.
+
+
+1078
+01:59:35.110 --> 01:59:38.270
+Matias Z: Entonces, cuando entregamos el resultado de evaluaciones.
+
+
+1079
+01:59:38.770 --> 01:59:48.689
+Matias Z: vamos a incluir toda esta información para que el contexto le dé al lector un poco más de exactitud a la hora de interpretar los resultados
+
+
+1080
+01:59:50.480 --> 01:59:51.520
+Matias Z: Pucky.
+
+
+1081
+01:59:52.280 --> 01:59:59.230
+Matias Z: Eso nos falta ver. Esas son en general, métricas Offline
+
+
+1082
+02:00:04.630 --> 02:00:09.469
+Matias Z: Las vimos con la de K 2, pero tenemos dijimos: Ral.
+
+
+1083
+02:00:09.910 --> 02:00:13.860
+Matias Z: Tenemos Front Foo. No sé si alguno utilizo prontful
+
+
+1084
+02:00:14.750 --> 02:00:22.060
+Matias Z: superinteresante de Microsoft hay una opción Opensourt se llama Pirat Mhm.
+
+
+1085
+02:00:22.200 --> 02:00:23.860
+Matias Z: Hay otra llamada Gyskal
+
+
+1086
+02:00:25.260 --> 02:00:37.630
+Matias Z: Todas esas opciones hacen cosas parecidas, se complementan super bien, en general tienen opciones un poco más. Este sofisticadas incluso nos permiten crear los conjuntos de evaluaciones
+
+
+1087
+02:00:40.040 --> 02:00:45.540
+Matias Z: y si quiere, los podemos terminar de de ver en el encuentro que tiene, pero básicamente las nociones
+
+
+1088
+02:00:46.120 --> 02:00:50.179
+Matias Z: sería pedirles que empiecen a armar las evaluaciones
+
+
+1089
+02:00:50.510 --> 02:00:53.600
+Matias Z: en sus agentes y que me cuenten cómo les va.
+
+
+1090
+02:00:53.790 --> 02:01:01.519
+Matias Z: En el encuentro que viene el Framework decide usar cómo miden los resultados. ¿sí?
+
+
+1091
+02:01:02.060 --> 02:01:05.739
+Matias Z: Y lo que hacemos en Google es cerrar este tema, que sería el módulo nuevo.
+
+
+1092
+02:01:06.200 --> 02:01:08.880
+Matias Z: Está el código fuente para que lo puedan correr.
+
+
+1093
+02:01:10.710 --> 02:01:16.300
+Matias Z: y no mucho más. Simplemente si les pediría que le
+
+
+1094
+02:01:16.630 --> 02:01:23.730
+Matias Z: pongan mucha pila a este tema porque es 1 de los temas, también centrales del curso.
+
+
+1095
+02:01:24.520 --> 02:01:32.709
+Matias Z: Me quedo hasta las 8 y media para preguntas respuestas. Lo que necesiten saber. Recién empezamos el mundo de evaluaciones.
+
+
+1096
+02:01:33.570 --> 02:01:39.689
+Matias Z: pero el que necesita retirarse los saludo y nos vemos la próxima.
+
+
+1097
+02:01:41.050 --> 02:01:43.300
+Daniel Sosa: Puedes comer a.
+
+
+1098
+02:01:43.660 --> 02:01:53.559
+Sebastian Langer: Bueno, Mati, Yo yo, la semana que viene voy a estar de viaje en un evento de I, B, M, y estoy mirando y tengo re mala suerte, porque.
+
+
+1099
+02:01:53.560 --> 02:01:54.330
+Daniel Sosa: Ajá.
+
+
+1100
+02:01:54.330 --> 02:02:04.000
+Sebastian Langer: Justo. Tengo viaje en los momentos en los 2 momentos que está el curso. Así que estoy al horno. Pero Bueno, miraré la grabación.
+
+
+1101
+02:02:04.570 --> 02:02:10.619
+Sebastian Langer: miraré la grabación y, en todo caso, después te mandaré alguna que otra pregunta. Por suerte, las grabaciones están, y
+
+
+1102
+02:02:10.880 --> 02:02:15.810
+Sebastian Langer: está bastante claro. Y vos está subiendo el material. Voy a ver si me puedo poner al día en algún momento.
+
+
+1103
+02:02:19.150 --> 02:02:23.450
+Matias Z: Sin problemas. Escribí, me avisa mendo material
+
+
+1104
+02:02:23.660 --> 02:02:28.519
+Matias Z: complementaria. Hay muchas charlas. Hay muchos libros sobre el tema
+
+
+1105
+02:02:29.400 --> 02:02:33.540
+Matias Z: y vale la pena del siguiente: Lo que necesites.
+
+
+1106
+02:02:34.750 --> 02:02:39.739
+Sebastian Langer: Vale también ese paso. Siempre podéis si encuentro algún chisme allá en
+
+
+1107
+02:02:39.910 --> 02:02:42.880
+Sebastian Langer: en el evento. Voy al I B, m. T, que es Change.
+
+
+1108
+02:02:43.420 --> 02:02:50.249
+Sebastian Langer: Y en mi caso, estoy evaluando toda la parte de Watson. Así que si veo que hay algo piola que aportar te desavis.
+
+
+1109
+02:02:51.330 --> 02:02:53.320
+Daniel Sosa: Ahora mismo.
+
+
+1110
+02:02:54.130 --> 02:02:55.860
+Matias Z: Perfecto.
+
+
+1111
+02:02:56.510 --> 02:02:57.330
+Daniel Sosa: De Gameiro.
+
+
+1112
+02:02:57.330 --> 02:03:03.530
+Matias Z: Ahora estoy buscando esta charla. Me gustaría compartirla con ustedes.
+
+
+1113
+02:03:03.530 --> 02:03:04.959
+Daniel Sosa: Los mejores dulces.
+
+
+1114
+02:03:04.960 --> 02:03:09.910
+Matias Z: Y Valls, 1 0, 1 en.
+
+
+1115
+02:03:11.260 --> 02:03:12.030
+Daniel Sosa: Pensar.
+
+
+1116
+02:03:12.580 --> 02:03:21.929
+Matias Z: Lo que estoy hablando es una demo un poquito más compleja, bastante más compleja, que no va a llevar todo un encuentro con Landfuerz una vez que empecemos a ya a integrar todos los
+
+
+1117
+02:03:22.250 --> 02:03:29.209
+Matias Z: componentes de de nuestro pipeline y un poco. La idea es tratar de de armar un caso
+
+
+1118
+02:03:29.790 --> 02:03:37.250
+Matias Z: como más orientado a finanzas o o o banca que entiendo que la mayoría de ustedes están un poco en ese mundo.
+
+
+1119
+02:03:37.520 --> 02:03:38.940
+Matias Z: Entonces.
+
+
+1120
+02:03:39.160 --> 02:03:45.410
+Matias Z: para entender un poco las implicancias de que se qué significa crear un sistema de evaluaciones que pasa con los datos.
+
+
+1121
+02:03:45.520 --> 02:03:46.330
+Matias Z: En el
+
+
+1122
+02:03:47.450 --> 02:03:57.719
+Matias Z: Eso lo estoy trabajando de a poquito, pero ya ya casi casi está terminado para eso necesitaba pasar por esta parte, que es un poquito más aburrida, Tal es obvio
+
+
+1123
+02:03:57.830 --> 02:03:59.770
+Matias Z: este. Pero bueno.
+
+
+1124
+02:04:01.970 --> 02:04:10.419
+Matias Z: hay que empezar. Lo más importante es, a veces entendemos que son las métricas que son las evaluaciones si por algún motivo, por ejemplo, no las usamos.
+
+
+1125
+02:04:12.140 --> 02:04:18.709
+Sebastian Langer: Y en tu en tú. Desde tu punto de vista en Argentina, Digo, la gente está verde con este tema.
+
+
+1126
+02:04:24.350 --> 02:04:29.770
+Matias Z: Para que reviso el N, El N D No, Sí.
+
+
+1127
+02:04:30.640 --> 02:04:35.370
+Sebastian Langer: No digas, yo no sé con qué empresa trabajás. Así que tranquilo.
+
+
+1128
+02:04:35.950 --> 02:04:37.889
+Matias Z: Todas. No, Sí, Sí.
+
+
+1129
+02:04:37.890 --> 02:04:42.230
+Sebastian Langer: Yo creo que sí, porque hay muy poca gente que hable de esto en.
+
+
+1130
+02:04:42.230 --> 02:04:42.869
+Matias Z: En un
+
+
+1131
+02:04:44.560 --> 02:05:02.459
+Matias Z: sí, pero y de hecho, no es en Argentina. Es un poco un fenómeno. Por eso es que hay tanta tanta predicción de de que para el 27 Garner dice más del 40 por 100 de los sistemas agénticos van a ser vulnerados de alguna u otra manera.
+
+
+1132
+02:05:03.250 --> 02:05:06.810
+Matias Z: Un: Bueno, ¿qué sé yo. Gárna: el.
+
+
+1133
+02:05:06.810 --> 02:05:09.180
+Sebastian Langer: Me da la sensación que
+
+
+1134
+02:05:09.300 --> 02:05:18.910
+Sebastian Langer: que incluso te diría que tras que trasciende perfiles de los perfiles normales que que se tienen en
+
+
+1135
+02:05:19.840 --> 02:05:35.509
+Sebastian Langer: tanto en sistemas de Data Science como de y y video machine learning como como los sistemas tradicionales como el monitoreo tradicional es como es algo mucho más específico. Es más.
+
+
+1136
+02:05:36.520 --> 02:05:41.880
+Sebastian Langer: no sé, digo, seguramente ya deben haber inventado el nombre de
+
+
+1137
+02:05:42.200 --> 02:05:47.340
+Sebastian Langer: de una disciplina que que trabaje todas estas métricas.
+
+
+1138
+02:05:48.400 --> 02:05:54.949
+Sebastian Langer: porque se lo que es encajar a alguna persona con un perfil de los que conocemos y la matas.
+
+
+1139
+02:05:59.130 --> 02:06:03.349
+Matias Z: Sí. Probablemente sea como un equipo
+
+
+1140
+02:06:03.900 --> 02:06:11.170
+Matias Z: con varios roles, entiendo que el arquitecto debería justamente orquestar esto.
+
+
+1141
+02:06:11.830 --> 02:06:15.149
+Matias Z: pero probablemente un dato Saint y te puedo ayudar con con
+
+
+1142
+02:06:15.880 --> 02:06:19.759
+Matias Z: con la rigurosidad de estadística, un ingeniero de.
+
+
+1143
+02:06:19.760 --> 02:06:24.299
+Sebastian Langer: Me parece que la clave es que los tableros agreguen bien la información y que.
+
+
+1144
+02:06:24.420 --> 02:06:32.699
+Sebastian Langer: y que, y que esté bastante claro cómo leerlo. Digo, porque porque vivimos una granularidad acá que es inmanejable, digamos
+
+
+1145
+02:06:34.980 --> 02:06:35.849
+Sebastian Langer: si no.
+
+
+1146
+02:06:37.330 --> 02:06:43.089
+Sebastian Langer: y y llevarlo a producción, quieres que se lo de a operaciones para que lo leas para monitoreo. Para que mire esto.
+
+
+1147
+02:06:43.090 --> 02:06:43.520
+Matias Z: No, no.
+
+
+1148
+02:06:43.520 --> 02:06:54.720
+Sebastian Langer: Y digo que es como tipo aquí. Impongo ahí a mirar esto. Te te te digo porque me tengo que decir yo invento. Si si 1 si 1 implementa esto, después tiene que ver a quién se lo encajas.
+
+
+1149
+02:06:56.360 --> 02:07:04.959
+Matias Z: Claro y a nadie. En realidad deberías tenerlo automatizado, Digamos.
+
+
+1150
+02:07:05.760 --> 02:07:14.919
+Sebastian Langer: Bueno, tal cual, a lo mejor es una cuestión de de como decís, vos, o sea, evalúas cosas. Y realmente se te prende una luz roja. Cuando
+
+
+1151
+02:07:15.300 --> 02:07:23.500
+Sebastian Langer: la una combinatoria de estas de estos indicadores te da cierto número, o digo, a lo mejor haces una.
+
+
+1152
+02:07:23.670 --> 02:07:28.430
+Sebastian Langer: Entiendo que haces relises del de de tu
+
+
+1153
+02:07:28.740 --> 02:07:39.749
+Sebastian Langer: de tus componentes, de tus agentes, y cada tanto te fijas, cómo funcionan, y y y irás fin tuneándolos o o mejorándolos. Pero
+
+
+1154
+02:07:41.300 --> 02:07:50.029
+Sebastian Langer: algunas cosas me imagino que serán para monitorear en en en producción y otras que serán. M post mortem como para ver cómo lo mejoras.
+
+
+1155
+02:07:51.540 --> 02:08:01.260
+Matias Z: Sí, sí. Justamente mencionábamos hoy las 2 familias de métricas online y offline. Es justamente eso. La capa 1 y la capa 2
+
+
+1156
+02:08:01.380 --> 02:08:02.300
+Matias Z: era.
+
+
+1157
+02:08:02.300 --> 02:08:03.260
+Sebastian Langer: Claro.
+
+
+1158
+02:08:03.260 --> 02:08:11.029
+Matias Z: Pero este parle debería estar automatizado, versionado. Y de hecho, qué sé yo, los Atazzets, que son tus
+
+
+1159
+02:08:11.780 --> 02:08:27.750
+Matias Z: conjunto de evaluaciones deberían ser artefactos versionados también porque vos. Los y para eso por eso existe el Langers, por ejemplo, los experimentos, las corridas, todo artefacto que involucre un experimento debería estar versionado.
+
+
+1160
+02:08:28.940 --> 02:08:41.779
+Matias Z: Eso debería guardarse de manera inmutable, de manera tal que una auditoría pueda verificar que vos hiciste esto con determinada versión específica con determinados datos con determinado modelo.
+
+
+1161
+02:08:42.290 --> 02:08:48.080
+Matias Z: No es que estamos hablando tableros por ahí. Quería aclarar eso.
+
+
+1162
+02:08:48.310 --> 02:08:55.609
+Matias Z: En Básicamente acá. Lo que haces es en la primer capa. Es
+
+
+1163
+02:08:55.750 --> 02:09:00.739
+Matias Z: bueno si se dispara un github action por algún publiquest, 5 000 por L
+
+
+1164
+02:09:00.890 --> 02:09:05.190
+Matias Z: se dispara efectivamente este Pipe Line, pero
+
+
+1165
+02:09:05.670 --> 02:09:14.730
+Matias Z: en las instancias más de de del prototipado, las igual, las corres, vos esos offline, esos pre diployd.
+
+
+1166
+02:09:16.220 --> 02:09:21.120
+Juan Franco Echeverria: Sí, pero ahí no solo dependiendo del cambio, porque
+
+
+1167
+02:09:21.420 --> 02:09:29.319
+Juan Franco Echeverria: poder llegar a tener cambios sobre el mismo modelo que afecte tu agente sin que vos hagas un cambio en tu agente.
+
+
+1168
+02:09:32.270 --> 02:09:37.150
+Matias Z: Absolutamente Sí, sí lo lo mencionamos también.
+
+
+1169
+02:09:37.560 --> 02:09:50.030
+Matias Z: Si usas un agente de un de un Lab. Y hay algún cambio mínimo en una versión sin sin que cambie el número de versión. Sí, eso puede pasar, pero también puede cambiar de nuevo. Como
+
+
+1170
+02:09:50.200 --> 02:09:53.590
+Matias Z: la estrategia de Chungui, qué sé yo
+
+
+1171
+02:09:54.130 --> 02:10:02.969
+Matias Z: cómo se utiliza el indexado en la tabla de datos vectorial que cómo implementar los wardales
+
+
+1172
+02:10:03.560 --> 02:10:09.249
+Matias Z: los sí, efectivamente, No, no solamente debería dispararse a partir de un de un
+
+
+1173
+02:10:09.450 --> 02:10:11.769
+Matias Z: publiquest, digamos, es es correcto. Sí,
+
+
+1174
+02:10:15.880 --> 02:10:22.979
+Matias Z: lo que pasa que eso que vos mencionaste que es correcto. Se va capturando. Eso es más observabilidad
+
+
+1175
+02:10:24.100 --> 02:10:26.880
+Matias Z: y se va capturando cuando el modelo ya está en producción.
+
+
+1176
+02:10:27.420 --> 02:10:28.460
+Juan Franco Echeverria: Claro con el uso.
+
+
+1177
+02:10:29.200 --> 02:10:34.909
+Matias Z: Claro si empiezas a ver que algún tipo de anomalía en alguno de esos números, un poco, ahí está
+
+
+1178
+02:10:35.090 --> 02:10:38.249
+Matias Z: el el estudio. De qué qué es lo que puede estar pasando? ¿no?
+
+
+1179
+02:10:41.850 --> 02:10:48.369
+Matias Z: Pero la la la idea del Flywheel que aparece en la tercera capa es que justamente todas estas señales
+
+
+1180
+02:10:49.380 --> 02:10:55.369
+Matias Z: en bueno, la primera capa tenés, el gate, ese que lo que hace es integrar todos
+
+
+1181
+02:10:55.700 --> 02:10:59.070
+Matias Z: los scores de todas las métricas
+
+
+1182
+02:10:59.810 --> 02:11:06.230
+Matias Z: que hay muchas más, por supuesto, Y solo si llegas a cierto umbral, se promueve ese nuevo
+
+
+1183
+02:11:06.450 --> 02:11:10.209
+Matias Z: esa nueva versión a producción en la capa 2
+
+
+1184
+02:11:10.760 --> 02:11:14.289
+Matias Z: recuperas señales que solamente podés ver en producción
+
+
+1185
+02:11:15.430 --> 02:11:19.729
+Matias Z: y resuelven otro tipo de problemas como el que mencionaste
+
+
+1186
+02:11:19.940 --> 02:11:23.459
+Matias Z: y la capa 3. Lo que haces es utilizar toda esa información
+
+
+1187
+02:11:23.670 --> 02:11:26.190
+Matias Z: para construir nuevos casos de evaluación.
+
+
+1188
+02:11:26.840 --> 02:11:28.869
+Matias Z: o sea, que no suelte de de de
+
+
+1189
+02:11:29.290 --> 02:11:33.809
+Matias Z: feedback club de de mejora continua.
+
+
+1190
+02:11:34.100 --> 02:11:40.809
+Matias Z: Y para eso necesitas tener implementada tanto la trazabilidad como la observabilidad de manera correcta.
+
+
+1191
+02:11:44.660 --> 02:11:45.459
+Sebastian Langer: Y ahora sí.
+
+
+1192
+02:11:45.460 --> 02:11:46.259
+Juan Franco Echeverria: De lo que.
+
+
+1193
+02:11:46.260 --> 02:11:48.969
+Sebastian Langer: No, no se me ocurre otra manera de probarlo.
+
+
+1194
+02:11:49.080 --> 02:11:53.520
+Sebastian Langer: Mhm: Hola.
+
+
+1195
+02:11:53.940 --> 02:11:54.699
+Sebastian Langer: La verdad que.
+
+
+1196
+02:11:54.700 --> 02:11:55.520
+Matias Z: Con Cross.
+
+
+1197
+02:11:55.900 --> 02:12:03.909
+Sebastian Langer: Que ahora que explicaste esto ahora, no se me ocurre otra manera de probarlo, que que no estoy haciendo todo esto. Me envenenaste.
+
+
+1198
+02:12:04.060 --> 02:12:07.639
+Juan Franco Echeverria: Ponerlo y ver qué pasa. Felicidades!
+
+
+1199
+02:12:07.640 --> 02:12:08.049
+Sebastian Langer: En el.
+
+
+1200
+02:12:08.050 --> 02:12:18.050
+Juan Franco Echeverria: Utilizar. También puede estar basada en los resultados de estos, o sea, vos podés utilizar el
+
+
+1201
+02:12:18.790 --> 02:12:23.739
+Juan Franco Echeverria: esta parte de evaluación para decidir cuál va a ser el L M De acuerdo a
+
+
+1202
+02:12:25.150 --> 02:12:29.370
+Juan Franco Echeverria: a los resultados que te den, las evaluaciones contra distintos Ldms.
+
+
+1203
+02:12:30.470 --> 02:12:35.920
+Matias Z: Sí. De hecho, fíjate que en
+
+
+1204
+02:12:36.290 --> 02:12:38.630
+Matias Z: viste esta primera slide que mostré
+
+
+1205
+02:12:40.260 --> 02:12:42.509
+Matias Z: al al principio de la clase, necesitabas.
+
+
+1206
+02:12:45.130 --> 02:12:46.320
+Juan Franco Echeverria: Sí, sí, un toque más.
+
+
+1207
+02:12:47.370 --> 02:12:51.660
+Matias Z: Bueno, fíjate que el primer cuadro habla de selección de modelos.
+
+
+1208
+02:12:55.210 --> 02:13:08.620
+Sebastian Langer: Que estamos evaluando todo esto y también para apoyar la la pregunta de Juanfrango, ¿no? Si 1 mete un montón de cambios Cambia el modelo. Cambia un montón de cosas al final por ahí, terminas perdiéndote cuál es realmente la mejora o no.
+
+
+1209
+02:13:08.740 --> 02:13:10.939
+Sebastian Langer: no, tendríamos que tener cuidado
+
+
+1210
+02:13:11.140 --> 02:13:20.650
+Sebastian Langer: y hacer una especie de ave testing cada vez que, no sé, no te diría, no sé si una be testing, pero digo por ahí metes un montón de cambios, pero no sabes que realmente mejoró.
+
+
+1211
+02:13:23.720 --> 02:13:35.030
+Matias Z: Sí. Idealmente, los los comics deberían este ser lo más granulares posibles en
+
+
+1212
+02:13:36.300 --> 02:13:41.240
+Matias Z: y, además, efectivamente se utilizan varias técnicas para hacer roll out progresivo.
+
+
+1213
+02:13:41.760 --> 02:13:46.699
+Matias Z: En hay varias técnicas evitesting. Es una manera.
+
+
+1214
+02:13:47.629 --> 02:13:52.350
+Matias Z: Hay otra forma, que es el de el despliegue Shadow: en
+
+
+1215
+02:13:52.510 --> 02:13:57.460
+Matias Z: hay una tercer forma de sobreusar que es el Canary Roll Out.
+
+
+1216
+02:13:58.250 --> 02:13:59.410
+Matias Z: Sí,
+
+
+1217
+02:13:59.820 --> 02:14:12.559
+Matias Z: de manera tal de un poco diversificar el riesgo de exponer tu tu nuevo agente a a producciones. Pero básicamente, todas tienen que ver con dividir, hacer un split del tráfico
+
+
+1218
+02:14:12.780 --> 02:14:20.149
+Matias Z: y mostrar en cierta proporción, una versión a algunos usuarios y otra versión a otros usuarios es parecido a un maby desting.
+
+
+1219
+02:14:21.480 --> 02:14:25.720
+Matias Z: pero ya estamos hablando de este monitoreo en producción.
+
+
+1220
+02:14:29.330 --> 02:14:30.049
+Sebastian Langer: Mhm.
+
+
+1221
+02:14:32.810 --> 02:14:44.209
+Matias Z: Eso lo tenemos en el módulo. Diez dale gustavo. Nos vemos en Estamos recién arrancando.
+
+
+1222
+02:14:44.970 --> 02:14:57.359
+Matias Z: No sé que s. Se te disparó. Se te dispararon las ideas, pero arranca de a poco arranca chiquito, elegí con eso, valentina, elegí un framework
+
+
+1223
+02:14:57.760 --> 02:15:01.690
+Matias Z: create unos casos y básicamente, construir la
+
+
+1224
+02:15:02.470 --> 02:15:06.109
+Matias Z: buena práctica de mantener tus vals al día.
+
+
+1225
+02:15:06.670 --> 02:15:10.749
+Matias Z: Todavía no vimos la parte de monitorear en tiempo real.
+
+
+1226
+02:15:13.150 --> 02:15:13.860
+Sebastian Langer: Bien.
+
+
+1227
+02:15:18.250 --> 02:15:28.650
+Sebastian Langer: Bueno, yo también me despido los veo seguramente la otra semana. Si puedo conectarme en algún momento, me sumo, Y si no veré los vídeos. Muchas gracias. Chicos.
+
+
+1228
+02:15:28.709 --> 02:15:29.830
+Matias Z: Dale tranquilo.
+
+
+1229
+02:15:29.830 --> 02:15:32.530
+Juan Franco Echeverria: Me me fui También nos vemos gente.
+
+
+1230
+02:15:33.119 --> 02:15:33.609
+Matias Z: Adiós.
+
+
+1231
+02:15:33.610 --> 02:15:34.589
+Juan Franco Echeverria: Bueno, entiendo qué.
+
+
+1232
+02:15:38.110 --> 02:15:39.940
+Carlos Miguez: Chao! Hasta luego ¡buen fin de.
+
+
+1233
+02:15:40.629 --> 02:15:41.499
+Matias Z: Chao chao.
+
+
+1234
+02:15:44.969 --> 02:15:47.189
+Matias Z: Gracias a Vos Valentina.
+
+
+1235
+02:16:05.549 --> 02:16:08.169
+Matias Z: Estoy un minuto más. Si quieres me avisa.
+
+
+1236
+02:16:42.409 --> 02:16:46.079
+Matias Z: Bueno, gente, si no hay dudas, vamos ahorrando
+
+
+1237
+02:16:49.149 --> 02:16:50.339
+Matias Z: un abrazo.
+
+
+

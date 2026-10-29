@@ -1,0 +1,5113 @@
+WEBVTT
+
+1
+00:00:02.149 --> 00:00:03.579
+Carlos Miguez: Hola, buenas tardes.
+
+
+2
+00:00:04.849 --> 00:00:06.839
+Matias Z: Hola, ¿Cómo andan?
+
+
+3
+00:00:10.649 --> 00:00:11.599
+Javier Carral: Adiós.
+
+
+4
+00:00:20.469 --> 00:00:21.469
+Matias Z: Ahí estamos
+
+
+5
+00:00:32.079 --> 00:00:32.759
+Matias Z: bien.
+
+
+6
+00:00:35.059 --> 00:00:36.239
+Matias Z: ¿cómo andan?
+
+
+7
+00:00:37.729 --> 00:00:38.989
+Matias Z: No tranqui.
+
+
+8
+00:00:39.739 --> 00:00:41.308
+Valentina Da Silva: Hola, buenas tardes.
+
+
+9
+00:00:41.309 --> 00:00:42.709
+Matias Z: Hola, valentina. ¿cómo te va.
+
+
+10
+00:00:43.409 --> 00:00:44.548
+Valentina Da Silva: Todo bien. Y vos.
+
+
+11
+00:00:44.929 --> 00:00:46.029
+Matias Z: Bien, bien.
+
+
+12
+00:00:46.729 --> 00:00:47.929
+Valentina Da Silva: Genial.
+
+
+13
+00:00:48.099 --> 00:00:48.889
+Agustin Aimale: Como.
+
+
+14
+00:00:48.889 --> 00:00:49.419
+Matias Z: Mhm.
+
+
+15
+00:00:49.989 --> 00:00:59.038
+Matias Z: Me acordaba que alguno de ustedes había me escribieron muchos preguntando por proyectos personales en los que está trabajando y
+
+
+16
+00:00:59.289 --> 00:01:03.818
+Matias Z: les recomendaba si si se animaban a contarlo a mostrarlo
+
+
+17
+00:01:04.249 --> 00:01:07.718
+Matias Z: o al comienzo o al final de la clase en esos minutos que nos quedamos
+
+
+18
+00:01:07.958 --> 00:01:12.148
+Matias Z: después de clases. Aprovecho esos primeros 5 min hasta que llega el resto de compañeros
+
+
+19
+00:01:13.229 --> 00:01:28.308
+Matias Z: invitarlos a a que muestren el trabajo que están realizando. Yo creo que sería súper enriquecedor. Y cualquier duda que tengan, Creo que entre todos sería un buen ejercicio revisar juntos, estudiar juntos la arquitectura del que están trabajando
+
+
+20
+00:01:28.749 --> 00:01:42.859
+Matias Z: hoy. Particularmente, vamos a ver un poquito más de detalle en de la manera de implementar. Graph Rank recuerdan un poco en dónde nos quedamos En el último encuentro.
+
+
+21
+00:01:48.069 --> 00:01:55.638
+Matias Z: Quedamos ahí, interrumpimos medio de golpe la idea de que podíamos estructurar este la información usando grafos de conocimiento.
+
+
+22
+00:02:00.339 --> 00:02:08.499
+Matias Z: ¿sí? Okay asumo que sí estamos bien. Estamos en sintonía con esto.
+
+
+23
+00:02:12.179 --> 00:02:12.959
+Mariano Mondani: Sí, Sí.
+
+
+24
+00:02:13.429 --> 00:02:14.769
+Matias Z: Genial. Genial!
+
+
+25
+00:02:15.669 --> 00:02:19.629
+Matias Z: Gracias. Mariana. Gracias a minidad por responder
+
+
+26
+00:02:21.169 --> 00:02:30.348
+Matias Z: Bien, aquellos compañeros que me escribieron y que tenían dudas sobre sus proyectos personales. Los invito de nuevo a tomarnos los
+
+
+27
+00:02:30.469 --> 00:02:43.178
+Matias Z: últimos 20 min que yo me quedo después de clase para compartir con el grupo su proyecto. Yo creo que está bueno que lo veamos entre todos. Es una muy buena manera de afianzar alguno de los conceptos que estamos estudiando
+
+
+28
+00:02:43.539 --> 00:02:50.698
+Matias Z: que, y hoy particularmente me me interesaba esta
+
+
+29
+00:02:50.939 --> 00:02:56.978
+Matias Z: esta clase, que fue medio agregada a partir de una charla que me resultó muy.
+
+
+30
+00:02:57.939 --> 00:03:06.368
+Matias Z: muy didácticas sobre cómo construir grafos de conocimientos que sean consumidos por nuestros agentes. Este Les voy a mostrar.
+
+
+31
+00:03:12.889 --> 00:03:21.918
+Matias Z: Podemos ir medio presentando la la charla de hoy. La La charla está basada en
+
+
+32
+00:03:22.159 --> 00:03:28.858
+Matias Z: no sé si alguno sigue esta este sitio web que tienen la verdad que presentaciones súper completas
+
+
+33
+00:03:29.089 --> 00:03:32.159
+Matias Z: muy serias: 0. Hyde.
+
+
+34
+00:03:32.349 --> 00:03:38.328
+Matias Z: Normalmente, las personas que dan las charlas son las personas de las compañías que están involucradas.
+
+
+35
+00:03:38.429 --> 00:03:45.159
+Matias Z: En este caso hay un ingeniero que nos habla de cómo construir grafos de conocimientos para de nuevo
+
+
+36
+00:03:45.269 --> 00:03:51.988
+Matias Z: darle conocimiento adicional a nuestros agentes apar ahí. Te Copio. Si quieres valentina, te veo
+
+
+37
+00:03:52.489 --> 00:03:56.428
+Matias Z: intentando leer el link. Si querés te copio
+
+
+38
+00:03:56.709 --> 00:04:00.488
+Matias Z: el link completo. Hay varias charlas
+
+
+39
+00:04:01.459 --> 00:04:06.219
+Matias Z: que me interesaría que que tengan en cuenta.
+
+
+40
+00:04:06.549 --> 00:04:12.068
+Matias Z: Pero esta en particular, lo que hace es una introducción a Graff real, con un dominio muy sencillo
+
+
+41
+00:04:12.179 --> 00:04:14.888
+Matias Z: que es un poco lo que vamos a explorar hoy.
+
+
+42
+00:04:15.699 --> 00:04:23.619
+Matias Z: Primero, entendiendo cómo funciona. New: for J. Para construir estos grafos y relaciones entre entidades
+
+
+43
+00:04:23.739 --> 00:04:31.429
+Matias Z: y después mostrando en una demo como un agente nuestro, puede consumir a partir de tools que nosotros creamos
+
+
+44
+00:04:31.689 --> 00:04:38.398
+Matias Z: esta información y cómo puede resolver preguntas complejas que tal vez con un rango no podríamos resolver
+
+
+45
+00:04:39.219 --> 00:04:45.369
+Matias Z: hacia el final si nos queda tiempo. Lo que hacemos es intentar integrar todo en una gente
+
+
+46
+00:04:46.729 --> 00:04:58.499
+Matias Z: que tenga la capacidad de decidir si lo que recupera de Ra es suficiente y si no lo es, que intente la opción de acceder a su grafo de conocimiento.
+
+
+47
+00:04:59.799 --> 00:05:14.928
+Matias Z: Esta charla en particular, una vez más, les digo, es una muy buena fuente para terminada, la clase, incluso volver a la charla original. Yo hice una adaptación porque estaba básicamente construida para otro Framework y sobre Júpiter Notebooks, que no era un poco la idea.
+
+
+48
+00:05:15.369 --> 00:05:24.069
+Matias Z: pero tienen el código fuente en el Github de del de la charla de del mismo
+
+
+49
+00:05:24.229 --> 00:05:29.079
+Matias Z: ingeniero que dan los ejemplos, presenta 3 ejemplos. Tres: demos
+
+
+50
+00:05:31.849 --> 00:05:44.158
+Matias Z: nos vamos a enfocar en el más sencillo En términos de dominio, vamos a intentar mantener el dominio. Muy sencillo. Básicamente, vamos a trabajar en un problema relacionado con
+
+
+51
+00:05:44.249 --> 00:05:53.159
+Matias Z: entender cómo se construye el talento dentro de una organización y cómo se vinculan cada 1 de los colaboradores dentro de esa organización en función de
+
+
+52
+00:05:53.309 --> 00:05:57.449
+Matias Z: cuántas aristas los unen. Esas aristas son habilidades.
+
+
+53
+00:05:57.659 --> 00:06:02.058
+Matias Z: Así que el ejemplo es súper sencillo, y es un poco para entender
+
+
+54
+00:06:02.219 --> 00:06:06.259
+Matias Z: grafos de conocimiento para sistemas genéticos, mariana.
+
+
+55
+00:06:06.669 --> 00:06:19.109
+Mariano Mondani: Ahí más que tengo una consulta que capaz. Lo vemos en esta clase. La última terminó viviendo un poco la diferencia entre la arquitectura normal de Raggi en la gentico. Hoy, más que nada en la parte entre grafo y no Grafo
+
+
+56
+00:06:19.209 --> 00:06:31.349
+Mariano Mondani: sí. Graford responde muchas más situaciones que la una arquitectura más de en medio y normal. ¿cuál es la contra? Porque ¿por qué elegiría ir por la no de en formato de grafo.
+
+
+57
+00:06:32.339 --> 00:06:34.758
+Matias Z: La primera que se me ocurre es.
+
+
+58
+00:06:34.949 --> 00:06:38.579
+Matias Z: por ejemplo, si vos tenés un corpus que que es muy volátil.
+
+
+59
+00:06:38.899 --> 00:06:43.899
+Matias Z: que varían mucho que cambia por el viento. Po Probablemente
+
+
+60
+00:06:45.889 --> 00:06:52.549
+Matias Z: no es trivial insertar entidades en un grafo sin romperlo. Básicamente
+
+
+61
+00:06:52.779 --> 00:06:55.379
+Matias Z: es un poquito más complejo mantenerlo actualizado.
+
+
+62
+00:06:55.949 --> 00:07:02.528
+Matias Z: En cambio, en Rack simplemente corres ese ese algoritmo de hacer los Changs embeberlos, y ya estás
+
+
+63
+00:07:02.819 --> 00:07:07.968
+Matias Z: en principio, tendría que ver con eso después.
+
+
+64
+00:07:08.159 --> 00:07:14.029
+Matias Z: Hay algoritmos de grafos que tienen más latencia en su ejecución, dependiendo de la complejidad de la pregunta.
+
+
+65
+00:07:14.389 --> 00:07:22.788
+Matias Z: con lo cual te diría que lo ideal sería tener una combinación de los 2, Y vamos a ver que, de hecho, en este ejemplo, vamos a combinar
+
+
+66
+00:07:22.849 --> 00:07:36.148
+Matias Z: un poco la idea de usar en Bedings para encontrar por similitud semántica, por ejemplo, una entidad que es la entidad. Desde donde después empezamos a recorrer el grafo para encontrar relaciones un poco más complejas. Así que de alguna manera se termina como
+
+
+67
+00:07:36.699 --> 00:07:46.379
+Matias Z: combinando ambas ambas técnicas, pero idealmente rar más grafo de conocimiento. Si tienes un corpus importante
+
+
+68
+00:07:47.379 --> 00:07:53.399
+Matias Z: y tiene sentido en función de las preguntas que va a hacer tu agente o las tareas que le vas a dar a tu agente.
+
+
+69
+00:07:54.569 --> 00:08:04.259
+Matias Z: Pero para responder eso, yo lo ideal es, sabemos un poco ahorrar. Veamos un poco de grafo de conocimiento y después veamos este ¿Qué puede responder cada una
+
+
+70
+00:08:04.489 --> 00:08:07.418
+Matias Z: de las técnicas, si les parece bien.
+
+
+71
+00:08:08.529 --> 00:08:09.989
+Matias Z: Primero, les voy a copiar.
+
+
+72
+00:08:10.399 --> 00:08:11.099
+Matias Z: Mhm.
+
+
+73
+00:08:12.579 --> 00:08:18.928
+Matias Z: Esto igual está en la fuente. Está en el ritmo de los de la demo que armamos. Así que no se preocupen.
+
+
+74
+00:08:19.279 --> 00:08:20.299
+Matias Z: Pero
+
+
+75
+00:08:21.139 --> 00:08:32.129
+Matias Z: para los que tengo curiosidad, ahí tienen la charla. La charla está transcrita, el vídeo está en Youtube y después el Github está directamente Acá en el artículo.
+
+
+76
+00:08:39.809 --> 00:08:40.639
+Matias Z: Bien.
+
+
+77
+00:08:45.929 --> 00:08:48.479
+Matias Z: entonces arrancamos directamente.
+
+
+78
+00:08:55.489 --> 00:08:58.369
+Matias Z: Vamos a empezar con una arquitectura de referencia
+
+
+79
+00:08:59.699 --> 00:09:04.989
+Matias Z: para lo que se denomina canónicamente como grapp ra agéntico.
+
+
+80
+00:09:05.129 --> 00:09:10.309
+Matias Z: este y un poco la recomendación es intentar leerla de abajo hacia arriba
+
+
+81
+00:09:10.809 --> 00:09:19.019
+Matias Z: Sí, en la base van a encontrar las fuentes de datos que son básicamente de 2 clases normalmente no
+
+
+82
+00:09:19.169 --> 00:09:27.199
+Matias Z: no estructuradas como documentos y P D f y estructuradas como tablas de un sistema relacional o un archivo C, s. B.
+
+
+83
+00:09:27.579 --> 00:09:37.279
+Matias Z: Para esto debemos elegimos usar C, S, B como fuente de datos para simplificar un poco la ingesta, Pero sepan que existen las 2 opciones.
+
+
+84
+00:09:37.419 --> 00:09:44.989
+Matias Z: De hecho, en la charla originalmente hacen ingesta a partir de 2 de los 2 tipos de datos en
+
+
+85
+00:09:48.388 --> 00:10:05.688
+Matias Z: normalmente las estructuras de datos que que vienen de, digamos, de archivos o, en general, los datos que no están estructurados pasan por una por una etapa previa donde suele intervenir un l l M se hace una extracción de entidades. Si
+
+
+86
+00:10:05.759 --> 00:10:12.479
+Matias Z: este modelo de lenguaje va a convertir texto en nodos y relaciones en
+
+
+87
+00:10:13.279 --> 00:10:20.378
+Matias Z: entonces, a partir de esto de estas de estas fuentes, estas fuentes de datos originales. Lo que tenemos
+
+
+88
+00:10:20.489 --> 00:10:24.988
+Matias Z: tenemos una suerte de enriquecimiento que hacemos
+
+
+89
+00:10:26.139 --> 00:10:29.689
+Matias Z: acá arriba. Lo pueden ver en este cuadrito, ¿sí?
+
+
+90
+00:10:30.029 --> 00:10:40.548
+Matias Z: Y este enriquecimiento normalmente está basada en está basado en en en técnicas de análisis de grafos tradicional de ciencias de la computación.
+
+
+91
+00:10:40.649 --> 00:10:51.849
+Matias Z: detección de comunidades. Creo que algo habíamos hablado, no esta posibilidad de detectar comunidades dentro de los grafos dentro de esas entidades en función de cierto criterio que decidamos como
+
+
+92
+00:10:53.669 --> 00:10:57.709
+Matias Z: como criterio de de de de clustering.
+
+
+93
+00:10:58.879 --> 00:11:08.938
+Matias Z: resolución de entidades algoritmos que nos ayudan por ejemplo, a decidir centralidad de los nodos y otros
+
+
+94
+00:11:09.279 --> 00:11:16.779
+Matias Z: otros algoritmos que vamos a ver que, de hecho, New For James nos trae por defecto y que pueden correrse con muy bajo costo.
+
+
+95
+00:11:19.809 --> 00:11:36.239
+Matias Z: Encontramos los modelos de ya acá. Arriba. Tenemos, por supuesto, nuestro cerebro, nuestro Lm, para el ejemplo que vamos a utilizar, pero aparte, también necesitamos un modelo que es un el encargado de hacerlos en Beddings para los ejemplos donde vamos a utilizar en medios.
+
+
+96
+00:11:36.759 --> 00:11:44.399
+Matias Z: Mhm: Son 2 funciones distintas que vamos a a ver para nuestros L. L. Ms.
+
+
+97
+00:11:46.639 --> 00:11:57.098
+Matias Z: Y Acá lo encontramos, digamos, un recuerdo de agentes. Básicamente, la idea es contar el el punto importante. Sería
+
+
+98
+00:11:57.499 --> 00:12:04.579
+Matias Z: necesitamos construir Tools para acceder a la información que estructuramos dentro de este grafo de conocimiento.
+
+
+99
+00:12:05.419 --> 00:12:11.799
+Matias Z: El L. M, como como cualquier otra turno o como cualquier otra acción, no accede directamente
+
+
+100
+00:12:12.219 --> 00:12:18.898
+Matias Z: al mundo exterior. Siempre lo hace a través de tools que definimos dentro de nuestro de nuestra gente.
+
+
+101
+00:12:20.299 --> 00:12:22.689
+Matias Z: Lo va a hacer a través de herramientas de recuperación.
+
+
+102
+00:12:23.769 --> 00:12:31.919
+Matias Z: Fíjese que el diagrama distingue un recuperador local que combina la búsqueda victorial
+
+
+103
+00:12:32.029 --> 00:12:37.769
+Matias Z: con recorrido de grafos. Esto Me parece que es el punto más interesante y
+
+
+104
+00:12:38.279 --> 00:12:49.878
+Matias Z: tenemos un recuperador de de profundidad dinámica que de hecho es 1 de los ejemplos que a mí más me gustan porque muestra un poco por qué sí utilizar gráficos versos.
+
+
+105
+00:12:50.249 --> 00:13:00.448
+Matias Z: Básicamente tiene que ver con hacer la el traversa multi hope, las preguntas multi salto que nos permiten recuperar en entidades y sus relaciones indirectas.
+
+
+106
+00:13:00.559 --> 00:13:02.488
+Matias Z: Lo vamos a ver en un ratito.
+
+
+107
+00:13:03.559 --> 00:13:15.278
+Matias Z: y tenemos el global retriever, que son, digamos, básicamente son algoritmos que nos permiten responder preguntas del estilo, como habíamos mencionado en el encuentro pasado del estilo
+
+
+108
+00:13:15.529 --> 00:13:24.469
+Matias Z: global, como cuáles son los temas fundamentales que aborda este grafo de conocimiento, que son más difíciles de encarar con un rac tradicional.
+
+
+109
+00:13:28.049 --> 00:13:29.059
+Matias Z: Bien.
+
+
+110
+00:13:29.479 --> 00:13:42.049
+Matias Z: Entonces, para cerrar este esquema, yo creo que la tesis que organiza todo el esquema es la siguiente.
+
+
+111
+00:13:42.169 --> 00:13:53.069
+Matias Z: si conocemos el tipo de preguntas que queremos responder. Incluso un grafo muy simple nos permite exponer la lógica de dominio en el modelo de datos. Sí,
+
+
+112
+00:13:53.969 --> 00:14:04.079
+Matias Z: al poner a disposición de la gente el esquema y las herramientas con recorridos definidos. Ganamos control sobre cómo vamos a recuperar esos datos.
+
+
+113
+00:14:04.509 --> 00:14:08.769
+Matias Z: Y lo más interesante para mí. Tiene que ver con la explicabilidad. En este caso.
+
+
+114
+00:14:09.019 --> 00:14:16.188
+Matias Z: creo que algo habíamos mencionado. También podemos explicar mucho mejor la lógica de la recuperación, podemos
+
+
+115
+00:14:17.099 --> 00:14:25.018
+Matias Z: enriquecer todos los logs y todas las trazas relacionadas con las auditorías posteriores o las evaluaciones que querramos hacer después
+
+
+116
+00:14:25.319 --> 00:14:27.078
+Matias Z: sobre estas recuperaciones.
+
+
+117
+00:14:27.869 --> 00:14:39.178
+Matias Z: Y esto es cada vez más relevante en entornos con la gente donde la consulta deja de ser una búsqueda única vectorial, y se empieza a descomponer en pasos un poquito más complejos.
+
+
+118
+00:14:40.399 --> 00:14:48.119
+Matias Z: ¿cómo lo vamos a ver para que no quede en el aire un poco. La idea es pasar rápido por estos slides y tratar de ir lo más rápido posible a
+
+
+119
+00:14:50.329 --> 00:14:51.429
+Matias Z: En
+
+
+120
+00:14:54.329 --> 00:15:08.269
+Matias Z: bien, una vez más, estoy utilizando slides que no son de de mi autoría. Son slides del mismo ingeniero que presentó New for Dj para para grafos de conocimientos para para gentes. El caso que vamos a a utilizar es
+
+
+121
+00:15:08.439 --> 00:15:14.368
+Matias Z: un asistente de conocimiento para descubrir el talento de una organización, no
+
+
+122
+00:15:15.619 --> 00:15:22.509
+Matias Z: Las preguntas típicas que seguramente le vamos a hacer a este asistente son quién sabe sobre determinada tecnología.
+
+
+123
+00:15:22.839 --> 00:15:26.109
+Matias Z: qué personas tienen un conjunto de Skills parecidos.
+
+
+124
+00:15:26.919 --> 00:15:36.449
+Matias Z: ¿quién podría cubrir a otra persona en un proyecto en el caso de que tuviéramos que intercambiar algún colaborador por otro, cómo podríamos conformar un equipo
+
+
+125
+00:15:36.739 --> 00:15:43.609
+Matias Z: con nuestro pool de talentos. Esas son cosas que, si lo piensan, no son triviales de responder a partir de rap
+
+
+126
+00:15:43.719 --> 00:15:46.098
+Matias Z: a partir de chances aislados.
+
+
+127
+00:15:46.239 --> 00:15:48.709
+Matias Z: Sí, en
+
+
+128
+00:15:50.139 --> 00:16:00.108
+Matias Z: el dominio es deliberadamente simple. El ejemplo es muy, muy sencillo: disponemos de 100 personas, 150 personas
+
+
+129
+00:16:00.879 --> 00:16:07.928
+Matias Z: y algunas Skills, y la vinculación va a ser entre personas y estilos y habilidades.
+
+
+130
+00:16:08.149 --> 00:16:14.728
+Matias Z: Cada persona va a figurar con su email, su nombre y la lista de de estilos o habilidades que conoce.
+
+
+131
+00:16:16.389 --> 00:16:19.359
+Matias Z: Tengamos en cuenta que es un conjunto de datos sintéticos.
+
+
+132
+00:16:20.569 --> 00:16:38.028
+Matias Z: Las Skills fueron asignadas al azar todas las tome tal cual de del del ejemplo, con lo cual esto va a tener una consecuencia metodológica, que es que vamos a más adelante entender que, por ser un dato sintético. Cuando, por ejemplo, con
+
+
+133
+00:16:38.209 --> 00:16:43.178
+Matias Z: vayamos a la construcción de comunidades. Vamos a ver que hay un poco de ruido
+
+
+134
+00:16:43.549 --> 00:16:55.748
+Matias Z: y eso tiene que ver justamente con el Tataset que estamos utilizando, pero en general, los patrones que aparecen son útiles para entender la mecánica de las técnicas. No no hay que leerlo como como una estructura de una organización real.
+
+
+135
+00:16:56.629 --> 00:16:57.499
+Matias Z: Bien.
+
+
+136
+00:16:57.629 --> 00:17:01.559
+Matias Z: Mhm, Bueno.
+
+
+137
+00:17:02.349 --> 00:17:13.658
+Matias Z: módulo 1. Y la charla empieza con los la, los las cuestiones básicas de los grafos. Yo creo que esto un poco. Lo tenemos encarado. Ya
+
+
+138
+00:17:16.959 --> 00:17:19.048
+Matias Z: escucho, si hay dudas,
+
+
+139
+00:17:22.359 --> 00:17:25.869
+Matias Z: Bien, les cuento rápido. Entonces
+
+
+140
+00:17:25.999 --> 00:17:34.659
+Matias Z: la progresión muy sencilla es la siguiente primero es construir un grafo. A partir de datos tabulares
+
+
+141
+00:17:35.239 --> 00:17:45.779
+Matias Z: vamos a decidir que es un nodo, qué es una relación y cómo se cargan esos esos datos de manera tal que conforman el grafo de conocimiento.
+
+
+142
+00:17:46.539 --> 00:17:59.648
+Matias Z: Segundo, vamos a ver cómo se consultan con Saifer Acuérdense que Saifer era era el el nuestra, nuestro lenguaje de para hacer puentes. Pero no puedes relacionarle sino varias basadas en en estos brazos.
+
+
+143
+00:17:59.819 --> 00:18:02.868
+Matias Z: normalmente usando patter matching en
+
+
+144
+00:18:04.329 --> 00:18:22.428
+Matias Z: coincidencia de patrones. Ya vamos a ver un ejemplo. La idea no es versizer, por supuesto, pero sepan que las las tus que vamos a construir para nuestros agentes. Sí van a tener consultas de Safer dentro de su código. Tercero, es aplicar algoritmos de grafos que enriquezcan los datos. Y acá
+
+
+145
+00:18:22.749 --> 00:18:35.848
+Matias Z: hay una enorme vastísima cantidad de herramientas disponibles que vienen de nuevo de la teoría tradicional de Grafos, pero vamos a utilizar una muy básica, que es la detección de comunidades, y ya vamos a ver que son comunidades
+
+
+146
+00:18:36.469 --> 00:18:42.428
+Matias Z: en después vamos a ver cómo representar Las Skills.
+
+
+147
+00:18:42.929 --> 00:18:53.649
+Matias Z: que normalmente tienen un nombre y una descripción. Vamos a ver cómo podemos representar esas Skills de manera vectorial para poder hacer búsquedas semánticas de esas Skills
+
+
+148
+00:18:54.369 --> 00:18:56.078
+Matias Z: utilizando sus envenenas.
+
+
+149
+00:18:59.079 --> 00:19:06.768
+Matias Z: Y les diría lo más relevante para esta secuencia es que cada etapa va a agregar una forma distinta de definir
+
+
+150
+00:19:07.439 --> 00:19:10.079
+Matias Z: similitud siquiera.
+
+
+151
+00:19:10.449 --> 00:19:17.159
+Matias Z: Primero, vamos a ver similitud estructural basada en conexiones de esa de esa topología, de nuestro grafo.
+
+
+152
+00:19:17.279 --> 00:19:26.248
+Matias Z: Después vamos a la similitud semántica basada en el espacio vectorial, donde proyectamos la descripción de las de las Skills. Y al final, la combinación.
+
+
+153
+00:19:26.389 --> 00:19:33.929
+Matias Z: ¿cómo puedes usar tanto la similitud semántica como el aspecto estructural del recorrido de brazos
+
+
+154
+00:19:40.239 --> 00:19:47.558
+Matias Z: Okay esto un poco, lo habíamos empezado a introducir. Yo creo que no sé si es necesario repetirlo.
+
+
+155
+00:19:50.409 --> 00:19:55.179
+Matias Z: Me dicen, si se entiende, si no voy rápido y lo cuento.
+
+
+156
+00:20:01.339 --> 00:20:04.978
+Matias Z: Bueno, voy rápido, un grafo de conocimiento. Entonces.
+
+
+157
+00:20:05.169 --> 00:20:08.018
+Matias Z: como habíamos dicho, es un conjunto.
+
+
+158
+00:20:10.099 --> 00:20:18.098
+Matias Z: Básicamente es un conjunto de patrones de diseño por organizar y acceder a datos que están relacionados de alguna manera entre sí.
+
+
+159
+00:20:20.629 --> 00:20:27.999
+Matias Z: El New York, que es la la base de datos perdón. ¿alguien conoce? New: For Dj: Utilizó: Yo sé que pregunté esto, pero vamos de nuevo?
+
+
+160
+00:20:28.609 --> 00:20:35.929
+Matias Z: Mhm: ¿Alguno la tiene clara, le pido que participe que vaya enriqueciendo la clase estaría. Bueno, este.
+
+
+161
+00:20:37.939 --> 00:20:47.329
+Matias Z: como habíamos anticipado en el encuentro anterior, los nodos representan entidades son los sustantivos del dominio.
+
+
+162
+00:20:47.449 --> 00:20:51.109
+Matias Z: sí del dominio de negocios, como personas, lugares o cosas.
+
+
+163
+00:20:51.909 --> 00:20:55.719
+Matias Z: y las relaciones representan asociaciones o interacciones entre nodos.
+
+
+164
+00:20:55.929 --> 00:21:08.859
+Matias Z: y suelen expresarse como verbos. ¿no? Por ejemplo, una persona conoce otra persona. Una persona vive con otra persona, una persona maneja tal auto. Entonces las relaciones tienen tipo y dirección
+
+
+165
+00:21:10.519 --> 00:21:16.198
+Matias Z: y las propiedades son los atributos tanto de los nuevos como de las relaciones.
+
+
+166
+00:21:16.899 --> 00:21:23.478
+Matias Z: En este caso pueden ser cadenas de texto Streams pueden ser números. Pueden ser listas.
+
+
+167
+00:21:23.839 --> 00:21:29.299
+Matias Z: Y como vamos a ver también más adelante. Pueden ser vectores en
+
+
+168
+00:21:32.939 --> 00:21:39.139
+Matias Z: Acá me gustaría aclarar que, más allá de que vean aristas con flechas en
+
+
+169
+00:21:39.589 --> 00:21:51.548
+Matias Z: sepan que el el en realidad no es un grafo dirigido, no es un grafo que tenga dirección en cuanto a sus relaciones. Yo puedo ir desde cualquier entidad a cualquier cantidad, siempre y cuando exista una lista entre esos 2
+
+
+170
+00:21:52.309 --> 00:22:01.469
+Matias Z: en a ver en el ejemplo que estamos viendo. De hecho.
+
+
+171
+00:22:02.419 --> 00:22:09.028
+Matias Z: 2 personas pueden estar conectadas por varias relaciones, sí, con lo cual
+
+
+172
+00:22:09.249 --> 00:22:23.979
+Matias Z: eso también es importante entender y justamente a partir de la cantidad de relaciones que haya entre 2 entidades, probablemente nos interese empezar a construir estas famosas comunidades, que es una suerte de clases, pero que van quedando como
+
+
+173
+00:22:24.039 --> 00:22:31.189
+Matias Z: directamente plasmadas en el Grafo, con lo cual no hay que volver a correr permanentemente un modelo de casting. Para entender cómo
+
+
+174
+00:22:31.409 --> 00:22:35.939
+Matias Z: se se agrupan nuestras entidades dentro de nuestro gráfico.
+
+
+175
+00:22:40.969 --> 00:22:47.359
+Matias Z: Vamos a ver un poquitito de sifer simplemente para que cuando empecemos la demo
+
+
+176
+00:22:47.769 --> 00:22:51.289
+Matias Z: no estemos del todo perdidos. Es bastante sencillo.
+
+
+177
+00:22:53.599 --> 00:22:55.218
+Matias Z: ¿alguien sabe de Zaipher?
+
+
+178
+00:22:57.169 --> 00:22:59.409
+Matias Z: Si alguien tiene experiencia.
+
+
+179
+00:22:59.409 --> 00:22:59.979
+Alejandro Declerk: Pero.
+
+
+180
+00:22:59.979 --> 00:23:00.459
+Matias Z: Buenas tardes.
+
+
+181
+00:23:00.459 --> 00:23:03.578
+Alejandro Declerk: Pero te lo olvidas que no estás muy de seguido. Esto.
+
+
+182
+00:23:04.509 --> 00:23:10.238
+Matias Z: Bueno, pero sirve. Sirve si quieres sumar bienvenido.
+
+
+183
+00:23:13.209 --> 00:23:16.469
+Matias Z: Alejandro Entonces utilizaste el mío fortel previamente.
+
+
+184
+00:23:16.469 --> 00:23:22.069
+Alejandro Declerk: Es viste el típico caso de uso del de las estafas de fraude bancario.
+
+
+185
+00:23:22.449 --> 00:23:25.718
+Matias Z: Es es el típico caso para para grafo de conocimiento. Sí,
+
+
+186
+00:23:25.999 --> 00:23:29.448
+Matias Z: contame más porque me interesa un montón. Creo que los compañeros de.
+
+
+187
+00:23:29.449 --> 00:23:48.378
+Alejandro Declerk: No podemos tener relaciones así medias. Este tipo de medidas complejas, No, Por ejemplo, no sé, a tal persona le gusta hacer tal cosa y le gusta ser otra. Y a su vez tiene ese hermano de es vecino de tal persona. Es un lío modelar eso en ese vuelo. Entonces estas cosas de grafos están buenísimas para eso, porque te permiten ver mejor
+
+
+188
+00:23:48.379 --> 00:23:49.559
+Alejandro Declerk: las relaciones.
+
+
+189
+00:23:49.599 --> 00:24:01.289
+Alejandro Declerk: Lo que pasa que después. Claro, cuando escalan los líos bárbaros, no porque se complejiza mucho, pero es como mucho más descriptivo ese tipo de de relaciones, y mucho más difícil también de ser coeris. No vienen acá. La.
+
+
+190
+00:24:01.749 --> 00:24:03.668
+Alejandro Declerk: bueno, no más, no la semana.
+
+
+191
+00:24:04.599 --> 00:24:19.019
+Alejandro Declerk: Acá La temática es difícil, no es como la secuela, que es más obvio. Pero está bueno igual para ciertos casos. Uno en donde 1 quiere hacer cosas puntuales e investigar, no como relaciones. Está buenísimo, porque con un grafo puedes ver 1 000 cosas que capaz que tienes que hacer 28 000 túario.
+
+
+192
+00:24:21.169 --> 00:24:22.809
+Matias Z: Genial
+
+
+193
+00:24:23.329 --> 00:24:30.909
+Matias Z: me sirve mucho el caso. Es 1 de los casos paradigmáticos de de de por qué usaríamos grafo de conocimiento en vez de Rag, por ejemplo.
+
+
+194
+00:24:31.579 --> 00:24:34.409
+Matias Z: Así que está bueno que tengas esa experiencia.
+
+
+195
+00:24:35.909 --> 00:24:44.729
+Matias Z: Bueno, como ven, es un lenguaje declarativo que básicamente usa Batman Machine es sencillo.
+
+
+196
+00:24:45.609 --> 00:24:52.638
+Matias Z: Entre paréntesis, si se entiende un poco, la digamos, el diagrama
+
+
+197
+00:24:52.979 --> 00:25:00.529
+Matias Z: donde tenemos una entidad persona y una entidad de Skill. Y tenemos una relación original que es, conoce o sabe
+
+
+198
+00:25:01.969 --> 00:25:07.428
+Matias Z: Después, en general, las cuales tienen esta forma, que no son más que
+
+
+199
+00:25:08.229 --> 00:25:12.899
+Matias Z: la la mención de nodos, mención de relaciones utilizando variables.
+
+
+200
+00:25:13.799 --> 00:25:20.288
+Matias Z: Sí, los paréntesis van a representar nodos enteros.
+
+
+201
+00:25:20.809 --> 00:25:27.949
+Matias Z: Sí, las flechas con corchetes. Como ven, acá son básicamente la representación de las relaciones
+
+
+202
+00:25:28.809 --> 00:25:38.459
+Matias Z: y la consulta. Yo creo que se lee casi literalmente que es buscar una persona con un nombre Down, digamos, en función de la propiedad, la proporty
+
+
+203
+00:25:38.569 --> 00:25:46.169
+Matias Z: en que conoce algo que tenga algún conocimiento en función de eso nos nos va a traer
+
+
+204
+00:25:46.559 --> 00:25:55.199
+Matias Z: las Skills que conocerán. Por ejemplo, si utilizamos solamente la variable Skill y
+
+
+205
+00:26:00.349 --> 00:26:10.218
+Matias Z: justamente a ver la etiqueta Person cumple un papel análogo al tipo de tabla. S. Q. L, Si quieren.
+
+
+206
+00:26:10.689 --> 00:26:17.759
+Matias Z: dice qué clase de entidad es y las propiedades entre llaves
+
+
+207
+00:26:18.509 --> 00:26:23.069
+Matias Z: nos permiten identificar o filtrar, por ejemplo, por nombre en este caso.
+
+
+208
+00:26:23.729 --> 00:26:27.638
+Matias Z: y las variables que en este ejemplo son P.
+
+
+209
+00:26:28.219 --> 00:26:33.389
+Matias Z: Y Skill hacia el final, nombran los elementos que cumplen el patrón
+
+
+210
+00:26:33.729 --> 00:26:41.178
+Matias Z: y nos permiten devolverlos o seguir utilizándolos para hacer sus sucesivas sucesivos saldos a lo largo del Grap.
+
+
+211
+00:26:43.829 --> 00:26:58.569
+Matias Z: El tipo de relación junto con la flecha va a fijar la dirección, pero una vez más sepamos que podemos hacer transversal en ambos sentidos. O sea, no es un dow, No es un grafo cíclico dirigido, ni mucho menos. Es un grafo que
+
+
+212
+00:26:58.799 --> 00:27:05.629
+Matias Z: no está dirigido y puede ser cíclico tranquilamente. Después. Hay formas de evitar justamente duplicados.
+
+
+213
+00:27:06.919 --> 00:27:08.409
+Matias Z: Mhm.
+
+
+214
+00:27:14.499 --> 00:27:15.339
+Matias Z: Bien.
+
+
+215
+00:27:18.988 --> 00:27:21.778
+Matias Z: si les parece bien, voy a intentar
+
+
+216
+00:27:22.809 --> 00:27:27.609
+Matias Z: pasar rápido. Entonces, si haces Likes una vez más, así Así pasamos a la demo.
+
+
+217
+00:27:29.028 --> 00:27:31.878
+Matias Z: ¿qué tiene de interesante utilizar grafos?
+
+
+218
+00:27:33.649 --> 00:27:36.959
+Matias Z: Bueno, justamente
+
+
+219
+00:27:37.149 --> 00:27:45.729
+Matias Z: heredamos un montón de técnicas, un montón de algoritmos que vienen de justamente el mundo de la teoría de los brazos.
+
+
+220
+00:27:45.979 --> 00:28:01.208
+Matias Z: New for Gay nos ofrece una biblioteca de analítica de grafos con más de 50 algoritmos. Una vez que ingestamos nuestros datos en esta base de datos, simplemente corremos esos algoritmos y enriquecemos nuestros datos.
+
+
+221
+00:28:03.569 --> 00:28:11.268
+Matias Z: Y esto nos va a servir, por ejemplo, para facilitar las respuestas sobre preguntas globales de la red, no solamente preguntas locales
+
+
+222
+00:28:11.559 --> 00:28:17.169
+Matias Z: de en la slide. Como ven, los agrupan familias.
+
+
+223
+00:28:18.929 --> 00:28:22.238
+Matias Z: Las familias son 6.
+
+
+224
+00:28:22.409 --> 00:28:40.728
+Matias Z: La que está mencionando el slide, los de camino y búsqueda. En este primer caso, que encuentran, por ejemplo, el camino más corto entre 2 nodos: los de centralidad importancia. Eso lo vamos a utilizar porque nos interesa, por ejemplo, saber en una comunidad cuál es el el colaborador que
+
+
+225
+00:28:40.819 --> 00:28:47.999
+Matias Z: que más relaciones tiene con otras entidades a lo de detección de comunidades
+
+
+226
+00:28:50.389 --> 00:28:57.589
+Matias Z: y, en general, todas las familias normales y tradicionales de recorridos de grafos que conocemos
+
+
+227
+00:28:57.709 --> 00:29:06.049
+Matias Z: las vamos a utilizar para encontrar estructuras que de otra manera no podríamos encontrar en nuestro en nuestro grafo de conocimiento.
+
+
+228
+00:29:06.919 --> 00:29:09.369
+Matias Z: Hoy vamos a usar esta biblioteca de manera.
+
+
+229
+00:29:10.279 --> 00:29:26.469
+Matias Z: digamos, breve, sencilla, solo para mostrar que una vez que tenemos el grafo de conocimiento y con los datos ingestados. Podemos enriquecerlo con algoritmos y guardar los resultados como propiedades nuevas que luego la gente puede utilizar sin tener que volver a ejecutar el mismo algoritmo.
+
+
+230
+00:29:27.149 --> 00:29:27.939
+Matias Z: Sí,
+
+
+231
+00:29:28.969 --> 00:29:36.018
+Matias Z: vamos a usar por ahora solamente el algoritmo que hace detección de comunidades, pero yo creo que un poco ilustra la la idea.
+
+
+232
+00:29:44.679 --> 00:29:46.029
+Matias Z: Hasta acá venimos bien.
+
+
+233
+00:29:50.159 --> 00:29:53.609
+Matias Z: Okay, ¿Para qué nos sirve detectar comunidades
+
+
+234
+00:29:56.239 --> 00:29:59.059
+Matias Z: Un poco acá? Está la respuesta.
+
+
+235
+00:30:01.009 --> 00:30:04.198
+Matias Z: Segmentación, clustering, resolución de entidades.
+
+
+236
+00:30:05.239 --> 00:30:06.229
+Matias Z: En
+
+
+237
+00:30:06.699 --> 00:30:15.968
+Matias Z: resumen, Suization, pero básicamente lo pueden entender como una forma de agrupar o particionar los nodos de un grafo.
+
+
+238
+00:30:16.309 --> 00:30:17.928
+Matias Z: Como se puede imaginar
+
+
+239
+00:30:18.349 --> 00:30:30.178
+Matias Z: el resultado. Lo interesante me parece que es una propiedad. Es un identificador de comunidad que se asigna a cada nodo en función de la estructura y sus relaciones. Una vez que tengamos esos datos ingestados.
+
+
+240
+00:30:31.109 --> 00:30:37.459
+Matias Z: Para nosotros es de especial interés para, por ejemplo, encontrar
+
+
+241
+00:30:37.869 --> 00:30:46.468
+Matias Z: comunidades informales dentro de nuestra organización, que no necesariamente están reflejadas. ¿qué sé yo, en el organigrama formal de la compañía
+
+
+242
+00:30:46.569 --> 00:30:51.498
+Matias Z: Mhm para darnos un ejemplo. Hay un algoritmo
+
+
+243
+00:30:52.019 --> 00:30:58.218
+Matias Z: bastante maduro y conocido llamado Leiden. Hay varios algoritmos para detección de comunidades.
+
+
+244
+00:30:58.459 --> 00:31:03.209
+Matias Z: pero leiden es 1 de los algoritmos más utilizados que.
+
+
+245
+00:31:07.999 --> 00:31:14.528
+Matias Z: sin entrar en detalles de cómo funciona. Básicamente, a partir de
+
+
+246
+00:31:14.839 --> 00:31:27.189
+Matias Z: de una métrica llamada modularidad, va a encontrar los grupos que tienen mayor cantidad de relaciones entre ellos, Como en este caso, las entidad. Las relaciones son
+
+
+247
+00:31:27.699 --> 00:31:37.169
+Matias Z: conoce a una herramienta en particular. Lo que vamos a encontrar son grupos de personas que tienen un Skill Set similar. Esas van a ser nuestras comunidades. Básicamente
+
+
+248
+00:31:38.269 --> 00:31:39.389
+Matias Z: que
+
+
+249
+00:31:45.569 --> 00:31:46.479
+Matias Z: bien.
+
+
+250
+00:31:48.029 --> 00:32:00.318
+Matias Z: hay una nota metodológica. Tiene que ver con la pregunta que hicieron al principio, que es: ¿por qué utilizar esto y no utilizar gráficamente cuál es el costo de utilizar
+
+
+251
+00:32:00.509 --> 00:32:09.328
+Matias Z: un gasto de conocimientos? Bueno, si, por ejemplo, corremos leiden que es el algoritmo que vamos a utilizar hoy para encontrar y ya dejar plasmado dentro del mismo grafo.
+
+
+252
+00:32:09.619 --> 00:32:13.529
+Matias Z: Cuáles son las comunidades que existen en nuestros datos en
+
+
+253
+00:32:13.879 --> 00:32:19.149
+Matias Z: una vez que empezamos a modificar el grafo, Tenemos que re ejecutar el
+
+
+254
+00:32:19.459 --> 00:32:23.409
+Matias Z: el algoritmo para que las comunidades vuelvan a a descubrirse, con lo cual
+
+
+255
+00:32:23.689 --> 00:32:28.898
+Matias Z: cada vez que se modifica nuestro grafo de conocimiento, tenemos que volver a ejecutar varias cosas.
+
+
+256
+00:32:30.289 --> 00:32:34.149
+Matias Z: Esa es una de las complejidades que tal vez Conrad, No, no tenemos necesariamente.
+
+
+257
+00:32:37.799 --> 00:32:40.729
+Matias Z: Ahora volvemos al modelo de Grafos por un ratito.
+
+
+258
+00:32:42.309 --> 00:32:44.938
+Matias Z: Fíjense que aparece acá. Abajo.
+
+
+259
+00:32:50.309 --> 00:32:54.529
+Matias Z: Hay una propiedad nueva que estamos viendo ahí sí
+
+
+260
+00:32:55.449 --> 00:33:02.079
+Matias Z: que nos tiene que resultar familiar, porque viene un poco de del del mundo rap que ya conocemos previamente.
+
+
+261
+00:33:02.389 --> 00:33:03.919
+Matias Z: Este
+
+
+262
+00:33:06.689 --> 00:33:17.549
+Matias Z: en este caso es una propiedad que está asociada a la descripción de un elemento y que nos da el resultado de correr esa descripción por un embail.
+
+
+263
+00:33:17.979 --> 00:33:33.039
+Matias Z: Entonces, además, nos podemos guardarlos en medios relacionados con la descripción de esas entidades. Esto habilita justamente unir 2 mundos que suelen verse por separado.
+
+
+264
+00:33:33.339 --> 00:33:41.289
+Matias Z: como dijimos al principio: por un lado, la estructura explícita del Grafo con sus entidades y, relaciones y, por otro lado, el espacio vectorial.
+
+
+265
+00:33:41.829 --> 00:33:47.408
+Matias Z: donde la cercanía entre vectores en ese espacio multidimensional
+
+
+266
+00:33:47.789 --> 00:33:55.389
+Matias Z: nos da proximidad en términos de significado, en
+
+
+267
+00:33:58.059 --> 00:34:16.719
+Matias Z: volvemos a decir un poco lo mismo cuando conviven ambos en las nuevas de datos, como en New for Jale, Lo que podemos hacer es combinar en una única consulta en la misma consulta, una búsqueda por similitud y después un posterior recorrido por las relaciones existentes entre esas entidades.
+
+
+268
+00:34:16.819 --> 00:34:21.898
+Matias Z: En nuestra época, Skil va a almacenar un vector.
+
+
+269
+00:34:22.129 --> 00:34:39.869
+Matias Z: Vamos a utilizar 768 dimensiones que se calcula a partir del nombre y la descripción del esquí. Y más adelante vamos a ver cómo vamos a guardar incluso las similitudes entre las Skills como relaciones dentro del mismo grafo para no tener que reejecutar
+
+
+270
+00:34:39.869 --> 00:34:44.189
+Matias Z: nuevamente cada vez que querramos encontrar justamente
+
+
+271
+00:34:44.889 --> 00:34:48.458
+Matias Z: grupos de Skills que tengan similitud semántica entre ellos.
+
+
+272
+00:34:56.319 --> 00:35:05.018
+Matias Z: Bien, ¿qué son? En vez de dudo que sea necesario volver a definirlas?
+
+
+273
+00:35:10.259 --> 00:35:17.768
+Matias Z: Alguno tiene dudas sobre exactamente qué implica convertir
+
+
+274
+00:35:18.739 --> 00:35:30.999
+Matias Z: cualquiera de estos tipos de datos, por ejemplo, audio, vídeo, texto, imágenes o incluso una característica topológica de nuestro grafo de conocimientos en un Enladín
+
+
+275
+00:35:32.389 --> 00:35:36.969
+Matias Z: alguno tiene dudas al respecto. Necesita reforzar el concepto o podemos seguir?
+
+
+276
+00:35:41.739 --> 00:35:43.648
+Matias Z: Daniel dice que Ok.
+
+
+277
+00:35:46.959 --> 00:35:47.799
+JULIAN DAMIAN FANCHI: Pero el porche.
+
+
+278
+00:35:47.799 --> 00:35:56.218
+Matias Z: Veo todos a la vez, pero Diego dice Okay Juan dice: Ok.
+
+
+279
+00:35:56.319 --> 00:36:02.179
+Matias Z: perfecto. Okey significa que sigamos no bien.
+
+
+280
+00:36:02.779 --> 00:36:16.459
+Matias Z: entonces no es necesario recordar. S Sí. Recuerdan solamente el el hecho de que los los nuevos modelos de Meding tienen esta habilidad nativa de proyectar el mismo espacio
+
+
+281
+00:36:17.249 --> 00:36:30.908
+Matias Z: vectorial, los diferentes tipos de datos. Recuerden que antes por ahí era necesario, por ejemplo, usar Speech to text para pasar el el audio original a texto y recién ahí utilizar el main. Ahora podemos directamente proyectar
+
+
+282
+00:36:30.969 --> 00:36:38.679
+Matias Z: esta información directamente en el mismo espacio vectorial, con lo cual se puede hacer búsqueda semántica entre una porción de texto y una
+
+
+283
+00:36:38.789 --> 00:36:47.238
+Matias Z: y un segmento de audio. Eso es interesante, un poco. Es la multimodalidad de la que estamos hablando últimamente en los modelos más nuevos.
+
+
+284
+00:36:48.309 --> 00:36:53.109
+Matias Z: Mhm Okay.
+
+
+285
+00:37:02.009 --> 00:37:04.749
+Matias Z: Yo creo que esto damos.
+
+
+286
+00:37:05.269 --> 00:37:15.188
+Matias Z: Se lo voy a dejar para que lo lo revisen tranquilos Cuando miren las slides, sepan que New For G tiene, si recuerdan las formas de buscar información, habíamos
+
+
+287
+00:37:15.349 --> 00:37:24.368
+Matias Z: planteado la posibilidad de hacerlo de manera léxica o lexicográfica. ¿se acuerdan de B M 25 como forma de buscar información
+
+
+288
+00:37:24.879 --> 00:37:32.689
+Matias Z: por por por distancia de coseno. Cuando buscábamos similitud semántica, Bueno.
+
+
+289
+00:37:32.809 --> 00:37:42.719
+Matias Z: New: For J. Nos permite hacer búsquedas combinadas utilizando las cada una de esas técnicas por separado o combinadas, con lo cual
+
+
+290
+00:37:44.319 --> 00:37:53.179
+Matias Z: todas las técnicas que vimos en la en el encuentro anterior lo van a encontrar como una posible invocación a la hora de utilizar cyfer
+
+
+291
+00:37:55.319 --> 00:38:00.758
+Matias Z: Así que no creo que sea necesario repetirlo, pero sepan que tenemos justamente en esta
+
+
+292
+00:38:01.059 --> 00:38:10.439
+Matias Z: base de datos opensource que vamos a utilizar en la demo. Tenemos todas esas implementaciones ya incluidas en en la misma el mismo motor de base de datos.
+
+
+293
+00:38:13.369 --> 00:38:23.149
+Matias Z: o sea, tener todo en el mismo lugar. Lo que va a evitar es sincronizar datos, tener que utilizar diferentes motores para diferentes cosas, o sea, en teoría, va a reducir la latencia
+
+
+294
+00:38:23.429 --> 00:38:24.459
+Matias Z: a
+
+
+295
+00:38:24.949 --> 00:38:32.989
+Matias Z: no es necesario tener un almacén vectorial especializado el grafo de conocimiento. Por otro lado, todo de alguna manera integrado en un en un mismo motor.
+
+
+296
+00:38:33.419 --> 00:38:43.599
+Matias Z: En bien, ¿cómo sería la similaridad. Yo creo que esto lo podemos también. Saltear Okay.
+
+
+297
+00:38:46.259 --> 00:38:47.659
+Matias Z: Vamos a hacer una cosa.
+
+
+298
+00:38:48.529 --> 00:38:54.549
+Matias Z: Si le parece bien, después seguimos con los Slides.
+
+
+299
+00:39:00.019 --> 00:39:03.639
+Matias Z: Acá tenemos nuestro agente reclutador.
+
+
+300
+00:39:10.919 --> 00:39:17.238
+Matias Z: nuestro agente alrededor. La verdad que el el nombre no no me hace funcionar, pero bueno, básicamente es es una
+
+
+301
+00:39:17.589 --> 00:39:27.669
+Matias Z: un analista de talento dentro de una organización que que tiene Tools, y esas tools. Básicamente, lo que hacen son es ejecutar
+
+
+302
+00:39:27.929 --> 00:39:31.978
+Matias Z: operaciones safer contra una base de New for Jay
+
+
+303
+00:39:32.699 --> 00:39:37.248
+Matias Z: antes de empezar a probarlo. Y antes de ver el código.
+
+
+304
+00:39:37.539 --> 00:39:45.209
+Matias Z: quería mostrarles como muy rápidamente cómo se construye ese en
+
+
+305
+00:39:45.529 --> 00:40:04.419
+Matias Z: grafo de conocimiento que vamos a estar utilizando. Lo que tengo es instalado New fortage en un Docker. Y acá tenemos un visualizador que es el playground que se puede acceder también desde el sitio web en instancias en Cloud que ofrece New for Day. Esto está corriendo todo local.
+
+
+306
+00:40:09.829 --> 00:40:12.648
+Matias Z: Está precargado
+
+
+307
+00:40:13.169 --> 00:40:20.929
+Matias Z: en los scripts que les publico para la demo precarga del grafo para que no tengan que hacerlo paso a paso.
+
+
+308
+00:40:21.509 --> 00:40:24.739
+Matias Z: Pero lo que pueden hacer es en el Ritmi
+
+
+309
+00:40:25.429 --> 00:40:35.659
+Matias Z: es una vez que abren, está la lista de instrucciones para poder abrir esto, por supuesto, es correr perdón.
+
+
+310
+00:40:35.779 --> 00:40:36.899
+Matias Z: correr
+
+
+311
+00:40:37.349 --> 00:40:47.629
+Matias Z: algunas de las queris sacers para empezar a ver qué es exactamente lo que tenemos cargado en en nuestro en nuestro grafo de conocimientos. No.
+
+
+312
+00:40:49.569 --> 00:41:00.029
+Matias Z: Algunas cuevas van a responder con tablas y otras cue iban a responder con visualizaciones basadas en grafos. Eso va a depender del tipo de cuero. Y cómo está estructurada?
+
+
+313
+00:41:00.329 --> 00:41:01.199
+Matias Z: ¿sí?
+
+
+314
+00:41:02.819 --> 00:41:08.069
+Matias Z: Entonces, primero un poquito, mostrarles fuerys muy sencillas con Saifer
+
+
+315
+00:41:08.559 --> 00:41:13.479
+Matias Z: para que vean lo que ya tenemos cargado y lo que van a tener cargado de ustedes en sus
+
+
+316
+00:41:15.149 --> 00:41:19.169
+Matias Z: en sus dedos, a ver si sin en un segundo puedo intentar buscar.
+
+
+317
+00:41:22.369 --> 00:41:32.858
+Matias Z: Bueno, ahora después abrimos el la la directamente. El directorio que tiene tanto la gente como los datos con C. S. D, para que vean de donde salió toda esta información
+
+
+318
+00:41:33.039 --> 00:41:36.599
+Matias Z: y dónde está el código para cargar formación en el Grafo.
+
+
+319
+00:41:37.009 --> 00:41:40.238
+Matias Z: pero un poco es lo que menos nos interesa en este momento.
+
+
+320
+00:41:41.899 --> 00:41:46.589
+Matias Z: Bien, Entonces.
+
+
+321
+00:41:48.869 --> 00:41:59.608
+Matias Z: como ya cargamos todo, tendrían que haber unas 154 personas. 154 nodos, 100 personas. 54 esquinas. Bien.
+
+
+322
+00:41:59.819 --> 00:42:03.269
+Matias Z: Hasta ahí estamos bien En
+
+
+323
+00:42:13.289 --> 00:42:16.748
+Matias Z: Déjenme mostrarles Entonces, ¿cómo podemos hacer un
+
+
+324
+00:42:20.099 --> 00:42:22.009
+Matias Z: una Quary que nos muestre
+
+
+325
+00:42:24.219 --> 00:42:40.829
+Matias Z: Ahora, Sí, volvemos entonces a la visualización en forma de grafo. Ahí tenemos muchas personas. Cada una de estas entidades son diferentes personas. Cuando hacemos un click sobre una de ellas. El visualizador nos va a mostrar sus propiedades, sí que básicamente habíamos dicho. Hay
+
+
+326
+00:42:41.079 --> 00:42:53.399
+Matias Z: que son el email, la el nombre en este caso, como ya corrimos el algoritmo de comunidades, tenemos definida cuál es la comunidad a la que pertenece esa persona y una Id que por ahora lo vamos a ignorar.
+
+
+327
+00:42:53.709 --> 00:42:57.148
+Matias Z: Y también puedo ver las Skills.
+
+
+328
+00:42:57.819 --> 00:43:00.729
+Matias Z: que son las los últimos tiempos de entidades que que tenemos
+
+
+329
+00:43:01.649 --> 00:43:05.269
+Matias Z: entonces que dice en verde son 25. Está mostrando acá.
+
+
+330
+00:43:07.479 --> 00:43:12.659
+Matias Z: Por ejemplo, este esquil que acabo de presionar.
+
+
+331
+00:43:13.739 --> 00:43:19.179
+Matias Z: Vamos a ver si podemos ver un poco más claramente esto, ya.
+
+
+332
+00:43:19.659 --> 00:43:23.708
+Matias Z: Okay, por ejemplo, vamos a hacer. I C. D.
+
+
+333
+00:43:25.459 --> 00:43:33.219
+Matias Z: Tiene un nombre. No sé si lo llama de arriba tiene un nombre, una descripción
+
+
+334
+00:43:34.709 --> 00:43:44.368
+Matias Z: y un aire, pero además, tiene este número que justamente representa el índice en la base vectorial que se construye a partir del nombre de la esquil
+
+
+335
+00:43:44.489 --> 00:43:51.389
+Matias Z: y la descripción, y vamos a ver que nos facilita tener este el enmeding de cada esquina.
+
+
+336
+00:43:54.739 --> 00:43:59.908
+Matias Z: Entonces, primer paso más evidente sería
+
+
+337
+00:44:02.309 --> 00:44:07.309
+Matias Z: poniendo un límite, no para que la visualización sea razonablemente clara.
+
+
+338
+00:44:07.899 --> 00:44:19.729
+Matias Z: Es entender para cada persona qué esquil. Tiene un primer paso obvio y sencillo de leer
+
+
+339
+00:44:29.029 --> 00:44:29.889
+Matias Z: bien.
+
+
+340
+00:44:30.679 --> 00:44:47.469
+Matias Z: Hay una cosa que me gustaría aclarar, que es que el el el verbo que utilizamos para definir las relaciones es importante. Se volvió más importante ahora que probablemente sea leído por el mismo. Entonces la
+
+
+341
+00:44:47.549 --> 00:44:56.199
+Matias Z: los verbos que empezamos a utilizar para definir las acciones se vuelven súper súper importantes. Son definidas de manera arbitraria por nosotros.
+
+
+342
+00:44:56.399 --> 00:45:02.988
+Matias Z: pero tiene mucho sentido que represente efectivamente. Qué clase de vínculo hay entre una entidad y la otra
+
+
+343
+00:45:06.169 --> 00:45:07.149
+Matias Z: okay
+
+
+344
+00:45:12.979 --> 00:45:14.529
+Matias Z: estoy buscando
+
+
+345
+00:45:17.549 --> 00:45:25.279
+Matias Z: temas interesantes. Vamos Vamos a mostrar esto a ver una pregunta multi salto que creo que es un poco lo que de alguna manera
+
+
+346
+00:45:25.839 --> 00:45:33.199
+Matias Z: justifica armar toda esta infraestructura para y tenerla actualizada y y.
+
+
+347
+00:45:35.149 --> 00:45:41.479
+Matias Z: digamos, invertir en en poner esto en producción que no es trivial. Una pregunta
+
+
+348
+00:45:41.599 --> 00:45:51.259
+Matias Z: multi salto, multi hope como se conoce que normalmente es muy difícil de responder utilizando ra utilizando justamente consultas relacionales.
+
+
+349
+00:45:52.189 --> 00:45:56.469
+Matias Z: Una consulta de varios actos sería, según el ejemplo.
+
+
+350
+00:45:57.159 --> 00:46:02.419
+Matias Z: vamos a apelar a una de las usuarias que es Lucy Puf.
+
+
+351
+00:46:02.629 --> 00:46:07.128
+Matias Z: Partimos de Lucy, que es una entidad dentro de nuestro rafo de conocimiento.
+
+
+352
+00:46:07.489 --> 00:46:16.698
+Matias Z: Y vamos a preguntar: quién sabe lo mismo que sabe Lucy, que es una primera forma de entender cómo se relacionan las entidades personas.
+
+
+353
+00:46:17.349 --> 00:46:21.889
+Matias Z: Entonces vamos a ver las Skill de Lucy.
+
+
+354
+00:46:22.329 --> 00:46:25.269
+Matias Z: Y vamos a ver las otras personas que tienen Skills similares.
+
+
+355
+00:46:28.459 --> 00:46:30.398
+Matias Z: Este es el primer grafo que
+
+
+356
+00:46:30.989 --> 00:46:33.829
+Matias Z: vamos a ver en esta consulta.
+
+
+357
+00:46:35.759 --> 00:46:42.768
+Matias Z: Estas Lucy, Estas son las habilidades de Lucy, las Verdes.
+
+
+358
+00:46:43.129 --> 00:46:49.828
+Matias Z: y estos son las el resto de las de los colaboradores, de los compañeros que tienen habilidades, las mismas habilidades. De hecho.
+
+
+359
+00:46:50.399 --> 00:46:51.379
+Matias Z: sí,
+
+
+360
+00:46:54.759 --> 00:47:05.318
+Matias Z: este es el primer grafo que podemos encontrar fácilmente. Ahora lo vamos a complejizar un poquito más de estas personas que conocen las mismas habilidades que conoce Lucy.
+
+
+361
+00:47:07.019 --> 00:47:17.219
+Matias Z: ¿Qué Skills conocen esas personas. Entonces ahí encontramos a un primer multi salto que sería un poquito más complejo también de responder. Si usamos solamente rap.
+
+
+362
+00:47:17.739 --> 00:47:23.608
+Matias Z: Lo importante de esto es como la lógica de parecido. Está dibujada en el grafo de alguna manera.
+
+
+363
+00:47:24.559 --> 00:47:36.779
+Matias Z: y podemos controlarla con mucha más precisión en función de nuestras cuentas de side un paso a la vez. Un salto a la vez entre entidades. Recuerden que cada salto entre entidades cuesta cuesta tiempo, cuesta dinero
+
+
+364
+00:47:37.949 --> 00:47:54.359
+Matias Z: y, además es información simbólica y no sub simbólica, como en el caso de ra donde la semántica de un vector. En realidad no se entiende hasta que hagamos la búsqueda en nuestra base vectorial. Sí, Ivan.
+
+
+365
+00:47:55.049 --> 00:48:04.459
+Ivan Santuoro: Perdón. Yo no me termino de dar cuenta en qué ayuda el empedin a esto? Porque entiendo que un L. L. M Podría Armar la query
+
+
+366
+00:48:04.689 --> 00:48:09.999
+Ivan Santuoro: directamente y no necesitaría ningún enmedio. No, No me doy cuenta todavía cuál es.
+
+
+367
+00:48:10.199 --> 00:48:15.039
+Ivan Santuoro: Sí, me di cuenta en otras situaciones para que sirven beding, pero no para esto. En particular.
+
+
+368
+00:48:15.039 --> 00:48:21.919
+Matias Z: Excelente. No llegamos todavía al ejemplo donde utilizamos en medios. Así que no está bien que no te des cuenta porque no los utilizamos Todos.
+
+
+369
+00:48:21.919 --> 00:48:23.519
+Ivan Santuoro: Okay Okay, perdón.
+
+
+370
+00:48:23.689 --> 00:48:24.918
+Matias Z: No, no, por favor.
+
+
+371
+00:48:25.059 --> 00:48:30.709
+Matias Z: está bien. La pregunta está bien que no te des cuenta porque buscamos específicamente. Fíjate en
+
+
+372
+00:48:32.159 --> 00:48:39.409
+Matias Z: acá tenemos a el nombre completo de la entidad que estamos utilizando como primera entidad, a partir de la cual empezamos a los saltos
+
+
+373
+00:48:39.519 --> 00:48:42.888
+Matias Z: después. Lo que va a pasar es que vamos a querer encontrar.
+
+
+374
+00:48:43.889 --> 00:48:51.279
+Matias Z: por ejemplo, Skills, que tengan cierta similitud semántica contra Skill, y ahí vamos a empezar a ver por qué nos conviene combinar las las 2 herramientas.
+
+
+375
+00:48:51.279 --> 00:48:54.719
+Ivan Santuoro: okay okay. Ahí ahí me me queda claro. Gracias.
+
+
+376
+00:48:54.949 --> 00:49:00.739
+Matias Z: No, por favor, las Skills, entonces de las personas que tienen las mismas Skills que Lucy
+
+
+377
+00:49:01.339 --> 00:49:05.998
+Matias Z: se pone un poquito más engorroso en su lectura, pero
+
+
+378
+00:49:11.529 --> 00:49:12.678
+Matias Z: le pegué.
+
+
+379
+00:49:13.019 --> 00:49:17.618
+Matias Z: Fíjense que está un poco a justo al centro de la del Grafo.
+
+
+380
+00:49:19.379 --> 00:49:21.408
+Matias Z: Entonces no aparece Lucy
+
+
+381
+00:49:21.749 --> 00:49:39.019
+Matias Z: con sus Skills, al igual que antes, con las personas que conocen los Skills y además, las Skills, que conocen esas personas que conocen las Skills, que lucia es un primer, Una primera respuesta. Multi salto como para entender qué clase de complejidad nos permitiría resolver
+
+
+382
+00:49:39.619 --> 00:49:46.179
+Matias Z: New Fortray en este caso y por qué también se suele utilizar bastante en fraude en.
+
+
+383
+00:49:50.259 --> 00:49:55.319
+Mariano Mondani: Y tengo una consulta para tener más el espíritu de esta parte del ejemplo.
+
+
+384
+00:49:55.479 --> 00:50:14.869
+Mariano Mondani: Digamos que esto es más como una distinción o tratar Es más un problema de ciencia de datos. Esto es che vos? Tenías datos relacionales capaz para las consultas que hago al negocio. Le interesan los tendrías que transformar a una base basada en grafos. Es más de eso, digamos hasta ahora. En realidad, la parte argentina es anecdótico. Hasta ahora.
+
+
+385
+00:50:15.509 --> 00:50:18.119
+Matias Z: Va muy bien la pregunta en
+
+
+386
+00:50:19.449 --> 00:50:24.468
+Matias Z: te acuerdas que al final del encuentro anterior, vimos rápidamente un reportecito donde mostraba
+
+
+387
+00:50:24.659 --> 00:50:39.889
+Matias Z: que los grafos de conocimiento empezaban a ser como una capa medio estándar en el mundo gentico corporativo. Bueno, lo que estamos viendo es esa ese sustrato de conocimiento que cada vez más se estabiliza como como un estándar en lo que sería el nuestro estaca gentico.
+
+
+388
+00:50:40.249 --> 00:50:45.579
+Matias Z: pero sí. Lo que estamos viendo ahora tiene que ver con data serie des orientadas a gráficas efectivamente
+
+
+389
+00:50:45.859 --> 00:50:48.919
+Matias Z: por ahí para los que no tenían conocimientos previos.
+
+
+390
+00:50:48.919 --> 00:50:49.549
+Mariano Mondani: Ahí ahí.
+
+
+391
+00:50:49.549 --> 00:50:51.049
+Sebastian Langer: Ti Perdone.
+
+
+392
+00:50:51.829 --> 00:50:59.259
+Mariano Mondani: Hay perdón, lo último ahí. Entonces, las Tools o los las acciones que vaya haciendo. La gente va a terminar siendo un rapper de de saifer.
+
+
+393
+00:50:59.869 --> 00:51:04.898
+Matias Z: Correcto exactamente y, ¡ay, perdón, y no había
+
+
+394
+00:51:05.179 --> 00:51:09.689
+Matias Z: ese punto. Es fundamental. No recuerdo quien había preguntado antes
+
+
+395
+00:51:10.259 --> 00:51:15.388
+Matias Z: el L. D. M: No debería nunca redactar quedis acuérdense de eso.
+
+
+396
+00:51:15.599 --> 00:51:17.969
+Matias Z: ni S. V L. Ni sea iphone ni de ningún tipo.
+
+
+397
+00:51:18.549 --> 00:51:22.289
+Matias Z: Un compañero preguntó antes sobre eso. Si está lucia. Y Sebastian.
+
+
+398
+00:51:23.979 --> 00:51:24.819
+Lucia Etchart: En
+
+
+399
+00:51:25.319 --> 00:51:35.559
+Lucia Etchart: relacionado con las preguntas que vienen haciendo. Entonces la idea sería que que la gente o el perdón que usa mal. No, ya no sé si esa gente o el M Ya voy a llegar
+
+
+400
+00:51:35.749 --> 00:51:40.928
+Lucia Etchart: tenga todo a su disposición, no dependiendo de las preguntas que vos le hacés
+
+
+401
+00:51:41.239 --> 00:51:50.779
+Lucia Etchart: entienda que esta es una pregunta que que requiere que yo me vaya para acá porque me está preguntando en una relación entre la tía hermana y la No sé qué la te tengo que ir por acá
+
+
+402
+00:51:50.849 --> 00:52:03.929
+Lucia Etchart: pero después, eventualmente combinarlo con lo que te puede dar una base de datos relacional. No, como que no sé si vos acá también quisieras calcular algo de sueldos o qué sé yo. Primero fuiste, entendiste las relaciones y después caíste en
+
+
+403
+00:52:03.929 --> 00:52:11.019
+Lucia Etchart: en la tabla más normal. Digamos, o estoy como tratando de tan similar a la pregunta del compañero como cheques. Qué
+
+
+404
+00:52:11.129 --> 00:52:19.208
+Lucia Etchart: esto, al final del día? Es algo que debería estar a disposición de la gente para hacerlo, entender la data y después contestarte.
+
+
+405
+00:52:21.489 --> 00:52:27.179
+Matias Z: Sí mira. De hecho, hay una una de las demos que es el
+
+
+406
+00:52:28.149 --> 00:52:36.938
+Matias Z: una suerte de ragéntico. Si quieres justamente lo que hace es disponer de de de un abanico de posibilidades entre ellas es la búsqueda vectorial
+
+
+407
+00:52:37.789 --> 00:52:42.519
+Matias Z: tal cual la vimos en en el encuentro pasado en
+
+
+408
+00:52:42.849 --> 00:52:51.039
+Matias Z: si la evidencia o la información que está buscando no es suficiente en función de una validación que se hace de eso. Buscar en otras fuentes.
+
+
+409
+00:52:51.189 --> 00:53:05.948
+Matias Z: Otra de las fuentes podría ser un grafo de conocimiento. Lo que cada vez vamos a encontrar más en la industria es que las compañías empiezan a guardar sus sus sus bases de conocimientos como grafos de conocimiento porque les facilita la búsqueda a gente.
+
+
+410
+00:53:06.739 --> 00:53:12.419
+Matias Z: Entonces podrías tener, por supuesto, bazas relacionales.
+
+
+411
+00:53:12.629 --> 00:53:17.449
+Matias Z: Archivos, p. D, F, Como datos no estructurados, tus
+
+
+412
+00:53:17.679 --> 00:53:37.589
+Matias Z: tus bases con los embages, con, digamos, con los champs por un para usar búsqueda por solicitud y los otros grafos que de hecho habíamos visto en el otro pasado hemos mencionado en el encuentro pasado, que eran los grafos de contexto y los grafos procedimentales que si llegamos a ver, vamos a ver algo hoy, sino
+
+
+413
+00:53:37.829 --> 00:53:42.218
+Matias Z: básicamente utiliza la misma tecnología. Por eso me parecía importante tratar de como
+
+
+414
+00:53:42.469 --> 00:53:46.979
+Matias Z: bajar a tierra lo que estábamos diciendo de grafo de conocimiento en
+
+
+415
+00:53:47.889 --> 00:53:51.499
+Matias Z: la idea es darle todas las herramientas posibles.
+
+
+416
+00:53:51.819 --> 00:53:57.998
+Matias Z: Lo que se ve cada vez más en la industria es que esto aparece como un sustrato estándar en el stack agente.
+
+
+417
+00:53:59.889 --> 00:54:08.318
+Matias Z: Por eso le estamos dedicando un ratito para entender que complementa y que probablemente lo encontremos lado a lado con las soluciones vectoriales.
+
+
+418
+00:54:10.619 --> 00:54:13.408
+Daniel Sosa: A ver dependiendo del caso de uso, entiendo que
+
+
+419
+00:54:13.749 --> 00:54:21.238
+Daniel Sosa: que esto es como súper necesario para maximizar no un poquito la potencialidad de los agentes que vayamos a construir.
+
+
+420
+00:54:24.609 --> 00:54:27.919
+Matias Z: Sí, en general, ya te digo.
+
+
+421
+00:54:28.419 --> 00:54:35.738
+Matias Z: para entornos corporativos, aparece como como una solución medio estándar. Ca: Cada vez más, este
+
+
+422
+00:54:36.009 --> 00:54:41.038
+Matias Z: aparece como una opcional. La opción de de tener esta la información Con Con esta capada
+
+
+423
+00:54:41.219 --> 00:54:46.349
+Matias Z: intermedia, que nos permite responder preguntas que con raro. No podemos responder. Por ejemplo.
+
+
+424
+00:54:46.859 --> 00:54:51.438
+Matias Z: hay casos particulares que después vamos a ver que donde realmente no funciona.
+
+
+425
+00:54:52.699 --> 00:54:57.919
+Matias Z: Entonces este es vale la pena invertir en en tener este tipo de soluciones.
+
+
+426
+00:54:58.029 --> 00:55:07.188
+Matias Z: Y con respecto a la conexión aéntica, lo que vamos a ver al final es justamente lo que decía Mariano como los agentes pueden
+
+
+427
+00:55:07.429 --> 00:55:14.719
+Matias Z: utilizando estas herramientas que son una suerte de Rapper. Sí, responder preguntas más complejas.
+
+
+428
+00:55:18.399 --> 00:55:20.499
+Matias Z: Creo que Sebastian sí.
+
+
+429
+00:55:20.749 --> 00:55:27.509
+Sebastian Langer: Sí, no como para hilar un poco la historia, ¿no? O sea, yo me imagino algo así como que imagínate que eso es un
+
+
+430
+00:55:27.709 --> 00:55:39.979
+Sebastian Langer: y una persona que trabaja asignando gente a proyectos y y tenés que encontrar talento que trabaje
+
+
+431
+00:55:40.339 --> 00:55:47.188
+Sebastian Langer: con determinadas Skills que son similares a una persona que por ahí dentro, un proyecto se destacó,
+
+
+432
+00:55:47.549 --> 00:55:58.969
+Sebastian Langer: pero que por ahí la tienes asignada a otro lado. Y además, no sé ponerle qué sé yo. Es una persona que sabe de un montón de cosas, pero te estaría bueno que tenga conocimiento de la industria petrolera por decir cualquier cosa, ¿no? Entonces
+
+
+433
+00:55:59.109 --> 00:56:13.289
+Sebastian Langer: yo me imagino que, por un lado, tenés el Ral, donde te habla acerca del proyecto, su descripción, quién sabe algunos informes diferentes y por el otro lado, tenés la el el el
+
+
+434
+00:56:13.349 --> 00:56:27.079
+Sebastian Langer: el grafo, donde tenemos relaciones de de estas, todas todas estas, esta este conocimiento, así ontológico relacion de relaciones entre Skills, personas, etcétera. Entonces ahí yo me imagino un arquetipo
+
+
+435
+00:56:27.179 --> 00:56:36.178
+Sebastian Langer: que y un carnet con con con con este determinadas funciones.
+
+
+436
+00:56:36.199 --> 00:56:55.558
+Sebastian Langer: que vaya entendiendo la intención que vaya comprendiendo el texto y que en base a eso, despliegue tools para ir descubriendo esta información, no de forma lineal, sino de forma mucho más. Digo, ahí es donde la gente creo que se asombra, ¿no? Porque, bueno, finalmente
+
+
+437
+00:56:55.559 --> 00:57:02.168
+Sebastian Langer: le diste las herramientas y le permitiste tener distintos procesos de razonamiento. Entonces te terminan diciendo: mira la verdad que Luis
+
+
+438
+00:57:02.249 --> 00:57:10.669
+Sebastian Langer: sabe todo esto y además trabajó en un par de proyectos en petróleo, con lo cual creo que podría llegar a ser un buen candidato.
+
+
+439
+00:57:10.829 --> 00:57:19.508
+Sebastian Langer: No sé a lo mejor ponerlo un poco más caro, porque es un tipo que cobra más. Qué sé yo se me ocurre eso. La verdad, que
+
+
+440
+00:57:19.799 --> 00:57:28.098
+Sebastian Langer: no es algo que 1 ve en el día a día. Me parece buenísimo, pero pero creo que podría. Está bien pensarlo de esta manera.
+
+
+441
+00:57:29.389 --> 00:57:35.689
+Matias Z: Sí, sí. De hecho, me mencionaste la palabra clave que es ontologías que
+
+
+442
+00:57:36.199 --> 00:57:48.379
+Matias Z: que que tal vez debería haber hecho más hincapié al principio para que también se se visualice mejor. Una de las bondades de utilizar grafos de conocimientos es que justamente las.
+
+
+443
+00:57:48.379 --> 00:57:49.848
+Sebastian Langer: Significa matias. Así que si quieres.
+
+
+444
+00:57:49.849 --> 00:57:50.359
+Matias Z: No, claro.
+
+
+445
+00:57:50.359 --> 00:57:52.159
+Sebastian Langer: Arte es nada menos.
+
+
+446
+00:57:52.159 --> 00:57:52.509
+Matias Z: Sí, Sí.
+
+
+447
+00:57:52.509 --> 00:57:56.509
+Sebastian Langer: Pero estoy seguro que vos tenés una definición mucho más académica, interesante.
+
+
+448
+00:57:56.509 --> 00:58:00.258
+Matias Z: No hay problema, No hay problema. Básicamente, pensémoslo como
+
+
+449
+00:58:01.289 --> 00:58:08.659
+Matias Z: mira. De hecho en New For J. Usamos con con trains, no usamos una ontología formal.
+
+
+450
+00:58:08.819 --> 00:58:13.079
+Matias Z: pero para mí me mucho de la clase. Y sí, responderte. Es
+
+
+451
+00:58:13.219 --> 00:58:33.079
+Matias Z: la pregunta. Es todo lo que dijiste? Es correcto y, además, agregaste la noción de cierto, ciertas garantías que ofrecen los grafos de conocimiento, como las ontologías, cuando los representas de determinada manera que no es exactamente como lo estamos haciendo ahora, en función de la de hacer simplificar un poco el ejemplo, Pero
+
+
+452
+00:58:33.259 --> 00:58:41.278
+Matias Z: si Vos Construyes un grafo de conocimiento con la antología correcta. Vos Tenés ciertas garantías de que la información que estás recuperando
+
+
+453
+00:58:42.459 --> 00:58:46.708
+Matias Z: tiene una capa de logia que no, que no es perdón probabilística.
+
+
+454
+00:58:47.209 --> 00:58:50.429
+Matias Z: Lo vamos a ver en un ratito. Vamos a ver un ratito.
+
+
+455
+00:58:50.429 --> 00:58:51.039
+Sebastian Langer: Mhm.
+
+
+456
+00:58:51.309 --> 00:58:52.209
+Matias Z: En
+
+
+457
+00:58:53.219 --> 00:59:05.448
+Matias Z: pero otra de las bondades. Entonces, y gracias por recordármelo, es que acá no estamos dependiendo pura y exclusivamente de una búsqueda vectorial que recuerden que los medios
+
+
+458
+00:59:05.579 --> 00:59:14.149
+Matias Z: son una forma de compresión de datos que la búsqueda por similitud semántica tiene a veces sus sus fallos
+
+
+459
+00:59:14.279 --> 00:59:15.319
+Matias Z: en
+
+
+460
+00:59:15.709 --> 00:59:25.239
+Matias Z: entonces. Es un complemento que, una vez más, insisto, es un complemento que una vez más, vamos a ver cada vez más este lado a lado con nuestras soluciones. Rar
+
+
+461
+00:59:25.509 --> 00:59:26.449
+Matias Z: duals.
+
+
+462
+00:59:26.449 --> 00:59:40.438
+Sebastian Langer: Para ello, para también el resto de los compañeros que requieren por ahí, una una inversión de de parte de sus directivos o no sé o lo que fuere. La verdad que, como argumento de venta o de o de convencimiento de de
+
+
+463
+00:59:40.699 --> 00:59:47.238
+Sebastian Langer: dentro de tanto ruido de la I A. Cuando 1 pone ejemplos tan concretos y y de tanto valor.
+
+
+464
+00:59:47.339 --> 01:00:03.819
+Sebastian Langer: Si Si sabes hacer un buen elevator Pitch. Esto es una bomba, porque la verdad que yo, a nivel corporativo he visto pocas aplicaciones de este estilo que sean tan buenas a lo mejor. Vos Matis. Viste más, pero yo no he visto cosas
+
+
+465
+01:00:03.919 --> 01:00:07.878
+Sebastian Langer: así. Y la verdad que es, tiene pinta de no ser tan complejo.
+
+
+466
+01:00:10.859 --> 01:00:17.169
+Matias Z: Empiezan a aparecer cada vez más como como solución estándar, como le decía a Mariano.
+
+
+467
+01:00:18.499 --> 01:00:25.619
+Sebastian Langer: Sí, pero digo también si si si bueno nada no me quiero ir por las ramas, dale si quieres.
+
+
+468
+01:00:25.619 --> 01:00:29.028
+Matias Z: Eres, me Sir Sebastian me sirve porque, más que nada.
+
+
+469
+01:00:29.159 --> 01:00:36.858
+Matias Z: por la industria en la que te manejás si quieres, cuando pasamos las 8, seguimos con la charla, me me viene bien. Es Es interesante.
+
+
+470
+01:00:36.859 --> 01:00:51.978
+Sebastian Langer: Dale si quieres lo hablamos. Pero por eso te digo, el el el mayor con con en en industrias con miopía del marketing, como suele ser la industria petrolera o la bancaria. Hay que convencer a las personas que peinan canas dentro de la organización de que se trata y
+
+
+471
+01:00:51.978 --> 01:00:56.989
+Sebastian Langer: y explicado de una manera, digo.
+
+
+472
+01:00:57.169 --> 01:01:07.499
+Sebastian Langer: con un ejemplo, con esta profund, con una profundidad por ahí de negocios, pero que refleje este tipo de de este tipo de de
+
+
+473
+01:01:07.688 --> 01:01:17.578
+Sebastian Langer: de ganancia, por decir así. Creo que queda clarísimo el valor de de invertir en este tipo de herramientas y en este tipo de desarrollos.
+
+
+474
+01:01:17.839 --> 01:01:20.238
+Matias Z: Buenísimo. No me alegra que veas eso.
+
+
+475
+01:01:20.239 --> 01:01:23.079
+Sebastian Langer: Digo, me me sí, lo veo así. Yo lo voy a usar. Yo ahorita el.
+
+
+476
+01:01:23.079 --> 01:01:24.489
+Matias Z: Qué se in, qué.
+
+
+477
+01:01:24.969 --> 01:01:25.659
+Sebastian Langer: Mhm.
+
+
+478
+01:01:25.659 --> 01:01:30.909
+Matias Z: Más allá del ejemplo súper simplificado. Entiendo que es un ejemplo muy, muy rozando.
+
+
+479
+01:01:31.719 --> 01:01:39.259
+Sebastian Langer: No sé si van a entender alguna cosa más profunda, tampoco, no, porque tampoco quiero marear, pero la verdad que eso que te acabo de decir es en 2 min, una persona entendió
+
+
+480
+01:01:39.259 --> 01:01:52.689
+Sebastian Langer: qué recurso Digo, recurso, pero es una persona, ¿no? ¿qué persona puede solucionar un problema en un proyecto determinado y qué costo va a tener y si está disponible o no. Y eso el tío se hizo con un pequeño grafo ontológico
+
+
+481
+01:01:52.688 --> 01:02:01.369
+Sebastian Langer: y un y un Rall que fue a leer algo que estaba en una descripción del proyecto. Todo eso lo tenemos. Es cuestión de ordenarlo.
+
+
+482
+01:02:02.188 --> 01:02:03.538
+Matias Z: Bien.
+
+
+483
+01:02:03.539 --> 01:02:04.279
+Sebastian Langer: Nada más.
+
+
+484
+01:02:04.549 --> 01:02:05.658
+Sebastian Langer: Igual le ganaron o no.
+
+
+485
+01:02:05.959 --> 01:02:15.459
+Matias Z: No. Gracias por el aporte. Ok. Les si el resumen sería, hay preguntas que solamente se responden con este tipo de de estructuras de datos.
+
+
+486
+01:02:15.949 --> 01:02:21.938
+Matias Z: Digo por los por si tienen dudas de de cuál es el valor de de utilizar esta tecnología.
+
+
+487
+01:02:22.849 --> 01:02:26.569
+Matias Z: Siguiendo con el hilo de de la demo
+
+
+488
+01:02:26.829 --> 01:02:38.059
+Matias Z: hay algo que podemos hacer, al menos, que es enriquecer. Una vez que cargamos ingestamos nuestros datos, vamos a empezar a enriquecer esas esas relaciones entre entidades. Imagínense que
+
+
+489
+01:02:38.739 --> 01:02:45.588
+Matias Z: Mhm queremos medir. Qué paredes? ¿cuán parecidas son las personas en términos de cuántas Skills comparten.
+
+
+490
+01:02:47.129 --> 01:02:49.639
+Matias Z: Entonces.
+
+
+491
+01:02:53.839 --> 01:03:03.338
+Matias Z: básicamente, esto es una pregunta muy sencilla con la cantidad de Films y que nos devuelve en forma de tabla. Esto ya lo ha guardado. Por eso no.
+
+
+492
+01:03:03.479 --> 01:03:11.728
+Matias Z: En principio no no es necesario seguir avanzando, pero imagínense que esta información fuera como como una consulta
+
+
+493
+01:03:12.299 --> 01:03:15.869
+Matias Z: que que el negocio necesita realizar bastante seguido.
+
+
+494
+01:03:15.989 --> 01:03:20.068
+Matias Z: No encontrar gente con la mayor cantidad de esquís en común.
+
+
+495
+01:03:20.509 --> 01:03:22.129
+Matias Z: Tienen bastante sentido.
+
+
+496
+01:03:22.849 --> 01:03:30.988
+Matias Z: traten de extrapolarlo a sus negocios y a la complejidad que les resulte apropiada. Entonces hay una forma también
+
+
+497
+01:03:33.819 --> 01:03:47.069
+Matias Z: que bueno ya está hecho, no les quiero. No les quiero ocurrir con el código, pero hay una manera que es básicamente construir una nueva forma de de relación, que es simlarskiset.
+
+
+498
+01:03:47.399 --> 01:03:49.619
+Matias Z: Lo que hacemos es correr un código.
+
+
+499
+01:03:52.249 --> 01:04:02.048
+Matias Z: Lo tengo por acá. Y lo que obtenemos es una nueva forma de relacionar las entidades.
+
+
+500
+01:04:02.249 --> 01:04:09.219
+Matias Z: que es simplemente las personas que comparten la mayor cantidad de Skills. Entre ellas.
+
+
+501
+01:04:09.859 --> 01:04:13.478
+Matias Z: esto ya no es una consulta, sino que es
+
+
+502
+01:04:14.099 --> 01:04:29.039
+Matias Z: una propiedad que ya tenemos guardada en nuestro laphone. Entonces, a partir de ahora, las próximas consultas que busquen personas con la mayor cantidad de de Skills en común ya directamente aprovechan este recorrido, que se hizo una vez sobre la.
+
+
+503
+01:04:29.559 --> 01:04:36.208
+Sebastian Langer: Es como poner un índice, o es saber? Bueno, básicamente existe una ingeniería de datos ahí adentro de la base y generaste una relación nueva, no.
+
+
+504
+01:04:36.829 --> 01:04:37.779
+Matias Z: Claro.
+
+
+505
+01:04:38.199 --> 01:04:52.949
+Matias Z: Sí, es es muy similar a eso. Lo bueno es que no lo tengo que hacer yo en Siifers hace muy sencillo. Y, por supuesto, bueno, siempre que modifiquemos nuestro nuestro corpus de conocimiento de la compañía, vamos a tener que volver a correr alguno de estos algoritmos.
+
+
+506
+01:04:53.899 --> 01:04:54.379
+Sebastian Langer: Per perdón.
+
+
+507
+01:04:54.379 --> 01:04:54.838
+Matias Z: Es el.
+
+
+508
+01:04:54.839 --> 01:04:59.459
+Sebastian Langer: Te te hago una una consulta. Hablaste de corpus, de conocimiento de la compañía. ¿qué
+
+
+509
+01:04:59.589 --> 01:05:18.398
+Sebastian Langer: por ahí para después las 8, no, Pero digo me interesan mucho los perfiles porque en en entidades que son yo muy completas en términos de gente que tra participa. Digo que cuáles son los los los perfiles que deberían, digo es ser
+
+
+510
+01:05:18.619 --> 01:05:35.718
+Sebastian Langer: ounar de de ese tipo de de información? Sí, porque 1. A veces desde tecnología, se ve, te puedes tener muchas ideas, pero el el stakeholder es fundamental. Entonces por ahí, si me puedes guiar un poco en este caso, para este ejemplo, por ejemplo, ¿cómo sería.
+
+
+511
+01:05:35.719 --> 01:05:38.178
+Matias Z: Dale, si te parece bien, Si.
+
+
+512
+01:05:38.179 --> 01:05:39.878
+Sebastian Langer: Lo vemos después, sale, lo hablemos.
+
+
+513
+01:05:39.879 --> 01:05:44.449
+Matias Z: Por eso me interesa la conversación. No sé si en la respuesta
+
+
+514
+01:05:44.899 --> 01:05:49.478
+Matias Z: concreta eso creo que se comparten responsabilidades, pero sí.
+
+
+515
+01:05:49.479 --> 01:05:56.008
+Sebastian Langer: Me interesa tanto el caso puntual, sino que me interesa la búsqueda del State Holder para la tarea correcta y que y que no quede en Haití
+
+
+516
+01:05:56.349 --> 01:05:58.729
+Sebastian Langer: una idea, sí, porque no sé.
+
+
+517
+01:05:58.729 --> 01:05:59.079
+Matias Z: Lo que.
+
+
+518
+01:05:59.079 --> 01:06:08.878
+Sebastian Langer: Al Everest solo y sin oxígeno y en pelotazos. Entonces digo, es importante subir en grupo y y nada que la gente entienda que que va a subir una montaña no.
+
+
+519
+01:06:09.379 --> 01:06:11.288
+Matias Z: Perfecto. Perfecto. Perfecto.
+
+
+520
+01:06:11.519 --> 01:06:17.508
+Matias Z: Me queda clara la analogía. Bien, lo que
+
+
+521
+01:06:18.789 --> 01:06:30.748
+Matias Z: entonces lo que encontramos acá es esto. Sí, es importante tratar de comentar es: ya no estamos haciendo un acuerdo donde preguntamos, por favor, busca las entidades con la mayor y la voy a tratar
+
+
+522
+01:06:30.829 --> 01:06:48.328
+Matias Z: con la mayor cantidad de entidades perdón de Skills en común, sino que ya esa similitud, ese parecido voy a cambiar sí mismos para que no se confunda con similitud semántica. Ese parecido entre 2 personas definido por la cantidad de Skills en común
+
+
+523
+01:06:48.479 --> 01:06:53.169
+Matias Z: ya es una nueva relación dentro de nuestro gráfico
+
+
+524
+01:06:53.289 --> 01:07:02.959
+Matias Z: a partir de acá cada vez que busquemos esto, como por ejemplo, me utilizar este ejemplo.
+
+
+525
+01:07:12.589 --> 01:07:21.929
+Matias Z: ¿por qué se simplificó la vista de lo que estamos viendo? Bueno, porque pedí que no solamente exista esa relación entre 2 personas.
+
+
+526
+01:07:22.069 --> 01:07:39.889
+Matias Z: sino que el overlab es que el sea mayor o igual a 3. Entonces acá lo que encontramos son subgrafos donde todas las entidades que en este caso, por supuesto, son personas. Están vinculadas por la la la relación Siglars Kilser, pero sabemos que además comparten
+
+
+527
+01:07:40.239 --> 01:07:42.169
+Matias Z: 3 o más. Skills.
+
+
+528
+01:07:42.319 --> 01:07:43.119
+Matias Z: Sí.
+
+
+529
+01:07:44.409 --> 01:07:58.598
+Matias Z: Esto de nuevo parece sencillo, pero tenerlo ya definido dentro del grafo como parte de la estructura de datos va a resolver. Imagínense cuando hablamos de 1 000 000 de de registros, va a resolver problemas
+
+
+530
+01:07:59.119 --> 01:08:06.819
+Matias Z: superimportante directamente, plasmando cuestiones topológicas. En la misma estructura de datos.
+
+
+531
+01:08:07.409 --> 01:08:15.819
+Matias Z: acá descubrimos los sugrafos a partir de entidades que ya perdón de relaciones que ya ya injestamos dentro de grafo de conocimiento.
+
+
+532
+01:08:19.939 --> 01:08:24.519
+Matias Z: a ver cómo les puedo mostrar en
+
+
+533
+01:08:25.969 --> 01:08:34.139
+Matias Z: Ok. A partir de acá podemos empezar a pensar en comunidades
+
+
+534
+01:08:34.149 --> 01:08:52.768
+Matias Z: esto mismo que estamos haciendo. Acá se puede hacer directamente con un algoritmo de grafos. Habíamos hablado de Leiden que era 1 de los algoritmos que traía New for jade por defecto. Simplemente le pedimos que corra leiden contra nuestros nuestros datos y en función de las entidades y las relaciones que definimos va a encontrar estas comunidades.
+
+
+535
+01:08:53.079 --> 01:09:01.049
+Matias Z: Esto ya fue corrido. De hecho, si mostramos una de las comunidades.
+
+
+536
+01:09:02.129 --> 01:09:03.828
+Matias Z: no vamos a usar las comodidades.
+
+
+537
+01:09:06.049 --> 01:09:09.139
+Matias Z: vamos a estar la comunidad Cero.
+
+
+538
+01:09:09.669 --> 01:09:12.679
+Matias Z: las comunidades están definidas una vez más
+
+
+539
+01:09:12.909 --> 01:09:21.248
+Matias Z: por cómo corrimos. Leiden están definidas por esquil en común. Por eso el nodo central en este caso es un esquí, no es una persona.
+
+
+540
+01:09:21.439 --> 01:09:27.999
+Matias Z: Sí, la centralidad en este caso, este subgráfo está dado por una entidad que es un Skil, que es Systemysa
+
+
+541
+01:09:30.549 --> 01:09:47.268
+Matias Z: Okay. Yo acá tengo anotado donde está implementado esto dentro de nuestra gente, después, si quieren les muestro el código fuente para que confíen y que lo implementamos como herramientas de de nuestra gente. Y después vamos a ver cómo funciona nuestra gente dentro de adicae web
+
+
+542
+01:09:47.509 --> 01:09:51.569
+Matias Z: para preguntas un poquito más complejas de las que estábamos respondiendo con Ram tradicional.
+
+
+543
+01:09:52.909 --> 01:10:01.419
+Matias Z: Ahora sí llegamos al mundo de de los embails combinados con nuestras técnicas de recorridos de grafos. Este
+
+
+544
+01:10:02.579 --> 01:10:11.058
+Matias Z: habría otra manera de relacionar Skills si efectivamente utilizando similitud semántica. Y para eso vamos a utilizar el Medis acá. Un poco
+
+
+545
+01:10:11.189 --> 01:10:13.638
+Matias Z: apelamos a lo que aprendimos en el encuentro pasado.
+
+
+546
+01:10:17.539 --> 01:10:21.039
+Matias Z: Una pregunta que 1 podría hacerse es bueno que
+
+
+547
+01:10:21.859 --> 01:10:27.508
+Matias Z: si yo quisiera encontrar todas las personas que tienen alguna algún vínculo con Skills de Frontend.
+
+
+548
+01:10:28.069 --> 01:10:33.629
+Matias Z: si tal perfil sigue existiendo o o backend, o o o de lo que sea.
+
+
+549
+01:10:34.189 --> 01:10:41.229
+Matias Z: Me gustaría encontrar el conjunto de Skills que tienen similitudes semánticas, entonces
+
+
+550
+01:10:42.629 --> 01:10:59.809
+Matias Z: lo que hacemos es con el nombre de la Skil más la descripción, Construir todo el vector. Este vector es justamente el que vamos a guardar una descripción y el nombre de la Skil y lo vamos a embeber Para poder hacer esta esta búsqueda que estamos mencionando.
+
+
+551
+01:11:00.009 --> 01:11:07.249
+Matias Z: Por ejemplo, vamos a probar. ¿qué pasa si busco a
+
+
+552
+01:11:09.169 --> 01:11:14.808
+Matias Z: Skills parecidas a Python? Yo tengo acá a ver cuáles son las Skills parecidas a Python, según
+
+
+553
+01:11:14.949 --> 01:11:29.699
+Matias Z: los datos que cargamos en este ejemplo, bueno, evidentemente nos dando en general sí lenguajes de backend.
+
+
+554
+01:11:31.049 --> 01:11:35.548
+Matias Z: algún framework, L escala. P, H, p
+
+
+555
+01:11:35.959 --> 01:11:40.989
+Matias Z: de nuevo. Les Les pido que tengan en consideración que es un ejemplo sencillo, sintético y y
+
+
+556
+01:11:41.659 --> 01:11:45.249
+Matias Z: y solamente para mostrar el funcionamiento.
+
+
+557
+01:11:46.149 --> 01:11:50.928
+Matias Z: Pero lo que sí es interesante es que a partir de ahora, lo que podemos hacer es empezar a buscar 1.
+
+
+558
+01:11:52.189 --> 01:11:57.219
+Matias Z: ¿qué otras Skills son parecidas a esta. ¿y qué otras personas conocen para Skills parecidas a estas.
+
+
+559
+01:11:57.839 --> 01:11:58.869
+Matias Z: Sí.
+
+
+560
+01:11:59.419 --> 01:12:00.299
+Matias Z: Mhm.
+
+
+561
+01:12:01.609 --> 01:12:16.778
+Matias Z: Pero además, una vez que encuentro esto, puedo decir. Ok, Si a mí me sirve conocer la similitud semántica entre las Skills, puedo incluso crear nuevas relaciones. Si la búsqueda de Skills parecidas va a ser recurrente
+
+
+562
+01:12:16.839 --> 01:12:24.158
+Matias Z: no tener que hacer la cueri permanentemente y guardar justamente esa similitud semántica como una nueva entidad.
+
+
+563
+01:12:24.729 --> 01:12:28.938
+Matias Z: Entonces, esta similitud la guardamos en el grafo
+
+
+564
+01:12:29.169 --> 01:12:32.449
+Matias Z: a partir de ahora. Ya está cargada. Como pueden ver por acá
+
+
+565
+01:12:35.119 --> 01:12:52.228
+Matias Z: para cada esquina, Buscamos sus vecinas más cercanas en función de la similitud semántica que nos da el el el embain. Y si son bastante parecidas tipo vecinos más cercanos, guardamos una relación que significa semánticamente parecida con cierto puntaje. Si con ciertos códigos
+
+
+566
+01:12:53.239 --> 01:13:04.758
+Matias Z: guardarla tiene varias ventajas. Primero, no hay que recorrer de nuevo las Skills para ver cuáles son similares. Se puede visualizar. Se puede usar para agrupar.
+
+
+567
+01:13:04.879 --> 01:13:09.418
+Matias Z: Se puede usar en las consultas, por ejemplo.
+
+
+568
+01:13:12.329 --> 01:13:17.259
+Matias Z: Veamos este ejemplo.
+
+
+569
+01:13:21.639 --> 01:13:23.498
+Matias Z: Acá. Lo que estamos haciendo es
+
+
+570
+01:13:23.839 --> 01:13:28.989
+Matias Z: no una queely que busque las Skills, que son similares.
+
+
+571
+01:13:28.989 --> 01:13:44.308
+Matias Z: Simplemente estamos usando la relación que creamos que ya existe en el grafo y que me muestra sus grafos con Skills semánticamente similares. Eso es lo que implica esta esta relación en particular.
+
+
+572
+01:13:44.809 --> 01:13:50.359
+Matias Z: Sí, veamos que tiene cierto sentido
+
+
+573
+01:13:55.749 --> 01:14:02.769
+Matias Z: claramente tecnologías relacionadas con Frontend doctriconetes
+
+
+574
+01:14:03.199 --> 01:14:10.519
+Matias Z: Java contra en escala. Bueno, eso tiene bastante sentido en Pyton, Dyango
+
+
+575
+01:14:10.699 --> 01:14:13.078
+Matias Z: y Flash tiene bastante sentido. Ok.
+
+
+576
+01:14:13.269 --> 01:14:19.139
+Matias Z: Lo que tenemos acá entonces, es que embebemos en el grafo, estas consultas
+
+
+577
+01:14:20.339 --> 01:14:27.958
+Matias Z: y ya quedan como parte de nuestra est nuestra estructura topológica dentro del mismo grafo de conocimiento. No tenemos que volver a ejecutar esta búsqueda.
+
+
+578
+01:14:28.079 --> 01:14:37.629
+Matias Z: Eso hace interesante para nuestra gente cuando tenga que resolver consultas sobre similitud semántica de Skitch Okay.
+
+
+579
+01:14:39.249 --> 01:14:42.499
+Matias Z: Voy a seguir avanzando ahí. No hay.
+
+
+580
+01:14:42.499 --> 01:14:43.529
+Mariano Mondani: Una consulta.
+
+
+581
+01:14:43.859 --> 01:14:44.498
+Matias Z: Por favor? Claro.
+
+
+582
+01:14:44.499 --> 01:14:57.179
+Mariano Mondani: Entonces quiere decir que para este tipo de de agentes que se basan en grafos, hay mucho laburo en tiempo de compilación. Digamos, o sea, hay mucho que trabajar. En qué preguntas va a hacer el negocio para ya precargar todas estas relaciones.
+
+
+583
+01:14:58.489 --> 01:15:01.149
+Matias Z: Absolutamente es una de las precondiciones.
+
+
+584
+01:15:01.149 --> 01:15:08.019
+Mariano Mondani: No es que después va a inferir muchas cosas, sino que mucho del valor se va a basar en que también preparaste los datos.
+
+
+585
+01:15:08.469 --> 01:15:12.518
+Matias Z: Totalmente de acuerdo, Sí, ¿correcto? Y es una de las ventajas. Estamos
+
+
+586
+01:15:12.619 --> 01:15:19.719
+Matias Z: si yo me preguntaba los traders entre el rap. Y esto, en rasgos directamente, haces chance
+
+
+587
+01:15:20.019 --> 01:15:21.709
+Matias Z: ahorro de token. También.
+
+
+588
+01:15:21.829 --> 01:15:31.819
+Matias Z: El tema de los tokens. Es algo que mencionamos más adelante y está muy bien en la Constitución, en raras. Es chance. Los tiras al embellen lo metes en la base vectorial, acá tenés que tener como
+
+
+589
+01:15:32.079 --> 01:15:36.178
+Matias Z: previamente modelado tu tu situación.
+
+
+590
+01:15:36.509 --> 01:15:50.289
+Matias Z: como como mencionaba Sebastián. Antes tenés que hablar del modelo semántico de taxonomías, antologías A partir de ahí, recién armar el grafo de conocimiento. Y si llegas a modificar ese corpus, efectivamente vas a tener que recorrer de nuevo.
+
+
+591
+01:15:53.299 --> 01:15:55.299
+Matias Z: quizás puedo usar un segundo. ¿qué tipo de música?
+
+
+592
+01:15:56.019 --> 01:15:58.329
+Matias Z: Bien, en.
+
+
+593
+01:15:58.329 --> 01:16:00.649
+Sebastian Langer: Perdón igual
+
+
+594
+01:16:01.159 --> 01:16:11.888
+Sebastian Langer: claramente, cuando se me ocurre esto, Yo no sé, pero me me imagino que que podés hacer un proceso de extracción de
+
+
+595
+01:16:12.089 --> 01:16:28.288
+Sebastian Langer: de preliminar de toda esta información a partir de la documentación que tenés, infiriéndola y después pidiéndole al al justamente el State Holder que yo estoy diciendo que hay que invocar o el de tastuart correspondiente. Si lo que estuviste, si lo que levantaste Toda esa info tiene sentido, es decir.
+
+
+596
+01:16:28.319 --> 01:16:36.378
+Sebastian Langer: si las relaciones que se infirieron y las entidades que se infirieron son una montaña falopa o todos son
+
+
+597
+01:16:36.849 --> 01:16:46.919
+Sebastian Langer: o tienen lógica, no te pero digo, no, no necesariamente tenés que cargarla como un castor japonés te te toca, no, no es, no, no es un trabajo manual. Hoy
+
+
+598
+01:16:47.829 --> 01:16:52.219
+Sebastian Langer: es castor japonés, porque el castor trabaja mucho y los japoneses también Denver.
+
+
+599
+01:16:52.339 --> 01:16:53.348
+Matias Z: No tiene esa también.
+
+
+600
+01:16:53.349 --> 01:16:54.889
+Sebastian Langer: Superlaburador.
+
+
+601
+01:16:55.069 --> 01:16:56.199
+Matias Z: Es muy buena.
+
+
+602
+01:16:56.579 --> 01:16:57.919
+Matias Z: El
+
+
+603
+01:16:58.589 --> 01:17:15.739
+Matias Z: sí, sí, el proceso de extracción. De hecho, habíamos dicho al principio que a veces involucra otro l L. M, que es extracción de entidades. Hay modelos de lenguaje que están especializados en este tipo de cosas definitivamente, cuando los datos son tabulares o estructurados. Es mucho más sencillo.
+
+
+604
+01:17:17.399 --> 01:17:21.138
+Sebastian Langer: Claro, Pero necesitas un analista de negocio que te diga que lo que estás poniendo ahí está bien.
+
+
+605
+01:17:21.399 --> 01:17:22.089
+Sebastian Langer: Sí, Sí.
+
+
+606
+01:17:22.089 --> 01:17:35.319
+Matias Z: Y yo creo que lo que Mariano preguntaba es que por ahí conocer de antemano el tipo de consultas que va a hacer la gente de manera recurrente es lo que te permite trabajar en el enriquecimiento del grafo con estas nuevas entidades que estamos construyendo ahora.
+
+
+607
+01:17:35.829 --> 01:17:44.278
+Matias Z: Entonces, ahora estamos construyendo entidades nuevas en función de, por ejemplo, similitud semántica de Skills, algo que no sacamos de los datos en una primera instancia.
+
+
+608
+01:17:44.679 --> 01:17:45.689
+Matias Z: igual que.
+
+
+609
+01:17:45.689 --> 01:17:54.938
+Mariano Mondani: Razonamiento era porque veníamos de otros ejemplos en donde era más mágica la inferencia y el requería menos labor. Esto es más laburos de de viaje, digamos, previo.
+
+
+610
+01:17:55.089 --> 01:17:59.818
+Mariano Mondani: tanto la fantasía del del lo que logra inferir un el L. M.
+
+
+611
+01:18:00.059 --> 01:18:06.548
+Matias Z: Correcto? Sí, Sí, sí, sí, pero te da más determinismo y te da más seguridad. No
+
+
+612
+01:18:06.729 --> 01:18:14.108
+Matias Z: tiene un poco de ese juego, no el espectro entre entre una cosa y la otra. Por eso digo que se complementan muy bien.
+
+
+613
+01:18:15.159 --> 01:18:20.038
+Matias Z: Y si quieren, continuamos así, puedo intentar mostrarles la gente funcionando.
+
+
+614
+01:18:20.239 --> 01:18:25.858
+Matias Z: Las preguntas son todas pertinentes. Si quieres, las dejamos para después de las 8, para no cortar mucho la clase.
+
+
+615
+01:18:26.259 --> 01:18:30.559
+Matias Z: Ahora, lo que vamos a buscar son personas parecidas una vez más.
+
+
+616
+01:18:31.399 --> 01:18:41.648
+Matias Z: pero vamos a utilizar 2 tipos de Scoring. Se acuerdan que podemos combinar 2 formas de comparar este en entidades en el caso de rugby. Las 2 formas de comparar
+
+
+617
+01:18:42.779 --> 01:18:50.608
+Matias Z: chance en o en la memoria En general, podemos hacer búsquedas léxicas y búsquedas semánticas.
+
+
+618
+01:18:54.239 --> 01:18:56.259
+Matias Z: Vamos a sumar los 2 puntajes.
+
+
+619
+01:18:56.379 --> 01:18:58.079
+Matias Z: Algo habíamos mencionado
+
+
+620
+01:18:58.859 --> 01:19:09.098
+Matias Z: en el encuentro pasado que se podían combinar puntajes tanto léxicos como semánticos, realizando algún tipo de transformación previa, porque, evidentemente, no están en la misma escala.
+
+
+621
+01:19:10.699 --> 01:19:15.499
+Matias Z: Y de esta manera no estaríamos dependiendo solamente de coincidencias exactas en nuestra escuela.
+
+
+622
+01:19:16.109 --> 01:19:28.418
+Matias Z: como, por ejemplo, personas parecidas en función de las Skills, a ver cómo funciona esto y qué me respondes?
+
+
+623
+01:19:37.209 --> 01:19:38.129
+Matias Z: Okay?
+
+
+624
+01:19:39.379 --> 01:19:46.108
+Matias Z: La consulta parece un poco intimidante, ¿no? Pero Pero ese una única cosa que es
+
+
+625
+01:19:46.979 --> 01:19:55.929
+Matias Z: balancear un poco la idea de similitud semántica con el so el solapamiento exacto por por por palabra
+
+
+626
+01:19:57.219 --> 01:19:59.018
+Matias Z: de salvamento léxico
+
+
+627
+01:20:01.769 --> 01:20:21.528
+Matias Z: y una ventaja interesante es, por lo menos en este caso, es que es una consulta con una longitud variable. Yo puedo siempre indicar un Max, una máxima cantidad de saltos. No recuerden que cada vez que hacemos un salto crece exponencialmente porque crece para todos los lados, donde haya una posible entidad, una posible relación con otra entidad.
+
+
+628
+01:20:22.889 --> 01:20:29.909
+Sebastian Langer: Perdona ahí? ¿qué ¿Qué estás preguntando en la cueril para entender un poco la diferencia entre esta cuerda y las anteriores.
+
+
+629
+01:20:30.229 --> 01:20:40.389
+Matias Z: Bien, en este ejemplo, lo que estamos haciendo es son García, la persona 1
+
+
+630
+01:20:41.039 --> 01:20:44.578
+Matias Z: y Max Miller, que no sé si llega a ver acá en el otro ejemplo.
+
+
+631
+01:20:45.779 --> 01:20:46.889
+Matias Z: En
+
+
+632
+01:20:47.469 --> 01:20:57.028
+Matias Z: estamos buscando personas que comparten Skills, pero no solamente Skills en función del solapamiento léxico, sino tratando de hacer
+
+
+633
+01:20:58.059 --> 01:21:04.698
+Matias Z: un balanCEO entre Skills que tengan exactamente el mismo nombre. Y Skills que tengan cierta similitud semántica.
+
+
+634
+01:21:08.189 --> 01:21:08.859
+Matias Z: Si tú no.
+
+
+635
+01:21:08.859 --> 01:21:13.149
+Sebastian Langer: Igual. Porque similitud semántica no sentía que
+
+
+636
+01:21:13.619 --> 01:21:20.928
+Sebastian Langer: que s que sean parecida, o sea, si no todos los ingenieros van a tener una similitud semántica. No sé.
+
+
+637
+01:21:20.929 --> 01:21:22.359
+Matias Z: Bien hay que darle.
+
+
+638
+01:21:22.359 --> 01:21:26.949
+Sebastian Langer: De datos va a tener similitud semántica y generalmente hacen cosas diferentes raras, a la vez que.
+
+
+639
+01:21:27.609 --> 01:21:30.528
+Matias Z: No, no hay que ver a qué le llamamos similitud semántica en este caso.
+
+
+640
+01:21:31.359 --> 01:21:37.968
+Matias Z: Pues fíjate que en el ejemplo que vimos previamente con bueno, si querés puedo volver acá. Similar Santic.
+
+
+641
+01:21:39.109 --> 01:21:40.879
+Matias Z: ¿qué es lo que habíamos visto.
+
+
+642
+01:21:41.229 --> 01:21:50.639
+Matias Z: No sé si te acuerdas, este es el descubrimiento que se hizo que fíjate que no es similitud semántica.
+
+
+643
+01:21:51.799 --> 01:22:01.798
+Matias Z: interpretaba literalmente, sino que efectivamente, yo veo una relación real entre Jenkins. Claro, y después.
+
+
+644
+01:22:02.699 --> 01:22:09.218
+Sebastian Langer: Okay está modelado como semánti se semántica, pero no tiene que ver con el nombre, sino con con
+
+
+645
+01:22:09.619 --> 01:22:13.569
+Sebastian Langer: la entre las en este.
+
+
+646
+01:22:13.569 --> 01:22:13.979
+Matias Z: Y.
+
+
+647
+01:22:13.979 --> 01:22:15.148
+Sebastian Langer: Las disciplinas y saber.
+
+
+648
+01:22:15.149 --> 01:22:16.618
+Matias Z: Al cual algo así, este.
+
+
+649
+01:22:16.619 --> 01:22:18.739
+Sebastian Langer: Ahí Sí, ahí está. Ahí. Está buena. Así.
+
+
+650
+01:22:18.739 --> 01:22:21.519
+Matias Z: Listo. Está bien la aclaración. Sebastian, te la tomo con.
+
+
+651
+01:22:21.519 --> 01:22:25.188
+Sebastian Langer: No, Pero no me di cuenta cuando lo contaste. Ahora me queda más claro. Gracias.
+
+
+652
+01:22:25.189 --> 01:22:28.939
+Matias Z: Bien bien, pero bien acotado, bien agotado en
+
+
+653
+01:22:32.839 --> 01:22:37.479
+Matias Z: si. Ivan, por favor, que te responda. Sebastian? Yo creo, la tiene más clara que.
+
+
+654
+01:22:37.479 --> 01:22:38.999
+Sebastian Langer: No nada que ver.
+
+
+655
+01:22:38.999 --> 01:22:39.479
+Matias Z: Por favor.
+
+
+656
+01:22:39.479 --> 01:22:48.548
+Ivan Santuoro: Era para si si me permitís un caso real que yo, que yo sé que puede explicar un poco esto de similitud semántica, y
+
+
+657
+01:22:48.829 --> 01:23:04.659
+Ivan Santuoro: yo trabajo para un e commerce del agro que hicimos hace ya bastante tiempo. Un buscador de productos con un agente conversacional. Y usamos también una consulta de este tipo que combina similitud semántica con con
+
+
+658
+01:23:04.859 --> 01:23:12.388
+Ivan Santuoro: exactitud de atributo, porque si un por ejemplo, un usuario te dice: estoy buscando un tractor de John Dyr usado en Santa Fe.
+
+
+659
+01:23:13.039 --> 01:23:28.368
+Ivan Santuoro: Yo no por ahí no tiene tanto sentido que yo busque semánticamente. Si yo ya sé que es usado, que es hundir y que es un tractor, pero a lo mejor me conviene combinarlo semánticamente con lo mejor en tengo en Santa Fe, un usado que es un masi Ferguson.
+
+
+660
+01:23:28.589 --> 01:23:41.039
+Ivan Santuoro: Entonces lo que hicimos nosotros para resolver eso justamente es combinar semántica con con una coincidencia exacta. No sé si por ahí esto sirve para crear un poco la la diferencia de.
+
+
+661
+01:23:41.059 --> 01:23:42.999
+Sebastian Langer: Interesante, Sí, está. Bueno.
+
+
+662
+01:23:44.819 --> 01:23:46.089
+Matias Z: Sí, sí de sí.
+
+
+663
+01:23:46.089 --> 01:23:47.669
+Sebastian Langer: ¿y qué grafos No.
+
+
+664
+01:23:48.269 --> 01:23:53.738
+Ivan Santuoro: No nosotros resolvimos todo con elastic search Incluso no solo hicimos
+
+
+665
+01:23:53.849 --> 01:24:01.659
+Ivan Santuoro: similitud semántica exacta, sino también que le agregamos una una ponderación de geolocalización
+
+
+666
+01:24:01.799 --> 01:24:17.168
+Ivan Santuoro: para que te traiga productos que están cerca. Tuyo también. No, no se le decís que estás buscando Santa: fe. A lo mejor tenés un tractor, John Deel usado, pero lo tenés en la quiaca y no te sirve. Entonces combinamos esos 3 componentes y la verdad, que los resultados de las consultas son bastante buenos.
+
+
+667
+01:24:21.229 --> 01:24:21.929
+Matias Z: Excelente.
+
+
+668
+01:24:21.929 --> 01:24:22.579
+Sebastian Langer: Y no.
+
+
+669
+01:24:23.339 --> 01:24:25.518
+Matias Z: Gracias por la aclaración, por la.
+
+
+670
+01:24:27.019 --> 01:24:33.769
+Matias Z: por ejemplo. De hecho, me gustaría revisar qué está, qué está usando el asfixiarcha en este momento.
+
+
+671
+01:24:34.089 --> 01:24:39.708
+Matias Z: Y yo creo que ya tiene un server. M. C, P: Si no me equivoco, no sé si ustedes utilizaron eso.
+
+
+672
+01:24:41.019 --> 01:24:47.228
+Ivan Santuoro: No. Nosotros hicimos la la la cuelli directamente, pero S: seguro que tiene un municipio.
+
+
+673
+01:24:47.719 --> 01:24:52.969
+Matias Z: Después te lo busco porque si la idea es integrarlo con un agente, tendría mucho sentido que lo.
+
+
+674
+01:24:52.969 --> 01:24:53.869
+Ivan Santuoro: Mhm: Sí.
+
+
+675
+01:24:53.869 --> 01:24:55.409
+Matias Z: No sé qué.
+
+
+676
+01:24:56.239 --> 01:25:02.089
+Matias Z: Bueno ¿en qué nos quedamos?
+
+
+677
+01:25:02.569 --> 01:25:13.658
+Matias Z: Bien, en función de esto que estábamos aprendiendo todas las parejas con puntaje mayor a 3 utilizando.
+
+
+678
+01:25:16.029 --> 01:25:19.739
+Matias Z: Vamos a usar esta otra que muestro un grafo. Tengo varios ejemplos de cuerez.
+
+
+679
+01:25:25.119 --> 01:25:32.719
+Matias Z: Entonces acá lo que tenemos son 2 personas Ahora, si lo tenemos a Matthew y son.
+
+
+680
+01:25:32.859 --> 01:25:38.158
+Matias Z: y lo que utilizamos es básicamente esta noción de
+
+
+681
+01:25:39.159 --> 01:25:47.319
+Matias Z: similitud semántica en términos de de disciplinas, como como aclaraba Sebastian en términos de disciplina que que se suelen asociar a un tipo de perfil, no
+
+
+682
+01:25:48.159 --> 01:25:49.409
+Matias Z: en
+
+
+683
+01:25:50.569 --> 01:25:57.229
+Matias Z: Lo interesante acá. Me parece que es que no solamente encontramos, por ejemplo, lo que estamos diciendo acá es
+
+
+684
+01:25:58.229 --> 01:26:04.839
+Matias Z: todos los caminos que estén entre 0 y 2 entidades intermedias, o sea, básicamente relaciones indirectas.
+
+
+685
+01:26:05.169 --> 01:26:09.478
+Matias Z: Y fíjense que encontramos no solamente caminos que tienen una única
+
+
+686
+01:26:10.309 --> 01:26:21.489
+Matias Z: Skil en común, sino que encontramos caminos que de alguna manera llegan indirectamente porque son, sabe Html, 5 porque
+
+
+687
+01:26:22.579 --> 01:26:30.569
+Matias Z: Matthew sabe riad, y porque hay una similitud de algún tipo con con javascript.
+
+
+688
+01:26:30.689 --> 01:26:34.509
+Matias Z: Entonces empezamos a encontrar relaciones que sí
+
+
+689
+01:26:34.819 --> 01:26:52.919
+Matias Z: son indirectas. Son transversal, multi hope, son multi salto y que nos permiten encontrar situaciones donde se vinculan 2 entidades que tal vez, si tuviéramos que hacerlo recorriendo nuestro corpus de conocimiento en ra sería virtualmente imposible
+
+
+690
+01:26:53.069 --> 01:26:55.048
+Matias Z: trayendo chance que tienen
+
+
+691
+01:26:55.839 --> 01:27:02.408
+Matias Z: pedazos discretos de información que son muy difíciles de vincular de esta manera. No sé si se entienden
+
+
+692
+01:27:03.669 --> 01:27:07.089
+Matias Z: la importancia de este hallazgo.
+
+
+693
+01:27:08.419 --> 01:27:16.919
+Matias Z: ¿sí? Bien. Joya: Me alegra un montón porque a mí me pone muy contento encontrar este ejemplo en particular.
+
+
+694
+01:27:18.499 --> 01:27:35.649
+Matias Z: Acá Lo que estamos diciendo es que estas 2 entidades, estas 2 personas se vinculan no solamente por conocer 2 Skills relacionadas con el mundo fronter, sino que esas 2 Skills están vinculadas semánticamente a través de una tercera skill que es Javascript.
+
+
+695
+01:27:36.219 --> 01:27:41.868
+Matias Z: Esto de nuevo, es virtualmente imposible hacerlo si no tenemos un grafo de conocimiento.
+
+
+696
+01:27:43.109 --> 01:27:57.268
+Matias Z: ¿y si pudiéramos extrapolar o tratar de entender cómo aplicar esto a ejemplos más complejos. Les juro que me creerían que vale la pena estudiar grafos de conocimiento que, como dice Mariano y tiene mucho de datos ahí en basada en grafos.
+
+
+697
+01:27:57.269 --> 01:28:03.238
+Matias Z: Pero ahora lo que queremos hacer es bueno. Una vez que tenemos una que los convencí, de que esto puede servir para cosas interesantes.
+
+
+698
+01:28:03.399 --> 01:28:10.519
+Matias Z: Vamos a ver cómo lo ponemos dentro de nuestros agentes, Claro.
+
+
+699
+01:28:16.619 --> 01:28:21.128
+Matias Z: totalmente abran el micrófono cuando quieran comentar, ¿ Porque
+
+
+700
+01:28:21.369 --> 01:28:24.479
+Matias Z: hay comentarios súper interesantes ahí para agregar.
+
+
+701
+01:28:26.339 --> 01:28:33.379
+Matias Z: Bueno, vamos a ver cómo armamos un asistente
+
+
+702
+01:28:34.729 --> 01:28:42.149
+Matias Z: sobre este grafo. Por ahora voy a sacar entonces el visualizador. Voy a abrirlo nuestro agente reclutador.
+
+
+703
+01:28:44.289 --> 01:28:49.008
+Matias Z: Permítanme buscar el código fuente por un segundo que no lo tengo abierto.
+
+
+704
+01:28:50.389 --> 01:28:51.769
+Matias Z: Mhm.
+
+
+705
+01:28:58.519 --> 01:29:03.738
+Matias Z: Bien Vamos a abrir esta carpeta.
+
+
+706
+01:29:05.629 --> 01:29:06.689
+Matias Z: Entonces.
+
+
+707
+01:29:11.119 --> 01:29:13.739
+Matias Z: Ok, tenemos un agente reclutador.
+
+
+708
+01:29:20.849 --> 01:29:29.899
+Matias Z: y tú ¿Qué un segundito a ver que estoy buscándolo todavía en
+
+
+709
+01:29:35.149 --> 01:29:36.298
+Matias Z: o Band resons
+
+
+710
+01:29:39.799 --> 01:29:43.098
+Matias Z: bien agente de relojero.
+
+
+711
+01:29:48.889 --> 01:29:57.899
+Matias Z: Ya estamos ahí. Va de Primero, lo vamos a hacer con la de K. Dos.
+
+
+712
+01:29:58.319 --> 01:30:06.999
+Matias Z: Va a ser muy sencillo. Y lo primero que quería mostrarles era justamente de los lugares.
+
+
+713
+01:30:11.939 --> 01:30:14.018
+Matias Z: Bueno, no es tan sencillo como recordábamos.
+
+
+714
+01:30:16.939 --> 01:30:21.098
+Matias Z: Permítame mostrarles primero como como como lo vamos a hacer funcionar.
+
+
+715
+01:30:21.939 --> 01:30:23.508
+Matias Z: Y después vamos a ver el código fuente.
+
+
+716
+01:30:25.489 --> 01:30:30.489
+Matias Z: Ok, ¿Qué va a hacer nuestra gente? Entonces en
+
+
+717
+01:30:34.139 --> 01:30:37.469
+Matias Z: dijimos que tiene una serie de herramientas.
+
+
+718
+01:30:38.219 --> 01:30:53.689
+Matias Z: Sí, las herramientas efectivamente, lo que hacen son ejecuciones de quer East Saifer contra contra nuestra base de datos.
+
+
+719
+01:30:53.979 --> 01:31:01.558
+Matias Z: New for Jay, que está implementada dentro de un Docker local que tiene toda esa información que vimos como un grafo de conocimiento
+
+
+720
+01:31:01.889 --> 01:31:03.549
+Matias Z: Y lo que
+
+
+721
+01:31:03.699 --> 01:31:11.459
+Matias Z: va a ser otra gente en términos de lógica agéntica es relativamente sencillo. Va a tener un conjunto de de tools que vamos a
+
+
+722
+01:31:11.709 --> 01:31:21.038
+Matias Z: registrar como como registramos, siempre cuando instanciamos de la gente, vamos a darle una lista de atunes que son funciones Python, que a su vez van a ser este
+
+
+723
+01:31:22.409 --> 01:31:37.299
+Matias Z: la ejecución de la de la escuela Saifer, dependiendo de lo que la gente interprete que debe ejecutar si acá la autonomía está dada por, bueno, tiene un poco esta esta noción de pasar de lenguaje natural a a consultas Saifer en el sentido.
+
+
+724
+01:31:37.539 --> 01:31:41.118
+Matias Z: Una vez más, le doy la derecha a Mariano. Está muy bien.
+
+
+725
+01:31:41.279 --> 01:31:55.289
+Matias Z: Antes se usaba más el lenguaje natural, la s. U. L, Ahora, por ahí empiezan a aparecer estas nuevas formas de hacer de trival en 1 estructurado. Déjenme mostrarles primero como como responde a determinadas preguntas.
+
+
+726
+01:31:57.569 --> 01:32:10.199
+Matias Z: entonces el el agente responde en función de lo que el modelo decida utilizar como herramienta y qué argumentos se utiliza todo lo demás. Se sigue de
+
+
+727
+01:32:10.379 --> 01:32:11.079
+Matias Z: del Covid, no
+
+
+728
+01:32:12.869 --> 01:32:21.868
+Matias Z: fundamental. El modelo no escribes iphone. Lo vuelvo a repetir: Los modelos no tienen que escribir. No tienen que redactar cualis nunca de ningún tipo.
+
+
+729
+01:32:22.109 --> 01:32:33.018
+Matias Z: Vamos a la pregunta desde las más sencillas, algunas, un poquito más complejas. Primero, preguntas que necesiten una sola herramienta para ver cómo cómo elige, qué herramientas utilizar.
+
+
+730
+01:32:33.769 --> 01:32:36.898
+Matias Z: y a poco vamos a empezar a hacer preguntas compuestas. Sigan por favor.
+
+
+731
+01:32:37.089 --> 01:32:45.879
+Ivan Santuoro: Perdón. No estoy medio insistente porque esa afirmación de que no deben generar cuero, porque yo yo la hago
+
+
+732
+01:32:45.999 --> 01:32:58.519
+Ivan Santuoro: eso. Bueno, hago trabajo de desarrollador también. Y si me tengo que basar en eso, tampoco debería escribir código. Y sin embargo, Cloucode escribe código buenísimo, porque esa afirmación de que nunca debía escribir una quary.
+
+
+733
+01:32:58.869 --> 01:33:00.709
+Matias Z: Sí
+
+
+734
+01:33:05.339 --> 01:33:07.559
+Matias Z: en general. Y hasta
+
+
+735
+01:33:08.109 --> 01:33:16.039
+Matias Z: las últimas 3 semanas se sabía y se hablaba mucho de que, por ejemplo, cuando son quaris y S Q. L,
+
+
+736
+01:33:17.759 --> 01:33:22.669
+Matias Z: Los agentes tienden a alucinar por algún motivo que no puedo explicártelo en este momento.
+
+
+737
+01:33:22.819 --> 01:33:26.039
+Matias Z: Vos Podrías pasarle Si querés los nombres de las tablas.
+
+
+738
+01:33:26.579 --> 01:33:35.939
+Matias Z: podría pasarle, digamos, toda la capa semántica de tu negocio a la gente. Y decidí dejar que la gente construya las con las consultas. Lucia dice que sí,
+
+
+739
+01:33:36.269 --> 01:33:40.128
+Matias Z: es una práctica no recomendada.
+
+
+740
+01:33:41.879 --> 01:33:44.529
+Sebastian Langer: Pero el contexto físico y vos decís que pasa eso.
+
+
+741
+01:33:45.079 --> 01:33:49.059
+Matias Z: Sí. Lo que les propongo es.
+
+
+742
+01:33:49.059 --> 01:33:54.978
+Sebastian Langer: O será simple. Si por ahí te empletizas un poco, das ejemplos.
+
+
+743
+01:33:56.009 --> 01:33:59.999
+Matias Z: Se suele, se suele equivocar de una u otra manera.
+
+
+744
+01:34:00.289 --> 01:34:10.109
+Matias Z: y está súper documentado el problema, pero les propongo, si quieren. La pregunta está bien, Terminamos con la con la demo y y lo charlamos Ivan, si te vale bien.
+
+
+745
+01:34:10.109 --> 01:34:11.588
+Ivan Santuoro: Dale Dale. Dale. Gracias.
+
+
+746
+01:34:11.589 --> 01:34:13.529
+Sebastian Langer: Sí, sí, a mí también me interesa. Está. Bueno.
+
+
+747
+01:34:13.809 --> 01:34:15.809
+Matias Z: Sí, Sí. Sí.
+
+
+748
+01:34:17.419 --> 01:34:25.148
+Matias Z: Ok. Entonces estábamos en en esta en esta gente que empezamos de preguntas sencillas a preguntas un poquito más complejas.
+
+
+749
+01:34:25.769 --> 01:34:31.209
+Matias Z: Y empecemos con la pregunta más sencilla de todas.
+
+
+750
+01:34:31.359 --> 01:34:37.839
+Matias Z: Me introduzco en el código fuente, no primero para ver si funciona esto
+
+
+751
+01:34:43.199 --> 01:34:45.479
+Matias Z: bien terminó. Funcionó.
+
+
+752
+01:34:49.129 --> 01:34:57.938
+Matias Z: Tú, Ok, recuerden que acá. Lo que vamos a hacer es verificar también a qué herramienta invocada
+
+
+753
+01:34:58.739 --> 01:35:03.549
+Matias Z: a medida que va avanzando en el en el stream de eventos, en este caso.
+
+
+754
+01:35:04.579 --> 01:35:16.888
+Matias Z: en este evento en particular, el reclutador se llama la herramienta que busca habilidades de personas que bueno, responde básicamente la pregunta que estábamos queriendo responder.
+
+
+755
+01:35:19.039 --> 01:35:21.129
+Matias Z: Mhm: Ahí vamos.
+
+
+756
+01:35:21.259 --> 01:35:26.839
+Matias Z: Seguimos. Entonces ahora vamos a pensar
+
+
+757
+01:35:27.889 --> 01:35:36.289
+Matias Z: si la gente puede responder correctamente. Cuáles Skills son similares en función de la
+
+
+758
+01:35:37.309 --> 01:35:41.609
+Matias Z: la definición que le dimos a nuestro grafo de conocimiento.
+
+
+759
+01:35:44.309 --> 01:35:52.898
+Matias Z: Le preguntamos qué es que son parecidas a favorbia y data visualization y nos trae el tablet.
+
+
+760
+01:35:54.079 --> 01:36:04.199
+Matias Z: Hay Dad Analytics o análisis a Bueno, básicamente
+
+
+761
+01:36:04.899 --> 01:36:16.518
+Matias Z: ninguna genialidad, Una pregunta muy sencilla. Pero vamos a avanzar un poco con preguntas que valgan la pena semejante infraestructura. Ahora vamos a contarle qué personas tienen Skills parecidas a
+
+
+762
+01:36:16.899 --> 01:36:18.809
+Matias Z: las de Daniel.
+
+
+763
+01:36:23.789 --> 01:36:34.778
+Matias Z: Lo que vamos a hacer acá es tratar de mirar a que es quien se está llamando a que tu dulce está llamando. La gente no acá. Lo está. Acá Busco habilidades similares. Ahora está buscando personas similares.
+
+
+764
+01:36:36.469 --> 01:36:39.618
+Matias Z: personas similares en función de como las definimos nosotros en el gráfico.
+
+
+765
+01:36:41.609 --> 01:36:48.858
+Matias Z: Entonces, las personas con habilidades similares a a las de Daniel son las siguientes, y acá explica las que tienen en común
+
+
+766
+01:36:52.719 --> 01:37:00.149
+Matias Z: Okay. Si seguimos avanzando y preguntamos quién tiene experiencia en Python y a W. S.
+
+
+767
+01:37:04.979 --> 01:37:11.958
+Matias Z: Acá? Ya es una pregunta donde tenemos que arrancar a partir de una de 2 entidades en particular y hacer un transversal multijuve
+
+
+768
+01:37:12.619 --> 01:37:13.519
+Matias Z: en el
+
+
+769
+01:37:15.309 --> 01:37:31.498
+Matias Z: perdón no hizo consultas sobre similitud semántica. Así que es un único salto desde las entidades Skills a las personas y acá. Te lo que te está devolviendo son las personas que tienen directamente la habilidad mencionada. Pero si efectivamente
+
+
+770
+01:37:31.589 --> 01:37:39.099
+Matias Z: nos tira una Skill parecida a la que le mencionamos directamente en la consulta
+
+
+771
+01:37:43.639 --> 01:37:46.909
+Matias Z: Okay. Ahora, si le pregunto ¿qué pasa
+
+
+772
+01:37:49.189 --> 01:38:00.268
+Matias Z: si Daniel se va del proyecto, ¿quién podría reemplazarlo? Y qué? Skills tiene esa persona que Daniel no tiene originalmente acá. Puede romperse todo. Pero vamos a ver qué hace
+
+
+773
+01:38:01.309 --> 01:38:06.398
+Matias Z: Ok, buscas personas similares para reemplazar a Daniel. Te proponen las siguientes personas. Ok.
+
+
+774
+01:38:09.849 --> 01:38:15.039
+Matias Z: Y para cada una de las personas nos dice las Skills.
+
+
+775
+01:38:15.299 --> 01:38:27.448
+Matias Z: que tiene en común con el Daniel, que se va y las que tiene el nuevo candidato que el candidato anterior no tenía. No sé si llegan a leer o prefieren que hagan un poquito la tipografía
+
+
+776
+01:38:31.329 --> 01:38:32.858
+Matias Z: hasta ahí vamos. Bien.
+
+
+777
+01:38:34.299 --> 01:38:35.339
+Daniel Sosa: Perfecto. Matias.
+
+
+778
+01:38:35.469 --> 01:38:37.479
+Matias Z: Gracias.
+
+
+779
+01:38:37.639 --> 01:38:40.818
+Matias Z: Bien. Ops: Hice todo lo contrario.
+
+
+780
+01:38:41.349 --> 01:38:42.609
+Matias Z: De
+
+
+781
+01:38:46.459 --> 01:38:54.049
+Matias Z: ahora quiero armar un equipo con Lucy, qué Skills tiene, y quién más. La empresa sabe sobre ciberseguridad
+
+
+782
+01:38:54.869 --> 01:38:56.358
+Matias Z: o como otro ejemplo básico.
+
+
+783
+01:38:57.939 --> 01:39:03.448
+Matias Z: Ok, Este es un ejemplo de pregunta que requiere
+
+
+784
+01:39:05.429 --> 01:39:11.158
+Matias Z: invocar más de una esquina, un poco más de una tul de la gente. Perdón
+
+
+785
+01:39:11.279 --> 01:39:20.529
+Matias Z: un poco. La pregunta está armada para que la gente tenga que invocar a habilidades de personas, en particular las de Lucy y habilidades de personas.
+
+
+786
+01:39:20.959 --> 01:39:25.338
+Matias Z: sí y perdón por zonas con habilidades.
+
+
+787
+01:39:25.839 --> 01:39:31.418
+Matias Z: Acá Lo que vemos que responde es que Lucy tiene las siguientes habilidades.
+
+
+788
+01:39:36.839 --> 01:39:41.619
+Matias Z: y las personas que tienen la Skill de seguridad en la empresa son las siguientes.
+
+
+789
+01:39:42.019 --> 01:39:49.679
+Matias Z: es un ejemplo simplemente de una pregunta para que la gente utilice más de una una herramienta.
+
+
+790
+01:39:52.229 --> 01:39:56.159
+Matias Z: Bien, a ver.
+
+
+791
+01:39:57.809 --> 01:40:03.468
+Matias Z: Vamos a ser el último ejemplito de preguntas.
+
+
+792
+01:40:04.409 --> 01:40:06.669
+Matias Z: Podíamos hacer muchas preguntas más, pero
+
+
+793
+01:40:07.679 --> 01:40:19.838
+Matias Z: vamos de nuevo con una un ejemplo que va a utilizar diferentes turnos como para verificar que la gente recuerde efectivamente las preguntas anteriores. Primero, que es ciencia, están relacionadas con Power B.
+
+
+794
+01:40:20.549 --> 01:40:25.178
+Matias Z: Esto ya lo habíamos visto Ahora, quiénes saben esas Skills
+
+
+795
+01:40:26.469 --> 01:40:28.219
+Matias Z: a ver si esto todavía funciona
+
+
+796
+01:40:30.319 --> 01:40:43.798
+Matias Z: bien. Lo que estamos haciendo acá es simplemente confirmar que la gente puede responder consultas multi turno. Si acá el preguntar quiénes a veces squiel si la gente tiene que verificar este la pregunta previa.
+
+
+797
+01:40:47.729 --> 01:40:53.919
+Matias Z: Y ahora le voy a preguntar en un tercer turno: quién se parece a esas personas
+
+
+798
+01:40:54.189 --> 01:40:58.699
+Matias Z: que a veces se quejaba y a veces no vamos a ver qué pasaba hoy.
+
+
+799
+01:41:00.109 --> 01:41:03.079
+Matias Z: Bien, Hoy, aparentemente está
+
+
+800
+01:41:03.469 --> 01:41:09.028
+Matias Z: realizando todos los todos los recorridos que se tiene que hacer en el grafo, está funcionando bien.
+
+
+801
+01:41:09.869 --> 01:41:26.378
+Matias Z: Entonces acá lo que hicimos básicamente es un ejemplo, con 3 turnos, tratando de demostrar que la gente va guardando en memoria las consultas anteriores y podemos ir avanzando en nuestra búsqueda, sin mencionar exactamente lo que consultamos. En la pregunta anterior.
+
+
+802
+01:41:29.739 --> 01:41:34.939
+Matias Z: Se entiende lo que hicimos en el último ejemplo sencillo, ¿verdad?
+
+
+803
+01:41:36.419 --> 01:41:37.149
+Matias Z: Mhm.
+
+
+804
+01:41:38.159 --> 01:41:45.409
+Matias Z: Yo me quedo con la pregunta: Crees que esto es trivial hacer con rap o con algún otro tipo de solución.
+
+
+805
+01:41:45.959 --> 01:41:47.419
+Matias Z: Ahí le pregunto a usted: eso
+
+
+806
+01:42:04.229 --> 01:42:05.809
+Matias Z: no sí.
+
+
+807
+01:42:08.769 --> 01:42:12.599
+Alejandro Declerk: Y prácticas o simple buenos
+
+
+808
+01:42:13.019 --> 01:42:17.918
+Alejandro Declerk: en dis Lo puedes hacer, ¿no? Pero el tema es cuando es un poquito más complejo. No tengo respeto.
+
+
+809
+01:42:19.299 --> 01:42:20.189
+Matias Z: Totalmente.
+
+
+810
+01:42:20.599 --> 01:42:25.059
+Alejandro Declerk: Tengo 500 Skills, y sí, creo que podría costar un rack, algo de este.
+
+
+811
+01:42:27.099 --> 01:42:29.049
+Matias Z: Bien.
+
+
+812
+01:42:33.029 --> 01:42:40.709
+Matias Z: entonces asumimos que vale la pena en, digamos.
+
+
+813
+01:42:42.499 --> 01:42:44.898
+Matias Z: un segundo. Estoy tratando de abrirles el
+
+
+814
+01:42:45.669 --> 01:42:56.968
+Matias Z: la carpeta, asumimos que vale la pena. Asumimos que hay preguntas que no se pueden responder si si no utilizamos este tipo de estructura de datos, este si me bancan un cachito, Estoy intentando abrir code
+
+
+815
+01:42:58.229 --> 01:43:00.049
+Matias Z: para mostrarles el código fuentes.
+
+
+816
+01:43:02.069 --> 01:43:06.719
+Matias Z: Okay. Estamos en el
+
+
+817
+01:43:14.169 --> 01:43:15.219
+Matias Z: ahí. Estamos.
+
+
+818
+01:43:16.339 --> 01:43:17.519
+Matias Z: Entonces.
+
+
+819
+01:43:22.369 --> 01:43:23.168
+Matias Z: vale.
+
+
+820
+01:43:26.749 --> 01:43:34.989
+Matias Z: no importa grafo extracciones por estas fueron los diferentes pasos que fuimos mencionando, no en
+
+
+821
+01:43:38.019 --> 01:43:41.688
+Matias Z: lo que más me interesa acá es mostrarles
+
+
+822
+01:43:45.739 --> 01:43:55.128
+Matias Z: el agente que la gente es relativamente de nuevo, relativamente sencillo.
+
+
+823
+01:43:58.619 --> 01:44:00.078
+Matias Z: Acá Perdón.
+
+
+824
+01:44:00.249 --> 01:44:10.949
+Matias Z: Acá Tenemos las reglas. La instrucción es el sistema Prompt, que después vamos a agregarle el tope de llamadas, que es una de las de los límites que tenemos que siempre
+
+
+825
+01:44:11.079 --> 01:44:13.959
+Matias Z: incluir en.
+
+
+826
+01:44:16.419 --> 01:44:24.379
+Matias Z: Y si voy en orden, en realidad está el código de cómo se genera el grafo para que después puedan revisar el ejemplo mejor.
+
+
+827
+01:44:26.089 --> 01:44:35.428
+Matias Z: Acá. Lo que van a encontrar Es justamente como transformamos nuestros datos que los van a encontrar en la carpeta datos, por ejemplo, en estos C. S. B,
+
+
+828
+01:44:35.509 --> 01:44:48.388
+Matias Z: en descripciones de Skills van a encontrar justamente la información que utilizamos para completar nuestro grafo de conocimientos. Acá van a encontrar el código necesario
+
+
+829
+01:44:48.519 --> 01:44:53.659
+Matias Z: para construir el grafo de conocimiento acá va a estar
+
+
+830
+01:44:54.439 --> 01:44:57.839
+Matias Z: toda la lógica para la extracción que vamos a utilizar.
+
+
+831
+01:45:03.199 --> 01:45:09.178
+Matias Z: Lo muestro rápido, acá. Se construye la gente rápidamente reutilizando un poco el código anterior.
+
+
+832
+01:45:11.259 --> 01:45:12.149
+Matias Z: ¿sí?
+
+
+833
+01:45:16.949 --> 01:45:18.589
+Matias Z: Y a ver si encuentras Tools.
+
+
+834
+01:45:21.529 --> 01:45:22.439
+Matias Z: Bien.
+
+
+835
+01:45:27.069 --> 01:45:30.189
+Matias Z: acá. Encontramos Tuls en
+
+
+836
+01:45:30.529 --> 01:45:38.109
+Matias Z: estas son las funciones Python, que les comentaba que justamente lo que hacen es ni más ni menos que
+
+
+837
+01:45:38.459 --> 01:45:44.218
+Matias Z: ejecutar códigos iphone, no con los parámetros que el L M decida utilizar
+
+
+838
+01:45:46.489 --> 01:45:55.588
+Matias Z: esta lista de herramientas y después la que la que vamos a mandarle a la gente para que la gente tome la decisión de cuál utilizar y con qué pagarlos.
+
+
+839
+01:46:00.369 --> 01:46:06.178
+Matias Z: Ok, esto va a quedar en el Git Habn para que lo puedan revisar tranquilos.
+
+
+840
+01:46:07.449 --> 01:46:17.749
+Matias Z: No pretendo que hagamos un recorrido del del código completo en este momento, pero si quieren lo que podemos hacer es dedicarnos un ratito a
+
+
+841
+01:46:18.519 --> 01:46:21.189
+Matias Z: terminar de conversar estas dudas que había
+
+
+842
+01:46:21.579 --> 01:46:31.969
+Matias Z: nos quedan 13 minutitos, en vez de dedicarnos a ver el código fuente que lo pueden leer tranquilos en sus casas. Puedo charlar un poquito de de lo que estaban mencionando previamente
+
+
+843
+01:46:32.209 --> 01:46:34.608
+Matias Z: o hacer algún tipo de
+
+
+844
+01:46:35.029 --> 01:46:40.209
+Matias Z: sesión de preguntas y respuestas sobre lo que vimos hasta ahora con respecto a R a R
+
+
+845
+01:46:40.509 --> 01:46:43.669
+Matias Z: y a grafos de conocimiento. Si le quedan dudas.
+
+
+846
+01:46:45.089 --> 01:46:47.629
+Matias Z: Dejo abierto el micrófono. Para empezar, la charla.
+
+
+847
+01:46:47.849 --> 01:46:57.368
+Mariano Mondani: Ahí Matias. Antes de arrancar con la charla tema de repositorio, puede ser que la clase anterior habíamos visto la parte de memoria que dijiste que estaba en el repo. Puede ser que no esté en el repo.
+
+
+848
+01:46:58.009 --> 01:47:00.258
+Matias Z: Puede ser tranquilamente a ver
+
+
+849
+01:47:03.709 --> 01:47:06.899
+Matias Z: exactamente qué qué es la parte de memoria que no encontraste.
+
+
+850
+01:47:06.899 --> 01:47:10.818
+Mariano Mondani: No había preguntado cómo era la parte de memoria en la de K. Dos y
+
+
+851
+01:47:10.969 --> 01:47:23.088
+Mariano Mondani: tiraste como que había ejemplos ahí de manejo de memoria. Y no había igual. Aplica a lo a estos ejemplos también. Digamos si se puede subir todo como para ir mironeándolos mejor.
+
+
+852
+01:47:23.089 --> 01:47:25.429
+Matias Z: Definitivamente
+
+
+853
+01:47:26.299 --> 01:47:38.018
+Matias Z: bueno. Me lo anoto porque de hecho, creo que los había subido para la otra Comisión. Pero entonces, si no lo encontraste es que no estaba o no está lo suficientemente claro para
+
+
+854
+01:47:38.129 --> 01:47:40.218
+Matias Z: así que subir los ejemplos.
+
+
+855
+01:47:42.529 --> 01:47:46.328
+Matias Z: Básicamente estamos hablando de lo que vimos en el mundo anterior.
+
+
+856
+01:47:47.449 --> 01:47:52.168
+Mariano Mondani: Claro el encuentro anterior y este lo que corresponda, digamos.
+
+
+857
+01:47:52.579 --> 01:47:56.849
+Matias Z: Sí. Mi abuela. Esto lo subimos
+
+
+858
+01:47:57.739 --> 01:48:01.979
+Matias Z: lo antes posible. Aparte, esto está terminado. Es bastante sencillo en
+
+
+859
+01:48:03.899 --> 01:48:15.928
+Matias Z: Ok, Entonces, si les parece bien, dedicamos un ratito para preguntas. Hoy terminamos medio tempranito. Así que podemos charlar un rato si tienen ganas de charlar o sobre el tema en particular.
+
+
+860
+01:48:18.919 --> 01:48:22.519
+Daniel Sosa: Está muy bueno el tomate y creo que desbloqueamos un superpoder acá.
+
+
+861
+01:48:24.939 --> 01:48:30.749
+Matias Z: Me me alegra mucho a ver si me encuentro el reporte.
+
+
+862
+01:48:32.199 --> 01:48:36.478
+Sebastian Langer: No a mí, la verdad que me me gustó como le explicaste. Hay un montón.
+
+
+863
+01:48:36.589 --> 01:48:40.928
+Sebastian Langer: digo, está lleno de de info sobre esto, pero
+
+
+864
+01:48:41.289 --> 01:48:44.029
+Sebastian Langer: pero estuvo claro, y, además, este
+
+
+865
+01:48:44.469 --> 01:48:50.279
+Sebastian Langer: digo la documentación que diste es bastante entendible también y bueno. Nada.
+
+
+866
+01:48:50.469 --> 01:48:57.878
+Sebastian Langer: Creo que también 1 viene a buscar a este tipo de posgrados, o un poco.
+
+
+867
+01:48:57.989 --> 01:49:04.008
+Sebastian Langer: Es como cuando vas con Gardner y le preguntas algo a ver cómo se hace, porque hay tanta info que hay que filtrar. Y bueno.
+
+
+868
+01:49:04.119 --> 01:49:11.229
+Sebastian Langer: en este caso digo también, no está bueno ver como
+
+
+869
+01:49:11.469 --> 01:49:14.038
+Sebastian Langer: ¿Cuál es la verdad de la milanesa, por decirlo así.
+
+
+870
+01:49:14.449 --> 01:49:19.268
+Sebastian Langer: Así que, bueno, te estoy dando un montón de créditos. Te tengo para algo con Garner, pero yo creo que está bien.
+
+
+871
+01:49:20.169 --> 01:49:24.039
+Matias Z: Bien este estuve anotando.
+
+
+872
+01:49:27.689 --> 01:49:30.709
+Matias Z: Bueno, me alegra que sí.
+
+
+873
+01:49:30.709 --> 01:49:33.119
+Daniel Sosa: Digo, estás anotando, soy la versión.
+
+
+874
+01:49:33.409 --> 01:49:34.229
+Sebastian Langer: Venga.
+
+
+875
+01:49:34.229 --> 01:49:35.399
+Daniel Sosa: De Garner.
+
+
+876
+01:49:36.179 --> 01:49:36.529
+Matias Z: En el.
+
+
+877
+01:49:36.529 --> 01:49:37.239
+Sebastian Langer: Tipo o a.
+
+
+878
+01:49:37.239 --> 01:49:37.649
+Matias Z: Es madre.
+
+
+879
+01:49:37.649 --> 01:49:39.099
+Sebastian Langer: Ahorrar 50 000 pesos.
+
+
+880
+01:49:39.099 --> 01:49:39.419
+Matias Z: No.
+
+
+881
+01:49:39.419 --> 01:49:39.819
+Sebastian Langer: Sí.
+
+
+882
+01:49:39.819 --> 01:49:40.209
+Daniel Sosa: Claro.
+
+
+883
+01:49:40.209 --> 01:49:42.769
+Matias Z: Catorce 14 japoneses. Y no sé qué otra cosa.
+
+
+884
+01:49:43.049 --> 01:49:43.749
+Daniel Sosa: A la.
+
+
+885
+01:49:43.749 --> 01:49:44.299
+Sebastian Langer: Esto es jabón.
+
+
+886
+01:49:44.299 --> 01:49:44.929
+Matias Z: Es.
+
+
+887
+01:49:44.929 --> 01:49:51.449
+Sebastian Langer: Ha había un par, no yo, de lo que lo que había quedado por ahí para este slot es el tema del
+
+
+888
+01:49:52.509 --> 01:49:58.448
+Sebastian Langer: a priori. Digo, no di no sé cuánta gente, cuántas empresas que vos conozcas
+
+
+889
+01:49:58.579 --> 01:50:08.849
+Sebastian Langer: están trabajando de esta manera. Y Y la pregunta no tiene tanto que ver para ver. Digo si si si conocés muchos o pocos, pero sí como para entender
+
+
+890
+01:50:09.819 --> 01:50:22.059
+Sebastian Langer: claramente. Acá hay hay nuevas actividades entre perfiles viejos. Por ejemplo, 1 se imagina recién en el ejemplo que pusiste 1. ¿se imaginan a listas de recursos humanos.
+
+
+891
+01:50:22.219 --> 01:50:35.729
+Sebastian Langer: 1 se imagina personas que trabajan en la parte de de la P. M o con los proyectos, tal vez salvo evaluaciones de desempeño, por pues, me estoy subiendo al ejemplo que
+
+
+892
+01:50:35.989 --> 01:50:41.599
+Sebastian Langer: que que diste. Vos, ¿ Porque estamos hablando como de eso. Y y digo
+
+
+893
+01:50:42.099 --> 01:50:58.358
+Sebastian Langer: recién lo lo charlábamos con con mi compañero, esto de de Okay, poner que vos tenés los datos, Pero estos datos tienen que ser validados. Entonces ahí yo, lo que me imagino es que después de hacer una ingeniería de datos donde vos tratás de adivinar
+
+
+894
+01:50:58.449 --> 01:51:14.779
+Sebastian Langer: las entidades, las relaciones. Quién sabe, le das un glosario, lo que fuere. Y además, un primer candidato de grafo vas a necesitar que toda esta gente revisen. Y y y me imagino, digo, estos estas personas con un perfil que hacen otra cosa
+
+
+895
+01:51:14.859 --> 01:51:31.178
+Sebastian Langer: que te revisen la coherencia que tienen estas relaciones y que de alguna manera te permitan tener tu Golden Dataset para poder, digo, trabajar el grafo de manera u un grafo que sea fiel a la verdad. No.
+
+
+896
+01:51:31.479 --> 01:51:38.928
+Sebastian Langer: no sé, digo, me me parece la parte que menos me imagino, de todo el proceso. Por eso te la pregunto. ¿se entendió la pregunta a vos
+
+
+897
+01:51:40.149 --> 01:51:41.089
+Sebastian Langer: muy.
+
+
+898
+01:51:42.549 --> 01:51:47.259
+Matias Z: Necesito ser Query de compositio a bárbara.
+
+
+899
+01:51:47.469 --> 01:51:48.588
+Matias Z: Creo que.
+
+
+900
+01:51:48.589 --> 01:51:52.809
+Daniel Sosa: Deberíamos tenernos un sponsor de negocio entre comillas.
+
+
+901
+01:51:53.559 --> 01:51:58.648
+Daniel Sosa: Involucrado para cualquier construcción que que arranquemos, no
+
+
+902
+01:51:59.189 --> 01:52:01.169
+Daniel Sosa: para que no sea el experimento de Haití.
+
+
+903
+01:52:01.169 --> 01:52:06.598
+Sebastian Langer: Como es el trabajo de de llevar de quien sabe un conjunto de documentos
+
+
+904
+01:52:06.669 --> 01:52:12.308
+Sebastian Langer: que por ahí algunos están en un rato, otros están en otro lado y un conjunto de conocimientos que no están en ningún lado.
+
+
+905
+01:52:12.339 --> 01:52:26.938
+Sebastian Langer: y convertir eso en un dataset potable para alimentar un un grafo, entonces ahí yo creo que que arranca una cosa medio multidisciplinaria con actividades esotéricas. No sé
+
+
+906
+01:52:27.679 --> 01:52:31.469
+Sebastian Langer: no sé si esotérica, pero se entiende, no como cosas que nunca se hicieron.
+
+
+907
+01:52:33.629 --> 01:52:36.008
+Sebastian Langer: Tami: Sí, pero eres ojo, ¡
+
+
+908
+01:52:36.409 --> 01:52:43.498
+Matias Z: Estoy de acuerdo, que hace falta un equipo interdisciplinario.
+
+
+909
+01:52:45.059 --> 01:52:55.389
+Matias Z: definitivamente alguien relacionado con gobernanza de datos, alguien que entienda la lógica del negocio. No sabría cómo responderte exactamente cómo se resuelve eso.
+
+
+910
+01:52:55.389 --> 01:53:06.668
+Sebastian Langer: Yo yo estoy tratando de entender la transformación de los datos, la como la la de de de la nada a un E, T. L que me dé algo que me permita gestionar el grafo. Entonces esa parte es la que
+
+
+911
+01:53:06.779 --> 01:53:12.269
+Sebastian Langer: es la que me estoy tratando de imaginar, y la me la in, me la imagino con cosas que no sé si son reales.
+
+
+912
+01:53:15.179 --> 01:53:18.738
+Matias Z: Okay. Ahora te entiendo un poco mejor. Bien.
+
+
+913
+01:53:19.789 --> 01:53:30.708
+Matias Z: si en en las slides, al comienzo estaba un poco mencionado la la idea de la extracción y 2 caminos posibles dependiendo si estábamos hablando de datos estructurados o no estructurados.
+
+
+914
+01:53:32.569 --> 01:53:35.478
+Matias Z: Para eso existe work flows genéticos también.
+
+
+915
+01:53:36.529 --> 01:53:37.488
+Sebastian Langer: ¿Qué? Bueno.
+
+
+916
+01:53:37.689 --> 01:53:45.469
+Matias Z: Sí definitivamente que bueno, está bueno. De cualquier manera.
+
+
+917
+01:53:46.099 --> 01:53:51.299
+Matias Z: yo creo que todo eso se encuentra en un estadio un poco experimental en
+
+
+918
+01:53:52.169 --> 01:53:55.958
+Matias Z: no tengo la respuesta concreta, de verdad, no lo sé.
+
+
+919
+01:53:56.479 --> 01:54:04.308
+Matias Z: En C, C, P: Lo que sí te puedo comentar, por ejemplo es que empezaron a aparecer funcionalidades super interesantes.
+
+
+920
+01:54:04.419 --> 01:54:20.109
+Matias Z: Para empezar a construir estos, esta capa semántica del negocio que se hace de manera autónoma. Lo haces seminar en función de los datos que tengas tanto en tus tablas como como si los guardas en en Backets como Pdfs con datos no estructurados.
+
+
+921
+01:54:20.549 --> 01:54:25.689
+Matias Z: Empezaron a aparecer estas funcionalidades y se resuelven de manera autónoma.
+
+
+922
+01:54:26.129 --> 01:54:32.998
+Matias Z: Honestamente, no sé cuán bien funcionan. No sé si hoy confiaría en eso para algo claro.
+
+
+923
+01:54:34.029 --> 01:54:40.259
+Sebastian Langer: Si yo digo, creo que por ahí habría que hacer un benchmark a ver cómo lo hacen
+
+
+924
+01:54:40.929 --> 01:54:45.279
+Sebastian Langer: o cómo se se cómo se ahí? Sí puedo llamar y preguntar.
+
+
+925
+01:54:46.229 --> 01:54:55.369
+Sebastian Langer: ¿le podría preguntar a Garner eso podrías llegar a ser motivo de una reunión con ellos, Pero pero digo, me parece que.
+
+
+926
+01:54:55.599 --> 01:54:58.548
+Sebastian Langer: de todas maneras, si no estuviera nada de eso.
+
+
+927
+01:54:59.059 --> 01:55:06.538
+Sebastian Langer: Sí, creo que es un poco prueba y error y tratar de de armar grafos que tengan algún sentido y
+
+
+928
+01:55:06.669 --> 01:55:10.638
+Sebastian Langer: y buscarle la ingeniería. ¿qué sé yo por ahí haces
+
+
+929
+01:55:10.809 --> 01:55:12.938
+Sebastian Langer: un paso más un paso menos.
+
+
+930
+01:55:13.149 --> 01:55:18.369
+Sebastian Langer: Pero bueno, un poco. La idea era comprender qué tipo de
+
+
+931
+01:55:18.679 --> 01:55:32.208
+Sebastian Langer: de personas, si se están involucradas tal ahí. El compañero dijo no de este Koldo, un un sponsor de negocios, y por ahí analistas que por ahí en su día a día, se son especialistas en otros temas
+
+
+932
+01:55:32.309 --> 01:55:35.868
+Sebastian Langer: como para que vean qué coherencia tiene o no la relación.
+
+
+933
+01:55:40.009 --> 01:55:41.849
+Sebastian Langer: Eso era mi pregunta.
+
+
+934
+01:55:42.089 --> 01:55:46.999
+Matias Z: Perfecto. Yo honestamente, lo lo único que puedo aportar ahí es
+
+
+935
+01:55:47.499 --> 01:55:50.568
+Matias Z: mi experiencia, que es con con C, C, P.
+
+
+936
+01:55:52.849 --> 01:55:54.828
+Matias Z: Con respecto a los roles que se involucran
+
+
+937
+01:55:54.929 --> 01:56:07.869
+Matias Z: es el el el caos es es todavía enorme. Honestamente, generalmente encontr encuentro el ingenieros de datos científicos de datos, gente de gobernanza, gente de seguridad, arquitectos.
+
+
+938
+01:56:07.869 --> 01:56:08.299
+Sebastian Langer: Sí.
+
+
+939
+01:56:08.309 --> 01:56:09.539
+Matias Z: Y y bueno.
+
+
+940
+01:56:09.539 --> 01:56:09.939
+Sebastian Langer: Fuera.
+
+
+941
+01:56:09.939 --> 01:56:14.879
+Matias Z: Sí sí lo que nos imaginamos, algún sting holder de negocios. Y
+
+
+942
+01:56:15.199 --> 01:56:17.958
+Matias Z: Y con respecto a la ingesta de los datos.
+
+
+943
+01:56:18.239 --> 01:56:26.579
+Matias Z: Nosotros lo que estábamos experimentando desde que salió es el platform C. C, Ps: Esta nueva
+
+
+944
+01:56:27.119 --> 01:56:35.918
+Matias Z: propuesta de de Google, lo que pasa que quisiera ser un poquito más agnóstico, pero perdón es lo que conozco. En términos de de vendorfs.
+
+
+945
+01:56:36.129 --> 01:56:36.719
+Matias Z: No, no.
+
+
+946
+01:56:36.719 --> 01:56:47.738
+Sebastian Langer: La pregunta también por detrás. Lo que tiene es que cuando llegue, pone la parte, si puede ser data governance, pero también el lo que sería la parte de ingeniería de seguridad y la seguridad en general. De esto.
+
+
+947
+01:56:47.989 --> 01:56:51.359
+Sebastian Langer: que básicamente es la la seguridad de la información
+
+
+948
+01:56:51.549 --> 01:57:00.678
+Sebastian Langer: que que sea fe fehaciente, no que sea verac, que sea real. Entonces, ahí, como como hago yo, para asegurarme de que.
+
+
+949
+01:57:01.029 --> 01:57:11.529
+Sebastian Langer: de de que que procesos tendríamos que poner en el área de de de de seguridad de la información como para que realmente refleje algo verdadero. Entonces, ahí
+
+
+950
+01:57:11.639 --> 01:57:15.668
+Sebastian Langer: Cast es todo. Terra incógnita, No, no, t No
+
+
+951
+01:57:16.029 --> 01:57:20.739
+Sebastian Langer: hay que inventar un poco a partir de las de los principios, no.
+
+
+952
+01:57:21.169 --> 01:57:30.798
+Matias Z: Ahí te copié algo que es bastante reciente, que es lo que sí estuvimos probando en profundidad. Lo presentamos en Google. Chile hace poquito
+
+
+953
+01:57:31.189 --> 01:57:37.489
+Matias Z: y es una de las propuestas grandes de Google para este tipo de cosas. Estos.
+
+
+954
+01:57:37.489 --> 01:57:40.208
+Sebastian Langer: 26 Allantic Santa Claudio, Ok.
+
+
+955
+01:57:40.209 --> 01:57:44.509
+Matias Z: Sí. Fíjate si goleas anécdota claus. Vas a encontrar un
+
+
+956
+01:57:45.589 --> 01:58:02.918
+Matias Z: una suerte de meta iniciativa que involucra un montón de soluciones, entre otras cosas. ¿qué es eso? El discovery automático de de la terminología o la semántica del negocio. Lo que antes era dataplex. Ahora lo mezclaron un poco con seminal.
+
+
+957
+01:58:03.209 --> 01:58:16.588
+Matias Z: encuentra y combina datos estructurados y no estructurados te arma. Si llegas a pedirle alguno de los servicios te puede armar grafos de conocimiento, encuentra hace extracción de entidades.
+
+
+958
+01:58:16.909 --> 01:58:17.699
+Sebastian Langer: Ajá.
+
+
+959
+01:58:17.699 --> 01:58:18.838
+Matias Z: Podéis buscarlo y trasladarlo.
+
+
+960
+01:58:18.839 --> 01:58:24.428
+Sebastian Langer: Voy pon la clase. La oficialmente. La terminaste. Estamos en el espacio en el que te podemos hacer preguntas. No.
+
+
+961
+01:58:24.659 --> 01:58:26.269
+Matias Z: Sí, Sí, Sí. Tranqui: Sí.
+
+
+962
+01:58:26.269 --> 01:58:42.198
+Sebastian Langer: Está bien. La tiene que ver con que el día de ayer vos mostraste 3 tipos de grafos diferentes en ese en en en ese gráfico que parecía como, como, no sé, el árbol de la vida, no tengo idea, pero era como te tenías. Como
+
+
+963
+01:58:42.399 --> 01:58:54.459
+Sebastian Langer: digo, estaba la parte de los procedimientos. Estaba la parte del conocimiento y había una más que no me acuerdo. Si no me no me acuerdo Muy bien. ¿qué era ayer.
+
+
+964
+01:58:54.929 --> 01:58:59.919
+Sebastian Langer: Esto que estamos viendo acá. Es el ejemplo que vimos hoy es de los conos de conocimientos.
+
+
+965
+01:59:00.009 --> 01:59:19.518
+Sebastian Langer: Los otros, para mí son una incógnita. Digamos los otros 2 ejemplos. Uno, ni me acuerdo el nombre, pero de del del del de procedimientos, que sería como el que evidentemente optimiza los caminos de trabajo del de la gente. Bueno, no vimos un ejemplo que me parece re abstracto.
+
+
+966
+01:59:21.119 --> 01:59:22.319
+Sebastian Langer: re abstracto.
+
+
+967
+01:59:22.729 --> 01:59:25.229
+Matias Z: Estoy anotando, buscarte ejemplos.
+
+
+968
+01:59:25.819 --> 01:59:26.929
+Sebastian Langer: De los otros 2.
+
+
+969
+01:59:27.119 --> 01:59:27.819
+Matias Z: De.
+
+
+970
+01:59:28.189 --> 01:59:30.829
+Sebastian Langer: Es un podés.
+
+
+971
+01:59:31.189 --> 01:59:35.338
+Matias Z: Sí, Sí, por supuesto, ahora fue contexto y ahora fue procedimiento. Ahora fue.
+
+
+972
+01:59:35.339 --> 01:59:46.289
+Sebastian Langer: De contexto claro. Claro. Bueno, sí, sí tengo mucho interés en eso, sobre todo el de contexto, porque el de contexto. De acuerdo a lo que yo infiero así
+
+
+973
+01:59:47.159 --> 01:59:50.089
+Sebastian Langer: me imagino.
+
+
+974
+01:59:50.379 --> 02:00:09.348
+Sebastian Langer: digo, tiene que ver con con con la reconstrucción de lo que vas trabajando en términos de lo que hablaste y lo que no hablaste el Bueno, yo no sé si eso tien tendrá que ver con el algoritmo de compresión que tiene, o es otra cosa. Cuando vos te fuiste por la rama de una sesión y superaste el 1 000 000 de tokens o lo que fuere.
+
+
+975
+02:00:09.349 --> 02:00:16.319
+Sebastian Langer: seguramente algo tiene que ver. Pero en un sistema gentico, esa situación no la tenés, con lo cual, evidentemente
+
+
+976
+02:00:16.319 --> 02:00:23.509
+Sebastian Langer: repartir la la la info te va a poner el vídeo, perdón. Yo tengo como
+
+
+977
+02:00:23.749 --> 02:00:28.899
+Sebastian Langer: hasta ahora. Estoy ahí tirado en el sillón, pero ahora me pongo las pilas.
+
+
+978
+02:00:28.899 --> 02:00:29.469
+Matias Z: Sí.
+
+
+979
+02:00:30.019 --> 02:00:31.539
+Sebastian Langer: Que está.
+
+
+980
+02:00:31.539 --> 02:00:39.318
+Matias Z: Les aclaro, los que quieran retirarse ya son más que libres. Nos quedamos un ratito ya hablando para los que quieran, pero es opcional.
+
+
+981
+02:00:39.319 --> 02:00:40.838
+Sebastian Langer: Gracias a ti, son muy amables.
+
+
+982
+02:00:41.159 --> 02:00:45.409
+Sebastian Langer: ¿no? Lo que lo que decía era eso, no que
+
+
+983
+02:00:45.639 --> 02:00:53.828
+Sebastian Langer: que la gestión del del contexto me parece re importante y que, que, en ese sentido, si hay formas
+
+
+984
+02:00:54.179 --> 02:00:58.629
+Sebastian Langer: con grafos de hacerlo bien o mejor.
+
+
+985
+02:00:59.159 --> 02:01:04.699
+Sebastian Langer: y, además, tenemos distintos tipos de de de de memorias y de contextos.
+
+
+986
+02:01:04.869 --> 02:01:08.879
+Sebastian Langer: En nada me despierta mucha curiosidad.
+
+
+987
+02:01:09.259 --> 02:01:12.008
+Matias Z: Bueno, bueno, entonces definitivamente busco ejemplos.
+
+
+988
+02:01:12.009 --> 02:01:17.029
+Sebastian Langer: Pero no sé, no sé si soy el único por ahí podemos ver otras cosas a mí, porque me parece que
+
+
+989
+02:01:17.289 --> 02:01:29.828
+Sebastian Langer: que p. La diferencia entre que un agente sea boludo o no, T tiene que ver con con cuánto se acuerda, cuánto se olvida y que también reconstruye y o toma el hilo de lo que estás haciendo o no lo pierden. La mitad del trabajo.
+
+
+990
+02:01:31.519 --> 02:01:38.699
+Matias Z: Sí, Sí, Sí, creo que vamos a ver algo parecido a eso. Cuando cuando estuvimos aprendizaje en el próximo módulo.
+
+
+991
+02:01:39.409 --> 02:01:46.158
+Matias Z: Después de esto, que es memoria, conocimiento, viene aprendizaje. Y ahí creo que un poquito de lo que estás mencionando lo lo vamos a poder estudiar
+
+
+992
+02:01:46.529 --> 02:01:53.839
+Matias Z: qué recuerda, qué olvida y qué reutiliza y que refina sobre lo que recuerda en.
+
+
+993
+02:01:54.269 --> 02:01:56.809
+Sebastian Langer: Y vemos grafos ahí sobre cómo lo hace.
+
+
+994
+02:01:57.159 --> 02:02:04.229
+Matias Z: Ahí vemos técnicas que podrían después utilizar como repositorios de grafos o bases vectoriales o vasos
+
+
+995
+02:02:04.369 --> 02:02:06.668
+Matias Z: o archivos. S. Json: por ejemplo.
+
+
+996
+02:02:07.119 --> 02:02:07.529
+Sebastian Langer: Qué? Bueno.
+
+
+997
+02:02:07.919 --> 02:02:15.259
+Matias Z: Nos abstraemos un poquito de de lo que sería la la capa de persistencia. Y nos vamos un poquito más arriba para estudiar las técnicas de aprendizaje.
+
+
+998
+02:02:15.659 --> 02:02:19.689
+Matias Z: Pero primero teníamos que repasar un poco cuáles eran los estratos de.
+
+
+999
+02:02:19.689 --> 02:02:25.088
+Sebastian Langer: No, no está buenísimo, no igual re sólido todo lo que viste hasta ahora. Me imagino que
+
+
+1000
+02:02:25.429 --> 02:02:30.169
+Sebastian Langer: está bueno después hacer un doble clic, me imagino explicándolo.
+
+
+1001
+02:02:30.489 --> 02:02:31.608
+Sebastian Langer: Y me veo
+
+
+1002
+02:02:31.959 --> 02:02:39.148
+Sebastian Langer: un poco complicado, pero pero no, comp no digo, no sé si complicado por ahí voy me voy a alucinar.
+
+
+1003
+02:02:39.669 --> 02:02:40.049
+Matias Z: Sí.
+
+
+1004
+02:02:40.619 --> 02:02:47.558
+Sebastian Langer: espero no alucinar tanto. Bueno, de mi lado no tenía más que esas preguntas, así que muchas gracias.
+
+
+1005
+02:02:47.779 --> 02:02:48.869
+Matias Z: No, por favor.
+
+
+1006
+02:02:51.659 --> 02:02:53.929
+Matias Z: Gracias a vos.
+
+
+1007
+02:02:54.559 --> 02:02:57.639
+Matias Z: Bueno, si no hay más preguntas.
+
+
+1008
+02:02:58.099 --> 02:03:00.139
+Sebastian Langer: Maná el material dale no seas malo.
+
+
+1009
+02:03:00.359 --> 02:03:04.678
+Matias Z: Sí, Sí, Sí, me anoté mandar todo el material que falta.
+
+
+1010
+02:03:04.929 --> 02:03:07.319
+Sebastian Langer: Así, el fin de 1 puede estudiar.
+
+
+1011
+02:03:07.729 --> 02:03:16.569
+Matias Z: Absolutamente absolutamente pensé que el reto estaba actualizado. Lo que sí seguro están subidas son las slides al campus. Eso.
+
+
+1012
+02:03:16.819 --> 02:03:19.919
+Sebastian Langer: Estas, que son prestadas también las podemos tener las.
+
+
+1013
+02:03:19.919 --> 02:03:23.418
+Matias Z: Sí, sí, porque tienen licencia permisiva.
+
+
+1014
+02:03:23.719 --> 02:03:26.499
+Sebastian Langer: Ah buenísimo. Por eso me parecen superclaras.
+
+
+1015
+02:03:26.709 --> 02:03:27.098
+Matias Z: Bueno, vamos.
+
+
+1016
+02:03:27.099 --> 02:03:27.429
+Sebastian Langer: Bueno, claro.
+
+
+1017
+02:03:27.429 --> 02:03:27.869
+Matias Z: Por el.
+
+
+1018
+02:03:27.869 --> 02:03:29.499
+Sebastian Langer: Gracias.
+
+
+1019
+02:03:29.499 --> 02:03:30.019
+Matias Z: Lo que.
+
+
+1020
+02:03:30.019 --> 02:03:31.109
+Sebastian Langer: Buenas noches.
+
+
+1021
+02:03:31.359 --> 02:03:33.169
+Matias Z: Abrazo Chau chauna.
+
+
+1022
+02:03:33.169 --> 02:03:34.549
+Carlos Miguez: Noches, hasta luego.
+
+
+
