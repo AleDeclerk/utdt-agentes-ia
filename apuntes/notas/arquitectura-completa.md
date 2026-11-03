@@ -2,7 +2,7 @@
 
 ![Tres capas: pre-deployment, defensa en tiempo real y post-ejecución, con un ciclo de mejora continua](img/arquitectura-completa-3-capas.png)
 
-**Fuente:** slide 108 del deck "AgentSecOps · UNLP 2026, arquitectura de seguridad para agentes de IA", según el pie de la slide. La marqué como clave el 29/10.
+**Fuente:** slide 108 de 116 del PDF `AgentSecOps_clase_v3.pdf` ("AgentSecOps · UNLP 2026, arquitectura de seguridad para agentes de IA", según el pie). Matías la mostró en la [clase 10](../resumenes/clase-10.md), a la 1:59:45 de la grabación. Ese deck no está en el campus. La marqué como clave el 29/10, en la misma clase.
 
 ## La idea
 

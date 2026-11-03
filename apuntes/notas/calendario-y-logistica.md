@@ -19,7 +19,7 @@ Sale del calendario actualizado que llegó por mail el 02/10 (`campus/general/Ca
 | 7 | jue 15/10 | GraphRAG con Neo4j |
 | 8 | jue 22/10 | Evals (1) |
 | 9 | mar 27/10 | Evals (2) |
-| 10 | jue 29/10 | Observabilidad en producción (anunciado en la clase 9) |
+| 10 | jue 29/10 | Monitoreo en producción: OpenTelemetry y Langfuse |
 | 11 | mar 03/11 | |
 | 12 | jue 05/11 | |
 | 13 | jue 12/11 | |
@@ -35,8 +35,9 @@ Sale del calendario actualizado que llegó por mail el 02/10 (`campus/general/Ca
 
 ## Grabaciones
 
-- El campus dice que las grabaciones duran 7 días y no se pueden descargar. El 29/10 las 9 primeras seguían online.
-- Cada grabación de Zoom trae una transcripción automática (pestaña "Transcripción"). Las de las clases 1 a 9 están en `../transcripciones/`. La de la clase 1 salió casi ilegible.
+- El campus dice que las grabaciones duran 7 días y no se pueden descargar. El 29/10 las 9 primeras seguían online, y el 03/11 la de la clase 10 también.
+- Para la clase 10 el campus solo tiene la grabación: las slides no se publicaron.
+- Cada grabación de Zoom trae una transcripción automática (pestaña "Transcripción"). Las de las clases 1 a 10 están en `../transcripciones/`. La de la clase 1 salió casi ilegible.
 
 ## Links
 
