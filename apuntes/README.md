@@ -2,7 +2,7 @@
 
 Todo el material del curso en un solo lugar, para consultar después.
 
-**Este repo es privado y tiene que seguir siéndolo.** Es material de un curso pago, y las transcripciones tienen los nombres de los compañeros.
+Son notas personales de un alumno. El material del curso es de la UTDT y de Matías Zabaljauregui.
 
 ## Qué hay
 

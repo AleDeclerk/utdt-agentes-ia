@@ -4,8 +4,6 @@ Notas personales de estudio. Cubren las clases 1 a 10 (24/09 al 29/10/2026), dic
 
 **Cómo se armaron.** Cada resumen sale de la transcripción automática que genera Zoom en la grabación de la clase, completada con el material del campus y del repo del curso. La transcripción automática tiene errores de reconocimiento: los pasajes que no se entendieron están marcados "(transcripción dudosa)" o se omitieron. La de la **clase 1** salió casi ilegible, así que ese resumen se apoya sobre todo en `MODULO_1` del repo y lo indica en cada punto.
 
-**No subir esta carpeta a un repo público.** Son notas de un curso pago.
-
 ## Las clases
 
 | Clase | Fecha | Tema | Archivo |
