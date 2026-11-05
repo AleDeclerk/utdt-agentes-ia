@@ -28,7 +28,7 @@ Es el mismo mapa de tres capas que el docente presentó para las evals en la [cl
 |---|---|---|
 | Cambio | Un commit o pull request entra al pipeline | [Clase 8](../resumenes/clase-08.md): los scores alimentan gates con GitHub Actions y MLflow |
 | Benchmarks | Miden comportamiento y grounding | [Clases 8](../resumenes/clase-08.md) y [9](../resumenes/clase-09.md): trayectoria y estado final, jueces LLM, pass^k, intervalo de Wilson. Los benchmarks públicos son solo una línea base: hace falta un conjunto propio |
-| Red teaming | Prueba ataques y abuso | Garak, PyRIT y Promptfoo, anunciados para el módulo 12 (seguridad) en la [clase 9](../resumenes/clase-09.md) |
+| Red teaming | Prueba ataques y abuso | Garak, PyRIT y Promptfoo, anunciados para el módulo 12 (seguridad) en la [clase 9](../resumenes/clase-09.md). [Clase 11](../resumenes/clase-11.md): promptfoo con plugins por marco (OWASP, MITRE ATLAS, NIST) para automatizar las pruebas antes del gate |
 | Gate | Toma una decisión consolidada | [Clase 9](../resumenes/clase-09.md): telemetría OpenTelemetry en Langfuse, un score y un gate en GitHub Actions |
 | Artefacto | Queda versionado y con procedencia | [Clase 9](../resumenes/clase-09.md): versionado del agente y del juez. [Clase 8](../resumenes/clase-08.md): rollout progresivo (A/B, shadow, canary) |
 

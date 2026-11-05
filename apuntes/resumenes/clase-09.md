@@ -1,7 +1,7 @@
 # Clase 9 · 27/10 · Validación y medición: jueces LLM, kappa, Ragas, pass@k y Wilson
 
 **Docente e invitados:** Matías Zabaljauregui. Sin invitados.
-**Material del campus:** solo la grabación, sin slides. En pantalla: el deck "Validación y Medición" (Módulo 9) y dos grupos de slides complementarias (jueces y estadística, regulación).
+**Material del campus:** la grabación y, desde el 3/11, las slides "slides evals - parte 2" ([`../campus/clase-09/slides_v3.pptx`](../campus/clase-09/slides_v3.pptx), 46 slides, solo imágenes). En pantalla: el deck "Validación y Medición" (Módulo 9) y dos grupos de slides complementarias (jueces y estadística, regulación).
 
 ## En una frase
 Segunda parte del Módulo 9: cómo usar LLMs como jueces, por qué un "92 % de éxito" de una sola corrida no sirve y qué métricas (kappa de Cohen, pass@k, pass^k, intervalo de Wilson) exigen hoy los reguladores.

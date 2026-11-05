@@ -1,7 +1,7 @@
 # Clase 10 · 29/10 · Observabilidad en producción: Langfuse, trazas, prompts versionados y datasets
 
 **Docente:** Matías Zabaljauregui.
-**Material del campus:** solo la grabación (2:20:16), sin slides. En pantalla: el deck "Monitoreo en producción" (pie "UTDT 2026 · Módulo 10 de 14 · ADK 2.12"), una demo propia del docente (el portal de un banco minorista con su agente) y la interfaz de Langfuse. Cerca de la hora 2:00 apareció la slide 108 de 116 de `AgentSecOps_clase_v3.pdf`.
+**Material del campus:** la grabación (2:20:16) y, desde el 3/11, las slides "slides monitoreo" ([`../campus/clase-10/slides_v2.pptx`](../campus/clase-10/slides_v2.pptx), 46 slides, solo imágenes). En pantalla: el deck "Monitoreo en producción" (pie "UTDT 2026 · Módulo 10 de 14 · ADK 2.12"), una demo propia del docente (el portal de un banco minorista con su agente) y la interfaz de Langfuse. Cerca de la hora 2:00 apareció la slide 108 de 116 de `AgentSecOps_clase_v3.pdf`.
 
 ## En una frase
 Primera clase del Módulo 10: las evals de las clases [8](clase-08.md) y [9](clase-09.md) se llevan al agente en producción, con Langfuse como pieza que recibe trazas por OpenTelemetry, versiona prompts y datasets, corre experimentos y hace de gate y de alertas.

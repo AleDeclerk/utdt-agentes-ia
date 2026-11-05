@@ -20,7 +20,7 @@ Sale del calendario actualizado que llegó por mail el 02/10 (`campus/general/Ca
 | 8 | jue 22/10 | Evals (1) |
 | 9 | mar 27/10 | Evals (2) |
 | 10 | jue 29/10 | Monitoreo en producción: OpenTelemetry y Langfuse |
-| 11 | mar 03/11 | |
+| 11 | mar 03/11 | Frameworks de seguridad: STRIDE, MAESTRO, OWASP, MITRE ATLAS, NIST e ISO |
 | 12 | jue 05/11 | |
 | 13 | jue 12/11 | |
 | 14 | mar 17/11 | |
@@ -36,7 +36,7 @@ Sale del calendario actualizado que llegó por mail el 02/10 (`campus/general/Ca
 ## Grabaciones
 
 - El campus dice que las grabaciones duran 7 días y no se pueden descargar. El 29/10 las 9 primeras seguían online, y el 03/11 la de la clase 10 también.
-- Para la clase 10 el campus solo tiene la grabación: las slides no se publicaron.
+- Las slides de las clases 9, 10 y 11 se publicaron en el campus recién el 3/11. Las de la 9 y la 10 son `.pptx` con las slides como imágenes, sin texto.
 - Cada grabación de Zoom trae una transcripción automática (pestaña "Transcripción"). Las de las clases 1 a 10 están en `../transcripciones/`. La de la clase 1 salió casi ilegible.
 
 ## Links
