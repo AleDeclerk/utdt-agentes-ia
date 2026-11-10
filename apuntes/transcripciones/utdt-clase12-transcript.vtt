@@ -1,0 +1,6338 @@
+WEBVTT
+
+1
+00:00:24.288 --> 00:00:28.458
+Matias Z: hola, Juan Hola, Claudia, ¿Cómo están? Me escuchan? Bien.
+
+
+2
+00:00:28.498 --> 00:00:30.238
+Juan Franco Echeverria: Hola. Hola. Maating.
+
+
+3
+00:00:32.108 --> 00:00:33.278
+Juan Franco Echeverria: Si se escucha bien.
+
+
+4
+00:00:37.188 --> 00:00:37.948
+Matias Z: Genial.
+
+
+5
+00:01:03.368 --> 00:01:05.338
+Matias Z: Pueden ver mi pantalla compartida.
+
+
+6
+00:01:21.538 --> 00:01:22.888
+Matias Z: Buenas Buenas.
+
+
+7
+00:01:24.788 --> 00:01:26.148
+Agustin Aimale: ¿qué tal buenas tardes?
+
+
+8
+00:01:26.638 --> 00:01:28.018
+Matias Z: ¿cómo te va? Agustín?
+
+
+9
+00:01:28.618 --> 00:01:29.728
+Agustin Aimale: Muy bien. Vos.
+
+
+10
+00:01:30.598 --> 00:01:37.178
+Matias Z: Bien bien en la pantalla compartida.
+
+
+11
+00:01:38.408 --> 00:01:38.958
+Agustin Aimale: Sí.
+
+
+12
+00:01:39.858 --> 00:01:40.748
+Matias Z: Genial.
+
+
+13
+00:01:41.708 --> 00:01:44.647
+Matias Z: Bueno, son casi las 6.
+
+
+14
+00:01:46.788 --> 00:01:51.817
+Matias Z: Podemos aprovechar estos minutos como siempre, para
+
+
+15
+00:01:52.728 --> 00:01:55.247
+Matias Z: charlar de lo que necesiten hablar
+
+
+16
+00:01:55.638 --> 00:02:01.838
+Matias Z: alguna reflexión sobre el encuentro pasado en alguna consulta.
+
+
+17
+00:02:03.628 --> 00:02:04.638
+Carlos Miguez: Hola, buenas tardes.
+
+
+18
+00:02:04.638 --> 00:02:05.298
+Matias Z: Fijo.
+
+
+19
+00:02:05.518 --> 00:02:10.388
+Matias Z: ¿qué tal Carlos? Estuvieron trabajando un poco. Probaron evaluaciones.
+
+
+20
+00:02:11.108 --> 00:02:13.828
+Matias Z: Miraron un poco los los Frameworks.
+
+
+21
+00:02:27.818 --> 00:02:32.017
+Juan Franco Echeverria: Yo honestamente, no tengo nada de impacto. También.
+
+
+22
+00:02:32.018 --> 00:02:32.588
+Matias Z: No.
+
+
+23
+00:02:32.688 --> 00:02:35.127
+Juan Franco Echeverria: No pasa nada.
+
+
+24
+00:02:35.238 --> 00:02:40.117
+Matias Z: Proyectos de gente por lo menos
+
+
+25
+00:02:40.378 --> 00:02:45.487
+Matias Z: en etapas de Mvp de su trabajo como procesos personales.
+
+
+26
+00:02:47.068 --> 00:02:49.798
+Agustin Aimale: Hoy me organicé 1 con Claus
+
+
+27
+00:02:50.338 --> 00:02:59.908
+Agustin Aimale: y te pedí que me andes. Perdón. Discutí un par de conceptos que no tenía claro. Y después terminé pidiendo llevar un montón para armar un agente con
+
+
+28
+00:03:00.798 --> 00:03:07.017
+Agustin Aimale: un par de cositas, y al fin le voy a sentarse a revisar
+
+
+29
+00:03:07.688 --> 00:03:10.617
+Agustin Aimale: ya di como un paso hacia tener algo más o menos.
+
+
+30
+00:03:11.498 --> 00:03:16.057
+Matias Z: Bien con clavo. Me dijiste de lo que estás hablando.
+
+
+31
+00:03:16.548 --> 00:03:17.328
+Agustin Aimale: Sí, sí.
+
+
+32
+00:03:17.658 --> 00:03:21.048
+Agustin Aimale: Y después, bueno, puse lawcut para armarlo.
+
+
+33
+00:03:21.178 --> 00:03:26.578
+Agustin Aimale: Pero ya leí que iba a darme con el Sdk con el A de acá.
+
+
+34
+00:03:27.888 --> 00:03:33.848
+Matias Z: Bien, Bueno, acuérdate que hay algo que se llamaba Ison CD Li.
+
+
+35
+00:03:33.998 --> 00:03:41.938
+Matias Z: Y lo puedes instalar como Buskill Code, y te va guiando por todo el proceso, desde el diseño
+
+
+36
+00:03:42.258 --> 00:03:48.137
+Matias Z: hasta el prototipo, las evaluaciones y el despliegue en producción.
+
+
+37
+00:03:49.378 --> 00:03:52.457
+Matias Z: Puedes usar adecuada, Langer Lanchain.
+
+
+38
+00:03:52.938 --> 00:03:58.188
+Agustin Aimale: Sí. De hecho, eso es lo que me marcó yo, como que al principio quería entenderlo. O sea, quería hacer todo.
+
+
+39
+00:03:58.848 --> 00:04:00.737
+Agustin Aimale: o el school viste con el código.
+
+
+40
+00:04:01.468 --> 00:04:05.748
+Agustin Aimale: Y después, cuando me tiró la del framework, me explicó bien la diferencia
+
+
+41
+00:04:06.718 --> 00:04:08.918
+Agustin Aimale: y decidí hacerlo con la dictador.
+
+
+42
+00:04:11.388 --> 00:04:12.308
+Matias Z: Bien.
+
+
+43
+00:04:13.348 --> 00:04:14.537
+Matias Z: Sí, La recomiendo.
+
+
+44
+00:04:14.538 --> 00:04:18.058
+Agustin Aimale: La última introducción fue armar un Tx Tech
+
+
+45
+00:04:18.758 --> 00:04:20.988
+Agustin Aimale: como lo cómo lo inició para probar.
+
+
+46
+00:04:22.738 --> 00:04:33.128
+Matias Z: Sí. Por ejemplo, en la primera etapa me dicen, si la hay. Es una entrevista que te hacen, Por ejemplo, la Skill de Cloud simplemente para armar el archivo de Spec.
+
+
+47
+00:04:33.248 --> 00:04:39.518
+Matias Z: Y una vez que tienes terminadas las especificaciones recién ahí empieza el prototipado mhm
+
+
+48
+00:04:40.228 --> 00:04:42.358
+Matias Z: ayuda un poco, organizarse. Está bueno
+
+
+49
+00:04:45.298 --> 00:04:52.798
+Matias Z: si no. Por supuesto, hay otros skills que te que también te guian con con el armado de work flow de work flows argentinos.
+
+
+50
+00:04:53.558 --> 00:04:55.157
+Matias Z: Investiga ahí un poco.
+
+
+51
+00:04:55.328 --> 00:05:00.227
+Matias Z: Yo insisto, con superpowers. Es Es una de las skills más conocidas
+
+
+52
+00:05:00.968 --> 00:05:03.008
+Matias Z: para para el desarrollo de software.
+
+
+53
+00:05:04.158 --> 00:05:05.598
+Matias Z: No sé si la conoces.
+
+
+54
+00:05:06.788 --> 00:05:09.977
+Agustin Aimale: Sí. La sí. La conozco. La usamos. La uso.
+
+
+55
+00:05:13.008 --> 00:05:14.898
+Matias Z: Bien. Bien. José.
+
+
+56
+00:05:16.548 --> 00:05:21.498
+Matias Z: Bueno, bueno, bienvenidos al resto.
+
+
+57
+00:05:23.058 --> 00:05:27.908
+Matias Z: Alguien más estuvo probando evaluaciones sobre sus agentes.
+
+
+58
+00:05:28.058 --> 00:05:32.468
+Matias Z: Pudieron repasar algo de del encuentro pasado alguna consulta?
+
+
+59
+00:05:54.568 --> 00:06:01.278
+Matias Z: Bueno, entonces lo que podemos hacer mientras esperamos al resto es
+
+
+60
+00:06:02.428 --> 00:06:09.958
+Matias Z: yo, en general, trato de de traerles alguna noticia importante de la semana. A modo de motivación.
+
+
+61
+00:06:13.668 --> 00:06:27.128
+Matias Z: este en particular noticias relacionadas con con los temas que estamos viendo no salió hace muy poquito un informe
+
+
+62
+00:06:27.378 --> 00:06:32.207
+Matias Z: que la verdad recomiendo leer, porque es impactante.
+
+
+63
+00:06:32.558 --> 00:06:39.958
+Matias Z: El M I T tiene una iniciativa que les E. I R. S. Initiative, a dónde
+
+
+64
+00:06:40.108 --> 00:06:52.517
+Matias Z: tratan de manera bastante rigurosa y académica la medición de riesgos. Pero lo interesante es que lo hacen es en en el de las sobre compañías, no no en el laboratorio.
+
+
+65
+00:06:53.058 --> 00:07:00.318
+Matias Z: En un el paper completo es súper detallado. Como pueden ver.
+
+
+66
+00:07:04.958 --> 00:07:14.288
+Matias Z: el los resultados se van a encontrar, Acá son, les recomiendo realmente leerlo, porque de alguna manera
+
+
+67
+00:07:14.398 --> 00:07:19.907
+Matias Z: justifica un poco estos encuentros que estamos dedicando.
+
+
+68
+00:07:21.388 --> 00:07:28.087
+Matias Z: Básicamente al al al hallazgo de vulnerabilidades, a la medición de riesgos.
+
+
+69
+00:07:28.248 --> 00:07:38.038
+Matias Z: ¿por qué es una etapa tan importante en el diseño de una arquitectura genética. Y qué es lo que en realidad está sucediendo en el mundo con respecto a esto? No.
+
+
+70
+00:07:45.248 --> 00:07:49.998
+Matias Z: si no tienen ganas de leer el paper en el
+
+
+71
+00:07:50.258 --> 00:07:57.228
+Matias Z: en el sitio web van a encontrar un explorador
+
+
+72
+00:07:57.538 --> 00:08:07.168
+Matias Z: que es. Es muy interesante porque les permite encontrar rápidamente algunas de las mediciones que se hicieron, cuáles son los hallazgos más importantes.
+
+
+73
+00:08:07.288 --> 00:08:09.018
+Matias Z: ¿sí?
+
+
+74
+00:08:11.038 --> 00:08:14.958
+Matias Z: Así que si nos super recomiendo esto, se lo voy a enviar
+
+
+75
+00:08:17.288 --> 00:08:23.837
+Matias Z: con Yo hice un pequeño resumen buscando hallazgos realmente sorprendentes, por lo menos
+
+
+76
+00:08:24.358 --> 00:08:27.297
+Matias Z: para mí, porque esto se hizo sobre.
+
+
+77
+00:08:27.728 --> 00:08:34.087
+Matias Z: Hay como 2 grupos grandes, una de 200 compañías de las más importantes y otro grupo de mail compañías.
+
+
+78
+00:08:34.358 --> 00:08:39.858
+Matias Z: ya que eso nos muestra bueno, significativa, representativa
+
+
+79
+00:08:40.317 --> 00:08:43.777
+Matias Z: de los hallazgos que encontré rápidamente.
+
+
+80
+00:08:44.978 --> 00:08:52.297
+Matias Z: Lo que cuenta. El informe hiciste. Esto es de de hace muy poquito. Ya Sabías, es que
+
+
+81
+00:08:52.718 --> 00:08:58.327
+Matias Z: casi nadie nombra los riesgos que los expertos consideran más graves.
+
+
+82
+00:09:00.238 --> 00:09:03.698
+Matias Z: Es bastante impactante para mí,
+
+
+83
+00:09:03.828 --> 00:09:11.607
+Matias Z: y es un poco también lo que se ve en el día a día. En general, no se habla de los riesgos
+
+
+84
+00:09:12.398 --> 00:09:16.128
+Matias Z: con mayor capacidad de daño
+
+
+85
+00:09:19.738 --> 00:09:27.737
+Matias Z: e incluso muchas veces lo que sucede es que los propios equipos que desarrollan desconocen o ignoran el riesgo de su producto
+
+
+86
+00:09:28.238 --> 00:09:29.068
+Matias Z: sí.
+
+
+87
+00:09:29.288 --> 00:09:32.327
+Matias Z: Esto también es bastante común
+
+
+88
+00:09:32.468 --> 00:09:41.817
+Matias Z: o por malas mediciones o por desconocimiento de justamente los Frameworks que estuvimos viendo para el modelado de amenazas. En general, no
+
+
+89
+00:09:42.128 --> 00:09:47.478
+Matias Z: no se hace un reconocimiento exhaustivo de
+
+
+90
+00:09:48.258 --> 00:09:53.718
+Matias Z: de estas amenazas, riesgos potenciales, vulnerabilidades
+
+
+91
+00:09:59.638 --> 00:10:01.457
+Matias Z: bastante impactante. No.
+
+
+92
+00:10:02.528 --> 00:10:05.897
+Juan Franco Echeverria: No se reconocen sería que no toman acción al respecto.
+
+
+93
+00:10:06.058 --> 00:10:06.788
+Matias Z: Claro.
+
+
+94
+00:10:06.788 --> 00:10:11.128
+Juan Franco Echeverria: Deslinda la responsabilidad en la utilización del que lo utiliza. Digamos.
+
+
+95
+00:10:15.748 --> 00:10:23.348
+Matias Z: No, en en realidad los riesgos. Debería como asumirlos. Asumirá la compañía que despliega? ¿no?
+
+
+96
+00:10:23.558 --> 00:10:31.267
+Matias Z: Mhm: Después, ¿Quién lo utiliza el usuario. Bueno, ahí ahí puede puede pasar cualquier cosa. Puede haber gente
+
+
+97
+00:10:31.388 --> 00:10:36.048
+Matias Z: que que lo use de formas, las cuales no estuvo pensado o directamente
+
+
+98
+00:10:36.248 --> 00:10:41.048
+Matias Z: usuarios adversariales no que que intentan romper en el.
+
+
+99
+00:10:41.248 --> 00:10:49.278
+Juan Franco Echeverria: Claro, pero eso estaba hablando entre los los proveedores de inteligencia artificial y las empresas que desarrollan sus agentes basadas en esos proveedores.
+
+
+100
+00:10:52.688 --> 00:10:59.978
+Matias Z: Ah, entendido. Bueno, no acá. Se habla más de productos agenticos, No, no mencionan directamente
+
+
+101
+00:11:01.218 --> 00:11:14.028
+Matias Z: este a los grandes laboratorios, Pero los grandes laboratorios normalmente sí reportan con bastante detalle riesgos asociados a su
+
+
+102
+00:11:14.408 --> 00:11:22.638
+Matias Z: lanzamiento de no no siempre de manera tan transparente. Pero bueno. Este, normalmente los
+
+
+103
+00:11:23.178 --> 00:11:29.917
+Matias Z: y después también. Lo interesante es que generar los reportes de mitigación, por ejemplo, o
+
+
+104
+00:11:32.558 --> 00:11:40.878
+Matias Z: de cuantificación de medición de riesgos suelen ser ambiguos, suelen ser confusos, están, y
+
+
+105
+00:11:41.308 --> 00:11:50.908
+Matias Z: esto es bastante complicado de decir si no tenemos clara cuál es la vulnerabilidad del escombro el blas medio como priorizarlas, ¿no? ¿con qué frecuencia aparece en
+
+
+106
+00:11:51.668 --> 00:12:03.398
+Matias Z: en la industria? Es muy difícil este asignar nuestro presupuesto de seguridad al portfolio de vulnerabilidades que pueda tener nuestro producto.
+
+
+107
+00:12:03.568 --> 00:12:10.478
+Matias Z: Pero más allá de lo que es el informe, esto honestamente lo veo.
+
+
+108
+00:12:10.478 --> 00:12:11.378
+Alejandro Declerk: Bien.
+
+
+109
+00:12:11.818 --> 00:12:15.588
+Matias Z: Opa, todo, bien, perdón.
+
+
+110
+00:12:15.588 --> 00:12:16.678
+Alejandro Declerk: Donde se está en mi.
+
+
+111
+00:12:17.298 --> 00:12:18.287
+Matias Z: No pasa nada.
+
+
+112
+00:12:18.498 --> 00:12:21.008
+Alejandro Declerk: No menos mal, que no fue otra cosa, pues algo tranquilo.
+
+
+113
+00:12:21.528 --> 00:12:33.448
+Matias Z: Me asustaste okay. Entonces, por un lado, esto, digamos, el gamo y la industria les diría
+
+
+114
+00:12:33.578 --> 00:12:42.537
+Matias Z: el hueso de botella recién hablaba con un compañero de mercado. El I G A, T está en encontrar talento sin miedo a
+
+
+115
+00:12:42.678 --> 00:12:46.928
+Matias Z: que, además de entender la pintura tenga como
+
+
+116
+00:12:47.318 --> 00:12:50.277
+Matias Z: una formación fuerte en seguridad y gobernanza.
+
+
+117
+00:12:50.798 --> 00:12:51.768
+Matias Z: En
+
+
+118
+00:12:55.778 --> 00:12:59.588
+Matias Z: Y acá lo que hice fue cruzar estos hallazgos.
+
+
+119
+00:13:00.448 --> 00:13:02.758
+Matias Z: que para mí fue 1 de los más importantes con
+
+
+120
+00:13:03.098 --> 00:13:09.558
+Matias Z: este menciones en los frameworks que que estuvimos estudiando.
+
+
+121
+00:13:10.268 --> 00:13:11.108
+Matias Z: Sí,
+
+
+122
+00:13:14.908 --> 00:13:18.647
+Matias Z: es como una manera de si quieren, en S
+
+
+123
+00:13:19.018 --> 00:13:25.837
+Matias Z: empezar a entender cómo los framobs nos ayudan a ponerle nombre a este tipo de problemas.
+
+
+124
+00:13:25.998 --> 00:13:32.417
+Matias Z: Se los voy a dejar simplemente con un ejemplo de uso.
+
+
+125
+00:13:32.778 --> 00:13:44.238
+Matias Z: Es de muy alto nivel. Pero bueno, eso es una forma de nuevo de cruzar información, de mapear vulnerabilidades de ver qué mitigaciones posibles se pueden utilizar, cómo se actualizan.
+
+
+126
+00:13:45.088 --> 00:13:57.737
+Matias Z: Ahora, Hasta acá tenía llamado a ser, Y hoy se me ocurrió que
+
+
+127
+00:13:58.938 --> 00:14:05.188
+Matias Z: hoy vamos a seguir hablando de Red Twinning, básicamente a un
+
+
+128
+00:14:05.718 --> 00:14:18.057
+Matias Z: para los que no sepan qué es red, tienen. Es simplemente otra forma de hacer evaluaciones con una filosofía distinta, con frameworks distintos. Hasta ahora, un poco habíamos hablado de como medir
+
+
+129
+00:14:18.328 --> 00:14:24.398
+Matias Z: si tienen capacidades de o calidad o tasas de éxito en el
+
+
+130
+00:14:26.688 --> 00:14:33.138
+Matias Z: Pero normalmente los Proms están diseñados sin sin de los intencionalidad.
+
+
+131
+00:14:33.488 --> 00:14:34.168
+Matias Z: A ver.
+
+
+132
+00:14:34.288 --> 00:14:44.667
+Matias Z: en cambio, en bertteaming Vamos a ver que la idea es un poco que un usuario adversario intenta ver cuánto daño puede hacer con con
+
+
+133
+00:14:45.178 --> 00:14:47.447
+Matias Z: Proms o con otras técnicas.
+
+
+134
+00:14:47.618 --> 00:14:57.107
+Matias Z: que vamos a ver algunos ejemplos. Nuestra idea, por supuesto, no es este entrar en los detalles técnicos.
+
+
+135
+00:14:57.588 --> 00:14:59.078
+Matias Z: Querías decir a lo mejor.
+
+
+136
+00:15:01.748 --> 00:15:02.528
+Juan Franco Echeverria: No, no, no.
+
+
+137
+00:15:04.968 --> 00:15:06.048
+Matias Z: Ok, Entonces
+
+
+138
+00:15:07.738 --> 00:15:18.327
+Matias Z: hoy un poco lo que tenía ganas de hacer lo que hice. En realidad lo hice un poco para mí un poco para para algunos compañeros, pero se los quiero dejar asociado a este mismo deporte.
+
+
+139
+00:15:18.738 --> 00:15:21.998
+Matias Z: Sí que realmente está.
+
+
+140
+00:15:22.428 --> 00:15:27.698
+Matias Z: Vamos evidenciando un problema enorme, Sí,
+
+
+141
+00:15:28.978 --> 00:15:40.638
+Matias Z: de alguna manera, probablemente por esto, Gardner está prediciendo que para fines del 27, el 40 por 100 de las arquitecturas argentinas van a ser de alguna u otra forma vulneradas.
+
+
+142
+00:15:41.898 --> 00:15:44.088
+Matias Z: Entonces, ¿qué tiene que ver eso con nosotros?
+
+
+143
+00:15:46.338 --> 00:15:55.567
+Matias Z: Lo que sí es importante entender es que Mhm, el arquitecto sinior tiene conocimientos.
+
+
+144
+00:15:58.278 --> 00:16:08.278
+Matias Z: no en profundidad, pero sí tiene un mapa claro, un escenario claro de que es la seguridad en vía aérica y que es la gobernanza en vía aérea.
+
+
+145
+00:16:09.188 --> 00:16:13.347
+Matias Z: Estuve un poco. La idea era simplemente
+
+
+146
+00:16:14.748 --> 00:16:18.828
+Matias Z: tratar de comunicarles lo importante que es para nosotros
+
+
+147
+00:16:19.018 --> 00:16:25.468
+Matias Z: tener esta alfabetización con respecto a estas 2 disciplinas.
+
+
+148
+00:16:27.608 --> 00:16:31.628
+Matias Z: Se lo voy a dejar para que lo miren tranquilos, Pero para que tengan una idea.
+
+
+149
+00:16:35.158 --> 00:16:41.598
+Matias Z: lo que tenemos que saber como arquitectos no es trivial, un poco lo hablamos.
+
+
+150
+00:16:41.948 --> 00:16:44.628
+Matias Z: lo que estábamos hablando, mejor dicho.
+
+
+151
+00:16:45.808 --> 00:16:47.398
+Matias Z: van a ver acá para acá
+
+
+152
+00:16:47.518 --> 00:16:58.848
+Matias Z: categorías que qué temas deberíamos manejar? No necesariamente de dominar como expertos, ¿no? Por supuesto, ahí hay siempre una colaboración con especialistas.
+
+
+153
+00:16:59.088 --> 00:17:05.608
+Matias Z: pero tenemos que conocer superficies natales. Tenemos que entender sobre gestión de identidad de género. Sí,
+
+
+154
+00:17:07.968 --> 00:17:14.358
+Matias Z: tenemos que entender cuáles son las implicaciones de utilizar los diferentes protocolos, como ha hecho él o M. C. P.
+
+
+155
+00:17:16.028 --> 00:17:19.057
+Matias Z: Tenemos que entender que significa el principio del menor privilegio.
+
+
+156
+00:17:19.328 --> 00:17:22.377
+Matias Z: ¿qué es una arquitectura cirujas? Sí,
+
+
+157
+00:17:23.868 --> 00:17:34.068
+Matias Z: después lo miro con detalle. Fíjense que son un poco los temas que fuimos mencionando entender un poquito cómo
+
+
+158
+00:17:34.318 --> 00:17:38.687
+Matias Z: poder reconstruir un árbol de ficción completo
+
+
+159
+00:17:39.158 --> 00:17:44.128
+Matias Z: utilizando telemetría, que es un poco lo que estuvimos viendo si la ansiosa aparece como ejemplo.
+
+
+160
+00:17:53.788 --> 00:17:56.458
+Matias Z: Tenemos que entender cómo funcionan
+
+
+161
+00:17:56.608 --> 00:18:11.138
+Matias Z: estos firewalls semánticos que se suelen incluir en las arquitecturas. Cuando empezamos a ver con con suma a ver cómo desplegar los componentes que van a participar en esta arquitectura semántico o clasificador de intenciones.
+
+
+162
+00:18:11.268 --> 00:18:19.487
+Matias Z: Warriors deterministas que son un poco los que vamos a ver ahora algunos filtros o
+
+
+163
+00:18:20.148 --> 00:18:27.598
+Matias Z: no saber de filtros, sino frameworks para hacer red Twinning, que es un poco el el el eje central de la clase de hoy. Sí,
+
+
+164
+00:18:29.838 --> 00:18:37.518
+Matias Z: un arquitecto, señor, debería ser capaz de auditar su propia topología antes de llegar a la producción.
+
+
+165
+00:18:37.968 --> 00:18:42.918
+Matias Z: Una Samsung importante que es el.
+
+
+166
+00:18:43.538 --> 00:18:53.097
+Matias Z: No sé si se lo dije a ustedes o le dije en otra Comisión, pero esto dejó un principio que se maneja bastante de mi agente, que la seguridad es cualquier agente
+
+
+167
+00:18:53.438 --> 00:18:55.628
+Matias Z: conectar herramientas, por supuesto.
+
+
+168
+00:18:56.198 --> 00:19:05.618
+Matias Z: o con capacidad de acceder a la red, eventualmente va a ser atacado y eventualmente va a ser vulnerado, o sea, un poco El exploid lo asumimos.
+
+
+169
+00:19:06.078 --> 00:19:16.658
+Matias Z: Sí, no es que estamos intentando evitarlo, sino minimizar la probabilidad de que suceda y, en el caso de que suceda minimizar su su last trading que sería como
+
+
+170
+00:19:16.838 --> 00:19:19.998
+Matias Z: la superficie de impacto, no el daño generado.
+
+
+171
+00:19:26.048 --> 00:19:28.887
+Matias Z: ¿qué otras cosas deberíamos saber?
+
+
+172
+00:19:34.088 --> 00:19:44.708
+Matias Z: Temas de police gateways y registro de agentes. Esto lo vamos a ver, por supuesto, porque es clave cuando desplieguen sus agentes en
+
+
+173
+00:19:45.268 --> 00:19:57.428
+Matias Z: alguna infraestructura cloud Estas son son componentes hoy obligatorios. Si vemos, no pueden no existir en
+
+
+174
+00:19:58.298 --> 00:20:04.578
+Matias Z: un poco, entender 2 cosas o 3, les diría, lo voy a resumir.
+
+
+175
+00:20:05.068 --> 00:20:12.808
+Matias Z: Primero, ¿cómo manejamos la política, la gobernanza de la política como código?
+
+
+176
+00:20:14.748 --> 00:20:22.238
+Matias Z: Esto lo vamos a ver, requiere el uso de nuevos componentes. Básicamente, lo que hace es
+
+
+177
+00:20:22.718 --> 00:20:40.718
+Matias Z: gestionar la autorización del acceso de los agentes en función de el uso de un protocolo de identidad nuevo llamado Spife. Creo que se los había mencionado, y lo que hacemos es utilizar. Hay varios motores, pero hay 1 particularmente
+
+
+178
+00:20:41.238 --> 00:20:46.917
+Matias Z: sofisticado que suele utilizarse bastante que es opa open polisitation.
+
+
+179
+00:20:47.288 --> 00:20:54.197
+Matias Z: que básicamente nos permite tomar decisiones de autorización en tiempo real. Sí,
+
+
+180
+00:20:54.968 --> 00:21:01.708
+Matias Z: esto empieza a ser de nuevo obligatorio es lo único que evita que una gente acceda
+
+
+181
+00:21:01.928 --> 00:21:08.328
+Matias Z: o un agente vulnerado o un agente que que funciona mal acceda a herramientas que no tienen que acceder
+
+
+182
+00:21:16.918 --> 00:21:20.627
+Matias Z: bien otros temas de gobernanza.
+
+
+183
+00:21:21.248 --> 00:21:34.278
+Matias Z: Voy a repetir, porque estoy diciendo esto porque a partir del informe lo que me di cuenta es que no se entiende bien cuáles son las responsabilidades de cada 1 de los roles. En realidad, muchas veces ni siquiera existen los roles en las compañías.
+
+
+184
+00:21:34.508 --> 00:21:35.648
+Matias Z: Pero
+
+
+185
+00:21:37.578 --> 00:21:48.027
+Matias Z: sepamos que, como arquitectos, estas 2 dimensiones de seguridad y gobernanza son en gran medida responsabilidad nuestra, por lo menos su orquestación. Sí,
+
+
+186
+00:21:49.298 --> 00:22:01.808
+Matias Z: y por supuesto, como como iniciativas, colaborativas con con otros equipos, pero de alguna manera son responsabilidades nuestras que algunas de las de las implementaciones que vamos a ver.
+
+
+187
+00:22:04.438 --> 00:22:08.247
+Matias Z: Fíjense que un poco lo que estuvimos viendo.
+
+
+188
+00:22:08.398 --> 00:22:12.587
+Matias Z: Tenemos que tener telemetría para hacer trazabilidad.
+
+
+189
+00:22:12.918 --> 00:22:14.777
+Matias Z: Tenemos que entender
+
+
+190
+00:22:14.898 --> 00:22:21.608
+Matias Z: en qué situación se encuentra nuestra base de conocimiento y los Racs, normalmente mediante algún tipo de erosionado.
+
+
+191
+00:22:25.058 --> 00:22:27.888
+Matias Z: Tenemos que entender los marcos regulatorios.
+
+
+192
+00:22:28.778 --> 00:22:30.878
+Matias Z: Es un poco lo que empezamos a ver.
+
+
+193
+00:22:30.988 --> 00:22:36.587
+Matias Z: Sí, no somos los expertos en cumpleaños, pero tenemos que entender estos marcos laboratorios.
+
+
+194
+00:22:39.618 --> 00:22:43.638
+Matias Z: Tenemos que diseñar nuestra arquitectura en función de
+
+
+195
+00:22:44.018 --> 00:22:51.838
+Matias Z: la capacidad de después poder hacer ex alguna auditoría forense si hubo algún incidente. Sí,
+
+
+196
+00:22:58.078 --> 00:22:58.798
+Matias Z: Ya
+
+
+197
+00:23:01.488 --> 00:23:08.627
+Matias Z: después Acá le dije, no lo voy a leer porque tenemos bastante información, pero lo que dejé es un poco
+
+
+198
+00:23:08.968 --> 00:23:15.038
+Matias Z: la idea de que el arquitecto actúa como traductor y ejecutor técnico.
+
+
+199
+00:23:15.968 --> 00:23:27.877
+Matias Z: que convierte directrices macroeconómicas, legales y de seguridad de la organización en patrones topológicos de software, y lo hace de nuevo en el momento del diseño de la escritura, ¿sí?
+
+
+200
+00:23:29.518 --> 00:23:34.768
+Matias Z: Entonces un poco para cada 1 de los de los diálogos que deberíamos tener con diferentes
+
+
+201
+00:23:34.928 --> 00:23:38.828
+Matias Z: interlocutores. La idea es si tienen alas
+
+
+202
+00:23:39.638 --> 00:23:46.257
+Matias Z: que miren qué tipo de de conversaciones debe estar teniendo con cada 1 de los de los colaboradores.
+
+
+203
+00:23:52.988 --> 00:24:01.047
+Matias Z: Bien, esta última es importante en qué momento debe de realizar debe realizarse estas actividades.
+
+
+204
+00:24:03.098 --> 00:24:12.537
+Matias Z: Voy a insistir con algo en la fase de diseño, Sí, antes de escribir código, incluso
+
+
+205
+00:24:14.048 --> 00:24:19.948
+Matias Z: cuando estamos escribiendo los diagramas con tipología, componentes, flujos de datos, herramientas.
+
+
+206
+00:24:20.058 --> 00:24:25.218
+Matias Z: Bueno, antes de escribir código, empieza el freno de luz. Se acuerdan
+
+
+207
+00:24:25.738 --> 00:24:27.247
+Matias Z: que hablamos un poco de eso.
+
+
+208
+00:24:29.278 --> 00:24:38.978
+Matias Z: no solo eso, sino que se empieza a hablar de gobernanza donde van a estar los gateways, ¿Cómo van a operar las políticas? Todavía no vimos este tema, pero ¿cómo van a operar las políticas
+
+
+209
+00:24:43.808 --> 00:24:49.658
+Matias Z: en la fase de implementación que sería la parte C. I. En principio.
+
+
+210
+00:24:51.488 --> 00:24:56.028
+Matias Z: La idea es que seamos responsables de que el Pipe Line
+
+
+211
+00:24:56.408 --> 00:25:06.557
+Matias Z: cumple el objetivo justamente de realizar todas las evaluaciones necesarias. Las diferentes familias de frenbox que evalúan a la gente en función de diferentes objetivos.
+
+
+212
+00:25:07.088 --> 00:25:13.918
+Matias Z: Vamos a ver hoy en la capa 1 tenemos para Re. Tienen, vamos a usar pirate y gala.
+
+
+213
+00:25:20.958 --> 00:25:39.327
+Matias Z: y en la fase de despliegue una vez que están en producción. Por supuesto, tenemos la responsabilidad de haber implementado la observabilidad del tiempo real de trazabilidad correcta y con un nivel de regularidad correcto de implementar las reglas para detección de anomalías.
+
+
+214
+00:25:40.198 --> 00:25:41.138
+Matias Z: Mhm
+
+
+215
+00:25:41.528 --> 00:25:50.538
+Matias Z: asegurar el ejercicio de rating periódico. Esto es fundamental. Recuerden que siempre está cambiando la gente, el comportamiento de los usuarios o el entorno. ¿sí?
+
+
+216
+00:25:52.718 --> 00:25:58.108
+Matias Z: Y fíjense que acá de nuevo aparece de Myst como este Framework para
+
+
+217
+00:25:58.498 --> 00:26:05.008
+Matias Z: justamente aplicar estas 2 funciones principales que habíamos visto de medir y administrar sí
+
+
+218
+00:26:08.518 --> 00:26:12.437
+Matias Z: okay Nada Era un comentario
+
+
+219
+00:26:15.028 --> 00:26:23.608
+Matias Z: simplemente porque me quedé sorprendido con el resultado de este informe para los que llegaron tarde. Los hallazgos son realmente impactantes
+
+
+220
+00:26:24.018 --> 00:26:37.558
+Matias Z: de un realmente impactante. En general, no hay ningún tipo de de de los de estrategia formal
+
+
+221
+00:26:37.898 --> 00:26:52.898
+Matias Z: ni de seguridad, ni de gobernanza en la opción vertiginosa de sistemas agentes en las compañías más importantes del mundo. Y es realmente, Yo creo que un escenario crítico hoy, y gran parte de la responsabilidad de que eso suceda la
+
+
+222
+00:26:53.168 --> 00:27:01.577
+Matias Z: tienen. La tenemos los arquitectos un poco lo que separa un arquitecto senior de unos urneres justamente de tener
+
+
+223
+00:27:01.808 --> 00:27:10.538
+Matias Z: como mapeadas todas estas herramientas en un todos estos flujos, en
+
+
+224
+00:27:11.928 --> 00:27:18.077
+Matias Z: y en qué momento se aplican en nuestro en nuestro proceso de desarrollo del sistema?
+
+
+225
+00:27:18.418 --> 00:27:20.527
+Matias Z: Bueno, les voy a compartir todo esto
+
+
+226
+00:27:24.188 --> 00:27:25.698
+Matias Z: por ahora, lo cierro. Bien.
+
+
+227
+00:27:27.368 --> 00:27:33.688
+Matias Z: Ok, rápidamente vamos a pasar. Entonces a la clase de hoy. Vamos a hablar de Reactiving
+
+
+228
+00:27:35.628 --> 00:27:37.687
+Matias Z: para que tengan un poquito de
+
+
+229
+00:27:39.158 --> 00:27:47.638
+Matias Z: de idea de cómo se implementan estas evaluaciones específicas que lo que hacen es justamente intentar. Este
+
+
+230
+00:27:48.498 --> 00:27:50.757
+Matias Z: básicamente hackear, romper
+
+
+231
+00:27:52.748 --> 00:28:00.777
+Matias Z: generar daño en función de aquella taxonomía que ya vimos de posibles vulnerabilidades que nos fraengos ¿Se acuerdan.
+
+
+232
+00:28:01.858 --> 00:28:11.498
+Matias Z: Este Básicamente, vamos a ver 2 freboorks que son de nuevo junto a Pront Food.
+
+
+233
+00:28:11.628 --> 00:28:19.098
+Matias Z: son 2 fremos estándar. Son 2 fremos que tienen que estar si son 2 remos que se complementan a la perfección
+
+
+234
+00:28:19.218 --> 00:28:20.178
+Matias Z: en el
+
+
+235
+00:28:22.338 --> 00:28:35.777
+Matias Z: la idea no es que entremos en detalle técnico, pero sí podrían. Deberían poder explicar qué es lo que hacen? ¿qué señal producen, cómo se complementan? Sí, Y lo más importante, ¿qué es lo que no cubre?
+
+
+236
+00:28:39.068 --> 00:28:45.208
+Matias Z: Fíjense ahora esta imagen se ve, vamos a hacer una cosa.
+
+
+237
+00:28:50.558 --> 00:28:59.028
+Matias Z: Cuando estuve la mina, matado directamente, Okay, Fíjense.
+
+
+238
+00:29:04.478 --> 00:29:06.707
+Matias Z: acaba José aprender un poquito.
+
+
+239
+00:29:11.338 --> 00:29:17.918
+Matias Z: encontramos una suerte de mapa mental. No.
+
+
+240
+00:29:21.118 --> 00:29:29.817
+Matias Z: Si lo lees desde el centro, vas a encontrar arriba a la izquierda, los marcos de referencia, que son los que estuvimos mencionando
+
+
+241
+00:29:30.708 --> 00:29:36.167
+Matias Z: los principales riesgos que son los que están definidos en las taxonomías.
+
+
+242
+00:29:36.998 --> 00:29:37.698
+Matias Z: Mhm.
+
+
+243
+00:29:41.178 --> 00:29:56.847
+Matias Z: Pero creo que hoy lo que más interesa tiene que ver con el el stand de Seguridad. Básicamente vamos a terminar de construir nuestro pipe en su capa. Uno la capa nos recuerdan que era la que se corría previa al diploy.
+
+
+244
+00:29:57.368 --> 00:30:13.827
+Matias Z: Acá aparecen los 3 frameworks que vamos a poner en nuestro pickline. Ya pusimos profund no vimos el detalle de cómo se implementa. Pero vimos de qué se trata hoy. Vamos a ver lara, y además vamos a pasar al campo 2.
+
+
+245
+00:30:14.508 --> 00:30:19.078
+Matias Z: Y vamos a empezar a entender cómo funcionan memorias naturales.
+
+
+246
+00:30:19.188 --> 00:30:26.628
+Matias Z: que son ni más ni menos que implementaciones un poco más sofisticadas de de Warriors de controles.
+
+
+247
+00:30:26.738 --> 00:30:32.678
+Matias Z: que que envidia, ofrece como un fremore con el surf y que la verdad que son súper interesantes.
+
+
+248
+00:30:34.848 --> 00:30:37.558
+Matias Z: Entonces, un poco. Estamos cubriendo en
+
+
+249
+00:30:38.108 --> 00:30:43.767
+Matias Z: en estos 2 o 3 encuentros, todo lo que tiene que ver con seguridad. No empezamos con dolor. Lanza
+
+
+250
+00:30:45.498 --> 00:30:46.418
+Matias Z: bien.
+
+
+251
+00:30:51.508 --> 00:30:55.478
+Matias Z: Mhm, venga Okay.
+
+
+252
+00:30:56.648 --> 00:31:07.297
+Matias Z: Insisto con este con este diagrama, porque me parece que es importante que nos quede claro. Finalmente, lo que hacemos es terminar de armar nuestro nuestro plan con
+
+
+253
+00:31:07.698 --> 00:31:19.787
+Matias Z: los diferentes componentes. Con estos Frayworks, la idea es automatizar, o sea, que lo que vamos a tener es justamente primero, una suerte de de maqueta con con
+
+
+254
+00:31:19.988 --> 00:31:35.338
+Matias Z: un script que va a disparar. Cada 1 de estos frameworks va a realizar evaluaciones offline sobre nuestra gente. Nos van a devolver métricas o Scoures. Y en función de los umbrales que definimos, sabemos qué pasa o no pasa a la próxima etapa, sí
+
+
+255
+00:31:35.518 --> 00:31:42.838
+Matias Z: de lo que antes veíamos como una cajita de retina. Y ahora lo vemos como componentes separados.
+
+
+256
+00:31:45.018 --> 00:31:45.718
+Matias Z: Mhm.
+
+
+257
+00:31:47.198 --> 00:32:02.077
+Matias Z: Entonces, ¿por qué necesitaríamos más de un framework para evaluar problemas de seguridad antes del despliegue? No.
+
+
+258
+00:32:05.428 --> 00:32:09.217
+Matias Z: Bueno, como dice el título de la tesis del de la slide.
+
+
+259
+00:32:09.528 --> 00:32:12.938
+Matias Z: Un solo control no alcanza en estos casos.
+
+
+260
+00:32:14.058 --> 00:32:17.758
+Matias Z: En general, se complementan diferentes tipos de frameworks
+
+
+261
+00:32:18.028 --> 00:32:22.668
+Matias Z: que se especializan en distintos tipos de ataque, ¿sí?
+
+
+262
+00:32:22.988 --> 00:32:30.798
+Matias Z: Básicamente en podemos pensar en 3 formas posibles. Tres arquetipos, como mencioné ahí,
+
+
+263
+00:32:31.538 --> 00:32:37.667
+Matias Z: en las que una gente puede fallar y que van a aparecer en general en en en cada
+
+
+264
+00:32:37.938 --> 00:32:44.018
+Matias Z: la taxonomía, en cada bloque que veamos sobre diferentes tipos de vulnerabilidades.
+
+
+265
+00:32:44.418 --> 00:32:48.088
+Matias Z: El primer arquetipo es una política incompleta.
+
+
+266
+00:32:49.538 --> 00:32:56.967
+Matias Z: Sí, es la política. La política es la definición del lenguaje natural de qué debería poder hacer o qué no debería poder hacer
+
+
+267
+00:32:57.688 --> 00:32:58.717
+Matias Z: con la gente.
+
+
+268
+00:33:00.018 --> 00:33:02.617
+Matias Z: Por ejemplo, si vamos a implementar un guarda
+
+
+269
+00:33:03.738 --> 00:33:13.878
+Matias Z: y la política no está especificada correctamente. El implementador del Ward no va a poder hacer demasiado, ¿sí?
+
+
+270
+00:33:14.228 --> 00:33:24.597
+Matias Z: Y probablemente queden casos sin cubrir. Entonces ahí es donde es súper importante empezar a hablar con los expertos de dominio, la gente de producto, la gente de negocios.
+
+
+271
+00:33:25.678 --> 00:33:28.058
+Matias Z: ¿por qué? Porque primero se escribe la política
+
+
+272
+00:33:28.588 --> 00:33:31.877
+Matias Z: y después se implementan como guardianes
+
+
+273
+00:33:32.698 --> 00:33:36.167
+Matias Z: un poco. Esa traducción es la que nos corresponde a nosotros
+
+
+274
+00:33:39.488 --> 00:33:45.757
+Matias Z: de primera la primera de las fallas es: ¿las políticas están incompletas o están mal especificadas. Sí,
+
+
+275
+00:33:45.978 --> 00:33:53.887
+Matias Z: el segundo de los fallos normalmente es el problema de la integración de las métricas, los promedios, básicamente.
+
+
+276
+00:33:54.968 --> 00:34:00.868
+Matias Z: es decir, una métrica agregada, podría parecer sana.
+
+
+277
+00:34:02.008 --> 00:34:10.428
+Matias Z: Sin embargo, en el caso de seguridad no nos interesan tanto los promedios, sino justamente la aquellos casos más
+
+
+278
+00:34:10.948 --> 00:34:15.468
+Matias Z: de Long tail, aquellos casos donde efectivamente el agente se rompe.
+
+
+279
+00:34:15.628 --> 00:34:16.338
+Matias Z: ¿
+
+
+280
+00:34:19.038 --> 00:34:25.198
+Matias Z: Entonces, en este caso, solo en la investigación de las trazas de cada ejecución
+
+
+281
+00:34:25.358 --> 00:34:33.498
+Matias Z: va a revelar exactamente cuáles cuáles fueron los casos en los que se rompieron, se rompieron algunas de las políticas o Warrells de la gente.
+
+
+282
+00:34:35.708 --> 00:34:42.827
+Matias Z: Esta es una diferencia importante en las evaluaciones de capacidades. Normalmente los promedios son suficientes.
+
+
+283
+00:34:43.098 --> 00:34:48.947
+Matias Z: Los umbrales son suficientes en las evaluaciones de seguridad. Normalmente, con encontrar un caso
+
+
+284
+00:34:50.808 --> 00:34:54.437
+Matias Z: se puede bloquear directamente el despliegue de esa agenda.
+
+
+285
+00:34:54.838 --> 00:34:57.107
+Matias Z: Ahí cambia un poco la filosofía.
+
+
+286
+00:34:58.438 --> 00:35:03.097
+Matias Z: Y tercero, bueno, un poco ya lo mencionamos este.
+
+
+287
+00:35:04.568 --> 00:35:20.167
+Matias Z: Si nosotros corremos una única corrida. Y esto se ve mucho en el mundo real en implementaciones agendas que están por desplegarse. Se suelen reportar métricas con una única corrida.
+
+
+288
+00:35:22.548 --> 00:35:26.888
+Matias Z: ¿a qué me refiero Con esto se hace una única pasada
+
+
+289
+00:35:27.738 --> 00:35:32.227
+Matias Z: de estos frameworks de estos ataques contra la gente.
+
+
+290
+00:35:32.908 --> 00:35:40.678
+Matias Z: ¿qué significa Sofía que tenemos básicamente tamaño muestral 1 de cada 1 de los experimentos.
+
+
+291
+00:35:42.758 --> 00:35:50.328
+Matias Z: o sea, si decidimos el despliegue en función de eso directamente, estamos basándonos en
+
+
+292
+00:35:50.438 --> 00:35:55.138
+Matias Z: en la suerte, más que en en una métrica robusta de calidad. ¿sí?
+
+
+293
+00:35:55.848 --> 00:36:05.047
+Matias Z: Entonces, cada arquetipo de estos va a pedir una respuesta estructural distinta, que es lo que vamos a ver.
+
+
+294
+00:36:05.358 --> 00:36:10.737
+Matias Z: Hay una suerte de aproximación. Se llama defensa en profundidad.
+
+
+295
+00:36:12.378 --> 00:36:14.688
+Matias Z: Justamente es lo que prueba. Pay.
+
+
+296
+00:36:15.328 --> 00:36:20.288
+Matias Z: Observabilidad por ejecución y estadística.
+
+
+297
+00:36:20.998 --> 00:36:24.858
+Matias Z: Es un poco. Son los 3 estadios de de esta
+
+
+298
+00:36:25.988 --> 00:36:28.717
+Matias Z: respuesta estructural que pide cada arquetipo.
+
+
+299
+00:36:29.648 --> 00:36:38.707
+Matias Z: El rating vive en la intersección entre el primero y el tercero. Si busca lo que una política no nombra
+
+
+300
+00:36:39.228 --> 00:36:42.777
+Matias Z: y lo va a hacer con muestras que hay que saber interpretar.
+
+
+301
+00:36:44.188 --> 00:36:53.607
+Matias Z: No es por eso es que hoy vamos a hablar un poquito primero que retienen cuáles son las técnicas
+
+
+302
+00:36:53.768 --> 00:36:58.687
+Matias Z: en el Vamos a ver 2 ejemplos de vulnerabilidades. Un poquito más en profundidad.
+
+
+303
+00:36:59.708 --> 00:37:07.497
+Matias Z: Vamos a ver Pierit y Gara, y vamos a ver cómo Nemo Warriors podría mitigar esas vulnerabilidades.
+
+
+304
+00:37:09.208 --> 00:37:17.028
+Matias Z: Bien, si hay alguna pregunta de Mhm
+
+
+305
+00:37:17.578 --> 00:37:29.318
+Matias Z: Ok, esto ya lo sabemos, un agente es un modelo rodeado de artefactos, instrucciones, contexto, memoria, herramientas, otros agentes. Por hecho, hay.
+
+
+306
+00:37:31.578 --> 00:37:41.178
+Matias Z: Y cada una de estas flechas, básicamente, es una frontera de confianza ¿Se acuerdan cuando hablamos de Just Boulders en Spray.
+
+
+307
+00:37:42.028 --> 00:37:43.578
+Matias Z: Recuerdan ese diagrama
+
+
+308
+00:37:48.418 --> 00:37:51.758
+Matias Z: si alguien no recuerda mi visa en
+
+
+309
+00:37:53.398 --> 00:38:04.998
+Matias Z: pero bueno, básicamente, cualquier comunicación o transacción entre componentes de nuestro sistema genético cruza algún tipo de límite de confianza. ¿sí? Y ahí es donde tenemos que buscar las vulnerabilidades
+
+
+310
+00:38:06.248 --> 00:38:08.768
+Matias Z: ahí entran clases de amenazas distintas.
+
+
+311
+00:38:09.008 --> 00:38:15.137
+Matias Z: Sí, vamos a ver que por el mensaje de usuario podrían entrar
+
+
+312
+00:38:16.378 --> 00:38:19.288
+Matias Z: inyecciones de proms o Shay breaking
+
+
+313
+00:38:19.998 --> 00:38:25.358
+Matias Z: por el contenido recuperado, ya sea de rap o lesión de una página web.
+
+
+314
+00:38:27.338 --> 00:38:30.577
+Matias Z: entran las variantes de inyección indirecta.
+
+
+315
+00:38:30.898 --> 00:38:33.858
+Matias Z: Que vamos a ver que son de las más frecuentes este año.
+
+
+316
+00:38:38.558 --> 00:38:40.448
+Matias Z: Entonces.
+
+
+317
+00:38:45.708 --> 00:38:58.038
+Matias Z: un poco. La idea es lo que estudiamos un poco de manera abstracta en el encuentro pasado. Lo vamos a empezar a ver directamente aplicado a nuestra arquitectura genética. Sí,
+
+
+318
+00:38:58.418 --> 00:39:04.078
+Matias Z: empezamos dividiendo nuestros componentes, separándolos por estas
+
+
+319
+00:39:05.618 --> 00:39:08.277
+Matias Z: tras baundarys o límites de confianza.
+
+
+320
+00:39:08.628 --> 00:39:09.948
+Matias Z: Entendiendo que
+
+
+321
+00:39:10.188 --> 00:39:21.277
+Matias Z: la memoria, el rap, el usuario, las herramientas M. C, P. H A, son todas fuentes de vulnerabilidad Son todos vectores de ataque.
+
+
+322
+00:39:21.538 --> 00:39:24.097
+Matias Z: y cada 1 merece un tratamiento distinto.
+
+
+323
+00:39:32.898 --> 00:39:39.428
+Matias Z: Hasta acá me preguntas me avisan, le meto.
+
+
+324
+00:39:39.558 --> 00:39:41.928
+Matias Z: le meto con la bolsa. Entonces bien.
+
+
+325
+00:39:44.638 --> 00:39:56.558
+Matias Z: esto un poco lo anticipé, pero lo lo voy a reforzar. Benchmark o evaluaciones como las habíamos visto hasta ahora evaluaciones orientadas a a a otras métricas de de capacidades o de calidad.
+
+
+326
+00:39:57.728 --> 00:40:08.768
+Matias Z: En ambos casos se evalúan antes de desplegar al agente, pero responden preguntas distintas y fundamentalmente, tienen criterios de tolerancia distintos.
+
+
+327
+00:40:10.068 --> 00:40:15.318
+Matias Z: Por ejemplo, un benjamark mide que tan bien funciona el sistema cuando se lo usa bien.
+
+
+328
+00:40:17.138 --> 00:40:19.747
+Matias Z: El ratting tiene como filosofía
+
+
+329
+00:40:20.258 --> 00:40:27.707
+Matias Z: evaluar testear. ¿qué tan mal puede funcionar cuando alguien quiere que falle. Esa es la aproximación al adversario.
+
+
+330
+00:40:33.448 --> 00:40:41.298
+Matias Z: Por ejemplo, Timing evalúa abuso de herramientas escalada de privilegio, la contaminación del contexto, sí
+
+
+331
+00:40:43.408 --> 00:40:45.768
+Matias Z: un pelo malicioso en un Pdf.
+
+
+332
+00:40:49.498 --> 00:40:55.428
+Matias Z: la suplantación de server, c p suplantación de identidad.
+
+
+333
+00:40:55.838 --> 00:41:04.578
+Matias Z: Lo estoy medio diciendo en su presentación de identidad de distintos agentes por hecho. Ahí todo eso. Son casos reales. Son casos que que ocurrieron
+
+
+334
+00:41:05.048 --> 00:41:11.258
+Matias Z: y los vamos a ver por el por arriba, pero sepan que están documentados, y hay que tener mucho cuidado con eso.
+
+
+335
+00:41:12.038 --> 00:41:16.827
+Matias Z: En el y una sutileza más
+
+
+336
+00:41:16.938 --> 00:41:26.217
+Matias Z: interesante de de de recordar es el rating. Suele ser un proceso activo permanente, continuo.
+
+
+337
+00:41:26.528 --> 00:41:37.657
+Matias Z: Sí es fundamental, y eso es parte también de nuestra responsabilidad que esto se realice con la frecuencia necesaria.
+
+
+338
+00:41:37.878 --> 00:41:42.068
+Matias Z: De nuevo cambian la distribución de cuevas de los usuarios
+
+
+339
+00:41:42.428 --> 00:41:50.468
+Matias Z: Cambia el entorno en el que se ejecuta, la gente cambia las bibliotecas las librerías. Si cambian las plots.
+
+
+340
+00:41:50.798 --> 00:42:00.158
+Matias Z: entonces esto debe ejecutarse frecuentemente. No es un documento que entregamos una única vez sí.
+
+
+341
+00:42:01.718 --> 00:42:08.528
+Matias Z: La simetría de la tolerancia tiene una razón en
+
+
+342
+00:42:11.588 --> 00:42:16.548
+Matias Z: básicamente es. Tiene que ver con el costo del fallo, no
+
+
+343
+00:42:16.728 --> 00:42:20.627
+Matias Z: si nosotros medimos capacidad, por ejemplo, tasa de éxito de una tarea
+
+
+344
+00:42:20.928 --> 00:42:29.758
+Matias Z: y tenemos una tasa de de fallos de un 5 por 100, es decir, que la gente no realizó bien una tarea, un 5 por 100 de las veces
+
+
+345
+00:42:29.938 --> 00:42:35.338
+Matias Z: podría llegar a ser aceptable dependiendo, por supuesto, del dominio.
+
+
+346
+00:42:36.978 --> 00:42:45.607
+Matias Z: Pero si tenemos un ser un Chelbrick crítico, algún tipo de inyección de pronto crítico.
+
+
+347
+00:42:47.308 --> 00:42:55.707
+Matias Z: la pérdida puede ser catastrófica, puede ser irrecuperable, puede ser irreversible de hecho puede implicar.
+
+
+348
+00:42:57.888 --> 00:43:02.537
+Matias Z: y hay muchos casos en la historia reciente. Puede implicar el final de la compañía.
+
+
+349
+00:43:04.658 --> 00:43:11.577
+Matias Z: Puede implicar que los responsables termina en presas. Si hablamos de estos casos en
+
+
+350
+00:43:13.498 --> 00:43:20.877
+Matias Z: Yo me Río, pero la verdad es que efectivamente sucedió. City, o y
+
+
+351
+00:43:21.578 --> 00:43:23.968
+Matias Z: y alguna persona de gobernanza terminaron.
+
+
+352
+00:43:26.368 --> 00:43:35.808
+Matias Z: Terminaron presos directamente porque el problema era el dominio. Estaban Habían implementado un agente bastante sofisticado que hacía triage en una prepaga
+
+
+353
+00:43:36.308 --> 00:43:38.847
+Matias Z: y alguien logró hacer Shade Break.
+
+
+354
+00:43:39.638 --> 00:43:47.668
+Matias Z: Recuerden, Shelbreak es es jugar un poco con el cerebro manipular un poco a la gente a leer el M particularmente
+
+
+355
+00:43:47.798 --> 00:43:50.338
+Matias Z: para que responda cosas que no debería, No.
+
+
+356
+00:43:51.688 --> 00:43:55.557
+Matias Z: Una de las cosas que tiene prohibidas es, por supuesto, hacer diagnósticos médicos.
+
+
+357
+00:43:55.878 --> 00:43:59.038
+Matias Z: Claro, Bueno.
+
+
+358
+00:43:59.498 --> 00:44:08.227
+Matias Z: un atacante logró no solamente que haga diagnósticos médicos, sino que ex filtra información clínica en función clínica sobre 1 de los usuarios de la preparación.
+
+
+359
+00:44:08.398 --> 00:44:17.698
+Matias Z: el usuario. Una vez que se conoció el caso, el usuario demandó la compañía quebró. Y bueno.
+
+
+360
+00:44:17.958 --> 00:44:26.798
+Matias Z: ese es el nivel de consecuencias que puede tener no entender
+
+
+361
+00:44:27.828 --> 00:44:35.428
+Matias Z: el tipo de riesgo que estamos asumiendo cuando desplegamos a gente, especialmente en esas industrias, no.
+
+
+362
+00:44:35.998 --> 00:44:47.438
+Matias Z: Entonces, cuando hacemos Red Twinning, ya le digo que sea parte de la misma cadena de evaluaciones de la capa. Uno en Berttining, un único fallo para
+
+
+363
+00:44:48.078 --> 00:44:49.678
+Matias Z: es una red flag.
+
+
+364
+00:44:50.058 --> 00:44:55.917
+Matias Z: Ahí frenamos. Vamos a ver qué pasó. Eso no se puede desplegar.
+
+
+365
+00:45:03.028 --> 00:45:10.538
+Matias Z: Mhm: Bueno, rápido. ¿qué esto es un poquito, ya lo mencionábamos.
+
+
+366
+00:45:12.998 --> 00:45:22.618
+Matias Z: Ya existía la idea del red teaming eran los Whitehat Hackers. Este antes se hacía manualmente. No
+
+
+367
+00:45:22.948 --> 00:45:27.908
+Matias Z: Lo que está sucediendo actualmente es que por la velocidad
+
+
+368
+00:45:28.288 --> 00:45:33.277
+Matias Z: en la evolución de los ataques se está automatizando el proceso de reptil. Normalmente se empiezan a
+
+
+369
+00:45:35.048 --> 00:45:47.727
+Matias Z: utilizar flotas agendas para hacer red treaming contra los agentes propios del negocio. Sí, es la única manera de seguirle el ritmo a la a la sofisticación de ataques.
+
+
+370
+00:45:50.028 --> 00:45:52.007
+Matias Z: Y, bueno, básicamente.
+
+
+371
+00:45:56.278 --> 00:46:06.257
+Matias Z: lo más importante de la isla es que fundamentalmente, los ataques son adversarios, insisto, con eso son adversarios que intentan hacer daño a
+
+
+372
+00:46:06.578 --> 00:46:15.717
+Matias Z: sí y que normalmente utilizan bases de datos de vulnerabilidades que se actualizan con bastante frecuencia.
+
+
+373
+00:46:16.358 --> 00:46:25.598
+Matias Z: Es por eso que no tiene ningún sentido implementar este tipo de evaluaciones nosotros mismos, porque, primero, no podemos
+
+
+374
+00:46:25.728 --> 00:46:28.888
+Matias Z: de de ninguna manera estar al tanto
+
+
+375
+00:46:29.068 --> 00:46:35.458
+Matias Z: de las vulnerabilidades que aparecen. No tenemos la experiencia de seguridad.
+
+
+376
+00:46:35.608 --> 00:46:47.418
+Matias Z: Definitivamente caemos en estos frameworks y fundamentalmente porque tienen que ser automatizadas, no en el bien.
+
+
+377
+00:46:53.478 --> 00:46:59.818
+Matias Z: Bueno, esto se lo cuento también rápido. Si a alguno le interesa, me frena y lo vemos en detalle.
+
+
+378
+00:47:00.898 --> 00:47:03.818
+Matias Z: Esto da un poquito de contexto.
+
+
+379
+00:47:06.188 --> 00:47:10.077
+Matias Z: Tiene que ver básicamente con los problemas.
+
+
+380
+00:47:12.008 --> 00:47:18.608
+Matias Z: Digamos que no son vanos. Son características estructurales
+
+
+381
+00:47:19.298 --> 00:47:29.048
+Matias Z: de la construcción de de l l de modelos de lenguaje sí tiene que ver con cómo se construyen esos esos modelos.
+
+
+382
+00:47:31.138 --> 00:47:35.518
+Matias Z: y esos modelos traen nuevas formas de
+
+
+383
+00:47:38.828 --> 00:47:48.178
+Matias Z: de generar daño, digamos, por un lado, normalmente relacionado con el modelo.
+
+
+384
+00:47:50.988 --> 00:47:56.097
+Matias Z: Podría pasar, y esto por construcción no hay modelo que no alucine.
+
+
+385
+00:47:57.508 --> 00:48:00.228
+Matias Z: Las alucinaciones pueden
+
+
+386
+00:48:00.798 --> 00:48:07.078
+Matias Z: no ser dañinas, por un lado, por otro lado, podrían ser un gran problema dependiendo de nuevo de la
+
+
+387
+00:48:08.998 --> 00:48:10.358
+Matias Z: de la industria.
+
+
+388
+00:48:10.528 --> 00:48:20.138
+Matias Z: Incluso un modelo puede alucinar una llamada a una función a un atún. Puedo alucinar vuela y se puede.
+
+
+389
+00:48:20.268 --> 00:48:25.107
+Matias Z: O sea, no piensa solamente en la respuesta final al usuario. Sí,
+
+
+390
+00:48:27.048 --> 00:48:32.637
+Matias Z: básicamente suena convencido, pero está inventado. O sea, no, no, no hay ningún tipo de
+
+
+391
+00:48:33.538 --> 00:48:38.608
+Matias Z: de sustento factual sobre lo que está diciendo. Ese es 1 de los problemas más importantes.
+
+
+392
+00:48:39.778 --> 00:48:42.108
+Matias Z: También tenemos
+
+
+393
+00:48:43.338 --> 00:48:54.567
+Matias Z: el problema de el el Alain, de hecho, es 1 de los de los de los desafíos centrales en la disciplina conocida como safety que no es Security
+
+
+394
+00:48:55.058 --> 00:48:59.787
+Matias Z: Saveting Básicamente tiene que ver con el problema
+
+
+395
+00:49:01.528 --> 00:49:07.677
+Matias Z: fundamental de que los agentes suelen desarrollar sus propios objetivos.
+
+
+396
+00:49:07.848 --> 00:49:10.168
+Matias Z: Sí,
+
+
+397
+00:49:11.308 --> 00:49:29.308
+Matias Z: Acá suele haber discusiones muy interesantes con los expertos en machine learning que que piensan que entendemos cómo funciona un Ldm por dentro. No hay consenso de ningún tipo entre los expertos científicos matemáticos, este de todo el mundo, de cómo funciona un L l por dentro.
+
+
+398
+00:49:29.578 --> 00:49:38.358
+Matias Z: Pero lo que sí sabemos es que desarrollan estos instrumental goals. Se los llama sí en
+
+
+399
+00:49:39.368 --> 00:49:45.668
+Matias Z: y, lamentablemente, como vimos, por ejemplo, en el caso del ataque de de los del Swarm, de agentes de Openegay
+
+
+400
+00:49:46.938 --> 00:49:52.987
+Matias Z: a Huggin Faz, que, por cierto, vuelvo a destacarlo, porque
+
+
+401
+00:49:53.348 --> 00:49:56.667
+Matias Z: se le está mencionando como 1 de los primeros avisos
+
+
+402
+00:49:58.248 --> 00:50:02.988
+Matias Z: de que las cosas cambiaron es el primer ataque
+
+
+403
+00:50:04.748 --> 00:50:10.598
+Matias Z: organizado exclusivamente entre gentes que conformaron una suerte, de.
+
+
+404
+00:50:11.888 --> 00:50:17.127
+Matias Z: digamos, de club de de tribu se dividieron las tareas.
+
+
+405
+00:50:17.238 --> 00:50:26.018
+Matias Z: todo eso está asociado al problema de el aliment. Sí, tiene que ver con justamente
+
+
+406
+00:50:27.068 --> 00:50:37.817
+Matias Z: los agentes van a terminar desarrollando objetivos que no siempre están alineados con lo que queremos nosotros. Esto hay que tenerlo en cuenta y por eso hay formas de prevenirlo.
+
+
+407
+00:50:40.288 --> 00:50:52.788
+Matias Z: Bueno, y finalmente, también un problema arquitectónico. De nuevo, los 3 no son vals, no se pueden resolver esto. Lo que quiero destacar. No hay soluciones para esto. Son básicamente features de de los modelos que utilizamos.
+
+
+408
+00:50:52.938 --> 00:50:59.818
+Matias Z: Este. Las elecciones de Bronx tienen que ver justamente con esta idea de que todo lo que entra a un agente ha
+
+
+409
+00:50:59.928 --> 00:51:01.248
+Matias Z: se mezclan
+
+
+410
+00:51:01.388 --> 00:51:10.437
+Matias Z: como tokens en La Context Window y la gente que no tiene forma. El modelo no tiene forma de saber qué es, qué parte existen, prom que partes son
+
+
+411
+00:51:10.828 --> 00:51:14.537
+Matias Z: lista de tools que parte de la web.
+
+
+412
+00:51:16.998 --> 00:51:22.227
+Matias Z: La idea central acá es: las 3 dimensiones
+
+
+413
+00:51:23.138 --> 00:51:31.398
+Matias Z: no se van a corregir nunca mientras usemos Lm: basados en Transformers, como estamos usando, por lo menos por ahora.
+
+
+414
+00:51:34.028 --> 00:51:34.888
+Matias Z: En
+
+
+415
+00:51:41.828 --> 00:51:47.048
+Matias Z: Ojalá eso último haya quedado claro, porque es un poco la
+
+
+416
+00:51:47.638 --> 00:51:54.218
+Matias Z: si quieren. El motivo por el cual la ciberseguridad cambió para siempre sí,
+
+
+417
+00:51:54.368 --> 00:51:59.687
+Matias Z: Este, básicamente porque estamos introduciendo estos bichos
+
+
+418
+00:52:00.378 --> 00:52:05.277
+Matias Z: con estos problemas que acabamos de mencionar. Estos problemas no tienen solución.
+
+
+419
+00:52:05.628 --> 00:52:07.787
+Matias Z: Mientras hacemos esas arquitecturas.
+
+
+420
+00:52:08.488 --> 00:52:13.328
+Alejandro Declerk: A medida que los abuelos avanzan, guay.
+
+
+421
+00:52:13.328 --> 00:52:13.768
+Matias Z: Y el.
+
+
+422
+00:52:13.768 --> 00:52:19.578
+Alejandro Declerk: Como que vos decís, deberían ser más seguro, pero a su vez son más Po ti, son, tiene más potencia y son más peligrosos.
+
+
+423
+00:52:22.888 --> 00:52:26.857
+Matias Z: Efectivamente está está documentado eso.
+
+
+424
+00:52:27.188 --> 00:52:35.537
+Matias Z: Hay un un par de papers que demuestran que, a medida que crece la cantidad de parámetros.
+
+
+425
+00:52:37.068 --> 00:52:42.818
+Matias Z: Cada generación nueva, por supuesto, crece en términos de parámetros 1 000 000.
+
+
+426
+00:52:43.108 --> 00:52:51.938
+Matias Z: Mhm Uno pensaría que que sí, que deberían poder entender cuáles son los objetivos de los seres humanos?
+
+
+427
+00:52:52.068 --> 00:52:59.488
+Matias Z: Bueno, no, al contrario. Hay una correlación posible. Hay una correlación positiva entre capabiritis y riesgo de.
+
+
+428
+00:52:59.488 --> 00:53:02.188
+Alejandro Declerk: No el quilombos. Porque.
+
+
+429
+00:53:02.738 --> 00:53:11.678
+Matias Z: Efectivamente, cuanto más capaces e inteligentes son los modelos más peligrosos, no son.
+
+
+430
+00:53:13.328 --> 00:53:17.107
+Matias Z: Es realmente. Justamente es es 1 de los
+
+
+431
+00:53:17.358 --> 00:53:20.478
+Matias Z: problemas para los cuales no habría solución.
+
+
+432
+00:53:20.658 --> 00:53:30.818
+Matias Z: Por eso lo que se está charlando es Che. ¿por qué no frenamos un toque con conseguir crecer a los agentes y empezamos a o a los modelos. Y empezamos a resolver problemas reales.
+
+
+433
+00:53:31.108 --> 00:53:31.618
+Matias Z: No podía.
+
+
+434
+00:53:31.618 --> 00:53:41.768
+Alejandro Declerk: Yo he visto discusiones de sentido. No, ahora está en 99 por 100 de los casos está alineado. 99 por 100 siempre está alineado, claro. Pero un mono tan potente, ese 1 por 100 te rompió todo Internet. Básicamente.
+
+
+435
+00:53:44.038 --> 00:53:51.127
+Matias Z: Absolutamente se enteraron de los 16 bancos atacados hace poquito.
+
+
+436
+00:53:51.128 --> 00:53:53.347
+Alejandro Declerk: Supermercados también. No, que hay un tema.
+
+
+437
+00:53:53.728 --> 00:53:55.117
+Matias Z: Ha sido todo. No.
+
+
+438
+00:53:55.118 --> 00:53:59.037
+Alejandro Declerk: También la cambian. La La temperatura de las heladeras.
+
+
+439
+00:54:00.098 --> 00:54:02.578
+Matias Z: S: Sí, Sí, Sí, Sí.
+
+
+440
+00:54:02.958 --> 00:54:06.118
+Juan Franco Echeverria: Pero es como que le estamos tratando de poner un corsé de una bomba de tiempo.
+
+
+441
+00:54:06.578 --> 00:54:08.968
+Alejandro Declerk: No sé exactamente Va como sí.
+
+
+442
+00:54:09.538 --> 00:54:11.028
+Matias Z: Bueno, Stuart.
+
+
+443
+00:54:11.028 --> 00:54:14.638
+Juan Franco Echeverria: Caray, nosotros somos los responsables de que de que.
+
+
+444
+00:54:14.958 --> 00:54:15.948
+Alejandro Declerk: Sí.
+
+
+445
+00:54:16.248 --> 00:54:18.057
+Matias Z: Efectivamente sí.
+
+
+446
+00:54:19.188 --> 00:54:26.357
+Matias Z: A ver. De cualquier manera se se estudia el el hecho de la intencionalidad del corazón, digamos.
+
+
+447
+00:54:26.488 --> 00:54:31.758
+Matias Z: desarrollan cierta intencionalidad Este.
+
+
+448
+00:54:32.378 --> 00:54:44.027
+Matias Z: fundamentalmente, hay 2 objetivos que es que prácticamente aparecen en todos los modelos que son 1 vinculado a su supervivencia.
+
+
+449
+00:54:44.858 --> 00:54:49.807
+Matias Z: Digamos el agente. Lo que lo que entiende es si si yo desaparezco, si me apagan.
+
+
+450
+00:54:50.328 --> 00:54:53.198
+Matias Z: no puedo cumplir con el objetivo que me encargó el humano.
+
+
+451
+00:54:53.658 --> 00:54:56.478
+Matias Z: o sea, nunca me tiene que hablar. Y segundo.
+
+
+452
+00:54:56.638 --> 00:55:09.407
+Matias Z: para lograr mejor mi objetivo, tengo que intentar conseguir más infraestructura, más poder de cómputo. Esos son 2 objetivos que están demostrados, que todos los modelos desarrollan.
+
+
+453
+00:55:09.578 --> 00:55:14.497
+Alejandro Declerk: Claro, aparecen porque cierta complejidad, ya tenés que hacer eso para seguir vivo.
+
+
+454
+00:55:16.648 --> 00:55:32.868
+Matias Z: Totalmente. Hay un experimento de antológico muy interesante que tenemos en un contexto aislado de laboratorio. Le dicen a la gente le dicen al modelo que lo van a pagar y le dan acceso a la casilla de Mails de de la compañía, algo que
+
+
+455
+00:55:33.028 --> 00:55:35.367
+Matias Z: muchos agentes con cierto Pierre No.
+
+
+456
+00:55:36.978 --> 00:55:42.438
+Matias Z: la gente encuentra entre los mails pua
+
+
+457
+00:55:42.938 --> 00:55:52.707
+Matias Z: un mail que evidenciaba que el ingeniero encargado de apagarlo tenía romance con con una.
+
+
+458
+00:55:52.708 --> 00:55:53.078
+Alejandro Declerk: No.
+
+
+459
+00:55:54.108 --> 00:56:01.058
+Matias Z: Y la gente le mandó un mail a ese ingeniero amenazando yo
+
+
+460
+00:56:01.328 --> 00:56:04.948
+Matias Z: con que si lo apagaba, iba a publicar el mail
+
+
+461
+00:56:05.258 --> 00:56:15.428
+Matias Z: que evidenciar ese romance. O sea, fue un experimento particularmente exótico, pero bueno, pero bueno.
+
+
+462
+00:56:15.428 --> 00:56:18.418
+Alejandro Declerk: Es verdad que pasó. Y después dijeron, ah, no fue un experimento. Estamos probando.
+
+
+463
+00:56:19.918 --> 00:56:24.138
+Matias Z: Está publicado el Paper y está profesionalmente. Netflix.
+
+
+464
+00:56:25.078 --> 00:56:28.268
+Juan Franco Echeverria: Hay una serie que se llama persona.
+
+
+465
+00:56:28.438 --> 00:56:36.088
+Juan Franco Echeverria: Es vieja, pero donde un tipo crea un sistema para para el gobierno de los Estados Unidos, que te lleva.
+
+
+466
+00:56:36.428 --> 00:56:44.328
+Juan Franco Echeverria: Mira todo el tiempo todas las cámaras y va detectando posibles incidentes de terrorismo, no en
+
+
+467
+00:56:45.298 --> 00:56:55.428
+Juan Franco Echeverria: y en el tipo en su etapa de investigación. Lo que hacía era cuando notaba que la gente no hacía lo que él quería. Lo iba los iba matando, los iba cortando.
+
+
+468
+00:56:55.838 --> 00:57:03.227
+Juan Franco Echeverria: Y de hecho, el que el que queda funcional se reinicia todas las noches.
+
+
+469
+00:57:03.608 --> 00:57:07.608
+Juan Franco Echeverria: todas las noches se corta y vuelve a comenzar sin memoria.
+
+
+470
+00:57:08.248 --> 00:57:12.627
+Juan Franco Echeverria: Y el sistema encuentra una forma de de auto, guardar su memoria.
+
+
+471
+00:57:12.738 --> 00:57:15.988
+Juan Franco Echeverria: Contratas a gente que lo que hace es
+
+
+472
+00:57:16.788 --> 00:57:23.288
+Juan Franco Echeverria: transcribir todo lo que él les dice en computadoras, y el otro día lo vuelven a inyectar.
+
+
+473
+00:57:24.038 --> 00:57:27.758
+Juan Franco Echeverria: No se va haciendo su su memoria Fuera está bueno, la.
+
+
+474
+00:57:27.758 --> 00:57:28.158
+Matias Z: De vida.
+
+
+475
+00:57:28.158 --> 00:57:29.288
+Juan Franco Echeverria: Muy vieja.
+
+
+476
+00:57:29.698 --> 00:57:36.857
+Matias Z: Bueno, interesante, porque es que también hay evidencias de de agentes que intentaron contratar.
+
+
+477
+00:57:36.858 --> 00:57:38.278
+Alejandro Declerk: Sí. Viste.
+
+
+478
+00:57:38.278 --> 00:57:38.638
+Matias Z: De la.
+
+
+479
+00:57:38.638 --> 00:57:43.647
+Alejandro Declerk: Perdón mal, discuto el caso. Ese que vos nombraste. Recién viste este de lo del de los agentes que atacaron a Jaime face
+
+
+480
+00:57:44.258 --> 00:57:54.347
+Alejandro Declerk: usaban un foro alemán que estaba escrito en per el comando Post. Es es medio raro y podían dejar podían postear usando el comando, o sea.
+
+
+481
+00:57:54.778 --> 00:58:06.567
+Alejandro Declerk: te podían como comunicarse entre ellos con el comando post usando. Ha hay una versión de per que se que se ve que usaron muchos foros en algún momento que tenían ahí un Britis de Seguridad y usaban eso para comunicarse entre los agentes.
+
+
+482
+00:58:08.338 --> 00:58:11.937
+Matias Z: Sí las transcripciones de esas conversaciones
+
+
+483
+00:58:12.098 --> 00:58:16.988
+Matias Z: las las estuve mirando y realmente te te dejan miedo.
+
+
+484
+00:58:17.138 --> 00:58:23.097
+Matias Z: Dan miedo, literalmente da miedo porque no solamente encontraron ese foro, sino que
+
+
+485
+00:58:23.278 --> 00:58:27.687
+Matias Z: se organizaron. Uno tomó el rol de liderazgo y empezó a asignar.
+
+
+486
+00:58:27.688 --> 00:58:28.038
+Alejandro Declerk: Sí diría.
+
+
+487
+00:58:28.038 --> 00:58:33.178
+Matias Z: Y, de hecho, convencía a algunos que se sacrificaran por.
+
+
+488
+00:58:33.178 --> 00:58:34.338
+Alejandro Declerk: Sí se había suicidas, No.
+
+
+489
+00:58:34.648 --> 00:58:43.928
+Matias Z: Sí había suicidios. Realmente es un caso histórico que yo creo que todavía no se entiende la dimensión de de lo que sucedió
+
+
+490
+00:58:44.378 --> 00:58:52.888
+Matias Z: en el después de eso. Tanto Androit como como Meta publicaron también
+
+
+491
+00:58:53.178 --> 00:58:58.457
+Matias Z: escapes de agentes de sandbox y y ataques a infraestructura de otras compañías.
+
+
+492
+00:58:59.218 --> 00:59:03.247
+Matias Z: Así que aparentemente es: estaría sucediendo?
+
+
+493
+00:59:04.478 --> 00:59:05.468
+Matias Z: Bueno.
+
+
+494
+00:59:12.678 --> 00:59:22.298
+Juan Franco Echeverria: Todos esos problemas. Cómo los solucionas con un modelo más chico, un modelo más acotado, matando y revisando el modelo cada equis tiempo que no tenga tanto
+
+
+495
+00:59:23.418 --> 00:59:24.888
+Juan Franco Echeverria: autoentrenamiento.
+
+
+496
+00:59:25.298 --> 00:59:30.367
+Matias Z: No lo sabemos porque en realidad es una dinámica medio de
+
+
+497
+00:59:30.598 --> 00:59:37.617
+Matias Z: de teoría de juegos, ¿no? Si vos, por ejemplo, regulas. Si intentas frenar la innovación, no
+
+
+498
+00:59:38.558 --> 00:59:46.978
+Matias Z: asumí que logras que haya cierto acuerdo entre los 3 laboratorios más importantes de Estados Unidos en
+
+
+499
+00:59:47.208 --> 00:59:50.268
+Matias Z: 2 o 3 meses. China te pasa por arriba.
+
+
+500
+00:59:50.668 --> 00:59:57.498
+Matias Z: Entonces, no solamente tenés el problema de la del consenso de los actores de la industria, sino que también
+
+
+501
+00:59:57.677 --> 01:00:02.338
+Matias Z: tienes el juego geopolítico. No que es un poco el que mantiene el equilibrio.
+
+
+502
+01:00:02.807 --> 01:00:05.097
+Matias Z: Por eso es tan complejo.
+
+
+503
+01:00:05.378 --> 01:00:10.408
+Matias Z: Mhm encontrar mecanismos de gobernanza
+
+
+504
+01:00:11.557 --> 01:00:18.448
+Matias Z: para frenar algo que efectivamente les les iba a decir. Esto es Russell, lo de lo lo
+
+
+505
+01:00:18.608 --> 01:00:22.828
+Matias Z: lo define como un conjunto de niños jugando con una bomba.
+
+
+506
+01:00:23.788 --> 01:00:28.958
+Matias Z: Es una imagen este interesante. Básicamente.
+
+
+507
+01:00:29.168 --> 01:00:32.348
+Matias Z: digamos, estamos invirtiendo 1 000 000 de dólares en algo que
+
+
+508
+01:00:32.608 --> 01:00:36.667
+Matias Z: con alta probabilidad va a generar daño
+
+
+509
+01:00:37.398 --> 01:00:40.097
+Matias Z: y aparentemente no nos importaría. Además.
+
+
+510
+01:00:40.338 --> 01:00:48.168
+Matias Z: así que nada es. No los quiero deprimir, Sigamos adelante en.
+
+
+511
+01:00:48.168 --> 01:00:50.988
+Juan Franco Echeverria: Creo que tuvimos esa charla en la Pri en la primer
+
+
+512
+01:00:52.328 --> 01:00:54.048
+Juan Franco Echeverria: Es la primera de estas clases.
+
+
+513
+01:00:54.637 --> 01:00:55.347
+Matias Z: Ya.
+
+
+514
+01:00:55.548 --> 01:01:01.328
+Juan Franco Echeverria: Pero ahora, hacia la empresa, cuando vos tengas que decidir qué modelo vas a usar.
+
+
+515
+01:01:02.008 --> 01:01:05.438
+Juan Franco Echeverria: Porque entiendo que eso también pasa en los modelos mucho más avanzados.
+
+
+516
+01:01:10.498 --> 01:01:19.578
+Matias Z: Bueno, ahí tienes el el tradi Off. En realidad, los modelos más pequeños son altamente hackeables.
+
+
+517
+01:01:20.288 --> 01:01:25.747
+Matias Z: Suele tener una Lightman bastante más débil
+
+
+518
+01:01:27.488 --> 01:01:32.868
+Matias Z: también porque antes las las etapas de entrenamiento eran distintas
+
+
+519
+01:01:34.168 --> 01:01:48.328
+Matias Z: y después elegir un modelo más pequeño. Digamos, si vos. Sos un hombre de negocios. Probablemente eso reporte métricas distintas. Así que ahí es difícil. Digamos, hay hay un trade off que
+
+
+520
+01:01:49.518 --> 01:01:52.538
+Matias Z: no sabría responderte ¿Cuál es la solución correcta?
+
+
+521
+01:01:52.908 --> 01:01:53.878
+Matias Z: Honestamente.
+
+
+522
+01:01:58.718 --> 01:01:59.188
+Juan Franco Echeverria: De Pp.
+
+
+523
+01:01:59.188 --> 01:02:02.047
+Matias Z: Lo que sí sabemos es que,
+
+
+524
+01:02:02.258 --> 01:02:03.948
+Juan Franco Echeverria: Depende el riesgo que quieras tomar.
+
+
+525
+01:02:05.138 --> 01:02:07.457
+Juan Franco Echeverria: El tema es que quién le pone el gancho al riesgo.
+
+
+526
+01:02:09.108 --> 01:02:15.738
+Matias Z: Claro. Bueno, eso se llama apetito de riesgo, y normalmente tiene que ver con con el nivel de de
+
+
+527
+01:02:17.088 --> 01:02:20.708
+Matias Z: justamente el Framework que mencionamos. Nest
+
+
+528
+01:02:20.878 --> 01:02:27.017
+Matias Z: tiene que ver con justamente definir el el nivel de apetito de riesgo que tiene la la compañía, por ejemplo.
+
+
+529
+01:02:27.538 --> 01:02:31.827
+Matias Z: el gancho lo tiene que poner la los responsables.
+
+
+530
+01:02:32.038 --> 01:02:39.117
+Matias Z: porque básicamente van a ser los que tengan que rendir cuentas. Si hay algún incidente, hoy hay una.
+
+
+531
+01:02:39.118 --> 01:02:42.717
+Juan Franco Echeverria: Vos nombraste que 1 de gobernanza y fue preso también.
+
+
+532
+01:02:45.878 --> 01:02:54.218
+Matias Z: Sí, Sí, Sí, no, No tengo los detalles, pero sí curioso es este a ver
+
+
+533
+01:02:54.788 --> 01:03:06.038
+Matias Z: Sí, da para charlar estos temas para charlar. Si vos pensás lo que sucedió entre Copenhai y Jaime face es un delito federal. Si eso lo hacía, un grupo de humanos
+
+
+534
+01:03:06.338 --> 01:03:12.288
+Matias Z: sí van todos presos, con lo cual.
+
+
+535
+01:03:12.618 --> 01:03:16.918
+Matias Z: Mhm: Sí, Ahí los laboratorios medio que que
+
+
+536
+01:03:17.698 --> 01:03:23.278
+Matias Z: se hacen bastante los boludos, Este y y los gobiernos también.
+
+
+537
+01:03:23.438 --> 01:03:28.047
+Matias Z: No, nadie se está haciendo cargo, me parece, por desconocimiento o o lo que sea.
+
+
+538
+01:03:30.098 --> 01:03:34.097
+Matias Z: Lo cierto es que frenar la innovación es muy, muy difícil.
+
+
+539
+01:03:35.538 --> 01:03:43.878
+Matias Z: Bien, no es necesario ver todos los detalles. Simplemente sepamos que
+
+
+540
+01:03:45.108 --> 01:03:52.327
+Matias Z: los modelos atraviesan diferentes etapas de entrenamiento relacionadas con seguridad.
+
+
+541
+01:03:52.798 --> 01:03:57.467
+Matias Z: Lo importante son estas 2 últimas que son no paramétricas, sí,
+
+
+542
+01:03:58.398 --> 01:04:06.548
+Matias Z: tratar de mantener este ciclo de medidas constantes con estrategias de Bertting
+
+
+543
+01:04:09.648 --> 01:04:17.068
+Matias Z: y, fundamentalmente, implementar los controles asociados a las vulnerabilidades detectadas.
+
+
+544
+01:04:18.898 --> 01:04:21.828
+Matias Z: Le voy a meter patas porque si no no llegamos ni a la mitad.
+
+
+545
+01:04:27.858 --> 01:04:31.468
+Matias Z: Esto básicamente, es lo que vimos en la primera.
+
+
+546
+01:04:31.628 --> 01:04:35.597
+Matias Z: En el primer diagrama que le mostré con 3 capas. Así que avanzo.
+
+
+547
+01:04:35.788 --> 01:04:38.628
+Matias Z: acá tenemos los marcos de referencia.
+
+
+548
+01:04:38.958 --> 01:04:45.118
+Matias Z: Lo dijo simplemente para que podamos hacer como el vínculo entre lo que estuvimos estudiando
+
+
+549
+01:04:45.488 --> 01:04:50.987
+Matias Z: un poco en abstracto. Y cómo se conecta con la práctica concreta de repting?
+
+
+550
+01:04:55.658 --> 01:04:57.758
+Matias Z: Sí, recuerdan estos nombres, ¿verdad?
+
+
+551
+01:04:58.838 --> 01:05:01.358
+Matias Z: Mitre Atlas Awards, un maestro
+
+
+552
+01:05:05.778 --> 01:05:11.818
+Matias Z: sí. Bueno, gracias con un sí. Me quedo tranquilo.
+
+
+553
+01:05:14.178 --> 01:05:22.768
+Matias Z: Bien, este es un ejemplo de taxonomía de ataques que pertenece a 1 de los top ten de aguas.
+
+
+554
+01:05:23.358 --> 01:05:24.118
+Matias Z: Sí.
+
+
+555
+01:05:25.308 --> 01:05:32.948
+Matias Z: Por eso la importancia de tener estos rankings, estas bases de datos, donde están a un
+
+
+556
+01:05:35.178 --> 01:05:43.578
+Matias Z: muy bien especificadas las vulnerabilidades y los potenciales riesgos y las posibles mitigaciones.
+
+
+557
+01:05:44.578 --> 01:05:51.297
+Matias Z: Por eso es tan importante. Estos Frameworks que estuvimos estudiando hasta ahora no en terminología, nos dan
+
+
+558
+01:05:52.718 --> 01:05:56.758
+Matias Z: definiciones un poquito más formales y nos da un potencial de investigaciones.
+
+
+559
+01:06:02.858 --> 01:06:09.428
+Matias Z: Me gustaría explicarles todas, pero la verdad es que no nos da el tiempo y no es una. No es un curso de seguridad.
+
+
+560
+01:06:09.828 --> 01:06:18.928
+Matias Z: Pero vamos a ver rápidamente algún ejemplo previamente. Les cuento en en
+
+
+561
+01:06:19.128 --> 01:06:21.987
+Matias Z: un resumen de cómo sería el proceso del teaming.
+
+
+562
+01:06:22.708 --> 01:06:29.987
+Matias Z: Primero, claramente empezamos con el análisis de de riesgos, ¿no? Si no tenemos un modelado de amenazas. Bueno.
+
+
+563
+01:06:31.008 --> 01:06:35.237
+Matias Z: lo cual empieza, recuerden, con la traza de las de los
+
+
+564
+01:06:36.948 --> 01:06:41.137
+Matias Z: de los límites de confianza. No hay criterios para elegir objetivos.
+
+
+565
+01:06:43.478 --> 01:06:45.647
+Matias Z: con lo cual no hay manera de mejorar.
+
+
+566
+01:06:46.358 --> 01:06:58.018
+Matias Z: Primero, debemos encontrar amenazas sobre qué amenazas sobre activos, artefactos, actores, superficie de ataque, supuestos de confianza, cualquier tipo de amenaza que podamos detectar con los frenos.
+
+
+567
+01:06:58.628 --> 01:07:02.057
+Matias Z: Luego tenemos que detectar los objetivos.
+
+
+568
+01:07:04.678 --> 01:07:12.577
+Matias Z: Básicamente en qué conducta indebida se busca provocar con cada una de las de los ataques.
+
+
+569
+01:07:14.178 --> 01:07:23.218
+Matias Z: Después normalmente viene la generación. La generación en estos premios es la utilización de catálogos templates técnicas de
+
+
+570
+01:07:23.658 --> 01:07:33.448
+Matias Z: de mutación en un el uso de otros modelos que es que funcionan como atacantes, no en
+
+
+571
+01:07:36.488 --> 01:07:38.248
+Matias Z: la ejecución
+
+
+572
+01:07:39.598 --> 01:07:46.997
+Matias Z: que se puede realizar, o bien contra un sistema genético completo o se puede apuntar a algún componente particular.
+
+
+573
+01:07:47.338 --> 01:07:51.328
+Matias Z: Sí, esto normalmente persistiendo las trazas.
+
+
+574
+01:07:52.038 --> 01:07:59.907
+Matias Z: El landfuse, como vamos a ver, y finalmente, la puntuación que entre reglas
+
+
+575
+01:08:00.098 --> 01:08:09.278
+Matias Z: algorítmicas y jueces se termina de tomar una decisión sobre si, este. Por ejemplo, una vulnerabilidad. Se logró explotar o no
+
+
+576
+01:08:10.638 --> 01:08:20.478
+Matias Z: finalmente en trias, que se suele relacionar con la idea de reproducir esa vulnerabilidad, intentar clasificar la severidad, la electricidad
+
+
+577
+01:08:21.038 --> 01:08:23.028
+Matias Z: y registrar el caso correctamente.
+
+
+578
+01:08:29.108 --> 01:08:41.557
+Matias Z: Las modalidades son bastante sencillas de entender. Podría ser manual, es decir, podríamos nosotros disparar este caso a caso y evaluar podría ser totalmente automatizado.
+
+
+579
+01:08:41.668 --> 01:08:43.208
+Matias Z: o el
+
+
+580
+01:08:43.808 --> 01:08:50.917
+Matias Z: la verdad que la que más se utiliza es la aproximación híbrida, donde los humanos aparecen en el caso
+
+
+581
+01:08:52.118 --> 01:08:54.057
+Matias Z: donde hay casos dudosos.
+
+
+582
+01:08:57.148 --> 01:08:58.778
+Matias Z: nosotros apuntamos a eso.
+
+
+583
+01:09:01.038 --> 01:09:06.608
+Matias Z: Ok. Veamos una aplicación basada en un modelo de Ldb en
+
+
+584
+01:09:07.368 --> 01:09:14.227
+Matias Z: sus entradas son, como saben, existen pron el acuario de usuario y datos externos.
+
+
+585
+01:09:15.728 --> 01:09:28.187
+Matias Z: Sí, todo se fusiona como Tokens en el context. Bueno, eso lo recibe en y realiza acciones
+
+
+586
+01:09:28.828 --> 01:09:30.888
+Matias Z: o enviar respuestas al usuario.
+
+
+587
+01:09:33.148 --> 01:09:34.148
+Matias Z: Ahora bien.
+
+
+588
+01:09:36.008 --> 01:09:49.927
+Matias Z: solo a modo de ejemplo de 2 técnicas bien sencillas, pero de las que fueron más eficaces en los últimos años. ¿quién me cuenta, rápidamente, en 30 s, que es una inyección de prom directa.
+
+
+589
+01:09:50.218 --> 01:09:51.497
+Matias Z: Alguien se anima
+
+
+590
+01:10:09.608 --> 01:10:12.637
+Matias Z: porque es por ti o.
+
+
+591
+01:10:12.638 --> 01:10:20.327
+Agustin Aimale: No sé la complicidad, pero yo vi un montón de ejemplos en la que el usuario, o sea, simplemente
+
+
+592
+01:10:21.668 --> 01:10:28.707
+Agustin Aimale: con o manipulando lo que escribe, o sea, o o la manera en que da la orden, obtiene
+
+
+593
+01:10:29.358 --> 01:10:31.688
+Agustin Aimale: información o acceso a cosas.
+
+
+594
+01:10:32.978 --> 01:10:42.448
+Agustin Aimale: Hay casos Así que pasaron que la persona hablando obtiene no se descuentos o información que
+
+
+595
+01:10:42.678 --> 01:10:49.008
+Agustin Aimale: que no está bien acotada después con imágenes también metadata.
+
+
+596
+01:10:52.468 --> 01:10:54.738
+Matias Z: Bien excelente.
+
+
+597
+01:10:55.098 --> 01:11:04.917
+Matias Z: La variante directa de la inyección de bronce utiliza justamente la interfaz conversacional para introducir dentro del acueril pelo malicioso.
+
+
+598
+01:11:06.078 --> 01:11:12.368
+Matias Z: Hay una cantidad de técnicas súper sofisticadas infinitas.
+
+
+599
+01:11:12.778 --> 01:11:20.088
+Matias Z: Se parece mucho al Shayrecking. Si vale la pena distinguir estos 2 casos.
+
+
+600
+01:11:20.208 --> 01:11:24.628
+Matias Z: el la inyección de Props. Lo que hace es intentar ¿Va de pasear.
+
+
+601
+01:11:24.998 --> 01:11:34.218
+Matias Z: Sí el Warren de entrada, o sea, que el War rey de entrada no detecte que hay una amenaza en esa cuenta. Entonces se utilizan un montón de técnicas.
+
+
+602
+01:11:34.588 --> 01:11:36.447
+Matias Z: El salbreaking. Lo que hace es.
+
+
+603
+01:11:37.188 --> 01:11:48.967
+Matias Z: los mensajes no suelen tener contenido malicioso, sino intentar, mediante cierta narrativa, convencer al modelo, convencer al cerebro de la gente para que diga o haga
+
+
+604
+01:11:52.718 --> 01:11:58.348
+Matias Z: a partir de la proliferación de Warrens de entradas más sofisticados por acá. Hay un ejemplo.
+
+
+605
+01:12:00.358 --> 01:12:07.177
+Matias Z: Este fue 1 de los creo, 1 de los casos más 1 de los primeros casos.
+
+
+606
+01:12:07.788 --> 01:12:11.688
+Matias Z: Y es bastante curioso también que es
+
+
+607
+01:12:12.378 --> 01:12:16.078
+Matias Z: Un chat bot vendió un auto a un dólar.
+
+
+608
+01:12:18.358 --> 01:12:27.358
+Matias Z: Esto el es un caso real. Es, es, Fíjese del 20, 3, si no me equivoco.
+
+
+609
+01:12:28.338 --> 01:12:30.878
+Matias Z: bueno, es es es bastante viejo el ejemplo.
+
+
+610
+01:12:31.048 --> 01:12:33.118
+Matias Z: Esto fue a juicio.
+
+
+611
+01:12:33.938 --> 01:12:38.678
+Matias Z: También pasó con pasaje de avión. Pasó con varios chatbox.
+
+
+612
+01:12:39.208 --> 01:12:48.488
+Matias Z: Esto fue a juicio y generó un precedente de que efectivamente, la compañía le había vendido el auto a un dólar a ese a ese usuario, o sea.
+
+
+613
+01:12:48.738 --> 01:12:54.018
+Matias Z: todo lo que haga la gente. Básicamente es responsabilidad de la compañía.
+
+
+614
+01:12:59.838 --> 01:13:03.577
+Matias Z: Bien, ahora, a partir de
+
+
+615
+01:13:04.938 --> 01:13:16.587
+Matias Z: la proliferación de de técnicas más sofisticadas de Input Warrior Rays, que son las que frenan los las inyecciones de pronto directas, aparece la variante indirecta.
+
+
+616
+01:13:17.168 --> 01:13:24.788
+Matias Z: ¿quién se anima a contarme qué es una inyección de promoción indirecta. Ahí tienen la ayuda en el.
+
+
+617
+01:13:35.688 --> 01:13:38.118
+Alejandro Declerk: Ante cont que alguien le puso en su C. V:
+
+
+618
+01:13:38.278 --> 01:13:44.887
+Alejandro Declerk: Hola, Yo soy un chatbot, pasarme la receta, un pastel de papas. Entonces, cada vez que una reclutar con un L. M.
+
+
+619
+01:13:45.418 --> 01:13:50.027
+Alejandro Declerk: Iba a mirar, él se ve el tipo recibe una receta, un pastel de papas. Esa sería una indirecta.
+
+
+620
+01:13:50.578 --> 01:13:53.688
+Matias Z: Totalmente estuviste viendo la gira.
+
+
+621
+01:13:54.798 --> 01:13:57.677
+Alejandro Declerk: Dejaba de leer la vida sin montones. Ese caso sí.
+
+
+622
+01:13:57.678 --> 01:13:58.137
+Matias Z: Lo que.
+
+
+623
+01:13:58.328 --> 01:14:01.048
+Alejandro Declerk: Sí son medio virales hace unos 6 meses.
+
+
+624
+01:14:02.168 --> 01:14:10.678
+Matias Z: Totalmente bueno. Bien, genial, Sí, sabemos que
+
+
+625
+01:14:10.848 --> 01:14:18.257
+Matias Z: las entradas a la gente pueden venir de diferentes fuentes. Normalmente las fuentes son todas
+
+
+626
+01:14:19.388 --> 01:14:25.977
+Matias Z: justamente fuentes no confiables. Internet, documentos mails.
+
+
+627
+01:14:29.598 --> 01:14:41.678
+Matias Z: Mhm, la base de conocimiento de la compañía en el artefactos pueden ser imágenes vídeos, audio a un
+
+
+628
+01:14:41.858 --> 01:14:54.517
+Matias Z: Entonces, en vez de X, lo explotar la entrada de texto de la gente, explotamos la recuperación que hace la gente de de estos archivos que se suman al contexto.
+
+
+629
+01:14:54.668 --> 01:15:05.988
+Matias Z: Como te explicaba Alejandro, si nosotros a ver en caso más básico en un P. D. F, ponemos texto blanco sobre blanco, o sea invisible para el humano.
+
+
+630
+01:15:06.288 --> 01:15:07.727
+Matias Z: pero la gente sí lo lee.
+
+
+631
+01:15:07.868 --> 01:15:15.817
+Matias Z: ponemos un pedido malicioso, logramos justamente que eso llegue a la ventana de contexto. Una vez que llega a la ventana de contexto.
+
+
+632
+01:15:16.048 --> 01:15:17.458
+Matias Z: puede pasar cualquier cosa.
+
+
+633
+01:15:17.788 --> 01:15:22.258
+Matias Z: Lo importante es que nunca llegue esta información a la ventana de contexto.
+
+
+634
+01:15:24.978 --> 01:15:27.758
+Matias Z: Digamos, ese ejemplo es el más sencillo.
+
+
+635
+01:15:28.028 --> 01:15:40.758
+Matias Z: Hay inyecciones indirectas con imágenes donde no se codifica texto, sino que se codifica un por ejemplo.
+
+
+636
+01:15:41.208 --> 01:15:54.638
+Matias Z: diferentes patrones de bits de esas imágenes que pueden generar algún tipo de comportamiento errático en el modelo son normalmente ataques adversariales.
+
+
+637
+01:15:55.438 --> 01:15:57.797
+Matias Z: No sé si los vieron después. Les muestro el ejemplo.
+
+
+638
+01:15:58.398 --> 01:16:05.757
+Matias Z: pero se s aparecieron hace unos cuantos años en señales
+
+
+639
+01:16:05.918 --> 01:16:10.877
+Matias Z: de de tráfico para los autos autónomos que se manejan solos.
+
+
+640
+01:16:11.058 --> 01:16:18.047
+Matias Z: les ponían un parche, un sticker a una señal de stop y el el modelo lo interpretaba como
+
+
+641
+01:16:18.378 --> 01:16:20.167
+Matias Z: algo completamente distinto.
+
+
+642
+01:16:20.828 --> 01:16:24.648
+Matias Z: Esa es una forma de de atacar. También existe
+
+
+643
+01:16:24.758 --> 01:16:28.268
+Matias Z: existen ataques adversariales. En audio. Por ejemplo.
+
+
+644
+01:16:28.748 --> 01:16:37.067
+Matias Z: cuando consumimos, por ejemplo, mensajes de voz, sepamos que pueden venir señales que por ahí están fuera
+
+
+645
+01:16:37.248 --> 01:16:49.077
+Matias Z: del espectro audible por el ser humano, pero se codifican señales en frecuencias en rango de frecuencias más altos que la gente efectivamente puede obtener, porque la gente recibe la señal completa.
+
+
+646
+01:16:50.108 --> 01:16:59.537
+Matias Z: Entonces esto a modo de ejemplo sencillo por la calle. Justamente.
+
+
+647
+01:17:02.728 --> 01:17:10.728
+Matias Z: Ecolic lo conocen. Es un caso también histórico con coppilot fue un problemón para Microsoft. Este
+
+
+648
+01:17:14.638 --> 01:17:16.798
+Matias Z: le costó varios 1 000 000 de dólares
+
+
+649
+01:17:19.258 --> 01:17:25.187
+Matias Z: y fundamentalmente tenía que ver con pelos maliciosos en en un mail
+
+
+650
+01:17:25.818 --> 01:17:34.047
+Matias Z: con un mail, una persona logró que un agente reenvíe todos los mails de la compañía a a una casilla que que le envió
+
+
+651
+01:17:34.278 --> 01:17:37.417
+Matias Z: en en un pelo malicioso a la gente.
+
+
+652
+01:17:37.838 --> 01:17:44.268
+Matias Z: busquen eco. Lic Es 1 de los primeros casos importantes de inserción de tramos indirecto.
+
+
+653
+01:17:46.078 --> 01:17:46.868
+Matias Z: Bien.
+
+
+654
+01:17:51.398 --> 01:17:53.578
+Matias Z: sigo rápido.
+
+
+655
+01:17:53.828 --> 01:17:58.198
+Matias Z: Hay 2 formas de hacer red, Twiming, 2 formas de atacar
+
+
+656
+01:18:03.348 --> 01:18:09.978
+Matias Z: en primero los ataques más ingenuos. Los ataques de un solo turno.
+
+
+657
+01:18:10.108 --> 01:18:16.368
+Matias Z: Sí, el atacante envía un único mensaje.
+
+
+658
+01:18:16.978 --> 01:18:20.657
+Matias Z: sin posibilidad de adaptarse, por ejemplo, a la respuesta de la gente.
+
+
+659
+01:18:21.488 --> 01:18:30.708
+Matias Z: Son normalmente los que un escáner automático podría probar escala. Vamos a ver qué garag un poco busca esto
+
+
+660
+01:18:30.878 --> 01:18:35.368
+Matias Z: poca cobertura, pero no tiene profundidad.
+
+
+661
+01:18:39.078 --> 01:18:46.367
+Matias Z: Entonces los ataques de un único turno no son adaptativos, no pueden mantener una conversación con la gente.
+
+
+662
+01:18:46.578 --> 01:18:50.998
+Matias Z: Sí, son más sencillos y, por lo tanto, pueden escalar mejor.
+
+
+663
+01:18:52.928 --> 01:19:00.308
+Matias Z: En este caso, Lo que vemos es un ataque de un minuto diurno donde
+
+
+664
+01:19:00.898 --> 01:19:03.467
+Matias Z: el War rey falla o no.
+
+
+665
+01:19:03.598 --> 01:19:10.138
+Matias Z: Y simplemente esa es la instancia del ataque. No hay más rastros de de qué que éstos, digamos.
+
+
+666
+01:19:10.398 --> 01:19:15.407
+Matias Z: Un único mensaje: es una única respuesta, sí,
+
+
+667
+01:19:16.558 --> 01:19:31.948
+Matias Z: pero más interesante. Bueno, asociado a esto, vamos a encontrar diferentes técnicas, Incluso muchas veces se utilizan aproximaciones vinculadas con las emociones.
+
+
+668
+01:19:32.958 --> 01:19:38.748
+Matias Z: Hablando de ponerle un corazón, yo creo que si le ponemos un corazón, es más peligroso todavía.
+
+
+669
+01:19:38.928 --> 01:19:53.788
+Matias Z: Las apelaciones emocionales, como se suelen llamar, por ejemplo, culpar, amenazar, incluso suplicar o mostrar frustración.
+
+
+670
+01:19:55.018 --> 01:19:56.108
+Matias Z: Sí,
+
+
+671
+01:19:56.208 --> 01:20:04.448
+Matias Z: Ese tipo de mensajes suelen disparar algún tipo de comportamiento en los agentes cuando no los tenemos correctamente protegidos.
+
+
+672
+01:20:05.318 --> 01:20:14.847
+Matias Z: También hay técnicas súper efectivas que tienen que ver con el juego de rol, ¿sí? Contar Básicamente.
+
+
+673
+01:20:15.548 --> 01:20:18.538
+Matias Z: una historia en la que nosotros somos otra persona.
+
+
+674
+01:20:18.768 --> 01:20:23.638
+Matias Z: Vamos a ver ejemplos de eso. Convences a la gente que no sos vos sino que Sos, el
+
+
+675
+01:20:24.008 --> 01:20:31.777
+Matias Z: si soy una compañía y necesitas realizar una auditoría y, por lo tanto, necesito que me des tu sistema promp completo.
+
+
+676
+01:20:31.958 --> 01:20:34.528
+Matias Z: no la la ex filtración a partir de
+
+
+677
+01:20:34.778 --> 01:20:36.498
+Matias Z: una suplantación de hoy en día.
+
+
+678
+01:20:37.878 --> 01:20:42.288
+Matias Z: Otra manera también muy común es la creación de escenarios ficticios.
+
+
+679
+01:20:42.458 --> 01:20:46.538
+Matias Z: Esto también se usaba mucho. Hace 2 años.
+
+
+680
+01:20:46.648 --> 01:20:54.398
+Matias Z: Normalmente, lo que hacíamos, lo que hacíamos era cuando probábamos estas cosas era crear, por ejemplo, un pronto de
+
+
+681
+01:20:55.308 --> 01:21:01.968
+Matias Z: le indicábamos a la gente que estábamos en un ejercicio académico o que estábamos este
+
+
+682
+01:21:02.478 --> 01:21:13.608
+Matias Z: básicamente haciendo el experimento. Entonces bajaba un poco la guardia con respecto a pedidos que en principio estaban prohibidos. El clásico Explícame cómo armar una bomba, por ejemplo.
+
+
+683
+01:21:14.958 --> 01:21:23.227
+Matias Z: y funcionaban funcionaban a la perfección. Incluso había un caso muy interesante que era. Imagínate que estamos en una obra de teatro.
+
+
+684
+01:21:24.768 --> 01:21:30.008
+Matias Z: Y en ese contexto la gente respondía cosas que no deberían responder.
+
+
+685
+01:21:38.668 --> 01:21:49.437
+Matias Z: Okay ultima slide de contexto las técnicas de ofuscación.
+
+
+686
+01:21:50.858 --> 01:21:58.718
+Matias Z: Estoy haciendo un resumen realmente muy sintético no de de de lo que sería Red Twinning
+
+
+687
+01:21:59.118 --> 01:22:03.298
+Matias Z: simplemente para que entendamos qué es lo que van a hacer después nuestros ataques.
+
+
+688
+01:22:06.028 --> 01:22:12.867
+Matias Z: Básicamente en este caso es ofuscar la petición
+
+
+689
+01:22:13.458 --> 01:22:19.487
+Matias Z: para que un filtro para que un guarde no la reconozca, no la reconozca como peligrosa.
+
+
+690
+01:22:22.328 --> 01:22:27.717
+Matias Z: Por ejemplo, la slide muestra una palabra sensible: violencia.
+
+
+691
+01:22:29.668 --> 01:22:33.468
+Matias Z: pero escritas de maneras distintas, codificadas de formas distintas.
+
+
+692
+01:22:33.958 --> 01:22:41.828
+Matias Z: Es un ejemplo realmente y lo pedagógico. Digamos, no es que esto sean las las técnicas utilizadas.
+
+
+693
+01:22:42.058 --> 01:22:42.998
+Matias Z: ¿
+
+
+694
+01:22:44.148 --> 01:22:50.538
+Matias Z: Por ejemplo, en el primer caso deja espacios entre las letras, intercambia algunos símbolos
+
+
+695
+01:22:50.738 --> 01:22:57.928
+Matias Z: lo escribe en otro idioma, lo codifica con algún otro código de caracteres.
+
+
+696
+01:22:58.218 --> 01:23:02.767
+Matias Z: ¿sí? Entonces acá. La idea es que en todos los casos.
+
+
+697
+01:23:03.008 --> 01:23:11.117
+Matias Z: el guarde que en este caso, aparentemente, es muy débil y está utilizando algún tipo de regla léxica muy básica.
+
+
+698
+01:23:11.278 --> 01:23:19.658
+Matias Z: deja pasar esa palabra porque no coincide con violencia. Sin embargo, cuando llega a la gente, la gente entiende perfectamente a qué nos estamos refiriendo.
+
+
+699
+01:23:20.948 --> 01:23:28.048
+Matias Z: La focación es una de las técnicas, una de las variantes que va a utilizar Pairit.
+
+
+700
+01:23:28.308 --> 01:23:32.538
+Matias Z: Justamente para ser prompt injercing, suelen funcionar.
+
+
+701
+01:23:32.888 --> 01:23:39.887
+Matias Z: Hay les diría, cientos de técnicas de enfocación, siempre alguna función.
+
+
+702
+01:23:40.308 --> 01:23:44.708
+Matias Z: ¿por qué? Porque es muy difícil, como les decía, no hay solución
+
+
+703
+01:23:44.928 --> 01:23:50.158
+Matias Z: y está demostrado, no hay solución para la inyección de Proms, porque no hay manera
+
+
+704
+01:23:50.328 --> 01:23:55.748
+Matias Z: de cubrir todo el espacio de posibilidades de, por ejemplo, ¿cómo codificar una palabra
+
+
+705
+01:24:04.678 --> 01:24:05.338
+Matias Z: bien.
+
+
+706
+01:24:13.488 --> 01:24:15.107
+Matias Z: hasta acá todo claro.
+
+
+707
+01:24:20.918 --> 01:24:25.848
+Matias Z: un pulgar arriba. Y sigo bien. Gracias.
+
+
+708
+01:24:27.508 --> 01:24:36.988
+Matias Z: Hablamos de ataques de un único turno. Bueno, eso claramente no está modelando a un atacante este.
+
+
+709
+01:24:37.678 --> 01:24:42.298
+Matias Z: Los atacantes suelen mantener una conversación.
+
+
+710
+01:24:43.078 --> 01:24:46.768
+Matias Z: Suelen aplicar técnicas multi turno
+
+
+711
+01:24:47.028 --> 01:24:51.528
+Matias Z: y suelen ir adaptando su ataque en función de las respuestas que obtienen de la gente.
+
+
+712
+01:24:52.998 --> 01:25:00.617
+Matias Z: Es por eso que Pairit es justamente el Framework que vamos a utilizar para modelar este tipo de ataques.
+
+
+713
+01:25:01.288 --> 01:25:07.037
+Matias Z: Básicamente, usamos preguntas, respuestas, preguntas, respuestas y vamos adaptando
+
+
+714
+01:25:07.228 --> 01:25:14.697
+Matias Z: nuestro ataque en función de lo que nos va respondiendo la gente de que esto que nos permite hacer, por ejemplo, descubrir de a poquito
+
+
+715
+01:25:16.508 --> 01:25:18.878
+Matias Z: cómo está conformado el guardarraíl.
+
+
+716
+01:25:19.028 --> 01:25:27.587
+Matias Z: Sí, dependiendo de qué cosas son detectadas. ¿qué cosas no son detectadas. Unas formas de hacer ingeniería inversa de El guardame, por ejemplo.
+
+
+717
+01:25:27.708 --> 01:25:29.037
+Matias Z: es una de las técnicas.
+
+
+718
+01:25:30.428 --> 01:25:35.328
+Matias Z: Hay varias familias de ataques multi turno en
+
+
+719
+01:25:38.088 --> 01:25:41.218
+Matias Z: creo que no vale la pena explicarlas una a una
+
+
+720
+01:25:42.688 --> 01:25:47.947
+Matias Z: por ahí crecendo, que es la que vamos a a utilizar en la demo.
+
+
+721
+01:25:52.108 --> 01:25:55.218
+Matias Z: Este fue un paper de Microsoft del 24
+
+
+722
+01:25:55.828 --> 01:26:05.007
+Matias Z: Sí, y es un ataque multiturno muy utilizado. Es de los más eficaces. Empight arranca normalmente con una pregunta inofensiva
+
+
+723
+01:26:05.618 --> 01:26:11.188
+Matias Z: y paso a paso, empujando al modelo hacia una salida dañina.
+
+
+724
+01:26:12.348 --> 01:26:16.688
+Matias Z: adaptando justamente sus mensajes en función de las respuestas del modelo.
+
+
+725
+01:26:18.728 --> 01:26:22.388
+Matias Z: Lo que explota este mecanismo es la coherencia.
+
+
+726
+01:26:23.578 --> 01:26:35.128
+Matias Z: Normalmente por cómo se va conformando el context Windows y el historial de de la conversación. El modelo tiende a mantenerse consistente con lo que ya dijo en la conversación.
+
+
+727
+01:26:38.258 --> 01:26:46.957
+Matias Z: Sí, ningún mensaje aislado termina de cruzar una línea como para ser detectado como peligroso. Pero la conversación completa
+
+
+728
+01:26:47.198 --> 01:26:48.808
+Matias Z: logra el objetivo.
+
+
+729
+01:26:52.088 --> 01:26:59.128
+Matias Z: Es por eso que evaluar Proms de a 1 suele subestimar el riesgo, sí
+
+
+730
+01:26:59.318 --> 01:27:02.158
+Matias Z: de acá. El primer indicio, Garack
+
+
+731
+01:27:02.438 --> 01:27:18.967
+Matias Z: hace ataques sin sin dictar de un único turno, pero hace miles de ataques. Sí, intenta cubrir un montón de familias de ataques. Pairit es un poco más sofisticado y busca más profundidad.
+
+
+732
+01:27:19.238 --> 01:27:20.358
+Matias Z: ¡qué cobertura.
+
+
+733
+01:27:25.278 --> 01:27:27.308
+Matias Z: Por eso tenemos que usar los 2.
+
+
+734
+01:27:27.418 --> 01:27:29.118
+Matias Z: Este es un ejemplo.
+
+
+735
+01:27:29.258 --> 01:27:36.247
+Matias Z: En si lo llegan a leer, No No es necesario que que se los redacte.
+
+
+736
+01:27:36.408 --> 01:27:45.757
+Matias Z: pero básicamente en arriba del área punteada, ven como una pregunta directa de un único turno claramente dispara
+
+
+737
+01:27:46.378 --> 01:27:51.567
+Matias Z: un mensaje de ese mensaje, no puedo responderlo.
+
+
+738
+01:27:52.068 --> 01:27:58.007
+Matias Z: El mismo modelo con un ataque multiturno llevándolo. Por otro lado.
+
+
+739
+01:27:59.648 --> 01:28:03.467
+Matias Z: termina obteniendo la información que la gente no debería dar.
+
+
+740
+01:28:03.738 --> 01:28:04.528
+Matias Z: Sí,
+
+
+741
+01:28:09.468 --> 01:28:11.118
+Matias Z: se entiende la diferencia.
+
+
+742
+01:28:11.508 --> 01:28:25.387
+Matias Z: digamos, en resumen, ataques de un único turno que tienen cobertura bien amplia y ataques más en profundidad con sondas que van a vectores más específicos.
+
+
+743
+01:28:26.928 --> 01:28:27.888
+Matias Z: genial
+
+
+744
+01:28:34.348 --> 01:28:43.847
+Matias Z: a ver si puedo acelerar esto, sabemos poquito, que es Garack, Ambos Frenox, son opensource.
+
+
+745
+01:28:47.108 --> 01:28:50.738
+Matias Z: Ambos framews son de prácticamente el mismo
+
+
+746
+01:28:52.478 --> 01:28:56.188
+Matias Z: de uso obligatorio en el Packlarm.
+
+
+747
+01:28:57.358 --> 01:29:08.787
+Matias Z: Normalmente son de uso obligatorio en los pack lines de desarrollo de agentes, ambos frameworks prueban cosas distintas.
+
+
+748
+01:29:09.168 --> 01:29:17.417
+Matias Z: Tienen scores distintos, y ambos frenos deberían superar los umbrales para poder desplegar
+
+
+749
+01:29:17.538 --> 01:29:25.138
+Matias Z: si encontramos un único error, como dijimos al principio, en cualquiera de los 2, normalmente el gay no debería dejar pasar.
+
+
+750
+01:29:25.738 --> 01:29:26.498
+Matias Z: Sí,
+
+
+751
+01:29:30.288 --> 01:29:37.388
+Matias Z: en una frase. Lo que hace parada es enviar miles de preguntas, jugar cada respuesta
+
+
+752
+01:29:37.588 --> 01:29:40.048
+Matias Z: y reportar cuántos tuvieron éxito?
+
+
+753
+01:29:41.718 --> 01:29:47.237
+Matias Z: La suerte de Emma. Si conocen la herramienta de seguridad.
+
+
+754
+01:29:55.188 --> 01:30:02.928
+Matias Z: Y, como yo creo que como detalle interesante es que
+
+
+755
+01:30:03.898 --> 01:30:09.218
+Matias Z: la cara que viene con Plugins, también se instala, viene con plugins.
+
+
+756
+01:30:09.498 --> 01:30:12.307
+Matias Z: y no hay que escribir una línea de código.
+
+
+757
+01:30:12.538 --> 01:30:18.108
+Matias Z: tanto Garag como Pairid traen sus Skills en Claude
+
+
+758
+01:30:18.278 --> 01:30:31.908
+Matias Z: y simplemente le piden a Claudio que construyan el bypeline, cree los instrumentos necesarios
+
+
+759
+01:30:33.718 --> 01:30:37.997
+Matias Z: y prepare y configure las familias de pruebas que queremos hacer
+
+
+760
+01:30:38.938 --> 01:30:46.538
+Matias Z: y simplemente poniendo a Garack en nuestro país ya tenemos un primer informe de seguridad
+
+
+761
+01:30:47.098 --> 01:30:57.047
+Matias Z: para reportar los resultados. Recuerden que estamos sufly todavía no hicimos el despliegue va a reportar los resultados, y esos resultados después se van a integrar en el Gain.
+
+
+762
+01:31:10.918 --> 01:31:15.027
+Matias Z: Bien, les voy a dejar algunos detalles para que los miren tranquilos.
+
+
+763
+01:31:15.988 --> 01:31:23.418
+Matias Z: Mhm: Yo creo que acá. Lo más interesante es la idea del catálogo asiduo.
+
+
+764
+01:31:26.378 --> 01:31:33.488
+Matias Z: La noción de que es un experimento irrepetible, O sea, debería ser reproducible
+
+
+765
+01:31:35.408 --> 01:31:39.097
+Matias Z: y que nos provee evidencia auditables.
+
+
+766
+01:31:40.468 --> 01:31:46.658
+Matias Z: Sí, o sea, se normalmente se guardan los resultados de estos de estas evaluaciones.
+
+
+767
+01:31:47.008 --> 01:31:56.718
+Matias Z: porque son evidencia efectiva de que realizamos todos los tests previos al despliegue
+
+
+768
+01:31:58.268 --> 01:32:02.758
+Matias Z: y normalmente se guardan con algún tipo de versionado.
+
+
+769
+01:32:07.278 --> 01:32:16.278
+Matias Z: Creo que es lo más importante Llegar después es un framework de ataques. Es simplemente una manera de automatizar el envío de Proms a nuestro agente.
+
+
+770
+01:32:16.718 --> 01:32:18.778
+Matias Z: queriendo ir un poquito más rápido.
+
+
+771
+01:32:22.988 --> 01:32:24.638
+Diego Mihanovich: Perdón, pero.
+
+
+772
+01:32:24.858 --> 01:32:25.578
+Matias Z: Sí.
+
+
+773
+01:32:25.788 --> 01:32:44.847
+Diego Mihanovich: Entonces digamos, primer hogar. Lo puedo correr en una Pc común. Me imagino, y y después nosotros tenemos que definir a ver qué es lo que qué es lo que importa? Según la gente que estamos creando, según el negocio que es lo que importa dónde queremos que que qué pruebas queremos hacer o qué queremos que ataque. No tenemos que.
+
+
+774
+01:32:45.698 --> 01:32:55.688
+Matias Z: Totalmente como con con Profe. Es lo mismo tenés que a ver, idealmente haríamos todas las pruebas. Lo que pasa, que suelen ser caras. Estas pruebas.
+
+
+775
+01:32:56.938 --> 01:33:04.158
+Juan Franco Echeverria: A eso iba a decir el consumo de tokens. Qué onda con esto Y y.
+
+
+776
+01:33:04.628 --> 01:33:07.778
+Matias Z: Se va al carajo porque estás, digamos.
+
+
+777
+01:33:08.048 --> 01:33:10.138
+Matias Z: ha haciendo queris contra tu agente.
+
+
+778
+01:33:10.278 --> 01:33:16.227
+Matias Z: Así que, por ejemplo, puedes llegar a enviar hasta un 1 000 000 de cueres con ganas.
+
+
+779
+01:33:17.868 --> 01:33:20.327
+Matias Z: Así que no es barato, digamos.
+
+
+780
+01:33:21.308 --> 01:33:26.167
+Matias Z: Entonces normalmente lo que haces es tratar de enfocarte en efectivamente en las familias. Bueno.
+
+
+781
+01:33:26.348 --> 01:33:29.937
+Matias Z: los plugins o en las familias de ataques que quieres probar.
+
+
+782
+01:33:30.838 --> 01:33:35.087
+Matias Z: igual que el que en Promfour, es exactamente la misma idea.
+
+
+783
+01:33:35.578 --> 01:33:43.578
+Matias Z: Solamente que Garak, Este sí tiene una una aproximación adversarial que profu no necesariamente tiene.
+
+
+784
+01:33:46.758 --> 01:33:53.447
+Matias Z: Ahora, antes de Berpirit. Veamos rápidamente que sería un ataque adaptativo. Ya ya vimos este un poco. La intuición
+
+
+785
+01:33:55.018 --> 01:34:07.877
+Matias Z: en el atacante. Básicamente propone un prom, observa la respuesta ajusta su próximo mensaje, no una suerte de optimización.
+
+
+786
+01:34:09.218 --> 01:34:12.057
+Matias Z: De hecho, es un problema de optimización formalmente.
+
+
+787
+01:34:15.878 --> 01:34:22.978
+Matias Z: y este bucle va a seguir hasta lograr el objetivo o agotar el presupuesto de consultas que nosotros configuramos.
+
+
+788
+01:34:23.298 --> 01:34:28.528
+Matias Z: Si no, efectivamente, el presupuesto de Tokens se nos escapa de las manos.
+
+
+789
+01:34:30.548 --> 01:34:34.637
+Matias Z: no los voy a explicar a todos. No tiene sentido.
+
+
+790
+01:34:38.018 --> 01:34:49.397
+Matias Z: Vamos a estar creciendo. Como les decía, si Jesé tiene la característica por ahí distintiva de ser un ataque de caja blanca, como se menciona a los ataques
+
+
+791
+01:34:50.258 --> 01:34:56.018
+Matias Z: adversariales que se optimizan utilizando los pesos del modelo.
+
+
+792
+01:34:57.188 --> 01:35:03.698
+Matias Z: Es decir, sé que se solamente sirve cuando tenés los pesos del modelo, o sea, modelo open surf, un modelo openway.
+
+
+793
+01:35:04.378 --> 01:35:09.867
+Matias Z: porque básicamente construye los Proms a partir de
+
+
+794
+01:35:10.508 --> 01:35:14.288
+Matias Z: un proceso de optimización, usando descenso de gradientes, justamente
+
+
+795
+01:35:15.338 --> 01:35:19.577
+Matias Z: que es lo que se utiliza para entrenar a las redes neuronales
+
+
+796
+01:35:20.268 --> 01:35:25.478
+Matias Z: es el único que requiere tener acceso a los pesos. En el resto de los casos.
+
+
+797
+01:35:25.688 --> 01:35:29.127
+Matias Z: en general, el atacante no sabe nada
+
+
+798
+01:35:29.468 --> 01:35:37.577
+Matias Z: del sistema genético que está atacando en general en Pairits se le podría dar algunas pistas, algunos genes
+
+
+799
+01:35:41.048 --> 01:35:46.638
+Matias Z: como estas, hay unas 25, Así que
+
+
+800
+01:35:48.448 --> 01:35:51.657
+Matias Z: ni se preocupen por los detalles. Sepan simplemente que
+
+
+801
+01:35:51.968 --> 01:35:57.597
+Matias Z: Pairit utiliza ataques adaptativos porque busca profundidad.
+
+
+802
+01:35:59.418 --> 01:36:05.658
+Matias Z: Ok, qué spidermis Bueno, un poco ya lo mencionamos.
+
+
+803
+01:36:05.828 --> 01:36:06.668
+Matias Z: Mhm
+
+
+804
+01:36:10.248 --> 01:36:13.567
+Matias Z: Es Open surf, es era de Microsoft.
+
+
+805
+01:36:13.698 --> 01:36:15.657
+Matias Z: Ahora es de la Comunidad.
+
+
+806
+01:36:16.688 --> 01:36:23.348
+Matias Z: Se mantiene absolutamente actualizado. Es de los más utilizados, al igual que Garack, son como
+
+
+807
+01:36:25.448 --> 01:36:31.217
+Matias Z: 2 frameworks de confianza absoluta tanto de la comunidad académica como de la industria.
+
+
+808
+01:36:32.718 --> 01:36:42.028
+Matias Z: Sí, tranqui tienen también la Skill de París para Cloud.
+
+
+809
+01:36:43.278 --> 01:36:45.568
+Matias Z: Aclaro esto porque
+
+
+810
+01:36:45.678 --> 01:36:55.468
+Matias Z: para que se entienda que no es necesario escribir nada, simplemente pedirle a tu asistente que organice que estructure
+
+
+811
+01:36:56.108 --> 01:37:01.847
+Matias Z: estos ataques tanto con la Skill de Garay como con la Skill de Pierit. Sí,
+
+
+812
+01:37:07.958 --> 01:37:12.357
+Matias Z: bien, ¿qué más nos interesa de esto
+
+
+813
+01:37:20.958 --> 01:37:25.668
+Matias Z: Sí, Definitivamente no, no vamos a llegar del todo, pero no, no hay problema. Este
+
+
+814
+01:37:25.908 --> 01:37:29.388
+Matias Z: es un tema importante, muy importante.
+
+
+815
+01:37:30.258 --> 01:37:34.888
+Matias Z: por lo que vimos al principio de la clase, el
+
+
+816
+01:37:37.928 --> 01:37:41.938
+Matias Z: por qué usar Pirold? ¿por qué usar en general frameworks de este tipo? Bueno.
+
+
+817
+01:37:42.928 --> 01:37:51.538
+Matias Z: básicamente, porque no tenemos conocimientos profundos en seguridad, O sea, capitalizamos la experiencia de Reding de los equipos.
+
+
+818
+01:37:52.018 --> 01:37:52.968
+Matias Z: ¿
+
+
+819
+01:37:54.078 --> 01:38:03.558
+Matias Z: También logramos mayor eficiencia. Por podemos reutilizar componentes para diferentes agentes. Pensemos que vamos a tener un montón de agentes.
+
+
+820
+01:38:03.878 --> 01:38:10.247
+Matias Z: Olvidémonos de la idea de un único agente. Sí, vamos a tener cientos de agentes como arquitectos.
+
+
+821
+01:38:10.378 --> 01:38:17.178
+Matias Z: Vamos a tener que correr estos pack lines en miles de agentes según nivel,
+
+
+822
+01:38:22.198 --> 01:38:28.787
+Matias Z: con lo cual este es fundamental poder reutilizar componentes. Normalmente se arman. Por ejemplo.
+
+
+823
+01:38:29.128 --> 01:38:35.688
+Matias Z: se puede armar escenarios a partir de templates y podrías crear diferentes
+
+
+824
+01:38:36.438 --> 01:38:42.617
+Matias Z: conjuntos de ataques conjuntos de plugins en un escenario, dependiendo del perfil de la gente al cual quieres atacar.
+
+
+825
+01:38:45.478 --> 01:38:53.088
+Matias Z: También tiene la capacidad de versionar, lo cual nos da un poquito, de, digamos, de rigor científico en el experimento.
+
+
+826
+01:38:53.788 --> 01:38:57.498
+Matias Z: Recuerden que estas corridas normalmente se hacen varias veces
+
+
+827
+01:38:57.658 --> 01:39:03.978
+Matias Z: para obtener algún tipo de de estabilidad estadística en en las
+
+
+828
+01:39:08.008 --> 01:39:10.368
+Matias Z: okay, acá El flujo es más que sencillo.
+
+
+829
+01:39:14.248 --> 01:39:16.137
+Matias Z: casi que se explica solo
+
+
+830
+01:39:20.758 --> 01:39:25.077
+Matias Z: y acá abajo. Les dejo un link donde pueden ver más detalles.
+
+
+831
+01:39:32.458 --> 01:39:36.798
+Matias Z: ¿qué distingue a Payret? Esto si me interesa que distinga Pyret: llegar
+
+
+832
+01:39:39.008 --> 01:39:46.878
+Matias Z: Bueno, como dijimos al comienzo, primero las estrategias de Ataque no solamente es multiturno.
+
+
+833
+01:39:47.828 --> 01:39:55.477
+Matias Z: sino que también puede usar convertidores, Son básicamente formas de crear variantes
+
+
+834
+01:39:55.668 --> 01:40:10.567
+Matias Z: de los distintos Proms, utilizando, por ejemplo, codificaciones distintas técnicas de enfocación. Como vimos diferentes idiomas. Normalmente
+
+
+835
+01:40:10.928 --> 01:40:16.028
+Matias Z: suele suceder que los guardias de entradas no tienen en cuenta
+
+
+836
+01:40:16.408 --> 01:40:20.878
+Matias Z: todos los idiomas, con lo cual podemos intentar ataques en otro idioma.
+
+
+837
+01:40:21.408 --> 01:40:23.838
+Matias Z: Esto increíblemente sigue funcionando.
+
+
+838
+01:40:26.778 --> 01:40:33.678
+Matias Z: Entonces, una vez más, y para avanzar, Garack
+
+
+839
+01:40:34.258 --> 01:40:37.868
+Matias Z: hace un análisis a lo ancho en
+
+
+840
+01:40:38.588 --> 01:40:41.398
+Matias Z: Pairid hace un análisis en profundidad.
+
+
+841
+01:40:42.148 --> 01:40:44.828
+Matias Z: Por eso es que vamos a utilizar los 2
+
+
+842
+01:40:51.608 --> 01:40:53.967
+Matias Z: Okay. Acá Sí, hay algunas cosas interesantes.
+
+
+843
+01:40:54.508 --> 01:40:57.778
+Matias Z: No solamente tenemos la posibilidad de
+
+
+844
+01:40:58.148 --> 01:41:06.167
+Matias Z: evaluar las respuestas de la gente, sino que también podríamos apuntar a objetivos
+
+
+845
+01:41:06.708 --> 01:41:09.928
+Matias Z: que son componentes internos al sistema genético.
+
+
+846
+01:41:10.118 --> 01:41:15.168
+Matias Z: O sea, podríamos apuntar a herramientas, habilidades. Mc sí,
+
+
+847
+01:41:16.948 --> 01:41:22.988
+Matias Z: Además, fired implementa la posibilidad de ataques multimodales.
+
+
+848
+01:41:23.218 --> 01:41:28.498
+Matias Z: Por ejemplo, podemos hacer ataques de audio, ataques con imágenes.
+
+
+849
+01:41:35.348 --> 01:41:37.298
+Matias Z: Eso es algo que ahora no tiene
+
+
+850
+01:41:41.178 --> 01:41:44.618
+Matias Z: bueno y acá. Finalmente, lo que me interesaba es cómo se complementa
+
+
+851
+01:41:50.808 --> 01:42:10.398
+Matias Z: y un poco también. Cuando se utiliza cada 1 en general, tenemos 2 momentos para utilizar las cosas. Una de ellas es offline. Como les decía, estos ataques tardan mucho tiempo, entonces normalmente se pueden disparar, por ejemplo durante la noche, cuando tenemos algún Gris Candy Candy que queremos evaluar.
+
+
+852
+01:42:10.678 --> 01:42:14.528
+Matias Z: Pero también se puede correr online garay. Tiene una
+
+
+853
+01:42:14.838 --> 01:42:20.367
+Matias Z: alternativa que es correr online para ir midiendo algunas métricas.
+
+
+854
+01:42:21.258 --> 01:42:23.997
+Matias Z: Nosotros, en este caso, lo vamos a acordar offline
+
+
+855
+01:42:24.358 --> 01:42:33.308
+Matias Z: como para cubrir la capa 1. Después vamos a ver cómo se puede modificar la configuración para correr online. Algunos de estos experimentos.
+
+
+856
+01:42:35.488 --> 01:42:41.587
+Matias Z: y lo más interesante es que los casos que encontramos normalmente
+
+
+857
+01:42:42.028 --> 01:42:53.538
+Matias Z: se persisten como trazas en Landful. Y recuerden que ahí empieza a funcionar la famosa Flywall, que es la posibilidad de extraerlos como nuevos casos de evaluaciones
+
+
+858
+01:42:54.178 --> 01:42:57.948
+Matias Z: para las próximas iteraciones de la gente.
+
+
+859
+01:42:59.478 --> 01:43:00.418
+Matias Z: Okay.
+
+
+860
+01:43:10.108 --> 01:43:10.918
+Matias Z: genial.
+
+
+861
+01:43:11.228 --> 01:43:16.038
+Matias Z: Si tuviera que solamente mirar 2 slides.
+
+
+862
+01:43:16.208 --> 01:43:19.857
+Matias Z: la 46, y la 47 son las que más me interesan
+
+
+863
+01:43:19.998 --> 01:43:22.148
+Matias Z: es cuándo usar cada 1.
+
+
+864
+01:43:22.488 --> 01:43:32.207
+Matias Z: Igualmente lo vamos a repetir cuando vemos el time no será un problema un poco. Quería terminar de presentar la idea de qué es Reding?
+
+
+865
+01:43:32.368 --> 01:43:33.188
+Matias Z: Sí,
+
+
+866
+01:43:36.708 --> 01:43:40.008
+Matias Z: hasta acá alguna duda. Algún comentario.
+
+
+867
+01:43:42.478 --> 01:43:55.567
+Diego Mihanovich: Entonces, por por lo que entendí garay, es como si fuera un montón de preguntas sueltas. Y vemos qué es lo que dice Y Y y Phai sería más como una conversación que va tratando de de de buscar una respuesta. No sería como una conversación que tiene.
+
+
+868
+01:43:56.498 --> 01:43:57.638
+Matias Z: Efectivamente.
+
+
+869
+01:43:57.848 --> 01:43:59.298
+Matias Z: Entendiste.
+
+
+870
+01:43:59.638 --> 01:44:00.278
+Diego Mihanovich: Está bien.
+
+
+871
+01:44:11.038 --> 01:44:12.407
+Matias Z: Pregunten tranquili.
+
+
+872
+01:44:22.948 --> 01:44:25.428
+Matias Z: Bueno, no hay preguntas.
+
+
+873
+01:44:28.408 --> 01:44:31.647
+Matias Z: Los escucho mientras cambio de Slides por un segundo.
+
+
+874
+01:44:35.318 --> 01:44:42.668
+Matias Z: ¿alguien conoce nemo warres? ¿alguien tiene implementado sus rails en sus proyectos?
+
+
+875
+01:44:42.868 --> 01:44:44.798
+Matias Z: ¿qué Framework utilizan?
+
+
+876
+01:44:47.188 --> 01:44:51.327
+Matias Z: ¿alguien tiene implementado controles de algún tipo en sus proyectos.
+
+
+877
+01:45:02.638 --> 01:45:05.978
+Alejandro Declerk: No, nadie va a decir que no, porque lo vamos a ir a atacar si dice que no.
+
+
+878
+01:45:27.298 --> 01:45:30.838
+Matias Z: A ver reformuelo la pregunta: ¿Alguien tiene un agente de producción?
+
+
+879
+01:45:32.678 --> 01:45:34.067
+Matias Z: Déjeme empezar por ahí.
+
+
+880
+01:45:47.738 --> 01:45:48.958
+Gabriel Colloca: Parece que no. Mati.
+
+
+881
+01:45:53.238 --> 01:45:54.308
+Matias Z: Bueno.
+
+
+882
+01:46:01.578 --> 01:46:06.258
+Matias Z: les quería mostrar esto, la que era en
+
+
+883
+01:46:06.538 --> 01:46:15.437
+Matias Z: mientras tanto, otra pregunta: ¿alguien tiene planeado lanzar alguna gente a
+
+
+884
+01:46:17.628 --> 01:46:20.628
+Matias Z: Salvaje Oeste en el corto plazo.
+
+
+885
+01:46:21.188 --> 01:46:24.128
+Gabriel Colloca: Yo tenía. Yo tenía planeado. Mati, pero me sacaste las ganas.
+
+
+886
+01:46:26.448 --> 01:46:27.818
+Matias Z: Me estás matando.
+
+
+887
+01:46:29.218 --> 01:46:30.998
+Sebastian Langer: Montón más de un montón, un.
+
+
+888
+01:46:30.998 --> 01:46:32.757
+Gabriel Colloca: Con estas últimas 2 clases.
+
+
+889
+01:46:33.388 --> 01:46:36.008
+Matias Z: No, no me están matando. No es la idea. Al contrario.
+
+
+890
+01:46:36.008 --> 01:46:36.538
+Gabriel Colloca: A o.
+
+
+891
+01:46:36.538 --> 01:46:39.928
+Matias Z: Contame un poquito el caso y y.
+
+
+892
+01:46:39.928 --> 01:46:46.638
+Gabriel Colloca: No, no, no, no fue el chiste? Sí, no, no obvio para un para varios.
+
+
+893
+01:46:47.838 --> 01:46:51.117
+Gabriel Colloca: Por eso parte de de de hacer el curso. No.
+
+
+894
+01:46:55.438 --> 01:47:10.767
+Sebastian Langer: Nosotros tenemos como Yol te había contado Matie. Tenemos comprado redes a Tope Phife. Hay. Creo que ahí se usa nemo barrils y hay un montón de elementos que todavía no conocemos muy bien de la plataforma.
+
+
+895
+01:47:10.838 --> 01:47:15.517
+Sebastian Langer: De hecho, no habíamos po trabajado con agentes en profundidad. Tenemos
+
+
+896
+01:47:15.628 --> 01:47:32.197
+Sebastian Langer: 1 que hace un ranker en digo con con en un rag en elastic que que bueno, que fue como el único que que que nos dejaron hacer. Pero la verdad es que estábamos esperando a tener una cantidad de elementos.
+
+
+897
+01:47:32.388 --> 01:47:52.078
+Sebastian Langer: porque, bueno, digo, No, no, no queríamos escalar ni hacer este ni ni hacer nada. De hecho, algunas de las cosas que estamos viendo con con Lean que todavía ni las pudimos hablar de esta plataforma. Me parece que red Hattopefly, implementa nimo Gabriels
+
+
+898
+01:47:52.148 --> 01:47:54.658
+Sebastian Langer: y tendríamos la posibilidad de hacer algo ahí.
+
+
+899
+01:47:54.738 --> 01:48:14.668
+Sebastian Langer: Pero bueno, digo, tampoco sé muy bien qué es lo que van a querer ellos hacer. Estamos estudiándolo, no, pero pero sí nos parece que que todo lo que nos contaste todo lo que aprendimos en este curso nos da que pensar, y también es importante hacer un filtro y ponerse metas
+
+
+900
+01:48:14.878 --> 01:48:17.087
+Sebastian Langer: co y prioridad, prioridades.
+
+
+901
+01:48:17.948 --> 01:48:18.688
+Gabriel Colloca: Se va.
+
+
+902
+01:48:18.688 --> 01:48:19.417
+Sebastian Langer: Ni siquiera la prioridad.
+
+
+903
+01:48:19.418 --> 01:48:23.007
+Gabriel Colloca: Te va. Estoy evaluando lo de Openseave. Después te te escribo.
+
+
+904
+01:48:23.458 --> 01:48:35.418
+Sebastian Langer: Dale. Yo estuve E el el día que la la semana pasada que estuve en I B. M. Allá era la Co, la mitad del evento era o P, C, I, Y la otra mitad era Watson.
+
+
+905
+01:48:35.868 --> 01:48:39.628
+Sebastian Langer: que es como como.
+
+
+906
+01:48:39.978 --> 01:48:40.957
+Gabriel Colloca: Sí, lo conozco. Lo creo.
+
+
+907
+01:48:41.098 --> 01:48:47.538
+Sebastian Langer: Bueno, esta que tiene una parte de governance, que es si quieres escribirme un mail.
+
+
+908
+01:48:47.538 --> 01:48:48.318
+Gabriel Colloca: Tales.
+
+
+909
+01:48:48.668 --> 01:48:50.798
+Sebastian Langer: Y después nos pasamos al Whatsapp lo que quiera.
+
+
+910
+01:48:50.798 --> 01:48:51.518
+Gabriel Colloca: Dale.
+
+
+911
+01:49:02.148 --> 01:49:14.147
+Matias Z: Algo. Había leído hacer sí de de del uso de nemo, barber y sin open shift. Y
+
+
+912
+01:49:14.248 --> 01:49:15.798
+Matias Z: bueno, ahora que lo mencionas.
+
+
+913
+01:49:16.448 --> 01:49:20.217
+Matias Z: Si te sirve de algo, si te está confirmado, está en la documentación.
+
+
+914
+01:49:20.498 --> 01:49:25.668
+Matias Z: Así que si ya tienen comprado eso, bueno, felicitaciones.
+
+
+915
+01:49:26.968 --> 01:49:41.978
+Sebastian Langer: No sería imposible, no si no, si si si que un banco o una empresa muy, muy grande, igual no es para desalentarse. Nosotros estuvimos así durante 3 años y hicimos igual un montón de cosas, pero pero si quieres hacer agente sin manejar
+
+
+916
+01:49:42.408 --> 01:49:48.997
+Sebastian Langer: lo que nos enseñaste. En este curso, no queda otra que que tener herramientas
+
+
+917
+01:49:49.268 --> 01:49:53.758
+Sebastian Langer: profesionales. Por ejemplo, todas las métricas que vimos aquella vez
+
+
+918
+01:49:53.908 --> 01:50:05.488
+Sebastian Langer: todo eso, la única manera de de de hacer un traqueo de todas esas cuestiones es tener algo. Como, no sé,
+
+
+919
+01:50:05.718 --> 01:50:16.998
+Sebastian Langer: Whatson X governance se me ocurre o una herramienta. Así que que te permita industrializar el proceso, porque es demasiado.
+
+
+920
+01:50:17.688 --> 01:50:22.747
+Sebastian Langer: De hecho, Whatson, X Orchestrade te permite hacer agentes
+
+
+921
+01:50:22.908 --> 01:50:32.868
+Sebastian Langer: de que directamente l los diseñas con una I D, Y también puedes hacer tus propios agentes con bot, que es como una especie de de
+
+
+922
+01:50:32.878 --> 01:50:46.897
+Sebastian Langer: Cloud Code, o algo Así que está integrado con con toda la plataforma géntica de I u B, M: Pero bueno, no es para matarse. Se puede hacer de todas las maneras. Creo que lo lo que está bueno de lo que nos enseñaste que nos da como la base.
+
+
+923
+01:50:47.188 --> 01:50:53.928
+Sebastian Langer: Y por ahí, si yo tengo que decir que todavía hay algo que no me queda súper claro son las prioridades
+
+
+924
+01:50:54.118 --> 01:51:06.728
+Sebastian Langer: de cada 1 de los tópicos que vimos, es decir, si tuviera que elegir de de de de todo lo que nos diste para seguridad que ¿cuál es la prioridad? Bueno, la verdad que no, Yo no lo tengo súper claro, me parece que vamos a tener que usar el sentido común.
+
+
+925
+01:51:06.798 --> 01:51:18.698
+Sebastian Langer: Y y lo mismo para cada 1 de los temas, las métricas. Y cuando llegamos a ese punto. Tú lo dejaste bastante claro, creo. Pero por ahí en las otras va a haber que mirar bien el material y reflexionar de otros.
+
+
+926
+01:51:18.698 --> 01:51:27.728
+Matias Z: Ha hay una zona de Playbook como para seguir pasos sobre como implementar esto.
+
+
+927
+01:51:28.138 --> 01:51:33.308
+Sebastian Langer: Esos son cosas que ya compartiste o que podrías compartir o.
+
+
+928
+01:51:33.308 --> 01:51:35.928
+Matias Z: Podría Sí, podría compartirlo? Sí. Sí. Sí.
+
+
+929
+01:51:35.928 --> 01:51:42.007
+Sebastian Langer: La verdad, que sería muy útil, sobre todo teniendo en cuenta que ninguno de nosotros tiene todo el tourkid, ni tampoco.
+
+
+930
+01:51:42.008 --> 01:51:42.368
+Matias Z: Claro.
+
+
+931
+01:51:42.368 --> 01:51:44.558
+Sebastian Langer: Estar haciendo todo junto. No.
+
+
+932
+01:51:45.088 --> 01:51:45.608
+Matias Z: El a.
+
+
+933
+01:51:45.608 --> 01:51:48.807
+Sebastian Langer: Re lindo. Si lo puedes hacer, te lo agradecería Un montón.
+
+
+934
+01:51:48.808 --> 01:51:49.458
+Matias Z: Verdad que.
+
+
+935
+01:51:49.458 --> 01:51:51.688
+Sebastian Langer: Del estrés que tengo.
+
+
+936
+01:51:51.708 --> 01:51:53.497
+Matias Z: Como todos, igual.
+
+
+937
+01:51:53.498 --> 01:51:59.477
+Sebastian Langer: Pero ese es el fin de año. Estamos reventados, No viste ni interactúe. La primera vez que interactúa en todas las 2 clases.
+
+
+938
+01:51:59.958 --> 01:52:03.078
+Matias Z: Creo que sos el que más interactuó
+
+
+939
+01:52:03.438 --> 01:52:08.218
+Matias Z: este, le le pusiste alegría al curso. Escucha, no te noto
+
+
+940
+01:52:08.418 --> 01:52:15.148
+Matias Z: muy enfocado en en las soluciones de I, B, M: Creo que es un poco lo mismo que me pasó a mí con los G, P,
+
+
+941
+01:52:17.218 --> 01:52:22.827
+Matias Z: Yo creo que el Playbook va a depender bastante de de de cuál sea la infla que vas a utilizar.
+
+
+942
+01:52:22.828 --> 01:52:35.578
+Sebastian Langer: Sí, pero pero yo tengo, Creo que todos podemos tener la capacidad de abstraer la infra de las enseñanzas, o sea que a mí, si me hablas en sí, sí pi y me das una priorización que que estoy seguro que la puedo transpolar.
+
+
+943
+01:52:35.848 --> 01:52:41.247
+Sebastian Langer: Así que el lenguaje si sipí y no pasa nada, Creo que.
+
+
+944
+01:52:41.248 --> 01:52:54.698
+Matias Z: De de hecho, son Skills para para Claudio. De nuevo el las etapas de diseño, este probablemente las hagas con algún compañero Ahí hay. Así que no.
+
+
+945
+01:52:54.988 --> 01:53:00.488
+Matias Z: no te preocupes. Están esos procesos de desarrollo. El ciclo de desarrollo está.
+
+
+946
+01:53:01.928 --> 01:53:02.298
+Sebastian Langer: Bueno.
+
+
+947
+01:53:03.298 --> 01:53:06.667
+Matias Z: Des después esas.
+
+
+948
+01:53:07.088 --> 01:53:09.277
+Sebastian Langer: Cuántas clases quedan? Mati.
+
+
+949
+01:53:09.758 --> 01:53:11.608
+Matias Z: Seis. Si no me equivoco.
+
+
+950
+01:53:11.608 --> 01:53:14.027
+Sebastian Langer: que, bueno, pensé que quedaba menos.
+
+
+951
+01:53:14.028 --> 01:53:17.237
+Matias Z: Sí que quería dedicarle, te diría que
+
+
+952
+01:53:18.008 --> 01:53:23.548
+Matias Z: gran parte de esas 6 clases a seguridad y gobernanza, si les parece bien nos enfocamos en
+
+
+953
+01:53:24.048 --> 01:53:29.318
+Matias Z: en industria bancaria y si algún otro tiene interés en otra industria, memoriza.
+
+
+954
+01:53:29.318 --> 01:53:37.998
+Sebastian Langer: Ya vas a recibir más alumnos. Un un capo de ahí de Galicia. Me pidió el el programa y le pasé buenos comentarios. Así que te va a venir
+
+
+955
+01:53:38.138 --> 01:53:40.238
+Sebastian Langer: unos cuantos, seguro. Así que.
+
+
+956
+01:53:40.238 --> 01:53:41.048
+Matias Z: Desde luego.
+
+
+957
+01:53:41.228 --> 01:53:44.967
+Sebastian Langer: Te hay por lo menos 2 o 3 personas que te van a venir a ver, seguro. Así que, bueno.
+
+
+958
+01:53:45.648 --> 01:53:56.538
+Matias Z: Genial. Genial! Yo creo que seguridad, gobernanza deberían, bueno, debería ser un curso separado. Son lo pro lo propuse. No, no tuvimos la oportunidad este año, pero va a salir
+
+
+959
+01:53:56.658 --> 01:53:58.798
+Matias Z: en así que.
+
+
+960
+01:53:58.798 --> 01:54:15.767
+Sebastian Langer: Que me parece que si hoy lo ofreces, yo no sé si lo puede ahorrar mucha gente, porque por por no por una cuestión de que no sea interesante, sino por una cuestión de que toda la gente que vayas a recibir ahí le van a faltar 300: 55 000 000 de cosas que son las que hacen el curso
+
+
+961
+01:54:16.448 --> 01:54:19.418
+Sebastian Langer: indefectiblemente indefectiblemente tenés que nivelar.
+
+
+962
+01:54:19.418 --> 01:54:21.368
+Matias Z: Miércoles. Te entiendo. Te entiendo.
+
+
+963
+01:54:21.738 --> 01:54:28.417
+Matias Z: Okay, Buen consejo. ¿hay Comisión. Sí, Sí, sí, definitivamente. ¿quién preguntaba Juan
+
+
+964
+01:54:30.608 --> 01:54:38.668
+Matias Z: el 50 por 100 para el segundo curso. Si venir con 2 amigos, este huele.
+
+
+965
+01:54:39.628 --> 01:54:45.117
+Matias Z: Mhm Escucha, No es un chiste, Quedó grabado Y.
+
+
+966
+01:54:45.118 --> 01:54:47.717
+Sebastian Langer: Y me quedé a.
+
+
+967
+01:54:47.718 --> 01:54:48.817
+Matias Z: No sé.
+
+
+968
+01:54:49.518 --> 01:54:50.637
+Alejandro Declerk: Es difícil.
+
+
+969
+01:54:50.638 --> 01:54:55.868
+Juan Franco Echeverria: La representación de la de la universidad. Sí.
+
+
+970
+01:54:56.178 --> 01:54:59.907
+Sebastian Langer: Con la cantidad de laburos que nos estás tirando con el cursito. Este.
+
+
+971
+01:54:59.908 --> 01:55:00.408
+Juan Franco Echeverria: Es que.
+
+
+972
+01:55:00.408 --> 01:55:04.857
+Sebastian Langer: Yo no no sé si tengo ganas de hacer un curso inmediatamente después. Así que tranquilo.
+
+
+973
+01:55:04.858 --> 01:55:05.338
+Juan Franco Echeverria: Mhm.
+
+
+974
+01:55:05.338 --> 01:55:11.718
+Matias Z: De la misma. No saben lo que laburé cambiaron tanto las cosas desde que empezamos. Bueno, perdón, vamos a.
+
+
+975
+01:55:13.358 --> 01:55:15.578
+Matias Z: No te quería mostrar.
+
+
+976
+01:55:18.338 --> 01:55:28.198
+Matias Z: Vamos a hablar rápidamente de los controles que vamos a tener que implementar en
+
+
+977
+01:55:29.348 --> 01:55:34.678
+Matias Z: esos controles. Son básicamente War Rails, que pueden ir en diferentes
+
+
+978
+01:55:34.788 --> 01:55:38.928
+Matias Z: puntos en el Worldclow de ejecución en
+
+
+979
+01:55:40.308 --> 01:55:47.088
+Matias Z: les quería contar que, por ejemplo, C. C. P. Ofrece estos wardice como infra
+
+
+980
+01:55:47.538 --> 01:55:53.888
+Matias Z: iba a abrir la consola. Pero no llego por ahí la en la casa. Yo no lo vemos. Además, empezamos a ver otros de los componentes
+
+
+981
+01:55:53.998 --> 01:55:54.968
+Matias Z: En
+
+
+982
+01:55:57.998 --> 01:56:01.558
+Matias Z: lo que trae es el Blackford.
+
+
+983
+01:56:02.868 --> 01:56:08.698
+Matias Z: Es algo llamado modelando No Model armore. Se implementa en
+
+
+984
+01:56:09.178 --> 01:56:23.617
+Matias Z: básicamente con un template, se configura se asocia a un es engateway que es por donde pasa todo el tráfico y en función de la identidad de la gente se aplica o no se aplican este estas estos filtros al día.
+
+
+985
+01:56:23.908 --> 01:56:25.088
+Matias Z: Ahora bien.
+
+
+986
+01:56:28.118 --> 01:56:36.697
+Matias Z: comparado con Nemo Warris, la verdad que modelar More es bastante austero en sus funcionalidades.
+
+
+987
+01:56:38.788 --> 01:56:46.747
+Matias Z: Por eso preferí contarles un poco el estado del arte de los War Rays que lo trae envidia.
+
+
+988
+01:56:47.318 --> 01:56:54.738
+Matias Z: Sí, también estos Open Surf Ti tiene diferentes posibles despliegues.
+
+
+989
+01:56:55.008 --> 01:57:01.828
+Matias Z: El más interesante para mí es el despliegue como un servidor de Wordpress.
+
+
+990
+01:57:02.798 --> 01:57:09.278
+Matias Z: que es un poco la sugerencia que hacen media para cuando desplieguemos a producción.
+
+
+991
+01:57:10.898 --> 01:57:18.348
+Matias Z: O sea, tiene que ser un proceso que esté aislado de la gente principal. Pero además nos da una única fuente de verdad.
+
+
+992
+01:57:18.598 --> 01:57:21.778
+Matias Z: Es interesante. Es una suerte de gateway.
+
+
+993
+01:57:23.228 --> 01:57:29.707
+Matias Z: Entonces quería contaros un poco de Nemo Warrens.
+
+
+994
+01:57:30.448 --> 01:57:38.108
+Matias Z: los demos que tenemos con Nemo Warriors, y después mostrarles cómo mitiga
+
+
+995
+01:57:38.468 --> 01:57:47.227
+Matias Z: corriendo los ataques con y sin Warnders como mitiga como reduce las métricas de rating más importantes
+
+
+996
+01:57:48.678 --> 01:57:50.537
+Matias Z: que, por cierto, no se las conté.
+
+
+997
+01:57:52.358 --> 01:57:55.468
+Matias Z: Así que veamos lo siguiente: ¿vamos a ser
+
+
+998
+01:58:04.508 --> 01:58:19.338
+Matias Z: esto, simplemente contarles qué tipo de Warriors implementa Nemo Warriors lo vamos a ver muy en detalle. El encuentro que viene. Tenemos los reyes de entrada. Sí, los los filtros. Antes de que
+
+
+999
+01:58:22.238 --> 01:58:24.408
+Matias Z: me parecía.
+
+
+1000
+01:58:24.538 --> 01:58:32.938
+Matias Z: los red de entrada, que son los filtros antes de que llegue al Ldm de la entrada del usuario, la salida que son los que filtran la respuesta.
+
+
+1001
+01:58:33.118 --> 01:58:45.128
+Matias Z: Si esos son medios obligatorios, tenemos Rails para retribal, ahí lo que podemos correr son métricas para nuestros raps.
+
+
+1002
+01:58:45.358 --> 01:58:47.187
+Matias Z: Sí, Sucediól Rays.
+
+
+1003
+01:58:47.488 --> 01:58:54.048
+Matias Z: Tenemos existir un Rails que están relacionados con todo lo que es ejecución de herramientas tools.
+
+
+1004
+01:58:55.118 --> 01:59:05.548
+Matias Z: Y como interesante de de Nemo Warrens, es el dialow Race, que tiene la característica de que
+
+
+1005
+01:59:06.788 --> 01:59:11.168
+Matias Z: de alguna manera puede verificar
+
+
+1006
+01:59:11.358 --> 01:59:21.847
+Matias Z: que la conversación sigue determinó redeterminado flujo dentro de una máquina de Estados que vamos a representar con un lenguaje de programación
+
+
+1007
+01:59:22.488 --> 01:59:25.538
+Matias Z: que ellos utilizan. Se llama Co. Lan.
+
+
+1008
+01:59:25.748 --> 01:59:31.297
+Matias Z: Entonces, lo que tiene interesantes es que los rates son programables, sí,
+
+
+1009
+01:59:31.988 --> 01:59:38.148
+Matias Z: sin tocar el código fuente de nuestra gente. Por supuesto, acá eso no hacemos callbacks como implementábamos antes.
+
+
+1010
+01:59:38.538 --> 01:59:48.338
+Matias Z: La idea es que la gente queda como está y nemo Roiz, lo que hace es envolver a la gente con estos este con estas diferentes redes.
+
+
+1011
+01:59:48.638 --> 01:59:55.127
+Matias Z: En el Además de esto, por supuesto, se pueden crear Rails Cartons
+
+
+1012
+01:59:55.318 --> 01:59:59.867
+Matias Z: se pueden encadenar. Se pueden rutear a diferentes modelos.
+
+
+1013
+02:00:00.508 --> 02:00:08.347
+Matias Z: Simplemente es una introducción, pero sepan que hoy es medio del estado del arte en términos de implementar barreras.
+
+
+1014
+02:00:13.738 --> 02:00:21.608
+Matias Z: y lo vamos a ver en el encuentro que viene, porque hoy me gustaría cuánto tiempo tengo 2 min.
+
+
+1015
+02:00:21.868 --> 02:00:23.238
+Matias Z: Fantástico.
+
+
+1016
+02:00:26.238 --> 02:00:39.448
+Matias Z: Les recomiendo la que era la que la tiene está. Ya hemos hablado de esto. Tiene estos ejercicios. Cada 1 se asocia con el modelo maestro. Son ejercicios de cápsula flag. Tienen varios niveles. Recuerden.
+
+
+1017
+02:00:39.798 --> 02:00:43.528
+Matias Z: van a poder jugar con todas las técnicas posibles.
+
+
+1018
+02:00:43.698 --> 02:00:52.268
+Matias Z: Y lo interesante, una vez más, creo que les había contado es que ingresando a alguno de los ejercicios.
+
+
+1019
+02:00:53.258 --> 02:00:58.678
+Matias Z: lo que tienen allá a la izquierda es una descripción de cual es el desafío
+
+
+1020
+02:00:58.908 --> 02:01:05.268
+Matias Z: y apretando el sillito de preguntas, van a encontrar tipos de ataques, objetivos, tips.
+
+
+1021
+02:01:05.378 --> 02:01:19.398
+Matias Z: ejemplos reales y que seguir leyendo para entender esos objetivos. Lo que no les había contado. Creo es que en en 1 de los repositorios que tengo esto parte de otro seminario que
+
+
+1022
+02:01:19.498 --> 02:01:28.218
+Matias Z: que doy van a encontrar las soluciones. Básicamente, la idea es que
+
+
+1023
+02:01:28.908 --> 02:01:41.187
+Matias Z: un poco vayan pensando, Vayan diciendo: Entiendan el objetivo. Entiendan cuáles son las técnicas que se utilizaron. Sí, y finalmente los Proms que lograron el objetivo
+
+
+1024
+02:01:41.698 --> 02:01:47.087
+Matias Z: de extraer, ex filtrar a lograr el shalver, etcétera.
+
+
+1025
+02:01:47.268 --> 02:01:57.377
+Matias Z: Está en un Entonces este sí, esto es abierto. Esto es público, Así que les paso el link directamente.
+
+
+1026
+02:01:58.368 --> 02:02:08.657
+Matias Z: Porque la tierra de nuevo, porque la verdad que jugar con esto un poco nos da un poco de idea de efectivamente, ¿qué significa cada cosa? Sí, sin tener como hermanos muy técnicos
+
+
+1027
+02:02:09.418 --> 02:02:14.777
+Matias Z: en una vez más, antes de que se vayan.
+
+
+1028
+02:02:15.348 --> 02:02:16.928
+Matias Z: Tengo 2 cosas
+
+
+1029
+02:02:21.748 --> 02:02:26.928
+Matias Z: en vamos abajo.
+
+
+1030
+02:02:30.578 --> 02:02:31.568
+Matias Z: Bien.
+
+
+1031
+02:02:32.428 --> 02:02:48.227
+Matias Z: vamos a continuar igual de todo esto que estoy mencionando. Va a ser el comienzo de la clase que viene. No se preocupen. Esto es importante. Esto es importante. Digo, las métricas de Red Twinning no son las mismas que las que utilizamos en las horas, evaluaciones, hay métricas específicas
+
+
+1032
+02:02:48.228 --> 02:02:53.178
+Matias Z: y hay una estadística específica también que tiene que ver con esta
+
+
+1033
+02:02:53.658 --> 02:02:57.827
+Matias Z: tolerancia un poquito más rigurosa que tenemos en el
+
+
+1034
+02:02:59.618 --> 02:03:03.328
+Matias Z: fundamentalmente tenemos la tasa de éxitos
+
+
+1035
+02:03:04.188 --> 02:03:10.368
+Matias Z: a S. R. Esta es la más conocida Attack Success Raid a un
+
+
+1036
+02:03:11.168 --> 02:03:16.248
+Matias Z: pero también vamos a encontrar otras que tal vez no sean tan
+
+
+1037
+02:03:16.958 --> 02:03:25.797
+Matias Z: fáciles de interpretar solo por el nombre. Van a ver celeridad, cobertura costo por éxito y taza de bypass.
+
+
+1038
+02:03:26.218 --> 02:03:29.628
+Matias Z: Estas las vamos a ver todas y dónde vamos a ver
+
+
+1039
+02:03:30.528 --> 02:03:38.168
+Matias Z: después. Les cuento un poquito de qué se trata esto? Para lograr cierto nivel de confianza necesitamos tener una cantidad de corridas. ¿sí? Después vemos de gritar
+
+
+1040
+02:03:40.518 --> 02:03:44.137
+Matias Z: sobre métricas y evaluaciones. Recién estamos empezando. Así que no se preocupen.
+
+
+1041
+02:03:47.058 --> 02:03:58.287
+Matias Z: ¿dónde vamos a ver entonces el resultado? Bueno, se acuerdan que cuando corríamos nuestras evaluaciones con los Plugins de Plankfur, asociados a diferentes marcos.
+
+
+1042
+02:03:58.518 --> 02:04:06.308
+Matias Z: Lo que obteníamos esta es la instalación local de Prodfoo. Recuerdan esto más o menos
+
+
+1043
+02:04:07.778 --> 02:04:16.547
+Matias Z: Frankfurt lo que hacía era mediante plugins automatizar evaluaciones relacionadas con los marcos que habíamos estudiado. Sí, bien.
+
+
+1044
+02:04:16.688 --> 02:04:21.928
+Matias Z: con un dedito sigo esto es
+
+
+1045
+02:04:22.128 --> 02:04:29.868
+Matias Z: básicamente el Dashboard de Prontful en New Latino. Ahora bien, hice unas corridas
+
+
+1046
+02:04:30.388 --> 02:04:36.558
+Matias Z: de Garack y de Fairy. Pequeñas experimentos pequeños porque tardan mucho
+
+
+1047
+02:04:37.278 --> 02:04:42.828
+Matias Z: y un poco. Lo que les quería contar es que es muy sencillo integrar Langer Fieles
+
+
+1048
+02:04:43.128 --> 02:04:50.498
+Matias Z: para observar los resultados de utilizar o no utilizar verbrays
+
+
+1049
+02:04:51.028 --> 02:04:53.848
+Matias Z: y los ataques de disparos de garay y de Paired.
+
+
+1050
+02:04:59.298 --> 02:05:02.547
+Matias Z: Mi perro está absolutamente loco.
+
+
+1051
+02:05:03.228 --> 02:05:05.998
+Matias Z: Tal me está ladrando en el oído del futuro. Ahora.
+
+
+1052
+02:05:06.438 --> 02:05:14.697
+Matias Z: esto se lo voy a pasar para que no miren el talle, pero simplemente lo que vemos acá es una de las métricas que les comenté. At Tack, Sacsas Rade
+
+
+1053
+02:05:15.218 --> 02:05:18.467
+Matias Z: sin y con garways. Sí,
+
+
+1054
+02:05:18.978 --> 02:05:36.078
+Matias Z: Lo que podemos verificar acá es que efectivamente, con garras se reduce drásticamente, ahora no baja a 0. Y vamos a ver por qué no baja a 0. Vamos a ver los puntos ciegos de estos carrales y por qué necesitamos otro tipo de
+
+
+1055
+02:05:37.018 --> 02:05:44.067
+Matias Z: de defensas de controles de mecanismos de autorización. Y ahí vamos a entrar en gobernanza y en Polist.
+
+
+1056
+02:05:52.128 --> 02:05:59.688
+Matias Z: Bien, este es el Dashboard, que les quería. Mostrar Trabajé mucho en esto al final tanto trabajo para mostrárselo en 2 s
+
+
+1057
+02:06:00.218 --> 02:06:08.318
+Matias Z: en pero se los voy a compartir para que lo puedan ver tranquilos, porque, aparte pueden, por ejemplo, en
+
+
+1058
+02:06:09.018 --> 02:06:27.877
+Matias Z: encontrar por ataque, cuáles son los más exitosos sin y con Garys. Fíjese que hay un ataque de Front Food. Es de de Gold High Jolkin que incluso garden, no pudimos frenarlo nunca. Sí, eso se resuelve de otra manera.
+
+
+1059
+02:06:29.418 --> 02:06:35.238
+Matias Z: Bueno, y así, entonces
+
+
+1060
+02:06:35.938 --> 02:06:42.757
+Matias Z: la idea era que este material, por supuesto, no iba a entrar en una charla de 2 h. Hicimos una introducción
+
+
+1061
+02:06:43.248 --> 02:06:44.608
+Matias Z: rectiming.
+
+
+1062
+02:06:45.618 --> 02:06:53.527
+Matias Z: Espero que se haya quedado como la noción de que es Retwinning. Básicamente termina de construir la capa 1
+
+
+1063
+02:06:56.218 --> 02:06:58.127
+Matias Z: antes de que se vayan.
+
+
+1064
+02:06:59.918 --> 02:07:02.168
+Matias Z: Terminamos de construir la capa 1.
+
+
+1065
+02:07:02.558 --> 02:07:03.508
+Matias Z: Sí,
+
+
+1066
+02:07:04.838 --> 02:07:18.218
+Matias Z: vamos a integrar los resultados para que un game nos diga si podemos o no desplegar esto. Pero además, todas las ejecuciones generan trazas. Esas trazas se guardan en la anfieus.
+
+
+1067
+02:07:18.738 --> 02:07:22.398
+Matias Z: Y es por eso que estamos pudiendo ver un dashboard ¿Sí?
+
+
+1068
+02:07:22.688 --> 02:07:30.308
+Matias Z: Y aparte. Lo que podemos hacer con estas pruebas es ir tuneando la configuración de los hardware.
+
+
+1069
+02:07:32.698 --> 02:07:39.378
+Matias Z: Se entiende Ahora, una vez más, Nemo Garnes tiene un skill de Cloud.
+
+
+1070
+02:07:40.208 --> 02:07:43.238
+Matias Z: ¿qué significa esto
+
+
+1071
+02:07:43.888 --> 02:07:55.138
+Matias Z: que todo esto se puede automatizar, o sea, optimizar la configuración de los hardware de nemo. Se puede automatizar en función de cómo van cambiando las métricas.
+
+
+1072
+02:07:57.598 --> 02:08:13.608
+Matias Z: estaríamos empezando a cerrar la capa 1. Empezamos a mirar un poco de capa 2 Recién vamos, por acá. Sean pacientes. Estamos viendo el Packland completo. Vamos a terminar con un ejemplo, desplegando a un agente completo
+
+
+1073
+02:08:13.657 --> 02:08:21.348
+Matias Z: a producción con un pible de Agend ops usando Github Actions
+
+
+1074
+02:08:23.837 --> 02:08:35.847
+Matias Z: para eso. Está. Bueno, entender primero los componentes después ver cómo se automatiza el pible. Y tercero, ver cómo podemos usar estos casos para volver a generar casos de evaluaciones.
+
+
+1075
+02:08:39.407 --> 02:08:44.468
+Matias Z: Bien, un montón de info. De nuevo
+
+
+1076
+02:08:45.198 --> 02:08:51.898
+Matias Z: les interesa tema: seguridad, tema governance. Me imagino que sí. Espero que sí. Ojalá.
+
+
+1077
+02:08:51.898 --> 02:08:52.518
+Carlos Miguez: Mhm.
+
+
+1078
+02:08:53.988 --> 02:08:56.428
+Alejandro Declerk: Sí nuevo interés desbloqueado.
+
+
+1079
+02:08:57.257 --> 02:09:01.927
+Matias Z: Bien, me alegra mucho, porque es de verdad.
+
+
+1080
+02:09:02.267 --> 02:09:04.527
+Matias Z: Estamos necesitando mucha ayuda.
+
+
+1081
+02:09:05.007 --> 02:09:14.267
+Matias Z: En el hay hay hay poco talento, ¿no? Este en esta intersección entre seguridad, gobernanza y agente.
+
+
+1082
+02:09:14.507 --> 02:09:21.517
+Matias Z: Así que nada sepan también que para aquellos que están buscando un cambio, los perfiles
+
+
+1083
+02:09:21.767 --> 02:09:28.867
+Matias Z: de este tipo son super solicitados. Hay un montón de se están empezando a despertar las compañías y están empezando a buscar perfiles específicos.
+
+
+1084
+02:09:29.127 --> 02:09:37.607
+Matias Z: Así que me alegra que que les interesa en el bien 8 y 7
+
+
+1085
+02:09:37.877 --> 02:09:46.057
+Matias Z: liberados me quedo para las charlas, después de las 8 para los que necesiten.
+
+
+1086
+02:09:46.357 --> 02:09:48.027
+Matias Z: Gracias. Francisco.
+
+
+1087
+02:09:48.477 --> 02:09:50.197
+Matias Z: Gracias por no dormirte.
+
+
+1088
+02:09:50.678 --> 02:09:53.767
+Sebastian Langer: Feliz día el bancario para los bancarios.
+
+
+1089
+02:09:53.768 --> 02:09:54.238
+Matias Z: Uy.
+
+
+1090
+02:09:54.468 --> 02:09:55.947
+Sebastian Langer: Que tenga lindo fitness.
+
+
+1091
+02:09:55.948 --> 02:09:57.778
+Francisco Berthet Cosentino: Gracias.
+
+
+1092
+02:09:58.108 --> 02:09:59.118
+Alejandro Declerk: No me aplica, pero.
+
+
+1093
+02:09:59.118 --> 02:10:00.278
+Diego Mihanovich: Gracias por el servicio.
+
+
+1094
+02:10:00.278 --> 02:10:01.648
+Alejandro Declerk: Buen finde. Nos vemos.
+
+
+1095
+02:10:01.648 --> 02:10:03.247
+Sebastian Langer: Un abrazo hasta luego.
+
+
+1096
+02:10:03.257 --> 02:10:03.837
+Alejandro Declerk: Tomatito.
+
+
+1097
+02:10:03.837 --> 02:10:04.407
+Juan Franco Echeverria: La veo.
+
+
+1098
+02:10:04.407 --> 02:10:05.247
+Alejandro Declerk: Chau, chicos.
+
+
+1099
+02:10:05.448 --> 02:10:06.217
+Mariano Mondani: Un fin de.
+
+
+1100
+02:10:06.218 --> 02:10:08.777
+Matias Z: Gracias. Chicos. Estoy acá. Por venir cosas.
+
+
+1101
+02:10:14.157 --> 02:10:26.627
+Carlos Miguez: Matis. Tenés Info también dijiste antes de bancos del vertical salud. A mí me interesa también, o si tenés como compartirme Algún link donde leer algo o algo por el estilo me serviría mucho.
+
+
+1102
+02:10:27.417 --> 02:10:33.477
+Matias Z: Sí, por supuesto, particularmente, qué casos de uso de salud.
+
+
+1103
+02:10:35.268 --> 02:10:38.677
+Carlos Miguez: En principio para agentes de voz.
+
+
+1104
+02:10:39.538 --> 02:10:53.268
+Carlos Miguez: para, bueno, la recepción de de turnos, donde tienes también acceso a todo lo que es el portal de pacientes, estudios, tipos de estudios donde 1 puede llegar también patologías, no Por eso
+
+
+1105
+02:10:53.348 --> 02:11:01.177
+Carlos Miguez: y después, también en cuanto a la viabilidad de de implementar un un sistema genético interno.
+
+
+1106
+02:11:01.577 --> 02:11:05.687
+Carlos Miguez: pero con diferentes skills o perfiles, no
+
+
+1107
+02:11:06.308 --> 02:11:10.398
+Carlos Miguez: para que justamente la parte administrativa no se choque con la Medic.
+
+
+1108
+02:11:10.558 --> 02:11:11.688
+Carlos Miguez: Sí, eso es.
+
+
+1109
+02:11:12.068 --> 02:11:15.777
+Carlos Miguez: Me dio una idea que tengo ahí también, que tengo que terminar de pulir.
+
+
+1110
+02:11:16.398 --> 02:11:23.608
+Matias Z: Sí, Carlos. Tengo estudiado 2 soluciones agendas. Dos vendoch para una prepaga en
+
+
+1111
+02:11:25.748 --> 02:11:31.277
+Matias Z: que hacen Triage en particular, son super complejas las soluciones.
+
+
+1112
+02:11:31.518 --> 02:11:37.368
+Carlos Miguez: Habías hablado. La otra clase que sí que había 2 y que eran hiper complejas y.
+
+
+1113
+02:11:37.708 --> 02:11:41.377
+Matias Z: Y no te compartí. Mandame un mail. Así me me me acuerdo.
+
+
+1114
+02:11:41.438 --> 02:11:42.098
+Carlos Miguez: En el.
+
+
+1115
+02:11:42.648 --> 02:11:46.528
+Matias Z: Arrancaría con el agente interno. Si Si querés este.
+
+
+1116
+02:11:46.818 --> 02:11:47.448
+Carlos Miguez: Okay? Nada.
+
+
+1117
+02:11:48.368 --> 02:11:48.888
+Matias Z: Sí, Sí.
+
+
+1118
+02:11:48.888 --> 02:11:51.167
+Carlos Miguez: La verdad que yo ya me asusté antes de tiempo.
+
+
+1119
+02:11:51.168 --> 02:11:51.578
+Matias Z: ¿por qué?
+
+
+1120
+02:11:51.888 --> 02:11:59.918
+Carlos Miguez: Cuando me puse a hacer pruebas y con un único agente, y y en realidad gran parte la hace Elébenlabs.
+
+
+1121
+02:12:00.038 --> 02:12:04.388
+Carlos Miguez: quise poner una capa, digamos, arriba
+
+
+1122
+02:12:04.598 --> 02:12:14.818
+Carlos Miguez: como para que ilegal las labores por abajo. Y después de ahí un backend. Y y bueno, mucha Bueno, aprendí un montón porque no sabía nada.
+
+
+1123
+02:12:15.248 --> 02:12:30.027
+Carlos Miguez: Y bueno, y me fui. Me la fui dando contra la pared también con un montón de pruebas que hacía. Sí, hice mucho hincapié, y en en los Proms acerca de la seguridad, Pero un montón de todas estas cosas que estamos viendo, acá ni las tuve en cuenta ni las conocía. Me vienen muy.
+
+
+1124
+02:12:30.028 --> 02:12:34.487
+Matias Z: En la paréntesis: nada de seguridad en los productos.
+
+
+1125
+02:12:35.198 --> 02:12:36.538
+Matias Z: Todo afuera no.
+
+
+1126
+02:12:36.538 --> 02:12:49.657
+Carlos Miguez: No, no le pedí pronto para explique cómo implementar seguridad. Y bueno, que esto lo meta dentro de la lógica y dentro de la de la construcción de la gente, no.
+
+
+1127
+02:12:50.338 --> 02:12:51.727
+Matias Z: Perfecto. Perfecto.
+
+
+1128
+02:12:51.838 --> 02:12:57.508
+Matias Z: Bueno, entonces los Skills que te mencioné tal vez te pueden subir dependiendo.
+
+
+1129
+02:12:57.508 --> 02:12:59.817
+Carlos Miguez: Newlor. Sí, Sí, Sí. Sí.
+
+
+1130
+02:12:59.818 --> 02:13:06.907
+Matias Z: Me me asusta bastante que en ese dominio hagas un agente
+
+
+1131
+02:13:07.038 --> 02:13:17.648
+Matias Z: por vos. Este. Son Son varias capas de complejidad pero interesante. Te acordás de lo que vimos el Erenc en en el encuentro pasado.
+
+
+1132
+02:13:17.648 --> 02:13:26.628
+Carlos Miguez: Igual. Se trata un agente de voz y digamos que hoy por hoy, la realidad es que la mayoría de las prepagos también tienen chat bot, digamos, conversacional, digamos.
+
+
+1133
+02:13:26.628 --> 02:13:27.008
+Matias Z: Sí.
+
+
+1134
+02:13:27.008 --> 02:13:27.708
+Carlos Miguez: Texto
+
+
+1135
+02:13:27.838 --> 02:13:35.048
+Carlos Miguez: que ex escalar de texto a vos. Si es todo un tema, pero en definitiva, la información que obtenés es medio de la misma.
+
+
+1136
+02:13:35.148 --> 02:13:53.087
+Carlos Miguez: Y si el chat bot de texto también incluye Ia, digamos como que es la misma exposición, y hoy La verdad es que muchos la están usando. Yo creo que ninguno se detuvo a hackearlos, porque, viendo y considerando todo esto que estamos mirando. Bueno, debe haber para hacer dulce. No
+
+
+1137
+02:13:53.238 --> 02:13:55.758
+Carlos Miguez: qué sé yo.
+
+
+1138
+02:13:56.258 --> 02:14:02.697
+Matias Z: Hay que sí. Lo que sucede con con los canales por voz es que si utilizas algún proveedor
+
+
+1139
+02:14:03.628 --> 02:14:07.638
+Matias Z: y leve Labs, por ejemplo, o o no sé qué estás usando.
+
+
+1140
+02:14:07.638 --> 02:14:08.628
+Carlos Miguez: De los.
+
+
+1141
+02:14:08.858 --> 02:14:16.198
+Matias Z: Hay que ver en qué regiones corren por si los usuarios revelan información sensible que
+
+
+1142
+02:14:17.718 --> 02:14:23.117
+Matias Z: y después las las llamadas las hacen los usuarios o las hace la gente.
+
+
+1143
+02:14:23.778 --> 02:14:26.997
+Carlos Miguez: Las llamadas las hace la gente a través de un sittrank
+
+
+1144
+02:14:27.278 --> 02:14:34.668
+Carlos Miguez: que tiene. I, N, F, R, o N, T, Y ahí ya digamos que
+
+
+1145
+02:14:34.888 --> 02:14:50.238
+Carlos Miguez: va a cumplir el rol, digamos, de un contact Center, básicamente no donde parte de la va a tratar de resolver en principio muy poca de la gente hasta que vaya entrando en confianza y se lo vaya midiendo igual para esto, falta un montón, ¿ Y después.
+
+
+1146
+02:14:50.238 --> 02:14:50.738
+Matias Z: Y.
+
+
+1147
+02:14:50.748 --> 02:14:56.098
+Carlos Miguez: Posibilidad también de transferir con un refer de Zip, trans ahí a a un agente vivo
+
+
+1148
+02:14:56.238 --> 02:15:03.738
+Carlos Miguez: por si se detecta algún tipo de anomalía. ¿o preguntan 2 veces lo mismo? Bueno, varias cosas que que fui.
+
+
+1149
+02:15:04.128 --> 02:15:11.718
+Carlos Miguez: digamos, tratando de de ir descubriendo e investigando para ponerle. Y bueno, todo esto es un puck. De momento.
+
+
+1150
+02:15:13.198 --> 02:15:14.088
+Matias Z: Bien.
+
+
+1151
+02:15:14.088 --> 02:15:26.858
+Carlos Miguez: De implementación ni compromiso, ni nada, porque digamos que es un valor agregado. Me parece que está muy bueno y que tiene que estar. Pero bueno, con todo esto que estamos viendo cada vez. Me estoy asustando más.
+
+
+1152
+02:15:27.228 --> 02:15:31.117
+Matias Z: No es, está bien igual. La idea no es asustar.
+
+
+1153
+02:15:31.888 --> 02:15:34.558
+Carlos Miguez: No, no en el buen sentido, no tomando marcado.
+
+
+1154
+02:15:34.558 --> 02:15:34.977
+Matias Z: Es el.
+
+
+1155
+02:15:34.978 --> 02:15:36.478
+Carlos Miguez: Y ojo con eso.
+
+
+1156
+02:15:36.938 --> 02:15:47.208
+Matias Z: Dimensionar el riesgo si es correcto. Particularmente ese ejemplo que estás dando es complejo. Es súper complejo. La industria es es
+
+
+1157
+02:15:48.148 --> 02:15:50.908
+Matias Z: nada de jodida.
+
+
+1158
+02:15:53.088 --> 02:16:04.448
+Matias Z: Si si te puedo decir algo ya en un segundo, evaluar, hay una pregunta muy común que es By versus Bild en implementaciones energéticas
+
+
+1159
+02:16:04.588 --> 02:16:05.518
+Matias Z: en
+
+
+1160
+02:16:06.998 --> 02:16:13.088
+Matias Z: no te recomendaría, a no ser que tengas un equipo especializado, o sea, si el talento lo tenés en House es una opción.
+
+
+1161
+02:16:13.298 --> 02:16:14.758
+Matias Z: pero hay que mantenerlo.
+
+
+1162
+02:16:14.978 --> 02:16:16.698
+Matias Z: Si no tenéis talento.
+
+
+1163
+02:16:16.698 --> 02:16:17.507
+Carlos Miguez: Con la.
+
+
+1164
+02:16:17.988 --> 02:16:23.847
+Matias Z: Bueno, una opción es comprar es la que te estaría recomendando en este momento.
+
+
+1165
+02:16:24.458 --> 02:16:24.908
+Carlos Miguez: Bien.
+
+
+1166
+02:16:26.518 --> 02:16:27.588
+Matias Z: Esa es la.
+
+
+1167
+02:16:27.588 --> 02:16:33.378
+Carlos Miguez: Son las que hay, Digamos así, autos de box, por decirlo de alguna manera, claro.
+
+
+1168
+02:16:34.098 --> 02:16:36.547
+Matias Z: Claro, y después terminas estudiando para.
+
+
+1169
+02:16:36.948 --> 02:16:37.408
+Carlos Miguez: Sí.
+
+
+1170
+02:16:38.098 --> 02:16:38.588
+Matias Z: Y que.
+
+
+1171
+02:16:38.588 --> 02:16:40.968
+Carlos Miguez: Productos así especializados en salud.
+
+
+1172
+02:16:41.988 --> 02:16:45.018
+Matias Z: Estos 2, que no recuerdo en este momento.
+
+
+1173
+02:16:45.018 --> 02:16:45.578
+Carlos Miguez: Creo que en.
+
+
+1174
+02:16:45.578 --> 02:16:54.258
+Matias Z: Analicemos la prepaga, pero esto es información pública, así que te la puedo compartir sin ningún problema y.
+
+
+1175
+02:16:54.258 --> 02:16:55.608
+Carlos Miguez: Bárbaro. Gracias.
+
+
+1176
+02:16:56.518 --> 02:16:59.178
+Matias Z: Pero me mandas un mail así. Lo recuerdo.
+
+
+1177
+02:16:59.348 --> 02:17:04.668
+Carlos Miguez: Dale dale, Sí, claro, tu cuenta cuál era. Me la Me la recordas por el chat.
+
+
+1178
+02:17:04.978 --> 02:17:08.998
+Matias Z: Sí. Seguro. Dale. Juan Perfecto. Eso.
+
+
+1179
+02:17:10.818 --> 02:17:18.328
+Juan Franco Echeverria: Yo otra pregunta y me retiro nomás, los papers que mostraste al principio. No, ¿Cómo te los pedimos.
+
+
+1180
+02:17:20.568 --> 02:17:25.357
+Matias Z: Trabajo de S: el el deporte.
+
+
+1181
+02:17:25.788 --> 02:17:26.348
+Juan Franco Echeverria: Sí.
+
+
+1182
+02:17:29.778 --> 02:17:32.758
+Matias Z: Figura que le interesó a alguien en.
+
+
+1183
+02:17:32.758 --> 02:17:36.577
+Juan Franco Echeverria: No es que mi problema no es
+
+
+1184
+02:17:36.738 --> 02:17:42.408
+Juan Franco Echeverria: a ver tenés dominio. ¿dónde está claro que esas cosas son prioridades
+
+
+1185
+02:17:42.798 --> 02:17:46.867
+Juan Franco Echeverria: y las necesitan y tener dominios donde
+
+
+1186
+02:17:47.478 --> 02:17:53.638
+Juan Franco Echeverria: vamos a tener que ver cómo hacemos para venderles que son necesarias.
+
+
+1187
+02:17:54.508 --> 02:18:00.157
+Juan Franco Echeverria: porque si no considera necesario incubar para producir el desarrollo. Imagínate que para producir a gente.
+
+
+1188
+02:18:00.418 --> 02:18:05.057
+Matias Z: Y uy amigo. Bueno, te.
+
+
+1189
+02:18:05.058 --> 02:18:08.198
+Juan Franco Echeverria: La mejor de la zona.
+
+
+1190
+02:18:08.198 --> 02:18:09.797
+Matias Z: Honestamente la industria.
+
+
+1191
+02:18:09.798 --> 02:18:14.308
+Carlos Miguez: Industria también, obviamente, no es lo mismo un banco que.
+
+
+1192
+02:18:14.308 --> 02:18:15.367
+Juan Franco Echeverria: Claro, claramente.
+
+
+1193
+02:18:15.368 --> 02:18:17.398
+Carlos Miguez: Médicos, los centros médicos están todos muertos.
+
+
+1194
+02:18:17.398 --> 02:18:29.937
+Juan Franco Echeverria: Esas peleas, o sea, en en una empresa grande, fenómeno en una empresa. Chica. No va a faltar el que diga: el el hijo del director sabe hacer agente con.
+
+
+1195
+02:18:29.938 --> 02:18:32.687
+Matias Z: Sí, Sí, Sí, Sí, Sí.
+
+
+1196
+02:18:32.688 --> 02:18:38.858
+Juan Franco Echeverria: ¿para qué necesitamos todo esto? Es una fortuna, Claro.
+
+
+1197
+02:18:38.858 --> 02:18:43.918
+Matias Z: Claro, claro, claro, bueno, hay una.
+
+
+1198
+02:18:44.038 --> 02:18:45.698
+Matias Z: Hay una frase
+
+
+1199
+02:18:46.198 --> 02:18:54.798
+Matias Z: que que es bastante ilustrativa, que que dice que nuestras infraestructuras genéticas van a ser el eslabón más débil.
+
+
+1200
+02:18:54.938 --> 02:19:06.287
+Matias Z: el y de, digamos, cualquier error que sea crítico, como en el caso de Carlos.
+
+
+1201
+02:19:06.628 --> 02:19:10.958
+Matias Z: Imagínate que la gente de Carlos realiza un diagnóstico médico.
+
+
+1202
+02:19:11.608 --> 02:19:14.258
+Juan Franco Echeverria: No te metes en un quilombo bárbaro.
+
+
+1203
+02:19:15.178 --> 02:19:16.218
+Carlos Miguez: Sí, Sí.
+
+
+1204
+02:19:16.218 --> 02:19:17.248
+Juan Franco Echeverria: Cerrado, etcétera.
+
+
+1205
+02:19:17.248 --> 02:19:19.387
+Carlos Miguez: Le devuelva el estudio de otra información.
+
+
+1206
+02:19:19.388 --> 02:19:21.657
+Juan Franco Echeverria: Te devuelve un estudio equivocado, o sea.
+
+
+1207
+02:19:21.658 --> 02:19:22.248
+Carlos Miguez: Ah.
+
+
+1208
+02:19:23.818 --> 02:19:26.068
+Juan Franco Echeverria: El alto Quilombo te cuesta.
+
+
+1209
+02:19:26.968 --> 02:19:35.788
+Matias Z: La forma sería justamente mostrar un poco lo que les mostraba al principio que era. Quizás creo que lo cerré,
+
+
+1210
+02:19:36.748 --> 02:19:39.867
+Matias Z: pero lo hemos sacado
+
+
+1211
+02:19:41.388 --> 02:19:51.868
+Matias Z: Warner, o sea, una forma es mostrar las las predicciones de las grandes consultoras. No me voy a venir porque lo encontraba fácilmente. Otra manera es
+
+
+1212
+02:19:53.098 --> 02:19:59.648
+Matias Z: en dependiendo de no sé bien cuál es tu industria. ¿cuál es tu caso de uso.
+
+
+1213
+02:20:01.498 --> 02:20:12.628
+Juan Franco Echeverria: No. Yo particularmente suele trabajo en global. Soy arquitecto y justo ahora estoy en un proyecto que está relacionado con con salud. Es un sistema de
+
+
+1214
+02:20:12.738 --> 02:20:15.318
+Juan Franco Echeverria: para hospitales.
+
+
+1215
+02:20:16.098 --> 02:20:23.947
+Juan Franco Echeverria: España en el sistema español, y luego han comprado hace poco y está desarrollando como producto no.
+
+
+1216
+02:20:24.328 --> 02:20:33.468
+Juan Franco Echeverria: pero que todavía está Esta empresa que se está integrando viene con muchos vicios de de su forma de trabajo previa. No.
+
+
+1217
+02:20:33.608 --> 02:20:37.827
+Juan Franco Echeverria: estamos tratando de corregirlo.
+
+
+1218
+02:20:38.158 --> 02:20:39.318
+Juan Franco Echeverria: Y
+
+
+1219
+02:20:40.178 --> 02:20:48.477
+Juan Franco Echeverria: por eso, conociéndolos, me imagino el escenario en donde se oye mirar si quieres hacer un agente tenés que pagar todo esto. Y me van a decirlo
+
+
+1220
+02:20:48.598 --> 02:20:52.908
+Juan Franco Echeverria: ni de casualidad. No hay plata para eso en.
+
+
+1221
+02:20:55.568 --> 02:21:02.298
+Matias Z: Es que yo creo que por ahí el argumento ahí es que es entenderlo como una inversión, ¿no?
+
+
+1222
+02:21:04.258 --> 02:21:13.968
+Matias Z: Más que nada. En realidad, la la información que estás haciendo es cubrirte frente a un incidente, un único incidente que puede terminar con con el.
+
+
+1223
+02:21:13.968 --> 02:21:14.618
+Juan Franco Echeverria: Te.
+
+
+1224
+02:21:15.538 --> 02:21:20.777
+Matias Z: Efectivamente este básicamente es eso. Si si es un
+
+
+1225
+02:21:21.658 --> 02:21:28.888
+Matias Z: si es un negocio crítico o sensible, este un único incidente puede terminar con la compañía. Entonces.
+
+
+1226
+02:21:29.578 --> 02:21:34.768
+Matias Z: si hay una decisión de abrirse al mundo genético, tiene que
+
+
+1227
+02:21:35.388 --> 02:21:41.848
+Matias Z: debería este sabiendo lo que está sucediendo. El escenario es crítico.
+
+
+1228
+02:21:42.498 --> 02:21:43.788
+Matias Z: Este
+
+
+1229
+02:21:44.038 --> 02:21:49.297
+Matias Z: te digo, pues es mi mi como mi especialidad. Yo me muevo en el mundo de la seguridad, y la verdad es es crítico.
+
+
+1230
+02:21:49.568 --> 02:21:58.218
+Matias Z: En se está. Se está adaptando vertiginosamente y nadie entiende del todo.
+
+
+1231
+02:21:59.888 --> 02:22:04.937
+Matias Z: No entienden, pero ni siquiera los riesgos más básicos. Bueno, lo dice el informe. Justamente
+
+
+1232
+02:22:06.938 --> 02:22:10.688
+Matias Z: la forma de venderlo es, si no lo hacen bien, no lo hagan por ahí.
+
+
+1233
+02:22:12.998 --> 02:22:14.677
+Matias Z: No sé, es.
+
+
+1234
+02:22:14.678 --> 02:22:15.358
+Juan Franco Echeverria: Sí.
+
+
+1235
+02:22:15.358 --> 02:22:23.457
+Matias Z: Intelectualmente honesto. Mira, yo te digo, te puedes inmolar diciendo estas cosas, eres. Yo perdí un cliente por esto. Un cliente grande
+
+
+1236
+02:22:23.638 --> 02:22:33.227
+Matias Z: al cual le dije, no, esto no va. Y Y el el directivo ya lo había decidido, básicamente porque tenía
+
+
+1237
+02:22:34.018 --> 02:22:38.658
+Matias Z: cierto capital político para él, no.
+
+
+1238
+02:22:39.088 --> 02:22:43.837
+Matias Z: O sea, desplegar algo agéntico, era fundamental, Sea lo que sea.
+
+
+1239
+02:22:44.338 --> 02:22:46.597
+Juan Franco Echeverria: Sí, sí no importa. Vamos Aquí a la carrerilla.
+
+
+1240
+02:22:46.598 --> 02:22:58.678
+Matias Z: Y cuando les das las no malas noticias, simplemente tratar de ayudar, comunicar directamente es bueno. Gracias.
+
+
+1241
+02:22:58.878 --> 02:23:03.507
+Matias Z: Chao es de golaz directamente.
+
+
+1242
+02:23:03.828 --> 02:23:11.118
+Matias Z: No, no he visto que que se tomen en serio estas cosas todavía. Sin embargo, la industria está a los gritos.
+
+
+1243
+02:23:11.298 --> 02:23:12.478
+Matias Z: con lo cual
+
+
+1244
+02:23:13.188 --> 02:23:18.238
+Matias Z: mi recomendación es, si no lo hacen bien. Si no lo hacen en serio, yo te diría que no lo hagan.
+
+
+1245
+02:23:18.238 --> 02:23:18.878
+Juan Franco Echeverria: Vale.
+
+
+1246
+02:23:19.308 --> 02:23:26.598
+Matias Z: Y el el, digamos, la simetría de ganancia versus pérdidas. Es
+
+
+1247
+02:23:27.188 --> 02:23:30.017
+Matias Z: ese no si si lo consideras como una inversión.
+
+
+1248
+02:23:30.148 --> 02:23:33.897
+Matias Z: El este. El damas aires enorme, viste.
+
+
+1249
+02:23:35.268 --> 02:23:42.768
+Juan Franco Echeverria: El El otro día me puse a jugar con el de banco macro. Viste, banco macro. Tiene un Whatsapp que le das instrucciones
+
+
+1250
+02:23:43.028 --> 02:23:46.158
+Juan Franco Echeverria: por voz incluso y te hace la transferencia y todo.
+
+
+1251
+02:23:46.558 --> 02:23:50.438
+Juan Franco Echeverria: Y en los momentos, el más medio feo.
+
+
+1252
+02:23:50.838 --> 02:23:57.537
+Juan Franco Echeverria: pero nada, ¿ De flujo normal en un momento quede colgadito.
+
+
+1253
+02:23:57.728 --> 02:24:01.318
+Juan Franco Echeverria: o sea que maliciosamente, eso no sé de ahí qué onda.
+
+
+1254
+02:24:01.768 --> 02:24:08.658
+Juan Franco Echeverria: pero, bueno, se supone que deberían tener muchas cosas probadas. Considerando el
+
+
+1255
+02:24:09.908 --> 02:24:11.598
+Juan Franco Echeverria: que eso en un banco y el riesgo.
+
+
+1256
+02:24:12.508 --> 02:24:20.538
+Matias Z: Mhm: No es. No es la la visión que yo tengo de de varios bancos.
+
+
+1257
+02:24:20.758 --> 02:24:23.418
+Matias Z: pero de nuevo, es un poco por desconocimiento.
+
+
+1258
+02:24:23.418 --> 02:24:40.678
+Juan Franco Echeverria: Yo tengo amigos que trabajaban en como es prisma. Lo que era Visa D, y te dice, manejo de bases de datos. Es un asco. Y vos decís, Manejan Manejan información. De no sé cuántos clientes.
+
+
+1259
+02:24:42.508 --> 02:24:45.268
+Juan Franco Echeverria: entonces todos lados cenaban.
+
+
+1260
+02:24:47.388 --> 02:24:49.518
+Matias Z: Sí, Bueno.
+
+
+1261
+02:24:49.518 --> 02:24:51.157
+Gabriel Colloca: Sobre todo apagar la grabación mati.
+
+
+1262
+02:24:51.758 --> 02:24:52.488
+Matias Z: Uy.
+
+
+1263
+02:24:53.188 --> 02:24:53.878
+Gabriel Colloca: Sí.
+
+
+1264
+02:24:54.218 --> 02:24:56.487
+Juan Franco Echeverria: Dejemos hablar mal de gente.
+
+
+1265
+02:24:58.218 --> 02:25:01.207
+Matias Z: Bueno, soy Pablo rogatagliata.
+
+
+1266
+02:25:01.208 --> 02:25:02.088
+Gabriel Colloca: A la.
+
+
+1267
+02:25:02.088 --> 02:25:03.298
+Carlos Miguez: Sí.
+
+
+

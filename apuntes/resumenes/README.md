@@ -1,6 +1,6 @@
 # Resúmenes de clase · Arquitectura de Agentes IA (UTDT, 2.ª edición)
 
-Notas personales de estudio. Cubren las clases 1 a 11 (24/09 al 03/11/2026), dictadas por Matías Zabaljauregui.
+Notas personales de estudio. Cubren las clases 1 a 12 (24/09 al 05/11/2026), dictadas por Matías Zabaljauregui.
 
 **Cómo se armaron.** Cada resumen sale de la transcripción automática que genera Zoom en la grabación de la clase, completada con el material del campus y del repo del curso. La transcripción automática tiene errores de reconocimiento: los pasajes que no se entendieron están marcados "(transcripción dudosa)" o se omitieron. La de la **clase 1** salió casi ilegible, así que ese resumen se apoya sobre todo en `MODULO_1` del repo y lo indica en cada punto.
 
@@ -19,6 +19,7 @@ Notas personales de estudio. Cubren las clases 1 a 11 (24/09 al 03/11/2026), dic
 | 9 | 27/10 | Evals (2): jueces LLM, kappa de Cohen, Ragas, pass@k, pass^k y Wilson | [clase-09.md](clase-09.md) |
 | 10 | 29/10 | Monitoreo en producción: OpenTelemetry, Langfuse, prompts y datasets versionados, gates y alertas | [clase-10.md](clase-10.md) |
 | 11 | 03/11 | Seguridad: modelar amenazas (STRIDE, MAESTRO), nombrarlas (OWASP), ver al adversario (MITRE ATLAS) y gobernar (NIST, ISO) | [clase-11.md](clase-11.md) |
+| 12 | 05/11 | Red teaming de agentes: garak (amplitud) y PyRIT (profundidad) en la capa 1, y un primer vistazo a NeMo Guardrails | [clase-12.md](clase-12.md) |
 
 ## Las ideas que atraviesan el curso
 
@@ -27,6 +28,7 @@ Notas personales de estudio. Cubren las clases 1 a 11 (24/09 al 03/11/2026), dic
 - **La descripción de una tool es parte del código.** El modelo decide por el docstring, el nombre y el esquema (clases 3 y 4).
 - **La seguridad del modelo es probabilística, los guardrails tienen que ser deterministas** (callbacks de ADK, Model Armor, NeMo Guardrails; clase 3).
 - **La seguridad es, en gran parte, una decisión de arquitectura.** Se modela durante el diseño, no al final, y el arquitecto es "el primer responsable de la seguridad" aunque no la audite ni la implemente en detalle (clase 11).
+- **En seguridad no se aprueba por promedio.** En capacidades alcanzan los promedios y los umbrales; en red teaming un solo fallo crítico bloquea el despliegue, y una sola corrida de ataques es una muestra de tamaño uno (clase 12).
 - **El costo es un criterio de diseño.** El routing entre modelos (clase 2), el costo de Deep Research (clase 5) y el de los jueces LLM (clases 8 y 9).
 - **Un número sin n no es evidencia.** Se mide trayectoria y estado final por separado, con varias corridas y un intervalo de confianza (clases 8 y 9).
 - **Evaluar, desplegar, observar y mejorar es un solo ciclo.** Las trazas de producción vuelven como casos de evaluación, y prompts, datasets y experimentos se versionan como artefactos (clases 8 a 10). El mapa está en [La arquitectura completa](../notas/arquitectura-completa.md).
@@ -44,7 +46,8 @@ Notas personales de estudio. Cubren las clases 1 a 11 (24/09 al 03/11/2026), dic
 | 9 | Revisar las slides complementarias y probar Ragas sobre un retriever |
 | 10 | Sin tareas. El docente va a subir al repo el proyecto demo (portal del banco con Langfuse) y compartir un texto sobre SLI y SLO |
 | 11 | Sin tareas formales. Consejo de cierre: arrancar de a poco con uno de los marcos (primero MAESTRO, después OWASP y MITRE ATLAS). Las slides 88 y 89 proponen una evaluación opcional |
+| 12 | Sin tareas. Recomendó practicar con una plataforma de ejercicios tipo capture the flag y quedó en compartir el informe del inicio, el playbook y el panel de resultados |
 
 ## Calendario
 
-Son 18 clases. Después de la 11 vienen, de la 12 a la 18, el 5/11, 12/11, 17/11, 19/11, 24/11, 26/11 y 1/12. La del martes 10/11 se canceló por el feriado de la visita papal y el curso termina el **martes 1/12**. Detalle en [../notas/calendario-y-logistica.md](../notas/calendario-y-logistica.md).
+Son 18 clases. Después de la 12 vienen, de la 13 a la 18, el 12/11, 17/11, 19/11, 24/11, 26/11 y 1/12. La del martes 10/11 se canceló por el feriado de la visita papal y el curso termina el **martes 1/12**. Detalle en [../notas/calendario-y-logistica.md](../notas/calendario-y-logistica.md).

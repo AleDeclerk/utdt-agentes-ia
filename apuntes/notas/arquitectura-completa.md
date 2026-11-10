@@ -28,7 +28,7 @@ Es el mismo mapa de tres capas que el docente presentó para las evals en la [cl
 |---|---|---|
 | Cambio | Un commit o pull request entra al pipeline | [Clase 8](../resumenes/clase-08.md): los scores alimentan gates con GitHub Actions y MLflow |
 | Benchmarks | Miden comportamiento y grounding | [Clases 8](../resumenes/clase-08.md) y [9](../resumenes/clase-09.md): trayectoria y estado final, jueces LLM, pass^k, intervalo de Wilson. Los benchmarks públicos son solo una línea base: hace falta un conjunto propio |
-| Red teaming | Prueba ataques y abuso | Garak, PyRIT y Promptfoo, anunciados para el módulo 12 (seguridad) en la [clase 9](../resumenes/clase-09.md). [Clase 11](../resumenes/clase-11.md): promptfoo con plugins por marco (OWASP, MITRE ATLAS, NIST) para automatizar las pruebas antes del gate |
+| Red teaming | Prueba ataques y abuso | Garak, PyRIT y Promptfoo, anunciados para el módulo 12 (seguridad) en la [clase 9](../resumenes/clase-09.md). [Clase 11](../resumenes/clase-11.md): promptfoo con plugins por marco (OWASP, MITRE ATLAS, NIST) para automatizar las pruebas antes del gate. [Clase 12](../resumenes/clase-12.md): garak (amplitud, ataques de un turno) y PyRIT (profundidad, ataques de varios turnos) corren offline en el pipeline, y un solo fallo crítico frena el gate |
 | Gate | Toma una decisión consolidada | [Clase 9](../resumenes/clase-09.md): telemetría OpenTelemetry en Langfuse, un score y un gate en GitHub Actions |
 | Artefacto | Queda versionado y con procedencia | [Clase 9](../resumenes/clase-09.md): versionado del agente y del juez. [Clase 8](../resumenes/clase-08.md): rollout progresivo (A/B, shadow, canary) |
 
@@ -36,7 +36,7 @@ Es el mismo mapa de tres capas que el docente presentó para las evals en la [cl
 
 | Caja | Qué hace | Dónde lo vimos |
 |---|---|---|
-| Input guard | Aplica la política de entrada | [Clase 3](../resumenes/clase-03.md): guardrails deterministas antes del LLM (Model Armor, NeMo Guardrails, callbacks de ADK). [Clase 6](../resumenes/clase-06.md): la inyección indirecta por RAG y la ACL en la búsqueda |
+| Input guard | Aplica la política de entrada | [Clase 3](../resumenes/clase-03.md): guardrails deterministas antes del LLM (Model Armor, NeMo Guardrails, callbacks de ADK). [Clase 6](../resumenes/clase-06.md): la inyección indirecta por RAG y la ACL en la búsqueda. [Clase 12](../resumenes/clase-12.md): NeMo Guardrails como proceso aparte que envuelve al agente, con rails de entrada, salida, recuperación, ejecución y diálogo (primer vistazo) |
 | Agente | Modelo más herramientas | Clases [2](../resumenes/clase-02.md) a [5](../resumenes/clase-05.md) |
 | Tool guard | Autoriza cada llamada | [Clase 1](../resumenes/clase-01.md): `require_confirmation=True` en las tools irreversibles. [Clase 4](../resumenes/clase-04.md): naming attacks y MCP gateway. [Clase 7](../resumenes/clase-07.md): el LLM no escribe Cypher, elige una tool con una consulta fija |
 | Output guard | Aplica la política de salida | [Clase 3](../resumenes/clase-03.md): guardrails después del LLM |
