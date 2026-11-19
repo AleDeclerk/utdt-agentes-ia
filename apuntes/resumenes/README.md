@@ -1,6 +1,6 @@
 # Resúmenes de clase · Arquitectura de Agentes IA (UTDT, 2.ª edición)
 
-Notas personales de estudio. Cubren las clases 1 a 12 (24/09 al 05/11/2026), dictadas por Matías Zabaljauregui.
+Notas personales de estudio. Cubren las clases 1 a 14 (24/09 al 17/11/2026), dictadas por Matías Zabaljauregui.
 
 **Cómo se armaron.** Cada resumen sale de la transcripción automática que genera Zoom en la grabación de la clase, completada con el material del campus y del repo del curso. La transcripción automática tiene errores de reconocimiento: los pasajes que no se entendieron están marcados "(transcripción dudosa)" o se omitieron. La de la **clase 1** salió casi ilegible, así que ese resumen se apoya sobre todo en `MODULO_1` del repo y lo indica en cada punto.
 
@@ -20,6 +20,8 @@ Notas personales de estudio. Cubren las clases 1 a 12 (24/09 al 05/11/2026), dic
 | 10 | 29/10 | Monitoreo en producción: OpenTelemetry, Langfuse, prompts y datasets versionados, gates y alertas | [clase-10.md](clase-10.md) |
 | 11 | 03/11 | Seguridad: modelar amenazas (STRIDE, MAESTRO), nombrarlas (OWASP), ver al adversario (MITRE ATLAS) y gobernar (NIST, ISO) | [clase-11.md](clase-11.md) |
 | 12 | 05/11 | Red teaming de agentes: garak (amplitud) y PyRIT (profundidad) en la capa 1, y un primer vistazo a NeMo Guardrails | [clase-12.md](clase-12.md) |
+| 13 | 12/11 | Gobernanza (1): por qué fallan los agentes en producción, registro como frontera, identidad atestiguada (SPIFFE) y políticas como código (PDP y PEP) | [clase-13.md](clase-13.md) |
+| 14 | 17/11 | Gobernanza (2): motores de políticas, Agent Gateway y Agent Registry, con demo en Google Cloud y un roadmap de 90 días | [clase-14.md](clase-14.md) |
 
 ## Las ideas que atraviesan el curso
 
@@ -47,7 +49,9 @@ Notas personales de estudio. Cubren las clases 1 a 12 (24/09 al 05/11/2026), dic
 | 10 | Sin tareas. El docente va a subir al repo el proyecto demo (portal del banco con Langfuse) y compartir un texto sobre SLI y SLO |
 | 11 | Sin tareas formales. Consejo de cierre: arrancar de a poco con uno de los marcos (primero MAESTRO, después OWASP y MITRE ATLAS). Las slides 88 y 89 proponen una evaluación opcional |
 | 12 | Sin tareas. Recomendó practicar con una plataforma de ejercicios tipo capture the flag y quedó en compartir el informe del inicio, el playbook y el panel de resultados |
+| 13 | Sin tareas. Quedó en compartir informes, artículos sobre MCP, el informe de los componentes en Google Cloud y el roadmap de 90 días |
+| 14 | Sin tareas. Quedó en compartir el código del agente de la demo y un ejemplo en Terraform; el roadmap de 90 días ya está en el campus |
 
 ## Calendario
 
-Son 18 clases. Después de la 12 vienen, de la 13 a la 18, el 12/11, 17/11, 19/11, 24/11, 26/11 y 1/12. La del martes 10/11 se canceló por el feriado de la visita papal y el curso termina el **martes 1/12**. Detalle en [../notas/calendario-y-logistica.md](../notas/calendario-y-logistica.md).
+Son 18 clases. Después de la 14 vienen, de la 15 a la 18, el 19/11, 24/11, 26/11 y 1/12. La del martes 10/11 se canceló por el feriado de la visita papal y el curso termina el **martes 1/12**. Detalle en [../notas/calendario-y-logistica.md](../notas/calendario-y-logistica.md).

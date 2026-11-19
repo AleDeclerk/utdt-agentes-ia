@@ -22,8 +22,8 @@ Sale del calendario actualizado que llegó por mail el 02/10 (`campus/general/Ca
 | 10 | jue 29/10 | Monitoreo en producción: OpenTelemetry y Langfuse |
 | 11 | mar 03/11 | Frameworks de seguridad: STRIDE, MAESTRO, OWASP, MITRE ATLAS, NIST e ISO |
 | 12 | jue 05/11 | Red teaming de agentes: garak y PyRIT; primer vistazo a NeMo Guardrails |
-| 13 | jue 12/11 | |
-| 14 | mar 17/11 | |
+| 13 | jue 12/11 | Gobernanza (1): registro, identidad y políticas como código |
+| 14 | mar 17/11 | Gobernanza (2): motores de políticas, Agent Gateway y Agent Registry en Google Cloud |
 | 15 | jue 19/11 | |
 | 16 | mar 24/11 | |
 | 17 | jue 26/11 | |
